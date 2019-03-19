@@ -1,0 +1,11 @@
+body {
+    background-color: #000;
+}
+
+
+.visor {
+    background-color: turquoise;
+    min-height: 700px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}

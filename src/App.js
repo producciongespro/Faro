@@ -1,25 +1,83 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./css/bootstrap.min.css";
+import "./css/master.css";
+
+import Portada from "./Components/Portada";
+import Header from "./Components/Header";
+import Oficiales from "./Components/Oficiales";
+import PerfilDocente from "./Components/PerfilDocente";
+import Home from "./Components/Home";
+
 
 class App extends Component {
-  render() {
+
+  constructor ( ) {
+    super ();
+    this.state = {
+      title : "Portada",
+      currentPage : <Portada />
+    };
+    this.changePage = this.changePage.bind(this);    
+    this.loadHome = this.loadHome.bind(this); 
+    
+    setTimeout(() => {
+      this.loadHome();
+    }, 1000);
+ 
+  }
+
+
+  loadHome ( ) {
+    this.setState ({
+      currentPage : <Home method={this.changePage}  />
+    }) 
+  }
+
+
+  
+
+
+  changePage (e) {      
+    const targetPage = e.target.dataset.tar;
+    var tmpComponent;
+      console.log(targetPage);
+      
+      switch (targetPage) {
+        case "Home":
+          tmpComponent = <Home method={this.changePage} />
+        break;
+        case "Oficiales":
+          tmpComponent = <Oficiales method={this.changePage} />
+        break;
+        case "PerfilDocente":
+        tmpComponent = <PerfilDocente method={this.changePage} />
+        break;
+        default:
+          break;
+      }
+
+          
+
+      this.setState ({
+        currentPage : tmpComponent
+      })       
+     
+      
+  }
+
+ 
+
+render() {
+  
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="container">
+        <div className= "mt-2">
+            <Header />
+        </div>
+
+        <div className="visor" >
+             {this.state.currentPage}
+        </div>        
       </div>
     );
   }
