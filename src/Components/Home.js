@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BotonNavigation    from "./BotonNavigation";
+import fondoMAestra from "../img/maestra.jpg";
 
 
 class Home extends Component {
@@ -13,10 +14,10 @@ class Home extends Component {
       </div>
       
 
-     Inicio inicio inicio
+     <img src={fondoMAestra} alt="Maestra" />
      <br/>
-     <BotonNavigation     method={this.props.method}  label="Documentos Oficiales"  tar="Oficiales"  />
-     <br/>
+     <BotonNavigation     method={this.props.method}  label="Documentos Oficiales"  tar="Oficiales"  /> ...
+   
      <BotonNavigation     method={this.props.method}  label="Perfil Docente"  tar="PerfilDocente"  />
 
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "./css/bootstrap.min.css";
 import "./css/master.css";
 
 import Portada from "./Components/Portada";
@@ -7,6 +6,8 @@ import Header from "./Components/Header";
 import Oficiales from "./Components/Oficiales";
 import PerfilDocente from "./Components/PerfilDocente";
 import Home from "./Components/Home";
+import Splash from "./Components/Splash";
+
 
 
 class App extends Component {
@@ -14,8 +15,8 @@ class App extends Component {
   constructor ( ) {
     super ();
     this.state = {
-      title : "Portada",
-      currentPage : <Portada />
+      nameCurrentPage : "splash",
+      currentPage : <Splash />
     };
     this.changePage = this.changePage.bind(this);    
     this.loadHome = this.loadHome.bind(this); 
@@ -46,6 +47,9 @@ class App extends Component {
         case "Home":
           tmpComponent = <Home method={this.changePage} />
         break;
+        case "Portada":
+        tmpComponent = <Portada method={this.changePage} />
+        break;
         case "Oficiales":
           tmpComponent = <Oficiales method={this.changePage} />
         break;
@@ -72,7 +76,7 @@ render() {
     return (
       <div className="container">
         <div className= "mt-2">
-            <Header />
+            <Header method={this.changePage}/>
         </div>
 
         <div className="visor" >
