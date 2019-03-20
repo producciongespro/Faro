@@ -6,8 +6,8 @@ class Header extends Component {
   render() {
     return (
           <div>
-            <BotonNavigation     method={this.props.method}  label="Inicio"  tar="Home"  /> 
-            <BotonNavigation     method={this.props.method}  label="Portada"  tar="Portada"  /> 
+            <BotonNavigation     navigate={this.props.changePage}  label="Inicio"  tar="Home"  /> 
+            <BotonNavigation     navigate={this.props.changePage}  label="Portada"  tar="Portada"  /> 
           </div>
     );
   }

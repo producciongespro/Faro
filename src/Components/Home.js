@@ -16,9 +16,9 @@ class Home extends Component {
 
      <img src={fondoMAestra} alt="Maestra" />
      <br/>
-     <BotonNavigation     method={this.props.method}  label="Documentos Oficiales"  tar="Oficiales"  /> ...
+     <BotonNavigation     navigate={this.props.changePage}  label="Documentos Oficiales"  tar="Oficiales"  /> ...
    
-     <BotonNavigation     method={this.props.method}  label="Perfil Docente"  tar="PerfilDocente"  />
+     <BotonNavigation     navigate={this.props.changePage}  label="Perfil Docente"  tar="PerfilDocente"  />
 
 
       </div>

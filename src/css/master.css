@@ -13,3 +13,13 @@ body {
 .btn-navigation {
     margin-right: 4px;
 }
+
+
+
+.img-oculta {
+    visibility: hidden;
+}
+
+.img-visible {
+    visibility: visible;
+}

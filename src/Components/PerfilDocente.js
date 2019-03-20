@@ -14,7 +14,7 @@ class PerfilDocente extends Component {
       
 
         Perfil docente
-        <BotonNavigation     method={this.props.method}  label="Inicio"  tar="Home"  />
+        <BotonNavigation     navigate={this.props.changePage}  label="Inicio"  tar="Home"  />
 
 
       </div>

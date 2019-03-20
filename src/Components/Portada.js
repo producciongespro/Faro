@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BotonNavigation from "./BotonNavigation";
+//import BotonNavigation from "./BotonNavigation";
 
 
 class Portada extends Component {
@@ -25,9 +25,9 @@ class Portada extends Component {
       </div>
       
 
-      lorem ipsum  lorem ipsum lorem ipsum
+     PORTADA
       <br/>
-      Espere un momento...
+      
       <br/>
 
       
