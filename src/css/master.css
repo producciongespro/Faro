@@ -2,12 +2,18 @@ body {
     background-color: #000;
 }
 
+.contenedor {
+    text-align: center;
+}
+
 
 .visor {
-    background-color: turquoise;
-    min-height: 700px;
-    margin-top: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    min-height: 600px;    
     margin-bottom: 4px;
+    padding: 1%;
+    margin-top: 10%;
 }
 
 .btn-navigation {

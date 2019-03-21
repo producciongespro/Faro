@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import "./css/master.css";
 
-import fondos from "./data/fondos.json";
+import fondosPantallas from "./data/fondos.json";
 
-import Portada from "./Components/Portada";
-import Header from "./Components/Header";
+
+import Primera from "./Components/Primera";
 import Oficiales from "./Components/Oficiales";
 import PerfilDocente from "./Components/PerfilDocente";
-import Home from "./Components/Home";
 import Splash from "./Components/Splash";
 
 
@@ -19,9 +18,8 @@ class App extends Component {
   constructor ( ) {
     super ();
     this.state = {
-      nameCurrentPage : "splash",
-      currentPage : <Splash />,
-      fondos : fondos
+      nameCurrentPage : "Portada",
+      currentPage : <Splash />      
     };
     this.changePage = this.changePage.bind(this);    
     this.loadHome = this.loadHome.bind(this); 
@@ -35,10 +33,9 @@ class App extends Component {
 
   loadHome ( ) {
     this.setState ({
-      currentPage : <Portada imgFondo = {this.state.fondos[0] }  changePage={this.changePage}  />,
-      nameCurrentPage : "Portada"
-    });
-    console.log(this.state.nameCurrentPage);     
+      nameCurrentPage : "Portada",      
+      currentPage : <Primera imgFondo = {fondosPantallas[0] }  changePage={this.changePage}   nameCurrentPage={this.state.nameCurrentPage}  />      
+    });        
   }
 
 
@@ -53,51 +50,43 @@ class App extends Component {
 }
 
 
-saludar ( ) { 
-  console.log("HOLA");
-  
-}
 
-
-  changePage (e) {      
+  changePage (e) { 
+    e.preventDefault();     
     const targetPage = e.target.dataset.tar;
     var tmpComponent;
-     
+    console.log("Target", targetPage );
       
-      switch (targetPage) {
-        case "Home":
-          tmpComponent = <Home changePage={this.changePage}  imgFondo={this.state.fondos[1] }  />
-        break;
+    switch (targetPage) {
         case "Portada":
-        tmpComponent = <Portada changePage={this.changePage} />
+          tmpComponent = <Primera changePage={this.changePage}  nameCurrentPage={this.state.nameCurrentPage} imgFondo={fondosPantallas[0]}  />
+        break;
+        case "Home":
+        tmpComponent = <Primera changePage={this.changePage}  nameCurrentPage={this.state.nameCurrentPage} imgFondo={fondosPantallas[1] }   />
         break;
         case "Oficiales":
-          tmpComponent = <Oficiales changePage={this.changePage} />
+          tmpComponent = <Oficiales changePage={this.changePage}  nameCurrentPage={this.state.nameCurrentPage} imgFondo={fondosPantallas[2] }   />
         break;
         case "PerfilDocente":
-        tmpComponent = <PerfilDocente changePage={this.changePage} />
+        tmpComponent = <PerfilDocente changePage={this.changePage}   nameCurrentPage={this.state.nameCurrentPage}  />
         break;
         default:
           break;
       }   
 
       this.setState ({
-        currentPage : tmpComponent,
-        nameCurrentPage : targetPage
+        nameCurrentPage : targetPage,
+        currentPage : tmpComponent        
       }) 
       
-      console.log(this.state.currentPage);
+      
      
   }
  
 
 render() {  
     return (
-      <div className="container">
-        <div className= "mt-2">
-            <Header changePage={this.changePage}/>
-        </div>
-
+      <div className="contenedor">    
         <div className="visor" >
              {this.state.currentPage}
         </div>        
