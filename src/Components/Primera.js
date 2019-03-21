@@ -6,25 +6,49 @@ import React, { Component } from 'react';
 
 class Primera extends Component {
 
-  mapArea = "";
+  constructor () {
+    super ();
+    this.state = {
+      nombrePaginga : ""      
+    };
+    this.mapArea = "";
+
+    
+  }
+
+
+  
+
+  componentDidMount () {
+    console.log("Recien montado", this.props.nameCurrentPage);   
+}
+
+  componentDidUpdate() {
+    console.log("Actualizado", this.props.nameCurrentPage );  
+    
+}
+
+
+
 
 
   createMapping ( ) {
     switch (this.props.nameCurrentPage) {
       case "Portada":
-      console.log("Opt Case Portada");      
-        this.mapArea = (
-          <map name="image-map">
-            <area  data-tar="Home"  alt="ingresar"  onClick={this.props.changePage }  title="ingresar" href="#" coords="489,508,690,554" shape="rect" />
-          </map>
-        )
+      console.log("Mapeando  Portada"); 
+      
+      this.mapArea = (
+              <map name="image-map">
+                  <area  data-tar="Home"  alt="ingresar"  onClick={this.props.changePage}  title="ingresar" href="#" coords="489,508,690,554" shape="rect" />
+              </map>
+              )                    
       break;
 
       case "Home":
-      console.log("Opt Case Home");
+      console.log("Mapeando Home");
       this.mapArea = (
         <map name="image-map">
-          <area data-tar="Portada" alt="Portada" onClick={this.props.changePage } title="Portada" href="#" coords="66,546,30" shape="circle" />
+          <area data-tar="Portada" alt="Portada" onClick={this.props.changePage}  title="Portada" href="#" coords="66,546,30" shape="circle" />
         </map>
       )
       break;
@@ -43,18 +67,20 @@ class Primera extends Component {
 
 
   render() {
-    console.log( "Pagina actual:", this.props.nameCurrentPage);
+    // console.log( "Pagina actual:", this.props.nameCurrentPage);
     this.createMapping();
 
           return (
             <div>              
-              <img data-tar="Home"    src={this.props.imgFondo.url }  alt="portada" useMap="#image-map"/>               
-              {this.mapArea}
-        
+              <img src={this.props.imgFondo.url }  alt="Imagen de fondo" useMap="#image-map"/>               
+              {this.mapArea}       
 
             </div>
           );
   }
+
+
+ 
 
 
 

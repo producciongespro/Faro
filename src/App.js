@@ -53,9 +53,15 @@ class App extends Component {
 
   changePage (e) { 
     e.preventDefault();     
-    const targetPage = e.target.dataset.tar;
+    const targetPage = e.target.dataset.tar;    
     var tmpComponent;
     console.log("Target", targetPage );
+
+
+    this.setState ({
+      nameCurrentPage : targetPage      
+    }) 
+
       
     switch (targetPage) {
         case "Portada":
@@ -74,8 +80,7 @@ class App extends Component {
           break;
       }   
 
-      this.setState ({
-        nameCurrentPage : targetPage,
+      this.setState ({        
         currentPage : tmpComponent        
       }) 
       
@@ -93,6 +98,12 @@ render() {
       </div>
     );
   }
+
+
+
+
+
+
 }
 
 export default App;
