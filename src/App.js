@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "./css/master.css";
 
+import fondos from "./data/fondos.json";
+
 import Portada from "./Components/Portada";
 import Header from "./Components/Header";
 import Oficiales from "./Components/Oficiales";
@@ -12,11 +14,14 @@ import Splash from "./Components/Splash";
 
 class App extends Component {
 
+  
+
   constructor ( ) {
     super ();
     this.state = {
       nameCurrentPage : "splash",
-      currentPage : <Splash />
+      currentPage : <Splash />,
+      fondos : fondos
     };
     this.changePage = this.changePage.bind(this);    
     this.loadHome = this.loadHome.bind(this); 
@@ -30,8 +35,10 @@ class App extends Component {
 
   loadHome ( ) {
     this.setState ({
-      currentPage : <Home method={this.changePage}  />
-    }) 
+      currentPage : <Portada imgFondo = {this.state.fondos[0] }  changePage={this.changePage}  />,
+      nameCurrentPage : "Portada"
+    });
+    console.log(this.state.nameCurrentPage);     
   }
 
 
@@ -47,6 +54,7 @@ class App extends Component {
 
 
 saludar ( ) { 
+  console.log("HOLA");
   
 }
 
@@ -54,11 +62,11 @@ saludar ( ) {
   changePage (e) {      
     const targetPage = e.target.dataset.tar;
     var tmpComponent;
-      console.log(targetPage);
+     
       
       switch (targetPage) {
         case "Home":
-          tmpComponent = <Home changePage={this.changePage}  />
+          tmpComponent = <Home changePage={this.changePage}  imgFondo={this.state.fondos[1] }  />
         break;
         case "Portada":
         tmpComponent = <Portada changePage={this.changePage} />
@@ -74,8 +82,11 @@ saludar ( ) {
       }   
 
       this.setState ({
-        currentPage : tmpComponent
-      })     
+        currentPage : tmpComponent,
+        nameCurrentPage : targetPage
+      }) 
+      
+      console.log(this.state.currentPage);
      
   }
  

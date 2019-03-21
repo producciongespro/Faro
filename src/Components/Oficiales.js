@@ -29,7 +29,7 @@ class Oficiales extends Component {
       
 
       documentos importantes
-      <BotonNavigation     changePage={this.props.changePage}  label="Inicio"  tar="Home"  />
+      <BotonNavigation     navigation={this.props.changePage}  label="Inicio"  tar="Home"  />
 
 
       </div>

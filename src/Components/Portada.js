@@ -14,27 +14,17 @@ class Portada extends Component {
 
 
   render() {
-    return (
-      <div>
-        <div  className="titulo text-center" >
-          <h1>MEP</h1>       
-        </div>
 
-      <div  className="titulo" >
-          <h1>FARO</h1>       
-      </div>
-      
+          return (
+            <div>    
+          {
+            //console.log(this.props.imgFondo)
+            
+          } 
+          <img data-tar="Home"  onClick={this.props.changePage}  src={this.props.imgFondo.url }  alt="portada" />
 
-     PORTADA
-      <br/>
-      
-      <br/>
-
-      
-
-
-      </div>
-    );
+            </div>
+          );
   }
 }
 

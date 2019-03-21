@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import BotonNavigation    from "./BotonNavigation";
-import fondoMAestra from "../img/maestra.jpg";
+//import BotonNavigation    from "./BotonNavigation";
+//import fondoMAestra from "../img/maestra.jpg";
 
 
 class Home extends Component {
@@ -8,18 +8,10 @@ class Home extends Component {
     return (
       <div>
        
-
-      <div  className="titulo" >
-          <h1>Inicio</h1>       
-      </div>
-      
-
-     <img src={fondoMAestra} alt="Maestra" />
-     <br/>
-     <BotonNavigation     navigate={this.props.changePage}  label="Documentos Oficiales"  tar="Oficiales"  /> ...
-   
-     <BotonNavigation     navigate={this.props.changePage}  label="Perfil Docente"  tar="PerfilDocente"  />
-
+        {
+          console.log(this.props.imgFondo)          
+        }
+        <img src={this.props.imgFondo.url } alt = "Home" />
 
       </div>
     );

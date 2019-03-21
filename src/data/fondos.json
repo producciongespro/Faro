@@ -1,0 +1,14 @@
+[
+    {
+       "nombre" : "Portada",
+       "url" : "http://localhost/Faro_ws/portada.jpg"
+    },
+    {
+        "nombre" : "Home",
+        "url" : "http://localhost/Faro_ws/home.jpg"
+     },
+     {
+        "nombre" : "Documentos oficiales",
+        "url" : "http://localhost/Faro_ws/documentros_oficiales.jpg"
+     }
+]
