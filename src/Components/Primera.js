@@ -34,24 +34,25 @@ class Primera extends Component {
     
 }
 
-showModal(e) {   
-  let title = e.target.title;
-  console.log("Mostrando modal de", title);
-
+showModal(e) {
+  e.preventDefault();  
 
   this.setState({ 
     modalVisible : true,
     nameModal : e.target.dataset.tar,
     titleModal : e.target.title
-  }, () => {
-     //console.log(this.state.valor) => 1
-     console.log( "state.title:", this.state.titleModal );
+  }, () => {     
+        console.log( "state.nameModal:", this.state.nameModal );
+        console.log( "state.titleModal:", this.state.titleModal );
+        
      this.setState (
        {
         modalComponent : <Modal  hideModal={this.hideModal}  label={this.state.titleModal} nameModal={this.state.nameModal}  />
        }
      )
   }); 
+
+
 
   
 }
