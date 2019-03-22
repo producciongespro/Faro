@@ -11,6 +11,7 @@ import Splash from "./Components/Splash";
 
 
 
+
 class App extends Component {
 
   
@@ -31,10 +32,10 @@ class App extends Component {
   }
 
 
-  loadHome ( ) {
-    this.setState ({
+  loadHome ( ) {    
+    this.setState ({      
       nameCurrentPage : "Portada",      
-      currentPage : <Primera imgFondo = {fondosPantallas[0] }  changePage={this.changePage}   nameCurrentPage={this.state.nameCurrentPage}  />      
+      currentPage : <Primera imgFondo = {fondosPantallas[0].Portada}  changePage={this.changePage}   nameCurrentPage={this.state.nameCurrentPage}  />      
     });        
   }
 
@@ -53,38 +54,20 @@ class App extends Component {
 
   changePage (e) { 
     e.preventDefault();     
-    const targetPage = e.target.dataset.tar;    
-    var tmpComponent;
-    console.log("Target", targetPage );
+    const targetPage = e.target.dataset.tar;        
+    //console.log("Target", targetPage );
 
-
-    this.setState ({
-      nameCurrentPage : targetPage      
-    }) 
-
-      
-    switch (targetPage) {
-        case "Portada":
-          tmpComponent = <Primera changePage={this.changePage}  nameCurrentPage={this.state.nameCurrentPage} imgFondo={fondosPantallas[0]}  />
-        break;
-        case "Home":
-        tmpComponent = <Primera changePage={this.changePage}  nameCurrentPage={this.state.nameCurrentPage} imgFondo={fondosPantallas[1] }   />
-        break;
-        case "Oficiales":
-          tmpComponent = <Oficiales changePage={this.changePage}  nameCurrentPage={this.state.nameCurrentPage} imgFondo={fondosPantallas[2] }   />
-        break;
-        case "PerfilDocente":
-        tmpComponent = <PerfilDocente changePage={this.changePage}   nameCurrentPage={this.state.nameCurrentPage}  />
-        break;
-        default:
-          break;
-      }   
-
-      this.setState ({        
-        currentPage : tmpComponent        
-      }) 
-      
-      
+    this.setState({ 
+      nameCurrentPage: targetPage      
+    }, () => {
+       //console.log(this.state.valor) => 1
+       console.log( "Página actual", this.state.nameCurrentPage );
+       this.setState (
+         {
+          currentPage:  <Primera changePage={this.changePage}  nameCurrentPage={this.state.nameCurrentPage} imgFondo={fondosPantallas[0][targetPage] }  />
+         }
+       )
+    });     
      
   }
  

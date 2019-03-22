@@ -68,11 +68,10 @@ class Primera extends Component {
 
   render() {
     // console.log( "Pagina actual:", this.props.nameCurrentPage);
-    this.createMapping();
-
+    this.createMapping();       
           return (
             <div>              
-              <img src={this.props.imgFondo.url }  alt="Imagen de fondo" useMap="#image-map"/>               
+              <img src={this.props.imgFondo }  alt="Imagen de fondo" useMap="#image-map"/>               
               {this.mapArea}       
 
             </div>

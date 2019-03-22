@@ -1,14 +1,7 @@
 [
-    {
-       "nombre" : "Portada",
-       "url" : "https://recursos.mep.go.cr/ws_faro/portada.jpg"
-    },
-    {
-        "nombre" : "Home",
-        "url" : "https://recursos.mep.go.cr/ws_faro/home.jpg"
-     },
-     {
-        "nombre" : "Documentos oficiales",
-        "url" : "https://recursos.mep.go.cr/ws_faro/docs_oficiales.jpg"
+    {      
+      "Portada" : "https://recursos.mep.go.cr/ws_faro/portada.jpg", 
+      "Home" : "https://recursos.mep.go.cr/ws_faro/home.jpg", 
+      "Oficiales" : "https://recursos.mep.go.cr/ws_faro/docs_oficiales.jpg"
      }
 ]
