@@ -47,9 +47,20 @@ class Primera extends Component {
       case "Home":
       console.log("Mapeando Home");
       this.mapArea = (
-        <map name="image-map">
-          <area data-tar="Portada" alt="Portada" onClick={this.props.changePage}  title="Portada" href="#" coords="66,546,30" shape="circle" />
-        </map>
+            <map name="image-map">
+                <area data-tar="Portada"  alt="Portada" title="Portada"  onClick={this.props.changePage}  href="#" coords="67,545,28" shape="circle" />
+                <area data-tar="Oficiales"  alt="Oficiales" title="Oficiales" onClick={this.props.changePage}  href="#" coords="501,131,567,141,552,237,484,223" shape="poly" />
+            </map>
+      )
+      break;
+
+      case "Oficiales":
+      console.log("Mapeando Oficiales");
+      this.mapArea = (
+              <map name="image-map">
+                  <area data-tar="Home" alt="Home" title="Home" onClick={this.props.changePage} href="#" coords="685,554,785,593" shape="rect" />
+                  <area data-tar="politica_educativa" onClick={this.props.showModal} alt="politica_educativa" title="politica_educativa"   href="#" coords="275,201,66" shape="circle" />
+              </map>
       )
       break;
     
@@ -62,6 +73,14 @@ class Primera extends Component {
 
 
 
+  }
+
+
+  showModal(e) {
+    console.log("Show Modal");    
+    const tema = e.event.target.dataset.tar;
+    console.log("Mostrando modal de", tema);
+    
   }
 
 

@@ -5,8 +5,6 @@ import fondosPantallas from "./data/fondos.json";
 
 
 import Primera from "./Components/Primera";
-import Oficiales from "./Components/Oficiales";
-import PerfilDocente from "./Components/PerfilDocente";
 import Splash from "./Components/Splash";
 
 
@@ -72,7 +70,7 @@ class App extends Component {
   }
  
 
-render() {  
+render() {    
     return (
       <div className="contenedor">    
         <div className="visor" >
