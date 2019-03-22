@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import BotonNavigation from "./BotonNavigation";
+import Modal from "./Modal";
 
 
 
@@ -9,10 +9,14 @@ class Primera extends Component {
   constructor () {
     super ();
     this.state = {
-      nombrePaginga : ""      
+      modalComponent : "Nulo",
+      modalVisible :   false,
+      nameModal : "",
+      titleModal : ""
     };
     this.mapArea = "";
-
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
     
   }
 
@@ -24,11 +28,40 @@ class Primera extends Component {
 }
 
   componentDidUpdate() {
-    console.log("Actualizado", this.props.nameCurrentPage );  
+    console.log("Actualizado", this.props.nameCurrentPage ); 
+    console.log(this.state.modalVisible);
+     
     
 }
 
+showModal(e) {   
+  let title = e.target.title;
+  console.log("Mostrando modal de", title);
 
+
+  this.setState({ 
+    modalVisible : true,
+    nameModal : e.target.dataset.tar,
+    titleModal : e.target.title
+  }, () => {
+     //console.log(this.state.valor) => 1
+     console.log( "state.title:", this.state.titleModal );
+     this.setState (
+       {
+        modalComponent : <Modal  hideModal={this.hideModal}  label={this.state.titleModal} nameModal={this.state.nameModal}  />
+       }
+     )
+  }); 
+
+  
+}
+
+
+hideModal() {
+  this.setState ({
+    modalVisible : false
+  })
+}
 
 
 
@@ -39,7 +72,7 @@ class Primera extends Component {
       
       this.mapArea = (
               <map name="image-map">
-                  <area  data-tar="Home"  alt="ingresar"  onClick={this.props.changePage}  title="ingresar" href="#" coords="489,508,690,554" shape="rect" />
+                  <area  data-tar="Home"  alt="ingresar"  onClick={this.props.changePage}  title="ingresar" href="Home" coords="489,508,690,554" shape="rect" />
               </map>
               )                    
       break;
@@ -48,8 +81,8 @@ class Primera extends Component {
       console.log("Mapeando Home");
       this.mapArea = (
             <map name="image-map">
-                <area data-tar="Portada"  alt="Portada" title="Portada"  onClick={this.props.changePage}  href="#" coords="67,545,28" shape="circle" />
-                <area data-tar="Oficiales"  alt="Oficiales" title="Oficiales" onClick={this.props.changePage}  href="#" coords="501,131,567,141,552,237,484,223" shape="poly" />
+                <area data-tar="Portada"  alt="Portada" title="Portada"  onClick={this.props.changePage}  href="Portada" coords="67,545,28" shape="circle" />
+                <area data-tar="Oficiales" alt="Oficiales" title="Oficiales" onClick={this.props.changePage}  href="Oficiales" coords="501,131,567,141,552,237,484,223" shape="poly" />
             </map>
       )
       break;
@@ -57,10 +90,11 @@ class Primera extends Component {
       case "Oficiales":
       console.log("Mapeando Oficiales");
       this.mapArea = (
-              <map name="image-map">
-                  <area data-tar="Home" alt="Home" title="Home" onClick={this.props.changePage} href="#" coords="685,554,785,593" shape="rect" />
-                  <area data-tar="politica_educativa" onClick={this.props.showModal} alt="politica_educativa" title="politica_educativa"   href="#" coords="275,201,66" shape="circle" />
-              </map>
+        <map name="image-map">
+            <area   onClick={this.showModal } data-tar="Politica_educativa"  alt="Política educativa" title="Política educativa" href="Politica_educativa" coords="272,202,63" shape="circle" />
+            <area  data-tar="Perfil_docente"  onClick={this.showModal }  alt="Perfil docente" title="Perfil docente" href="Perfil_docente" coords="401,77,68" shape="circle" />
+            <area  data-tar="Home" onClick={this.props.changePage}  alt="Inicio" title="Inicio" href="Home" coords="679,551,785,596" shape="rect" />
+        </map>
       )
       break;
     
@@ -76,12 +110,7 @@ class Primera extends Component {
   }
 
 
-  showModal(e) {
-    console.log("Show Modal");    
-    const tema = e.event.target.dataset.tar;
-    console.log("Mostrando modal de", tema);
-    
-  }
+
 
 
 
@@ -91,7 +120,8 @@ class Primera extends Component {
           return (
             <div>              
               <img src={this.props.imgFondo }  alt="Imagen de fondo" useMap="#image-map"/>               
-              {this.mapArea}       
+              {this.mapArea}
+              {this.state.modalVisible? this.state.modalComponent: ""  }       
 
             </div>
           );

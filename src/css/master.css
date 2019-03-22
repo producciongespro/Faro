@@ -29,3 +29,29 @@ body {
 .img-visible {
     visibility: visible;
 }
+
+.modal {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        height: 60%;
+        width: 80%;
+        background-color: gray;
+        color: #48D1CC;
+}
+
+.char-boton {
+    border: solid #fff 1px;
+    padding: 7px;
+    background-color: chocolate;
+    border-radius: 60%;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 4px;
+}
+
+.row-encabezado {
+    text-align: right;
+}

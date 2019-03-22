@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import "./css/master.css";
 
 import fondosPantallas from "./data/fondos.json";
-
-
+//Componentes
 import Primera from "./Components/Primera";
 import Splash from "./Components/Splash";
 
@@ -53,7 +52,7 @@ class App extends Component {
   changePage (e) { 
     e.preventDefault();     
     const targetPage = e.target.dataset.tar;        
-    //console.log("Target", targetPage );
+    console.log("Target", targetPage );
 
     this.setState({ 
       nameCurrentPage: targetPage      
