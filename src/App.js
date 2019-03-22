@@ -17,7 +17,7 @@ class App extends Component {
     super ();
     this.state = {
       nameCurrentPage : "Portada",
-      currentPage : <Splash />      
+      currentPage : <Splash  urlImage={fondosPantallas[0].logoFaro }  />      
     };
     this.changePage = this.changePage.bind(this);    
     this.loadHome = this.loadHome.bind(this); 
