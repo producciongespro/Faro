@@ -1,6 +1,7 @@
 [
     {      
       "logoFaro" : "https://recursos.mep.go.cr/ws_faro/logos/logo_faro.jpg",
+      "logoMep" : "https://recursos.mep.go.cr/ws_faro/logos/logo_mep.png",
       "Portada" : "https://recursos.mep.go.cr/ws_faro/portada.jpg", 
       "Home" : "https://recursos.mep.go.cr/ws_faro/home.jpg", 
       "Oficiales" : "https://recursos.mep.go.cr/ws_faro/docs_oficiales.jpg"

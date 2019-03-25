@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import "./css/master.css";
 
-import fondosPantallas from "./data/fondos.json";
+import images from "./data/images.json";
 //Componentes
-import Primera from "./Components/Primera";
+import Modal from "./Components/Modal";
 import Splash from "./Components/Splash";
+import Portada from "./Components/Portada";
+import Home from "./Components/Home";
+import DocsOficiales from "./Components/DocsOficiales";
+import DesarrolloProf from "./Components/DesarrolloProf";
+
 
 
 
@@ -17,10 +22,15 @@ class App extends Component {
     super ();
     this.state = {
       nameCurrentPage : "Portada",
-      currentPage : <Splash  urlImage={fondosPantallas[0].logoFaro }  />      
+      currentPage : <Splash  urlImage={images[0].logoFaro }  />,
+      modalActive : false,
+      modalComponent: "",
+      typeContent : ""
     };
     this.changePage = this.changePage.bind(this);    
     this.loadHome = this.loadHome.bind(this); 
+    this.showModal = this.showModal.bind(this); 
+    this.closeModal = this.closeModal.bind(this); 
     
     setTimeout(() => {
       this.loadHome();
@@ -32,28 +42,37 @@ class App extends Component {
   loadHome ( ) {    
     this.setState ({      
       nameCurrentPage : "Portada",      
-      currentPage : <Primera imgFondo = {fondosPantallas[0].Portada}  changePage={this.changePage}   nameCurrentPage={this.state.nameCurrentPage}  />      
+      currentPage : <Portada  changePage={this.changePage}  showModal ={ this.showModal }  />      
     });        
   }
-
-
-  //Muestra la imagen con el texto en cada pantalla
-  resaltado (e) {
-    console.log("Hover desde " +  e.target.id);
-    let tmp = document.getElementById(e.target.dataset.tar);
-    console.log(tmp);   
-    //tmp.className = "img-visible";    
-    tmp.classList.remove("img-oculta");
-    //tmp.classList.add("otherclass");
-}
 
 
 
   changePage (e) { 
     e.preventDefault();     
-    const targetPage = e.target.dataset.tar;        
+    const targetPage = e.target.dataset.tar;
+    var tmpComponent;        
     console.log("Target", targetPage );
 
+    switch (targetPage) {
+      case "Portada":
+        tmpComponent = <Portada  changePage={this.changePage}/> 
+      break;
+      case "Home":
+        tmpComponent = <Home  changePage={this.changePage}/> 
+      break;
+      case "DocsOficiales":
+        tmpComponent = <DocsOficiales  changePage={this.changePage}/> 
+      break;
+      case "DesarrolloProf":
+        tmpComponent = <DesarrolloProf  changePage={this.changePage}/> 
+      break;
+    
+      default:
+      console.log("Opción fuera de rango");
+      
+        break;
+    }
     this.setState({ 
       nameCurrentPage: targetPage      
     }, () => {
@@ -61,21 +80,51 @@ class App extends Component {
        console.log( "Página actual", this.state.nameCurrentPage );
        this.setState (
          {
-          currentPage:  <Primera changePage={this.changePage}  nameCurrentPage={this.state.nameCurrentPage} imgFondo={fondosPantallas[0][targetPage] }  />
+          currentPage:  tmpComponent
          }
        )
-    });     
+    });    
      
+  }
+
+
+  showModal (e ) {
+    const content = e.target.dataset.content;
+    const typeContent = e.target.dataset.typecontent;
+    console.log(content);
+    
+
+    this.setState({ 
+      modalActive: true,
+      typeContent: typeContent
+    }, () => {
+        console.log("modal activo", this.state.modalActive);
+         this.setState ({
+          modalComponent : <Modal closeModal={this.closeModal}  content={content[0]} typeContent={this.state.typeContent }   />
+         })               
+    });  
+  }
+
+
+  closeModal ( ) {
+    this.setState({ 
+      modalActive: false      
+    }, () => {
+        console.log("modal activo", this.state.modalActive);                
+    });  
   }
  
 
 render() {    
     return (
-      <div className="contenedor">    
-        <div className="visor" >
-             {this.state.currentPage}
-        </div>        
-      </div>
+      <div>
+          <div className="contenedor">    
+            <div className="visor" >
+                {this.state.currentPage}
+            </div>        
+          </div>
+              {this.state.modalActive? this.state.modalComponent : "" }        
+       </div>
     );
   }
 
