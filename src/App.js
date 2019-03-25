@@ -9,6 +9,7 @@ import Portada from "./Components/Portada";
 import Home from "./Components/Home";
 import DocsOficiales from "./Components/DocsOficiales";
 import DesarrolloProf from "./Components/DesarrolloProf";
+import ApoyosPlan from "./Components/ApoyosPlan";
 
 
 
@@ -66,6 +67,9 @@ class App extends Component {
       break;
       case "DesarrolloProf":
         tmpComponent = <DesarrolloProf  changePage={this.changePage}/> 
+      break;
+      case "ApoyosPlan":
+        tmpComponent = <ApoyosPlan  changePage={this.changePage}/> 
       break;
     
       default:
