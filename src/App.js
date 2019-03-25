@@ -100,7 +100,7 @@ class App extends Component {
     }, () => {
         console.log("modal activo", this.state.modalActive);
          this.setState ({
-          modalComponent : <Modal closeModal={this.closeModal}  content={content[0]} typeContent={this.state.typeContent }   />
+          modalComponent : <Modal closeModal={this.closeModal}  content={content} typeContent={this.state.typeContent }   />
          })               
     });  
   }

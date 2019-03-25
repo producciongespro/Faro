@@ -1,6 +1,6 @@
 [
     {
-        "nombre" : "Prueba",
-        "url" : ""
+        "IndicacionesPortada" : "Estas son las indicaciones de la portada",
+        "VideoMinistro" : "https://www.youtube.com/embed/eGhTLbiaTgE"
     }
 ]
