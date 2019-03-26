@@ -22,7 +22,7 @@ class App extends Component {
   constructor ( ) {
     super ();
     this.state = {
-      nameCurrentPage : "Portada",
+      nameCurrentPage : "Splash",
       currentPage : <Splash  urlImage={images[0].logoFaro }  />,
       modalActive : false,
       modalComponent: "",

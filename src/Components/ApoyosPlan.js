@@ -5,9 +5,8 @@ import textos from "../data/textos.json"
 
 //TODO Revisar cuando carga esto
 
-console.log("json");
-
-console.log(textos[0]);
+//console.log("json");
+//console.log(textos[0] ) ;
 
 
 
@@ -24,9 +23,9 @@ class ApoyosPlan extends Component {
                   </div>
               </div>
 
-              <div className="row mt-5" >
-                  <div className="col-12">
-                      {textos[0].lorem}
+              <div className="row mt-5 ml-5" >
+                  <div className="col-12 text-justify">
+                      {textos[0].Lorem}
                   </div>
               </div>
 

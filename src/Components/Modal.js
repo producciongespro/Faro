@@ -30,7 +30,7 @@ class Modal extends Component {
       break;
       case "audio":
       console.log("audio");      
-        tmpContent =  <audio controls  autoplay src={this.props.content}></audio>                   
+        tmpContent =  <audio controls  autoPlay src={this.props.content}></audio>                   
       break;
     
       default:
