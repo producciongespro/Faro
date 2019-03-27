@@ -4,6 +4,11 @@
       "logoMep" : "https://recursos.mep.go.cr/ws_faro/logos/logo_mep.png",
       "Portada" : "https://recursos.mep.go.cr/ws_faro/portada.jpg", 
       "Home" : "https://recursos.mep.go.cr/ws_faro/home.jpg", 
-      "Oficiales" : "https://recursos.mep.go.cr/ws_faro/docs_oficiales.jpg"
+      "Oficiales" : "https://recursos.mep.go.cr/ws_faro/docs_oficiales.jpg",
+      "BtnAudio" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_audio.png",
+      "BtnBienvenida" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_bienvenida.png",
+      "BtnIndicaciones" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_indicaciones.png",
+      "BtnIngresar" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_ingresar.png",
+      "TituloPortada" : "https://recursos.mep.go.cr/ws_faro/p0-portada/titulo.jpg"
      }
 ]

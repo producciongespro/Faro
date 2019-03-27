@@ -120,22 +120,13 @@ class App extends Component {
  
 
 render() {    
-    return (
-      <div>
-          <div className="contenedor">    
-            <div className="visor" >
-                {this.state.currentPage}
-            </div>        
-          </div>
-              {this.state.modalActive? this.state.modalComponent : "" }        
-       </div>
+    return (      
+      <div className="visor" >
+            {this.state.currentPage}                          
+            {this.state.modalActive? this.state.modalComponent : "" }        
+      </div>
     );
   }
-
-
-
-
-
 
 }
 

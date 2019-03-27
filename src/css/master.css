@@ -2,11 +2,6 @@ body {
     background-color: #000;
 }
 
-.contenedor {
-    text-align: center;
-}
-
-
 .visor {
     box-sizing: border-box;
     background-color: #fff;
@@ -14,8 +9,16 @@ body {
     margin-bottom: 4px;
     padding: 1%;
     margin-top: 0%;
+    background-image: url("https://recursos.mep.go.cr/ws_faro/generales/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .modal {
     display: block;
 }
+
+.botones-portada {    
+    cursor: pointer;    
+}
+
