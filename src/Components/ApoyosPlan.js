@@ -17,7 +17,7 @@ class ApoyosPlan extends Component {
     return (
       <div>  
           <div className="row" >
-              <div className="col-6">
+              <div className="col-4">
 
               <div className="row mt-2">
                   <div className="col-12">
@@ -25,8 +25,8 @@ class ApoyosPlan extends Component {
                   </div>
               </div>
 
-              <div className="row mt-5 ml-5" >
-                  <div className="col-12 text-justify">
+              <div className="row row-text" >
+                  <div className="col-12 text-justify  div-texto">
                       {textos[0].Lorem}
                   </div>
               </div>
@@ -36,33 +36,33 @@ class ApoyosPlan extends Component {
               </div>
 
               
-              <div className="col-6">
+              <div className="col-8">
 
                   <div className="row mt-5">
                     <div className="col-12">
-                    <img  className="img-fluid"  alt="Apoyos para el planeamiento" src={images[0].ApoyosPlantilla  } />
+                    <img  className="img-fluid btn"  alt="Apoyos para el planeamiento" src={images[0].ApoyosPlantilla  } />
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="col-12">
-                      <img  className="img-fluid"  alt="Apoyos para el planeamiento" src={images[0].ApoyosGuia  } />
+                      <img  className="img-fluid btn"  alt="Apoyos para el planeamiento" src={images[0].ApoyosGuia  } />
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="col-12">
-                      <img  className="img-fluid"  alt="Apoyos para el planeamiento" src={images[0].ApoyosEjemplo  } />
+                      <img  className="img-fluid btn"  alt="Apoyos para el planeamiento" src={images[0].ApoyosEjemplo  } />
                     </div>
                   </div>
 
 
               </div>
           </div>
-          <hr/>
-          <div className="row">
+          <br />
+          <div className="row row-btnsalir">
               <div className="col-12 text-right">
-                  <button data-tar="Home" className="btn btn-success"  onClick={this.props.changePage} > SALIR </button>
+                  <img   data-tar="Home" onClick={this.props.changePage} className="img-fluid btn"  alt="Salir" src={images[0].BtnSalir } />                  
               </div>
           </div>
       </div>

@@ -22,3 +22,26 @@ body {
     cursor: pointer;    
 }
 
+
+.row-text {
+    font-size: 1.5vw;
+    background-image: url("https://recursos.mep.go.cr/ws_faro/generales/caja_descripcion.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 40%;
+    margin-left: 5%;
+}
+
+
+.row-btnsalir {
+    margin-top: 10%;
+    /*background-color: aqua;*/
+}
+
+.img-flotante {
+    position: absolute;
+    top: -1%;
+    left: 34%;
+}
