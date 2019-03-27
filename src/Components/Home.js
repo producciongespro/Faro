@@ -11,13 +11,13 @@ class Home extends Component {
       <div className="row">
       <div className="col-1"></div>
             <div className="col-10 ">
-              <img id="principal" className="" src={images[0].Maestra  } alt="maestra" />
-              <img id="gafas" className="cliqueables" src={images[0].Gafas  } alt="Apoyos para el clima del aula" />
-              <img   data-tar="DocsOficiales"  onClick={this.props.changePage}   id="tablet" className="cliqueables2" src={images[0].Tablet  } alt="Documentos oficiales" />
-              <img id="lapicero" className="cliqueables" src={images[0].Lapicero  } alt="Apoyos para la evaluación" />
-              <img id="laptop" className="cliqueables" src={images[0].Laptop  } alt="Material didáctico" />
-              <img id="celular" className="cliqueables2" src={images[0].Celular  } alt="Actualización profesional" />
-              <img id="bolso" className="cliqueables" src={images[0].Bolso  } alt="Apoyos para el planeamiento" />
+              <img alt="maestra"  id="principal" src={images[0].Maestra  } />
+              <img alt="Apoyos para el clima del aula"   data-tar="ApoyoClimaAula"  onClick={this.props.changePage}      id="gafas" className="cliqueables" src={images[0].Gafas  }  />
+              <img alt="Documentos oficiales"  id="tablet"  data-tar="DocsOficiales"  onClick={this.props.changePage}    className="cliqueables2" src={images[0].Tablet  } />
+              <img alt="Apoyos para la evaluación" id="lapicero"  data-tar="ApoyosEvaluacion"  onClick={this.props.changePage}    className="cliqueables" src={images[0].Lapicero  }  />
+              <img alt="Recursos didáctico" id="laptop" data-tar="RecursosDidacticos"  onClick={this.props.changePage}    className="cliqueables" src={images[0].Laptop  }  />
+              <img alt="Desarrollo profesional"  id="celular" data-tar="DesarrolloProf" onClick={this.props.changePage}  className="cliqueables2" src={images[0].Celular  } />
+              <img alt="Apoyos para el planeamiento" id="bolso" data-tar="ApoyosPlan"  onClick={this.props.changePage}  className="cliqueables" src={images[0].Bolso  }  />
             </div>
       <div className="col-1"></div>
     </div>

@@ -141,7 +141,10 @@ left: 0px;
     cursor:pointer;
   }
 }
-.cliqueables {opacity: 0;}
+.cliqueables {
+  opacity: 0;
+  cursor: pointer;
+}
 .cliqueables:hover {opacity: 1.0;}
 /* .cliqueables:hover {filter: opacity(.5);}} */
 .cliqueables2:hover {
