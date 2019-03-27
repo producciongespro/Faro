@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import textos from "../data/textos.json"
+import textos from "../data/textos.json";
+import images from "../data/images.json";
+
 
 
 
@@ -15,11 +17,11 @@ class ApoyosPlan extends Component {
     return (
       <div>  
           <div className="row" >
-              <div className="col-4">
+              <div className="col-6">
 
               <div className="row mt-2">
                   <div className="col-12">
-                      <h1>Apoyos para el planeamiento</h1>
+                    <img  className="img-fluid"  alt="Apoyos para el planeamiento" src={images[0].TituloApoyos  } />
                   </div>
               </div>
 
@@ -32,26 +34,25 @@ class ApoyosPlan extends Component {
               
 
               </div>
-              <div className="col-8">
+
+              
+              <div className="col-6">
 
                   <div className="row mt-5">
                     <div className="col-12">
-                        <h3>PLANTILLA</h3>
-                        <h6>de planeamiento</h6>
+                    <img  className="img-fluid"  alt="Apoyos para el planeamiento" src={images[0].ApoyosPlantilla  } />
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="col-12">
-                        <h3>TABLA GUÍA</h3>
-                        <h6>de habilidaes e indicadores</h6>
+                      <img  className="img-fluid"  alt="Apoyos para el planeamiento" src={images[0].ApoyosGuia  } />
                     </div>
                   </div>
 
                   <div className="row">
                     <div className="col-12">
-                        <h3>EJEMPLOS</h3>
-                        <h6>para la mediación</h6>
+                      <img  className="img-fluid"  alt="Apoyos para el planeamiento" src={images[0].ApoyosEjemplo  } />
                     </div>
                   </div>
 

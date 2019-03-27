@@ -16,6 +16,13 @@
       "Lapicero" : "https://recursos.mep.go.cr/ws_faro/p01-home/lapicero.png",
       "Laptop" : "https://recursos.mep.go.cr/ws_faro/p01-home/laptop.gif",
       "Maestra" : "https://recursos.mep.go.cr/ws_faro/p01-home/maestraMenu.png",
-      "Tablet" : "https://recursos.mep.go.cr/ws_faro/p01-home/tablet.png"
+      "Tablet" : "https://recursos.mep.go.cr/ws_faro/p01-home/tablet.png",
+      "TituloApoyos" : "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/titulo.png",
+      "ApoyosEjemplo" : "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/img_ejemplos.png",
+      "ApoyosGuia" : "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/img_guia.png",
+      "ApoyosPlantilla" : "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/img_plantilla.png"
+
+
+
      }
 ]
