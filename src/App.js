@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "./css/master.css";
+import "./css/home.css";
+
 
 import images from "./data/images.json";
 //Componentes

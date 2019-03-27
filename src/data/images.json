@@ -9,6 +9,13 @@
       "BtnBienvenida" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_bienvenida.png",
       "BtnIndicaciones" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_indicaciones.png",
       "BtnIngresar" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_ingresar.png",
-      "TituloPortada" : "https://recursos.mep.go.cr/ws_faro/p0-portada/titulo.jpg"
+      "TituloPortada" : "https://recursos.mep.go.cr/ws_faro/p0-portada/titulo.jpg",
+      "Bolso" : "https://recursos.mep.go.cr/ws_faro/p01-home/bolso.png", 
+      "Celular" : "https://recursos.mep.go.cr/ws_faro/p01-home/celular.png",
+      "Gafas" : "https://recursos.mep.go.cr/ws_faro/p01-home/gafas.png",
+      "Lapicero" : "https://recursos.mep.go.cr/ws_faro/p01-home/lapicero.png",
+      "Laptop" : "https://recursos.mep.go.cr/ws_faro/p01-home/laptop.gif",
+      "Maestra" : "https://recursos.mep.go.cr/ws_faro/p01-home/maestraMenu.jpg",
+      "Tablet" : "https://recursos.mep.go.cr/ws_faro/p01-home/tablet.png"
      }
 ]
