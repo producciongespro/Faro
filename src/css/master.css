@@ -89,6 +89,11 @@ body {
     margin-left: 15%;
   }
 
+  .descripciones3{
+    margin-top: 15%;
+    margin-left: 15%;
+  }
+
   .centro{
     text-align: center;
     z-index: 3;
@@ -180,6 +185,21 @@ body {
     width: 23vw;
 }
 
+#textoDescripcion3{
+    font-size: 1.3vw;
+    margin-left: 17%;
+    position: absolute;
+    margin-top: -53%;
+    width: 25vw;
+}
+
+#botones-aula{
+  margin-top: 15%;
+}
+
+.derecha{
+  float: right;
+}
   #salir{
   margin-top: 10%;
   }
