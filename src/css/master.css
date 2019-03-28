@@ -18,8 +18,8 @@ body {
     display: block;
 }
 
-.botones-portada {    
-    cursor: pointer;    
+.botones-portada {
+    cursor: pointer;
 }
 
 
@@ -42,27 +42,40 @@ body {
 
 .img-flotante {
     position: absolute;
-    top: 28%;
-    left: 51%;
+    margin-top: 28%;
+    margin-left: 102%;
 }
 
 .row-celdas {
     margin-top: 36%;
 }
 
+.botones-grandes{
+   text-align: center;
+}
+
 #imgRubricas {
-    float: left;
+  margin-top: -37%;
+  margin-left: 7%;
 }
 
 #imgProceso {
-    float: right;
+  margin-left: -13%;
+  margin-top: -23%;
 }
+
+#imgLogro{
+  margin-top: -42%;
+  margin-left: -26%;
+}
+
 .col-sin-padding {
     padding: 0;
-
 }
 
-
+#arriba{
+  z-index: 1;
+}
 
 /* Master 2 */
 
@@ -70,82 +83,87 @@ body {
     margin-top: -5%;
     margin-left: -5%;
   }
-  
+
   .descripciones{
     margin-top: 28%;
     margin-left: 15%;
   }
-  
+
   .centro{
     text-align: center;
     z-index: 3;
   }
-  
+
   .ladoIzq, .ladoDer{
     z-index: 2;
   }
-  
+
   #politica{
     margin-left: 70%;
     margin-top: 20%;
       z-index: 1;
   }
-  
+
   #estudiante{
     margin-left: -66%;
     margin-top: 26%;
     z-index: 2;
   }
-  
+
   #perfil{
     margin-top: 1%;
     z-index: 3;
   }
-  
+
   #programas{
     margin-top: 2%;
     margin-left: 15%;
   }
-  
+
   #transformacion{
     margin-top: -30%;
   }
-  
+
   #faro{
     margin-left: 70%;
     margin-top: -21%;
   }
-  
+
   #fundamentos{
   margin-top: -5%;
   }
-  
+
   #reglamento{
     margin-left: -63%;
     margin-top: -21%;
   }
-  
+
   #prescolar{
     margin-top: 25%;
    float: right;
   }
-  
+
   #primaria{
-    margin-top: 35%; 
+    margin-top: 35%;
   }
-  
+
   #secundaria{
     margin-top: 45%;
   }
-  
+
+  .descripciones2{
+    margin-top: 9%;
+    margin-left: 15%;
+  }
+
   .pie{
   text-align: right;
   }
-  
+
   .fondo{
     z-index: 0;
   }
-  
+
   #textoDescripcion{
     font-size: 1.3vw;
     margin-left: 18%;
@@ -153,8 +171,15 @@ body {
     margin-top: -62%;
     width: 72%;
   }
-  
-  
+
+#textoDescripcion2{
+    font-size: 1.3vw;
+    margin-left: 17%;
+    position: absolute;
+    margin-top: -51%;
+    width: 23vw;
+}
+
   #salir{
   margin-top: 10%;
   }
@@ -167,12 +192,12 @@ body {
   .hover11 figure:hover img {
       opacity: .5;
   }
-  
-  
+
+
   .hover12 figure:hover img {
               transform:scale(1.2);
               -ms-transform:scale(1.2); /* IE 9 */
               -moz-transform:scale(1.2); /* Firefox */
-              -webkit-transform:scale(1.2); /* Safari and Chrome */ 
+              -webkit-transform:scale(1.2); /* Safari and Chrome */
               -o-transform:scale(1.2); /* Opera */
           }
