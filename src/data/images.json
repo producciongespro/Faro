@@ -9,13 +9,25 @@
       "BtnBienvenida" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_bienvenida.png",
       "BtnIndicaciones" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_indicaciones.png",
       "BtnIngresar" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_ingresar.png",
+      "BtnSalir" : "https://recursos.mep.go.cr/ws_faro/generales/btn_salir.png",
       "TituloPortada" : "https://recursos.mep.go.cr/ws_faro/p0-portada/titulo.jpg",
       "Bolso" : "https://recursos.mep.go.cr/ws_faro/p01-home/bolso.png", 
       "Celular" : "https://recursos.mep.go.cr/ws_faro/p01-home/celular.png",
       "Gafas" : "https://recursos.mep.go.cr/ws_faro/p01-home/gafas.png",
       "Lapicero" : "https://recursos.mep.go.cr/ws_faro/p01-home/lapicero.png",
       "Laptop" : "https://recursos.mep.go.cr/ws_faro/p01-home/laptop.gif",
-      "Maestra" : "https://recursos.mep.go.cr/ws_faro/p01-home/maestraMenu.jpg",
-      "Tablet" : "https://recursos.mep.go.cr/ws_faro/p01-home/tablet.png"
+      "Maestra" : "https://recursos.mep.go.cr/ws_faro/p01-home/maestraMenu.png",
+      "Tablet" : "https://recursos.mep.go.cr/ws_faro/p01-home/tablet.png",
+      "TituloApoyos" : "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/titulo.png",
+      "ApoyosEjemplo" : "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/img_ejemplos.png",
+      "ApoyosGuia" : "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/img_guia.png",
+      "ApoyosPlantilla" : "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/img_plantilla.png",
+      "EvaluacionEjemplos" : "https://recursos.mep.go.cr/ws_faro/p04-apoyos-evaluacion/evaluacion_ejemplos.png",
+      "EvaluacionEsferas" : "https://recursos.mep.go.cr/ws_faro/p04-apoyos-evaluacion/evaluacion_esfereas.png",
+      "EvaluacionFicha" : "https://recursos.mep.go.cr/ws_faro/p04-apoyos-evaluacion/evaluacion_ficha.png",
+      "EvaluacionLogros" : "https://recursos.mep.go.cr/ws_faro/p04-apoyos-evaluacion/evaluacion_logros.png",
+      "EvaluacionProceso" : "https://recursos.mep.go.cr/ws_faro/p04-apoyos-evaluacion/evaluacion_proceso.png",
+      "EvaluacionLRubricas" : "https://recursos.mep.go.cr/ws_faro/p04-apoyos-evaluacion/evaluacion_rubricas.png",
+      "EvaluacionTitulo" : "https://recursos.mep.go.cr/ws_faro/p04-apoyos-evaluacion/evaluacion_titulo.png"
      }
 ]

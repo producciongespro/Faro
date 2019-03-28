@@ -12,6 +12,9 @@ import Home from "./Components/Home";
 import DocsOficiales from "./Components/DocsOficiales";
 import DesarrolloProf from "./Components/DesarrolloProf";
 import ApoyosPlan from "./Components/ApoyosPlan";
+import ApoyosEvaluacion from "./Components/ApoyosEvaluacion";
+import RecursosDidacticos from "./Components/RecursosDidacticos";
+import ApoyoClimaAula from "./Components/ApoyoClimaAula";
 
 
 
@@ -67,17 +70,26 @@ class App extends Component {
       case "DocsOficiales":
         tmpComponent = <DocsOficiales  changePage={this.changePage}/> 
       break;
-      case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf  changePage={this.changePage}/> 
-      break;
       case "ApoyosPlan":
         tmpComponent = <ApoyosPlan  changePage={this.changePage}/> 
       break;
+      case "ApoyosEvaluacion":
+          tmpComponent = <ApoyosEvaluacion  changePage={this.changePage}/> 
+      break;
+      case "RecursosDidacticos":
+        tmpComponent = <RecursosDidacticos  changePage={this.changePage}/> 
+      break;
+      case "ApoyoClimaAula":
+          tmpComponent = <ApoyoClimaAula  changePage={this.changePage}/> 
+      break;
+      case "DesarrolloProf":
+        tmpComponent = <DesarrolloProf  changePage={this.changePage}/> 
+      break;
+
     
       default:
-      console.log("Opción fuera de rango");
-      
-        break;
+        console.log("Opción fuera de rango");      
+      break;
     }
     this.setState({ 
       nameCurrentPage: targetPage      
