@@ -9,15 +9,17 @@ import textos from "../data/textos.json";
 class DocsOficiales extends Component {
   render() {
     return (
-      <div>  
+    
           <div className="row">
-      <div className="col-4">
-            <img className="titulos img-fluid" src={images[0].DocsOficialesTitulo } alt="Documentos educativos oficiales" />               
-              <div id="textoDescripcion" className="row-text"  >
-                  {textos[0].tacaco  }
+      <div class="col-4">
+            <img class="titulos img-fluid" src={images[0].DocsOficialesTitulo } alt="Documentos educativos oficiales" />
+               <img class="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
+              <div id="textoDescripcion">
+                      {textos[0].Tacaco  }
               </div>
-              <img id="programas" className="img-fluid" src= {images[0].GeneralProgramasEstudio }  alt="Descripción" />
+              <img id="programas" class="img-fluid btn" src={images[0].GeneralProgramasEstudio }  alt="Descripción" />
       </div>
+
       <div className="col-8" >
         <div className="row">
             <div className="col-4 hover11 ladoIzq">
@@ -66,7 +68,7 @@ class DocsOficiales extends Component {
       </div>
 
     </div>
-      </div>
+    
     );
   }
 }
