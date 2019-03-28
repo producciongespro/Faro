@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import images from "../data/images.json";
+import textos from "../data/textos.json";
 
 
 
@@ -8,14 +9,18 @@ class RecursosDidacticos extends Component {
   render() {
     return (
       <div className="row">
+
+
       <div className="col-4">
-            <img className="titulos img-fluid" src="images/tituloRecursos.png" alt="Documentos educativos oficiales" />
-               <img className="descripciones img-fluid" src="images/descripcion.png" alt="Descripción" />
+            <img className="titulos img-fluid" src={images[0].RecDidacticosTitulo} alt="Documentos educativos oficiales" />
+               <img className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" /> 
               <div id="textoDescripcion">
-                El tacaco es una planta trepadora endémica de Costa Rica, familia de las cucurbitáceas, y que produce un fruto comestible verde, ovoide, de unos siete centímetros de longitud.​ La parte comestible es una pulpa contenida en una bolsa fibrosa dentro de la cual hay una pepita aplastada y amarga que se extrae previamente.
+                {textos[0].Tacaco  }                
               </div>
-              <img id="programas" className="img-fluid" src ={images[0].GeneralEducatico } alt="Educatico" />
+              <img id="programas" className="img-fluid btn" src={images[0].GeneralEducatico } alt="Educatico" />
       </div>
+
+
       <div className="col-8">
         <div className="row">
             <div className="col-4 hover12 ladoIzq">

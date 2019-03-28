@@ -2,6 +2,7 @@
     {  
 		"GeneralProgramasEstudio" : "https://recursos.mep.go.cr/ws_faro/generales/btn_programas_estudio.png",
 		"GeneralEducatico" : "https://recursos.mep.go.cr/ws_faro/generales/educatico.png",
+		"GeneralCajaDescripcion" : "https://recursos.mep.go.cr/ws_faro/generales/caja_descripcion.png",
       "logoFaro" : "https://recursos.mep.go.cr/ws_faro/logos/logo_faro.jpg",
       "logoMep" : "https://recursos.mep.go.cr/ws_faro/logos/logo_mep.png",
       "Portada" : "https://recursos.mep.go.cr/ws_faro/portada.jpg", 
