@@ -8,7 +8,7 @@ import textos from "../data/textos";
 class Portada extends Component {
   render() {
     return (
-        <div className="container">
+        <div className="">
         <div className="row">
             <div className="col-12 text-center">
                 <img src={images[0].TituloPortada   } className="img-fluid" alt="Título portada"/>

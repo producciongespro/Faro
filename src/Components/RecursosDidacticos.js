@@ -41,7 +41,7 @@ class RecursosDidacticos extends Component {
         </div>
       
           <div className="col-12 pie">
-            <img data-tar="Home" className="btn"  onClick={this.props.changePage}  className="btn img-fluid" id="salir" src= {images[0].BtnSalir  }   alt="Salir" />
+            <img data-tar="Home" onClick={this.props.changePage}  className="btn img-fluid" id="salir" src= {images[0].BtnSalir  }   alt="Salir" />
           </div>
         </div>
       </div>

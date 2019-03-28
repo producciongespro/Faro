@@ -12,7 +12,9 @@ class ApoyoClimaAula extends Component {
           <div className="col-4">
             <div className="row">
               <div className="col-12">
-                <img alt="Apoyos para el planeamiento" src={images[0].TituloApoyos  } />
+                
+                <img alt="Apoyos para el clima" src={/* images[0].ClimaTitulo */ 1 +1   } />
+
               </div>
             </div>
           </div>

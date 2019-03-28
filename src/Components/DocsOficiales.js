@@ -62,7 +62,7 @@ class DocsOficiales extends Component {
             </figure>
           </div>
           <div className="col-12 pie">
-            <img  data-tar="Home" className="btn"  onClick={this.props.changePage}   className="btn img-fluid"  src= {images[0].BtnSalir }  alt="Salir" />
+            <img  data-tar="Home" onClick={this.props.changePage}   className="btn img-fluid"  src= {images[0].BtnSalir }  alt="Salir" />
           </div>
         </div>
       </div>
