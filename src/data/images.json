@@ -1,5 +1,7 @@
 [
-    {      
+    {  
+		"GeneralProgramasEstudio" : "https://recursos.mep.go.cr/ws_faro/generales/btn_programas_estudio.png",
+		"GeneralEducatico" : "https://recursos.mep.go.cr/ws_faro/generales/educatico.png",
       "logoFaro" : "https://recursos.mep.go.cr/ws_faro/logos/logo_faro.jpg",
       "logoMep" : "https://recursos.mep.go.cr/ws_faro/logos/logo_mep.png",
       "Portada" : "https://recursos.mep.go.cr/ws_faro/portada.jpg", 
@@ -36,6 +38,10 @@
       "DocsOficialesPoliticaEducativa" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/politica_educativa.png",
       "DocsOficialesReglamento" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/reglamento.png",
       "DocsOficialesTitulo" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/titulo_docs_oficiales.png",
-      "DocsOficialesTransformacionCurricular": "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/transformacion_curricular.png"
+      "DocsOficialesTransformacionCurricular": "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/transformacion_curricular.png",
+	  "RecDidacticosPreescolar" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/preescolar.png",
+	  "RecDidacticosPrimaria" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/primaria.png",
+	  "RecDidacticosSecundaria" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/secundaria.png",
+	  "RecDidacticosTitulo" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/titulo.png"	    
      }
 ]
