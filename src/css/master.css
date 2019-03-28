@@ -12,6 +12,7 @@ body {
     background-image: url("https://recursos.mep.go.cr/ws_faro/generales/fondo.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    z-index: -5;
 }
 
 .modal {
@@ -22,3 +23,87 @@ body {
     cursor: pointer;    
 }
 
+.titulos{
+  margin-top: -5%;
+  margin-left: -5%;
+}
+
+.descripciones{
+  margin-top: 28%;
+  margin-left: 15%;
+}
+
+.centro{
+  text-align: center;
+  z-index: 3;
+}
+
+.ladoIzq, .ladoDer{
+  z-index: 2;
+}
+
+#politica{
+  margin-left: 70%;
+  margin-top: 20%;
+    z-index: 1;
+}
+
+#estudiante{
+  margin-left: -66%;
+  margin-top: 26%;
+  z-index: 2;
+}
+
+#perfil{
+  margin-top: 1%;
+  z-index: 3;
+}
+
+#programas{
+  margin-top: 2%;
+  margin-left: 15%;
+}
+
+#transformacion{
+  margin-top: -30%;
+}
+
+#faro{
+  margin-left: 70%;
+  margin-top: -21%;
+}
+
+#fundamentos{
+margin-top: -5%;
+}
+
+#reglamento{
+  margin-left: -63%;
+  margin-top: -21%;
+}
+
+.pie{
+text-align: right;
+}
+
+.fondo{
+  z-index: 0;
+}
+
+#textoDescripcion{
+  font-size: 1.3vw;
+  margin-left: 18%;
+  position: absolute;
+  margin-top: -62%;
+  width: 72%;
+}
+
+/* Opacity #1 */
+.hover11 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover11 figure:hover img {
+	opacity: .5;
+}
