@@ -42,6 +42,22 @@ body {
 
 .img-flotante {
     position: absolute;
-    top: -1%;
-    left: 34%;
+    top: 28%;
+    left: 51%;
+}
+
+.row-celdas {
+    margin-top: 36%;
+}
+
+#imgRubricas {
+    float: left;
+}
+
+#imgProceso {
+    float: right;
+}
+.col-sin-padding {
+    padding: 0;
+
 }
