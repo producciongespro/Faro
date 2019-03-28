@@ -82,6 +82,19 @@ margin-top: -5%;
   margin-top: -21%;
 }
 
+#prescolar{
+  margin-top: 25%;
+ float: right;
+}
+
+#primaria{
+  margin-top: 35%; 
+}
+
+#secundaria{
+  margin-top: 45%;
+}
+
 .pie{
 text-align: right;
 }
@@ -98,6 +111,10 @@ text-align: right;
   width: 72%;
 }
 
+
+#salir{
+margin-top: 10%;
+}
 /* Opacity #1 */
 .hover11 figure img {
 	opacity: 1;
@@ -107,3 +124,12 @@ text-align: right;
 .hover11 figure:hover img {
 	opacity: .5;
 }
+
+
+.hover12 figure:hover img {
+            transform:scale(1.2);
+            -ms-transform:scale(1.2); // IE 9 
+            -moz-transform:scale(1.2); // Firefox 
+            -webkit-transform:scale(1.2); // Safari and Chrome 
+            -o-transform:scale(1.2); // Opera
+        }
