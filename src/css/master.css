@@ -168,6 +168,9 @@ body {
   .fondo{
     z-index: 0;
   }
+  .modal-body {
+    height: 600px;
+  }
 
   #textoDescripcion{
     font-size: 1.3vw;

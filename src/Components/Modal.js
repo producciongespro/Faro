@@ -34,7 +34,7 @@ class Modal extends Component {
       break;
       case "pdf":
       console.log("pdf");      
-        tmpContent = <embed  src={this.props.content } type='application/pdf' width='100%' height='100%'></embed>                  
+        tmpContent = <embed  src={this.props.content+"#toolbar=1" }    type='application/pdf' width='100%' height='100%'></embed>                  
       break;
     
       default:
@@ -58,7 +58,7 @@ class Modal extends Component {
     return (      
       <div>
     <div className="modal fade show" id="modalScreen"   >
-        <div className="modal-dialog" role="document">
+        <div className="modal-dialog modal-lg" role="document">
           <div className="modal-content">
 
         <div className="col-12 text-right">
