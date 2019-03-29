@@ -53,6 +53,7 @@ class App extends Component {
   }
 
 
+ 
 
   changePage (e) { 
     e.preventDefault();     
@@ -68,22 +69,22 @@ class App extends Component {
         tmpComponent = <Home  changePage={this.changePage}/> 
       break;
       case "DocsOficiales":
-        tmpComponent = <DocsOficiales  changePage={this.changePage}/> 
+        tmpComponent = <DocsOficiales  showModal={this.showModal}     changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
-        tmpComponent = <ApoyosPlan  changePage={this.changePage}/> 
+        tmpComponent = <ApoyosPlan  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "ApoyosEvaluacion":
-          tmpComponent = <ApoyosEvaluacion  changePage={this.changePage}/> 
+          tmpComponent = <ApoyosEvaluacion  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "RecursosDidacticos":
-        tmpComponent = <RecursosDidacticos  changePage={this.changePage}/> 
+        tmpComponent = <RecursosDidacticos  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "ApoyoClimaAula":
-          tmpComponent = <ApoyoClimaAula  changePage={this.changePage}/> 
+          tmpComponent = <ApoyoClimaAula  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf  changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf  showModal={this.showModal} changePage={this.changePage}/> 
       break;
 
     

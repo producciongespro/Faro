@@ -43,6 +43,14 @@
 	  "RecDidacticosPreescolar" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/preescolar.png",
 	  "RecDidacticosPrimaria" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/primaria.png",
 	  "RecDidacticosSecundaria" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/secundaria.png",
-	  "RecDidacticosTitulo" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/titulo.png"	    
+    "RecDidacticosTitulo" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/titulo.png",
+    "ApoyoClimaAulaTitulo" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/apoyo_clima_aula_titulo.png",
+    "ApoyoClimaAulaEmociones" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/emociones.png",
+    "ApoyoClimaAulaFicha" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/ficha.png",
+    "ApoyoClimaAulaInteracciones" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/interacciones.png",
+    "ApoyoClimaAulaIntercultural" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/interculturalidad.png",
+    "ApoyoClimaAulaPautas" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/pautas.png",
+    "ApoyoClimaAulaRecomendaciones" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/recomendaciones.png",
+    "ApoyoClimaAulaInclusion" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/inclusion.png"
      }
 ]

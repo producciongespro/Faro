@@ -17,6 +17,9 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+a {
+  text-decoration: none;
+}
 
 .modal {
     display: block;
@@ -171,6 +174,9 @@ body {
 
   .fondo{
     z-index: 0;
+  }
+  .modal-body {
+    height: 600px;
   }
 
   .botones-inferiores{
