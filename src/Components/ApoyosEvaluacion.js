@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import images from "../data/images.json";
 import textos from "../data/textos.json";
+import dsPdfs from "../data/pdf.json";
+import dsLinks from "../data/links.json";
+
+var pdfs = dsPdfs[0];
+//links = dsLinks[0];
 
 
 
@@ -31,12 +36,12 @@ class ApoyosEvaluacion extends Component {
                     <div className="row row-celdas">
                       <div id="arriba" className="col-4 hover11 col-sin-padding">
                         <figure>
-                          <img id="imgRubricas" className="img-fluid botones-portada btn" alt="Rúbricas"    src={images[0].EvaluacionLRubricas}  />
+                          <img id="imgRubricas" className="img-fluid btn" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal} alt="Rúbricas"    src={images[0].EvaluacionLRubricas}  />
                         </figure>
                       </div>
                       <div  className="col-4 hover11 col-sin-padding"  >
                       <figure>
-                        <img id="imgProceso" className="img-fluid botones-portada btn" alt="Proceso" src={images[0].EvaluacionProceso}  />
+                        <img id="imgProceso" className="img-fluid btn" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal} alt="Proceso" src={images[0].EvaluacionProceso}  />
                       </figure>
                       </div>
                     </div>
@@ -47,7 +52,7 @@ class ApoyosEvaluacion extends Component {
                       </div>
                       <div className="col-4 hover11 col-sin-padding">
                       <figure>
-                        <img id="imgLogro" className="img-fluid botones-portada btn" alt="Logros"  src={images[0].EvaluacionLogros} />
+                        <img id="imgLogro" className="img-fluid  btn" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal} alt="Logros"  src={images[0].EvaluacionLogros} />
                       </figure>
                       </div>
                     </div>
@@ -58,19 +63,22 @@ class ApoyosEvaluacion extends Component {
   <div className="row botones-grandes">
     <div  className="col-6 hover12"  >
       <figure>
-        <img className="botones-portada img-fluid" id="" src={images[0].EvaluacionFicha} alt="Ficha Conceptual" />
+        <img className="btn img-fluid btn"  src={images[0].EvaluacionFicha}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal} alt="Ficha Conceptual" />
     </figure>
     </div>
     <div className="col-6 hover12" >
       <figure>
-        <img className="botones-portada img-fluid" id="" src={images[0].EvaluacionEjemplos} alt="Ejemplos" />
+        <img className="btn img-fluid" id="" src={images[0].EvaluacionEjemplos}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal} alt="Ejemplos de itemes para pruebas" />
       </figure>
     </div>
+    <div className="col-12 text-right"  >
+        <img data-tar="Home" onClick={this.props.changePage} className="btn img-fluid" id="" src={images[0].BtnSalir } alt="Salir" />  
+    </div>
+
+
   </div>
   
-      <div className="col-12 text-right"  >
-        <img data-tar="Home" onClick={this.props.changePage} className="botones-portada img-fluid" id="salir" src={images[0].BtnSalir } alt="Salir" />  
-    </div>
+    
   </div>
 
     );

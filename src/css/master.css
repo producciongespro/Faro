@@ -13,6 +13,9 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+a {
+  text-decoration: none;
+}
 
 .modal {
     display: block;
