@@ -32,6 +32,10 @@ class Modal extends Component {
       console.log("audio");      
         tmpContent =  <audio controls  autoPlay src={this.props.content}></audio>                   
       break;
+      case "pdf":
+      console.log("pdf");      
+        tmpContent = <embed  src={this.props.content } type='application/pdf' width='100%' height='100%'></embed>                  
+      break;
     
       default:
         console.log("Opcion fuera de rango en modal");        

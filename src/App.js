@@ -68,7 +68,7 @@ class App extends Component {
         tmpComponent = <Home  changePage={this.changePage}/> 
       break;
       case "DocsOficiales":
-        tmpComponent = <DocsOficiales  changePage={this.changePage}/> 
+        tmpComponent = <DocsOficiales  showModal={this.showModal}     changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
         tmpComponent = <ApoyosPlan  changePage={this.changePage}/> 

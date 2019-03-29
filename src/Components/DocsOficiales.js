@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import images from "../data/images.json";
 import textos from "../data/textos.json";
+import pdfs from "../data/pdf.json"
 
 
 
@@ -11,20 +12,20 @@ class DocsOficiales extends Component {
     return (
     
           <div className="row">
-      <div class="col-4">
-            <img class="titulos img-fluid" src={images[0].DocsOficialesTitulo } alt="Documentos educativos oficiales" />
-               <img class="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
+      <div className="col-4">
+            <img className="titulos img-fluid" src={images[0].DocsOficialesTitulo } alt="Documentos educativos oficiales" />
+               <img className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
               <div id="textoDescripcion">
                       {textos[0].Tacaco  }
               </div>
-              <img id="programas" class="img-fluid btn" src={images[0].GeneralProgramasEstudio }  alt="Descripción" />
+              <img id="programas" className="img-fluid btn" src={images[0].GeneralProgramasEstudio }  alt="Descripción" />
       </div>
 
       <div className="col-8" >
         <div className="row">
             <div className="col-4 hover11 ladoIzq">
               <figure>
-                <img className="botones-portada img-fluid" id="politica" src=  {images[0].DocsOficialesPoliticaEducativa } alt="Políticas educativas" />
+                <img className="botones-portada img-fluid" id="politica" src={images[0].DocsOficialesPoliticaEducativa } data-content= {pdfs[0].Politica_educativa }  data-typecontent ="pdf"  onClick={this.props.showModal}  alt="Políticas educativas" />
               </figure>
               </div>
             <div className="col-4 hover11 centro">
