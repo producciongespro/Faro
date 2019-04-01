@@ -7,8 +7,9 @@ import images from "../data/images.json";
 class Home extends Component {
   render() {
     return (
+      <div>
 
-      <div className="row">
+<div className="row">
       <div className="col-1"></div>
             <div className="col-10 ">
               <img alt="maestra"  id="principal" src={images[0].Maestra  } />
@@ -21,6 +22,10 @@ class Home extends Component {
             </div>
       <div className="col-1"></div>
     </div>
+      <div className="row">
+      </div>
+
+      </div>
     );
   }
 }
