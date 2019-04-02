@@ -63,7 +63,7 @@ class DocsOficiales extends Component {
         </div>
         </div>
   </div>
-
+<br/>
   <div className="row">
 			<div className="col-12 pie">
 				<img className="botones-portada hvr-pop img-fluid" data-tar="Home" onClick={this.props.changePage} src={img.BtnSalir } alt="Salir" />

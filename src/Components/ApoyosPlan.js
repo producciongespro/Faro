@@ -49,6 +49,7 @@ class ApoyosPlan extends Component {
       </div>
         </div>
   </div>
+  <br/><br/>
       <div className="row">
 			<div className="col-12 pie">
 				<img data-tar="Home" onClick={this.props.changePage} className="img-fluid btn"  alt="Salir" src={images[0].BtnSalir } />
