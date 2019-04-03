@@ -22,7 +22,7 @@ class ApoyoClimaAula extends Component {
                 {textos[0].Tacaco}
               </div>
               <a href={links.ProgramasEstudio} target="_blank" rel="noopener noreferrer"  >
-                  <img id="programas" className="img-fluid btn" src={images[0].GeneralProgramasEstudio } alt="Programas de estudio" />
+                  <img id="programas" className="img-fluid btn hvr-wobble-bottom" src={images[0].GeneralProgramasEstudio } alt="Programas de estudio" />
               </a>
       </div>
       <div  className="col-7">
@@ -70,7 +70,7 @@ class ApoyoClimaAula extends Component {
   </div>
       <div className="row">
           <div className="col-12 pie">
-            <img data-tar="Home" onClick={this.props.changePage}  className="botones-portada img-fluid" id="" src={images[0].BtnSalir } alt="Salir" />
+            <img data-tar="Home" onClick={this.props.changePage}  className="botones-portada img-fluid hvr-pop" id="" src={images[0].BtnSalir } alt="Salir" />
       </div>
         </div>
       </div>

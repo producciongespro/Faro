@@ -21,7 +21,7 @@ class DocsOficiales extends Component {
                       {textos[0].Tacaco  }
               </div>
               <a href={links.ProgramasEstudio} target="_blank" rel="noopener noreferrer"  >
-                  <img id="programas" className="img-fluid btn" src={images[0].GeneralProgramasEstudio }  alt="Programas de estudio" />
+                  <img id="programas" className="img-fluid btn hvr-wobble-bottom" src={images[0].GeneralProgramasEstudio }  alt="Programas de estudio" />
               </a>
       </div>
 
@@ -67,7 +67,7 @@ class DocsOficiales extends Component {
             </figure>
           </div>
           <div className="col-12 pie">
-            <img  data-tar="Home" onClick={this.props.changePage}   className="btn img-fluid"  src= {images[0].BtnSalir }  alt="Salir" />
+            <img  data-tar="Home" onClick={this.props.changePage}   className="btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
           </div>
         </div>
       </div>

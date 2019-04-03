@@ -72,7 +72,7 @@ class ApoyosEvaluacion extends Component {
       </figure>
     </div>
     <div className="col-12 text-right"  >
-        <img data-tar="Home" onClick={this.props.changePage} className="btn img-fluid" id="" src={images[0].BtnSalir } alt="Salir" />  
+        <img data-tar="Home" onClick={this.props.changePage} className="btn img-fluid hvr-pop" id="" src={images[0].BtnSalir } alt="Salir" />  
     </div>
 
 

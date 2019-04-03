@@ -23,7 +23,7 @@ class RecursosDidacticos extends Component {
                 {textos[0].Tacaco  }                
               </div>
               <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
-                  <img id="programas" className="img-fluid btn" src={images[0].GeneralEducatico } alt="Educatico" />
+                  <img id="programas" className="img-fluid btn hvr-wobble-bottom" src={images[0].GeneralEducatico } alt="Educatico" />
               </a>
       </div>
 
@@ -48,7 +48,7 @@ class RecursosDidacticos extends Component {
         </div>
       
           <div className="col-12 pie">
-            <img data-tar="Home" onClick={this.props.changePage}  className="btn img-fluid" id="salir" src= {images[0].BtnSalir  }   alt="Salir" />
+            <img data-tar="Home" onClick={this.props.changePage}  className="btn img-fluid hvr-pop" id="salir" src= {images[0].BtnSalir  }   alt="Salir" />
           </div>
         </div>
       </div>
