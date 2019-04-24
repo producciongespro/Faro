@@ -63,10 +63,10 @@ class App extends Component {
 
     switch (targetPage) {
       case "Portada":
-        tmpComponent = <Portada  changePage={this.changePage}/> 
+        tmpComponent = <Portada showModal={this.showModal}  changePage={this.changePage}/> 
       break;
       case "Home":
-        tmpComponent = <Home  changePage={this.changePage}/> 
+        tmpComponent = <Home showModal={this.showModal}  changePage={this.changePage}/> 
       break;
       case "DocsOficiales":
         tmpComponent = <DocsOficiales  showModal={this.showModal}     changePage={this.changePage}/> 

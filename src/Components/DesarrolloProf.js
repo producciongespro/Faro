@@ -24,7 +24,9 @@ class DocsOficiales extends Component {
               <div id="textoDescripcion3">
                 El tacaco es una planta trepadora endémica de Costa Rica, familia de las cucurbitáceas, y que produce un fruto comestible verde, ovoide, de unos siete centímetros de longitud.​ La parte comestible es una pulpa contenida en una bolsa fibrosa dentro de la cual hay una pepita aplastada y amarga que se extrae previamente.
               </div>
-              <img id="programas" className="img-fluid hvr-wobble-bottom" src={img.DesarrolloEnlaceDesarrollo} alt="Enlaces desarrollo" />
+              <a href={links.IDP} target="_blank" rel="noopener noreferrer"  >
+                <img id="programas" className="img-fluid hvr-wobble-bottom" src={img.DesarrolloEnlaceDesarrollo} alt="Enlaces desarrollo" />
+              </a>
       </div>
       <div id="botones-desarrollo" className="col-7">
           <img alt="" id="fondo-desarrollo" className="img-fluid" src={img.DesarrolloFondo2} />

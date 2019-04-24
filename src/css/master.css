@@ -395,3 +395,17 @@ a {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
+
+.barra-botones{
+  margin-top: 55%;
+ }
+
+ #caja, #audio{
+   float: right;
+   margin-right: 14px;
+ }
+
+ #home{
+  margin-left: 14px;
+ }
