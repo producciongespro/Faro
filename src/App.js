@@ -38,10 +38,14 @@ class App extends Component {
     this.showModal = this.showModal.bind(this); 
     this.closeModal = this.closeModal.bind(this); 
     
+   
+ 
+  }
+
+  componentDidMount ( ) {
     setTimeout(() => {
       this.loadHome();
     }, 1000);
- 
   }
 
 
