@@ -13,7 +13,7 @@ body {
     margin-bottom: 4px;
     padding: 1%;
     margin-top: 0%;
-    background-image: url("https://recursos.mep.go.cr/ws_faro/generales/fondo.jpg");
+   /* background-image: url("https://recursos.mep.go.cr/ws_faro/generales/fondo.jpg");*/
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -32,7 +32,7 @@ a {
 
 .row-text {
     font-size: 1.5vw;
-    background-image: url("https://recursos.mep.go.cr/ws_faro/generales/caja_descripcion.png");
+    /*background-image: url("https://recursos.mep.go.cr/ws_faro/generales/caja_descripcion.png");*/
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 20px;
