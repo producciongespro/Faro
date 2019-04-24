@@ -41,11 +41,20 @@ class ApoyosPlan extends Component {
             </div>
           <div className="col-10 hover11 centro">
               <figure>
-            <img className="botones-portada derecha img-fluid" id="ejemplos" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal}  alt="Ejmeplos planeamiento" src={images[0].ApoyosEjemplo  } />
+                  <img className="botones-portada derecha img-fluid" id="ejemplos" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal}  alt="Ejmeplos planeamiento" src={images[0].ApoyosEjemplo  } />
             </figure>
           </div>
           <div className="col-2">
           </div>
+
+          <div className="col-10 hover11 centro">
+              <figure>
+                  <img className="botones-portada derecha img-fluid" id="enfoque" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal}  alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />
+            </figure>
+          </div>
+          <div className="col-2">
+          </div>
+
       </div>
         </div>
   </div>
