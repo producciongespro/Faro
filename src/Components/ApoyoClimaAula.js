@@ -20,10 +20,7 @@ class ApoyoClimaAula extends Component {
                <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion } alt="Descripción" />
               <div id="textoDescripcion3">
                 {textos[0].Tacaco}
-              </div>
-              <a href={links.ProgramasEstudio} target="_blank" rel="noopener noreferrer"  >
-                  <img id="programas" className="img-fluid btn hvr-wobble-bottom" src={images[0].GeneralProgramasEstudio } alt="Programas de estudio" />
-              </a>
+              </div>              
       </div>
       <div  className="col-7">
         <div id="botones-aula" className="row">
