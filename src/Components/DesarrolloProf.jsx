@@ -55,7 +55,7 @@ const DesarrolloProf = (props) => {
           </div>
           <div className="col-4 hover11 ">
             <figure>
-              <img className="botones-portada img-fluid" id="ficha" src={img.DesarrolloOtras}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} alt="Otras ofertas" />
+              <img className="botones-portada img-fluid" id="ficha" src={img.DesarrolloOtras}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.handlerOpenCatalog} alt="Otras ofertas" />
             </figure>
             </div>
         </div>

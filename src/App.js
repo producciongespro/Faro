@@ -15,6 +15,7 @@ import ApoyosPlan from "./Components/ApoyosPlan.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
+import Catalogo from "./Components/Catalogo.jsx";
 
 
 class App extends Component { 
@@ -77,7 +78,7 @@ class App extends Component {
           tmpComponent = <ApoyoClimaAula  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
 
     
@@ -97,6 +98,13 @@ class App extends Component {
        )
     });    
      
+  }
+
+
+  handlerOpenCatalog = () => {
+    this.setState ({
+      currentPage : <Catalogo/>
+    })
   }
 
 
