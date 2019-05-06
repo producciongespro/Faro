@@ -6,14 +6,14 @@ import "./css/home.css";
 import images from "./data/images.json";
 //Componentes
 import Modal from "./Components/Modal";
-import Splash from "./Components/Splash";
-import Portada from "./Components/Portada";
-import Home from "./Components/Home";
-import DocsOficiales from "./Components/DocsOficiales";
+import Splash from "./Components/Splash.jsx";
+import Portada from "./Components/Portada.jsx";
+import Home from "./Components/Home.jsx";
+import DocsOficiales from "./Components/DocsOficiales.jsx";
 import DesarrolloProf from "./Components/DesarrolloProf.jsx";
 import ApoyosPlan from "./Components/ApoyosPlan.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
-import RecursosDidacticos from "./Components/RecursosDidacticos";
+import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
 
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import images from "../data/images.json";
 import textos from "../data/textos.json";
 import dsPdfs from "../data/pdf.json";
@@ -8,12 +8,9 @@ var pdfs = dsPdfs[0],
 links = dsLinks[0];
 
 
-
-
-class RecursosDidacticos extends Component {
-  render() {
-    return (
-      <div className="row">
+const RecursosDidacticos = (props) => {
+  return ( 
+    <div className="row">
 
 
       <div className="col-4">
@@ -32,28 +29,27 @@ class RecursosDidacticos extends Component {
         <div className="row">
             <div className="col-4 hover12 ladoIzq">
               <figure>
-                <img className="btn img-fluid" id="prescolar" src= {images[0].RecDidacticosPreescolar  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal}  alt="Preescolar" />
+                <img className="btn img-fluid" id="prescolar" src= {images[0].RecDidacticosPreescolar  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Preescolar" />
               </figure>
               </div>
             <div className="col-4 hover12 centro">
                 <figure>
-              <img className="btn img-fluid" id="primaria" src= {images[0].RecDidacticosPrimaria  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal}   alt="Primaria" />
+              <img className="btn img-fluid" id="primaria" src= {images[0].RecDidacticosPrimaria  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}   alt="Primaria" />
               </figure>
             </div>
             <div className="col-4 hover12 ladoDer">
                 <figure>
-              <img className="btn img-fluid" id="secundaria" src= {images[0].RecDidacticosSecundaria  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={this.props.showModal}  alt="Secundaria" />
+              <img className="btn img-fluid" id="secundaria" src= {images[0].RecDidacticosSecundaria  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Secundaria" />
               </figure>
             </div>
         </div>
       
           <div className="col-12 pie">
-            <img data-tar="Home" onClick={this.props.changePage}  className="btn img-fluid hvr-pop" id="salir" src= {images[0].BtnSalir  }   alt="Salir" />
+            <img data-tar="Home" onClick={props.changePage}  className="btn img-fluid hvr-pop" id="salir" src= {images[0].BtnSalir  }   alt="Salir" />
           </div>
         </div>
       </div>
-    );
-  }
+   );
 }
-
+ 
 export default RecursosDidacticos;
