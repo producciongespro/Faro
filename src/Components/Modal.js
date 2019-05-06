@@ -24,19 +24,19 @@ class Modal extends Component {
     
     switch (this.props.typeContent) {
       case "video":
-      console.log("Video");       
+      //console.log("Video");       
         tmpContent = <iframe width="100%" height="400px" src={this.props.content} title="iframe-video" ></iframe>
       break;
       case "html":
-      console.log("html");        
+      //console.log("html");        
         tmpContent = this.props.content
       break;
       case "audio":
-      console.log("audio");        
+      //console.log("audio");        
         tmpContent =  <audio controls  autoPlay src={this.props.content}></audio>                   
       break;
       case "pdf":
-      console.log("pdf"); 
+      //console.log("pdf"); 
       this.modalAncho =  this.modalAncho + " modal-lg";
       this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = <embed  src={this.props.content+"#toolbar=1" }    type='application/pdf' width='100%' height='100%'></embed>                  
@@ -50,7 +50,7 @@ class Modal extends Component {
     this.setState({ 
       htmlContent: tmpContent      
     }, () => {   
-       console.log("Cambio estado contenido");
+       //console.log("Cambio estado contenido");
        
     }); 
 

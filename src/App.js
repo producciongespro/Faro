@@ -10,20 +10,14 @@ import Splash from "./Components/Splash";
 import Portada from "./Components/Portada";
 import Home from "./Components/Home";
 import DocsOficiales from "./Components/DocsOficiales";
-import DesarrolloProf from "./Components/DesarrolloProf";
-import ApoyosPlan from "./Components/ApoyosPlan";
-import ApoyosEvaluacion from "./Components/ApoyosEvaluacion";
+import DesarrolloProf from "./Components/DesarrolloProf.jsx";
+import ApoyosPlan from "./Components/ApoyosPlan.jsx";
+import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos";
-import ApoyoClimaAula from "./Components/ApoyoClimaAula";
+import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
 
 
-
-
-
-class App extends Component {
-
-  
-
+class App extends Component { 
   constructor ( ) {
     super ();
     this.state = {
@@ -32,24 +26,19 @@ class App extends Component {
       modalActive : false,
       modalComponent: "",
       typeContent : ""
-    };
-    this.changePage = this.changePage.bind(this);    
-    this.loadHome = this.loadHome.bind(this); 
-    this.showModal = this.showModal.bind(this); 
-    this.closeModal = this.closeModal.bind(this); 
+    };          
     
-   
- 
   }
 
   componentDidMount ( ) {
     setTimeout(() => {
-      this.loadHome();
+      this.loadPortada();
     }, 1000);
   }
 
 
-  loadHome ( ) {    
+  loadPortada = ( )  => {     
+    //Método que carga la Portada
     this.setState ({      
       nameCurrentPage : "Portada",      
       currentPage : <Portada  changePage={this.changePage}  showModal ={ this.showModal }  />      
@@ -59,7 +48,7 @@ class App extends Component {
 
  
 
-  changePage (e) { 
+  changePage = (e) => { 
     e.preventDefault();     
     const targetPage = e.target.dataset.tar;
     var tmpComponent;        
@@ -111,7 +100,7 @@ class App extends Component {
   }
 
 
-  showModal (e ) {
+  showModal = (e) => {
     const content = e.target.dataset.content;
     const typeContent = e.target.dataset.typecontent;
     console.log(content);
@@ -129,7 +118,7 @@ class App extends Component {
   }
 
 
-  closeModal ( ) {
+  closeModal = ( ) => {
     this.setState({ 
       modalActive: false      
     }, () => {
