@@ -19,6 +19,7 @@ import Catalogo from "./Components/Catalogo.jsx";
 
 
 class App extends Component { 
+
   constructor ( ) {
     super ();
     this.state = {
@@ -31,7 +32,11 @@ class App extends Component {
     
   }
 
-  componentDidMount ( ) {
+  detalles = [
+    
+  ]
+
+componentDidMount ( ) {
     setTimeout(() => {
       this.loadPortada();
     }, 1000);
@@ -47,13 +52,12 @@ class App extends Component {
   }
 
 
- 
 
   changePage = (e) => { 
     e.preventDefault();     
     const targetPage = e.target.dataset.tar;
     var tmpComponent;        
-    console.log("Target", targetPage );
+    //console.log("Target", targetPage );
 
     switch (targetPage) {
       case "Portada":
@@ -78,7 +82,7 @@ class App extends Component {
           tmpComponent = <ApoyoClimaAula  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
 
     
@@ -90,7 +94,7 @@ class App extends Component {
       nameCurrentPage: targetPage      
     }, () => {
        //console.log(this.state.valor) => 1
-       console.log( "Página actual", this.state.nameCurrentPage );
+       //console.log( "Página actual", this.state.nameCurrentPage );
        this.setState (
          {
           currentPage:  tmpComponent
@@ -133,6 +137,12 @@ class App extends Component {
         console.log("modal activo", this.state.modalActive);                
     });  
   }
+
+
+handlerShowInfoCategories = (e) => {
+  console.log(e.target);
+  
+}
  
 
 render() {    
