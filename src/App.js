@@ -27,8 +27,7 @@ class App extends Component {
       currentPage : <Splash  urlImage={images[0].logoFaro }  />,
       modalActive : false,
       modalComponent: "",
-      typeContent : "",
-      infoCategory : ""
+      typeContent : ""      
     };          
     
   }
@@ -91,7 +90,7 @@ componentDidMount ( ) {
           tmpComponent = <ApoyoClimaAula  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf   infoCategory={this.state.infoCategory}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf   infoCategory={this.detalles.tacaco}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
 
     
@@ -156,18 +155,8 @@ handlerShowInfoCategories = (e) => {
   //console.log(opcion);
   console.log(this.detalles[opcion]);
 
-this.setState((state, props) => ( {
-  infoCategory: this.detalles[opcion],
-  currentPage:  this.tmpComponent
-} ))
+  document.getElementById("textoDescripcion").innerHTML = this.detalles[opcion];
 
-
-/*
-  this.setState({
-    infoCategory: this.detalles[opcion]
-  })
-  
-*/
   
 }
  
