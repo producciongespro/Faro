@@ -27,14 +27,23 @@ class App extends Component {
       currentPage : <Splash  urlImage={images[0].logoFaro }  />,
       modalActive : false,
       modalComponent: "",
-      typeContent : ""
+      typeContent : "",
+      infoCategory : ""
     };          
     
   }
 
-  detalles = [
-    
-  ]
+  tmpComponent=""
+
+  detalles = {
+    tacaco : "El TACACO es una planta trepadora endémica de Costa Rica, familia de las cucurbitáceas, y que produce un fruto comestible verde, ovoide, de unos siete centímetros de longitud.​ La parte comestible es una pulpa contenida en una bolsa fibrosa dentro de la cual hay una pepita aplastada y amarga que se extrae previamente.",
+    cursos : "Estos son los cursos para llevar" ,
+    sitios : "sitios web recomendados",
+    videoteca : "Videoteca de videoconferencias",
+    pautas : "Pautas, bla bla bla",
+    ficha : "Ficha ficha ficha"
+
+  }
 
 componentDidMount ( ) {
     setTimeout(() => {
@@ -82,7 +91,7 @@ componentDidMount ( ) {
           tmpComponent = <ApoyoClimaAula  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf   infoCategory={this.state.infoCategory}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
 
     
@@ -91,16 +100,19 @@ componentDidMount ( ) {
       break;
     }
     this.setState({ 
-      nameCurrentPage: targetPage      
+      nameCurrentPage: targetPage         
     }, () => {
        //console.log(this.state.valor) => 1
        //console.log( "Página actual", this.state.nameCurrentPage );
        this.setState (
          {
-          currentPage:  tmpComponent
+          currentPage:  tmpComponent,
+          infoCategory: this.detalles.tacaco
          }
        )
-    });    
+    });  
+    
+    this.tmpComponent= tmpComponent;
      
   }
 
@@ -140,7 +152,22 @@ componentDidMount ( ) {
 
 
 handlerShowInfoCategories = (e) => {
-  console.log(e.target);
+  let opcion = e.target.id; 
+  //console.log(opcion);
+  console.log(this.detalles[opcion]);
+
+this.setState((state, props) => ( {
+  infoCategory: this.detalles[opcion],
+  currentPage:  this.tmpComponent
+} ))
+
+
+/*
+  this.setState({
+    infoCategory: this.detalles[opcion]
+  })
+  
+*/
   
 }
  
