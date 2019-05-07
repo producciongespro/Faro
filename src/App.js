@@ -16,7 +16,12 @@ import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
 import Catalogo from "./Components/Catalogo.jsx";
-
+import DetallesIDP from "./data/desarrollo/descripciones.json";
+import DetallesPlanenamiento from "./data/planeamiento/descripciones.json";
+import DetallesRecursos from "./data/recursos/descripciones.json";
+import DetallesEvaluacion from "./data/evaluacion/descripciones.json";
+import DetallesAula from "./data/clima_aula/descripciones.json";
+import DetallesDocumentos from "./data/documentos/descripciones.json";
 
 class App extends Component { 
 
@@ -33,16 +38,12 @@ class App extends Component {
   }
 
   tmpComponent=""
-
-  detalles = {
-    tacaco : "El TACACO es una planta trepadora endémica de Costa Rica, familia de las cucurbitáceas, y que produce un fruto comestible verde, ovoide, de unos siete centímetros de longitud.​ La parte comestible es una pulpa contenida en una bolsa fibrosa dentro de la cual hay una pepita aplastada y amarga que se extrae previamente.",
-    cursos : "Estos son los cursos para llevar" ,
-    sitios : "sitios web recomendados",
-    videoteca : "Videoteca de videoconferencias",
-    pautas : "Pautas, bla bla bla",
-    ficha : "Ficha ficha ficha"
-
-  }
+  detalles = DetallesIDP;
+  detallesAula = DetallesAula;
+  detallesEval = DetallesEvaluacion
+  detallesPlan = DetallesPlanenamiento;
+  detallesDoc = DetallesDocumentos;
+  detallesRec = DetallesRecursos;
 
 componentDidMount ( ) {
     setTimeout(() => {
@@ -90,7 +91,7 @@ componentDidMount ( ) {
           tmpComponent = <ApoyoClimaAula  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf   infoCategory={this.detalles.tacaco}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf   infoCategory={this.detalles.general}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
 
     
