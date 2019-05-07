@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "nombre": "Curso de equitación de caballos de mar",
+      "meta": "Educadores I y II ciclo",
+      "proposito": "mejorar las habilidades de cabalgar bajo el agua",
+      "facilitador": "Aquaman",
+      "url": "http://placehold.it/32x32"
+    },
+    {
+      "id": 2,
+      "nombre": "Taller de limpieza de follajes",
+      "meta": "Educadores de preescolar",
+      "proposito": "Mantener limpias las hojas de las plantas",
+      "facilitador": "Linterna verde",
+      "url": "http://placehold.it/32x32"
+    }
+  ]
