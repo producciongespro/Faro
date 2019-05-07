@@ -6,23 +6,19 @@ import "./css/home.css";
 import images from "./data/images.json";
 //Componentes
 import Modal from "./Components/Modal";
-import Splash from "./Components/Splash";
-import Portada from "./Components/Portada";
-import Home from "./Components/Home";
-import DocsOficiales from "./Components/DocsOficiales";
-import DesarrolloProf from "./Components/DesarrolloProf";
-import ApoyosPlan from "./Components/ApoyosPlan";
-import ApoyosEvaluacion from "./Components/ApoyosEvaluacion";
-import RecursosDidacticos from "./Components/RecursosDidacticos";
-import ApoyoClimaAula from "./Components/ApoyoClimaAula";
+import Splash from "./Components/Splash.jsx";
+import Portada from "./Components/Portada.jsx";
+import Home from "./Components/Home.jsx";
+import DocsOficiales from "./Components/DocsOficiales.jsx";
+import DesarrolloProf from "./Components/DesarrolloProf.jsx";
+import ApoyosPlan from "./Components/ApoyosPlan.jsx";
+import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
+import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
+import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
+import Catalogo from "./Components/Catalogo.jsx";
 
 
-
-
-
-class App extends Component {
-
-  
+class App extends Component { 
 
   constructor ( ) {
     super ();
@@ -31,25 +27,33 @@ class App extends Component {
       currentPage : <Splash  urlImage={images[0].logoFaro }  />,
       modalActive : false,
       modalComponent: "",
-      typeContent : ""
-    };
-    this.changePage = this.changePage.bind(this);    
-    this.loadHome = this.loadHome.bind(this); 
-    this.showModal = this.showModal.bind(this); 
-    this.closeModal = this.closeModal.bind(this); 
+      typeContent : "",
+      infoCategory : ""
+    };          
     
-   
- 
   }
 
-  componentDidMount ( ) {
+  tmpComponent=""
+
+  detalles = {
+    tacaco : "El TACACO es una planta trepadora endémica de Costa Rica, familia de las cucurbitáceas, y que produce un fruto comestible verde, ovoide, de unos siete centímetros de longitud.​ La parte comestible es una pulpa contenida en una bolsa fibrosa dentro de la cual hay una pepita aplastada y amarga que se extrae previamente.",
+    cursos : "Estos son los cursos para llevar" ,
+    sitios : "sitios web recomendados",
+    videoteca : "Videoteca de videoconferencias",
+    pautas : "Pautas, bla bla bla",
+    ficha : "Ficha ficha ficha"
+
+  }
+
+componentDidMount ( ) {
     setTimeout(() => {
-      this.loadHome();
+      this.loadPortada();
     }, 1000);
   }
 
 
-  loadHome ( ) {    
+  loadPortada = ( )  => {     
+    //Método que carga la Portada
     this.setState ({      
       nameCurrentPage : "Portada",      
       currentPage : <Portada  changePage={this.changePage}  showModal ={ this.showModal }  />      
@@ -57,13 +61,12 @@ class App extends Component {
   }
 
 
- 
 
-  changePage (e) { 
+  changePage = (e) => { 
     e.preventDefault();     
     const targetPage = e.target.dataset.tar;
     var tmpComponent;        
-    console.log("Target", targetPage );
+    //console.log("Target", targetPage );
 
     switch (targetPage) {
       case "Portada":
@@ -88,7 +91,7 @@ class App extends Component {
           tmpComponent = <ApoyoClimaAula  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf   infoCategory={this.state.infoCategory}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
 
     
@@ -97,21 +100,31 @@ class App extends Component {
       break;
     }
     this.setState({ 
-      nameCurrentPage: targetPage      
+      nameCurrentPage: targetPage         
     }, () => {
        //console.log(this.state.valor) => 1
-       console.log( "Página actual", this.state.nameCurrentPage );
+       //console.log( "Página actual", this.state.nameCurrentPage );
        this.setState (
          {
-          currentPage:  tmpComponent
+          currentPage:  tmpComponent,
+          infoCategory: this.detalles.tacaco
          }
        )
-    });    
+    });  
+    
+    this.tmpComponent= tmpComponent;
      
   }
 
 
-  showModal (e ) {
+  handlerOpenCatalog = () => {
+    this.setState ({
+      currentPage : <Catalogo/>
+    })
+  }
+
+
+  showModal = (e) => {
     const content = e.target.dataset.content;
     const typeContent = e.target.dataset.typecontent;
     console.log(content);
@@ -129,13 +142,34 @@ class App extends Component {
   }
 
 
-  closeModal ( ) {
+  closeModal = ( ) => {
     this.setState({ 
       modalActive: false      
     }, () => {
         console.log("modal activo", this.state.modalActive);                
     });  
   }
+
+
+handlerShowInfoCategories = (e) => {
+  let opcion = e.target.id; 
+  //console.log(opcion);
+  console.log(this.detalles[opcion]);
+
+this.setState((state, props) => ( {
+  infoCategory: this.detalles[opcion],
+  currentPage:  this.tmpComponent
+} ))
+
+
+/*
+  this.setState({
+    infoCategory: this.detalles[opcion]
+  })
+  
+*/
+  
+}
  
 
 render() {    
