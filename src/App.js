@@ -88,7 +88,7 @@ componentDidMount ( ) {
         tmpComponent = <RecursosDidacticos  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "ApoyoClimaAula":
-          tmpComponent = <ApoyoClimaAula  showModal={this.showModal} changePage={this.changePage}/> 
+          tmpComponent = <ApoyoClimaAula infoCategory={this.detallesAula.general} onMouseOver={ this.handlerShowInfoCategories2}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
         tmpComponent = <DesarrolloProf   infoCategory={this.detalles.general}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
@@ -160,7 +160,16 @@ handlerShowInfoCategories = (e) => {
 
   
 }
- 
+
+handlerShowInfoCategories2 = (e) => {
+  let opcion = e.target.id; 
+  //console.log(opcion);
+  console.log(this.detallesAula[0][opcion]);
+
+  document.getElementById("textoDescripcion3").innerHTML = this.detallesAula[0][opcion];
+
+  
+}
 
 render() {    
     return (      
