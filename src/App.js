@@ -27,6 +27,7 @@ import DetallesAula from "./data/clima_aula/descripciones.json";
 import DetallesDocumentos from "./data/documentos/descripciones.json";
 
 
+console.log(descripciones[2].general );
 
 
 
@@ -81,7 +82,7 @@ componentDidMount ( ) {
         tmpComponent = <DocsOficiales  showModal={this.showModal}     changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
-        tmpComponent = <ApoyosPlan  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}/> 
       break;
       case "ApoyosEvaluacion":
           tmpComponent = <ApoyosEvaluacion  showModal={this.showModal} changePage={this.changePage}/> 
@@ -152,11 +153,8 @@ componentDidMount ( ) {
 
 handlerShowInfoCategories = (e) => {
   let opcion = e.target.id; 
-  let infoSource = e.target.dataset.infosource;
-  let indexCategoria = 0;
-  console.log(infoSource);
-
-  
+  let infoSource = e.target.dataset.infosource;  
+  console.log("infoSource",infoSource);  
   //console.log(opcion);  
   document.getElementById("textoDescripcion").innerHTML =  descripciones[infoSource][opcion];  
 }
