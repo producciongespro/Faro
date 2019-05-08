@@ -1,5 +1,5 @@
 import React from 'react';
-import textos from "../data/textos.json";
+//import textos from "../data/textos.json";
 import images from "../data/images.json";
 import dsPdfs from "../data/pdf.json";
 //import dsLinks from "../data/links.json";
@@ -15,8 +15,7 @@ const ApoyosPlan = (props) => {
         <img className="titulos img-fluid" src={images[0].TituloApoyos  } alt="Documentos educativos oficiales" />
            <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
           <div id="textoDescripcion">          
-            {  props.infoCategory }
-            { console.log(props.infoCategory) }
+            {  props.infoCategory }            
           </div>
           
   </div>
@@ -47,7 +46,7 @@ const ApoyosPlan = (props) => {
 
       <div className="col-10 hover11 centro">
           <figure>
-              <img className="botones-portada derecha img-fluid" id="enfoque" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver}  alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />
+              <img className="botones-portada derecha img-fluid" id="ficha" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver}  alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />
         </figure>
       </div>
       <div className="col-2">

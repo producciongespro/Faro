@@ -20,14 +20,6 @@ import Catalogo from "./Components/Catalogo";
 //Json
 import images from "./data/images.json";
 import descripciones from "./data/descripciones/descripciones.json";
-import DetallesPlanenamiento from "./data/planeamiento/descripciones.json";
-import DetallesRecursos from "./data/recursos/descripciones.json";
-import DetallesEvaluacion from "./data/evaluacion/descripciones.json";
-import DetallesAula from "./data/clima_aula/descripciones.json";
-import DetallesDocumentos from "./data/documentos/descripciones.json";
-
-
-console.log(descripciones[2].general );
 
 
 
