@@ -19,12 +19,16 @@ import Catalogo from "./Components/Catalogo";
 
 //Json
 import images from "./data/images.json";
-import DetallesIDP from "./data/desarrollo/descripciones.json";
+import descripciones from "./data/descripciones/descripciones.json";
 import DetallesPlanenamiento from "./data/planeamiento/descripciones.json";
 import DetallesRecursos from "./data/recursos/descripciones.json";
 import DetallesEvaluacion from "./data/evaluacion/descripciones.json";
 import DetallesAula from "./data/clima_aula/descripciones.json";
 import DetallesDocumentos from "./data/documentos/descripciones.json";
+
+
+
+
 
 
 class App extends Component { 
@@ -41,13 +45,7 @@ class App extends Component {
     
   }
 
-  tmpComponent=""
-  detalles = DetallesIDP;
-  detallesAula = DetallesAula;
-  detallesEval = DetallesEvaluacion
-  detallesPlan = DetallesPlanenamiento;
-  detallesDoc = DetallesDocumentos;
-  detallesRec = DetallesRecursos;
+  
 
 componentDidMount ( ) {
     setTimeout(() => {
@@ -92,10 +90,10 @@ componentDidMount ( ) {
         tmpComponent = <RecursosDidacticos  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "ApoyoClimaAula":
-          tmpComponent = <ApoyoClimaAula infoCategory={this.detallesAula.general} onMouseOver={ this.handlerShowInfoCategories2}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+          tmpComponent = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf   infoCategory={this.detalles.general}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
 
     
@@ -110,13 +108,10 @@ componentDidMount ( ) {
        //console.log( "Página actual", this.state.nameCurrentPage );
        this.setState (
          {
-          currentPage:  tmpComponent,
-          infoCategory: this.detalles.tacaco
+          currentPage:  tmpComponent          
          }
        )
-    });  
-    
-    this.tmpComponent= tmpComponent;
+    });       
      
   }
 
@@ -157,22 +152,16 @@ componentDidMount ( ) {
 
 handlerShowInfoCategories = (e) => {
   let opcion = e.target.id; 
-  //console.log(opcion);
-  console.log(this.detalles[opcion]);
-  document.getElementById("textoDescripcion").innerHTML = this.detalles[opcion];
+  let infoSource = e.target.dataset.infosource;
+  let indexCategoria = 0;
+  console.log(infoSource);
 
   
+  //console.log(opcion);  
+  document.getElementById("textoDescripcion").innerHTML =  descripciones[infoSource][opcion];  
 }
 
-handlerShowInfoCategories2 = (e) => {
-  let opcion = e.target.id; 
-  //console.log(opcion);
-  console.log(this.detallesAula[0][opcion]);
 
-  document.getElementById("textoDescripcion3").innerHTML = this.detallesAula[0][opcion];
-
-  
-}
 
 render() {    
     return (      
