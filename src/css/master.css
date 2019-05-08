@@ -405,7 +405,8 @@ a {
 
 
 .barra-botones{
-  margin-top: 55%;
+  margin-top: 2%;
+  float: right;
  }
 
  #caja, #audio{
@@ -414,5 +415,5 @@ a {
  }
 
  #home{
-  margin-left: 14px;
+  margin-left: 0px;
  }
