@@ -79,8 +79,9 @@ left: 0px;
 @media (min-width: 701px) {
   #principal{
   position: absolute;
-  left: 0px;
+  left: 203px;
   /* height: 100%; */
+    top: 58px;
   }
   #gafas{
     clear:both;
