@@ -14,7 +14,7 @@ import ApoyosPlan from "./Components/ApoyosPlan.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
-import Catalogo from "./Components/Catalogo.jsx";
+import Catalogo from "./Components/Catalogo";
 
 
 //Json
