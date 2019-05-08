@@ -6,6 +6,13 @@ body {
   margin-top: 4%;
 }
 
+.pie-pagina{
+  color:#00809B;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 5em;
+}
+
 .visor {
     box-sizing: border-box;
     background-color: #fff;
