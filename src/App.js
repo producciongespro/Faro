@@ -74,7 +74,7 @@ componentDidMount ( ) {
         tmpComponent = <DocsOficiales  showModal={this.showModal}     changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
-        tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}/> 
+        tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}/> 
       break;
       case "ApoyosEvaluacion":
           tmpComponent = <ApoyosEvaluacion  showModal={this.showModal} changePage={this.changePage}/> 
