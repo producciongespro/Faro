@@ -159,7 +159,6 @@ handlerShowInfoCategories = (e) => {
   let opcion = e.target.id; 
   //console.log(opcion);
   console.log(this.detalles[opcion]);
-
   document.getElementById("textoDescripcion").innerHTML = this.detalles[opcion];
 
   
