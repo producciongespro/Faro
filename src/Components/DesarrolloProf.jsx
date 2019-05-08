@@ -29,7 +29,7 @@ const DesarrolloProf = (props) => {
         <div  className="row">
             <div  className="col-4  hover11 ">
               <figure>
-                <img className="botones-portada  img-fluid" id="cursos" src={img.DesarrolloCursos} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onMouseOver={props.onMouseOver} onClick={props.showModal}  alt="Cursos" />
+                <img className="botones-portada  img-fluid" id="cursos" src={img.DesarrolloCursos} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver} onClick={props.showModal}  alt="Cursos" />
               </figure>
               </div>
               <div className="col-4  ">
@@ -37,7 +37,7 @@ const DesarrolloProf = (props) => {
               </div>
             <div className="col-4 hover11 ">
                 <figure>
-              <img className="botones-portada img-fluid" id="sitios" src={img.DesarrolloSitios}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onMouseOver={props.onMouseOver}  onClick={props.showModal}  alt="Sitios" />
+              <img className="botones-portada img-fluid" id="sitios" src={img.DesarrolloSitios}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onClick={props.showModal}  alt="Sitios" />
               </figure>
             </div>
 
@@ -45,17 +45,17 @@ const DesarrolloProf = (props) => {
         <div className="row botones-inferiores">
           <div  className="col-4 hover11 ">
             <figure>
-              <img className="botones-portada derecha img-fluid" id="videoteca" src={img.DesarrolloVideoteca}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"   onMouseOver={props.onMouseOver} onClick={props.showModal}  alt="Videoteca" />
+              <img className="botones-portada derecha img-fluid" id="videoteca" src={img.DesarrolloVideoteca}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0}  onMouseOver={props.onMouseOver} onClick={props.showModal}  alt="Videoteca" />
             </figure>
             </div>
           <div className="col-4 centro hover11 ">
               <figure>
-            <img className="botones-portada img-fluid" id="pautas" src={img.DesarrolloReferencias} alt="Referencias" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onMouseOver={props.onMouseOver} onClick={props.showModal} />
+            <img className="botones-portada img-fluid" id="pautas" src={img.DesarrolloReferencias} alt="Referencias" data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={0} onMouseOver={props.onMouseOver} onClick={props.showModal}  alt="Referencias" />
             </figure>
           </div>
           <div className="col-4 hover11 ">
             <figure>
-              <img className="botones-portada img-fluid" id="ficha" src={img.DesarrolloOtras}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onMouseOver={props.onMouseOver}   onClick={props.handlerOpenCatalog} alt="Otras ofertas" />
+              <img className="botones-portada img-fluid" id="ficha" src={img.DesarrolloOtras}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}   onClick={props.handlerOpenCatalog} alt="Otras ofertas"  alt="Otras ofertas"/>
             </figure>
             </div>
         </div>
