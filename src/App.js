@@ -86,7 +86,7 @@ componentDidMount ( ) {
           tmpComponent = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general}   onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
 
     
@@ -143,12 +143,20 @@ componentDidMount ( ) {
   }
 
 
-handlerShowInfoCategories = (e) => {
+handlerShowInfoCategories (e) {
   let opcion = e.target.id; 
   let infoSource = e.target.dataset.infosource;  
   console.log("infoSource",infoSource);  
   //console.log(opcion);  
   document.getElementById("textoDescripcion").innerHTML =  descripciones[infoSource][opcion];  
+}
+
+
+handlerShowInfoGeneral (e) {
+  let infoSource = e.target.dataset.infosource;
+  console.log("Mouse out", infoSource );
+ 
+  document.getElementById("textoDescripcion").innerHTML =  descripciones[infoSource].general;    
 }
 
 
