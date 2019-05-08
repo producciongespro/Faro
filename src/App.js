@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
+//CSS
 import "./css/master.css";
 import "./css/home.css";
 
-
-import images from "./data/images.json";
 //Componentes
 import Modal from "./Components/Modal";
 import Splash from "./Components/Splash.jsx";
@@ -15,13 +14,18 @@ import ApoyosPlan from "./Components/ApoyosPlan.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
-import Catalogo from "./Components/Catalogo.jsx";
+import Catalogo from "./Components/Catalogo";
+
+
+//Json
+import images from "./data/images.json";
 import DetallesIDP from "./data/desarrollo/descripciones.json";
 import DetallesPlanenamiento from "./data/planeamiento/descripciones.json";
 import DetallesRecursos from "./data/recursos/descripciones.json";
 import DetallesEvaluacion from "./data/evaluacion/descripciones.json";
 import DetallesAula from "./data/clima_aula/descripciones.json";
 import DetallesDocumentos from "./data/documentos/descripciones.json";
+
 
 class App extends Component { 
 
