@@ -1,5 +1,5 @@
 import React from 'react';
-import textos from "../data/textos.json";
+//import textos from "../data/textos.json";
 import images from "../data/images.json";
 import dsPdfs from "../data/pdf.json";
 //import dsLinks from "../data/links.json";
@@ -14,8 +14,8 @@ const ApoyosPlan = (props) => {
   <div className="col-5">
         <img className="titulos img-fluid" src={images[0].TituloApoyos  } alt="Documentos educativos oficiales" />
            <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
-          <div id="textoDescripcion3">
-            {textos[0].Tacaco}
+          <div id="textoDescripcion">          
+            {  props.infoCategory }            
           </div>
           
   </div>
@@ -24,21 +24,21 @@ const ApoyosPlan = (props) => {
 
       <div className="col-10 hover11 ">
         <figure>
-          <img className="botones-portada derecha img-fluid" id="plantilla" src={images[0].ApoyosPlantilla} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}   alt="Apoyos para el planeamiento"  />
+          <img className="botones-portada derecha img-fluid" id="plantilla" src={images[0].ApoyosPlantilla} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }    alt="Apoyos para el planeamiento"  />
         </figure>
         </div>
         <div className="col-2" >
         </div>
       <div className="col-10 hover11 ">
         <figure>
-          <img className="botones-portada derecha img-fluid" id="guia" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}   alt="Apoyos para el planeamiento" src={images[0].ApoyosGuia  } />
+          <img className="botones-portada derecha img-fluid" id="guia" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Apoyos para el planeamiento" src={images[0].ApoyosGuia  } />
         </figure>
         </div>
         <div className="col-2">
         </div>
       <div className="col-10 hover11 centro">
           <figure>
-              <img className="botones-portada derecha img-fluid" id="ejemplos" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Ejmeplos planeamiento" src={images[0].ApoyosEjemplo  } />
+              <img className="botones-portada derecha img-fluid" id="ejemplos" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Ejmeplos planeamiento" src={images[0].ApoyosEjemplo  } />
         </figure>
       </div>
       <div className="col-2">
@@ -46,7 +46,7 @@ const ApoyosPlan = (props) => {
 
       <div className="col-10 hover11 centro">
           <figure>
-              <img className="botones-portada derecha img-fluid" id="enfoque" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />
+              <img className="botones-portada derecha img-fluid" id="ficha" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />
         </figure>
       </div>
       <div className="col-2">

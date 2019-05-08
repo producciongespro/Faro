@@ -6,6 +6,13 @@ body {
   margin-top: 4%;
 }
 
+.pie-pagina{
+  color:#00809B;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 5em;
+}
+
 .visor {
     box-sizing: border-box;
     background-color: #fff;
@@ -441,7 +448,8 @@ border-color: darkcyan;
 
 
 .barra-botones{
-  margin-top: 55%;
+  margin-top: 2%;
+  float: right;
  }
 
  #caja, #audio{
@@ -450,5 +458,5 @@ border-color: darkcyan;
  }
 
  #home{
-  margin-left: 14px;
+  margin-left: 0px;
  }
