@@ -9,25 +9,21 @@ class Modal extends Component {
   constructor () {
     super ();
     this.state = {
-      htmlContent : ""
-      
+      htmlContent : ""      
     };
     this.selectTypeContent = this.selectTypeContent.bind(this);
-
     setTimeout( this.selectTypeContent, 10 );
   }
 
-  images = images[0];
-  classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
-  modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
+    images = images[0];
+    classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
+    modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
 
   
   
   
   
-  selectTypeContent () {
-
-    //console.log(this.images.BgIndicaciones);
+  selectTypeContent () {    
 
     var tmpContent;
     
@@ -56,8 +52,14 @@ class Modal extends Component {
             this.classModalBody = this.classModalBody + " modal-alto";
               tmpContent =   
                     <React.Fragment>
-                      <img  className="img-fluid"  src= {this.images.BgIndicaciones} alt="fondo indicaciones"/>  
-                      {this.props.content}                  
+                      <div>
+                        <img  className="img-fluid"  src= {this.images.BgIndicaciones} alt="fondo indicaciones"/>  
+                      </div>
+                      <div className="texto-indicaciones">
+                      { this.props.content }  
+                      </div>
+                      
+                                   
                     </React.Fragment>
       break;
     
@@ -92,8 +94,7 @@ class Modal extends Component {
         </div>
    
             <div className= {this.classModalBody } >
-                  {this.state.htmlContent}
-                  {this.images.BgIndicaciones}
+                  {this.state.htmlContent}                  
             </div>
          
           </div>
