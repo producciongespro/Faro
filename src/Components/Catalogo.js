@@ -36,6 +36,13 @@ images = ImagesJson[0];
         let tmpArray = this.cargarArray();
         return ( 
             <React.Fragment>
+
+                <div class="row">
+                <div class="col-12">
+                    <img class="hvr-pop img-fluid" id="" src={this.images.DesarrolloTituloCursosVirt} alt=""/>
+                 </div>
+             </div>
+
             <div className="row"> 
               
            {
@@ -49,14 +56,26 @@ images = ImagesJson[0];
                 
               </div> 
               
-              <div className="row">
+             <div className="row">
             <button className="btn btn-success"   onClick={this.incrementarIndice} >siguiente</button>
             </div>
+            
+
             <div class="row">
-          <div class="col-12 pie">
-            <img class="botones-portada hvr-pop img-fluid" id="" src={this.images.BtnVolver} alt=""/>
-      </div>
-              </div>
+                <div class="col-11 pie">
+                    <img class="botones-portada hvr-pop img-fluid" id="" src={this.images.DesarrolloBtnIzq} alt=""/>
+                 </div>
+
+                 <div class="col-1 pie">
+                    <img class="botones-portada hvr-pop img-fluid" id="" src={this.images.DesarrolloBtnDer} alt=""/>
+                 </div>
+             </div>
+
+            <div class="row">
+                <div class="col-12 pie">
+                    <img class="botones-portada hvr-pop img-fluid" id="" src={this.images.BtnVolver} alt=""/>
+                 </div>
+             </div>
               
               </React.Fragment>
          );
