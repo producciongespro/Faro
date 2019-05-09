@@ -66,11 +66,8 @@ border-color: darkcyan;
 .inform {
   border-color: darkcyan;
   border-left-style: dashed;
-  padding-top: 4%;
-  height: 80%;
-  border-radius: 15px 0px 0px 15px;
- -moz-border-radius: 15px 0px 0px 15px;
- -webkit-border-radius: 15px 0px 0px 15px;
+margin-bottom: 21px;
+ margin-top: 21px;
   }
 
   /* ****************************** */

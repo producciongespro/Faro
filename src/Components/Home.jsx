@@ -19,7 +19,7 @@ const Home = (props) => {
             <div className="col-10 ">
               <img alt="maestra"  id="principal" src={images[0].Maestra  } />
               <img alt="Apoyos para el clima del aula"   data-tar="ApoyoClimaAula"  onClick={props.changePage}      id="gafas" className="cliqueables" src={images[0].Gafas  }  />
-              <img alt="Documentos oficiales"  id="tablet"  data-tar="DocsOficiales"  onClick={props.changePage}    className="cliqueables2" src={images[0].Tablet  } />
+              <img alt="Documentos oficiales"  id="tablet"  data-tar="DocsOficiales"  onClick={props.changePage}    className="cliqueables" src={images[0].Tablet2  } />
               <img alt="Apoyos para la evaluación" id="lapicero"  data-tar="ApoyosEvaluacion"  onClick={props.changePage}    className="cliqueables" src={images[0].Lapicero  }  />
               <img alt="Recursos didáctico" id="laptop" data-tar="RecursosDidacticos"  onClick={props.changePage}    className="cliqueables" src={images[0].Laptop  }  />
               <img alt="Desarrollo profesional"  id="celular" data-tar="DesarrolloProf" onClick={props.changePage}  className="cliqueables2" src={images[0].Celular  } />
