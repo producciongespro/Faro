@@ -32,6 +32,15 @@ a {
     display: block;
 }
 
+.texto-indicaciones {
+  /*background-color: #2098D1; */
+  position: absolute;
+  top: 14%;
+  left: 6%;
+  width: 90%;
+}
+
+
  /* ***********CSS de cursos virtuales******************* */
 
 .amarillo {

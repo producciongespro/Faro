@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import images from "../data/images.json";
+
 
 
 
@@ -7,19 +9,22 @@ class Modal extends Component {
   constructor () {
     super ();
     this.state = {
-      htmlContent : ""
-      
+      htmlContent : ""      
     };
     this.selectTypeContent = this.selectTypeContent.bind(this);
-
     setTimeout( this.selectTypeContent, 10 );
   }
 
-  classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
-  modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
+    images = images[0];
+    classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
+    modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
+
   
   
-  selectTypeContent () {
+  
+  
+  selectTypeContent () {    
+
     var tmpContent;
     
     switch (this.props.typeContent) {
@@ -40,6 +45,22 @@ class Modal extends Component {
       this.modalAncho =  this.modalAncho + " modal-lg";
       this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = <embed  src={this.props.content+"#toolbar=1" }    type='application/pdf' width='100%' height='100%'></embed>                  
+      break;
+      case "help":
+      //console.log("pdf"); 
+            this.modalAncho =  this.modalAncho + " modal-lg";
+            this.classModalBody = this.classModalBody + " modal-alto";
+              tmpContent =   
+                    <React.Fragment>
+                      <div>
+                        <img  className="img-fluid"  src= {this.images.BgIndicaciones} alt="fondo indicaciones"/>  
+                      </div>
+                      <div className="texto-indicaciones">
+                      { this.props.content }  
+                      </div>
+                      
+                                   
+                    </React.Fragment>
       break;
     
       default:
@@ -73,7 +94,7 @@ class Modal extends Component {
         </div>
    
             <div className= {this.classModalBody } >
-                  {this.state.htmlContent}
+                  {this.state.htmlContent}                  
             </div>
          
           </div>

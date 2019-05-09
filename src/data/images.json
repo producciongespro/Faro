@@ -66,6 +66,9 @@
     "DesarrolloSitios" : "https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/img_sitios.png",
     "DesarrolloVideoteca" : "https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/img_videoteca.png",
     "DesarrolloTitulo" :"https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/tituloDesarrollo.png",
-    "DesarrolloFondo2" : "https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/fondoDesarrollo2.png"
+    "DesarrolloFondo2" : "https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/fondoDesarrollo2.png",
+    "Audio" : "https://recursos.mep.go.cr/ws_faro/png-indicaciones/audio.png",
+    "BgIndicaciones" : "https://recursos.mep.go.cr/ws_faro/png-indicaciones/bg_indicaciones.png",
+    "icoCerrarX" : "https://recursos.mep.go.cr/ws_faro/png-indicaciones/cerrar_x.png"
      }
 ]

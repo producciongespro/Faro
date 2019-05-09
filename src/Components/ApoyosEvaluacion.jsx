@@ -1,6 +1,6 @@
 import React from 'react';
 import images from "../data/images.json";
-import textos from "../data/textos.json";
+//import textos from "../data/textos.json";
 import dsPdfs from "../data/pdf.json";
 //import dsLinks from "../data/links.json";
 

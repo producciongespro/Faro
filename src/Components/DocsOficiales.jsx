@@ -1,11 +1,11 @@
 import React  from 'react';
 import images from "../data/images.json";
-import textos from "../data/textos.json";
-import dsPdfs from "../data/pdf.json";
-import dsLinks from "../data/links.json";
+//import textos from "../data/textos.json";
+import pdfJson from "../data/pdf.json";
+//import linksJson from "../data/links.json";
 
-var pdfs = dsPdfs[0],
-links = dsLinks[0];
+const  pdfs = pdfJson[0];
+
 
 const DocsOficiales = ( props ) => {
   return ( 
