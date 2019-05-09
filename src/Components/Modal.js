@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import images from "../data/images.json";
+
 
 
 
@@ -15,11 +17,18 @@ class Modal extends Component {
     setTimeout( this.selectTypeContent, 10 );
   }
 
+  images = images[0];
   classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
   modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
+
+  
+  
   
   
   selectTypeContent () {
+
+    console.log(this.images.BgIndicaciones);
+
     var tmpContent;
     
     switch (this.props.typeContent) {
@@ -40,6 +49,12 @@ class Modal extends Component {
       this.modalAncho =  this.modalAncho + " modal-lg";
       this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = <embed  src={this.props.content+"#toolbar=1" }    type='application/pdf' width='100%' height='100%'></embed>                  
+      break;
+      case "help":
+      //console.log("pdf"); 
+      this.modalAncho =  this.modalAncho + " modal-lg";
+      this.classModalBody = this.classModalBody + " modal-alto";
+        tmpContent = this.props.content;
       break;
     
       default:
