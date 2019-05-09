@@ -1,6 +1,6 @@
 [   
         {
-          "categoria" : "desarrolloProfesional",
+          "categoria" : "0-desarrolloProfesional",
           "general": "Desarrollo Profesional Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
           "cursos": "Descripción del apartado de cursos",
           "sitios": "Descripción del apartado de sitios",
@@ -11,7 +11,7 @@
 
   {
  
-        "categoria" : "climaAula",
+        "categoria" : "1-climaAula",
         "general": "Clima del aula: Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
         "interacciones": "Descripción del apartado de interacciones",
         "inclusion": "Descripción del apartado de inclusión",
@@ -22,12 +22,26 @@
         "interculturalidad": "Descripción del apartado de interculturalidad"
       },
       {
-        "categoria" : "planeamiento",
+        "categoria" : "2-planeamiento",
         "general": "Apoyos al planeamiento: Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
         "plantilla": "Descripción del apartado de plantillas",
         "guia": "Descripción del apartado de guía",
         "ejemplos": "Descripción del apartado de ejemplos",
         "ficha": "Descripción del apartado de ficha conceptual"
+      },
+      {
+        "categoria" : "3-apoyosEvaluacion",
+        "general": "Apoyos para la evaluación: Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
+        "rubricas": "Descripción del apartado de rúbricas",
+        "proceso": "Descripción del apartado de proceso",
+        "logro": "Descripción del apartado de logro"
+      },
+      {
+        "categoria" : "4-recursosDidacticos",
+        "general": "Recursos Didácticos: Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
+        "prescolar": "Descripción del apartado de recursos prescolar",
+        "primaria": "Descripción del apartado de recursos primaria",
+        "secundaria": "Descripción del apartado de recursos secundaria"
       }
   
 

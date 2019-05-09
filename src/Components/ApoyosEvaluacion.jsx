@@ -21,8 +21,8 @@ const ApoyosEvaluacion = (props) => {
                             </div>
                       </div>
                       <img className="descripciones2 img-fluid" src={images[0].GeneralCajaDescripcion} alt="Descripción" />
-                     <div id="textoDescripcion2">
-                       {textos[0].Tacaco}
+                     <div id="textoDescripcion">
+                       {props.infoCategory}
                      </div>
               </div>
   
@@ -30,12 +30,12 @@ const ApoyosEvaluacion = (props) => {
                     <div className="row row-celdas">
                       <div id="arriba" className="col-4 hover11 col-sin-padding">
                         <figure>
-                          <img id="imgRubricas" className="img-fluid btn" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} alt="Rúbricas"    src={images[0].EvaluacionLRubricas}  />
+                          <img id="rubricas" className="img-fluid btn" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Rúbricas"    src={images[0].EvaluacionLRubricas}  />
                         </figure>
                       </div>
                       <div  className="col-4 hover11 col-sin-padding"  >
                       <figure>
-                        <img id="imgProceso" className="img-fluid btn" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} alt="Proceso" src={images[0].EvaluacionProceso}  />
+                        <img id="proceso" className="img-fluid btn" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Proceso" src={images[0].EvaluacionProceso}  />
                       </figure>
                       </div>
                     </div>
@@ -46,7 +46,7 @@ const ApoyosEvaluacion = (props) => {
                       </div>
                       <div className="col-4 hover11 col-sin-padding">
                       <figure>
-                        <img id="imgLogro" className="img-fluid  btn" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} alt="Logros"  src={images[0].EvaluacionLogros} />
+                        <img id="logro" className="img-fluid  btn" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Logros"  src={images[0].EvaluacionLogros} />
                       </figure>
                       </div>
                     </div>

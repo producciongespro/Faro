@@ -1,0 +1,5 @@
+Descripciones
+0 desarrolloProfesional
+1 climaAula
+2 planeamiento
+3 apoyosEvaluacion
