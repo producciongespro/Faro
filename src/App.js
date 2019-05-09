@@ -150,7 +150,7 @@ Se ejecuta con el evento "mouseover" */
   let infoSource = e.target.dataset.infosource;  
   //console.log("infoSource",infoSource);  
   //console.log(opcion);  
-  document.getElementById("textoDescripcion").innerHTML =  descripciones[infoSource][opcion];  
+  document.getElementById("textoDescripcion").innerHTML = "<h2 class='desc'>Descripción:</h2>" + descripciones[infoSource][opcion];  
 }
 
 
@@ -160,7 +160,7 @@ handlerShowInfoGeneral (e) {
 "mouseOut" de los botones  */
   let infoSource = e.target.dataset.infosource;
   //console.log("Mouse out", infoSource ); 
-  document.getElementById("textoDescripcion").innerHTML =  descripciones[infoSource].general;    
+  document.getElementById("textoDescripcion").innerHTML = "<h2 class='desc'>Descripción:</h2>" + descripciones[infoSource].general;    
 }
 
 

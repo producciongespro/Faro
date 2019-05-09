@@ -15,7 +15,7 @@ const ApoyosPlan = (props) => {
         <img className="titulos img-fluid" src={images[0].TituloApoyos  } alt="Documentos educativos oficiales" />
            <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
           <div id="textoDescripcion" className="texto_descripciones">          
-            {  props.infoCategory }            
+          <h2 class='desc'>Descripción:</h2>  {  props.infoCategory }            
           </div>
           
   </div>
