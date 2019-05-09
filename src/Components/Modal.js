@@ -27,7 +27,7 @@ class Modal extends Component {
   
   selectTypeContent () {
 
-    console.log(this.images.BgIndicaciones);
+    //console.log(this.images.BgIndicaciones);
 
     var tmpContent;
     
@@ -52,9 +52,13 @@ class Modal extends Component {
       break;
       case "help":
       //console.log("pdf"); 
-      this.modalAncho =  this.modalAncho + " modal-lg";
-      this.classModalBody = this.classModalBody + " modal-alto";
-        tmpContent = this.props.content;
+            this.modalAncho =  this.modalAncho + " modal-lg";
+            this.classModalBody = this.classModalBody + " modal-alto";
+              tmpContent =   
+                    <React.Fragment>
+                      <img  className="img-fluid"  src= {this.images.BgIndicaciones} alt="fondo indicaciones"/>  
+                      {this.props.content}                  
+                    </React.Fragment>
       break;
     
       default:
@@ -89,6 +93,7 @@ class Modal extends Component {
    
             <div className= {this.classModalBody } >
                   {this.state.htmlContent}
+                  {this.images.BgIndicaciones}
             </div>
          
           </div>
