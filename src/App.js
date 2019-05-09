@@ -71,19 +71,19 @@ componentDidMount ( ) {
         tmpComponent = <Home showModal={this.showModal}  changePage={this.changePage}/> 
       break;
       case "DocsOficiales":
-        tmpComponent = <DocsOficiales  showModal={this.showModal}     changePage={this.changePage}/> 
+        tmpComponent = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}     changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
         tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}/> 
       break;
       case "ApoyosEvaluacion":
-          tmpComponent = <ApoyosEvaluacion  showModal={this.showModal} changePage={this.changePage}/> 
+          tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "RecursosDidacticos":
-        tmpComponent = <RecursosDidacticos  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "ApoyoClimaAula":
-          tmpComponent = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+          tmpComponent = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
         tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
@@ -119,9 +119,7 @@ componentDidMount ( ) {
   showModal = (e) => {
     const content = e.target.dataset.content;
     const typeContent = e.target.dataset.typecontent;
-    console.log(content);
-    
-
+    //console.log(content);   
     this.setState({ 
       modalActive: true,
       typeContent: typeContent
@@ -143,19 +141,25 @@ componentDidMount ( ) {
   }
 
 
+  
 handlerShowInfoCategories (e) {
+/*  Muestra en la caja de texto de la izquierda la información de cada botón con el fin de contextalizar 
+al usuario de lo que va  a acceder.
+Se ejecuta con el evento "mouseover" */
   let opcion = e.target.id; 
   let infoSource = e.target.dataset.infosource;  
-  console.log("infoSource",infoSource);  
+  //console.log("infoSource",infoSource);  
   //console.log(opcion);  
   document.getElementById("textoDescripcion").innerHTML =  descripciones[infoSource][opcion];  
 }
 
 
+
 handlerShowInfoGeneral (e) {
+/*  Muestra la información general de la categoría. Este método se ejecuta con el evento 
+"mouseOut" de los botones  */
   let infoSource = e.target.dataset.infosource;
-  console.log("Mouse out", infoSource );
- 
+  //console.log("Mouse out", infoSource ); 
   document.getElementById("textoDescripcion").innerHTML =  descripciones[infoSource].general;    
 }
 

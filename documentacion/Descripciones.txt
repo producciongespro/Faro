@@ -1,0 +1,15 @@
+Descripciones
+0-desarrolloProfesional
+1-climaAula
+2-planeamiento
+3-apoyosEvaluacion
+4-recursosDidacticos
+5-documentosOficiales
+
+App:
+infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}
+
+
+comnponente:
+props.infoCategory
+data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } 
