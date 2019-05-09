@@ -41,7 +41,7 @@ a {
   margin-left: 5%;
   width: 70%; 
   height: 60%; 
-  background: #D4AC0D;
+  background: #f4ae11;
 }
 
 .negrito {
@@ -50,7 +50,7 @@ a {
   right: -5%;
   width: 30%; 
   height: 60%; 
-  background: rgb(24, 24, 23);
+  background: #3a3a3a;
 }
 
 .row { 
@@ -59,8 +59,8 @@ a {
 }
 
 .btn_rec {
-background-color: darkcyan;
-border-color: darkcyan;
+background-color: #0d7aa0;
+border-color: #0d7aa0;
 }
 
 .inform {

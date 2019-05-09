@@ -115,8 +115,10 @@ datos = [
               
               <div className="row">
             <button className="btn btn-success"   onClick={this.incrementarIndice} >siguiente</button>
-          
-              </div>
+               </div>
+
+               
+
               </React.Fragment>
          );
     }
