@@ -1,11 +1,11 @@
 import React  from 'react';
 import images from "../data/images.json";
-import textos from "../data/textos.json";
-import dsPdfs from "../data/pdf.json";
-import dsLinks from "../data/links.json";
+//import textos from "../data/textos.json";
+import pdfJson from "../data/pdf.json";
+//import linksJson from "../data/links.json";
 
-var pdfs = dsPdfs[0],
-links = dsLinks[0];
+const  pdfs = pdfJson[0];
+
 
 const DocsOficiales = ( props ) => {
   return ( 
@@ -13,12 +13,10 @@ const DocsOficiales = ( props ) => {
       <div className="col-4">
             <img className="titulos img-fluid" src={images[0].DocsOficialesTitulo } alt="Documentos educativos oficiales" />
                <img className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
-              <div id="textoDescripcion">
-                      {props.infoCategory}
+              <div id="textoDescripcion" class="texto_descripciones2">
+              <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
-              <a href={links.ProgramasEstudio} target="_blank" rel="noopener noreferrer"  >
-                  <img id="programas" className="img-fluid btn hvr-wobble-bottom" src={images[0].GeneralProgramasEstudio }  alt="Programas de estudio" />
-              </a>
+ 
       </div>
 
       <div className="col-8" >

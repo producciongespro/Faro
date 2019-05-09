@@ -23,8 +23,8 @@ const DesarrolloProf = (props) => {
       <div className="col-5 col-derecha">
             <img className="titulos img-fluid" src={img.DesarrolloTitulo} alt="Documentos educativos oficiales" />
                <img className="descripciones3 img-fluid" src={img.GeneralCajaDescripcion} alt="Descripción" />
-              <div  id="textoDescripcion">
-                {props.infoCategory}
+              <div  id="textoDescripcion" className="texto_descripciones">
+              <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
               <a href={links.IDP} target="_blank" rel="noopener noreferrer"  >
                 <img id="programas" className="img-fluid hvr-wobble-bottom" src={img.DesarrolloEnlaceDesarrollo} alt="Enlaces desarrollo" />

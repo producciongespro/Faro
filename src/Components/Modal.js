@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import imagesJson from "../data/images.json";
+import audiosJson from "../data/audios.json"
+
 
 
 
@@ -7,19 +10,23 @@ class Modal extends Component {
   constructor () {
     super ();
     this.state = {
-      htmlContent : ""
-      
+      htmlContent : ""      
     };
     this.selectTypeContent = this.selectTypeContent.bind(this);
-
     setTimeout( this.selectTypeContent, 10 );
   }
 
-  classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
-  modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
+    images = imagesJson[0];
+    audios = audiosJson[0];
+    classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
+    modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
+
   
   
-  selectTypeContent () {
+  
+  
+  selectTypeContent () {    
+
     var tmpContent;
     
     switch (this.props.typeContent) {
@@ -41,6 +48,25 @@ class Modal extends Component {
       this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = <embed  src={this.props.content+"#toolbar=1" }    type='application/pdf' width='100%' height='100%'></embed>                  
       break;
+      case "help":
+      //console.log("pdf"); 
+            this.modalAncho =  this.modalAncho + " modal-lg";
+            this.classModalBody = this.classModalBody + " modal-alto";
+              tmpContent =   
+                    <React.Fragment>
+                      <div>
+                        <img  className="img-fluid"  src= {this.images.BgIndicaciones} alt="fondo indicaciones"/>  
+                      </div>
+                      <div className="texto-indicaciones">
+                          { this.props.content }  
+                      </div>
+                      <img  className="img-ico-audio"  src= {this.images.Audio} onClick={this.playAudio}  alt="Icono activar audio"/>  
+                      <img  className="img-ico-close"  src= {this.images.IcoCerrarX} alt="Cerrar modal"/> 
+                      <audio src={this.audios.intro}  id="audioIntro" ></audio> 
+                      
+                                   
+                    </React.Fragment>
+      break;
     
       default:
         console.log("Opcion fuera de rango en modal");        
@@ -54,6 +80,12 @@ class Modal extends Component {
        
     }); 
 
+  }
+
+
+  playAudio () {
+    let audioIntro = document.getElementById("audioIntro");
+    audioIntro.play();
   }
 
 
@@ -73,7 +105,7 @@ class Modal extends Component {
         </div>
    
             <div className= {this.classModalBody } >
-                  {this.state.htmlContent}
+                  {this.state.htmlContent}                  
             </div>
          
           </div>

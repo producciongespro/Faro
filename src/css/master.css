@@ -32,6 +32,29 @@ a {
     display: block;
 }
 
+.texto-indicaciones {
+  /*background-color: #2098D1; */
+  position: absolute;
+  top: 14%;
+  left: 6%;
+  width: 90%;
+}
+
+.img-ico-audio {
+  position: absolute;
+  top: 4.5%;
+  left: 70%;
+  width: 5%;
+  height: auto;
+  cursor: pointer
+}
+
+.img-ico-audio:hover {
+  border: solid 1px orange;
+  border-radius: 100%;
+}
+
+
  /* ***********CSS de cursos virtuales******************* */
 
 .amarillo {
@@ -108,18 +131,18 @@ margin-bottom: 21px;
    text-align: center;
 }
 
-#imgRubricas {
+#rubricas {
   margin-top: -37%;
   margin-left: 7%;
 }
 
-#imgProceso {
+#proceso {
   margin-left: -13%;
   margin-top: -23%;
 }
 
-#imgLogro{
-  margin-top: -42%;
+#logro{
+  margin-top: -52%;
   margin-left: -26%;
 }
 
@@ -131,8 +154,30 @@ margin-bottom: 21px;
   z-index: 1;
 }
 
+.desc{
+  font-weight: 550;
+  font-size: 1.7vw;
+  color:#0b8a99;
+  margin-left: -10%;
+}
 /* Master 2 */
+.texto_descripciones{
+  margin-top: -50%;
+  font-weight: 550;
+  font-size: 1.2vw;
+  line-height : 19px;
+  width: 51%;
+  margin-left: 10%;
+}
 
+.texto_descripciones2{
+  margin-top: -62%;
+  font-weight: 550;
+  font-size: 1.2vw;
+  line-height : 19px;
+  width: 60%;
+  margin-left: 10%;
+}
 .titulos{
     margin-top: -5%;
     margin-left: -5%;
@@ -140,12 +185,12 @@ margin-bottom: 21px;
 
   .descripciones{
     margin-top: 28%;
-    margin-left: 15%;
+    
   }
 
   .descripciones3{
     margin-top: 15%;
-    margin-left: 15%;
+    
   }
 
   .centro{
@@ -231,15 +276,14 @@ margin-bottom: 21px;
   }
 
   #textoDescripcion{
-    font-size: 1.3vw;
-    margin-left: 18%;
+    
+   
     position: absolute;
-    margin-top: -62%;
-    width: 72%;
+    
   }
 
 #textoDescripcion2{
-    font-size: 1.3vw;
+    
     margin-left: 17%;
     position: absolute;
     margin-top: -51%;

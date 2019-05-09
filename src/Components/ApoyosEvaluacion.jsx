@@ -1,6 +1,6 @@
 import React from 'react';
 import images from "../data/images.json";
-import textos from "../data/textos.json";
+//import textos from "../data/textos.json";
 import dsPdfs from "../data/pdf.json";
 //import dsLinks from "../data/links.json";
 
@@ -20,9 +20,9 @@ const ApoyosEvaluacion = (props) => {
                               <img alt="Apoyos para la evaluación" className="img-fluid titulos" src={images[0].EvaluacionTitulo } />
                             </div>
                       </div>
-                      <img className="descripciones2 img-fluid" src={images[0].GeneralCajaDescripcion} alt="Descripción" />
-                     <div id="textoDescripcion">
-                       {props.infoCategory}
+                      <img className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion} alt="Descripción" />
+                     <div id="textoDescripcion" className="texto_descripciones">
+                     <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
                      </div>
               </div>
   
@@ -55,16 +55,17 @@ const ApoyosEvaluacion = (props) => {
   
       </div>
   <div className="row botones-grandes">
-    <div  className="col-6 hover12"  >
-      <figure>
-        <img className="btn img-fluid btn"  src={images[0].EvaluacionFicha}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} alt="Ficha Conceptual" />
-    </figure>
+    <div  className="col-3"  >
+
     </div>
     <div className="col-6 hover12" >
       <figure>
         <img className="btn img-fluid" id="" src={images[0].EvaluacionEjemplos}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} alt="Ejemplos de itemes para pruebas" />
       </figure>
     </div>
+    <div  className="col-3"  >
+
+</div>
     <div className="col-12 text-right"  >
         <img data-tar="Home" onClick={props.changePage} className="btn img-fluid hvr-pop" id="" src={images[0].BtnSalir } alt="Salir" />  
     </div>

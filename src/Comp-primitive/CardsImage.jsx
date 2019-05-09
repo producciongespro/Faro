@@ -14,11 +14,11 @@ const CardsImage = (props) => {
                     </div>
                
                     <div className="col-4 inform">
-                        <h5 className="card-title azul">{props.title}</h5>
-                        <p className="card-text"> {props.desc}  </p>
-                        <p className="card-text"> {props.desc}  </p>
-                        <p className="card-text"> {props.desc}  </p>
-                        <a href={props.urlWeb } className="btn btn-primary btn_rec">Ir al recurso</a>
+                        <h5 className="card-title azul"><b>Nombre: </b>{props.title}</h5>
+                        <p className="card-text"><b>Dirigido a: </b> {props.meta}  </p>
+                        <p className="card-text"><b>Propósito: </b> {props.prop}  </p>
+                        <p className="card-text"><b>Facilitador: </b> {props.facilitador}  </p>
+                        <a href={props.urlWeb } className=""> > Ir al recurso </a>
                     </div>
 
                 </div>

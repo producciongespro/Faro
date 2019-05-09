@@ -1,5 +1,6 @@
 [
     {
-        "Portada" : "https://recursos.mep.go.cr/ws_faro/audios/portada.mp3"
+        "Portada" : "https://recursos.mep.go.cr/ws_faro/audios/portada.mp3",
+        "intro" : "https://recursos.mep.go.cr/ws_faro/audios/intro.mp3"
     }
 ]
