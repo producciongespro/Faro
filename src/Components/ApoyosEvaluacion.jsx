@@ -21,7 +21,7 @@ const ApoyosEvaluacion = (props) => {
                             </div>
                       </div>
                       <img className="descripciones2 img-fluid" src={images[0].GeneralCajaDescripcion} alt="Descripción" />
-                     <div id="textoDescripcion">
+                     <div id="textoDescripcion" className="texto_descripciones">
                        {props.infoCategory}
                      </div>
               </div>
@@ -55,16 +55,17 @@ const ApoyosEvaluacion = (props) => {
   
       </div>
   <div className="row botones-grandes">
-    <div  className="col-6 hover12"  >
-      <figure>
-        <img className="btn img-fluid btn"  src={images[0].EvaluacionFicha}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} alt="Ficha Conceptual" />
-    </figure>
+    <div  className="col-3"  >
+
     </div>
     <div className="col-6 hover12" >
       <figure>
         <img className="btn img-fluid" id="" src={images[0].EvaluacionEjemplos}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} alt="Ejemplos de itemes para pruebas" />
       </figure>
     </div>
+    <div  className="col-3"  >
+
+</div>
     <div className="col-12 text-right"  >
         <img data-tar="Home" onClick={props.changePage} className="btn img-fluid hvr-pop" id="" src={images[0].BtnSalir } alt="Salir" />  
     </div>

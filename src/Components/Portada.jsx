@@ -17,13 +17,13 @@ const Portada = (props) => {
             <div className="row" >
          
                     <div className="col-5 text-right">                        
-                    <img onClick = {props.showModal }  data-typecontent ="video" data-content= {textos[0].VideoMinistro } className="img-fluid botones-portada"   src={images[0].BtnBienvenida} alt="Bienvenida"/>
+                    <img onClick = {props.showModal }  data-typecontent ="video" data-content= {textos[0].VideoMinistro } className="img-fluid botones-portada hvr-pop"   src={images[0].BtnBienvenida} alt="Bienvenida"/>
                     </div>
                     <div className="col-2 ">                     
                    
                     </div>
                     <div className="col-5 text-left">                     
-                    <img  data-tar="Home"  onClick={props.changePage}  className="img-fluid botones-portada " src={images[0].BtnIngresar} alt="Ingresar"/>
+                    <img  data-tar="Home"  onClick={props.changePage}  className="img-fluid botones-portada hvr-pop" src={images[0].BtnIngresar} alt="Ingresar"/>
                     </div>
       
             </div>

@@ -8,8 +8,8 @@ const Home = (props) => {
     <div className="barra-botones">
       
     <img className="btn img-fluid hvr-pop" id="caja" src={ images[0].HomeCaja } alt="Caja de herramientas" /> <br/>
-    <img className="btn img-fluid hvr-pop" id="home"  src={ images[0].HomeVolver } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
-    <img className="btn img-fluid hvr-pop" id="audio" src={ images[0].BtnInicio } alt="Sonido" />
+    <img className="btn img-fluid hvr-pop" id="home"  src={ images[0].HomeVolver } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" />
+    
 
     </div>
       <div className="row">
