@@ -14,7 +14,7 @@ const ApoyoClimaAula = (props) => {
             <img className="titulos img-fluid" src={images[0].ApoyoClimaAulaTitulo } alt="Apoyo clima en el aula" />
                <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion } alt="Descripción" />
               <div id="textoDescripcion" className="texto_descripciones">
-              <h2 class='desc'>Descripción:</h2> {props.infoCategory}
+              <h2 className='desc'>Descripción:</h2> {props.infoCategory}
               </div>              
       </div>
       <div  className="col-7">

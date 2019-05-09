@@ -14,6 +14,7 @@
       "BtnInicio" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btnInicio.png",
       "BtnIngresar" : "https://recursos.mep.go.cr/ws_faro/p0-portada/btn_ingresar.png",
       "BtnSalir" : "https://recursos.mep.go.cr/ws_faro/generales/btn_salir.png",
+      "BtnVolver" : "https://recursos.mep.go.cr/ws_faro/generales/btn_volver.png",
       "TituloPortada" : "https://recursos.mep.go.cr/ws_faro/p0-portada/titulo.png",
       "Bolso" : "https://recursos.mep.go.cr/ws_faro/p01-home/bolso.png", 
       "Celular" : "https://recursos.mep.go.cr/ws_faro/p01-home/celular.png",

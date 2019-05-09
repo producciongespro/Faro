@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import CardsImage from "../Comp-primitive/CardsImage.jsx";
+import DatosDesarrolloJson from "../data/desarrollo/otras_ofertas.json"
+import ImagesJson from "../data/images.json";
 
 
 class Catalogo extends Component {
@@ -12,78 +14,12 @@ class Catalogo extends Component {
     }
 
 
-datos = [
-        {
-          urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-          title : "Montaña 0 ",
-          desc :  "Es una bella montaña",
-          urlWeb : "lo.com"
-        },
-        {
-          urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-          title : "Montaña 1",
-          desc :  "Es una bella montaña",
-          urlWeb : "lo.com"
-        },
-        {
-          urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-          title : "Montaña 2 ",
-          desc :  "Es una bella montaña",
-          urlWeb : "lo.com"
-        },
-        {
-          urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-          title : "Montaña 3",
-          desc :  "Es una bella montaña",
-          urlWeb : "lo.com"
-        },
-        {
-          urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-          title : "Montaña 4",
-          desc :  "Es una bella montaña",
-          urlWeb : "lo.com"
-        },
-        {
-          urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-          title : "Montaña 5",
-          desc :  "Es una bella montaña",
-          urlWeb : "lo.com"
-        },
-        {
-          urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-          title : "Montaña 6",
-          desc :  "Es una bella montaña",
-          urlWeb : "lo.com"
-        },
-        {
-            urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-            title : "Montaña 7",
-            desc :  "Es una bella montaña",
-            urlWeb : "lo.com"
-          },
-          {
-            urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-            title : "Montaña 8",
-            desc :  "Es una bella montaña",
-            urlWeb : "lo.com"
-          },
-          {
-            urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-            title : "Montaña 9",
-            desc :  "Es una bella montaña",
-            urlWeb : "lo.com"
-          },
-          {
-            urlImage : "https://www.ecestaticos.com/imagestatic/clipping/b05/b5b/b05b5bd1b9eec88c912908db22159143/las-misteriosas-montanas-africanas-en-las-que-se-produjo-el-genesis-de-la-vida.jpg",
-            title : "Montaña 10",
-            desc :  "Es una bella montaña",
-            urlWeb : "lo.com"
-          }
-    
-    ]
-
+datos = DatosDesarrolloJson;
+images = ImagesJson[0];
 
     cargarArray () {
+      console.log(this.datos);
+      
         return this.datos.slice(  this.state.indice, this.state.indice + this.state.limite );
     }
 
@@ -106,7 +42,7 @@ datos = [
                
                tmpArray.map( (dato, i) => {
                   return (
-                    <CardsImage urlImage={dato.urlImage }     title={dato.title}  desc={dato.desc}   urlWeb={dato.urlImage} key={i} />
+                    <CardsImage urlImage={dato.url }  title={dato.nombre}  meta={dato.meta} prop={dato.proposito} facilitador={dato.facilitador}  urlWeb={dato.url} key={i} />
                   )
           })
           }  
@@ -115,8 +51,13 @@ datos = [
               
               <div className="row">
             <button className="btn btn-success"   onClick={this.incrementarIndice} >siguiente</button>
-          
+            </div>
+            <div class="row">
+          <div class="col-12 pie">
+            <img class="botones-portada hvr-pop img-fluid" id="" src={this.images.BtnVolver} alt=""/>
+      </div>
               </div>
+              
               </React.Fragment>
          );
     }

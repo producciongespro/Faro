@@ -22,7 +22,7 @@ const ApoyosEvaluacion = (props) => {
                       </div>
                       <img className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion} alt="Descripción" />
                      <div id="textoDescripcion" className="texto_descripciones">
-                     <h2 class='desc'>Descripción:</h2>  {props.infoCategory}
+                     <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
                      </div>
               </div>
   
