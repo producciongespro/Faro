@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import images from "../data/images.json";
+import imagesJson from "../data/images.json";
+import audiosJson from "../data/audios.json"
 
 
 
@@ -15,7 +16,8 @@ class Modal extends Component {
     setTimeout( this.selectTypeContent, 10 );
   }
 
-    images = images[0];
+    images = imagesJson[0];
+    audios = audiosJson[0];
     classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
     modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
 
@@ -56,8 +58,11 @@ class Modal extends Component {
                         <img  className="img-fluid"  src= {this.images.BgIndicaciones} alt="fondo indicaciones"/>  
                       </div>
                       <div className="texto-indicaciones">
-                      { this.props.content }  
+                          { this.props.content }  
                       </div>
+                      <img  className="img-ico-audio"  src= {this.images.Audio} onClick={this.playAudio}  alt="Icono activar audio"/>  
+                      <img  className="img-ico-close"  src= {this.images.IcoCerrarX} alt="Cerrar modal"/> 
+                      <audio src={this.audios.intro}  id="audioIntro" ></audio> 
                       
                                    
                     </React.Fragment>
@@ -75,6 +80,12 @@ class Modal extends Component {
        
     }); 
 
+  }
+
+
+  playAudio () {
+    let audioIntro = document.getElementById("audioIntro");
+    audioIntro.play();
   }
 
 
