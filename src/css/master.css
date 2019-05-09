@@ -132,7 +132,17 @@ margin-bottom: 21px;
 }
 
 /* Master 2 */
+.texto_descripciones{
+  margin-top: -50%;
+  
+  width: 58%;
+}
 
+.texto_descripciones2{
+  margin-top: -62%;
+  
+  width: 69%;
+}
 .titulos{
     margin-top: -5%;
     margin-left: -5%;
@@ -234,8 +244,7 @@ margin-bottom: 21px;
     font-size: 1.3vw;
     margin-left: 18%;
     position: absolute;
-    margin-top: -62%;
-    width: 72%;
+    
   }
 
 #textoDescripcion2{
