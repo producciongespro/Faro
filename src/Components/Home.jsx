@@ -5,6 +5,13 @@ import images from "../data/images.json";
 const Home = (props) => {
   return ( 
     <React.Fragment>
+    <div className="barra-botones">
+      
+    <img className="btn img-fluid hvr-pop" id="caja" src={ images[0].HomeCaja } alt="Caja de herramientas" /> <br/>
+    <img className="btn img-fluid hvr-pop" id="home"  src={ images[0].HomeVolver } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
+    <img className="btn img-fluid hvr-pop" id="audio" src={ images[0].BtnInicio } alt="Sonido" />
+
+    </div>
       <div className="row">
             <div className="col-1">
               
@@ -22,18 +29,7 @@ const Home = (props) => {
 
             </div>  
       </div>
-      <div className="row barra-botones">
-          <div  className="col-4">
-            <img className="btn img-fluid hvr-pop" id="home"  src={ images[0].HomeVolver } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" />
-          </div>
-          <div className="col-4 ">
-          
-          </div>
-          <div className="col-4 ">
-            <img className="btn img-fluid hvr-pop" id="caja" src={ images[0].HomeCaja } alt="Caja de herramientas" />
-            <img className="btn img-fluid hvr-pop" id="audio" src={ images[0].HomeSonido } alt="Sonido" />
-          </div>
-      </div>
+
     </React.Fragment>
    );
 }

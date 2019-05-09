@@ -32,6 +32,49 @@ a {
     display: block;
 }
 
+ /* ***********CSS de cursos virtuales******************* */
+
+.amarillo {
+  float:left;
+  padding-top:10%; 
+  margin-right: -9%;
+  margin-left: 5%;
+  width: 70%; 
+  height: 60%; 
+  background: #D4AC0D;
+}
+
+.negrito {
+  float:left;
+  padding-top:10%; 
+  right: -5%;
+  width: 30%; 
+  height: 60%; 
+  background: rgb(24, 24, 23);
+}
+
+.row { 
+  margin-top: 2%;
+
+}
+
+.btn_rec {
+background-color: darkcyan;
+border-color: darkcyan;
+}
+
+.inform {
+  border-color: darkcyan;
+  border-left-style: dashed;
+  padding-top: 4%;
+  height: 80%;
+  border-radius: 15px 0px 0px 15px;
+ -moz-border-radius: 15px 0px 0px 15px;
+ -webkit-border-radius: 15px 0px 0px 15px;
+  }
+
+  /* ****************************** */
+
 .botones-portada {
     cursor: pointer;
 }
@@ -405,7 +448,8 @@ a {
 
 
 .barra-botones{
-  margin-top: 55%;
+  margin-top: 2%;
+  float: right;
  }
 
  #caja, #audio{
@@ -414,5 +458,5 @@ a {
  }
 
  #home{
-  margin-left: 14px;
+  margin-left: 0px;
  }
