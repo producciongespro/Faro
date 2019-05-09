@@ -42,7 +42,17 @@
         "prescolar": "Descripción del apartado de recursos prescolar",
         "primaria": "Descripción del apartado de recursos primaria",
         "secundaria": "Descripción del apartado de recursos secundaria"
-      }
-  
+      },
+      {
+        "categoria" : "5-documentosOficiales",
+        "general": "Documentos Oficiales: Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
+        "politica" : "Política",
+        "perfil": "Descripción del apartado de perfil",
+        "estudiante": "Estudiante",
+        "faro": "FARO",
+        "transformacion" : "transformación",
+        "fundamentos" : "fundamentos",
+        "reglamento" : "reglamento"
+      }  
 
 ]
