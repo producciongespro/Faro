@@ -17,22 +17,23 @@ const CatalogoWeb = (props) => {
             <a className="nav-item nav-link link-custom" href="#web">Herramientas Web</a>
             <a className="nav-item nav-link link-custom" href="#apps">Apps Educativas</a>            
             <a className="nav-item nav-link link-custom" href="#estrategias">Estrategias de aprendizaje</a>            
-            <a className="nav-item nav-link link-custom" href="#tmp"  onClick={props.handlerCloseCatalogWeb }  >Volver</a>            
+            <a className="nav-item nav-link link-custom" href="#tmp"  onClick={props.handlerCloseCatalogWeb }> Volver</a>            
             </nav>
-            <br/>
+            <br/>  <br/>
+        
 
             <div id="educativos">
-                       <h4> Sitios Educativos </h4> <br/>
+            <div><img  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/></div>
                         {
                             sitiosWeb[0].map((item, i) => (
                                 <div className="tarjetas-web"  key={i} >
                                 <div className="row"> 
-                                <div><img alt="Desarrollo de otras ofertas" className="img_circ" src={img.DesarrolloDecSitios}/></div>
-                                   <h6> {item.nombre} </h6>
+                                <div><img  alt="Desarrollo de otras ofertas" className="img_dec_sitio" src={img.DesarrolloDecSitios}/></div>
+                                   <h6> <b> {item.nombre}</b></h6>
                                    </div>
                                     <p>  {item.desc}  </p>
-                                    <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" > > Visitar </a>
-                                    <hr/>
+                                    <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
+                                    <hr/>  <hr/>
                                 </div>
                             ) )
                          }
@@ -40,14 +41,18 @@ const CatalogoWeb = (props) => {
 
             <div id="web">
                     <h4> Herramientas Web </h4> <br/>
+                    <div><img  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/></div>
                     {
-                            sitiosWeb[1].map((item, i) => (
-                                <div className="tarjetas-web"  key={i} >
-                                    <h6> &#8605; {item.nombre} </h6>
-                                    <p>  {item.desc}  </p>
-                                    <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" > > Visitar </a>
-                                    <hr/>
-                                </div>
+                           sitiosWeb[1].map((item, i) => (
+                            <div className="tarjetas-web"  key={i} >
+                            <div className="row"> 
+                            <div><img  alt="Desarrollo de otras ofertas" className="img_dec_sitio" src={img.DesarrolloDecSitios}/></div>
+                               <h6> <b> {item.nombre}</b></h6>
+                               </div>
+                                <p>  {item.desc}  </p>
+                                <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
+                                <hr/>  <hr/>
+                            </div>
                             ) )
                          }
 

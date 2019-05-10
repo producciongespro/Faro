@@ -70,7 +70,7 @@ const CardsImage = (props) => {
                     <div className="col-sm-11 inform1">
                     <h6><b>Nombre: </b>{props.item.nombre}</h6>
                     <p><b>Descripción: </b> {props.item.desc}  </p>
-                    <a href={props.item.url } className="link-card"  target="_blank" rel="noopener noreferrer" >Ver video </a>
+                    <a href={props.item.url } className="link-card"  target="_blank" rel="noopener noreferrer" >Visitar </a>
                     <br/><br/>
                     </div>
                 </div>
