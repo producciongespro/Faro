@@ -64,7 +64,7 @@ const CardsImage = (props) => {
                 <div className="row">   
                     
                     <div className="col-sm-1">
-                    <div><img alt="Desarrollo de otras ofertas"  src={img.DesarrolloCircOtrasOfert}/></div>
+                    <div><img alt="Desarrollo de otras ofertas" className="img_circ" src={img.DesarrolloCircOtrasOfert}/></div>
                     </div>
 
                     <div className="col-sm-11 inform1">
