@@ -31,6 +31,14 @@ images = ImagesJson[0];
     }
 
 
+    decrementarIndice = () => {
+        //Aumenta el indice para cargar los demás objetos del array
+        this.setState({
+            indice : this.state.indice - 4
+        })
+    }
+
+
 
     render() { 
         let tmpArray = this.cargarArray();
@@ -57,23 +65,23 @@ images = ImagesJson[0];
               </div> 
               
              <div className="row">
-            <button className="btn btn-success"   onClick={this.incrementarIndice} >siguiente</button>
+            
             </div>
             
 
             <div class="row">
                 <div class="col-11 pie">
-                    <img class="botones-portada hvr-pop img-fluid" id="" src={this.images.DesarrolloBtnIzq} alt=""/>
+                    <img class="botones-portada hvr-pop img-fluid" id="btnDecrementar"   onClick={this.decrementarIndice} src={this.images.DesarrolloBtnIzq} alt=""/>
                  </div>
 
                  <div class="col-1 pie">
-                    <img class="botones-portada hvr-pop img-fluid" id="" src={this.images.DesarrolloBtnDer} alt=""/>
+                    <img class="botones-portada hvr-pop img-fluid"  id="btnIncrementar" onClick={this.incrementarIndice} src={this.images.DesarrolloBtnDer} alt=""/>
                  </div>
              </div>
 
             <div class="row">
                 <div class="col-12 pie">
-                    <img class="botones-portada hvr-pop img-fluid" id="" src={this.images.BtnVolver} alt=""/>
+                    <img class="botones-portada hvr-pop img-fluid" id="btnVolver"   onClick={this.props.handlerCloseCatalog}    src={this.images.BtnVolver} alt="Volver"/>
                  </div>
              </div>
               
