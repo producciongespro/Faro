@@ -20,7 +20,7 @@ const RecursosDidacticos = (props) => {
               <h2 className='desc'>Descripción:</h2>  { props.infoCategory }                
               </div>
               <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
-                  <img id="programas" className="img-fluid btn hvr-wobble-bottom" src={images[0].GeneralEducatico } alt="Educatico" />
+                  <img id="material_adicional" className="img-fluid btn hvr-wobble-bottom" src={images[0].GeneralEducatico } alt="Educatico" />
               </a>
       </div>
 

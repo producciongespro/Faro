@@ -21,20 +21,20 @@ const DocsOficiales = ( props ) => {
 
       <div className="col-8" >
         <div className="row">
-            <div className="col-4 hover11 ladoIzq">
+            <div className="col-4  ladoIzq">
               <figure>
-                <img className="botones-portada img-fluid" id="politica" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={images[0].DocsOficialesPoliticaEducativa } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
+                <img className="botones-portada hvr-pop img-fluid" id="politica" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={images[0].DocsOficialesPoliticaEducativa } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
               </figure>
               </div>
-            <div className="col-4 hover11 centro">
+            <div className="col-4 ">
                 <figure>
-                <img className="botones-portada  img-fluid" id="fundamentos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {images[0].DocsOficialesFundCurriculo }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
+                <img className="botones-portada hvr-pop img-fluid" id="fundamentos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {images[0].DocsOficialesFundCurriculo }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
               
               </figure>
             </div>
-            <div className="col-4 hover11 ladoDer">
+            <div className="col-4  ladoDer">
                 <figure>
-              <img className="botones-portada img-fluid" id="programas" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {images[0].DocsOficialesProgramas } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil de estudio" />
+              <img className="botones-portada hvr-pop img-fluid" id="programas" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {images[0].DocsOficialesProgramas } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil de estudio" />
               </figure>
             </div>
         </div>
@@ -43,27 +43,27 @@ const DocsOficiales = ( props ) => {
             <div className="col-4 fondo" >   
               <img id="transformacion" className="img-fluid" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }   src= {images[0].DocsOficialesTransformacionCurricular }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Transformación curricular" />
             </div>
-            <div className="col-4">
+            <div className="col-4  ladoIzq">
             <figure>
-              <img className="botones-portada img-fluid" id="reglamento" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={images[0].DocsOficialesReglamento } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />
+              <img className="botones-portada hvr-pop img-fluid" id="reglamento" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={images[0].DocsOficialesReglamento } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />
             
             </figure>
             </div>
         </div>
         <div className="row">
-          <div className="col-4 hover11 ladoIzq">
+          <div className="col-4  ladoIzq">
               <figure>
-            <img className="botones-portada  img-fluid" id="faro" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src=  {images[0].DocsOficialesFaro } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
+            <img className="botones-portada hvr-pop img-fluid" id="faro" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src=  {images[0].DocsOficialesFaro } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
             </figure>
           </div>
-          <div className="col-4 hover11 centro">
+          <div className="col-4 ">
               <figure>
-              <img className="botones-portada  img-fluid" id="estudiante" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={images[0].DocsOficialesPerfilEstudiante }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
+              <img className="botones-portada hvr-pop img-fluid" id="estudiante" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={images[0].DocsOficialesPerfilEstudiante }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
             </figure>
           </div>
-          <div className="col-4 hover11 ladoDer">
+          <div className="col-4  ladoIzq">
               <figure>
-              <img className="botones-portada img-fluid" id="perfil" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={images[0].DocsOficialesPerfildocente } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil docente" />
+              <img className="botones-portada img-fluid hvr-pop" id="perfil" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={images[0].DocsOficialesPerfildocente } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil docente" />
             
             </figure>
           </div>
