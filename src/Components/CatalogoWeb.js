@@ -1,6 +1,8 @@
 import React from 'react';
 import sitiosWeb from '../data/desarrollo/sitios.json'
+import images from "../data/images.json";
 
+var img = images[0];
 //console.log(sitiosWeb);
 
 
@@ -8,6 +10,8 @@ import sitiosWeb from '../data/desarrollo/sitios.json'
 const CatalogoWeb = (props) => {
     return ( 
         <React.Fragment>
+
+    
             <nav className="nav nav-pills fixed-top nav-justified custom-nav">
             <a className="nav-item nav-link link-custom" href="#educativos">Sitios Educativos</a>
             <a className="nav-item nav-link link-custom" href="#web">Herramientas Web</a>
@@ -22,9 +26,12 @@ const CatalogoWeb = (props) => {
                         {
                             sitiosWeb[0].map((item, i) => (
                                 <div className="tarjetas-web"  key={i} >
-                                    <h6> &#8605; {item.nombre} </h6>
+                                <div className="row"> 
+                                <div><img alt="Desarrollo de otras ofertas" className="img_circ" src={img.DesarrolloDecSitios}/></div>
+                                   <h6> {item.nombre} </h6>
+                                   </div>
                                     <p>  {item.desc}  </p>
-                                    <a href={item.url} target="_blank" rel="noopener noreferrer"> {item.url} </a>
+                                    <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" > > Visitar </a>
                                     <hr/>
                                 </div>
                             ) )
@@ -38,7 +45,7 @@ const CatalogoWeb = (props) => {
                                 <div className="tarjetas-web"  key={i} >
                                     <h6> &#8605; {item.nombre} </h6>
                                     <p>  {item.desc}  </p>
-                                    <a href={item.url} target="_blank" rel="noopener noreferrer"> {item.url} </a>
+                                    <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" > > Visitar </a>
                                     <hr/>
                                 </div>
                             ) )
