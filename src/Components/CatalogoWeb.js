@@ -13,7 +13,7 @@ const CatalogoWeb = (props) => {
             <a className="nav-item nav-link" href="#web">Herramientas Web</a>
             <a className="nav-item nav-link" href="#apps">Apps Educativas</a>            
             <a className="nav-item nav-link" href="#estrategias">Estrategias de aprendizaje</a>            
-            <a className="nav-item nav-link" href="#estrategias"  onClick={props.handlerCloseCatalogWeb }  >Volver</a>            
+            <a className="nav-item nav-link" href="#tmp"  onClick={props.handlerCloseCatalogWeb }  >Volver</a>            
             </nav>
             <br/>
 
