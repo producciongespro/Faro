@@ -54,9 +54,20 @@ a {
   border-radius: 100%;
 }
 
+.custom-nav {
+  background-color: rgb(34,168,161);
+  color:#fff;
+  padding: 4px;
+  border-bottom: solid olive 1px;
+}
+
+.link-custom {
+  color:#fff;
+}
+
+
 
  /* ***********CSS de cursos virtuales******************* */
-
 .amarillo {
   float:left;
   padding-top:10%; 
@@ -95,6 +106,33 @@ border-color: #0d7aa0;
   }
 
   /* ****************************** */
+  .inform1 {
+    line-height:16px;
+     }
+ 
+     .azul {
+       float:left;
+       padding-top:1%; 
+       margin-right: -9%;
+       margin-left: 5%;
+       width: 70%; 
+       height: 100%; 
+       background: #00809B;
+     }
+ 
+     .negrito1 {
+       float:left;
+       padding-top:1%; 
+       right: -5%;
+       width: 50%; 
+       height: 100%; 
+       background: #3a3a3a;
+     }
+   /* ****************************** */
+
+
+
+
 
 .botones-portada {
     cursor: pointer;
