@@ -16,10 +16,18 @@ class Catalogo extends Component {
          }
     }
 
+//Array que carga el json dependiendo de la subcategoría seleccionada
+mainArray
+
+
+componentDidMount () {
+    console.log("Subcategoria:", this.props.idCat);
+
+}
+
 images = ImagesJson[0];
 
-    cargarArray () {
-      console.log(this.datos);      
+    cargarArray () {      
         return cursos.slice(  this.state.indice, this.state.indice + this.state.limite );
     }
 
@@ -44,15 +52,13 @@ images = ImagesJson[0];
         let tmpArray = this.cargarArray();
         return ( 
             <React.Fragment>
-
-                <div class="row">
-                <div class="col-12">
-                    <img class="hvr-pop img-fluid" id="" src={this.images.DesarrolloTituloCursosVirt} alt=""/>
+                <div className="row">
+                <div className="col-12">
+                    <img className="hvr-pop img-fluid" id="imgTitulo" src={this.images.DesarrolloTituloCursosVirt} alt="titulo"/>
                  </div>
              </div>
 
-            <div className="row"> 
-              
+            <div className="row">               
            {
                
                tmpArray.map( (dato, i) => {
@@ -69,19 +75,19 @@ images = ImagesJson[0];
             </div>
             
 
-            <div class="row">
-                <div class="col-11 pie">
-                    <img class="botones-portada hvr-pop img-fluid" id="btnDecrementar"   onClick={this.decrementarIndice} src={this.images.DesarrolloBtnIzq} alt=""/>
+            <div className="row">
+                <div className="col-11 pie">
+                    <img className="botones-portada hvr-pop img-fluid" id="btnDecrementar"   onClick={this.decrementarIndice} src={this.images.DesarrolloBtnIzq} alt=""/>
                  </div>
 
-                 <div class="col-1 pie">
-                    <img class="botones-portada hvr-pop img-fluid"  id="btnIncrementar" onClick={this.incrementarIndice} src={this.images.DesarrolloBtnDer} alt=""/>
+                 <div className="col-1 pie">
+                    <img className="botones-portada hvr-pop img-fluid"  id="btnIncrementar" onClick={this.incrementarIndice} src={this.images.DesarrolloBtnDer} alt=""/>
                  </div>
              </div>
 
-            <div class="row">
-                <div class="col-12 pie">
-                    <img class="botones-portada hvr-pop img-fluid" id="btnVolver"   onClick={this.props.handlerCloseCatalog}    src={this.images.BtnVolver} alt="Volver"/>
+            <div className="row">
+                <div className="col-12 pie">
+                    <img className="botones-portada hvr-pop img-fluid" id="btnVolver"   onClick={this.props.handlerCloseCatalog}    src={this.images.BtnVolver} alt="Volver"/>
                  </div>
              </div>
               
