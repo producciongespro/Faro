@@ -429,5 +429,78 @@
       "url": "https://www.commonsensemedia.org/app-reviews/virtual-manipulatives"
     }
 
-   ]
+   ],
+
+
+
+
+
+
+
+
+
+
+    [
+      {
+        "nombre": "Estrategias didácticas innovadoras para aplicar en tus clases",
+        "desc":"Presenta 5 estrategias didácticas innovadoras que puedes poner en funcionamiento con tus alumnos. Son nuevas formas de aprendizaje que tienen muchos beneficios didácticos como el razonamiento, la creatividad o la autoestima.",
+        "url": "https://spain.minilandeducational.com/school/estrategias-didacticas-innovadoras-para-tus-clases"
+      },
+
+      {
+        "nombre": "Educar Chile",
+        "desc":"Es un portal autónomo, pluralista y de servicio público que cuenta con la colaboración de los sectores público, privado y filantrópico.Concurren a su creación el Ministerio de Educación de Chile y la Fundación Chile. Nace de la confluencia de los sitios educativos de la Red Enlaces del Ministerio de Educación y del Programa de Educación de la Fundación Chile y está dirigido a todos los miembros de la comunidad educativa nacional: a las escuelas, sus docentes, alumnos y directivos; a las familias chilenas y los organismos de padres y apoderados; a los sostenedores municipales y privados; a los investigadores y especialistas de la educación; a las facultades de pedagogía y a los organismos de la cultura.",
+        "url": "http://ww2.educarchile.cl/Portal.Base/Web/verContenido.aspx?ID=136996"
+      },
+
+      {
+        "nombre": "Estrategias didácticas para enseñar a aprender",
+        "desc":"Los autores de este artículo proponen una serie de estrategias para potenciar en los alumnos el “aprender a aprender”, propuesto por los nuevos enfoques educativos a partir del postulado teórico impulsado por la llamada Escuela Nueva” La adecuación de la enseñanza al sujeto que aprende ha sido objeto de atención por todos los educadores y expresada de modo permanente en la literatura educativa desde aquella “escuela a la medida” propugnada por el movimiento pedagógico conocido como “Nueva Escuela”, hasta las tendencias más contemporáneas.",
+        "url": "https://educrea.cl/estrategias-didacticas-para-ensenar-a-aprender/"
+      },
+
+      {
+        "nombre": "Intervención educativa: Lo que necesita saber",
+        "desc":"Este enlace muestra a 15 organizaciones sin fines de lucro que se han unido para apoyar a los padres de uno entre cinco chicos con dificultades de aprendizaje y de atención a largo del camino.Con el apoyo apropiado, los padres pueden ayudar a que sus hijos desarrollen sus destrezas y alcancen todo su potencial. Con tecnología avanzada, recursos personalizados, acceso gratuito a expertos todos los días, una comunidad en línea segura, consejos prácticos y mucho más, la meta de Understood es ser ese apoyo que usted y su familia necesitan.",
+        "url": "https://www.understood.org/es-mx/learning-attention-issues/treatments-approaches/educational-strategies/instructional-intervention-what-you-need-to-know"
+      },
+
+      {
+        "nombre": "Biblioteca docente",
+        "desc":"https://educrea.cl/biblioteca-docente/",
+        "url": "En la Biblioteca Docente de Educrea hay 665 documentos relacionados con diversas áreas de la docencia. A continuación, encontrarás las áreas más relevantes con documentos e información de tu interés como docente."
+      },
+
+      {
+        "nombre": "¿Qué son las estrategias didácticas?",
+        "desc":"Presenta acciones planificadas por el docente con el objetivo de que el estudiante logre la construcción del aprendizaje y se alcancen los objetivos planteados. Una estrategia didáctica es, en un sentido estricto, un procedimiento organizado, formalizado y orientado a la obtención de una meta claramente establecida. Su aplicación en la práctica diaria requiere del perfeccionamiento de procedimientos y de técnicas cuya elección detallada y diseño son responsabilidad del docente",
+        "url": "https://www.uned.ac.cr/academica/images/ceced/docs/Estaticos/contenidos_curso_2013.pdf"
+      },
+
+      {
+        "nombre": "Ejemplos de estrategias didácticas para el maestro de educación inicial",
+        "desc":"Facilita los materiales y recursos que permiten que tener resultados para poder contribuir a la promoción de hábitos saludables de alimentación y salud en nuestras comunidades.",
+        "url": "https://www.laloncherademihijo.org/docentes/ejemplos.asp"
+      },
+
+      {
+        "nombre": "3 tipos de estrategias de aprendizaje",
+        "desc":"Se presentan estrategias de aprendizaje para lograr que los alumnos se conviertan en aprendices más eficaces. Las tres estrategias de aprendizaje más famosas son las memotécnicas, las estructurales y las generativas. Son enfoques que sin duda serán conocidos a todos los docentes porque las han usado en más de una ocasión.",
+        "url": "https://lamenteesmaravillosa.com/3-tipos-estrategias-de-aprendizaje/"
+      },
+
+      {
+        "nombre": "Estrategia Didáctica",
+        "desc":"Estrategia didáctica: Es la planificación del proceso de enseñanza-aprendizaje para la cual el docente elige las técnicas y actividades que puede utilizar a fin de alcanzar los objetivos de su curso.",
+        "url": "https://www.ecured.cu/Estrategia_Did%C3%A1ctica"
+      },
+
+      {
+        "nombre": "Estrategias Educativas Globalizadoras",
+        "desc":"Las estrategias globalizadoras más destacadas son los centros o proyectos de interés, el método de proyectos, las técnicas de Freinet y la metodología de descubrimiento y la investigación. Se explica el principio globalizador que es la programación educativa en forma de ideas asociadas, que sustituye el tradicional programa dividido en materias aisladas.  En las estrategias de globalización únicamente la enseñanza por núcleos o centros de interés es motivadora para el alumnado, porque respeta la forma natural de adquisición de conocimientos.",
+        "url": "http://www.educapanama.edu.pa/?q=articulos-educativos/estrategias-educativas-globalizadoras"
+      }
+
+    ]
+
 ]
