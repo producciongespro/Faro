@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import CardsImage from "../Comp-primitive/CardsImage.jsx";
+import Cards from "../Comp-primitive/Cards.jsx";
 import ImagesJson from "../data/images.json";
 
 
 //Json con información:
 import cursos from '../data/desarrollo/cursos.json';
+import videoteca from '../data/desarrollo/videoteca.json';
 
 
 class Catalogo extends Component {
@@ -14,21 +15,38 @@ class Catalogo extends Component {
             indice : 0,
             limite : 4
          }
+            //Caraga el array  de acuerdo a la opción seleccionada en "desarrollo profesional"
+        this.tmpArray=""
+        this.images = ImagesJson[0];
     }
 
-//Array que carga el json dependiendo de la subcategoría seleccionada
-mainArray
+   
 
 
-componentDidMount () {
+
+
+componentWillMount () {
     console.log("Subcategoria:", this.props.idCat);
+    switch (this.props.idCat) {
+        case "cursos":
+            this.tmpArray = cursos;
+        break;
+        case "videoteca":
+            this.tmpArray = videoteca;
+        break;
+    
+        default:
+            console.log("parámetro fuera de rango");        
+        break;
+    }
+    
 
 }
 
-images = ImagesJson[0];
 
-    cargarArray () {      
-        return cursos.slice(  this.state.indice, this.state.indice + this.state.limite );
+
+    cargarArray = ( ) => {      
+        return this.tmpArray.slice(  this.state.indice, this.state.indice + this.state.limite );
     }
 
     incrementarIndice = () => {
@@ -48,8 +66,7 @@ images = ImagesJson[0];
 
 
 
-    render() { 
-        let tmpArray = this.cargarArray();
+    render() {         
         return ( 
             <React.Fragment>
                 <div className="row">
@@ -59,13 +76,12 @@ images = ImagesJson[0];
              </div>
 
             <div className="row">               
-           {
-               
-               tmpArray.map( (dato, i) => {
-                  return (
-                    <CardsImage urlImage={dato.url }  title={dato.nombre}  meta={dato.meta} prop={dato.proposito} facilitador={dato.facilitador}  urlWeb={dato.url} key={i} />
-                  )
-          })
+           {             
+            this.cargarArray().map( (item, i) => {
+                return (
+                            <Cards  idCat={this.props.idCat}   item={item} key={i} />
+                        )
+                    })
           }  
                 
               </div> 

@@ -48,7 +48,7 @@ const DesarrolloProf = (props) => {
         <div className="row botones-inferiores">
           <div  className="col-4 hover11 ">
             <figure>
-              <img className="botones-portada derecha img-fluid" id="videoteca" src={img.DesarrolloVideoteca}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0}  onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.showModal}  alt="Videoteca" />
+              <img className="botones-portada derecha img-fluid" id="videoteca" src={img.DesarrolloVideoteca}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0}  onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}  alt="Videoteca" />
             </figure>
             </div>
           <div className="col-4 centro hover11 ">
