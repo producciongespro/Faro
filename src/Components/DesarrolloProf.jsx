@@ -24,7 +24,7 @@ const DesarrolloProf = (props) => {
               <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
               <a href={links.IDP} target="_blank" rel="noopener noreferrer"  >
-                <img id="programas" className="img-fluid hvr-wobble-bottom" src={img.DesarrolloEnlaceDesarrollo} alt="Enlaces desarrollo" />
+                <img id="material_adicional" className="img-fluid hvr-wobble-bottom" src={img.DesarrolloEnlaceDesarrollo} alt="Enlaces desarrollo" />
               </a>
       </div>
       <div id="botones-desarrollo" className="col-7">
