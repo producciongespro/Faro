@@ -113,8 +113,9 @@ componentDidMount ( ) {
 //Métodos de catologo ------------------------------------
 
   handlerOpenCatalog = (e) => {
+    const id = e.target.id;    
     this.setState ({
-      currentPage : <Catalogo    handlerCloseCatalog={ this.handlerCloseCatalog} />
+      currentPage : <Catalogo   idCat={id}  handlerCloseCatalog={ this.handlerCloseCatalog} />
     })
   }
 
