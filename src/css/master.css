@@ -54,6 +54,12 @@ a {
   border-radius: 100%;
 }
 
+.custom-nav {
+  background-color: brown;
+  padding: 4px;
+  border-bottom: solid olive 1px;
+}
+
 
  /* ***********CSS de cursos virtuales******************* */
 .amarillo {
@@ -230,43 +236,46 @@ border-color: #0d7aa0;
   }
 
   #politica{
-    margin-left: 70%;
-    margin-top: 20%;
+    margin-left: 74%;
+    margin-top: 31%;
       z-index: 1;
   }
 
   #estudiante{
-    margin-left: -66%;
-    margin-top: 26%;
-    z-index: 2;
+    margin-top: -7%;
+    z-index: 3;
+    margin-left: -18%;
   }
 
   #perfil{
-    margin-top: 1%;
+    margin-top: -28%;
     z-index: 3;
+    margin-left: -40%;
   }
 
   #programas{
-    margin-top: 2%;
-    margin-left: 15%;
+    margin-top: 24%;
+    margin-left: -39%;
   }
 
   #transformacion{
-    margin-top: -30%;
+    margin-top: -39%;
   }
 
   #faro{
-    margin-left: 70%;
-    margin-top: -21%;
+    margin-left: 73%;
+    margin-top: -29%;
   }
 
   #fundamentos{
-  margin-top: -5%;
+    margin-top: 9%;
+    z-index: 3;
+    margin-left: -21%;
   }
 
   #reglamento{
-    margin-left: -63%;
-    margin-top: -21%;
+    margin-left: -12%;
+    margin-top: -15%;
   }
 
   #prescolar{
