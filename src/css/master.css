@@ -55,10 +55,16 @@ a {
 }
 
 .custom-nav {
-  background-color: brown;
+  background-color: rgb(34,168,161);
+  color:#fff;
   padding: 4px;
   border-bottom: solid olive 1px;
 }
+
+.link-custom {
+  color:#fff;
+}
+
 
 
  /* ***********CSS de cursos virtuales******************* */
