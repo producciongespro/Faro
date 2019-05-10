@@ -1,4 +1,7 @@
 import React from 'react';
+import images from "../data/images.json";
+
+var img = images[0];
 
 const CardsImage = (props) => {
   var tmpComp;
@@ -18,7 +21,7 @@ const CardsImage = (props) => {
                     </div>
                
                     <div className="col-4 inform">
-                        <h5 className="card-title azul"><b>Nombre: </b>{props.item.nombre}</h5>
+                        <h5 className="card-title"><b>Nombre: </b>{props.item.nombre}</h5>
                         <p className="card-text"><b>Dirigido a: </b> {props.item.meta}  </p>
                         <p className="card-text"><b>Propósito: </b> {props.item.proposito}  </p>
                         <p className="card-text"><b>Facilitador: </b> {props.item.facilitador}  </p>
@@ -32,19 +35,44 @@ const CardsImage = (props) => {
     case "videoteca" :
           tmpComp = (
             <div className="col-sm-6">
-                <div className="row">
-                        {props.item.videoteca}
+                    <div className="row">   
+                    
+                    <div className="col-sm-2">
+                    <div className="azul"></div>
+                    </div>
+
+                    <div className="col-sm-1">
+                    <div className="negrito1"></div>
+                    </div>
+
+                    <div className="col-sm-9 inform1">
+                    <h6><b>Nombre: </b>{props.item.videoteca}</h6>
+                    <p><b>Fecha: </b> {props.item.fecha}  </p>
+                    <p><b>Descripción: </b> {props.item.desc}  </p>
+                    <a href={props.item.url } className="link-card"  target="_blank" rel="noopener noreferrer" >Ver video </a>
+                    <br/><br/>
+                    </div>
+
                 </div>
             </div>
+
           );
     break;
     case "ficha" :
           tmpComp = (
             <div className="col-sm-6">
-                <div className="row">
-                Otras Ofertas:
-                        {props.item.nombre} <br/>
-                        {props.item.desc}
+                <div className="row">   
+                    
+                    <div className="col-sm-1">
+                    <div><img src={img.DesarrolloCircOtrasOfert}/></div>
+                    </div>
+
+                    <div className="col-sm-11 inform1">
+                    <h6><b>Nombre: </b>{props.item.nombre}</h6>
+                    <p><b>Descripción: </b> {props.item.desc}  </p>
+                    <a href={props.item.url } className="link-card"  target="_blank" rel="noopener noreferrer" >Ver video </a>
+                    <br/><br/>
+                    </div>
                 </div>
             </div>
           );
