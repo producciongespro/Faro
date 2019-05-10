@@ -1,12 +1,433 @@
 [
+  [
     {
-      "nombre": "Curso de equitación de caballos de mar",
-      "desc": "mejorar las habilidades de cabalgar bajo el agua",
-      "url": "http://placehold.it/32x32"
+      "nombre": "AULABLOG",
+      "desc": "Es un blog de edublogs que publica los post o noticias que se publican en los blogs de otros docentes adscriptos al mismo. Además, permite acceder a esos blogs educativos, crear nuevos blogs o suscribirse a canales RSS de noticias educativas. Tiene secciones como una biblioteca de blogs, una wiki sobre los mismos, tutoriales para crear blogs, etc.",
+      "url": "http://www.aulablog.com/"
+    },
+
+    {
+      "nombre": "Aula 21",
+      "desc": "En un espacio en la web orientada hacia las actividades de cálculo desde el nivel de preescolar hasta la educación secundaria, abarca el ámbito de la geometría y el álgebra, ofrece gran cantidad de recursos y estrategias didácticas que el docente puede aplicar, tiene un webquest y actividades como la caza de tesoros que a los estudiantes les agradan mucho.",
+      "url": "http://www.aula21.net/"
+    },
+
+    {
+      "nombre": "CEDEC Centro Nacional de Desarrollo Curricular en sistemas no propietarios",
+      "desc": "El Centro Nacional de Desarrollo Curricular en Sistemas no Propietarios (CEDEC) es un organismo dependiente del Ministerio de Educación, Cultura y Deporte a través del Instituto Nacional de Tecnologías Educativas y Formación del Profesorado (INTEF) y de la Consejería de Educación y Cultura del Gobierno de Extremadura.  Tiene como finalidad el diseño, la promoción y el desarrollo de materiales educativos digitales a través del software libre. Nuestro objetivo es poner a disposición de toda la comunidad educativa materiales y recursos digitales de libre acceso y que permitan profundizar en la implantación de las Tecnologías de la Información y Comunicación en el Ámbito Educativo.",
+      "url": "http://cedec.intef.es/rubricas/"
+    },
+
+    {
+      "nombre": "DICTALIA",
+      "desc": "Este sitio le ofrece al docente una gran cantidad de recursos educativos, de diferente naturaleza, crucigramas, sopas de letras, videos, planeamientos, rúbricas y otros.  Algunos de los temas son propios delos programas de la comunidad económica europea.",
+      "url": "https://didactalia.net/comunidad/materialeducativo?proyectoID=f22e757b-8116-4496-bec4-ae93a4792c28&comunidad=true"
+    },
+
+    {
+      "nombre": "El educador: Punto de encuentro",
+      "desc": "Ofrece un conjunto de artículos, recursos educativos y oros elementos que le sirven de apoyo al docente para sus lecciones.  Es necesario hacer un registro dentro del sitio y obtener una cuenta de ingreso para poder descargar los documentos.",
+      "url": "http://www.eleducador.com/"
+    },
+
+    {
+      "nombre": "EDUC.AR",
+      "desc": "Es el portal educativo gestionado por el Ministerio de Educación de Argentina. Es muy amplio con numerosas noticias, documentos, debates y recursos educativos. Aunque está pensado para los docentes de dicho país, cualquier profesor encontrará materiales que podrá utilizar en su docencia o en su autoformación.",
+      "url": "http://www.educ.ar/"
+    },
+
+    {
+      "nombre": "EDUC@CONTIC",
+      "desc": "Portal web educativo impulsado por el Plan Avanza y Red.es del Gobierno de España destinado a docentes interesados en las aplicaciones de las TIC en las escuelas. Tiene numerosos recursos, blogs, noticias, e informaciones sobre software educativo.",
+      "url": "http://www.educacontic.es/"
+    },
+
+    {
+      "nombre": "EDUCACYL",
+      "desc": "Portal Educativo de la Junta de Educación de Castilla y León, que le ofrece a los docentes recursos de diferentes asignaturas en todos los niveles que se imparten con las diferentes poblaciones que se atienden en esta región de España, estos recursos tienen diferentes formatos.  Tiene un numeroso banco de imágenes y sonidos.",
+      "url": "https://www.educa.jcyl.es/educacyl/cm"
+    },
+
+    {
+      "nombre": "EDUTEKA",
+      "desc": "Es un portal educativo de una fundación latinoamericana -de Colombia- llamada Gabriel Piedrahita que ofrece numerosos recursos y documentos sobre uso de las TIC en la educación. Tiene mucha documentación de carácter teórico y conceptual sobre el uso innovador de las TIC en la educación.",
+      "url": "http://www.eduteka.org"
+    },
+
+    {
+      "nombre": "EDUTOPIA",
+      "desc": "Fundación dedicada a la transformación de la educación de K-12 para adquirir y aplicar efectivamente los conocimientos, actitudes y habilidades necesarias para estudiantes. Fundada por el innovador y galardonado cineasta George Lucas en 1991.",
+      "url": "https://www.edutopia.org/"
+    },
+
+    {
+      "nombre": "Enlaces",
+      "desc": "Este es el sitio oficial del Ministerio de Educación de Chile, les ofrece a los docentes un conjunto de posibilidades, como: recursos, buenas prácticas, marco de competencias de los estudiantes, evaluación de procesos de aprendizaje donde están involucradas las Tics.",
+      "url": "http://www.enlaces.cl/"
+    },
+
+    
+    {
+      "nombre": "Fundación Telefónica CR",
+      "desc": "Fundación, contribuye en gran medida al desarrollo económico, social y cultural de los países en los que está presente, mejorando la calidad de vida y fomentando la igualdad de oportunidades entre los ciudadanos. ",
+      "url": "http://www.fundaciontelefonica.cr/"
+    },
+
+
+    {
+      "nombre": "Hapyac",
+      "desc": "Permite añadir texto, enlaces y superposiciones de imágenes en tus videos. También puedes anotar fácilmente sus vídeos de YouTube y Vimeo y crear cuestionarios utilizando elección múltiple y preguntas de texto libre. También puedes dibujar en los vídeos, compartir comentarios y enlaces a cualquier momento específico en el vídeo.",
+      "url": "https://corp.hapyak.com/"
+    },
+
+
+    {
+      "nombre": "Ideas para la clase",
+      "desc": "Muestra herramientas TICS, que ayudan a ser más creativos, que ser prácticos, que nos permitan organizar la información, pero, sobre todo, que nos permitan el desarrollo de habilidades y promuevan el aprendizaje de nuestros estudiantes.",
+      "url": "https://ideasparalaclase.com/2017/09/25/15-herramientas-online-para-crear-evaluaciones-examenes-encuestas-y-mucho-mas/"
+    },
+
+    {
+      "nombre": "Instituto de Tecnologías Educativas",
+      "desc": "Este es el sitio web del Ministerio de Educación destinado a potenciar el uso de los recursos digitales y la formación del profesorado en esta temática. Es quizás, el portal educativo en lengua española, más completo donde se pueden encontrar de forma gratuita números materiales multimedia didácticos clasificados bien por niveles educativos, o bien por áreas temáticas.",
+      "url": "http://www.ite.educacion.es/"
+    },
+
+    {
+      "nombre": "Instituto de Tecnologías y Formación del profesorado",
+      "desc": "Espacio de encuentro para impulsar el cambio metodológico en las aulas, basado en el fomento de la colaboración escolar, la mejora de los espacios de aprendizaje, el desarrollo de habilidades para el s. XXI y de la competencia digital educativa.  Tiene un banco de imágenes y sonidos con licencia de uso libre.",
+      "url": "https://intef.es/"
+    },
+
+    {
+      "nombre": "Internet en el aula",
+      "desc": "Esta es la mayor red social de docentes en lengua española que funciona desde 2008, y tiene más de 5.000 miembros. Ahí existen numerosos foros de debate, informaciones, blogs docentes, fotos y vídeo educativos. Existe mucha participación y actividad comunicativa. Es una red abierta y autogestionada por los propios profesores.",
+      "url": "http://internetaula.ning.com/"
+    },
+
+    {
+      "nombre": "National Geographic",
+      "desc": "Este es el sitio oficial de la organización en idioma español, contiene un conjunto de recursos que pueden ayudar al docente par actividades curriculares, como de motivación para los estudiantes, la alta calidad de sus videos, multimedios e imágenes permiten una comprensión de ciertas temáticas de manera sencilla.",
+      "url": "https://www.nationalgeographic.com.es/videos"
+    },
+
+    {
+      "nombre": "NASA (Agencia Aeronáutica Espacial)",
+      "desc": "Esto son un conjunto de actividades que le ofrece la NASA a los docentes para que estos puedan utilizarlas con los estudiantes, incluyen los recursos que se pueden descargar para cada una de ellas.",
+      "url": "https://www.nasa.gov/audience/foreducators/nasaeclips/index.html"
+    },
+
+    {
+      "nombre": "PLAN CEIBAL",
+      "desc": "Portal web del Plan Ceibal impulsado por el Gobierno de Uruguay. Es el primer proyecto latinoamericano destinado a dar un ordenador por niño a nivel nacional y que viene ejecutándose desde el año 2007. Es un sitioweb con muchos recursos, además de información sobre la implementación de dicho Plan.",
+      "url": "http://www.ceibal.edu.uy"
+    },
+
+    {
+      "nombre": "PRINCIPPIA",
+      "desc": "Enfocado a metodologías de aprendizaje con Google Suite: ABP, aprendizaje por descubrimiento, estrategias de evaluación, inteligencias múltiples, trabajo colaborativo, flipped clasroom, gamificación, inteligencia emocional y otras; además diferentes actividades diseñadas para poner en práctica.",
+      "url": "http://blog.princippia.com/"
+    },
+
+    {
+      "nombre": "PROYECTO ENLACES",
+      "desc": "Es el portal web del Ministerio de Educación del Gobierno de Chile y que impulsa la incorporación de las TIC al sistema escolar de dicho país. Es muy amplio con información, documentos y recursos sobre dicho proyecto.",
+      "url": "http://www.enlaces.cl"
+    },
+
+    {
+      "nombre": "RELPE (Red Latinoamericana de Portales Educativos)",
+      "desc": "Este sitio es desarrollado por la Organización de Estados Iberoamericanos (OEI), donde se describe como todos los portales educativos de los diferentes países pertenecen a esta red, en el caso de Costa Rica, el portal se denomina Educatico.",
+      "url": "https://www.oei.es/historico/relpe.php"
+    },
+
+    {
+      "nombre": "Santillana compartir",
+      "desc": "Ofrece un modelo flexible de gestión pedagógica para la transformación e innovación educativa que pone al estudiante en el centro del ecosistema educativo. Tiene una app que permite el desarrollo de procesos de planificación de aula. Es necesario registrarse como usuario.",
+      "url": "https://santillanacompartir.co.cr/"
+    },
+
+    {
+      "nombre": "The Flipped classroom",
+      "desc": "La clase al revés es un sitio web con la participación de docentes y educadores de todos los niveles de enseñanza, con deseos por cambiar la educación y hacerla acorde con las demandas sociales y culturales de este siglo XXI.",
+      "url": "https://www.theflippedclassroom.es/"
+    },
+
+    {
+      "nombre": "TIC para innovar",
+      "desc": "Un blog destinado a mostrar cómo mejorar en tus estudios hackeando la forma cómo se aprende, apoyándose en las TIC, trucos herramientas y metodologías, porque la educación es divertida sino ¡para que aprender!",
+      "url": "http://www.ticeducacionec.com/2015/07/10-tic-para-elaborar-rubricas-para.html"
+    },
+
+    {
+      "nombre": "TEDEX Pura vida",
+      "desc": "Conversaciones basadas en ideas exitosas convincentes, donde los creadores de las ideas intercambian con los interesados, hay un conjunto de iniciativas en el ámbito educativo.",
+      "url": "https://www.tedxpuravida.org/"
+    },
+
+
+    {
+      "nombre": "VideoNot.es",
+      "desc": "Consiste en una herramienta web gratuita que permite a los estudiantes tomar notas en un video que está viendo. Las notas se sincronizan con el vídeo que se está viendo. Lo bueno de VideoNotes es que está integrado en Google Drive, es decir, los estudiantes podrán guardar sus notas directamente en su cuenta de Drive y editar y trabajar en ellos en cualquier momento que quieran. Todas las notas guardan la fecha y hora.",
+      "url": "http://www.videonot.es/"
+    }
+    
+  ],
+  
+
+
+
+
+
+
+
+
+  [ 
+    {
+      "nombre": "Gloster",
+      "desc": "Glogster es una red social que permite a los usuarios crear carteles interactivos libres o GLOGS. A “Glog “, abreviatura de “blog de gráficos “, es una imagen interactiva multimedia. Aunque la mayoría de los usuarios Glogster son adolescentes.  Los docentes pueden presentar algunos de los temas de manera atractiva e interactiva, o poner a sus estudiantes a realizar poster interactivo de diferentes formas.",
+      "url": "http://edu.glogster.com"
+    },
+
+    {
+      "nombre": "Powtoon",
+      "desc": "Este desarrollo permite elaborar videos y presentaciones animadas sobre un tema determinado, tiene una cantidad de recursos gráficos y multimediales que permiten la creación de documentos digitales muy atractivos para el público en general, es necesario inscribirse como usuario, pero si ya el docente tiene cuenta en Facebook o en Gmail, puede utilizarla para tener acceso al sitio.",
+      "url": "https://www.powtoon.com/home/g/es/"
+    },
+
+
+    {
+      "nombre": "ISSUU",
+      "desc": "Este sitio le permite al visitante elaborar una revista digital con un conjunto de recursos que colocan a disposición del usuario, se necesita una inscripción, que se realiza de manera automática si la persona ya tiene una cuenta en Facebook, Twitter o Gmail.  También se puede elaborar la revista a partir de un documento hecho con un procesador de palabras o un programa que desarrolla presentaciones.",
+      "url": "https://issuu.com"
+    },
+
+
+    {
+      "nombre": "JOOMLA",
+      "desc": "El sitio web de JOOMLA, permite la creación de revistas digitales, desde el interés personal de un usuario, o a partir de un documento elaborado con un procesador de palabras o un programa que desarrolla presentaciones.  Se necesita un usuario para ingresar, pero este trámite e puede realizar de manera sencilla.",
+      "url": "https://www.joomla.org/"
+    },
+
+
+    {
+      "nombre": "WIX",
+      "desc": "Es un espacio para la creación de sitios web, le ofrece al usuario un conjunto de plantillas que les permiten el desarrollo de un espacio donde el docente pueda colocar información en formato multimedial, y los estudiantes puedan tener acceso a esta.  También se puede desarrollar un sitio web personalizado.",
+      "url": "https://www.wix.com/"
+    },
+
+    {
+      "nombre": "WQC2: Webquest Creator",
+      "desc": "Las Webquests son actividades estructuradas y guiadas que investigan proporcionando al alumnado una tarea muy definida, así como los recursos y las consignas que les permiten realizarlas. Los alumnos y las alumnas se apropian, interpretan y explotan las informaciones específicas que el docente les asigna. En este caso la webquest quedará alojada en el servidor y será accesible cuando se decida hacerla pública, además también se puede descargar en formato zip para exponerla donde quieras. Se puede cambiar el diseño eligiendo entre una gran variedad de plantillas. Es necesario estar inscrito en el sitio",
+      "url": "http://www.webquestcreator2.com/majwq/"
+    },
+
+    {
+      "nombre": "GoogleEarth",
+      "desc": "Google Earth es un programa informático que muestra un globo virtual que permite visualizar múltiples lugares, muestra la cartografía, con base en la fotografía satelital. El programa fue creado bajo el nombre de EarthViewer 3D por la compañía Keyhole Inc, financiada por la Agencia Central de Inteligencia.  En la actualidad tiene múltiples usos para los docentes.",
+      "url": "https://www.google.com/intl/es/earth/"
+    },
+
+    {
+      "nombre": "Caza de tesoros",
+      "desc": "Se trata de una estrategia sencilla como una hoja de trabajo o una página web con una serie de preguntas y un listado de direcciones de Internet en las que los alumnos han de buscar las respuestas. Al final se debe incluir la “gran pregunta”, cuya respuesta no aparece directamente en las páginas web visitadas la cual exige integrar y valorar lo aprendido durante la búsqueda. Las cazas de tesoros son estrategias útiles para adquirir información sobre un tema determinado y practicar habilidades y procedimientos relacionados con las T.I.C. y con el acceso a la información a través de Internet. Entre otras cosas nos permiten mejorar la comprensión lectora de los alumnos y enseñarles a buscar información en Internet.",
+      "url": "http://www.aula21.net/cazas/ayuda.htm"
+    },
+
+    {
+      "nombre": "EDPUZZLE",
+      "desc": "Edpuzzle permite editar videos, logrando insertar notas de audio o grabar en un vídeo con tu propia voz, y añadir preguntas en cualquier punto del vídeo.  De esta manera muchos videos comerciales los puede convertir en videos de apoyo a la docencia.",
+      "url": "https://edpuzzle.com/"
+    },
+
+    {
+      "nombre": "CALAMEO",
+      "desc": "Permite hacer revistas digitales en diferentes modelos, tiene un conjunto de plantillas con diferentes grados de interactividad, logrando efectos motivantes y muy atrayentes para los usuarios. Se puede tener una cuenta de usuario gratuita, que implica un límite de almacenamiento.",
+      "url": "https://es.calameo.com/"
+    },
+
+    {
+      "nombre": "Genialy",
+      "desc": "https://www.genial.ly/es",
+      "url": "Este sitio web te permite crear diferentes modelos de documentos digitales, entre ellos infografías, presentaciones interactivas, informes multimediales, videos personales, presentaciones para redes sociales, historias, guías y experiencias de aprendizaje."
+    },
+
+    {
+      "nombre": "KAHOOT",
+      "desc": "¡Kahoot! Es una herramienta que permite hacer que sea fácil crear, compartir y jugar juegos de aprendizaje divertidos o concursos de preguntas y respuestas en minutos.  Esta sirve para evaluar determinado tema de una manera motivante, lúdica y sobre todo del agrado de los estudiantes.",
+      "url": "https://kahoot.com/b/"
     },
     {
-      "nombre": "Curso de equitación de caballos de mar",
-      "desc": "mejorar las habilidades de cabalgar bajo el agua",
-      "url": "http://placehold.it/32x32"
+      "nombre": "PIXTON",
+      "desc": "Esta herramienta permite crear tiras cómicas de manera interactiva, se pueden explorar diferentes modelos de caricatura desde un poster, hasta el guion gráfico con diferentes escenas, ofrece un conjunto de personajes, y efectos de animación que permite incrementar la creatividad de los usuarios.",
+      "url": "https://www.pixton.com/es/"
+    },
+
+    {
+      "nombre": "Quizlet",
+      "desc": "Este sitio te ofrece una gran atracción para los estudiantes dentro y fuera del salón de clases con material de estudio interactivo, actividades de aprendizaje y juegos.  Se puede buscar material de estudio con unidades de clase de diferentes temas ya elaboradas, crear las propias unidades utilizando muchos de los juegos que ofrece el sitio, además ofrece estrategias para que los estudiantes desarrollen excelentes hábitos de estudios y permite ir dando seguimiento a los procesos en los que participan los estudiantes.",
+      "url": "https://quizlet.com/es"
     }
-  ]
+   ],
+
+
+
+
+
+
+
+
+
+
+
+   [
+     
+    {
+    "nombre": "APPS: EduPills",
+    "desc":"Se descarga la app de micro auto-aprendizaje, enfocada a que se adquiera y/o desarrolla habilidades, destrezas y competencias digitales educativas de una forma sencilla y rápida.  Esta organizada en un conjunto de píldoras de aprendizaje orientadas a la autocapacitación.",
+    "url": "http://aprende.intef.es/"
+    },
+
+    {
+      "nombre": "Alexiaeducaria",
+      "desc":"Esta app permite la participación de los docentes en varias actividades que se organizan por semana entre estos varios Webinars, que se pueden definir como un tipo de conferencia, taller o seminario que se transmite por Internet. La característica principal es la interactividad que se produce entre los participantes y el conferenciante. Como en cualquier evento presencial, el conferenciante está hablando en vivo a la audiencia y los asistentes pueden hacer preguntas, comentar y escuchar lo que los demás participantes tienen que decir.  Ellos realizan actividades de este tipo todas las semanas.",
+      "url": "http://www.alexiaeducaria.com/"
+    },
+
+    {
+      "nombre": "Anatomy Learning",
+      "desc":"Se trata de una aplicación diseñada para facilitar el aprendizaje de la anatomía humana a través de modelos tridimensionales.",
+      "url": "http://anatomylearning.com/es/"
+    },
+
+    {
+      "nombre": "Brain POP",
+      "desc":"BrainPOP, película del día, es un sitio donde se crea recursos animados que apoyan a los maestros y cautivan a los estudiantes ya sea en la escuela, hogar o en los dispositivos móviles. El contenido incluye películas, cuestionarios, aplicaciones móviles, actividades y muchas otras cosas que cubren cientos de temas de Matemáticas, Ciencia, Ciencias Sociales, Salud, Español, Tecnología, Arte y Música. La propuesta de esta aplicación consiste en breves películas animadas y didácticas sobre diversos asuntos, como por ejemplo hechos históricos, ciencia, literatura y matemáticas, dirigidos principalmente a estudiantes de entre 6 y 17 años. Asimismo, ofrece la posibilidad de completar cuestionarios sobre lo expuesto en las películas.",
+      "url": "https://esp.brainpop.com/"
+    },
+
+    {
+      "nombre": "Best Books for Tweens",
+      "desc":"Para aquellos docentes que desean promover el hábito de la lectura entre sus alumnos, esta aplicación propone más de 200 títulos dirigidos espacialmente al público adolescente.",
+      "url": "https://www.peekaboo.mobi/best-books-for-tweens"
+    },
+
+    {
+      "nombre": "ClassDojo",
+      "desc":"Dicha aplicación ofrece a los docentes la posibilidad de monitorear la conducta y el despeño de los alumnos, y además compartir la información con sus padres, de forma tal que acompañen el progreso de sus hijos durante el año.",
+      "url": "https://www.classdojo.com/es-es/?redirect=true"
+    },
+
+    {
+      "nombre": "EDUSPPS",
+      "desc":"Actualmente existen más de 80.000 aplicaciones educativas. EDUAPPS nace con la intención de recopilar y analizar las principales apps para el aula.  Todo un conjunto de apps para ayudar al desarrollo y gestión de la clase. Desde pasar lista hasta acceder al servidor de tu cole, hay una app para cada necesidad.",
+      "url": "http://www.eduapps.es/"
+    },
+
+    {
+      "nombre": "EINOA",
+      "desc":"Una aplicación para centros educativos que permite dar seguimiento a la información no académica de los alumnos: Aspectos sociales-emocionales, mejora de conductas y situaciones de bullying, motivaciones y estrategias de trabajo efectivas, adecuaciones curriculares y trayectorias. Directores, psicólogos, coordinadores, equipos de apoyo y docentes están informados y alineados en el acompañamiento de cada alumno y grupo, con un balance entre lo académico y lo humano que resulta en una educación personalizada, holística, optimizando los recursos y procesos existentes.",
+      "url": "https://inoaedu.com/?gclid=Cj0KCQjw4fHkBRDcARIsACV58_Hb0QyDjyjQwtVKbrUwTGvzqX1qg8CMcw2EkwqnG9pkIm8THRu9gq0aAqK0EALw_wcB"
+    },
+
+    
+    {
+      "nombre": "Google Classroom",
+      "desc":"Esta herramienta diseñada por Google ofrece diversas utilidades para facilitar la interacción entre los maestros y los alumnos, desde la creación de un test en línea, la realización de proyectos colaborativos y la corrección de tareas. Asimismo, permite crear un aula virtual donde publicar materiales y añadir a todos los estudiantes.",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.classroom&hl=es"
+    },
+
+    
+    {
+      "nombre": "El restaurante del Doctor Panda",
+      "desc":"Está enfocada en el aprendizaje sobre alimentos, animales y reciclaje a través de un juego que consiste en cocinar platos.  Además, este juego no tiene instrucciones, por lo que se refuerza el aprendizaje por descubrimiento y mediante ensayo y error. En esta aplicación, los niños se podrán iniciar en el mundo de la cocina a través de divertidos mini juegos. Estarán expuestos a un amplio surtido de platos para cocinar, ya que el Dr. Panda tiene un libro de cocina con 10 recetas diferentes de comidas y bebidas. Entre otras muchas, incluye pizza, tarta de manzana, crema de maíz, comida china y batidos de frutas.",
+      "url": "https://play.google.com/store/apps/details?id=com.tribeplay.pandarestaurant&hl=es"
+    },
+
+    
+    {
+      "nombre": "El Rey de las Mates",
+      "desc":"Se trata de una aplicación que agiliza el razonamiento a través de la resolución de cálculos matemáticos, los cuales responden a distintos niveles de dificultad.",
+      "url": "https://king-of-math.es.aptoide.com/"
+    },
+
+    
+    {
+      "nombre": "KhanAcademy",
+      "desc":"Es una aplicación que contiene más de 4000 videos sobre temas muy diversos. Puede ser utilizada para repasar conceptos o para reforzar aquellas áreas en las que más dificultades tienen los alumnos.",
+      "url": "https://es.khanacademy.org/"
+    },
+
+    
+    {
+      "nombre": "MyScript Calculator",
+      "desc":"https://apkpure.com/es/myscript-calculator/com.visionobjects.calculator",
+      "url": "Ideal para aquellos docentes y alumnos que realizan numerosos cálculos, esta aplicación les permite escribir las expresiones matemáticas sobre la pantalla, las cuales serán convertidas en texto digital y resueltas inmediatamente."
+    },
+
+       
+    {
+      "nombre": "Mindomo",
+      "desc":"Esta aplicación está destinada a los más mayores y su función principal es la de crear esquemas y mapas mentales. Una útil herramienta para repasar conceptos, crear esquemas y reforzar los conocimientos aprendidos durante el año. Si tus hijos necesitan hacer algún repaso, no dejes de presentarles esta interesante aplicación.",
+      "url": "http://cr.tiching.com/mindomo-mind-mapping-mapas-mentales-y-esquemas/recurso-educativo/101220?utm_source=BlogTiching&utm_medium=referral&utm_content=101220&utm_campaign=cm"
+    },
+
+       
+    {
+      "nombre": "Night Sky Tools",
+      "desc":"Esta aplicación resultará de gran ayuda para los docentes en el tema de astronomía, tiempo y clima. Entre otras utilidades, notifica a los usuarios sobre los eventos astronómicos visibles desde su ubicación geográfica y ofrece datos tales como la salida y puesta del sol y de la luna y el tránsito de los planetas.",
+      "url": "https://downloads.tomsguide.com/Night-Sky-Tools,0301-62901.html"
+    },
+
+       
+    {
+      "nombre": "NOVA Elements",
+      "desc":"Esta aplicación propone videos didácticos de química y física, por ejemplo, sobre las estructuras moleculares y los componentes de la tabla periódica de los elementos. Cabe destacar que los materiales están disponibles solo en idioma inglés.",
+      "url": "https://itunes.apple.com/us/app/nova-elements/id512772649?mt=8"
+    },
+
+       
+    {
+      "nombre": "Pass the Past",
+      "desc":"Dicha aplicación propone cuestionarios sobre historia estadounidense y también universal en inglés.",
+      "url": "https://itunes.apple.com/us/app/pass-the-past/id392637590?mt=8"
+    },
+
+    {
+      "nombre": "Phrasal Verbs",
+      "desc":"Ideal para profesores de inglés, esta app desarrollada por la Universidad de Cambridge tiene como cometido facilitar el aprendizaje del verbo preposicional o phrasal verbs, es decir, aquellos compuestos por un verbo y un adverbio o preposición.",
+      "url": "https://blog.cambridge.es/app-para-aprender-phrasal-verbs-mas-descargada/"
+    },
+
+    {
+      "nombre": "See.Touch.Learn",
+      "desc":"Esta aplicación, diseñada especialmente para niños autistas, propone ejercicios de asociación utilizando flash cards. Si bien las actividades están disponibles solo en inglés, la aplicación también permite a los usuarios crear sus propias preguntas. Instrucción visual para autismo y necesidades especiales. Reemplace todas sus tarjetas de memoria flash con las 4,400 imágenes y los 2,200 ejercicios desarrollados por profesionales.",
+      "url": "http://www.brainparade.com/products/see-touch-learn-free/"
+    },
+
+    {
+      "nombre": "Tangram",
+      "desc":"El tangram es un juego clásico originario de China qué consiste en crear figuras y formas utilizando las 7 piezas geométricas disponibles. Con este sencillo pero entretenido juego se fomenta la observación, la concentración y la capacidad espacial. ¡Seguro qué no podréis hacer solo una partida!",
+      "url": "http://cr.tiching.com/tangram-app-educativa-de-android/recurso-educativo/101217?utm_source=BlogTiching&utm_medium=referral&utm_content=101217&utm_campaign=cm"
+    },
+
+    {
+      "nombre": "TeacherKit",
+      "desc":"Dicha aplicación tiene como cometido organizar el trabajo de los docentes, ofreciéndole utilidades tales como el registro de asistencias y calificaciones de los alumnos, la toma de notas y la creación de informes de desempaño.",
+      "url": "https://play.google.com/store/apps/details?id=com.teacherkit.app&hl=es_CR"
+    },
+
+    {
+      "nombre": "Video Science",
+      "desc":"Dicha aplicación ofrece más de 80 videos de expertos científicos aptos para niños y adolescentes.",
+      "url": "http://sciencenetlinks.com/tools/videoscience-app/"
+    },
+
+    {
+      "nombre": "Virtual Manipulatives",
+      "desc":"Diseñada para niños de entre 6 y 12 años, esta aplicación propone facilitar la comprensión de conceptos matemáticos tales como las fracciones, los porcentajes y los decimales a través de recursos visuales.",
+      "url": "https://www.commonsensemedia.org/app-reviews/virtual-manipulatives"
+    }
+
+   ]
+]

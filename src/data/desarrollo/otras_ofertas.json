@@ -1,50 +1,38 @@
 [
     {
-      "id": 1,
-      "nombre": "Curso de equitación de caballos de mar",
-      "meta": "Educadores I y II ciclo",
-      "proposito": "mejorar las habilidades de cabalgar bajo el agua...",
-      "facilitador": "Aquaman",
-      "url": "http://placehold.it/32x32"
+      "nombre": "Educar Chile",
+      "desc": "Este sitio expone un conjunto de recursos para los docentes, entre ellos planificaciones de temas, itinerarios de aprendizaje y actividades para el desarrollo de habilidades y competencias.  Algunos de sus recursos son videos, infografías sobre diferentes temas de apoyo para el desarrollo de las lecciones.",
+      "url": "https://formacioncontinua.educarchile.cl/index2.php#dos"
     },
+
     {
-      "id": 2,
-      "nombre": "Taller de limpieza de follajes",
-      "meta": "Educadores de preescolar",
-      "proposito": "Mantener limpias las hojas de las plantas",
-      "facilitador": "Linterna verde",
-      "url": "http://placehold.it/32x32"
+      "nombre": "INFOND: Formación Docente Especializada",
+      "desc": "Este sitio lo ofrece el Ministerio de Educación, Cultura, Ciencia y Tecnología de Argentina. Ofrece un conjunto de desafíos pedagógicos para los docentes mediante cursos cortos, además varios programas de formación orientados hacia la docencia.",
+      "url": "https://infod.educacion.gob.ar/cursos/265"
     },
+
     {
-      "id": 1,
-      "nombre": "Curso de equitación de caballos de mar",
-      "meta": "Educadores I y II ciclo",
-      "proposito": "mejorar las habilidades de cabalgar bajo el agua",
-      "facilitador": "Aquaman",
-      "url": "http://placehold.it/32x32"
+      "nombre": "Capacítate para el empleo",
+      "desc": "El sitio web ofrece un conjunto de trayectorias formativas de autocapacitación, el proceso es gestionado por cada usuario según los intereses que se tengan, sus temáticas son muy variadas, pero se recomienda que exploren las opciones de formación y tecnologías, que contienen cursos muy interesantes de temas diversos, es necesario inscribirse mediante un correo electrónico.",
+      "url": "https://capacitateparaelempleo.org/"
     },
+
     {
-      "id": 2,
-      "nombre": "Taller de limpieza de follajes",
-      "meta": "Educadores de preescolar",
-      "proposito": "Mantener limpias las hojas de las plantas...",
-      "facilitador": "Linterna verde",
-      "url": "http://placehold.it/32x32"
+      "nombre": "Universidad ICESI",
+      "desc": "Esta universidad tiene un conjunto de cursos de edu8cación continua, tipo libres, algunos de ellos son gratis y otros el interesado los debe pagar, además ofrece un conjunto de diplomados, bachilleratos y maestrías en diferentes campos del conocimiento.",
+      "url": "http://www.icesi.edu.co/educacion_continua/"
     },
+
     {
-      "id": 1,
-      "nombre": "Curso de equitación de caballos de mar",
-      "meta": "Educadores I y II ciclo",
-      "proposito": "mejorar las habilidades de cabalgar bajo el agua",
-      "facilitador": "Aquaman",
-      "url": "http://placehold.it/32x32"
+      "nombre": "Aprende Intef",
+      "desc": "Plataforma del Ministerio de Educación de España, que ofrece alrededor de 146 cursos bajo diferentes modalidades, algunos de ellos mediados y otros de autoformación tipo Mooc.  Los temas son variados, algunos estas organizados con base en alguno de los proyectos educativos que el mismo ministerio organiza.",
+      "url": "http://enlinea.intef.es/courses"
     },
+
+
     {
-      "id": 2,
-      "nombre": "Taller de limpieza de follajes",
-      "meta": "Educadores de preescolar",
-      "proposito": "Mantener limpias las hojas de las plantas",
-      "facilitador": "Linterna verde",
-      "url": "http://placehold.it/32x32"
+      "nombre": "Programa de Mejoramiento Profesional",
+      "desc": "La plataforma de mejoramiento profesional docente de la UNED ofrece a los administradores y educadores de Educación Preescolar, Primaria y Secundaria estrategias de enseñanza aprendizaje novedosas para la adquisición de una cultura de actualización permanente.  Algunos de estos cursos son en Modalidad presencial, virtual o mixta.",
+      "url": "http://www.uned.ac.cr/extension/mejoramientoprofesionaldocente.shtml"
     }
   ]
