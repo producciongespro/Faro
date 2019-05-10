@@ -109,7 +109,10 @@ componentDidMount ( ) {
   }
 
 
-  handlerOpenCatalog = () => {
+
+//Métodos de catologo ------------------------------------
+
+  handlerOpenCatalog = (e) => {
     this.setState ({
       currentPage : <Catalogo    handlerCloseCatalog={ this.handlerCloseCatalog} />
     })
@@ -121,6 +124,8 @@ componentDidMount ( ) {
       currentPage : <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
     })
   }
+
+// Fin de métodos de catalogo -------------------------------
 
 
   showModal = (e) => {

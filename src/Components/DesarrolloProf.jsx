@@ -10,9 +10,6 @@ var img = images[0];
 
 
 
-
-
-
 const DesarrolloProf = (props) => {
 
   return ( 
@@ -35,7 +32,7 @@ const DesarrolloProf = (props) => {
         <div  className="row">
             <div  className="col-4  hover11 ">
               <figure>
-                <img className="botones-portada  img-fluid" id="cursos" src={img.DesarrolloCursos} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.showModal}  alt="Cursos" />
+                <img className="botones-portada  img-fluid" id="cursos" src={img.DesarrolloCursos} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalog}  alt="Cursos" />
               </figure>
               </div>
               <div className="col-4  ">
@@ -61,7 +58,7 @@ const DesarrolloProf = (props) => {
           </div>
           <div className="col-4 hover11 ">
             <figure>
-              <img className="botones-portada img-fluid" id="ficha" src={img.DesarrolloOtras}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalog} alt="Otras ofertas" />
+              <img className="botones-portada img-fluid" id="ficha" src={img.DesarrolloOtras}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Otras ofertas" />
             </figure>
             </div>
         </div>

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import CardsImage from "../Comp-primitive/CardsImage.jsx";
-import DatosDesarrolloJson from "../data/desarrollo/otras_ofertas.json"
 import ImagesJson from "../data/images.json";
+
+
+//Json con información:
+import cursos from '../data/desarrollo/cursos.json';
 
 
 class Catalogo extends Component {
@@ -13,14 +16,11 @@ class Catalogo extends Component {
          }
     }
 
-
-datos = DatosDesarrolloJson;
 images = ImagesJson[0];
 
     cargarArray () {
-      console.log(this.datos);
-      
-        return this.datos.slice(  this.state.indice, this.state.indice + this.state.limite );
+      console.log(this.datos);      
+        return cursos.slice(  this.state.indice, this.state.indice + this.state.limite );
     }
 
     incrementarIndice = () => {
