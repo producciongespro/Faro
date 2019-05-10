@@ -6,6 +6,7 @@ import ImagesJson from "../data/images.json";
 //Json con información:
 import cursos from '../data/desarrollo/cursos.json';
 import videoteca from '../data/desarrollo/videoteca.json';
+import otrasOfertas from '../data/desarrollo/otras_ofertas.json'
 
 
 class Catalogo extends Component {
@@ -33,6 +34,9 @@ componentWillMount () {
         break;
         case "videoteca":
             this.tmpArray = videoteca;
+        break;
+        case "ficha":
+            this.tmpArray = otrasOfertas;
         break;
     
         default:

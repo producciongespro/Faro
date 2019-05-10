@@ -30,13 +30,25 @@ const CardsImage = (props) => {
         )
     break;
     case "videoteca" :
-    tmpComp = (
-      <div className="col-sm-6">
-          <div className="row">
-                  {props.item.videoteca}
-          </div>
-      </div>
-    )
+          tmpComp = (
+            <div className="col-sm-6">
+                <div className="row">
+                        {props.item.videoteca}
+                </div>
+            </div>
+          );
+    break;
+    case "ficha" :
+          tmpComp = (
+            <div className="col-sm-6">
+                <div className="row">
+                Otras Ofertas:
+                        {props.item.nombre} <br/>
+                        {props.item.desc}
+                </div>
+            </div>
+          );
+    break;
   
     default:
       console.log("Parámetro fuera de rango");      
