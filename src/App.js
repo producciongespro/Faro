@@ -14,7 +14,9 @@ import ApoyosPlan from "./Components/ApoyosPlan.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
+import CatalogoWeb from './Components/CatalogoWeb';
 import Catalogo from "./Components/Catalogo";
+
 
 
 //Json
@@ -86,7 +88,7 @@ componentDidMount ( ) {
           tmpComponent = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage}/> 
       break;
 
     
@@ -122,11 +124,31 @@ componentDidMount ( ) {
 
   handlerCloseCatalog = () => {
     this.setState ({
-      currentPage : <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+      currentPage : <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage}/> 
     })
   }
 
 // Fin de métodos de catalogo -------------------------------
+
+
+
+//Método para abrir catálogo web -----------------------------------------
+handlerOpenCatalogWeb = (e) => {  
+  this.setState ({
+    currentPage : <CatalogoWeb     handlerCloseCatalogWeb={ this.handlerCloseCatalogWeb} />
+  })
+}
+
+
+handlerCloseCatalogWeb = (e) => {  
+  e.preventDefault();
+  console.log(e.target);
+  
+  this.setState ({
+    currentPage : <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}  handlerOpenCatalogWeb={ this.handlerOpenCatalogWeb} changePage={this.changePage}/> 
+  })
+}
+//Fin Método para abrir catálogo web -----------------------------------------
 
 
   showModal = (e) => {

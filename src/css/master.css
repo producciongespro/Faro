@@ -54,6 +54,12 @@ a {
   border-radius: 100%;
 }
 
+.custom-nav {
+  background-color: brown;
+  padding: 4px;
+  border-bottom: solid olive 1px;
+}
+
 
  /* ***********CSS de cursos virtuales******************* */
 
