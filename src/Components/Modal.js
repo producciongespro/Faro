@@ -60,11 +60,8 @@ class Modal extends Component {
                       <div className="texto-indicaciones">
                           { this.props.content }  
                       </div>
-                      <img  className="img-ico-audio"  src= {this.images.Audio} onClick={this.playAudio}  alt="Icono activar audio"/>  
-                      <img  className="img-ico-close"  src= {this.images.IcoCerrarX} alt="Cerrar modal"/> 
-                      <audio src={this.audios.intro}  id="audioIntro" ></audio> 
-                      
-                                   
+                      <img  className="img-ico-audio"  src= {this.images.Audio} onClick={this.playAudio}  alt="Icono activar audio"/>                                         
+                      <audio src={this.audios.intro}  id="audioIntro" ></audio>                                                       
                     </React.Fragment>
       break;
     
