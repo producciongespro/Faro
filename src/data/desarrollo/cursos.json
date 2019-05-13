@@ -1,16 +1,18 @@
 [
     {      
-      "nombre": "Mauris hendrerit arcu sem",
-      "meta": "Educadores I y II ciclo",
-      "proposito": "Sagittis at. Integer non efficitur quam. Cras a facilisis mauris, ut dapibus ex....",
+      "nombre": "Utilización de Word en el ámbito educativo",
+      "meta": "Personal docente y técnico-docente del sistema educativo nacional.",
+      "proposito": "Se pretende fortalecer las habilidades y conocimientos para crear documentos digitales escritos con herramientas de Microsoft Office Word.",
       "facilitador": "Flash",
-      "url": "https://picsum.photos/id/491/200/200"
+      "icono":"https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/word.png",
+      "url": "https://picsum.photos/id/492/200/200"
     },
     {     
       "nombre": "Nascetur ridiculus mus.",
       "meta": "Educadores de preescolar",
       "proposito": "Proin ac purus id lectus pellentesque elementum...",
       "facilitador": "Linterna verde",
+      "icono":"https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/word.png",
       "url": "https://picsum.photos/id/492/200/200"
     },
     {     
@@ -18,6 +20,7 @@
       "meta": "Educadores de preescolar",
       "proposito": "Proin ac purus id lectus pellentesque elementum...",
       "facilitador": "Batman",
+      "icono":"https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/word.png",
       "url": "https://picsum.photos/id/237/200/200"
     },
     {     
@@ -25,6 +28,7 @@
       "meta": "Educadores de preescolar",
       "proposito": "Proin ac purus id lectus pellentesque elementum...",
       "facilitador": "Acuaman",
+      "icono":"https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/word.png",
       "url": "https://picsum.photos/id/133/200/200"
     },
     {     
@@ -32,6 +36,7 @@
       "meta": "Educadores de preescolar",
       "proposito": "Proin ac purus id lectus pellentesque elementum...",
       "facilitador": "superman",
+      "icono":"https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/word.png",
       "url": "https://picsum.photos/id/235/200/200"
     },
     {     
@@ -39,6 +44,7 @@
       "meta": "Educadores de preescolar",
       "proposito": "Proin ac purus id lectus pellentesque elementum...",
       "facilitador": "Wonderwoman",
+      "icono":"https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/word.png",
       "url": "https://picsum.photos/id/131/200/200"
     }
   ]
