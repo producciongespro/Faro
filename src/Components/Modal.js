@@ -58,7 +58,23 @@ class Modal extends Component {
                         <img  className="img-fluid"  src= {this.images.BgIndicaciones} alt="fondo indicaciones"/>  
                       </div>
                       <div className="texto-indicaciones">
-                          { this.props.content }  
+
+                      <p>
+                          Los recursos de esta caja de herramientas están organizados en seis categorías con el propósito de que usted pueda dirigirse a la sección más atinente a su necesidad de información.  Estas categorías son:
+                          </p>
+                          <ul>
+                            <li>Apoyos para el clima del aula</li>
+                            <li>Apoyos para la evaluación</li>
+                            <li>Documentos oficiales</li>
+                            <li>Desarrollo profesional</li>
+                            <li>Apoyos para el planeamiento</li>
+                          </ul>
+                          <p>
+                          Para disponer de los distintos recursos, de un clic a los diferentes accesorios que acompañan a la imagen de la educadora.  Cada uno de estos objetos representa una de las categorías.  
+                          A su vez, dentro de cada categoría encontrará una descripción de la sección, así como una serie de accesos a documentos, enlaces, plantillas, y otros materiales de utilidad para su quehacer docente. Al colocar el puntero del mouse sobre cada acceso, podrá leer la descripción del recurso específico que se le está proveyendo.
+                          En las diferentes pantallas que acceda, dispondrá de botones que le permitirá retornar a la pantalla anterior o volver al menú principal.
+                          </p>
+
                       </div>
                       <img  className="img-ico-audio"  src= {this.images.Audio} onClick={this.playAudio}  alt="Icono activar audio"/>                                         
                       <audio src={this.audios.intro}  id="audioIntro" ></audio>                                                       
