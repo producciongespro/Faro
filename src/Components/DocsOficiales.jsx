@@ -13,7 +13,7 @@ const DocsOficiales = ( props ) => {
       <div className="col-4">
             <img className="titulos img-fluid" src={images[0].DocsOficialesTitulo } alt="Documentos educativos oficiales" />
                <img className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
-              <div id="textoDescripcion" class="texto_descripciones2">
+              <div id="textoDescripcion" className="texto_descripciones2">
               <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
  
