@@ -101,10 +101,7 @@ class Modal extends Component {
                           <strong>
                           <i className="far fa-file-pdf"></i> Lineamientos para completar la plantilla                            
                           </strong>
-                        </a>
-                        
-
-
+                        </a>                         
 
                       </React.Fragment>
                     )
@@ -135,6 +132,7 @@ class Modal extends Component {
   render() {    
       
     return (      
+
       <div>
     <div className="modal fade show" id="modalScreen"   >
         <div className= {this.modalAncho}   role="document">
