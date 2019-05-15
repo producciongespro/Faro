@@ -80,6 +80,35 @@ class Modal extends Component {
                       <audio src={this.audios.intro}  id="audioIntro" ></audio>                                                       
                     </React.Fragment>
       break;
+      case "plantillaPlan" :
+      this.modalAncho =  this.modalAncho + " modal-lg";
+      this.classModalBody = this.classModalBody + " modal-alto";
+      tmpContent = ( <React.Fragment>
+                        <h2 className="text-center">Plantilla Planeamiento</h2>                        
+ 
+                        <hr/>
+                        <h4>Plantillas en formato Word</h4>
+                        <ul>
+                          <li>
+                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplo_plan_ciencias.docx" > <i className="far fa-file-word"></i> Plan de Ciencias</a>
+                          </li>
+                          <li>
+                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplo_plan_ciencias.docx" > <i className="far fa-file-word"></i> Plan de Estudios sociales</a>
+                          </li>
+                        </ul>
+                        <br/>
+                        <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos.pdf" target ="_blank"  rel="noopener noreferrer" >
+                          <strong>
+                          <i className="far fa-file-pdf"></i> Lineamientos para completar la plantilla                            
+                          </strong>
+                        </a>
+                        
+
+
+
+                      </React.Fragment>
+                    )
+       break;
     
       default:
         console.log("Opcion fuera de rango en modal");        

@@ -23,7 +23,7 @@ const ApoyosPlan = (props) => {
     <div id="botones-aula" className="row">
     <div className="col-10 hover11 centro">
           <figure>
-              <img className="botones-portada derecha img-fluid" id="definicionHabilidades" data-content= {pdfs.Definicion_habilidades }  data-typecontent ="pdf"  onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />
+              <img className="botones-portada derecha img-fluid" id="definicionHabilidades" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />
         </figure>
       </div>
       <div className="col-10 hover11 ">
@@ -33,7 +33,7 @@ const ApoyosPlan = (props) => {
         </div>
       <div className="col-10 hover11 ">
         <figure>
-          <img className="botones-portada derecha img-fluid" id="plantilla" src={images[0].ApoyosPlantilla} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }    alt="Apoyos para el planeamiento"  />
+          <img className="botones-portada derecha img-fluid" id="plantilla" src={images[0].ApoyosPlantilla}  data-typecontent ="plantillaPlan"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }    alt="Apoyos para el planeamiento"  />
         </figure>
         </div>
 
