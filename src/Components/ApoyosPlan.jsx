@@ -23,12 +23,12 @@ const ApoyosPlan = (props) => {
     <div id="botones-aula" className="row">
     <div className="col-10 hover11 centro">
           <figure>
-              <img className="botones-portada derecha img-fluid" id="ficha" data-content= {pdfs.Definicion_habilidades }  data-typecontent ="pdf"  onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />
+              <img className="botones-portada derecha img-fluid" id="definicionHabilidades" data-content= {pdfs.Definicion_habilidades }  data-typecontent ="pdf"  onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />
         </figure>
       </div>
       <div className="col-10 hover11 ">
         <figure>
-          <img className="botones-portada derecha img-fluid" id="guia" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Apoyos para el planeamiento" src={images[0].ApoyosGuia  } />
+          <img className="botones-portada derecha img-fluid" id="orientaciones" data-content= {pdfs.Apoyos_Plan_Orientaciones }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Apoyos para el planeamiento" src={images[0].ApoyosGuia  } />
         </figure>
         </div>
       <div className="col-10 hover11 ">
@@ -39,7 +39,7 @@ const ApoyosPlan = (props) => {
 
       <div className="col-10 hover11 centro">
           <figure>
-              <img className="botones-portada derecha img-fluid" id="ejemplos" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Ejmeplos planeamiento" src={images[0].ApoyosEjemplo  } />
+              <img className="botones-portada derecha img-fluid" id="ejemplos" data-content= {pdfs.Apoyos_Plan_Ejemplos_Guia_actividades }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Ejmeplos planeamiento" src={images[0].ApoyosEjemplo  } />
         </figure>
       </div>
       <div className="col-2">
