@@ -19,7 +19,8 @@
         "pautas": "Descripción del apartado de pautas",
         "ficha": "Descripción del apartado de fichas",
         "emociones": "Descripción del apartado emociones",
-        "interculturalidad": "Descripción del apartado de interculturalidad"
+        "interculturalidad": "Descripción del apartado de interculturalidad",
+        "climaEscolar" : "Este es el clima escolar"
       },
       {
         "categoria" : "2-planeamiento",
