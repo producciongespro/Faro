@@ -52,22 +52,11 @@ const ApoyoClimaAula = (props) => {
               <img className="botones-portada img-fluid" id="interculturalidad" src={images[0].ApoyoClimaAulaIntercultural } data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Interculturalidad" />
             </figure>
           </div>
-          <div className="row">
-              <div className="col-6 hover11">
-                <figure>
-                  <img className="botones-portada derecha img-fluid" id="emociones" src={images[0].ApoyoClimaAulaEmociones } data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Emociones" />
-                </figure>
-              </div>
-          <div className="col-6 hover11">
-              <figure>
-            
-            </figure>
-          </div>
-          </div>
+  
         
     </div>
     </div>
-
+    </div>
     <div className="row">
         <div className="col-12 pie">
           <img data-tar="Home" onClick={props.changePage}  className="botones-portada img-fluid hvr-pop" id="" src={images[0].BtnSalir } alt="Salir" />
