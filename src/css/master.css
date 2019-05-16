@@ -257,9 +257,9 @@ border-color: #0d7aa0;
   }
 
   #estudiante{
-    margin-top: -7%;
+    margin-top: -28%;
     z-index: 3;
-    margin-left: 17%;
+    margin-left: -40%;
 }
 
 
@@ -279,8 +279,9 @@ border-color: #0d7aa0;
   }
 
   #faro{
-    margin-left: 73%;
-    margin-top: -29%;
+    margin-top: -7%;
+    z-index: 3;
+    margin-left: 17%;
   }
 
   #fundamentos{
