@@ -12,15 +12,15 @@
   {
  
         "categoria" : "1-climaAula",
-        "general": "Clima del aula: Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
-        "interacciones": "Descripción del apartado de interacciones",
-        "inclusion": "Descripción del apartado de inclusión",
-        "recomendaciones": "Descripción del apartado de recomendaciones",
-        "pautas": "Descripción del apartado de pautas",
+        "general": "Este es un espacio para encontrar materiales de apoyo que orientan los procesos de atención educativa del estudiantado desde una visión de la inclusión educativa.\r\n",
+        "interacciones": "Aquí se encuentra una presentación informativa para que el docente conozca e identifique los elementos que influyen en el clima de clase. El clima de clase es el resultado de la interacción de un conjunto de factores que tienen repercusiones cognitivas, emocionales y comportamentales. Es muy importante que el docente fortalezca sus estrategias para atender el clima dentro del aula.\r\n",
+        "inclusion": "En este botón se encuentran materiales de apoyo que orientan los procesos de atención educativa del estudiantado en condición de discapacidad, desde una visión de la inclusión educativa, incluye aspectos sobre el Diseño Universal de los Aprendizajes, líneas de acción en los servicios de apoyo educativo.",
+        "recomendaciones": "La organización del tiempo resulta fundamental para conseguir un aprendizaje eficaz y lograr los objetivos propuestos. En este apartado se encuentran estrategias para aprovechar más el tiempo en el aula. ",
+        "pautas": "Aquí se encuentra una presentación informativa para que el docente conozca e identifique los elementos que influyen en el clima de clase. El clima de clase es el resultado de la interacción de un conjunto de factores que tienen repercusiones cognitivas, emocionales y comportamentales. Es muy importante que el docente fortalezca sus estrategias para atender el clima dentro del aula.",
         "ficha": "Descripción del apartado de fichas",
-        "emociones": "Descripción del apartado emociones",
-        "interculturalidad": "Descripción del apartado de interculturalidad",
-        "climaEscolar" : "Este es el clima escolar"
+        "emociones": "En este apartado se visualizan documentos relacionados con la motivación y las emociones, y esboza recomendaciones dirigidas al personal docente para el manejo de esta temática.",
+        "interculturalidad": "Se integran en este apartado, documentos para el apoyo del  docente que atiende población en territorio indígena, afrodescendiente y migrante.",
+        "climaEscolar" : "Aquí se encuentra una presentación informativa para que el docente conozca e identifique los elementos que influyen en el clima escolar. Es importante poder valorar el clima escolar para establecer planes de acción encaminados a su mejora, que debe considerar la percepción de los padres y la comunidad.\r\n"
       },
       {
         "categoria" : "2-planeamiento",
