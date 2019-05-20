@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+
+
 import imagesJson from "../data/images.json";
 import audiosJson from "../data/audios.json"
 
@@ -21,7 +24,6 @@ class Modal extends Component {
     classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
     modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
 
-  
   
   
   
@@ -105,7 +107,7 @@ class Modal extends Component {
 
                       </React.Fragment>
                     )
-       break;
+       break;  
     
       default:
         console.log("Opcion fuera de rango en modal");        
