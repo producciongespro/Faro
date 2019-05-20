@@ -1,12 +1,12 @@
 [   
         {
           "categoria" : "0-desarrolloProfesional",
-          "general": "Desarrollo Profesional Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
-          "cursos": "Descripción del apartado de cursos",
-          "sitios": "Descripción del apartado de sitios",
-          "videoteca": "Descripción del apartado de videoteca",
-          "pautas": "Descripción del apartado de referencias",
-          "ficha": "Descripción del apartado otros"
+          "general": "El Instituto de Desarrollo Profesional Uladislao Gámez Solano (IDPUGS) del Ministerio de Educación Pública, ofrece al personal en servicio y, en particular al cuerpo docente diversas estrategias orientadas al fortalecimiento del desempeño profesional por medio de la formación permanente, de manera que les permite actualizar y fortalecer sus conocimientos en relación con el quehacer educativo.\n Este apartado dispone de una recopilación de recursos digitales que coadyuvan a la labor docente, el cual está integrado por las siguientes secciones: cursos virtuales, videoteca, referencias útiles para la docencia, recursos en línea y otras alternativas formativas, a las cuales el personal docente puede acceder y actualizarse.\r\n",
+          "cursos": "En esta sección se encuentra la oferta de cursos virtuales con una interesante diversidad temática. Es posible participar de ellos como curso individual o matricularse en una serie de cursos que están diseñados intencionalmente para que se adquieran o fortalezcan una serie de destrezas y habilidades propias del ámbito de competencia laboral de cada población meta a la cual se dirigen.  Cada curso cuenta con una breve descripción, que permite tener una idea general de lo que se ofrece.",
+          "sitios": "Esta sección concentra un conjunto de posibilidades educativas de la web, diseñadas para funcionar como apoyo a la labor docente:  Sitios web educativos, con diversidad temática que pueden aportar ideas y conocimientos a la planificación de las clases. APPS Educativas, que son aplicaciones que incentivan la interacción docente-estudiantes-contenidos. Estrategias de aprendizaje, son propuestas e ideas dentro de la web que complementan la acción pedagógica en la clase.",
+          "videoteca": "En esta sección se encuentra una colección de videos, donde intervienen múltiples expertos, producto de las sesiones de videoconferencias de los años 2018 y 2019. Para un mejor aprovechamiento, se han catalogado por temáticas y ejes según la política educativa vigente en relación con la transformación curricular. Son recursos web de uso abierto, los cuales pueden dar valor agregado a los procesos de mediación en el aula o bien, fortalecer el campo disciplinar de cada docente.",
+          "pautas": "En esta sección, se encuentran propuestas orientadas hacia la asignatura de la enseñanza del español en primaria, como parte de las iniciativas y del fortalecimiento de esta asignatura en el contexto de la transformación curricular. Además, se ofrece un objeto de aprendizaje sobre el tema del uso de los dispositivos móviles en educación.",
+          "ficha": "En esta sección se lista un conjunto de organizaciones con un reconocido historial académico que ofrecen cursos de capacitación a los docentes, en su mayoría bajo la modalidad en línea. Se pueden encontrar cursos gratuitos o costeados por el participante, bajo modalidades de autocapacitación o procesos de formación mediados por un tutor."
         },
 
   {
@@ -47,15 +47,15 @@
       },
       {
         "categoria" : "5-documentosOficiales",
-        "general": "Documentos Oficiales: Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
-        "politica" : "Política",
+        "general": "Documentos que orientan los procesos de formulación, planificación, construcción e implementación de los aspectos relacionados con el quehacer ministerial, de conformidad con los acuerdos tomados por el Consejo Superior de Educación (CSE).\r\n",
+        "politica" : "Instrumento que orienta las acciones estratégicas ministeriales y establece los marcos referenciales que permitan vislumbrar el futuro promisorio de un país que desde la educación se propone avanzar hacia el cumplimiento de sus metas de mediano y largo plazo.",
         "perfil": "Descripción del apartado de perfil",
-        "programas": "Descripción del apartado de programas de estudio",
-        "estudiante": "Estudiante",
-        "faro": "FARO",
+        "programas": "Sección que organiza los programas de estudio vigentes, por nivel, ciclo, año, materia. ",
+        "estudiante": "Conjunto de habilidades que se pretende consolidar en la población estudiantil, según lo establecido en la Política Curricular bajo la Visión de Educa para una Nueva Ciudadanía.  Esos perfiles guían la formación de habilidades cada vez más enriquecidas en su complejidad, conforme avanzan los y las estudiantes en su proceso educativo.",
+        "faro": "Documento que presenta la fundamentación teórico-conceptual de las pruebas nacionales FARO, así como las orientación generales para su implementación.",
         "transformacion" : "transformación",
-        "fundamentos" : "fundamentos",
-        "reglamento" : "reglamento"
+        "fundamentos" : "Orientación que establece la base teórica que sustenta los programas y proyectos curriculares que se diseñan y ejecutan en el Ministerio de Educación Pública.",
+        "reglamento" : "Conjunto de disposiciones normativas que regulan el proceso de evaluación de los aprendizajes y la implementación del sistema de convivencia estudiantil en el sistema educativo costarricense, sin perjuicio de la normativa que regula el acceso a la educación de la persona estudiante que requiere apoyos educativos."
       }  
 
 ]
