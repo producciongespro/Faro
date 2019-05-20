@@ -59,7 +59,7 @@ const ApoyosEvaluacion = (props) => {
     </div>
     <div className="col-6 hover12" >
       <figure>
-        <img className="btn img-fluid" id="" src={images[0].EvaluacionEjemplos}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal} alt="Ejemplos de itemes para pruebas" />
+       
       </figure>
     </div>
     <div  className="col-3"  >

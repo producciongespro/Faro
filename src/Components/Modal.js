@@ -32,7 +32,7 @@ class Modal extends Component {
     switch (this.props.typeContent) {
       case "video":
       //console.log("Video");       
-        tmpContent = <iframe width="100%" height="400px" src={this.props.content} title="iframe-video" ></iframe>
+        tmpContent = <video controls width="640px" src={this.props.content} type="video/mp4"></video>
       break;
       case "html":
       //console.log("html");        
