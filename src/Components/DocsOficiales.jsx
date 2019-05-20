@@ -34,7 +34,7 @@ const DocsOficiales = ( props ) => {
             </div>
             <div className="col-4  ladoDer">
                 <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="programas" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {images[0].DocsOficialesProgramas } data-content= {pdfs.Tacaco }  data-typecontent ="programasEstudio"  onClick={props.showModal}  alt="Programas de estudio de estudio" />
+              <img className="botones-portada hvr-pop img-fluid" id="programas" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {images[0].DocsOficialesProgramas } data-content= {pdfs.Tacaco }  data-typecontent ="programasEstudio"  onClick={props.handlerOpenProgramasEducativos}  alt="Programas de estudio de estudio" />
               </figure>
             </div>
         </div>

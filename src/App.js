@@ -16,6 +16,7 @@ import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
 import CatalogoWeb from './Components/CatalogoWeb';
 import Catalogo from "./Components/Catalogo";
+import ProgramasEstudio from './Components/ProgramasEstudio';
 
 
 
@@ -73,7 +74,7 @@ componentDidMount ( ) {
         tmpComponent = <Home showModal={this.showModal}  changePage={this.changePage}/> 
       break;
       case "DocsOficiales":
-        tmpComponent = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}     changePage={this.changePage}/> 
+        tmpComponent = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
         tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}/> 
@@ -109,6 +110,27 @@ componentDidMount ( ) {
     });       
      
   }
+
+
+  //Métodos de Programas de estudio ------------------------------------
+
+  handlerOpenProgramasEducativos = (e) => {
+    const id = e.target.id;    
+    this.setState ({
+      currentPage : <ProgramasEstudio   idCat={id}  handlerCloseProgramasEducativos={ this.handlerCloseProgramasEducativos} />
+    })
+  }
+
+
+  handlerCloseProgramasEducativos = () => {
+    this.setState ({
+      currentPage :  <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}   handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}     changePage={this.changePage}/>       
+    })
+  }
+
+// Fin de métodos de Programas de estudio -------------------------------
+
+
 
 
 
@@ -151,7 +173,7 @@ handlerCloseCatalogWeb = (e) => {
 //Fin Método para abrir catálogo web -----------------------------------------
 
 
-  showModal = (e) => {
+showModal = (e) => {
     const content = e.target.dataset.content;
     const typeContent = e.target.dataset.typecontent;
     //console.log(content);   

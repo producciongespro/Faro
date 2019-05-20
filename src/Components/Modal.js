@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
-import 'jstree';
+
 
 
 import imagesJson from "../data/images.json";
@@ -26,54 +25,6 @@ class Modal extends Component {
     modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
 
   
-
-  cargaArbol () {
-
-    console.log("Arbol");
-    
-
-    $('#jstree').jstree(); 
-    
-    $('#jstree').on("changed.jstree", function (e, data) {
-        const opc =  data.selected[0];
-        console.log(opc);
-        
-    
-    //Caraga los programas de estudio de acuerdo a la selección
-    switch (opc) {
-      case "primariaCien":
-          $("#visorProgramas").html(
-            '<a href="nacion.com"> <i class="fas fa-file-pdf"></i> Ciencias primer Ciclo   </a>'  +
-            '<br>' + 
-            '<a href="nacion.com"> <i class="fas fa-file-pdf"></i> Ciencias Segundo Ciclo   </a>'
-            )
-        break;
-        case "apoyosEducativos":
-          $("#visorProgramas").html(
-            '<a href="nacion.com"> <i class="fas fa-file-pdf"></i> Educacón Especial Hellen Keller</a>' 
-           
-            )
-        break;
-    
-      default:
-        break;
-    }
-
-    });
-
-    $('button').on('click', function () {
-      $('#jstree').jstree(true).select_node('child_node_1');
-      $('#jstree').jstree('select_node', 'child_node_1');
-      $.jstree.reference('#jstree').select_node('child_node_1');
-    }); 
-    
- 
-  }
-
-
-
-
-
   
   
   selectTypeContent () {    
@@ -156,53 +107,7 @@ class Modal extends Component {
 
                       </React.Fragment>
                     )
-       break;
-       case "programasEstudio" :
-        this.modalAncho =  this.modalAncho + " modal-lg";
-        this.classModalBody = this.classModalBody + " modal-alto";
-        tmpContent = ( <React.Fragment>  
-          <button onClick={this.cargaArbol} ></button>      
-          
-<div className="row">
-  <div className="col-4" id="jstree" >     
-              <ul>
-                <li>Educación Preescolar</li>
-                <li>
-                  Educación Primaria
-                  <ul>
-                    <li id="primariaCien" >Ciencias</li>
-                    <li id="primariaEspa">Español</li>
-                    <li id="primariaMate">Matemática</li>
-                    <li id="primariaEstu">Estudios Sociales</li>
-                    <li id="primariaIngl">Inglés</li>
-                    <li id="primariaFran">Francés</li>
-                    <li id="primariaItal">Italiano</li>
-                  </ul>
-                </li>
-                <li>Educación Media
-                  <ul>
-                      <li>Ciencias</li>
-                      <li>Español</li>
-                      <li>Matemática</li>
-                  </ul>
-                </li>
-                <li id="apoyosEducativos">Apoyos Educativos</li>
-                <li>Educación Intercultural</li>
-                <li>Educación para jóvenes y adultos</li>
-              </ul>            
-  </div>
-
-
-<div className="col-8" id="visorProgramas">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus ut, inventore pariatur in minima, at nostrum, debitis recusandae consectetur adipisci? Rem error atque aliquam ullam magnam quod necessitatibus optio.
-</div>
-
-
-</div>
-
-                        </React.Fragment>
-                      )
-         break;
+       break;  
     
       default:
         console.log("Opcion fuera de rango en modal");        
