@@ -32,9 +32,10 @@ class Modal extends Component {
     var tmpContent;
     
     switch (this.props.typeContent) {
-      case "video":
+      case "video":        
       //console.log("Video");       
-        tmpContent = <video controls width="640px" src={this.props.content} type="video/mp4"></video>
+        this.modalAncho =  this.modalAncho + " modal-lg";          
+        tmpContent = <video controls width="100%" src={this.props.content} type="video/mp4" autoPlay  ></video>
       break;
       case "html":
       //console.log("html");        
