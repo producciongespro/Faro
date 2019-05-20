@@ -56,7 +56,11 @@ const ProgramasEstudio = (props) => {
 <React.Fragment>
 
     <div className="row">
-        <div className="col-12 text-right"   >
+        <div className="col-2"></div>
+        <div className="col-8 text-center"> 
+            <h1>Programas de Estdio</h1>
+        </div>
+        <div className="col-2 text-right"   >
             <span onClick={props.handlerCloseProgramasEducativos}  > 
                     <i className="far fa-times-circle"></i>
             </span>
