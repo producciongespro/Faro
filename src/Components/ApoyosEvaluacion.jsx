@@ -2,8 +2,9 @@ import React from 'react';
 import images from "../data/images.json";
 //import textos from "../data/textos.json";
 import dsPdfs from "../data/pdf.json";
+import dsZip from "../data/comprimidos.json";
 //import dsLinks from "../data/links.json";
-
+var zipFiles = dsZip[0];
 var pdfs = dsPdfs[0];
 //links = dsLinks[0];
 
@@ -30,7 +31,9 @@ const ApoyosEvaluacion = (props) => {
                     <div className="row">
                       <div  className="col-12 col-sin-padding">
                         <figure>
-                          <img id="tecnicas" className="img-fluid btn hvr-pop" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Rúbricas"    src={images[0].EvaluacionLRubricas}  />
+                        <a href={zipFiles.tecnicas} target="_blank" rel="noopener noreferrer">
+                          <img id="tecnicas" className="img-fluid btn hvr-pop" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } alt="Técnicas"    src={images[0].EvaluacionLRubricas}  />
+                        </a>
                         </figure>
                       </div>
                     </div>
@@ -38,7 +41,9 @@ const ApoyosEvaluacion = (props) => {
                   <div className="row">
                     <div  className="col-12 col-sin-padding"  >
                       <figure>
-                        <img id="instrumentos" className="img-fluid btn hvr-pop" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Proceso" src={images[0].EvaluacionProceso}  />
+                      <a href={zipFiles.instrumentos} target="_blank" rel="noopener noreferrer">
+                        <img id="instrumentos" className="img-fluid btn hvr-pop" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  alt="Instrumentos" src={images[0].EvaluacionProceso}  />
+                      </a>
                       </figure>
                     </div>
                   </div>
