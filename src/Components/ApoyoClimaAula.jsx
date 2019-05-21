@@ -3,9 +3,10 @@ import images from "../data/images.json";
 //import textos from "../data/textos.json";
 import dsPdfs from "../data/pdf.json";
 //import dsLinks from "../data/links.json";
+import dsZip from "../data/comprimidos.json"
 var pdfs = dsPdfs[0];
 //var links = dsLinks[0];
-
+var zipDocs = dsZip[0];
 const ApoyoClimaAula = (props) => {
   return ( 
     <React.Fragment>
@@ -44,13 +45,14 @@ const ApoyoClimaAula = (props) => {
             </div>
           <div className="col-6 hover11 ">
               <figure>
-              
-                <img className="botones-portada img-fluid" id="inclusion"  src={images[0].ApoyoClimaAulaInclusion }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Inclusión" />
+              <a href={zipDocs.inclusion}  rel="noopener noreferrer">
+                <img className="botones-portada img-fluid" id="inclusion"  src={images[0].ApoyoClimaAulaInclusion }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Inclusión" />
+                </a>
             </figure>
           </div>
           <div className="col-6 hover11 ">
             <figure>
-            <a href="https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/emociones_motivacion.pptx"  rel="noopener noreferrer">
+            <a href={zipDocs.emociones}  rel="noopener noreferrer">
                 <img className="botones-portada derecha img-fluid" id="emociones" src={images[0].ApoyoClimaAulaEmociones } data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Emociones" />  
             </a>
             </figure>

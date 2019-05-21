@@ -1,6 +1,8 @@
 [
     {
         "tecnicas" : "https://recursos.mep.go.cr/ws_faro/zip/evaluacion/tecnicas.zip",
-        "instrumentos" : "https://recursos.mep.go.cr/ws_faro/zip/evaluacion/instrumentos.zip"
+        "instrumentos" : "https://recursos.mep.go.cr/ws_faro/zip/evaluacion/instrumentos.zip",
+        "inclusion" : "https://recursos.mep.go.cr/ws_faro/zip/clima_aula/apoyos_inclusion.zip",
+        "emociones" : "https://recursos.mep.go.cr/ws_faro/zip/clima_aula/emociones_motivacion.zip"
     }
 ]
