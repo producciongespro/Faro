@@ -31,7 +31,7 @@ const ApoyosEvaluacion = (props) => {
                     <div className="row">
                       <div  className="col-12 col-sin-padding">
                         <figure>
-                        <a href={zipFiles.tecnicas} target="_blank" rel="noopener noreferrer">
+                        <a href={zipFiles.tecnicas} rel="noopener noreferrer">
                           <img id="tecnicas" className="img-fluid btn hvr-pop" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } alt="Técnicas"    src={images[0].EvaluacionLRubricas}  />
                         </a>
                         </figure>
@@ -41,7 +41,7 @@ const ApoyosEvaluacion = (props) => {
                   <div className="row">
                     <div  className="col-12 col-sin-padding"  >
                       <figure>
-                      <a href={zipFiles.instrumentos} target="_blank" rel="noopener noreferrer">
+                      <a href={zipFiles.instrumentos} rel="noopener noreferrer">
                         <img id="instrumentos" className="img-fluid btn hvr-pop" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  alt="Instrumentos" src={images[0].EvaluacionProceso}  />
                       </a>
                       </figure>

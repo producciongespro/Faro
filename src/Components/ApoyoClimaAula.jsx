@@ -21,13 +21,13 @@ const ApoyoClimaAula = (props) => {
         <div id="botones-aula" className="row">
             <div className="col-6 hover11 ">
               <figure>
-              <a href="https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/clima_clase.pptx" target="_blank" rel="noopener noreferrer">
+              <a href="https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/clima_clase.pptx"  rel="noopener noreferrer">
                   <img className="botones-portada derecha img-fluid" id="pautas" src={images[0].ApoyoClimaAulaPautas } data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  alt="Pautas" />                
                 </a>
              </figure>
             </div>
             <div className="col-6 hover11 ">
-              <figure> <a href="https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/clima_escolar.pptx" target="_blank" rel="noopener noreferrer">
+              <figure> <a href="https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/clima_escolar.pptx"  rel="noopener noreferrer">
                 <img className="botones-portada img-fluid" id="climaEscolar"  src={images[0].ApoyoClimaAulaClimaEscolar }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Clima escolar" />
               </a>
               </figure>
@@ -37,7 +37,7 @@ const ApoyoClimaAula = (props) => {
         <div className="row">
           <div className="col-6 hover11 ">
             <figure>
-            <a href="https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/uso_tiempo_aula.pptx" target="_blank" rel="noopener noreferrer">
+            <a href="https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/uso_tiempo_aula.pptx" rel="noopener noreferrer">
               <img className="botones-portada derecha img-fluid" id="recomendaciones" src={images[0].ApoyoClimaAulaRecomendaciones } data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Recomendaciones" />
               </a>
             </figure>
@@ -50,7 +50,7 @@ const ApoyoClimaAula = (props) => {
           </div>
           <div className="col-6 hover11 ">
             <figure>
-            <a href="https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/emociones_motivacion.pptx" target="_blank" rel="noopener noreferrer">
+            <a href="https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/emociones_motivacion.pptx"  rel="noopener noreferrer">
                 <img className="botones-portada derecha img-fluid" id="emociones" src={images[0].ApoyoClimaAulaEmociones } data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Emociones" />  
             </a>
             </figure>
