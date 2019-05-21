@@ -1,0 +1,83 @@
+[
+    {
+        "id" : "mediaEspa",
+        "label" : "Español"
+    },
+    {
+        "id" : "mediaMate",
+        "label" : "Matemática"
+    },
+    {
+        "id" : "mediaEstu",
+        "label" : "Estudios Sociales"
+    },
+    {
+        "id" : "mediaBiol",
+        "label" : "Biología"
+    },
+    {
+        "id" : "mediaQuim",
+        "label" : "Química"
+    },
+    {
+        "id" : "mediaFisi",
+        "label" : "Física"
+    },
+    {
+        "id" : "mediaFran",
+        "label" : "Francés"
+    },
+    {
+        "id" : "mediaAfec",
+        "label" : "Afectividad y Sexualidad"
+    },
+    {
+        "id" : "mediaPsic",
+        "label" : "Psicología"
+    },
+    {
+        "id" : "mediaFilo",
+        "label" : "Filosofía"
+    },
+    {
+        "id" : "mediaArte",
+        "label" : "Artes Plásticas"
+    },
+    {
+        "id" : "mediaMusi",
+        "label" : "Educación Musical"
+    },
+    {
+        "id" : "mediaCivi",
+        "label" : "Edcuación Cívica"
+    },
+    {
+        "id" : "mediaOrie",
+        "label" : "Orientación"
+    },
+    {
+        "id" : "mediaEdFi",
+        "label" : "Educación Física"
+    },
+    {
+        "id" : "mediaReli",
+        "label" : "Educación Religiosa"
+    },
+    {
+        "id" : "mediaIndu",
+        "label" : "Artes Industriales"
+    },
+    {
+        "id" : "mediaVida",
+        "label" : "Educación para la Vida Cotidiana"
+    },
+    {
+        "id" : "mediaItal",
+        "label" : "Italiano"
+    },
+    {
+        "id" : "mediaRura",
+        "label" : "Liceos Rurales"
+    }
+   
+]

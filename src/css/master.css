@@ -572,8 +572,18 @@ border-color: #0d7aa0;
 
 
 
- /*tree*/
+ /*documentos oficales - Programas de estudio*/
 
- .div-tree {
+ .div-oculta {
    display: none;
+ }
+
+ .spn-materias {
+   font-size: 1em;
+   margin: 1%;
+   cursor: pointer
+ }
+
+ .spn-materias:hover {
+  background-color: crimson;
  }
