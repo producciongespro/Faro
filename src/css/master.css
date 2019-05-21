@@ -206,15 +206,25 @@ border-color: #0d7aa0;
   font-weight: 550;
   font-size: 1.7vw;
   color:#0b8a99;
-  margin-left: -10%;
+  margin-left: -3%;
 }
 /* Master 2 */
 .texto_descripciones{
-  margin-top: -50%;
+  margin-top: -56%;
+  font-weight: 550;
+  font-size: 1.2vw;
+  line-height: 19px;
+  width: 80%;
+  height: auto;
+  margin-left: 8%;
+}
+
+.texto_descripciones2{
+  margin-top: -62%;
   font-weight: 550;
   font-size: 1.2vw;
   line-height : 19px;
-  width: 51%;
+  width: 60%;
   margin-left: 10%;
 }
 

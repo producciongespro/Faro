@@ -16,7 +16,7 @@ const RecursosDidacticos = (props) => {
       <div className="col-4">
             <img className="titulos img-fluid" src={images[0].RecDidacticosTitulo} alt="Documentos educativos oficiales" />
                <img className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" /> 
-              <div id="textoDescripcion" className="texto_descripciones2">
+              <div id="textoDescripcion" className="texto_descripciones">
               <h2 className='desc'>Descripción:</h2>  { props.infoCategory }                
               </div>
               <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
