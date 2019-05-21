@@ -41,7 +41,7 @@ const DocsOficiales = ( props ) => {
         <div className="row">
             <div className="col-4"></div>
             <div className="col-4 fondo" >   
-              <img id="transformacion" className="img-fluid" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }   src= {images[0].DocsOficialesTransformacionCurricular }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Transformación curricular" />
+              <img id="transformacion" className="img-fluid" data-infosource={5} src= {images[0].DocsOficialesTransformacionCurricular }  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  alt="Transformación curricular" />
             </div>
             <div className="col-4  ladoIzq">
             <figure>
