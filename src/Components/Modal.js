@@ -108,7 +108,29 @@ class Modal extends Component {
 
                       </React.Fragment>
                     )
-       break;  
+       break; 
+       case "defHabilidades" :
+        this.modalAncho =  this.modalAncho + " modal-lg";
+        this.classModalBody = this.classModalBody + " modal-alto";
+        tmpContent = ( <React.Fragment>
+                          <h2 className="text-center">Concepto de Habilidades</h2>                        
+                          <h3 className="text-center">Ministerio de Educación Pública</h3>
+                          <br/>
+                          <div className="container">
+                            <div className="row ">
+                                <div className="col-12 text-justify">
+                                  Las habilidades son capacidades aprendidas por la población estudiantil,  que utiliza para enfrentar situaciones problemáticas de la vida diaria.  Estas se adquieren mediante el aprendizaje de la experiencia directa, a través del modelado o la imitación, por lo que trasciende la simple transmisión del conocimiento, lo cual promueve la visión y  formación integral  de las personas, de cómo apropiarse del conocimiento sistematizado para crear su propio aprendizaje.
+                                </div>
+                            </div>
+                          
+   
+                          <br/>
+                          <strong>Fuente</strong> <cite> :   Alfaro et al. Por qué un currículo por habilidades en la reforma curricular de Costa Rica.  Ministerio de Educación Pública, Dirección de Desarrollo Curricular.  </cite>
+                          </div>         
+  
+                        </React.Fragment>
+                      )
+         break;   
     
       default:
         console.log("Opcion fuera de rango en modal");        

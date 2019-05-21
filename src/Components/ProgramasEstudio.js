@@ -1,59 +1,93 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+
 import $ from 'jquery';
 import 'jstree';
 
 
+//Data json
+import secundariaJson from '../data/documentos/programas_estudio_media.json';
 
 
 
-const cargaArbol = () => {
 
-  console.log("Arbol");
+class ProgramasEstudio extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      programaActual : ""
+     };
+    
+    this.ciclo3 = "";
+    this.ciclo4 = "";
+    this.ciclo5 = "" ;
 
-  $("#jstree").slideDown( "slow" );
-  
-
-  $('#jstree').jstree(); 
-  
-  $('#jstree').on("changed.jstree", function (e, data) {
-      const opc =  data.selected[0];
-      console.log(opc);
-      
-  
-  //Caraga los programas de estudio de acuerdo a la selección
-  switch (opc) {
-    case "primariaCien":
-        $("#visorProgramas").html(
-          '<a href="https://www.mep.go.cr/" target= "_blank" > <i class="fas fa-file-pdf"></i> Ciencias primer Ciclo   </a>'  +
-          '<br>' + 
-          '<a href="https://www.mep.go.cr/" target= "_blank"> <i class="fas fa-file-pdf"></i> Ciencias Segundo Ciclo   </a>'
-          )
-      break;
-      case "apoyosEducativos":
-        $("#visorProgramas").html(
-          '<a href="nacion.com"> <i class="fas fa-file-pdf"></i> Educacón Especial Hellen Keller</a>'          
-          )
-      break;
-  
-    default:
-      break;
   }
 
-  });
 
-  $('button').on('click', function () {
-    $('#jstree').jstree(true).select_node('child_node_1');
-    $('#jstree').jstree('select_node', 'child_node_1');
-    $.jstree.reference('#jstree').select_node('child_node_1');
-  }); 
-  
+ 
 
-}
+  cargaArbol = () => {
+    var opc="";
+    var dsSecundaria = secundariaJson[0];
 
-const ProgramasEstudio = (props) => {
+    console.log("Arbol");
+    $("#jstree").slideDown( "slow" );  
+    $('#jstree').jstree(); 
+    
+    $('#jstree').on("changed.jstree", function (e, data) {
+        opc =  data.selected[0];     
+        //Caraga los programas de estudio de acuerdo a la selección
+        //Secundaria -------------------    
+
+        //Detecta
+        let patt = new RegExp('j1_');
+        var res = patt.test(opc);      
+          
+      
+        if (!res) {
+          const aux = dsSecundaria[opc];
+          console.log("Opcion", aux );  
+        }
+
+
+/*
+        
+        if (aux !== undefined ) {
+          if (aux.ciclo3 !== "" ) {
+            this.ciclo3 =  <a href= {aux.ciclo3}   target= "_blank" rel="noopener noreferrer" > <i class="fas fa-file-pdf"></i>  { aux.nombre  }   Tercer Ciclo   </a>
+          }
+          if (aux.ciclo4 !== "" ) {
+            this.ciclo4 =  <a href= {aux.ciclo4}   target= "_blank" rel="noopener noreferrer"  > <i class="fas fa-file-pdf"></i>  { aux.nombre  }   Educación diversificada   </a>
+          }
+          if (aux.ciclo5 !== "" ) {
+            this.ciclo5 =  <a href= {aux.ciclo5}   target= "_blank" rel="noopener noreferrer" > <i class="fas fa-file-pdf"></i>  { aux.nombre  }  Tercer Ciclo y Educación diversificada   </a>
+          }    
+        } 
+
+      
+        */
+      });
+
+      /*
+    $('button').on('click', function () {
+        $('#jstree').jstree(true).select_node('child_node_1');
+        $('#jstree').jstree('select_node', 'child_node_1');
+        $.jstree.reference('#jstree').select_node('child_node_1');
+      }); 
+
+      this.setState({ programaActual : opc  });
+*/
+  }
+
+
+
+
+
+  render() { 
     return ( 
 
-<React.Fragment>
+      <React.Fragment>
 
     <div className="row">
         <div className="col-2"></div>
@@ -61,13 +95,13 @@ const ProgramasEstudio = (props) => {
             <h1>Programas de Estdio</h1>
         </div>
         <div className="col-2 text-right"   >
-            <span onClick={props.handlerCloseProgramasEducativos}  > 
+            <span onClick={this.props.handlerCloseProgramasEducativos}  > 
                     <i className="far fa-times-circle"></i>
             </span>
         </div>
     </div>
     
-<button onClick={cargaArbol} > Ver categorías </button>      
+<button onClick={this.cargaArbol} > Ver categorías </button>      
           
           <div className="row">
             <div className="col-4 div-tree" id="jstree"  >     
@@ -95,13 +129,13 @@ const ProgramasEstudio = (props) => {
           
                             </ul>
                           </li>
-                          <li>Educación Media
+                          <li >Educación Media
                             <ul>
-                                <li>Ciencias</li>
-                                <li>Español</li>
-                                <li>Matemática</li>
+                                <li id="mediaCien">Ciencias</li>
+                                <li id="mediaEspa">Español</li>
+                                <li id="mediaMate" >Matemática</li>
                                 <li id="mediaEstu">Estudios Sociales</li>
-                                <li id="mediabiol">Biología</li>
+                                <li id="mediaBiol">Biología</li>
                                 <li id="mediaQuim">Quimica</li>
                                 <li id="mediaFisi">Física</li>
                                 <li id="mediaIngl">Inglés</li>
@@ -129,15 +163,17 @@ const ProgramasEstudio = (props) => {
           
           
           <div className="col-8" id="visorProgramas">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus ut, inventore pariatur in minima, at nostrum, debitis recusandae consectetur adipisci? Rem error atque aliquam ullam magnam quod necessitatibus optio.
+              {this.ciclo3} <br/>
+              {this.ciclo4} <br/>
+              {this.ciclo5} <br/>
           </div>
           
           
           </div>
 </React.Fragment>
 
-
      );
+  }
 }
  
 export default ProgramasEstudio;
