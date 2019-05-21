@@ -33,10 +33,10 @@
       },
       {
         "categoria" : "3-apoyosEvaluacion",
-        "general": "Apoyos para la evaluación: Ipsum id qui cillum labore. Enim cupidatat tempor sunt ut deserunt ea ex nisi. Amet fugiat in sunt exercitation velit officia ad. Aute sint commodo in qui irure tempor esse reprehenderit dolore do consequat aliqua exercitation. Qui ut ut laborum elit non fugiat occaecat dolore magna do. Ullamco tempor reprehenderit velit enim ipsum.\r\n",
-        "tecnicas": "Descripción del apartado de técnicas",
-        "instrumentos": "Descripción del apartado de instrumentos",
-        "documentos": "Descripción del apartado de documentos"
+        "general": "Es un espacio diseñado para docentes, cuyo fin es promover y apoyar el proceso de implementación de la evaluación para el aprendizaje, desde un enfoque de uso pedagógico y didáctico,  que posibilite la mediación transformadora.  Este apartado, presenta ejemplos claros sobre técnicas e instrumentos, además de documentación orientadora de evaluación para el aprendizaje.\r\n",
+        "tecnicas": "Las técnicas de evaluación  son los procedimientos utilizados por el personal docente para obtener información acerca del aprendizaje del estudiantado. Cada técnica de evaluación se acompaña de instrumentos. <ul><li>Mapas conceptuales (se deriva un ejemplo)</li><li>Portafolios</li><li>Diario de trabajo</li><li>Diario reflexivo</li><li>Interrogatorio</li></ul>",
+        "instrumentos": "Los instrumentos para la evaluación de los aprendizajes son recursos que se utilizan con el propósito de recopilar información que sirva de insumo para la toma de decisiones realizadas por el personal docente y el estudiantado en el proceso de enseñanza y aprendizaje. <ul><li>Escalas de calificación: numérica, descriptiva y desempeño (se deriva un ejemplo)</li><li>Lista de cotejo</li><li>Registro anecdótico</li><li>Rúbricas</li><li>Escala de desempeño</li></ul>",
+        "documentos": "En este espacio, se encuentran dos recursos infográficos relacionados con el proceso de evaluación del aprendizaje. <br>Ellos son: <ol><li>Componentes de la calificación,  en el que aparecen orientaciones para:</li><ul><li>Trabajo cotidiano</li><li>Tareas</li><li>Pruebas</li></ul><li>Evaluación formativa para el aprendizaje</li></ol>"
       },
       {
         "categoria" : "4-recursosDidacticos",
@@ -48,11 +48,11 @@
       {
         "categoria" : "5-documentosOficiales",
         "general": "Documentos que orientan los procesos de formulación, planificación, construcción e implementación de los aspectos relacionados con el quehacer ministerial, de conformidad con los acuerdos tomados por el Consejo Superior de Educación (CSE).\r\n",
-        "politica" : "Instrumento que orienta las acciones estratégicas ministeriales y establece los marcos referenciales que permitan vislumbrar el futuro promisorio de un país que desde la educación se propone avanzar hacia el cumplimiento de sus metas de mediano y largo plazo.",
+        "politica" : "Instrumento que orienta las acciones estratégicas ministeriales y establece los marcos de referencia que permitan vislumbrar el futuro promisorio de un país, que desde la educación, se propone avanzar hacia el cumplimiento de sus metas de mediano y largo plazo.",
         "perfil": "Descripción del apartado de perfil",
-        "programas": "Sección que organiza los programas de estudio vigentes, por nivel, ciclo, año, materia. ",
-        "estudiante": "Conjunto de habilidades que se pretende consolidar en la población estudiantil, según lo establecido en la Política Curricular bajo la Visión de Educa para una Nueva Ciudadanía.  Esos perfiles guían la formación de habilidades cada vez más enriquecidas en su complejidad, conforme avanzan los y las estudiantes en su proceso educativo.",
-        "faro": "Documento que presenta la fundamentación teórico-conceptual de las pruebas nacionales FARO, así como las orientación generales para su implementación.",
+        "programas": "Sección que organiza los programas de estudio vigentes, por nivel, ciclo, año y materia.  ",
+        "estudiante": "Conjunto de habilidades que se pretende consolidar en la población estudiantil, según lo establecido en la Política Curricular bajo la Visión de Educar para una Nueva Ciudadanía.  Esos perfiles guían la formación de habilidades cada vez más enriquecidas en su complejidad, conforme avanzan el estudiantado en su proceso educativo.",
+        "faro": "Documento que presenta la fundamentación teórico-conceptual de las pruebas nacionales FARO, así como las orientaciones generales para su implementación.",
         "transformacion" : "transformación",
         "fundamentos" : "Orientación que establece la base teórica que sustenta los programas y proyectos curriculares que se diseñan y ejecutan en el Ministerio de Educación Pública.",
         "reglamento" : "Conjunto de disposiciones normativas que regulan el proceso de evaluación de los aprendizajes y la implementación del sistema de convivencia estudiantil en el sistema educativo costarricense, sin perjuicio de la normativa que regula el acceso a la educación de la persona estudiante que requiere apoyos educativos."
