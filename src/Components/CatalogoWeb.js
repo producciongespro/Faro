@@ -11,20 +11,18 @@ const CatalogoWeb = (props) => {
     return ( 
         <React.Fragment>
             
-            <div className="row tit_rec_dig"><img  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/></div>   
-
-            <div id="inicio">
-            <nav className="nav nav-pills nav-justified  custom-nav">
-            <a className="nav-item nav-link link-custom" href="#educativos">Sitios Educativos</a>
+            <div className="tit_rec_dig row"><img  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/></div>
+            <nav id="inicio" className="nav nav-pills nav-justified  custom-nav">
+            <a className="nav-item nav-link link-custom" href="#educativos">Sitios Educativos</a> <br/><br/><br/>
             <a className="nav-item nav-link link-custom" href="#web">Herramientas Web</a>
             <a className="nav-item nav-link link-custom" href="#apps">Apps Educativas</a>            
             <a className="nav-item nav-link link-custom" href="#estrategias">Estrategias de aprendizaje</a>            
             <a className="nav-item nav-link link-custom" href="#tmp"  onClick={props.handlerCloseCatalogWeb }> Volver</a>            
             </nav>
             <br/>  <br/>
-            </div>
-
-            <div id="educativos">  <a href="#inicio"> <h4 className="tit-catalogo" > Sitios Educativos </h4> <br/> </a>    
+    
+        
+            <div id="educativos">  <a href="#inicio">   <h4 className="tit-catalogo" > Sitios Educativos </h4> <br/> </a>    
                         {
                             sitiosWeb[0].map((item, i) => (
                                 <div className="tarjetas-web"  key={i} >
