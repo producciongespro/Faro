@@ -55,10 +55,16 @@ a {
 }
 
 .custom-nav {
-  background-color: rgb(34,168,161);
+  background-color:#FCC82B;
   color:#fff;
   padding: 2px;
   border-bottom: solid olive 1px;
+  margin-left: -1%;
+  margin-right: -1%;
+}
+
+.tit_rec_dig{
+  background-color:#FCC82B;
 }
 
 .link-custom {  
@@ -67,6 +73,9 @@ a {
   padding: 8px; 
 }
 
+a:hover  {
+  color:#E55403;
+  }
 
 
  /* ***********CSS de cursos virtuales******************* */
@@ -137,10 +146,20 @@ border-color: #0d7aa0;
 
 
    .img_dec_sitio {
-    border-radius: 40%;
-    height: 80%;
-    width: 50%;
+    height: 119%;
+    width: 89%;
    }
+
+
+   .text-catalogo {
+    font-family: 'Bitter', serif;
+    font-size: 85%;
+    }
+
+    .tit-catalogo {
+      color: #E55403;
+      font-weight: bold;
+    }
 
 
 .botones-portada {
