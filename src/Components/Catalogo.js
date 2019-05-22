@@ -69,13 +69,43 @@ componentWillMount () {
     }
 
 
+     
 
-    render() {         
+   
+
+
+    render() {
+        var valor=""
+
+        switch (this.props.idCat) {
+
+            case "cursos":
+                valor= "DesarrolloTituloCursosVirt"; 
+                break;
+    
+                case "videoteca":
+                valor= "DesarrolloTituloVideoteca"; 
+                break;
+    
+                case "pautas":
+                valor= "DesarrolloTituloReferencias"; 
+                break;
+    
+                case "ficha":
+                valor= "DesarrolloTituloOtrasOfertas"; 
+                break;
+        
+            default:
+                break;
+        }
+        console.log(valor);
+        
+
         return ( 
             <React.Fragment>
-                <div className="row">
+            <div className="row">
                 <div className="col-12">
-                    <img className="hvr-pop img-fluid" id="imgTitulo" src={this.images.DesarrolloTituloCursosVirt} alt="titulo"/>
+                    <img className="hvr-pop img-fluid" id="imgTitulo" src={this.images[valor]} alt="titulo"/>
                  </div>
              </div>
 
