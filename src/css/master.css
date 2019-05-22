@@ -198,6 +198,10 @@ border-color: #0d7aa0;
    text-align: center;
 }
 
+.bannerModal{
+  width: 100%;
+}
+
 #rubricas {
   margin-top: -37%;
   margin-left: 7%;
