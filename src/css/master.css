@@ -579,7 +579,8 @@ border-color: #0d7aa0;
  }
 
  .spn-materias {
-   font-size: 1em;
+   font-size: 1.2em;
+   padding: 1.5%;
    margin: 1%;
    cursor: pointer
  }
