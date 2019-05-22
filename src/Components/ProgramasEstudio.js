@@ -13,7 +13,7 @@ import materiasMedia from '../data/documentos/programas_materias_media.json';
 //Primaria:
 import primaPDF from '../data/documentos/programas_pdf_primaria.json';
 import materiasPrima from '../data/documentos/programas_materias_primaria.json';
-
+import images from '../img/banner_programas.png'
 
 
 
@@ -146,7 +146,8 @@ class ProgramasEstudio extends Component {
     <div className="row">
         <div className="col-2"></div>
         <div className="col-8 text-center"> 
-            <h1>Programas de Estudio</h1>
+        <img src={images} alt=""/>
+        
         </div>
         <div className="col-2 text-right"   >
             <span onClick={this.props.handlerCloseProgramasEducativos}  > 
