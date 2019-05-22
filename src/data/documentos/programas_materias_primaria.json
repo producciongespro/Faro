@@ -1,0 +1,56 @@
+[
+    {
+        "id" : "primaEspa",
+        "label" : "Español ddd"
+    },
+    {
+        "id" : "primaMate",
+        "label" : "Matemática 123"
+    },
+    {
+        "id" : "primaEstu",
+        "label" : "Estudios Sociales"
+    },
+    {
+        "id" : "primaFran",
+        "label" : "Francés"
+    },
+
+    {
+        "id" : "primaArte",
+        "label" : "Artes Plásticas"
+    },
+    {
+        "id" : "primaMusi",
+        "label" : "Educación Musical"
+    }, 
+    {
+        "id" : "primaOrie",
+        "label" : "Orientación"
+    },
+    {
+        "id" : "primaEdFi",
+        "label" : "Educación Física"
+    },
+    {
+        "id" : "primaReli",
+        "label" : "Educación Religiosa"
+    },
+    {
+        "id" : "primaIndu",
+        "label" : "Artes Industriales"
+    },
+    {
+        "id" : "primaVida",
+        "label" : "Vida Cotidiana"
+    },
+    {
+        "id" : "primaItal",
+        "label" : "Italiano"
+    },
+    {
+        "id" : "primaUnid",
+        "label" : "Esc. Unidocentes"
+    }
+   
+]

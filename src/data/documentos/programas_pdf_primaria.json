@@ -1,0 +1,44 @@
+[ 
+    {
+        "mediaCien" : {
+            "nombre" : "Ciencias",            
+            "ciclo3" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "ciclo4" : "",
+            "ciclo5" :""
+
+        },
+        "mediaEspa" : {
+            "nombre" : "Español",            
+            "ciclo3" : "",
+            "ciclo4" : "",
+            "ciclo5" :"https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/espanol/educacion_diversificada/programa_de_espanol.pdf"
+        },
+        "mediaEstu" : {
+            "nombre" : "Estudios Sociales",            
+            "ciclo3" : "",
+            "ciclo4" : "",
+            "ciclo5" :"https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/estudios_sociales/educacion_diversificada/programa_estudios_sociales.pdf"
+        },
+        "mediaBiol" : {
+            "nombre" : "Biología",            
+            "ciclo3" : "",
+            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/biologia/educacion_diversificada/programa_de_biologia.pdf",
+            "ciclo5" :""
+        },
+        "mediaQuim" : {
+            "nombre" : "Química",            
+            "ciclo3" : "",
+            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/quimica/educacion_diversificada/programa_estudio_educacion_quimica.pdf",
+            "ciclo5" :""
+        },
+        "mediaIngl" : {
+            "nombre" : "Inglés",            
+            "ciclo3" : "",
+            "ciclo4" : "",
+            "ciclo5" :"https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ingles/educacion_diversificada/programa_estudio_ingles.pdf"
+        }
+
+    }
+  
+
+]
