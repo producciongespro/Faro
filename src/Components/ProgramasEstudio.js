@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 import $ from 'jquery';
-import 'jstree';
+//import 'jstree';
 
 
 //Data json
