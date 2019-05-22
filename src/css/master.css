@@ -227,6 +227,10 @@ padding-top:5%;
    text-align: center;
 }
 
+.bannerModal{
+  width: 100%;
+}
+
 #rubricas {
   margin-top: -37%;
   margin-left: 7%;

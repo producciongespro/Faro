@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
-
-
+import $ from 'jquery';
 import imagesJson from "../data/images.json";
 import audiosJson from "../data/audios.json"
 
@@ -24,8 +22,10 @@ class Modal extends Component {
     classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
     modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
 
-  
-  
+    mostrarDiv (){
+      $("#plantillas").slideDown("slow")
+    }
+ 
   
   selectTypeContent () {    
 
@@ -87,10 +87,11 @@ class Modal extends Component {
       this.modalAncho =  this.modalAncho + " modal-lg";
       this.classModalBody = this.classModalBody + " modal-alto";
       tmpContent = ( <React.Fragment>
-                        <h2 className="text-center">Plantilla Planeamiento</h2>                        
- 
+                        <img className="bannerModal" src={this.images.bannerPlantillas} alt=""/>              
+
                         <hr/>
-                        <h4>Plantillas en formato Word</h4>
+                        <h2 className="btn btn-primary"  onClick={this.mostrarDiv} >Plantillas en formato Word</h2>
+                        <div id="plantillas" className="div-oculta">
                         <ul>
                           <li>
                             <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplo_plan_ciencias.docx" > <i className="far fa-file-word"></i> Plan de Ciencias</a>
@@ -99,6 +100,7 @@ class Modal extends Component {
                             <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplo_plan_ciencias.docx" > <i className="far fa-file-word"></i> Plan de Estudios sociales</a>
                           </li>
                         </ul>
+                        </div>
                         <br/>
                         <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos.pdf" target ="_blank"  rel="noopener noreferrer" >
                           <strong>
