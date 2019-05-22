@@ -10,9 +10,11 @@ var img = images[0];
 const CatalogoWeb = (props) => {
     return ( 
         <React.Fragment>
+            
+            <div className="row tit_rec_dig"><img  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/></div>   
 
-    
-            <nav className="nav nav-pills fixed-top nav-justified custom-nav">
+            <div id="inicio">
+            <nav className="nav nav-pills nav-justified  custom-nav">
             <a className="nav-item nav-link link-custom" href="#educativos">Sitios Educativos</a>
             <a className="nav-item nav-link link-custom" href="#web">Herramientas Web</a>
             <a className="nav-item nav-link link-custom" href="#apps">Apps Educativas</a>            
@@ -20,44 +22,113 @@ const CatalogoWeb = (props) => {
             <a className="nav-item nav-link link-custom" href="#tmp"  onClick={props.handlerCloseCatalogWeb }> Volver</a>            
             </nav>
             <br/>  <br/>
-        
+            </div>
 
-            <div id="educativos">
-            <div><img  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/></div>
+            <div id="educativos">  <a href="#inicio"> <h4 className="tit-catalogo" > Sitios Educativos </h4> <br/> </a>    
                         {
                             sitiosWeb[0].map((item, i) => (
                                 <div className="tarjetas-web"  key={i} >
-                                <div className="row"> 
-                                <div><img  alt="Desarrollo de otras ofertas" className="img_dec_sitio" src={img.DesarrolloDecSitios}/></div>
-                                   <h6> <b> {item.nombre}</b></h6>
-                                   </div>
-                                    <p>  {item.desc}  </p>
-                                    <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
-                                    <hr/>  <hr/>
+                                
+                                    <div className="row"> 
+
+                                        <div className="col-1"> 
+                                        <div>
+                                            <img  alt="Desarrollo de otras ofertas" className="img_dec_sitio" src={img.DesarrolloDecSitios}/>
+                                        </div>
+                                        </div>
+                                        
+                                        <div className="col-11">   
+                                        <h6> <b> {item.nombre}</b></h6>
+                                            <p className="text-catalogo">  {item.desc}  </p>
+                                            <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
+                                            <hr/>  <hr/>
+                                        </div>
+
+                                    </div>
                                 </div>
                             ) )
                          }
             </div>
 
-            <div id="web">
-                    <h4> Herramientas Web </h4> <br/>
-                    <div><img  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/></div>
-                    {
-                           sitiosWeb[1].map((item, i) => (
-                            <div className="tarjetas-web"  key={i} >
-                            <div className="row"> 
-                            <div><img  alt="Desarrollo de otras ofertas" className="img_dec_sitio" src={img.DesarrolloDecSitios}/></div>
-                               <h6> <b> {item.nombre}</b></h6>
-                               </div>
-                                <p>  {item.desc}  </p>
-                                <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
-                                <hr/>  <hr/>
-                            </div>
+            <div id="web">   <a href="#inicio">    <h4 className="tit-catalogo"> Herramientas Web </h4> <br/> </a> 
+                        {
+                            sitiosWeb[1].map((item, i) => (
+                                <div className="tarjetas-web"  key={i} >
+                                
+                                    <div className="row"> 
+
+                                        <div className="col-1"> 
+                                        <div>
+                                            <img  alt="Desarrollo de otras ofertas" className="img_dec_sitio" src={img.DesarrolloDecSitios}/>
+                                        </div>
+                                        </div>
+                                        
+                                        <div className="col-11">   
+                                        <h6> <b> {item.nombre}</b></h6>
+                                            <p className="text-catalogo">  {item.desc}  </p>
+                                            <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
+                                            <hr/>  <hr/>
+                                        </div>
+
+                                    </div>
+                                </div>
                             ) )
                          }
-
             </div>
 
+            <div id="apps">   <a href="#inicio">   <h4 className="tit-catalogo"> Apps Educativas </h4> <br/> </a>  
+                        {
+                            sitiosWeb[2].map((item, i) => (
+                                <div className="tarjetas-web"  key={i} >
+                                
+                                    <div className="row"> 
+
+                                        <div className="col-1"> 
+                                        <div>
+                                            <img  alt="Desarrollo de otras ofertas" className="img_dec_sitio" src={img.DesarrolloDecSitios}/>
+                                        </div>
+                                        </div>
+                                        
+                                        <div className="col-11">   
+                                        <h6> <b> {item.nombre}</b></h6>
+                                            <p className="text-catalogo">  {item.desc}  </p>
+                                            <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
+                                            <hr/>  <hr/>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            ) )
+                         }
+            </div>
+
+            <div id="estrategias">  <a href="#inicio">      <h4 className="tit-catalogo"> Estrategias de aprendizaje</h4> <br/> </a>
+                        {
+                            sitiosWeb[3].map((item, i) => (
+                                <div className="tarjetas-web"  key={i} >
+                                
+                                    <div className="row"> 
+
+                                        <div className="col-1"> 
+                                        <div>
+                                            <img  alt="Desarrollo de otras ofertas" className="img_dec_sitio" src={img.DesarrolloDecSitios}/>
+                                        </div>
+                                        </div>
+                                        
+                                        <div className="col-11">   
+                                        <h6> <b> {item.nombre}</b></h6>
+                                            <p className="text-catalogo">  {item.desc}  </p>
+                                            <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
+                                            <hr/>  <hr/>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            ) )
+                         }
+            </div>
+
+            
 
         </React.Fragment>
      );
