@@ -17,7 +17,8 @@ class Catalogo extends Component {
             limite : 4
          }
             //Caraga el array  de acuerdo a la opción seleccionada en "desarrollo profesional"
-        this.tmpArray=""
+        this.tmpArray = "";
+        this.imagenEncabezado = "";
         this.images = ImagesJson[0];
     }
 
@@ -31,12 +32,20 @@ componentWillMount () {
     switch (this.props.idCat) {
         case "cursos":
             this.tmpArray = cursos;
+            //carga la referencia para la imagen del encabezado:
+            this.imagenEncabezado = "DesarrolloTituloCursosVirt"; 
         break;
         case "videoteca":
             this.tmpArray = videoteca;
+            this.imagenEncabezado = "DesarrolloTituloVideoteca"; 
+        break;
+        case "pautas":
+            //this.tmpArray = otrasOfertas;
+            this.imagenEncabezado = "DesarrolloTituloReferencias"; 
         break;
         case "ficha":
             this.tmpArray = otrasOfertas;
+            this.imagenEncabezado = "DesarrolloTituloOtrasOfertas"; 
         break;
     
         default:
@@ -74,38 +83,12 @@ componentWillMount () {
    
 
 
-    render() {
-        var valor=""
-
-        switch (this.props.idCat) {
-
-            case "cursos":
-                valor= "DesarrolloTituloCursosVirt"; 
-                break;
-    
-                case "videoteca":
-                valor= "DesarrolloTituloVideoteca"; 
-                break;
-    
-                case "pautas":
-                valor= "DesarrolloTituloReferencias"; 
-                break;
-    
-                case "ficha":
-                valor= "DesarrolloTituloOtrasOfertas"; 
-                break;
-        
-            default:
-                break;
-        }
-        console.log(valor);
-        
-
+    render() {        
         return ( 
             <React.Fragment>
             <div className="row">
                 <div className="col-12">
-                    <img className="hvr-pop img-fluid" id="imgTitulo" src={this.images[valor]} alt="titulo"/>
+                    <img className="hvr-pop img-fluid" id="imgTitulo" src={this.images[this.imagenEncabezado]} alt="titulo"/>
                  </div>
              </div>
 
