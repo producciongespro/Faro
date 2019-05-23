@@ -1,0 +1,19 @@
+[
+    {
+        "materia" : "general",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos_generales.pdf"
+    },
+    {
+        "materia" : "ingles_viejo",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles_viejo.pdf"
+    },
+    {
+        "materia" : "ingles_nuevo",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles_nuevo.pdf"
+    },
+    {
+        "materia" : "ingles",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles.pdf" 
+    }
+
+]
