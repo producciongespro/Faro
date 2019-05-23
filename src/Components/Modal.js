@@ -21,9 +21,12 @@ class Modal extends Component {
     audios = audiosJson[0];
     classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
     modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
+   
 
-    mostrarDiv (){
-      $("#plantillas").slideDown("slow")
+    mostrarDiv (e){
+      const opcion = e.target.title;
+        $('#'+opcion).slideToggle("slow");
+         
     }
  
   
@@ -87,11 +90,11 @@ class Modal extends Component {
       this.modalAncho =  this.modalAncho + " modal-lg";
       this.classModalBody = this.classModalBody + " modal-alto";
       tmpContent = ( <React.Fragment>
-                        <img className="bannerModal" src={this.images.bannerPlantillas} alt=""/>              
+                        <img className="bannerModal"  src={this.images.bannerPlantillas} alt=""/>              
 
                         <hr/>
-                        <h2 className="btn btn-primary"  onClick={this.mostrarDiv} >Plantillas en formato Word</h2>
-                        <div id="plantillas" className="div-oculta">
+                        <h2 className="btn btn-primary" title="plantillas" onClick={this.mostrarDiv} >Plantillas en formato Word</h2>
+                        <div id="plantillas"  className="div-oculta">
                         <ul>
                           <li>
                             <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplo_plan_ciencias.docx" > <i className="far fa-file-word"></i> Plan de Ciencias</a>
@@ -102,12 +105,77 @@ class Modal extends Component {
                         </ul>
                         </div>
                         <br/>
-                        <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos.pdf" target ="_blank"  rel="noopener noreferrer" >
-                          <strong>
-                          <i className="far fa-file-pdf"></i> Lineamientos para completar la plantilla                            
-                          </strong>
-                        </a>                         
+                        <h2 className="btn btn-primary" title="lineamientos" onClick={this.mostrarDiv} >Lineamientos para completar las plantillas</h2>
+                        <div id="lineamientos" className="div-oculta">
+                            <table className="tg">
+                              <tr>
+                                <th className="tg">Preescolar</th>
+                                <th className="tg">Primaria</th>
+                                <th className="tg">Secundaria</th>
+                                <th className="tg">Generales</th>
+                              </tr>
+                              <tr>
+                                <td className="tg">
+                                <a href="">Prescolar</a> 
+                                </td>
+                                <td className="tg">
+                                  <a href="">Español</a><br/>
+                                  <a href="">Matemática</a> <br/>
+                                  <a href="">Ciencias</a> <br/>
+                                  <a href="">Estudios Sociales</a>  <br/>
+                                  <a href="">Educación física</a><br/>
+                                  <a href="">Artes plásticas</a> <br/>
+                                  <a href="">Música</a> <br/>
+                                  <a href="">Artes industriales</a> <br/>  
+                                  <a href="">Educación para el hogar</a> <br/>
+                                  <a href="">Religión</a> 
+                                </td>
+                                <td className="tg">
+                                <a href="">Español (programa viejo)</a><br/>
+                                <a href="">Español (progama nuevo)</a><br/>
+                                <a href="">Matemática</a><br/>
+                                <a href="">Ciencias</a><br/>
+                                <a href="">Biología</a><br/>
+                                <a href="">Química</a><br/>
+                                <a href="">Física</a><br/>
+                                <a href="">Estudios sociales</a><br/>
+                                <a href="">Cívica</a><br/>
+                                <a href="">Psicologia</a><br/>
+                                <a href="">Filosofía</a><br/>
+                                <a href="">Afectividad y sexualidad</a><br/>
+                                <a href="">Educación física</a><br/>
+                                <a href="">Artes plásticas</a><br/>
+                                <a href="">Música</a><br/>
+                                <a href="">Artes industriales</a><br/>
+                                <a href="">Educación para el hogar</a><br/>
+                                <a href="">Religión</a><br/>
+                                </td>
+                                <td className="tg">
+                                <a href="">Lineamientos para planeamiento (general)</a><br/>
+                                <a href="">Inglés (primaria y secundaria - Plan nuevo)</a><br/>
+                                <a href="">Ingles (primaria y secundaria - Plan viejo)</a><br/>
+                                <a href="">Inglés (primaria y secundaria)</a><br/>
+                                </td>
+                              </tr>
+                            </table>
+                         
+                        </div>
 
+                        <br/>
+                        <h2 className="btn btn-primary" title="ejemplosPlan" onClick={this.mostrarDiv} >Ejemplos</h2>
+                        <div id="ejemplosPlan" className="div-oculta">
+                        <ul>
+                          <li>
+                            <a href=""> <i className="far fa-file-pdf"></i> Ejemplo biología</a><br/>
+                          </li>
+                          <li>
+                            <a href=""><i className="far fa-file-pdf"></i> Ejemplo ciencias</a> <br/>
+                          </li>
+                          <li>
+                            <a href=""><i className="far fa-file-pdf"></i> Ejemplo Español</a> <br/>
+                          </li>
+                          </ul>
+                        </div>
                       </React.Fragment>
                     )
        break; 
@@ -129,7 +197,8 @@ class Modal extends Component {
                           <br/>
                           <strong>Fuente</strong> <cite> :   Alfaro et al. Por qué un currículo por habilidades en la reforma curricular de Costa Rica.  Ministerio de Educación Pública, Dirección de Desarrollo Curricular.  </cite>
                           </div>         
-  
+
+
                         </React.Fragment>
                       )
          break;   

@@ -611,3 +611,8 @@ border-color: #0d7aa0;
  .spn-materias:hover {
   background-color: crimson;
  }
+
+ .tg  {border-collapse:collapse;border-spacing:0;border-color:#9ABAD9;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:12px;padding:3px 18px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#444;background-color:#EBF5FF;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:3px 18px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#fff;background-color:#409cff;}
+.tg .tg-gvcd{background-color:#ffffff;color:#000000;border-color:#000000;text-align:left;vertical-align:top}
