@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
+
 import Cards from "../Comp-primitive/Cards.jsx";
 import ImagesJson from "../data/images.json";
 
@@ -53,6 +55,8 @@ componentWillMount () {
         break;
     }
     
+    console.log("Longitud del array", this.tmpArray.length );
+    
 
 }
 
@@ -63,18 +67,44 @@ componentWillMount () {
     }
 
     incrementarIndice = () => {
+
+        $("#btnDecrementar").fadeIn("slow");
+
         //Aumenta el indice para cargar los demás objetos del array
-        this.setState({
-            indice : this.state.indice + 4
-        })
+        console.log( "Indice",  this.state.indice);
+        
+
+        
+        if (this.state.indice === this.tmpArray.length - 4  || this.state.indice === 28  ) {
+            $("#btnIncrementar").fadeOut("slow");
+            console.log("fin superior");
+            
+        } else {
+            this.setState({
+                indice : this.state.indice + 4
+            })
+        }
+        
+
+  
     }
 
 
     decrementarIndice = () => {
         //Aumenta el indice para cargar los demás objetos del array
-        this.setState({
-            indice : this.state.indice - 4
-        })
+        
+        //Aparece el botón de incrementar
+        $("#btnIncrementar").fadeIn();
+
+        if (this.state.indice <= 0 ) {
+            $("#btnDecrementar").fadeOut("slow");
+        } else {
+            this.setState({
+                indice : this.state.indice - 4
+            })
+        }
+
+
     }
 
 
@@ -110,11 +140,11 @@ componentWillMount () {
 
             <div className="row">
                 <div className="col-11 pie">
-                    <img className="botones-portada hvr-pop img-fluid" id="btnDecrementar"   onClick={this.decrementarIndice} src={this.images.DesarrolloBtnIzq} alt=""/>
+                    <img className="botones-portada hvr-pop img-fluid" id="btnDecrementar"   onClick={this.decrementarIndice} src={this.images.DesarrolloBtnIzq} alt="decrementar"/>
                  </div>
 
                  <div className="col-1 pie">
-                    <img className="botones-portada hvr-pop img-fluid"  id="btnIncrementar" onClick={this.incrementarIndice} src={this.images.DesarrolloBtnDer} alt=""/>
+                    <img className="botones-portada hvr-pop img-fluid"  id="btnIncrementar" onClick={this.incrementarIndice} src={this.images.DesarrolloBtnDer} alt="incrementar"/>
                  </div>
              </div>
 
