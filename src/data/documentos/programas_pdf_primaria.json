@@ -2,9 +2,9 @@
     {
         "mediaCien" : {
             "nombre" : "Ciencias",            
-            "ciclo3" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "ciclo4" : "",
-            "ciclo5" :""
+            "ciclo1" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "ciclo2" : "",
+            "ciclo1y2" :""
 
         },
         "mediaEspa" : {
