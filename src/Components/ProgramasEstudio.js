@@ -25,6 +25,15 @@ import materiasApoyo from '../data/documentos/programas_materias_apoyo.json';
 import intercultPDF from '../data/documentos/programas_pdf_intercult.json';
 import materiasIntercultural from '../data/documentos/programas_materias_intercult.json';
 
+// Jóvenes y adultos
+import adultosPDF from '../data/documentos/programas_pdf_adultos.json';
+import materiasAdultos from '../data/documentos/programas_materias_adultos.json';
+
+
+//Preescolar
+import preescolarPDF from '../data/documentos/programas_pdf_preescolar.json';
+import materiasPreescolar from '../data/documentos/programas_materias_preescolar.json';
+
 
 
 
@@ -61,8 +70,7 @@ class ProgramasEstudio extends Component {
       ciclo3 : "",
       ciclo4 : "",
       ciclo5 : "",
-      especial : "",
-      boruca : ""
+      especial : ""      
       });
   }
 
@@ -97,6 +105,16 @@ class ProgramasEstudio extends Component {
       case "btnIntercultural":
         tmpBotonera  = (
           materiasIntercultural.map( ( item, i ) => (  <span className="badge badge-danger spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasIntercult}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      case "btnAdultos":
+        tmpBotonera  = (
+          materiasAdultos.map( ( item, i ) => (  <span className="badge badge-warning spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasAdultos}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      case "btnPreescolar":
+        tmpBotonera  = (
+          materiasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasPreescolar}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       
@@ -189,7 +207,35 @@ class ProgramasEstudio extends Component {
       this.setState({ programaActual : opc  });     
   }
 
+  cargarProgrmasAdultos = (e) => {
+    const opc = e.target.id;
+    var dsPDF = adultosPDF[0];    
+    console.log("Opcion", opc);
+    
+    //Caraga los programas de estudio de acuerdo a la selección
+    //intercultural -------------------        
+      
+      const aux = dsPDF[opc];      
+      this.limpiarCampos();
+      this.setState ({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
+      this.setState({ programaActual : opc  });     
+  }
 
+  cargarProgrmasPreescolar = (e) => {
+    const opc = e.target.id;
+    var dsPDF = preescolarPDF[0];    
+    console.log("Opcion", opc);
+    console.log("PDF",  dsPDF);
+    
+    
+    //Caraga los programas de estudio de acuerdo a la selección
+    //intercultural -------------------        
+      
+      const aux = dsPDF[opc];      
+      this.limpiarCampos();
+      this.setState ({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
+      this.setState({ programaActual : opc  });     
+  }
 
 
 
