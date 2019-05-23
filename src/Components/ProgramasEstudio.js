@@ -135,11 +135,13 @@ class ProgramasEstudio extends Component {
 
   cargarProgrmasMedia = (e) => {
     const opc = e.target.id;
-    var dsPDF = primaPDF[0];    
+    var dsPDF = mediaPDf[0];
+    console.log("Dataset", dsPDF );
+        
     console.log("Opcion", opc);
     
     //Caraga los programas de estudio de acuerdo a la selección
-    //primaria -------------------        
+    //Secundaria -------------------        
       
       const aux = dsPDF[opc];      
       this.limpiarCampos();
@@ -158,11 +160,11 @@ class ProgramasEstudio extends Component {
 
   cargarProgrmasPrima = (e) => {
     const opc = e.target.id;
-    var dsPDF = mediaPDf[0];    
-    console.log("Opcion", opc);
+    var dsPDF = primaPDF[0];    
+    //console.log("Opcion", opc);
     
     //Caraga los programas de estudio de acuerdo a la selección
-    //Secundaria -------------------        
+    //primaria -------------------        
       
       const aux = dsPDF[opc];      
       this.limpiarCampos();  
