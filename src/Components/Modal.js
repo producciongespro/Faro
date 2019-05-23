@@ -116,45 +116,45 @@ class Modal extends Component {
                               </tr>
                               <tr>
                                 <td className="tg">
-                                <a href="">Prescolar</a> 
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Prescolar</a> 
                                 </td>
                                 <td className="tg">
-                                  <a href="">Español</a><br/>
-                                  <a href="">Matemática</a> <br/>
-                                  <a href="">Ciencias</a> <br/>
-                                  <a href="">Estudios Sociales</a>  <br/>
-                                  <a href="">Educación física</a><br/>
-                                  <a href="">Artes plásticas</a> <br/>
-                                  <a href="">Música</a> <br/>
-                                  <a href="">Artes industriales</a> <br/>  
-                                  <a href="">Educación para el hogar</a> <br/>
-                                  <a href="">Religión</a> 
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Español</a><br/>
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Matemática</a> <br/>
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Ciencias</a> <br/>
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Estudios Sociales</a>  <br/>
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Educación física</a><br/>
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Artes plásticas</a> <br/>
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Música</a> <br/>
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Artes industriales</a> <br/>  
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Educación para el hogar</a> <br/>
+                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Religión</a> 
                                 </td>
                                 <td className="tg">
-                                <a href="">Español (programa viejo)</a><br/>
-                                <a href="">Español (progama nuevo)</a><br/>
-                                <a href="">Matemática</a><br/>
-                                <a href="">Ciencias</a><br/>
-                                <a href="">Biología</a><br/>
-                                <a href="">Química</a><br/>
-                                <a href="">Física</a><br/>
-                                <a href="">Estudios sociales</a><br/>
-                                <a href="">Cívica</a><br/>
-                                <a href="">Psicologia</a><br/>
-                                <a href="">Filosofía</a><br/>
-                                <a href="">Afectividad y sexualidad</a><br/>
-                                <a href="">Educación física</a><br/>
-                                <a href="">Artes plásticas</a><br/>
-                                <a href="">Música</a><br/>
-                                <a href="">Artes industriales</a><br/>
-                                <a href="">Educación para el hogar</a><br/>
-                                <a href="">Religión</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Español (programa viejo)</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Español (progama nuevo)</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Matemática</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Ciencias</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Biología</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Química</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Física</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Estudios sociales</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Cívica</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Psicologia</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Filosofía</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Afectividad y sexualidad</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Educación física</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Artes plásticas</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Música</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Artes industriales</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Educación para el hogar</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Religión</a><br/>
                                 </td>
                                 <td className="tg">
-                                <a href="">Lineamientos para planeamiento (general)</a><br/>
-                                <a href="">Inglés (primaria y secundaria - Plan nuevo)</a><br/>
-                                <a href="">Ingles (primaria y secundaria - Plan viejo)</a><br/>
-                                <a href="">Inglés (primaria y secundaria)</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Lineamientos para planeamiento (general)</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Inglés (primaria y secundaria - Plan nuevo)</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Ingles (primaria y secundaria - Plan viejo)</a><br/>
+                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Inglés (primaria y secundaria)</a><br/>
                                 </td>
                               </tr>
                             </table>
@@ -166,13 +166,13 @@ class Modal extends Component {
                         <div id="ejemplosPlan" className="div-oculta">
                         <ul>
                           <li>
-                            <a href=""> <i className="far fa-file-pdf"></i> Ejemplo biología</a><br/>
+                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"> <i className="far fa-file-pdf"></i> Ejemplo biología</a><br/>
                           </li>
                           <li>
-                            <a href=""><i className="far fa-file-pdf"></i> Ejemplo ciencias</a> <br/>
+                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"><i className="far fa-file-pdf"></i> Ejemplo ciencias</a> <br/>
                           </li>
                           <li>
-                            <a href=""><i className="far fa-file-pdf"></i> Ejemplo Español</a> <br/>
+                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"><i className="far fa-file-pdf"></i> Ejemplo Español</a> <br/>
                           </li>
                           </ul>
                         </div>
@@ -201,7 +201,42 @@ class Modal extends Component {
 
                         </React.Fragment>
                       )
-         break;   
+         break;
+         
+         case "refUtiles" :
+          this.modalAncho =  this.modalAncho + " modal-lg";
+          this.classModalBody = this.classModalBody + " modal-alto";
+          tmpContent = ( <React.Fragment>                
+                  <div className="row">
+                    <div className="col-12 text-center">
+                      <h3>Referencias útiles para la docencia</h3>
+                    </div>
+                  </div>
+                  <br/>
+                  <div className="ro">
+                    <div className="col-12">
+                      <p>
+                        <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2017.pdf" target = "_blank"  rel="noopener noreferrer"> Lectura 2017  </a> y 
+                        <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2018.pdf" target = "_blank" rel="noopener noreferrer"> Lectura 2018 </a>: 
+                         Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, por medio de las cuales se fortalece la comprensión lectora, respondiendo a los momentos de antes, durante y después de la lectura. 
+                      </p>
+                      <p>
+                      <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/escritura2017.pdf" target = "_blank" rel="noopener noreferrer">Escritura 2017  </a>:
+                      Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, que fomentan la escritura en el estudiantado, en concordancia con el programa de estudio.
+                      </p>
+                      <h5>Dispositivos móviles para la educación</h5>
+                      <p>                     
+                          <a href="https://multimedia.uned.ac.cr/pem/aprendizaje_moviles/pag/conceptos.html" target = "_blank" rel="noopener noreferrer"> Aprendizajes Móviles </a> Este recurso publicado por la UNED de Costa Rica presenta las principales características de los dispositivos móviles, por un lado, la ubicuidad, en la que se aprende desde cualquier momento y lugar, por otro lado, la adaptabilidad o flexibilidad de estos dispositivos gracias a la conexión e ideas de cómo aprovecharlas en el área educativa.
+                      </p>
+                    </div>
+                  </div>
+
+
+
+          </React.Fragment>
+          )
+           break;  
+
     
       default:
         console.log("Opcion fuera de rango en modal");        
