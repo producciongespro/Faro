@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
 
+//Imagenes
+import images from '../img/banner_programas.png'
+
 //import $ from 'jquery';
 //import 'jstree';
 
@@ -13,7 +16,23 @@ import materiasMedia from '../data/documentos/programas_materias_media.json';
 //Primaria:
 import primaPDF from '../data/documentos/programas_pdf_primaria.json';
 import materiasPrima from '../data/documentos/programas_materias_primaria.json';
-import images from '../img/banner_programas.png'
+
+//Apoyo (Educación Especial)
+import apoyoPDF from '../data/documentos/programas_pdf_apoyo.json';
+import materiasApoyo from '../data/documentos/programas_materias_apoyo.json';
+
+//Intercultural:
+import intercultPDF from '../data/documentos/programas_pdf_intercult.json';
+import materiasIntercultural from '../data/documentos/programas_materias_intercult.json';
+
+// Jóvenes y adultos
+import adultosPDF from '../data/documentos/programas_pdf_adultos.json';
+import materiasAdultos from '../data/documentos/programas_materias_adultos.json';
+
+
+//Preescolar
+import preescolarPDF from '../data/documentos/programas_pdf_preescolar.json';
+import materiasPreescolar from '../data/documentos/programas_materias_preescolar.json';
 
 
 
@@ -32,16 +51,37 @@ class ProgramasEstudio extends Component {
       ciclo1_2 : "",
       ciclo3 : "",
       ciclo4 : "",
-      ciclo5 : "" 
+      ciclo5 : "",
+      especial : ""      
      };   
     
 
   }
 
 
- 
 
-  cargaBotones  = (e) =>  {     
+  //limpiar campos
+
+  limpiarCampos = () => {
+    this.setState({ 
+      ciclo1 : "",
+      ciclo2 :"",      
+      ciclo1_2 : "",
+      ciclo3 : "",
+      ciclo4 : "",
+      ciclo5 : "",
+      especial : ""      
+      });
+  }
+
+
+ // ------------------------ BOTONES ----------------------------- 
+
+  cargaBotones  = (e) =>  { 
+    
+    //Limpia los campos links a pdfs
+    this.limpiarCampos();
+    
     const opc = e.target.id;
     var tmpBotonera;
 
@@ -57,7 +97,27 @@ class ProgramasEstudio extends Component {
             materiasPrima.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasMedia}  >  {item.label}   </span>         ) ) 
             ) 
       break;
-
+      case "btnApoyo":
+        tmpBotonera  = (
+            materiasApoyo.map( ( item, i ) => (  <span className="badge badge-dark spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasApoyo}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      case "btnIntercultural":
+        tmpBotonera  = (
+          materiasIntercultural.map( ( item, i ) => (  <span className="badge badge-danger spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasIntercult}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      case "btnAdultos":
+        tmpBotonera  = (
+          materiasAdultos.map( ( item, i ) => (  <span className="badge badge-warning spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasAdultos}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      case "btnPreescolar":
+        tmpBotonera  = (
+          materiasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasPreescolar}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      
     
       default:
         console.log("Opcion fuera de rango");        
@@ -66,6 +126,11 @@ class ProgramasEstudio extends Component {
       
     this.setState({ botonera: tmpBotonera  });    
   }
+
+
+
+
+  // ---------------------------- LINKS A LOS PROGRAMAS EN PDF --------------------    
 
 
   cargarProgrmasMedia = (e) => {
@@ -77,16 +142,7 @@ class ProgramasEstudio extends Component {
     //primaria -------------------        
       
       const aux = dsPDF[opc];      
-      this.setState(        
-            { 
-              ciclo1 : "",
-              ciclo2 :"",              
-              ciclo1_2 : "",
-              ciclo3: "" ,
-              ciclo4: "" ,
-              ciclo5: "" 
-            }
-        );   
+      this.limpiarCampos();
       
       if (aux.ciclo3 !== "" ) {
         this.setState ({ ciclo3 : <a href= {aux.ciclo3}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }   Tercer Ciclo   </a> } );        
@@ -100,8 +156,6 @@ class ProgramasEstudio extends Component {
     this.setState({ programaActual : opc  });     
   }
 
-
-
   cargarProgrmasPrima = (e) => {
     const opc = e.target.id;
     var dsPDF = mediaPDf[0];    
@@ -111,16 +165,7 @@ class ProgramasEstudio extends Component {
     //Secundaria -------------------        
       
       const aux = dsPDF[opc];      
-      this.setState(
-            { 
-              ciclo1 : "",
-              ciclo2 :"",
-              ciclo1_2 : "",
-              ciclo3: "" ,
-              ciclo4: "" ,
-              ciclo5: "" 
-            }
-        );   
+      this.limpiarCampos();  
       
       if (aux.ciclo1 !== "" ) {
         this.setState ({ ciclo1 : <a href= {aux.ciclo1}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }   Primer Ciclo   </a> } );        
@@ -134,6 +179,63 @@ class ProgramasEstudio extends Component {
     this.setState({ programaActual : opc  });     
   }
 
+  cargarProgrmasApoyo = (e) => {
+    const opc = e.target.id;
+    var dsPDF = apoyoPDF[0];    
+    console.log("Opcion", opc);
+    
+    //Caraga los programas de estudio de acuerdo a la selección
+    //Secundaria -------------------        
+      
+      const aux = dsPDF[opc];      
+      this.limpiarCampos();
+      this.setState ({ especial : <a href= {aux.especial}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
+      this.setState({ programaActual : opc  });     
+  }
+
+  cargarProgrmasIntercult = (e) => {
+    const opc = e.target.id;
+    var dsPDF = intercultPDF[0];    
+    console.log("Opcion", opc);
+    
+    //Caraga los programas de estudio de acuerdo a la selección
+    //intercultural -------------------        
+      
+      const aux = dsPDF[opc];      
+      this.limpiarCampos();
+      this.setState ({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
+      this.setState({ programaActual : opc  });     
+  }
+
+  cargarProgrmasAdultos = (e) => {
+    const opc = e.target.id;
+    var dsPDF = adultosPDF[0];    
+    console.log("Opcion", opc);
+    
+    //Caraga los programas de estudio de acuerdo a la selección
+    //intercultural -------------------        
+      
+      const aux = dsPDF[opc];      
+      this.limpiarCampos();
+      this.setState ({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
+      this.setState({ programaActual : opc  });     
+  }
+
+  cargarProgrmasPreescolar = (e) => {
+    const opc = e.target.id;
+    var dsPDF = preescolarPDF[0];    
+    console.log("Opcion", opc);
+    console.log("PDF",  dsPDF);
+    
+    
+    //Caraga los programas de estudio de acuerdo a la selección
+    //intercultural -------------------        
+      
+      const aux = dsPDF[opc];      
+      this.limpiarCampos();
+      this.setState ({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
+      this.setState({ programaActual : opc  });     
+  }
 
 
 
@@ -167,13 +269,13 @@ class ProgramasEstudio extends Component {
           <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotones} > Educ. Media </button>      
         </div>
         <div className="col-2">
-          <button className="btn btn-outline-danger btn-block"  onClick={this.cargaBotones} > Educ. Intercultural </button>      
+          <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotones} > Educ. Intercultural </button>      
         </div>
         <div className="col-2">
-          <button className="btn btn-outline-warning btn-block"  onClick={this.cargaBotones} > Educ. Jóvenes y Adultos </button>      
+          <button id="btnAdultos"  className="btn btn-outline-warning btn-block"  onClick={this.cargaBotones} > Educ. Jóvenes y Adultos </button>      
         </div>
         <div className="col-2">
-          <button className="btn btn-outline-dark btn-block"  onClick={this.cargaBotones} > Apoyos Educativos </button>      
+          <button id="btnApoyo" className="btn btn-outline-dark btn-block"  onClick={this.cargaBotones} > Apoyos Educativos </button>      
         </div>
       </div>
 
@@ -190,7 +292,8 @@ class ProgramasEstudio extends Component {
                     {this.state.ciclo1_2}            
                     {this.state.ciclo3} 
                     {this.state.ciclo4} 
-                    {this.state.ciclo5} 
+                    {this.state.ciclo5}
+                    {this.state.especial} 
                 </div>
           
           

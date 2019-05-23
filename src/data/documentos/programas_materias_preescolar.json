@@ -1,0 +1,19 @@
+[
+    {
+        "id" : "maternoGuia",
+        "label" : "Guía niñas y niños de 0 - 4 años"
+    },
+    {
+        "id" : "transicionGuiaDocente",
+        "label" : "Guía del docente Programa de Estudio"
+    },
+    {
+        "id" : "transicionProgramaEstudio",
+        "label" : "Programa de Estudio de Educación Preescolar"
+    },
+    {
+        "id" : "transicionIngles",
+        "label" : "Programa de Estudios Inglés Preescolar"
+    }
+   
+]

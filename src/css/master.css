@@ -63,9 +63,7 @@ a {
   margin-right: -1%;
 }
 
-.tit_rec_dig{
-  background-color:#FCC82B;
-}
+
 
 .link-custom {  
   color:#fff; 
@@ -159,13 +157,44 @@ border-color: #0d7aa0;
     .tit-catalogo {
       color: #E55403;
       font-weight: bold;
+      margin-top: 15%;
     }
 
+    #inicio {
+      position: fixed;
+      margin-top: 10%;
+      width: 100%;
+      background-color:#FCC82B;
+      z-index: 1000;
+    }
+
+    .tit_rec_dig{
+      background-color:#FCC82B;
+      position: fixed;
+      z-index: 1000;
+      margin-top: -1%;
+      width: 100%;
+    }
 
 .botones-portada {
     cursor: pointer;
 }
 
+#educativos{
+padding-top:5%;
+}
+
+#web{
+  padding-top:2%;
+  }
+
+  #apps{
+    padding-top:2%;
+    }
+
+    #estrategias{
+      padding-top:2%;
+      }
 
 .row-text {
     font-size: 1.5vw;
