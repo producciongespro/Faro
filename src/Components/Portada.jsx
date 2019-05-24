@@ -11,11 +11,10 @@ const Portada = (props) => {
         <React.Fragment>
         <div className="row">
             <div className="col-12 text-center">
-                <img src={images.TituloPortada   } className="img-fluid" alt="Título portada"/>
+                <img id="img-portada" src={images.TituloPortada   } className="img-fluid" alt="Título portada"/>
             </div>
         </div>
-        <br/>
-        <br/>    
+  
             <div className="row" >
          
                     <div className="col-5 text-right">                        

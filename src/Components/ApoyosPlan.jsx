@@ -19,6 +19,10 @@ const ApoyosPlan = (props) => {
           </div>
           
   </div>
+
+        <div className="botones_salir col-12">
+            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+          </div>
   <div id="botones-planeamiento" className="col-7">
     <div id="botones-aula" className="row">
     <div className="col-10 hover11 centro">
@@ -53,11 +57,7 @@ const ApoyosPlan = (props) => {
     </div>
 </div>
 <br/><br/>
-  <div className="row">
-  <div className="col-12 pie">
-    <img data-tar="Home" onClick={props.changePage} className="img-fluid btn hvr-pop"  alt="Salir" src={images[0].BtnSalir } />
-  </div>
-  </div>
+
  </div>
    );
 }

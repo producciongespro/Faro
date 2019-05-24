@@ -1,9 +1,13 @@
 body {
-    background-color: #000;
+    background-color: #ffff;
 }
 
 #botones-planeamiento{
   margin-top: 4%;
+}
+
+#img-portada{
+  max-width: 70%;
 }
 
 .pie-pagina{
@@ -621,8 +625,19 @@ padding-top:5%;
   margin-left: 0px;
  }
 
+ .derecha{
+  float: right;
+ }
 
+ .botones_salir{
+   position: absolute;
+   top: 10px;
+   z-index: 50000;
+ }
 
+.evaluacion{
+  width: 67%;
+}
 
  /*documentos oficales - Programas de estudio*/
 

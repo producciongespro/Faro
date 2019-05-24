@@ -8,7 +8,8 @@ import ImagesJson from "../data/images.json";
 //Json con información:
 import cursos from '../data/desarrollo/cursos.json';
 import videoteca from '../data/desarrollo/videoteca.json';
-import otrasOfertas from '../data/desarrollo/otras_ofertas.json'
+import otrasOfertas from '../data/desarrollo/otras_ofertas.json';
+import recursos from '../data/recursos/recursosPreescolar.json';
 
 
 class Catalogo extends Component {
@@ -49,7 +50,10 @@ componentWillMount () {
             this.tmpArray = otrasOfertas;
             this.imagenEncabezado = "DesarrolloTituloOtrasOfertas"; 
         break;
-    
+        case "recursos":
+        this.tmpArray = recursos;
+        this.imagenEncabezado = "DesarrolloTituloOtrasOfertas"; 
+    break;
         default:
             console.log("parámetro fuera de rango");        
         break;

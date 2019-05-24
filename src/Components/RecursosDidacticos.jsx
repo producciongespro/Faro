@@ -24,12 +24,15 @@ const RecursosDidacticos = (props) => {
               </a>
       </div>
 
-
+      <div className="botones_salir col-12">
+            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+          </div>
+          
       <div className="col-8">
         <div className="row">
             <div className="col-4 hover12 ladoIzq">
               <figure>
-                <img className="btn img-fluid" id="prescolar" src= {images[0].RecDidacticosPreescolar  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.showModal}  alt="Preescolar" />
+                 <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}  alt="Preescolar" />
               </figure>
               </div>
             <div className="col-4 hover12 centro">
@@ -44,9 +47,7 @@ const RecursosDidacticos = (props) => {
             </div>
         </div>
       
-          <div className="col-12 pie">
-            <img data-tar="Home" onClick={props.changePage}  className="btn img-fluid hvr-pop" id="salir" src= {images[0].BtnSalir  }   alt="Salir" />
-          </div>
+
         </div>
       </div>
    );

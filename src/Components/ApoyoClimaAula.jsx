@@ -11,6 +11,7 @@ const ApoyoClimaAula = (props) => {
   return ( 
     <React.Fragment>
     <div className="row">
+    
       <div className="col-5">
             <img className="titulos img-fluid" src={images[0].ApoyoClimaAulaTitulo } alt="Apoyo clima en el aula" />
                <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion } alt="Descripción" />
@@ -18,6 +19,10 @@ const ApoyoClimaAula = (props) => {
               <h2 className='desc'>Descripción:</h2> {props.infoCategory}
               </div>              
       </div>
+
+      <div className="botones_salir col-12">
+            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+          </div>
       <div  className="col-7">
         <div id="botones-aula" className="row">
             <div className="col-6 hover11 ">
@@ -67,11 +72,7 @@ const ApoyoClimaAula = (props) => {
     </div>
     </div>
     </div>
-    <div className="row">
-        <div className="col-12 pie">
-          <img data-tar="Home" onClick={props.changePage}  className="botones-portada img-fluid hvr-pop" id="" src={images[0].BtnSalir } alt="Salir" />
-        </div>
-    </div>
+   
       </React.Fragment>
    );
 }

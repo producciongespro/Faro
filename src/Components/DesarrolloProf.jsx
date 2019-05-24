@@ -27,6 +27,10 @@ const DesarrolloProf = (props) => {
                 <img id="material_adicional" className="img-fluid hvr-wobble-bottom" src={img.DesarrolloEnlaceDesarrollo} alt="Enlaces desarrollo" />
               </a>
       </div>
+
+      <div className="botones_salir col-12">
+            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+          </div>
       <div id="botones-desarrollo" className="col-7">
           <img alt="" id="fondo-desarrollo" className="img-fluid" src={img.DesarrolloFondo2} />
         <div  className="row">
@@ -65,11 +69,7 @@ const DesarrolloProf = (props) => {
         </div>
   </div>
 <br/>
-  <div className="row">
-			<div className="col-12 pie">
-				<img className="botones-portada hvr-pop img-fluid" data-tar="Home" onClick={props.changePage} src={img.BtnSalir } alt="Salir" />
-			</div>
-        </div>
+ 
 
 
 

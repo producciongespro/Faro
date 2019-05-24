@@ -1,6 +1,7 @@
 import React from 'react';
 import sitiosWeb from '../data/desarrollo/sitios.json'
 import images from "../data/images.json";
+//import recursos from '../data/recursos/recursosPreescolar';
 
 var img = images[0];
 //console.log(sitiosWeb);
@@ -125,8 +126,6 @@ const CatalogoWeb = (props) => {
                             ) )
                          }
             </div>
-
-            
 
         </React.Fragment>
      );

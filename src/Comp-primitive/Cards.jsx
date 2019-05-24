@@ -73,6 +73,26 @@ const CardsImage = (props) => {
             </div>
           );
     break;
+    
+    case "recursos" :
+    tmpComp = (
+      <div className="col-sm-6">
+          <div className="row">   
+              
+              <div className="col-sm-1">
+              <div><img alt="Recursos" className="img_circ" src={img.DesarrolloCircOtrasOfert}/></div>
+              </div>
+
+              <div className="col-sm-11 inform1">
+              <h6><b>Nombre: </b>{props.item.nombre}</h6>
+              <p><b>Descripción: </b> {props.item.desc}  </p>
+              <a href={props.item.url } className="link-card"  target="_blank" rel="noopener noreferrer" >Visitar </a>
+              <br/><br/>
+              </div>
+          </div>
+      </div>
+    );
+break;
   
     default:
       console.log("Parámetro fuera de rango");      

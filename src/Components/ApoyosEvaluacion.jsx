@@ -26,13 +26,15 @@ const ApoyosEvaluacion = (props) => {
                      <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
                      </div>
               </div>
-  
-                <div className="col-7"><br/><br/>
+              <div className="botones_salir col-12">
+            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+          </div>
+                <div className="col-7 "><br/><br/>
                     <div className="row">
                       <div  className="col-12 col-sin-padding">
                         <figure>
                         <a href={zipFiles.tecnicas} rel="noopener noreferrer">
-                          <img id="tecnicas" className="img-fluid btn hvr-pop" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } alt="Técnicas"    src={images[0].EvaluacionLRubricas}  />
+                          <img id="tecnicas" className="img-fluid btn hvr-pop evaluacion" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } alt="Técnicas"    src={images[0].EvaluacionLRubricas}  />
                         </a>
                         </figure>
                       </div>
@@ -42,7 +44,7 @@ const ApoyosEvaluacion = (props) => {
                     <div  className="col-12 col-sin-padding"  >
                       <figure>
                       <a href={zipFiles.instrumentos} rel="noopener noreferrer">
-                        <img id="instrumentos" className="img-fluid btn hvr-pop" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  alt="Instrumentos" src={images[0].EvaluacionProceso}  />
+                        <img id="instrumentos" className="img-fluid btn hvr-pop evaluacion" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  alt="Instrumentos" src={images[0].EvaluacionProceso}  />
                       </a>
                       </figure>
                     </div>
@@ -50,7 +52,7 @@ const ApoyosEvaluacion = (props) => {
                       <div className="row">
                      <div className="col-12  col-sin-padding">
                       <figure>
-                        <img id="documentos" className="img-fluid  btn hvr-pop" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Logros"  src={images[0].EvaluacionLogros} />
+                        <img id="documentos" className="img-fluid  btn hvr-pop evaluacion" data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={3} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Logros"  src={images[0].EvaluacionLogros} />
                       </figure>
                       </div>
                     </div>
@@ -70,9 +72,7 @@ const ApoyosEvaluacion = (props) => {
     <div  className="col-3"  >
 
 </div>
-    <div className="col-12 text-right"  >
-        <img data-tar="Home" onClick={props.changePage} className="btn img-fluid hvr-pop" id="" src={images[0].BtnSalir } alt="Salir" />  
-    </div>
+
   </div>
   </React.Fragment>
    );
