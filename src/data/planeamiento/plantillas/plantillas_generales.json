@@ -1,11 +1,19 @@
 [
     {
-        "id" : "pEspecial",
-        "label" : "Educación Especial"
+        "id" : "pGeneral",
+        "label" : "Planeamiento didáctico general"
     },
     {
         "id" : "pIngles",
-        "label" : "Inglés"
+        "label" : "Ingles - Primaria y secundaria"
+    },
+    {
+        "id" : "pInglesV",
+        "label" : "Inglés - Primaria y secundaria (plan viejo)"
+    },
+    {
+        "id" : "pInglesN",
+        "label" : "Inglés - Primaria y secundaria (plan nuevo)"
     }
     
 ]

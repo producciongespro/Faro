@@ -4,15 +4,71 @@
         "label" : "Ciencias"
     },
     {
+        "id" : "pBiologia",
+        "label" : "Biología"
+    },
+    {
+        "id" : "pQuimica",
+        "label" : "Química"
+    },
+    {
+        "id" : "pBiologia",
+        "label" : "Biología"
+    },
+    {
         "id" : "pEstudios",
         "label" : "Estudios Sociales"
     },
     {
-        "id" : "pEspanol",
-        "label" : "Español"
+        "id" : "pEspanolN",
+        "label" : "Español (programa nuevo)"
+    },
+    {
+        "id" : "pEspanolV",
+        "label" : "Español (programa viejo)"
     },
     {
         "id" : "pMatematica",
         "label" : "Matemática"
+    },
+    {
+        "id" : "pCivica",
+        "label" : "Cívica"
+    },
+    {
+        "id" : "pPsicologia",
+        "label" : "Psicología"
+    },
+    {
+        "id" : "pFilosofia",
+        "label" : "Filosofía"
+    },
+    {
+        "id" : "pAfectividad",
+        "label" : "Afectividad y sexualidad"
+    },
+    {
+        "id" : "pEducFisica",
+        "label" : "Educación física"
+    },
+    {
+        "id" : "pArtes",
+        "label" : "Artes industriales"
+    },
+    {
+        "id" : "pMusica",
+        "label" : "Música"
+    },
+    {
+        "id" : "pIndustriales",
+        "label" : "Artes Industriales"
+    },
+    {
+        "id" : "pHogar",
+        "label" : "Educación para el hogar"
+    },
+    {
+        "id" : "pReligion",
+        "label" : "Religión"
     }
 ]
