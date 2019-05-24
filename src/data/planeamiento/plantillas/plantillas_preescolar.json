@@ -1,0 +1,11 @@
+[
+    {
+        "id" : "pMaterno",
+        "label" : "Materno"
+    },
+    {
+        "id" : "pTransicion",
+        "label" : "Transición"
+    }
+    
+]

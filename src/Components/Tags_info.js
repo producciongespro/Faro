@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 
-
-//Imagenes
-import images from '../img/banner_programas.png'
-
 //import $ from 'jquery';
-//import 'jstree';
 
-
-//Data json
+//Data json Programas
 //Media (Secundaria) :
 import mediaPDf from '../data/documentos/programas_pdf_media.json';
 import materiasMedia from '../data/documentos/programas_materias_media.json';
@@ -34,6 +28,13 @@ import materiasAdultos from '../data/documentos/programas_materias_adultos.json'
 import preescolarPDF from '../data/documentos/programas_pdf_preescolar.json';
 import materiasPreescolar from '../data/documentos/programas_materias_preescolar.json';
 
+//--------------------- PLANTILLAS JSON
+
+
+import plantillasMedia from '../data/planeamiento/plantillas/plantillas_media.json';
+import plantillasPrimaria from '../data/planeamiento/plantillas/plantillas_primaria.json';
+import plantillasPreescolar from '../data/planeamiento/plantillas/plantillas_preescolar.json';
+import plantillasGenerales from '../data/planeamiento/plantillas/plantillas_generales.json';
 
 
 
@@ -53,8 +54,65 @@ class ProgramasEstudio extends Component {
       ciclo4 : "",
       ciclo5 : "",
       especial : ""      
-     };   
-    
+     };     
+     this.botonesNav="";
+     this.urlImgtitulo="";
+  }
+
+
+
+  componentWillMount ( ) {
+    console.log(this.props.idCat);
+    if (this.props.idCat === "programas" ) {
+      this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/proramas_titulo.png";
+      
+      this.botonesNav = (
+            <React.Fragment>
+                <div className="col-2">
+                  <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotones} > Educ. Preescolar </button>      
+                </div>
+                <div className="col-2">
+                  <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotones} > Educ. Primaria </button>      
+                </div>
+                <div className="col-2">
+                  <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotones} > Educ. Media </button>      
+                </div>
+                <div className="col-2">
+                  <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotones} > Educ. Intercultural </button>      
+                </div>
+                <div className="col-2">
+                  <button id="btnAdultos"  className="btn btn-outline-warning btn-block"  onClick={this.cargaBotones} > Educ. Jóvenes y Adultos </button>      
+                </div>
+                <div className="col-2">
+                  <button id="btnApoyo" className="btn btn-outline-dark btn-block"  onClick={this.cargaBotones} > Apoyos Educativos </button>      
+                </div>
+            </React.Fragment>
+      )
+
+
+    };
+    if (this.props.idCat === "plantilla") {
+      this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/plantilla_planeamiento.png";
+      this.botonesNav = (
+        <React.Fragment>
+            <div className="col-2">
+              <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotonesPlantilla} > Educ. Preescolar </button>      
+            </div>
+            <div className="col-2">
+              <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotonesPlantilla} > Educ. Primaria </button>      
+            </div>
+            <div className="col-2">
+              <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotonesPlantilla} > Educ. Media </button>      
+            </div>
+            <div className="col-2">
+              <button id="btnGeneral" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotonesPlantilla} > Generales </button>      
+            </div>            
+        </React.Fragment>
+  )
+      
+    }
+
+
 
   }
 
@@ -73,6 +131,17 @@ class ProgramasEstudio extends Component {
       especial : ""      
       });
   }
+
+
+  noDisponible = () => {
+    console.log("no disponible");
+    
+    this.setState({ ciclo1:  (<strong>
+      <cite> Lo sentimos... Información no disponible. </cite>
+    </strong>)   });
+  }
+
+
 
 
  // ------------------------ BOTONES ----------------------------- 
@@ -94,7 +163,7 @@ class ProgramasEstudio extends Component {
       break;
       case "btnPrimaria":
         tmpBotonera  = (
-            materiasPrima.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasMedia}  >  {item.label}   </span>         ) ) 
+            materiasPrima.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnApoyo":
@@ -115,6 +184,47 @@ class ProgramasEstudio extends Component {
       case "btnPreescolar":
         tmpBotonera  = (
           materiasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasPreescolar}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      
+    
+      default:
+        console.log("Opcion fuera de rango");        
+        break;
+    }
+      
+    this.setState({ botonera: tmpBotonera  });    
+  }
+
+
+  cargaBotonesPlantilla  = (e) =>  { 
+    
+    //Limpia los campos links a pdfs
+    this.limpiarCampos();
+    
+    const opc = e.target.id;
+    var tmpBotonera;
+
+
+    switch (opc) {
+      case "btnMedia":   
+      tmpBotonera  = (
+        plantillasMedia.map( ( item, i ) => (  <span className="badge badge-success spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+           )   
+      break;
+      case "btnPrimaria":
+        tmpBotonera  = (
+            plantillasPrimaria.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      case "btnPreescolar":
+        tmpBotonera  = (
+          plantillasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      case "btnGeneral":
+        tmpBotonera  = (
+          plantillasGenerales.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       
@@ -250,35 +360,18 @@ class ProgramasEstudio extends Component {
     <div className="row">
         <div className="col-2"></div>
         <div className="col-8 text-center"> 
-        <img src={images} alt=""/>
+        <img src= {this.urlImgtitulo}    alt="titulo"/>
         
         </div>
         <div className="col-2 text-right"   >
-            <span onClick={this.props.handlerCloseProgramasEducativos}  > 
+            <span  onClick={this.props.handlerCloseProgramasEducativos}  > 
                     <i className="far fa-times-circle"></i>
             </span>
         </div>
     </div>
     
       <div className="row">
-        <div className="col-2">
-          <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotones} > Educ. Preescolar </button>      
-        </div>
-        <div className="col-2">
-          <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotones} > Educ. Primaria </button>      
-        </div>
-        <div className="col-2">
-          <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotones} > Educ. Media </button>      
-        </div>
-        <div className="col-2">
-          <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotones} > Educ. Intercultural </button>      
-        </div>
-        <div className="col-2">
-          <button id="btnAdultos"  className="btn btn-outline-warning btn-block"  onClick={this.cargaBotones} > Educ. Jóvenes y Adultos </button>      
-        </div>
-        <div className="col-2">
-          <button id="btnApoyo" className="btn btn-outline-dark btn-block"  onClick={this.cargaBotones} > Apoyos Educativos </button>      
-        </div>
+          {this.botonesNav}
       </div>
 
           
@@ -291,6 +384,7 @@ class ProgramasEstudio extends Component {
                 
                 
                 <div className="col-8" id="visorProgramas">
+                    {this.state.ciclo1}
                     {this.state.ciclo1_2}            
                     {this.state.ciclo3} 
                     {this.state.ciclo4} 

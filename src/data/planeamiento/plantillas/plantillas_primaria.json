@@ -1,0 +1,19 @@
+[
+    {
+        "id" : "pPrimaCiencias",
+        "label" : "Ciencias"
+    },
+    {
+        "id" : "pPrimaMate",
+        "label" : "Matemática"
+    },
+    {
+        "id" : "pPrimaEstudios",
+        "label" : "Estudios Sociales"
+    },
+    {
+        "id" : "pPrimaEspanol",
+        "label" : "Español"
+    }
+    
+]
