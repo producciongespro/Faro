@@ -16,7 +16,7 @@ import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
 import CatalogoWeb from './Components/CatalogoWeb';
 import Catalogo from "./Components/Catalogo";
-import ProgramasEstudio from './Components/ProgramasEstudio';
+import TagsInfo from './Components/Tags_info';
 
 
 
@@ -119,7 +119,7 @@ componentDidMount ( ) {
     console.log("id", id);
        
     this.setState ({
-      currentPage : <ProgramasEstudio   idCat={id}  handlerCloseProgramasEducativos={ () => this.handlerCloseProgramasEducativos (id, e )   } />
+      currentPage : <TagsInfo   idCat={id}  handlerCloseProgramasEducativos={ () => this.handlerCloseProgramasEducativos (id, e )   } />
     })
   }
 

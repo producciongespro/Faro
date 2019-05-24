@@ -1,0 +1,11 @@
+[
+    {
+        "id" : "pEspecial",
+        "label" : "Educación Especial"
+    },
+    {
+        "id" : "pIngles",
+        "label" : "Inglés"
+    }
+    
+]

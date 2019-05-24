@@ -1,0 +1,18 @@
+[
+    {
+        "id" : "pCiencias",
+        "label" : "Ciencias"
+    },
+    {
+        "id" : "pEstudios",
+        "label" : "Estudios Sociales"
+    },
+    {
+        "id" : "pEspanol",
+        "label" : "Español"
+    },
+    {
+        "id" : "pMatematica",
+        "label" : "Matemática"
+    }
+]

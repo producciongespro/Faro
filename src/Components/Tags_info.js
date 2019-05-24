@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 //import $ from 'jquery';
 
-//Data json
+//Data json Programas
 //Media (Secundaria) :
 import mediaPDf from '../data/documentos/programas_pdf_media.json';
 import materiasMedia from '../data/documentos/programas_materias_media.json';
@@ -28,6 +28,13 @@ import materiasAdultos from '../data/documentos/programas_materias_adultos.json'
 import preescolarPDF from '../data/documentos/programas_pdf_preescolar.json';
 import materiasPreescolar from '../data/documentos/programas_materias_preescolar.json';
 
+//--------------------- PLANTILLAS JSON
+
+
+import plantillasMedia from '../data/planeamiento/plantillas/plantillas_media.json';
+import plantillasPrimaria from '../data/planeamiento/plantillas/plantillas_primaria.json';
+import plantillasPreescolar from '../data/planeamiento/plantillas/plantillas_preescolar.json';
+import plantillasGenerales from '../data/planeamiento/plantillas/plantillas_generales.json';
 
 
 
@@ -98,7 +105,7 @@ class ProgramasEstudio extends Component {
               <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotonesPlantilla} > Educ. Media </button>      
             </div>
             <div className="col-2">
-              <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotonesPlantilla} > Generales </button>      
+              <button id="btnGeneral" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotonesPlantilla} > Generales </button>      
             </div>            
         </React.Fragment>
   )
@@ -177,6 +184,47 @@ class ProgramasEstudio extends Component {
       case "btnPreescolar":
         tmpBotonera  = (
           materiasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasPreescolar}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      
+    
+      default:
+        console.log("Opcion fuera de rango");        
+        break;
+    }
+      
+    this.setState({ botonera: tmpBotonera  });    
+  }
+
+
+  cargaBotonesPlantilla  = (e) =>  { 
+    
+    //Limpia los campos links a pdfs
+    this.limpiarCampos();
+    
+    const opc = e.target.id;
+    var tmpBotonera;
+
+
+    switch (opc) {
+      case "btnMedia":   
+      tmpBotonera  = (
+        plantillasMedia.map( ( item, i ) => (  <span className="badge badge-success spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+           )   
+      break;
+      case "btnPrimaria":
+        tmpBotonera  = (
+            plantillasPrimaria.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      case "btnPreescolar":
+        tmpBotonera  = (
+          plantillasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+            ) 
+      break;
+      case "btnGeneral":
+        tmpBotonera  = (
+          plantillasGenerales.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       
