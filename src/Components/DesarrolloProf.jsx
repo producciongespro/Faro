@@ -19,7 +19,7 @@ const DesarrolloProf = (props) => {
 <div className="row">
       <div className="col-5 col-derecha">
             <img className="titulos img-fluid" src={img.DesarrolloTitulo} alt="Documentos educativos oficiales" />
-               <img className="descripciones img-fluid" src={img.GeneralCajaDescripcion} alt="Descripción" />
+               <img className="descripciones4 img-fluid" src={img.GeneralCajaDescripcion} alt="Descripción" />
               <div  id="textoDescripcion" className="texto_descripciones">
               <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
@@ -33,7 +33,7 @@ const DesarrolloProf = (props) => {
           </div>
       <div id="botones-desarrollo" className="col-7">
           <img alt="" id="fondo-desarrollo" className="img-fluid" src={img.DesarrolloFondo2} />
-        <div  className="row">
+        <div  className="row" id="desarrolloIDP">
             <div  className="col-4  hover11 ">
               <figure>
                 <img className="botones-portada  img-fluid" id="cursos" src={img.DesarrolloCursos} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalog}  alt="Cursos" />
