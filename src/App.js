@@ -77,7 +77,7 @@ componentDidMount ( ) {
         tmpComponent = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
-        tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}/> 
+        tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}     /> 
       break;
       case "ApoyosEvaluacion":
           tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}/> 
@@ -115,17 +115,33 @@ componentDidMount ( ) {
   //Métodos de Programas de estudio ------------------------------------
 
   handlerOpenProgramasEducativos = (e) => {
-    const id = e.target.id;    
+    const id = e.target.id;
+    console.log("id", id);
+       
     this.setState ({
-      currentPage : <ProgramasEstudio   idCat={id}  handlerCloseProgramasEducativos={ this.handlerCloseProgramasEducativos} />
+      currentPage : <ProgramasEstudio   idCat={id}  handlerCloseProgramasEducativos={ () => this.handlerCloseProgramasEducativos (id, e )   } />
     })
   }
 
 
-  handlerCloseProgramasEducativos = () => {
-    this.setState ({
-      currentPage :  <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}   handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}     changePage={this.changePage}/>       
-    })
+  handlerCloseProgramasEducativos = (id) => {
+    
+
+    console.log("Boton-", id  );
+
+    if (id === "programas" ) {
+        this.setState ({
+          currentPage :  <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}   handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}     changePage={this.changePage}/>       
+        })      
+    }
+    if (id === "plantilla") {
+      this.setState ({
+        currentPage :  <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}     /> 
+      }) 
+    }
+    
+
+ 
   }
 
 // Fin de métodos de Programas de estudio -------------------------------

@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 
-
-//Imagenes
-import images from '../img/banner_programas.png'
-
 //import $ from 'jquery';
-//import 'jstree';
-
 
 //Data json
 //Media (Secundaria) :
@@ -53,8 +47,65 @@ class ProgramasEstudio extends Component {
       ciclo4 : "",
       ciclo5 : "",
       especial : ""      
-     };   
-    
+     };     
+     this.botonesNav="";
+     this.urlImgtitulo="";
+  }
+
+
+
+  componentWillMount ( ) {
+    console.log(this.props.idCat);
+    if (this.props.idCat === "programas" ) {
+      this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/proramas_titulo.png";
+      
+      this.botonesNav = (
+            <React.Fragment>
+                <div className="col-2">
+                  <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotones} > Educ. Preescolar </button>      
+                </div>
+                <div className="col-2">
+                  <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotones} > Educ. Primaria </button>      
+                </div>
+                <div className="col-2">
+                  <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotones} > Educ. Media </button>      
+                </div>
+                <div className="col-2">
+                  <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotones} > Educ. Intercultural </button>      
+                </div>
+                <div className="col-2">
+                  <button id="btnAdultos"  className="btn btn-outline-warning btn-block"  onClick={this.cargaBotones} > Educ. Jóvenes y Adultos </button>      
+                </div>
+                <div className="col-2">
+                  <button id="btnApoyo" className="btn btn-outline-dark btn-block"  onClick={this.cargaBotones} > Apoyos Educativos </button>      
+                </div>
+            </React.Fragment>
+      )
+
+
+    };
+    if (this.props.idCat === "plantilla") {
+      this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/plantilla_planeamiento.png";
+      this.botonesNav = (
+        <React.Fragment>
+            <div className="col-2">
+              <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotonesPlantilla} > Educ. Preescolar </button>      
+            </div>
+            <div className="col-2">
+              <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotonesPlantilla} > Educ. Primaria </button>      
+            </div>
+            <div className="col-2">
+              <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotonesPlantilla} > Educ. Media </button>      
+            </div>
+            <div className="col-2">
+              <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotonesPlantilla} > Generales </button>      
+            </div>            
+        </React.Fragment>
+  )
+      
+    }
+
+
 
   }
 
@@ -261,35 +312,18 @@ class ProgramasEstudio extends Component {
     <div className="row">
         <div className="col-2"></div>
         <div className="col-8 text-center"> 
-        <img src={images} alt=""/>
+        <img src= {this.urlImgtitulo}    alt="titulo"/>
         
         </div>
         <div className="col-2 text-right"   >
-            <span onClick={this.props.handlerCloseProgramasEducativos}  > 
+            <span  onClick={this.props.handlerCloseProgramasEducativos}  > 
                     <i className="far fa-times-circle"></i>
             </span>
         </div>
     </div>
     
       <div className="row">
-        <div className="col-2">
-          <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotones} > Educ. Preescolar </button>      
-        </div>
-        <div className="col-2">
-          <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotones} > Educ. Primaria </button>      
-        </div>
-        <div className="col-2">
-          <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotones} > Educ. Media </button>      
-        </div>
-        <div className="col-2">
-          <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotones} > Educ. Intercultural </button>      
-        </div>
-        <div className="col-2">
-          <button id="btnAdultos"  className="btn btn-outline-warning btn-block"  onClick={this.cargaBotones} > Educ. Jóvenes y Adultos </button>      
-        </div>
-        <div className="col-2">
-          <button id="btnApoyo" className="btn btn-outline-dark btn-block"  onClick={this.cargaBotones} > Apoyos Educativos </button>      
-        </div>
+          {this.botonesNav}
       </div>
 
           
