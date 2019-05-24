@@ -80,6 +80,13 @@ a:hover  {
   }
 
 
+
+  /*Modal*/
+  .element-top {
+    z-index: 90000;
+  }
+
+
  /* ***********CSS de cursos virtuales******************* */
 .amarillo {
   float:left;
