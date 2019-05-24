@@ -13,7 +13,7 @@ const CardsImage = (props) => {
                 <div className="row">
                                   
                     <div className="card-body col-6">
-                        <img alt="prueba" className="card-img-top" src={props.item.icono} />                        
+                        <img alt="prueba" className="card-img-top card-custom" src={props.item.icono} />                        
                       </div>
                
                     <div className="col-4 inform">

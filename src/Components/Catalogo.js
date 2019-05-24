@@ -23,7 +23,7 @@ class Catalogo extends Component {
         this.tmpArray = "";
         this.imagenEncabezado = "";
         this.images = ImagesJson[0];
-        this.leyendaCursos="dasd ad as d as das d as d as d as d asd  as d as d as d as d as";
+        this.leyendaCursos="";
     }
 
    
@@ -131,8 +131,11 @@ componentWillMount () {
         return ( 
             <React.Fragment>
             <div className="row">
-                <div className="col-12">
+                <div className="col-8">
                     <img className="hvr-pop img-fluid" id="imgTitulo" src={this.images[this.imagenEncabezado]} alt="titulo"/>
+                 </div>
+                 <div className="col-4">
+                    <img className="botones-portada hvr-pop img-fluid derecha" id="btnVolver"   onClick={this.props.handlerCloseCatalog}    src={this.images.BtnVolver} alt="Volver"/>
                  </div>
                
              </div>
@@ -140,6 +143,7 @@ componentWillMount () {
                  <div className="col-12">
                         {this.leyendaCursos}
                  </div>
+               
              </div>
 
             <div className="row">               
@@ -151,13 +155,7 @@ componentWillMount () {
                     })
           }  
                 
-              </div> 
-              
-             <div className="row">
-            
-            </div>
-            
-
+              </div>                        
             <div className="row">
                 <div className="col-11 pie">
                     <img className="botones-portada hvr-pop img-fluid" id="btnDecrementar"   onClick={this.decrementarIndice} src={this.images.DesarrolloBtnIzq} alt="decrementar"/>
@@ -170,7 +168,7 @@ componentWillMount () {
 
             <div className="row">
                 <div className="col-12 pie">
-                    <img className="botones-portada hvr-pop img-fluid" id="btnVolver"   onClick={this.props.handlerCloseCatalog}    src={this.images.BtnVolver} alt="Volver"/>
+                    
                  </div>
              </div>
               

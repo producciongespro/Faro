@@ -30,7 +30,7 @@ const RecursosDidacticos = (props) => {
           
       <div className="col-8">
         <div className="row">
-            <div className="col-4 hover12 ladoIzq">
+            <div className="col-4 hover12 ladoDer">
               <figure>
                  <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.showModal}   alt="Preescolar" />
               </figure>
@@ -40,7 +40,7 @@ const RecursosDidacticos = (props) => {
               <img className="btn img-fluid" id="primaria" src= {images[0].RecDidacticosPrimaria  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.showModal}   alt="Primaria" />
               </figure>
             </div>
-            <div className="col-4 hover12 ladoDer">
+            <div className="col-4 hover12 ladoIzq">
                 <figure>
               <img className="btn img-fluid" id="secundaria" src= {images[0].RecDidacticosSecundaria  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.showModal}  alt="Secundaria" />
               </figure>

@@ -23,7 +23,7 @@ body {
     min-height: 790px;
     margin-bottom: 4px;
     padding: 1%;
-    margin-top: 0%;
+    margin-top: -2%;
    /* background-image: url("https://recursos.mep.go.cr/ws_faro/generales/fondo.jpg");*/
     background-repeat: no-repeat;
     background-size: 100%;
@@ -34,6 +34,11 @@ a {
 
 .modal {
     display: block;
+}
+
+.card-custom {
+  width: 75% !important;
+  float: right !important;
 }
 
 .texto-indicaciones {
@@ -59,10 +64,10 @@ a {
 }
 
 .custom-nav {
-  background-color:#FCC82B;
+  /*background-color:#FCC82B;*/
   color:#fff;
   padding: 2px;
-  border-bottom: solid olive 1px;
+  /*border-bottom: solid olive 1px;*/
   margin-left: -1%;
   margin-right: -1%;
 }
@@ -181,14 +186,14 @@ border-color: #0d7aa0;
     .tit-catalogo {
       color: #E55403;
       font-weight: bold;
-      margin-top: 15%;
+      margin-top: 6%;
     }
 
     #inicio {
       position: fixed;
-      margin-top: 10%;
+      margin-top: 5%;
       width: 100%;
-      background-color:#FCC82B;
+      /*background-color:#FCC82B;*/
       z-index: 1000;
     }
 
@@ -339,6 +344,14 @@ padding-top:5%;
 
   .ladoIzq, .ladoDer{
     z-index: 2;
+  }
+
+  .ladoIzq {
+    text-align: left;
+  }
+
+  .ladoDer {
+    text-align: right;
   }
 
   #politica{
