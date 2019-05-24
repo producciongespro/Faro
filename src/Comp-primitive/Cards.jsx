@@ -13,8 +13,7 @@ const CardsImage = (props) => {
                 <div className="row">
                                   
                     <div className="card-body col-6">
-                        <img alt="prueba" className="card-img-top" src={props.item.icono} />
-                        <a href={props.item.url } className="link-card"  target="_blank" rel="noopener noreferrer" > > Ir al recurso </a>
+                        <img alt="prueba" className="card-img-top" src={props.item.icono} />                        
                       </div>
                
                     <div className="col-4 inform">
