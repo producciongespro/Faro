@@ -179,7 +179,7 @@ class Modal extends Component {
     return (      
 
       <div>
-    <div className="modal fade show" id="modalScreen"   >
+    <div className="modal fade show  element-top" id="modalScreen"   >
         <div className= {this.modalAncho}   role="document">
           <div className="modal-content">
 
