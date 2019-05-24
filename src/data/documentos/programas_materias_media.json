@@ -12,6 +12,10 @@
         "label" : "Estudios Sociales"
     },
     {
+        "id" : "mediaCien",
+        "label" : "Ciencias"
+    },
+    {
         "id" : "mediaBiol",
         "label" : "Biología"
     },
