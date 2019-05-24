@@ -76,13 +76,14 @@ class Modal extends Component {
                           <ul>
                             <li>Apoyos para el clima del aula</li>
                             <li>Apoyos para la evaluación</li>
+                            <li>Recursos didácticos</li>
                             <li>Documentos oficiales</li>
                             <li>Desarrollo profesional</li>
                             <li>Apoyos para el planeamiento</li>
                           </ul>
                           <p>
                           Para disponer de los distintos recursos, de un clic a los diferentes accesorios que acompañan a la imagen de la educadora.  Cada uno de estos objetos representa una de las categorías.  
-                          A su vez, dentro de cada categoría encontrará una descripción de la sección, así como una serie de accesos a documentos, enlaces, plantillas, y otros materiales de utilidad para su quehacer docente. Al colocar el puntero del mouse sobre cada acceso, podrá leer la descripción del recurso específico que se le está proveyendo.
+                          dentro de cada categoría encontrará una descripción de la sección, así como una serie de accesos a documentos, enlaces, plantillas, y otros materiales de utilidad para su quehacer docente. Al colocar el puntero del mouse sobre cada acceso, podrá leer la descripción del recurso específico que se le está proveyendo.
                           En las diferentes pantallas que acceda, dispondrá de botones que le permitirá retornar a la pantalla anterior o volver al menú principal.
                           </p>
 
@@ -95,92 +96,12 @@ class Modal extends Component {
       this.modalAncho =  this.modalAncho + " modal-lg";
       this.classModalBody = this.classModalBody + " modal-alto";
       tmpContent = ( <React.Fragment>
-                        <img className="bannerModal"  src={this.images.bannerPlantillas} alt=""/>              
-
+                        <img className="bannerModal"  src={this.images.bannerPlantillas} alt=" Plantilla para planeamiento"/>              
                         <hr/>
-                        <h2 className="btn btn-primary" title="plantillas" onClick={this.mostrarDiv} >Plantillas en formato Word</h2>
-                        <div id="plantillas"  className="div-oculta">
-                        <ul>
-                          <li>
-                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplo_plan_ciencias.docx" > <i className="far fa-file-word"></i> Plan de Ciencias</a>
-                          </li>
-                          <li>
-                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplo_plan_ciencias.docx" > <i className="far fa-file-word"></i> Plan de Estudios sociales</a>
-                          </li>
-                        </ul>
-                        </div>
-                        <br/>
-                        <h2 className="btn btn-primary" title="lineamientos" onClick={this.mostrarDiv} >Lineamientos para completar las plantillas</h2>
-                        <div id="lineamientos" className="div-oculta">
-                            <table className="tg">
-                              <tr>
-                                <th className="tg">Preescolar</th>
-                                <th className="tg">Primaria</th>
-                                <th className="tg">Secundaria</th>
-                                <th className="tg">Generales</th>
-                              </tr>
-                              <tr>
-                                <td className="tg">
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Prescolar</a> 
-                                </td>
-                                <td className="tg">
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Español</a><br/>
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Matemática</a> <br/>
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Ciencias</a> <br/>
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Estudios Sociales</a>  <br/>
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Educación física</a><br/>
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Artes plásticas</a> <br/>
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Música</a> <br/>
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Artes industriales</a> <br/>  
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Educación para el hogar</a> <br/>
-                                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Religión</a> 
-                                </td>
-                                <td className="tg">
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Español (programa viejo)</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Español (progama nuevo)</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Matemática</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Ciencias</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Biología</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Química</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Física</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Estudios sociales</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Cívica</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Psicologia</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Filosofía</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Afectividad y sexualidad</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Educación física</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Artes plásticas</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Música</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Artes industriales</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Educación para el hogar</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Religión</a><br/>
-                                </td>
-                                <td className="tg">
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Lineamientos para planeamiento (general)</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Inglés (primaria y secundaria - Plan nuevo)</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Ingles (primaria y secundaria - Plan viejo)</a><br/>
-                                <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf">Inglés (primaria y secundaria)</a><br/>
-                                </td>
-                              </tr>
-                            </table>
-                         
-                        </div>
-
-                        <br/>
-                        <h2 className="btn btn-primary" title="ejemplosPlan" onClick={this.mostrarDiv} >Ejemplos</h2>
-                        <div id="ejemplosPlan" className="div-oculta">
-                        <ul>
-                          <li>
-                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"> <i className="far fa-file-pdf"></i> Ejemplo biología</a><br/>
-                          </li>
-                          <li>
-                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"><i className="far fa-file-pdf"></i> Ejemplo ciencias</a> <br/>
-                          </li>
-                          <li>
-                            <a href="https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"><i className="far fa-file-pdf"></i> Ejemplo Español</a> <br/>
-                          </li>
-                          </ul>
-                        </div>
+                        <strong>
+                          <cite>Información no disponible.</cite>
+                        </strong>                                     
+                      
                       </React.Fragment>
                     )
        break; 
