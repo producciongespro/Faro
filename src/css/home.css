@@ -79,22 +79,23 @@ left: 0px;
   position: absolute;
   left: 203px;
   /* height: 100%; */
-    top: 58px;
+    top: -9px;
   }
   #gafas{
     clear:both;
     position: absolute;
-    top: 125px;
+    top: 61px;
     left: 412px;
     width: 138px;
     object-fit: cover;
     cursor:pointer;
+    z-indez:80000;
   }
 
   #tablet{
     clear:both;
     position: absolute;
-    top: 163px;
+    top: 98px;
     left: 621px;
     width: 113px;
     object-fit: cover;
@@ -104,7 +105,7 @@ left: 0px;
   #lapicero{
     clear:both;
     position: absolute;
-    top: 256px;
+    top: 193px;
     left: 433px;
     width: 40px;
     object-fit: cover;
@@ -113,7 +114,7 @@ left: 0px;
   #laptop{
     clear:both;
     position: absolute;
-    top: 320px;
+    top: 254px;
     left: 257px;
     width: 217px;
     object-fit: cover;
@@ -123,7 +124,7 @@ left: 0px;
   #celular{
     clear:both;
     position: absolute;
-    top: 391px;
+    top: 324px;
     left: 513px;
     width: 58px;
     object-fit: cover;
@@ -133,7 +134,7 @@ left: 0px;
   #bolso{
     clear:both;
     position: absolute;
-    top: 509px;
+    top: 427px;
     left: 499px;
     width: 291px;
     object-fit: cover;
