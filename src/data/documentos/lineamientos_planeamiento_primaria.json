@@ -1,0 +1,43 @@
+[
+    {
+        "materia" : "espanol",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos_generales.pdf"
+    },
+    {
+        "materia" : "matematica",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles_viejo.pdf"
+    },
+    {
+        "materia" : "ciencias",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles_nuevo.pdf"
+    },
+    {
+        "materia" : "estdios_sociales",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos_generales.pdf"
+    },
+    {
+        "materia" : "educacion_fisica",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles_viejo.pdf"
+    },
+    {
+        "materia" : "artes_plasticas",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles_nuevo.pdf"
+    },
+    {
+        "materia" : "musica",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos_generales.pdf"
+    },
+    {
+        "materia" : "artes_industriales",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles_viejo.pdf"
+    },
+    {
+        "materia" : "educacion_hogar",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles_nuevo.pdf"
+    },
+    {
+        "materia" : "religion",
+        "url" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ingles.pdf" 
+    }
+
+]
