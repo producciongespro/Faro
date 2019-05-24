@@ -23,6 +23,7 @@ class Catalogo extends Component {
         this.tmpArray = "";
         this.imagenEncabezado = "";
         this.images = ImagesJson[0];
+        this.leyendaCursos="dasd ad as d as das d as d as d as d asd  as d as d as d as d as";
     }
 
    
@@ -37,6 +38,15 @@ componentWillMount () {
             this.tmpArray = cursos;
             //carga la referencia para la imagen del encabezado:
             this.imagenEncabezado = "DesarrolloTituloCursosVirt"; 
+            //Leyenda de cursos en Encabezado
+            this.leyendaCursos = (
+                <React.Fragment>                    
+                    <strong>
+                        <cite>Para mayor información e inscripción de los cursos, síganos en nuestra página de Facebook:</cite>
+                        <a href="https://www.facebook.com/idpmep/" target="_blank" rel="noopener noreferrer"> IDP-MEP </a>
+                    </strong>
+                </React.Fragment>
+            )
         break;
         case "videoteca":
             this.tmpArray = videoteca;
@@ -123,6 +133,12 @@ componentWillMount () {
             <div className="row">
                 <div className="col-12">
                     <img className="hvr-pop img-fluid" id="imgTitulo" src={this.images[this.imagenEncabezado]} alt="titulo"/>
+                 </div>
+               
+             </div>
+             <div className="row">
+                 <div className="col-12">
+                        {this.leyendaCursos}
                  </div>
              </div>
 
