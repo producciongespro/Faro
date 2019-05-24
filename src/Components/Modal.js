@@ -93,19 +93,6 @@ class Modal extends Component {
                       <audio src={this.audios.intro}  id="audioIntro" ></audio>                                                       
                     </React.Fragment>
       break;
-      case "plantillaPlan" :
-      this.modalAncho =  this.modalAncho + " modal-lg";
-      this.classModalBody = this.classModalBody + " modal-alto";
-      tmpContent = ( <React.Fragment>
-                        <img className="bannerModal"  src={this.images.bannerPlantillas} alt=" Plantilla para planeamiento"/>              
-                        <hr/>
-                        <strong>
-                          <cite>Información no disponible.</cite>
-                        </strong>                                     
-                      
-                      </React.Fragment>
-                    )
-       break; 
        case "defHabilidades" :
         this.modalAncho =  this.modalAncho + " modal-lg";
         this.classModalBody = this.classModalBody + " modal-alto";

@@ -75,6 +75,17 @@ class ProgramasEstudio extends Component {
   }
 
 
+  noDisponible = () => {
+    console.log("no disponible");
+    
+    this.setState({ ciclo1:  (<strong>
+      <cite> Lo sentimos... Información no disponible. </cite>
+    </strong>)   });
+  }
+
+
+
+
  // ------------------------ BOTONES ----------------------------- 
 
   cargaBotones  = (e) =>  { 
@@ -94,7 +105,7 @@ class ProgramasEstudio extends Component {
       break;
       case "btnPrimaria":
         tmpBotonera  = (
-            materiasPrima.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasMedia}  >  {item.label}   </span>         ) ) 
+            materiasPrima.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnApoyo":
@@ -291,6 +302,7 @@ class ProgramasEstudio extends Component {
                 
                 
                 <div className="col-8" id="visorProgramas">
+                    {this.state.ciclo1}
                     {this.state.ciclo1_2}            
                     {this.state.ciclo3} 
                     {this.state.ciclo4} 
