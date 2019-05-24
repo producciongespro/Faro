@@ -87,6 +87,19 @@ a:hover  {
   }
 
 
+  .ico-cerrar {
+    cursor: pointer;
+    font-size: 3em;
+    margin-right: 20%;
+    margin-top: 10%;   
+  }
+
+  .ico-cerrar:hover{
+    color: #E55403;
+  }
+
+
+
  /* ***********CSS de cursos virtuales******************* */
 .amarillo {
   float:left;

@@ -365,7 +365,7 @@ class ProgramasEstudio extends Component {
         </div>
         <div className="col-2 text-right"   >
             <span  onClick={this.props.handlerCloseProgramasEducativos}  > 
-                    <i className="far fa-times-circle"></i>
+                    <i className="far fa-times-circle ico-cerrar"></i>
             </span>
         </div>
     </div>
