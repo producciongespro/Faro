@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import imagesJson from "../data/images.json";
-import audiosJson from "../data/audios.json"
-
-
+import audiosJson from "../data/audios.json";
+import plantillasGenerales from '../data/documentos/lineamientos_planeamiento_generales.json';
+import plantillasPreescolar from '../data/documentos/lineamientos_planeamiento_prescolar.json';
+import plantillasPrimaria from '../data/documentos/lineamientos_planeamiento_primaria.json';
+import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_secundaria.json';
 
 
 class Modal extends Component {
@@ -21,7 +23,10 @@ class Modal extends Component {
     audios = audiosJson[0];
     classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
     modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
-   
+    plantillasDePreescolar = plantillasPreescolar[0];
+    plantillasDePrimaria = plantillasPrimaria[0];
+    plantillasDeSecundaria = plantillasSecundaria[0];
+    plantillasGenerales = plantillasGenerales[0];
 
     mostrarDiv (e){
       const opcion = e.target.title;
