@@ -102,7 +102,7 @@ class ProgramasEstudio extends Component {
               <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotonesPlantilla} > Educ. Primaria </button>      
             </div>
             <div className="col-2">
-              <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotonesPlantilla} > Educ. Media </button>      
+              <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotonesPlantilla} > Educ. Secundaria </button>      
             </div>
             <div className="col-2">
               <button id="btnGeneral" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotonesPlantilla} > Generales </button>      

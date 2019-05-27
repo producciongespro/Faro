@@ -1,0 +1,35 @@
+[ 
+    {
+        "pGeneral" : {
+            "nombre" : "Planeamiento didáctico general",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pIngles" : {
+            "nombre" : "Ingles - Primaria y secundaria",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pInglesV" : {
+            "nombre" : "Inglés - Primaria y secundaria (plan viejo)",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pInglesN" : {
+            "nombre" : "Inglés - Primaria y secundaria (plan nuevo)",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        }
+
+    }
+  
+
+]
