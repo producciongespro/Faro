@@ -11,7 +11,6 @@ import videoteca from '../data/desarrollo/videoteca.json';
 import otrasOfertas from '../data/desarrollo/otras_ofertas.json';
 import recursosPreescolar from '../data/recursos/recursosPreescolar.json';
 
-console.log(recursosPreescolar);
 
 
 

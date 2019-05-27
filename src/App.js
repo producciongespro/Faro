@@ -164,13 +164,16 @@ componentDidMount ( ) {
     console.log( "Destino",  id);
 
     if (id === "preescolar") {
+      console.log("ID PREESCOLAR");
+      
       this.setState({
           currentPage  : <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
          });
       
     };
 
-    if (id === "cursos" &&  id === "videoteca" && id === "ficha"  ) {
+    if (id === "cursos" || id === "videoteca" || id === "ficha"  ) {
+      console.log("ID DIP");
       this.setState({
           currentPage  : <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
          });
