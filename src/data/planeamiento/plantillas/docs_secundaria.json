@@ -49,27 +49,83 @@
             "ejemplo" :""
 
         },
-        "pPrimaIndustriales" : {
+        "pMatematica" : {
+            "nombre" : "Matemática",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pCivica" : {
+            "nombre" : "Cívica",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pPsicologia" : {
+            "nombre" : "Psicología",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pFilosofia" : {
+            "nombre" : "Filosofía",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pAfectividad" : {
+            "nombre" : "Afectividad y sexualidad",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pEducFisica" : {
+            "nombre" : "Educación física",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pArtes" : {
             "nombre" : "Artes industriales",            
             "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
             "plantilla" : "",
             "ejemplo" :""
 
         },
-        "pPrimaHogar" : {
+        "pMusica" : {
+            "nombre" : "Música",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pIndustriales" : {
+            "nombre" : "Artes Industriales",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
+            "plantilla" : "",
+            "ejemplo" :""
+
+        },
+        "pHogar" : {
             "nombre" : "Educación para el hogar",            
             "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
             "plantilla" : "",
             "ejemplo" :""
 
         },
-        "pPrimaReligion" : {
+        "pReligion" : {
             "nombre" : "Religión",            
             "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
             "plantilla" : "",
             "ejemplo" :""
 
-        }
+        } 
 
     }
   
