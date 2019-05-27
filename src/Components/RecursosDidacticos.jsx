@@ -32,7 +32,7 @@ const RecursosDidacticos = (props) => {
         <div className="row">
             <div className="col-4 hover12 ladoDer">
               <figure>
-                 <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.showModal}   alt="Preescolar" />
+                 <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}   alt="Preescolar" />
               </figure>
               </div>
             <div className="col-4 hover12 centro">

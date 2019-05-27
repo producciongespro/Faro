@@ -155,15 +155,28 @@ componentDidMount ( ) {
   handlerOpenCatalog = (e) => {
     const id = e.target.id;    
     this.setState ({
-      currentPage : <Catalogo   idCat={id}  handlerCloseCatalog={ this.handlerCloseCatalog} />
+      currentPage : <Catalogo   idCat={id}  handlerCloseCatalog={ () => this.handlerCloseCatalog  (id)  } />
     })
   }
 
 
-  handlerCloseCatalog = () => {
-    this.setState ({
-      currentPage : <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
-    })
+  handlerCloseCatalog = (id) => {
+    console.log( "Destino",  id);
+
+    if (id === "preescolar") {
+      this.setState({
+          currentPage  : <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+         });
+      
+    };
+
+    if (id === "cursos" &&  id === "videoteca" && id === "ficha"  ) {
+      this.setState({
+          currentPage  : <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
+         });
+      
+    }    
+
   }
 
 // Fin de métodos de catalogo -------------------------------
