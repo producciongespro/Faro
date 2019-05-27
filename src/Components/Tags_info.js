@@ -31,7 +31,7 @@ import materiasPreescolar from '../data/documentos/programas_materias_preescolar
 //--------------------- PLANTILLAS JSON
 
 
-import plantillasMedia from '../data/planeamiento/plantillas/plantillas_media.json';
+import plantillasMedia from '../data/planeamiento/plantillas/plantillas_secundaria.json';
 import plantillasPrimaria from '../data/planeamiento/plantillas/plantillas_primaria.json';
 import plantillasPreescolar from '../data/planeamiento/plantillas/plantillas_preescolar.json';
 import plantillasGenerales from '../data/planeamiento/plantillas/plantillas_generales.json';
