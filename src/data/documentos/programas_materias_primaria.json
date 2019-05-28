@@ -1,5 +1,9 @@
 [
     {
+        "id" : "primaCien",
+        "label" : "Ciencias"
+    },
+    {
         "id" : "primaEspa",
         "label" : "Español"
     },
@@ -12,18 +16,34 @@
         "label" : "Estudios Sociales"
     },
     {
+        "id" : "primaIngl",
+        "label" : "Inglés"
+    },
+    
+    {
         "id" : "primaFran",
         "label" : "Francés"
     },
 
     {
+        "id" : "primaItal",
+        "label" : "Italiano"
+    },
+  
+    {
+        "id" : "primaFrBi",
+        "label" : "Frances secciones bilingues"
+    }, 
+
+    {
         "id" : "primaArte",
         "label" : "Artes Plásticas"
     },
+
     {
-        "id" : "primaMusi",
-        "label" : "Educación Musical"
-    }, 
+        "id" : "primaEdMu",
+        "label" : "Educación Músical"
+    },
     {
         "id" : "primaOrie",
         "label" : "Orientación"
@@ -44,10 +64,7 @@
         "id" : "primaVida",
         "label" : "Vida Cotidiana"
     },
-    {
-        "id" : "primaItal",
-        "label" : "Italiano"
-    },
+  
     {
         "id" : "primaUnid",
         "label" : "Esc. Unidocentes"

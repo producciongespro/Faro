@@ -41,7 +41,7 @@ import plantillasGenerales from '../data/planeamiento/plantillas/plantillas_gene
 
 
 
-class ProgramasEstudio extends Component {
+class Tags_info extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -57,6 +57,7 @@ class ProgramasEstudio extends Component {
      };     
      this.botonesNav="";
      this.urlImgtitulo="";
+     this.colorFondo="";
   }
 
 
@@ -65,7 +66,7 @@ class ProgramasEstudio extends Component {
     console.log(this.props.idCat);
     if (this.props.idCat === "programas" ) {
       this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/proramas_titulo.png";
-      
+      this.colorFondo="col-2  color-morado";
       this.botonesNav = (
             <React.Fragment>
                 <div className="col-2">
@@ -93,6 +94,8 @@ class ProgramasEstudio extends Component {
     };
     if (this.props.idCat === "plantilla") {
       this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p03-apoyos-plan/plantilla_planeamiento.png";
+      this.colorFondo="col-2   text-center color-amarillo";
+    
       this.botonesNav = (
         <React.Fragment>
             <div className="col-2">
@@ -358,12 +361,12 @@ class ProgramasEstudio extends Component {
       <React.Fragment>
 
     <div className="row">
-        <div className="col-2"></div>
-        <div className="col-8 text-center"> 
-        <img src= {this.urlImgtitulo}    alt="titulo"/>
+  
+        <div className="col-10 text-center"> 
+        <img className="img-fondo" src= {this.urlImgtitulo}    alt="titulo"/>
         
         </div>
-        <div className="col-2 text-right"   >
+        <div className={this.colorFondo}   >
             <span  onClick={this.props.handlerCloseProgramasEducativos}  > 
                     <i className="far fa-times-circle ico-cerrar"></i>
             </span>
@@ -400,4 +403,4 @@ class ProgramasEstudio extends Component {
   }
 }
  
-export default ProgramasEstudio;
+export default Tags_info;
