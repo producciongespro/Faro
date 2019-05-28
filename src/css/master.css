@@ -104,7 +104,7 @@ a:hover  {
   }
 /* ******************************** */
 .color-morado{
-  background-color: purple !important;
+  background-color: #8077B5 !important;
 } 
 
 .color-amarillo{
@@ -115,6 +115,11 @@ a:hover  {
 .img-fondo{
   width: 105% !important;
 }
+
+.btnPreescolar{
+background-color: #4d4799;  
+}
+
 
  /* ***********CSS de cursos virtuales******************* */
 .amarillo {
