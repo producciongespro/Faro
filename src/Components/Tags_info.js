@@ -99,7 +99,7 @@ class Tags_info extends Component {
       this.botonesNav = (
         <React.Fragment>
             <div className="col-2">
-              <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotonesPlantilla} > Educ. Preescolar </button>      
+              <button  id="btnPreescolar" className="btn btn-outline-primary  btn-block"   onClick={this.cargaBotonesPlantilla} > Educ. Preescolar </button>      
             </div>
             <div className="col-2">
               <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotonesPlantilla} > Educ. Primaria </button>      
@@ -373,7 +373,7 @@ class Tags_info extends Component {
         </div>
     </div>
     
-      <div className="row">
+      <div className="row ">
           {this.botonesNav}
       </div>
 
