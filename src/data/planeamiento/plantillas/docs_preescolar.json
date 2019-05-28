@@ -4,8 +4,8 @@
         "pPreescolar" : {
             "nombre" : "Preescolar",            
             "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_preescolar.pdf",
-            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
-            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/plantilla_generica.docx",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/ejemplo_generico.pdf"
 
         }
 
