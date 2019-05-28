@@ -32,9 +32,16 @@ import materiasPreescolar from '../data/documentos/programas_materias_preescolar
 
 
 import plantillasMedia from '../data/planeamiento/plantillas/plantillas_secundaria.json';
+import comboMedia from '../data/planeamiento/plantillas/docs_secundaria.json';
+
 import plantillasPrimaria from '../data/planeamiento/plantillas/plantillas_primaria.json';
+import comboPrimaria from '../data/planeamiento/plantillas/docs_primaria.json';
+
 import plantillasPreescolar from '../data/planeamiento/plantillas/plantillas_preescolar.json';
+import comboPreescolar from '../data/planeamiento/plantillas/docs_preescolar.json';
+
 import plantillasGenerales from '../data/planeamiento/plantillas/plantillas_generales.json';
+import comboGenerales from '../data/planeamiento/plantillas/docs_generales.json';
 
 
 
@@ -70,22 +77,22 @@ class Tags_info extends Component {
       this.botonesNav = (
             <React.Fragment>
                 <div className="col-2">
-                  <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotones} > Educ. Preescolar </button>      
+                  <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotonesProgramas } > Educ. Preescolar </button>      
                 </div>
                 <div className="col-2">
-                  <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotones} > Educ. Primaria </button>      
+                  <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotonesProgramas} > Educ. Primaria </button>      
                 </div>
                 <div className="col-2">
-                  <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotones} > Educ. Media </button>      
+                  <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotonesProgramas} > Educ. Media </button>      
                 </div>
                 <div className="col-2">
-                  <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotones} > Educ. Intercultural </button>      
+                  <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotonesProgramas} > Educ. Intercultural </button>      
                 </div>
                 <div className="col-2">
-                  <button id="btnAdultos"  className="btn btn-outline-warning btn-block"  onClick={this.cargaBotones} > Educ. Jóvenes y Adultos </button>      
+                  <button id="btnAdultos"  className="btn btn-outline-warning btn-block"  onClick={this.cargaBotonesProgramas} > Educ. Jóvenes y Adultos </button>      
                 </div>
                 <div className="col-2">
-                  <button id="btnApoyo" className="btn btn-outline-dark btn-block"  onClick={this.cargaBotones} > Apoyos Educativos </button>      
+                  <button id="btnApoyo" className="btn btn-outline-dark btn-block"  onClick={this.cargaBotonesProgramas} > Apoyos Educativos </button>      
                 </div>
             </React.Fragment>
       )
@@ -149,7 +156,7 @@ class Tags_info extends Component {
 
  // ------------------------ BOTONES ----------------------------- 
 
-  cargaBotones  = (e) =>  { 
+ cargaBotonesProgramas  = (e) =>  { 
     
     //Limpia los campos links a pdfs
     this.limpiarCampos();
@@ -212,7 +219,7 @@ class Tags_info extends Component {
     switch (opc) {
       case "btnMedia":   
       tmpBotonera  = (
-        plantillasMedia.map( ( item, i ) => (  <span className="badge badge-success spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+        plantillasMedia.map( ( item, i ) => (  <span className="badge badge-success spn-materias"  id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
            )   
       break;
       case "btnPrimaria":
@@ -244,8 +251,6 @@ class Tags_info extends Component {
 
 
   // ---------------------------- LINKS A LOS PROGRAMAS EN PDF --------------------    
-
-
   cargarProgrmasMedia = (e) => {
     const opc = e.target.id;
     var dsPDF = mediaPDf[0];
@@ -350,6 +355,31 @@ class Tags_info extends Component {
       this.limpiarCampos();
       this.setState ({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
       this.setState({ programaActual : opc  });     
+  }
+
+
+
+  // ---------------------------- Links a los combos de plantillas ------------------------------------------ //
+  cargarComboMedia = (e) => {
+    const opc = e.target.id;
+    var dsPDF = comboMedia[0];
+    console.log("Dataset", dsPDF );
+        
+    console.log("Opcion", opc);
+    
+    //Caraga los programas de estudio de acuerdo a la selección
+    //Secundaria -------------------        
+      
+      const aux = dsPDF[opc];      
+      this.limpiarCampos();
+
+    
+        this.setState ({ 
+              ciclo3 :  <React.Fragment>  <a href= {aux.lineamientos}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>    Lineamiento  para plan de  { aux.nombre  } </a> <br/>  </React.Fragment>,
+              ciclo4 : <React.Fragment> <a href= {aux.plantilla}   > <i className="fas fa-file-word"></i>    Plantilla  de   { aux.nombre  } </a> <br/>  </React.Fragment>,
+              ciclo5 : <React.Fragment> <a href= {aux.ejemplo}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>    Ejemplo  de   { aux.nombre  } </a> <br/>  </React.Fragment>,
+              programaActual : opc 
+          });            
   }
 
 
