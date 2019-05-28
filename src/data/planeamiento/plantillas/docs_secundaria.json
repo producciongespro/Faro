@@ -91,14 +91,8 @@
             "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/ejemplo_generico.pdf"
 
         },
-        "pArtes" : {
-            "nombre" : "Artes industriales",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_artes_industriales_secundaria.pdf",
-            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/plantilla_generica.docx",
-            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/ejemplo_generico.pdf"
 
-        },
-        "pPlasticas" : {
+        "pArtes" : {
             "nombre" : "Artes plásticas",            
             "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_artes_plasticas_secundaria.pdf",
             "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/plantilla_generica.docx",
