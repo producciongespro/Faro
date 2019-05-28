@@ -65,6 +65,12 @@ class Tags_info extends Component {
      this.botonesNav="";
      this.urlImgtitulo="";
      this.colorFondo="";
+     this.combosMaterias = {
+          "comboMedia" : comboMedia[0],
+          "comboPrimaria" : comboPrimaria[0],
+          "comboPreescolar" : comboPreescolar[0],
+          "comboGenerales" : comboGenerales[0]
+     }
   }
 
 
@@ -219,22 +225,22 @@ class Tags_info extends Component {
     switch (opc) {
       case "btnMedia":   
       tmpBotonera  = (
-        plantillasMedia.map( ( item, i ) => (  <span className="badge badge-success spn-materias"  id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
+        plantillasMedia.map( ( item, i ) => (  <span className="badge badge-success spn-materias"  data-categoria="comboMedia"   id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
            )   
       break;
       case "btnPrimaria":
         tmpBotonera  = (
-            plantillasPrimaria.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+            plantillasPrimaria.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  data-categoria="comboPrimaria"   id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnPreescolar":
         tmpBotonera  = (
-          plantillasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+          plantillasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  data-categoria="comboPreescolar"   id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnGeneral":
         tmpBotonera  = (
-          plantillasGenerales.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+          plantillasGenerales.map( ( item, i ) => (  <span className="badge badge-primary spn-materias" data-categoria="comboGenerales"   id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       
@@ -361,8 +367,12 @@ class Tags_info extends Component {
 
   // ---------------------------- Links a los combos de plantillas ------------------------------------------ //
   cargarComboMedia = (e) => {
+
+    console.log("ID Categoria",  e.target.dataset.categoria );    
+
     const opc = e.target.id;
-    var dsPDF = comboMedia[0];
+    //Obitnene la categoria a la que pertenece el TAG (ej: comboPrimaria)
+    var dsPDF =  this.combosMaterias[e.target.dataset.categoria]   ;
     console.log("Dataset", dsPDF );
         
     console.log("Opcion", opc);
@@ -375,9 +385,9 @@ class Tags_info extends Component {
 
     
         this.setState ({ 
-              ciclo3 :  <React.Fragment>  <a href= {aux.lineamientos}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>    Lineamiento  para plan de  { aux.nombre  } </a> <br/>  </React.Fragment>,
-              ciclo4 : <React.Fragment> <a href= {aux.plantilla}   > <i className="fas fa-file-word"></i>    Plantilla  de   { aux.nombre  } </a> <br/>  </React.Fragment>,
-              ciclo5 : <React.Fragment> <a href= {aux.ejemplo}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>    Ejemplo  de   { aux.nombre  } </a> <br/>  </React.Fragment>,
+              ciclo3 :  <React.Fragment>  <a href= {aux.lineamientos}  className="lnk-yellow"  target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf ico-wine"></i>    Lineamiento  para plan de  { aux.nombre  } </a> <br/>  </React.Fragment>,
+              ciclo4 : <React.Fragment> <a href= {aux.plantilla}  className="lnk-yellow"  > <i className="fas fa-file-word ico-wine"></i>    Plantilla  de   { aux.nombre  } </a> <br/>  </React.Fragment>,
+              ciclo5 : <React.Fragment> <a href= {aux.ejemplo}  className="lnk-yellow"  target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf ico-wine"></i>    Ejemplo  de   { aux.nombre  } </a> <br/>  </React.Fragment>,
               programaActual : opc 
           });            
   }

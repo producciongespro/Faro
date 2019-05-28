@@ -704,14 +704,38 @@ padding-top:5%;
 
  .spn-materias {
    font-size: 1.2em;
-   padding: 1.5%;
-   margin: 1%;
+   padding: 2%;
+   margin: 1.2%;
    cursor: pointer
  }
 
  .spn-materias:hover {
   background-color: crimson;
  }
+
+ .lnk-yellow {
+   color: #f4ae11;
+   font-size: 1.2em;
+   margin: 1.5%;
+   margin-left: 6%;
+   padding: 0.5%;   
+ }
+
+ .lnk-yellow:hover {
+   text-decoration: none;
+   background-color: #f4ae11;
+   color: #fff;
+   font-weight: bold;
+ }
+
+ .ico-wine {
+   color: crimson;
+ }
+
+
+
+
+
 
  .tg  {border-collapse:collapse;border-spacing:0;border-color:#9ABAD9;margin:0px auto;}
 .tg td{font-family:Arial, sans-serif;font-size:12px;padding:3px 18px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#444;background-color:#EBF5FF;}
