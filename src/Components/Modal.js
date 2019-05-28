@@ -121,24 +121,24 @@ class Modal extends Component {
           this.modalAncho =  this.modalAncho + " modal-lg";
           this.classModalBody = this.classModalBody + " modal-alto";
           tmpContent = ( <React.Fragment>                
-                  <div className="row">
+                  <div className="row ">
                     <div className="col-12 text-center">
-                      <h3>Referencias útiles para la docencia</h3>
+                      <h3 className="tit_ref">Referencias útiles para la docencia</h3> <hr/><hr/>
                     </div>
                   </div>
                   <br/>
-                  <div className="ro">
+                  <div className="row referencias">
                     <div className="col-12">
                       <p>
                         <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2017.pdf" target = "_blank"  rel="noopener noreferrer"> Lectura 2017  </a> y 
                         <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2018.pdf" target = "_blank" rel="noopener noreferrer"> Lectura 2018 </a>: 
                          Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, por medio de las cuales se fortalece la comprensión lectora, respondiendo a los momentos de antes, durante y después de la lectura. 
-                      </p>
+                      </p><br/>
                       <p>
                       <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/escritura2017.pdf" target = "_blank" rel="noopener noreferrer">Escritura 2017  </a>:
                       Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, que fomentan la escritura en el estudiantado, en concordancia con el programa de estudio.
-                      </p>
-                      <h5>Dispositivos móviles para la educación</h5>
+                      </p><br/>
+                      <h5 className="tit_ref2">Dispositivos móviles para la educación</h5> <br/>
                       <p>                     
                           <a href="https://multimedia.uned.ac.cr/pem/aprendizaje_moviles/pag/conceptos.html" target = "_blank" rel="noopener noreferrer"> Aprendizajes Móviles </a> Este recurso publicado por la UNED de Costa Rica presenta las principales características de los dispositivos móviles, por un lado, la ubicuidad, en la que se aprende desde cualquier momento y lugar, por otro lado, la adaptabilidad o flexibilidad de estos dispositivos gracias a la conexión e ideas de cómo aprovecharlas en el área educativa.
                       </p>
