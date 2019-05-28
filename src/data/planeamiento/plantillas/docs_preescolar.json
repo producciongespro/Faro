@@ -3,9 +3,9 @@
  
         "pPreescolar" : {
             "nombre" : "Preescolar",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_preescolar.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         }
 

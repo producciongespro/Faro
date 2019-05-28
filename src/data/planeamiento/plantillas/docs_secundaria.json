@@ -2,128 +2,135 @@
     {
         "pCiencias" : {
             "nombre" : "Ciencias",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_ciencias_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pBiologia" : {
             "nombre" : "Biología",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_biologia_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pQuimica" : {
             "nombre" : "Química",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_quimica_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pFisica" : {
             "nombre" : "Física",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_fisica_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pEstudios" : {
             "nombre" : "Estudios Sociales",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_estudios_sociales_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pEspanolN" : {
             "nombre" : "Español (programa nuevo)",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_espanol_secundaria_nuevo.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pEspanolV" : {
             "nombre" : "Español (programa viejo)",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_espanol_secundaria_viejo.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pMatematica" : {
             "nombre" : "Matemática",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_matematica_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pCivica" : {
             "nombre" : "Cívica",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_civica_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pPsicologia" : {
             "nombre" : "Psicología",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_psicologia_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pFilosofia" : {
             "nombre" : "Filosofía",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_filosofia_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pAfectividad" : {
             "nombre" : "Afectividad y sexualidad",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_afectividad_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pEducFisica" : {
             "nombre" : "Educación física",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_educacion_fisica_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pArtes" : {
             "nombre" : "Artes industriales",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_artes_industriales_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
+
+        },
+        "pPlasticas" : {
+            "nombre" : "Artes plásticas",            
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_artes_plasticas_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pMusica" : {
             "nombre" : "Música",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_musica_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pIndustriales" : {
             "nombre" : "Artes Industriales",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_artes_industriales_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pHogar" : {
             "nombre" : "Educación para el hogar",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_educ_hogar_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pReligion" : {
             "nombre" : "Religión",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_religion_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         } 
 

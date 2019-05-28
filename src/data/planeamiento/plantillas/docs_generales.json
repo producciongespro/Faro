@@ -2,30 +2,30 @@
     {
         "pGeneral" : {
             "nombre" : "Planeamiento didáctico general",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_general.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pIngles" : {
             "nombre" : "Ingles - Primaria y secundaria",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_ingles_primaria_secundaria.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pInglesV" : {
             "nombre" : "Inglés - Primaria y secundaria (plan viejo)",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_ingles_primaria_secundaria_viejo.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         },
         "pInglesN" : {
             "nombre" : "Inglés - Primaria y secundaria (plan nuevo)",            
-            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf",
-            "plantilla" : "",
-            "ejemplo" :""
+            "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_inglés_primaria_secundaria_nuevo.pdf",
+            "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/",
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/"
 
         }
 
