@@ -100,6 +100,7 @@ class Tags_info extends Component {
                 <div className="col-2">
                   <button id="btnApoyo" className="btn btn-outline-dark btn-block"  onClick={this.cargaBotonesProgramas} > Apoyos Educativos </button>      
                 </div>
+               
             </React.Fragment>
       )
 
@@ -174,32 +175,32 @@ class Tags_info extends Component {
     switch (opc) {
       case "btnMedia":   
       tmpBotonera  = (
-           materiasMedia.map( ( item, i ) => (  <span className="badge badge-success spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasMedia}  >  {item.label}   </span>         ) ) 
+           materiasMedia.map( ( item, i ) => (  <span className="color-bs badge badge-success spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasMedia}  >  {item.label}   </span>         ) ) 
            )   
       break;
       case "btnPrimaria":
         tmpBotonera  = (
-            materiasPrima.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+            materiasPrima.map( ( item, i ) => (  <span className=" color-bs badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnApoyo":
         tmpBotonera  = (
-            materiasApoyo.map( ( item, i ) => (  <span className="badge badge-dark spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasApoyo}  >  {item.label}   </span>         ) ) 
+            materiasApoyo.map( ( item, i ) => (  <span className="color-bs badge badge-dark spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasApoyo}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnIntercultural":
         tmpBotonera  = (
-          materiasIntercultural.map( ( item, i ) => (  <span className="badge badge-danger spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasIntercult}  >  {item.label}   </span>         ) ) 
+          materiasIntercultural.map( ( item, i ) => (  <span className="color-bs badge badge-danger spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasIntercult}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnAdultos":
         tmpBotonera  = (
-          materiasAdultos.map( ( item, i ) => (  <span className="badge badge-warning spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasAdultos}  >  {item.label}   </span>         ) ) 
+          materiasAdultos.map( ( item, i ) => (  <span className="color-bs badge badge-warning spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasAdultos}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnPreescolar":
         tmpBotonera  = (
-          materiasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasPreescolar}  >  {item.label}   </span>         ) ) 
+          materiasPreescolar.map( ( item, i ) => (  <span className="color-bs badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasPreescolar}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       
@@ -412,21 +413,22 @@ class Tags_info extends Component {
             </span>
         </div>
     </div>
-    
+    <hr/><hr/>
       <div className="row ">
           {this.botonesNav}
       </div>
 
+      <hr/>
           
           <div className="row">
        
-                <div className="col-4">
+                <div className="col-6">
                   {this.state.botonera}
                 </div>
 
                 
                 
-                <div className="col-8" id="visorProgramas">
+                <div className="col-6 visor2" id="visorProgramas">
                     {this.state.ciclo1}
                     {this.state.ciclo1_2}            
                     {this.state.ciclo3} 
