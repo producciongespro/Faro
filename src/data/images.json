@@ -54,6 +54,8 @@
 	  "RecDidacticosPrimaria" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/primaria.png",
 	  "RecDidacticosSecundaria" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/secundaria.png",
     "RecDidacticosTitulo" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/titulo.png",
+    "RecDidacticosPrimariaCatalogo" :"https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/tit_primaria.png",
+    "RecDidacticosSecundariaCatalogo" : "https://recursos.mep.go.cr/ws_faro/p05-recursos-didacticos/tit_media.png",
     "ApoyoClimaAulaTitulo" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/apoyo_clima_aula_titulo.png",
     "ApoyoClimaAulaEmociones" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/emociones.png",
     "ApoyoClimaAulaFicha" : "https://recursos.mep.go.cr/ws_faro/p06-apoyo-clima-aula/ficha.png",

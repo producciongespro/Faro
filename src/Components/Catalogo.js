@@ -72,11 +72,11 @@ componentWillMount () {
         break;
         case "primaria":
             this.tmpArray = recursosPrimaria;
-            this.imagenEncabezado = "RecDidacticosPreescolarCatalogo"; 
+            this.imagenEncabezado = "RecDidacticosPrimariaCatalogo"; 
         break;
         case "secundaria":
             this.tmpArray = recursosSecundaria;
-            this.imagenEncabezado = "RecDidacticosPreescolarCatalogo"; 
+            this.imagenEncabezado = "RecDidacticosSecundariaCatalogo"; 
         break;
 
         default:
