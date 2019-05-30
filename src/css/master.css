@@ -92,6 +92,28 @@ a:hover  {
   }
 
 
+  .lnk-recursos {
+    color: green;
+    font-size: 1.4em;    
+  }
+
+  .lnk-recursos:hover {
+    animation-name: bounce;
+    text-decoration: none;
+    color: #F39014;
+    font-weight: bold;
+    
+  }
+
+
+  .img-lnk {
+    margin-left: 30%;
+  }
+
+  .img-lnk:hover {
+    animation-name: bounce;
+  }
+
   .ico-cerrar {
     cursor: pointer;
     font-size: 3em;

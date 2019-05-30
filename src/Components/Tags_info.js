@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 //import $ from 'jquery';
 
 //Data json Programas
@@ -272,13 +273,13 @@ class Tags_info extends Component {
       this.limpiarCampos();
       
       if (aux.ciclo3 !== "" ) {
-        this.setState ({ ciclo3 : <a href= {aux.ciclo3}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }   Tercer Ciclo   </a> } );        
+        this.setState ({ ciclo3 : <a href= {aux.ciclo3}  className="lnk-recursos " target= "_blank" rel="noopener noreferrer" > <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" className="img-lnk animated" alt="icono pdf" />  <br/> { aux.nombre  }   Tercer Ciclo   </a> } );        
       }
       if (aux.ciclo4 !== "" ) {
-        this.setState({ ciclo4 : <a href= {aux.ciclo4}   target= "_blank" rel="noopener noreferrer"  > <i className="fas fa-file-pdf"></i>  { aux.nombre  }   Educación diversificada   </a> });        
+        this.setState({ ciclo4 : <a href= {aux.ciclo4}   className="lnk-recursos " target= "_blank" rel="noopener noreferrer"  > <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" className="img-lnk animated"  alt="icono pdf"  /> <br/> { aux.nombre  }   Educación diversificada   </a> });        
       }
       if (aux.ciclo5 !== "" ) {
-        this.setState({ ciclo5 : <a href= {aux.ciclo5}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  Tercer Ciclo y Educación diversificada   </a> });            
+        this.setState({ ciclo5 : <a href= {aux.ciclo5}   className="lnk-recursos " target= "_blank" rel="noopener noreferrer" > <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" className="img-lnk animated"  alt="icono pdf"  />   <br/> { aux.nombre  }  Tercer Ciclo y Educación diversificada   </a> });            
       }      
     this.setState({ programaActual : opc  });     
   }

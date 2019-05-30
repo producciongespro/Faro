@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 //CSS
+import "./css/animate.css";
 import "./css/master.css";
 import "./css/home.css";
 
