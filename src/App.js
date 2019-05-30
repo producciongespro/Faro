@@ -163,8 +163,7 @@ componentDidMount ( ) {
   handlerCloseCatalog = (id) => {
     console.log( "Destino",  id);
 
-    if (id === "preescolar") {
-      console.log("ID PREESCOLAR");
+    if (id === "preescolar"  ||  id === "primaria" || id === "secundaria"  ) {     
       
       this.setState({
           currentPage  : <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 

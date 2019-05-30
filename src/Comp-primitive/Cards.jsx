@@ -75,6 +75,8 @@ const CardsImage = (props) => {
     
     case "recursos" :
     case "preescolar":
+    case "primaria":
+    case "secundaria":
     tmpComp = (
       <div className="col-sm-6">
           <div className="row">   

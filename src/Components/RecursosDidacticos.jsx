@@ -1,11 +1,10 @@
 import React from 'react';
 import images from "../data/images.json";
 //import textos from "../data/textos.json";
-import dsPdfs from "../data/pdf.json";
+
 import dsLinks from "../data/links.json";
 
-var pdfs = dsPdfs[0],
-links = dsLinks[0];
+var links = dsLinks[0];
 
 
 const RecursosDidacticos = (props) => {
@@ -32,17 +31,17 @@ const RecursosDidacticos = (props) => {
         <div className="row">
             <div className="col-4 hover12 ladoDer">
               <figure>
-                 <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}   alt="Preescolar" />
+                 <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar  }   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}   alt="Preescolar" />
               </figure>
               </div>
             <div className="col-4 hover12 centro">
                 <figure>
-              <img className="btn img-fluid" id="primaria" src= {images[0].RecDidacticosPrimaria  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.showModal}   alt="Primaria" />
+              <img className="btn img-fluid" id="primaria" src= {images[0].RecDidacticosPrimaria  }    data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}   alt="Primaria" />
               </figure>
             </div>
             <div className="col-4 hover12 ladoIzq">
                 <figure>
-              <img className="btn img-fluid" id="secundaria" src= {images[0].RecDidacticosSecundaria  } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.showModal}  alt="Secundaria" />
+              <img className="btn img-fluid" id="secundaria" src= {images[0].RecDidacticosSecundaria  }   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}  alt="Secundaria" />
               </figure>
             </div>
         </div>

@@ -10,6 +10,10 @@ import cursos from '../data/desarrollo/cursos.json';
 import videoteca from '../data/desarrollo/videoteca.json';
 import otrasOfertas from '../data/desarrollo/otras_ofertas.json';
 import recursosPreescolar from '../data/recursos/recursosPreescolar.json';
+import recursosPrimaria from '../data/recursos/recursosPrimaria.json';
+import recursosSecundaria from '../data/recursos/recursosSecundaria.json';
+
+
 
 
 
@@ -64,6 +68,14 @@ componentWillMount () {
         break;
         case "preescolar":
             this.tmpArray = recursosPreescolar;
+            this.imagenEncabezado = "RecDidacticosPreescolarCatalogo"; 
+        break;
+        case "primaria":
+            this.tmpArray = recursosPrimaria;
+            this.imagenEncabezado = "RecDidacticosPreescolarCatalogo"; 
+        break;
+        case "secundaria":
+            this.tmpArray = recursosSecundaria;
             this.imagenEncabezado = "RecDidacticosPreescolarCatalogo"; 
         break;
 
