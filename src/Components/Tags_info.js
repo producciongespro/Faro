@@ -54,14 +54,8 @@ class Tags_info extends Component {
     super(props);
     this.state = {
       programaActual : "",
-      botonera : <span> Oprima cualquier boton para seleccionar la categoría... </span>, 
-      ciclo1 : "",
-      ciclo2 :"",      
-      ciclo1_2 : "",
-      ciclo3 : "",
-      ciclo4 : "",
-      linkPdf : "",
-      especial : ""      
+      botonera : <span> Oprima cualquier boton para seleccionar la categoría... </span>,    
+      linkPdf : ""      
      };     
      this.botonesNav="";
      this.urlImgtitulo="";
@@ -148,26 +142,10 @@ class Tags_info extends Component {
   //limpiar campos
 
   limpiarCampos = () => {
-    this.setState({ 
-      ciclo1 : "",
-      ciclo2 :"",      
-      ciclo1_2 : "",
-      ciclo3 : "",
-      ciclo4 : "",
-      linkPdf : "",
-      especial : ""      
+    this.setState({    
+      linkPdf : ""      
       });
   }
-
-
-  noDisponible = () => {
-    console.log("no disponible");
-    
-    this.setState({ ciclo1:  (<strong>
-      <cite> Lo sentimos... Información no disponible. </cite>
-    </strong>)   });
-  }
-
 
 
 
@@ -314,9 +292,14 @@ class Tags_info extends Component {
 
     
         this.setState ({ 
-              ciclo3 :  <React.Fragment>  <a href= {aux.lineamientos}  className="lnk-yellow"  target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf ico-wine"></i>    Lineamiento  para plan de  { aux.nombre  } </a> <br/>  </React.Fragment>,
-              ciclo4 : <React.Fragment> <a href= {aux.plantilla}  className="lnk-yellow"  > <i className="fas fa-file-word ico-wine"></i>    Plantilla  de   { aux.nombre  } </a> <br/>  </React.Fragment>,
-              ciclo5 : <React.Fragment> <a href= {aux.ejemplo}  className="lnk-yellow"  target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf ico-wine"></i>    Ejemplo  de   { aux.nombre  } </a> <br/>  </React.Fragment>,
+              linkPdf :  
+                <React.Fragment>  
+                  <a href= {aux.lineamientos}  className="lnk-yellow"  target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf ico-wine"></i>    Lineamiento  para plan de  { aux.nombre  } </a> 
+                      <br/>
+                  <a href= {aux.plantilla}  className="lnk-yellow"  > <i className="fas fa-file-word ico-wine"></i>    Plantilla  de   { aux.nombre  } </a> 
+                      <br/>
+                  <a href= {aux.ejemplo}  className="lnk-yellow"  target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf ico-wine"></i>    Ejemplo  de   { aux.nombre  } </a> <br/>  
+                  </React.Fragment>,
               programaActual : opc 
           });            
   }
@@ -352,23 +335,12 @@ class Tags_info extends Component {
        
                 <div className="col-6">
                   {this.state.botonera}
-                </div>
-
-                
-                
-                <div className="col-6 visor2" id="visorProgramas">
-                    {this.state.ciclo1}
-                    {this.state.ciclo1_2}            
-                    {this.state.ciclo3} 
-                    {this.state.ciclo4} 
-                    {this.state.linkPdf}
-                    {this.state.especial} 
-                </div>
-          
-          
+                </div>                
+                <div className="col-6 visor2" id="visorProgramas">               
+                    {this.state.linkPdf}                    
+                </div>        
           </div>
 </React.Fragment>
-
      );
   }
 }
