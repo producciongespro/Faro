@@ -2,19 +2,19 @@
     {
         "maternoGuia" : {
             "nombre" : "Guía",                       
-            "ciclo1_2" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_materno_infantil/guia_ninos_ninas_0_4_anos.pdf"
+            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_materno_infantil/guia_ninos_ninas_0_4_anos.pdf"
         },
         "transicionGuiaDocente" : {
             "nombre" : "Guía del docente Programa de Estudio",                       
-            "ciclo1_2" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_transicion/guia_docente_programa_estudio_educacion_preescolar.pdf"
+            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_transicion/guia_docente_programa_estudio_educacion_preescolar.pdf"
         },
         "transicionProgramaEstudio" : {
             "nombre" : "Programa de Estudio de Educación Preescolar",                       
-            "ciclo1_2" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_transicion/programa_estudio_educacion_preescolar.pdf"
+            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_transicion/programa_estudio_educacion_preescolar.pdf"
         },
         "transicionIngles": {
             "nombre" : "Programa de Estudios Inglés Preescolar",                       
-            "ciclo1_2" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_transicion/programa_estudios_ingles_preescolar_transicion.pdf"
+            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_transicion/programa_estudios_ingles_preescolar_transicion.pdf"
         }   
     }   
 

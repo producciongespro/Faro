@@ -2,7 +2,7 @@
     {
         "adultosAlfa" : {
             "nombre" : "Alfabetización",                       
-            "ciclo1_2" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/actualizacion_plan_estudios_educ_adultos2018.pdf"
+            "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/actualizacion_plan_estudios_educ_adultos2018.pdf"
         }       
     }
   

@@ -2,101 +2,76 @@
     {
         "primaCien" : {
             "nombre" : "Ciencias",            
-            "ciclo1" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo2" : "",
-            "ciclo1y2" :""
-
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"           
         },
         "primaEspa" : {
-            "nombre" : "Español",            
-            "ciclo3" : "",
-            "ciclo4" : "",
-            "ciclo5" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "nombre" : "Español",                        
+            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
         },
         "primaMate" : {
             "nombre" : "Matemáticas",            
-            "ciclo3" : "",
-            "ciclo4" : "",
-            "ciclo5" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
         },
         "primaEstu" : {
-            "nombre" : "Estudios Sociales",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Estudios Sociales",                   
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"            
         },
         "primaIngl" : {
-            "nombre" : "Inglés",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Inglés",                        
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            
         },
         "primaFran" : {
-            "nombre" : "Francés",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Francés",                        
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"            
         },
        
         "primaItal" : {
-            "nombre" : "Italiano",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Italiano",          
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            
         },
         "primaFrBi" : {
             "nombre" : "Frances secciones bilingues",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            
         },    
         "primaArte" : {
-            "nombre" : "Artes Plásticas",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Artes Plásticas",                        
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            
         },
         "primaEdMu" : {
-            "nombre" : "Educación Músical",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Educación Músical",          
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            
         },
         "primaOrie" : {
-            "nombre" : "Orientación",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Orientación",                        
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            
         },
         "primaEdFi" : {
-            "nombre" : "Educación Física",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Educación Física",           
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"            
         },
         "primaReli" : {
-            "nombre" : "Educación Religiosa",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Educación Religiosa",  
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            
         },
         "primaIndu" : {
-            "nombre" : "Artes Industriales",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Artes Industriales",
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            
         },
         "primaVida" : {
-            "nombre" : "Vida Cotidiana",            
-            "ciclo3" : "",
-            "ciclo4" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-            "ciclo5" :""
+            "nombre" : "Vida Cotidiana",
+            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"    
         },
         "primaUnid" : {
-            "nombre" : "Esc. Unidocentes",            
-            "ciclo3" : "",
-            "ciclo4" : "",
-            "ciclo5" :"https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ingles/educacion_diversificada/programa_estudio_ingles.pdf"
+            "nombre" : "Esc. Unidocentes", 
+            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
         }
 
     }

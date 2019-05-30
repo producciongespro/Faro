@@ -60,12 +60,21 @@ class Tags_info extends Component {
       ciclo1_2 : "",
       ciclo3 : "",
       ciclo4 : "",
-      ciclo5 : "",
+      linkPdf : "",
       especial : ""      
      };     
      this.botonesNav="";
      this.urlImgtitulo="";
      this.colorFondo="";
+     this.programasPdf = {
+      "mediaPDF" : mediaPDf[0],
+      "preescolarPDF" : preescolarPDF[0],
+      "adultosPDF" : adultosPDF[0],
+      "intercultPDF" : intercultPDF[0],
+      "apoyoPDF" : apoyoPDF[0],
+      "primaPDF" : primaPDF[0]
+     }
+
      this.combosMaterias = {
           "comboMedia" : comboMedia[0],
           "comboPrimaria" : comboPrimaria[0],
@@ -145,7 +154,7 @@ class Tags_info extends Component {
       ciclo1_2 : "",
       ciclo3 : "",
       ciclo4 : "",
-      ciclo5 : "",
+      linkPdf : "",
       especial : ""      
       });
   }
@@ -176,32 +185,32 @@ class Tags_info extends Component {
     switch (opc) {
       case "btnMedia":   
       tmpBotonera  = (
-           materiasMedia.map( ( item, i ) => (  <span className="color-bs badge badge-success spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasMedia}  >  {item.label}   </span>         ) ) 
+           materiasMedia.map( ( item, i ) => (  <span className="animated color-bs badge badge-success spn-materias"  id={item.id}  key={ i }  data-categoria = "mediaPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
            )   
       break;
       case "btnPrimaria":
         tmpBotonera  = (
-            materiasPrima.map( ( item, i ) => (  <span className=" color-bs badge badge-info spn-materias"  id={item.id}  key={ i }  onClick={this.noDisponible}  >  {item.label}   </span>         ) ) 
+            materiasPrima.map( ( item, i ) => (  <span className="animated color-bs badge badge-info spn-materias"  id={item.id}  key={ i }  data-categoria = "primaPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnApoyo":
         tmpBotonera  = (
-            materiasApoyo.map( ( item, i ) => (  <span className="color-bs badge badge-dark spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasApoyo}  >  {item.label}   </span>         ) ) 
+            materiasApoyo.map( ( item, i ) => (  <span className="animated color-bs badge badge-dark spn-materias"  id={item.id}  key={ i }  data-categoria = "apoyoPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnIntercultural":
         tmpBotonera  = (
-          materiasIntercultural.map( ( item, i ) => (  <span className="color-bs badge badge-danger spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasIntercult}  >  {item.label}   </span>         ) ) 
+          materiasIntercultural.map( ( item, i ) => (  <span className="animated color-bs badge badge-danger spn-materias"  id={item.id}  key={ i }  data-categoria = "intercultPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnAdultos":
         tmpBotonera  = (
-          materiasAdultos.map( ( item, i ) => (  <span className="color-bs badge badge-warning spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasAdultos}  >  {item.label}   </span>         ) ) 
+          materiasAdultos.map( ( item, i ) => (  <span className="animated color-bs badge badge-warning spn-materias"  id={item.id}  key={ i }  data-categoria = "adultosPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnPreescolar":
         tmpBotonera  = (
-          materiasPreescolar.map( ( item, i ) => (  <span className="color-bs badge badge-primary spn-materias"  id={item.id}  key={ i }  onClick={this.cargarProgrmasPreescolar}  >  {item.label}   </span>         ) ) 
+          materiasPreescolar.map( ( item, i ) => (  <span className="animated color-bs badge badge-primary spn-materias"  id={item.id}  key={ i } data-categoria = "preescolarPDF"   onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       
@@ -227,22 +236,22 @@ class Tags_info extends Component {
     switch (opc) {
       case "btnMedia":   
       tmpBotonera  = (
-        plantillasMedia.map( ( item, i ) => (  <span className="badge badge-success spn-materias"  data-categoria="comboMedia"   id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
+        plantillasMedia.map( ( item, i ) => (  <span className="animated badge badge-success spn-materias"  data-categoria="comboMedia"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
            )   
       break;
       case "btnPrimaria":
         tmpBotonera  = (
-            plantillasPrimaria.map( ( item, i ) => (  <span className="badge badge-info spn-materias"  data-categoria="comboPrimaria"   id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
+            plantillasPrimaria.map( ( item, i ) => (  <span className="badge badge-info spn-materias animated"  data-categoria="comboPrimaria"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnPreescolar":
         tmpBotonera  = (
-          plantillasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias"  data-categoria="comboPreescolar"   id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
+          plantillasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias animated"   data-categoria="comboPreescolar"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnGeneral":
         tmpBotonera  = (
-          plantillasGenerales.map( ( item, i ) => (  <span className="badge badge-primary spn-materias" data-categoria="comboGenerales"   id={item.id}  key={ i }  onClick={this.cargarComboMedia}  >  {item.label}   </span>         ) ) 
+          plantillasGenerales.map( ( item, i ) => (  <span className="badge badge-primary spn-materias animated" data-categoria="comboGenerales"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       
@@ -259,9 +268,10 @@ class Tags_info extends Component {
 
 
   // ---------------------------- LINKS A LOS PROGRAMAS EN PDF --------------------    
-  cargarProgrmasMedia = (e) => {
+  cargarUrlProgrmasPDF = (e) => {
     const opc = e.target.id;
-    var dsPDF = mediaPDf[0];
+    const categoria = e.target.dataset.categoria;
+    var dsPDF = this.programasPdf[categoria];
     console.log("Dataset", dsPDF );
         
     console.log("Opcion", opc);
@@ -270,105 +280,22 @@ class Tags_info extends Component {
     //Secundaria -------------------        
       
       const aux = dsPDF[opc];      
-      this.limpiarCampos();
-      
-      if (aux.ciclo3 !== "" ) {
-        this.setState ({ ciclo3 : <a href= {aux.ciclo3}  className="lnk-recursos " target= "_blank" rel="noopener noreferrer" > <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" className="img-lnk animated" alt="icono pdf" />  <br/> { aux.nombre  }   Tercer Ciclo   </a> } );        
-      }
-      if (aux.ciclo4 !== "" ) {
-        this.setState({ ciclo4 : <a href= {aux.ciclo4}   className="lnk-recursos " target= "_blank" rel="noopener noreferrer"  > <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" className="img-lnk animated"  alt="icono pdf"  /> <br/> { aux.nombre  }   Educación diversificada   </a> });        
-      }
-      if (aux.ciclo5 !== "" ) {
-        this.setState({ ciclo5 : <a href= {aux.ciclo5}   className="lnk-recursos " target= "_blank" rel="noopener noreferrer" > <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" className="img-lnk animated"  alt="icono pdf"  />   <br/> { aux.nombre  }  Tercer Ciclo y Educación diversificada   </a> });            
-      }      
-    this.setState({ programaActual : opc  });     
-  }
-
-  cargarProgrmasPrima = (e) => {
-    const opc = e.target.id;
-    var dsPDF = primaPDF[0];    
-    //console.log("Opcion", opc);
-    
-    //Caraga los programas de estudio de acuerdo a la selección
-    //primaria -------------------        
-      
-      const aux = dsPDF[opc];      
       this.limpiarCampos();  
-      
-      if (aux.ciclo1 !== "" ) {
-        this.setState ({ ciclo1 : <a href= {aux.ciclo1}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }   Primer Ciclo   </a> } );        
-      }
-      if (aux.ciclo2 !== "" ) {
-        this.setState({ ciclo2 : <a href= {aux.ciclo2}   target= "_blank" rel="noopener noreferrer"  > <i className="fas fa-file-pdf"></i>  { aux.nombre  }   Segundo Ciclo   </a> });        
-      }
-      if (aux.ciclo1_2 !== "" ) {
-        this.setState({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  Primero y Segundo Ciclos   </a> });            
-      }      
-    this.setState({ programaActual : opc  });     
+      this.setState ({ 
+        programaActual : opc,
+        linkPdf : 
+        <div className="col-12 text-center  div-container-animated animated  ">
+            <a href= {aux.url}  className="lnk-recursos" target= "_blank" rel="noopener noreferrer" > <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="icono pdf" />  <br/> { aux.nombre}</a> 
+        </div>
+        
+      });        
+
   }
 
-  cargarProgrmasApoyo = (e) => {
-    const opc = e.target.id;
-    var dsPDF = apoyoPDF[0];    
-    console.log("Opcion", opc);
-    
-    //Caraga los programas de estudio de acuerdo a la selección
-    //Secundaria -------------------        
-      
-      const aux = dsPDF[opc];      
-      this.limpiarCampos();
-      this.setState ({ especial : <a href= {aux.especial}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
-      this.setState({ programaActual : opc  });     
-  }
-
-  cargarProgrmasIntercult = (e) => {
-    const opc = e.target.id;
-    var dsPDF = intercultPDF[0];    
-    console.log("Opcion", opc);
-    
-    //Caraga los programas de estudio de acuerdo a la selección
-    //intercultural -------------------        
-      
-      const aux = dsPDF[opc];      
-      this.limpiarCampos();
-      this.setState ({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
-      this.setState({ programaActual : opc  });     
-  }
-
-  cargarProgrmasAdultos = (e) => {
-    const opc = e.target.id;
-    var dsPDF = adultosPDF[0];    
-    console.log("Opcion", opc);
-    
-    //Caraga los programas de estudio de acuerdo a la selección
-    //intercultural -------------------        
-      
-      const aux = dsPDF[opc];      
-      this.limpiarCampos();
-      this.setState ({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
-      this.setState({ programaActual : opc  });     
-  }
-
-  cargarProgrmasPreescolar = (e) => {
-    const opc = e.target.id;
-    var dsPDF = preescolarPDF[0];    
-    console.log("Opcion", opc);
-    console.log("PDF",  dsPDF);
-    
-    
-    //Caraga los programas de estudio de acuerdo a la selección
-    //intercultural -------------------        
-      
-      const aux = dsPDF[opc];      
-      this.limpiarCampos();
-      this.setState ({ ciclo1_2 : <a href= {aux.ciclo1_2}   target= "_blank" rel="noopener noreferrer" > <i className="fas fa-file-pdf"></i>  { aux.nombre  }  </a> } );        
-      this.setState({ programaActual : opc  });     
-  }
-
-
+ 
 
   // ---------------------------- Links a los combos de plantillas ------------------------------------------ //
-  cargarComboMedia = (e) => {
+  cargarComboPlantilla = (e) => {
 
     console.log("ID Categoria",  e.target.dataset.categoria );    
 
@@ -434,7 +361,7 @@ class Tags_info extends Component {
                     {this.state.ciclo1_2}            
                     {this.state.ciclo3} 
                     {this.state.ciclo4} 
-                    {this.state.ciclo5}
+                    {this.state.linkPdf}
                     {this.state.especial} 
                 </div>
           

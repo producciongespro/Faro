@@ -2,7 +2,7 @@
     {
         "educEspecial" : {
             "nombre" : "Educación Especial",                       
-            "especial" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/apoyos_educativos/educacion_especial.pdf"
+            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/apoyos_educativos/educacion_especial.pdf"
         }       
     }
   

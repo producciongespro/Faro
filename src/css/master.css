@@ -97,22 +97,16 @@ a:hover  {
     font-size: 1.4em;    
   }
 
-  .lnk-recursos:hover {
-    animation-name: bounce;
+  .lnk-recursos:hover {    
     text-decoration: none;
     color: #F39014;
-    font-weight: bold;
-    
+    font-weight: bold;    
   }
 
+.div-container-animated:hover {
+  animation-name: pulse;
+}
 
-  .img-lnk {
-    margin-left: 30%;
-  }
-
-  .img-lnk:hover {
-    animation-name: bounce;
-  }
 
   .ico-cerrar {
     cursor: pointer;
@@ -737,11 +731,12 @@ padding-top:5%;
    font-size: 1.2em;
    padding: 2%;
    margin: 1.2%;
-   cursor: pointer
+   cursor: pointer;   
  }
 
  .spn-materias:hover {
-  background-color: #585858;
+  background: #585858;  
+  animation-name: rubberBand;
  }
 
  .lnk-yellow {
