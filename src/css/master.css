@@ -199,11 +199,6 @@ border-color: #0d7aa0;
        background: #3a3a3a;
      }
    /* ****************************** */
-   .img_circ {
-    border-radius: 40%
-   }
-
-
    .img_dec_sitio {
     height: 119%;
     width: 89%;
@@ -738,6 +733,7 @@ padding-top:5%;
   background: #585858;  
   animation-name: rubberBand;
  }
+
 
  .lnk-yellow {
    color: #f4ae11;

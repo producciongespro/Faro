@@ -81,11 +81,20 @@ const CardsImage = (props) => {
       <div className="col-sm-6">
           <div className="row">   
               
-              <div className="col-sm-1">
-              <div><img alt="Recursos" className="img_circ" src={img.RecDidacticosPreescolarIcono}/></div>
+              <div className="col-sm-2 text-right">
+                {
+                  props.idCat === "preescolar" && <div><img alt="Recursos" className="img-circ" src={img.RecDidacticosPreescolarIcono}/></div>
+                }
+                {
+                 props.idCat === "primaria" && <div><img alt="Recursos" className="img-circ"  src="https://recursos.mep.go.cr/ws_faro/generales/ico_edit.png"  /></div> 
+                }
+                {
+                 props.idCat === "secundaria" && <div><img alt="Recursos" className="img-circ"  src="https://recursos.mep.go.cr/ws_faro/generales/ico_tap.png"/></div> 
+                }
+              
               </div>
 
-              <div className="col-sm-11 inform1">
+              <div className="col-sm-10 inform1">
               <h6><b>Nombre: </b>{props.item.nombre}</h6>
               <p><b>Descripción: </b> {props.item.desc}  </p>
               <a href={props.item.url } className="link-card enlace-pree"  target="_blank" rel="noopener noreferrer" ><strong>VISITAR</strong></a>
