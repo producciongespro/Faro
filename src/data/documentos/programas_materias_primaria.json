@@ -5,7 +5,11 @@
     },
     {
         "id" : "primaEspa",
-        "label" : "Español"
+        "label" : "Español I ciclo"
+    },
+    {
+        "id" : "primaEspa2",
+        "label" : "Español II Ciclo"
     },
     {
         "id" : "primaMate",
@@ -17,7 +21,11 @@
     },
     {
         "id" : "primaIngl",
-        "label" : "Inglés"
+        "label" : "Inglés I ciclo"
+    },
+    {
+        "id" : "primaIngl2",
+        "label" : "Inglés II ciclo"
     },
     
     {
@@ -54,7 +62,11 @@
     },
     {
         "id" : "primaReli",
-        "label" : "Educación Religiosa"
+        "label" : "Educación Religiosa I ciclo"
+    },
+    {
+        "id" : "primaReli2",
+        "label" : "Educación Religiosa II ciclo"
     },
     {
         "id" : "primaIndu",
@@ -63,11 +75,6 @@
     {
         "id" : "primaVida",
         "label" : "Vida Cotidiana"
-    },
-  
-    {
-        "id" : "primaUnid",
-        "label" : "Esc. Unidocentes"
     }
    
 ]

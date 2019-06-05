@@ -2,94 +2,96 @@
     {
         "mediaCien" : {
             "nombre" : "Ciencias Tercer Ciclo",            
-            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ciencias/tercer_ciclo/ciencias_iii_ciclo.pdf"            
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/ciencias3ciclo.pdf"            
         },
         "mediaEspa" : {
             "nombre" : "Español Tercer Ciclo y Educación diversificada",                       
-            "url" :"https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/espanol/educacion_diversificada/programa_de_espanol.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/espanol3ciclo_diversificada.pdf"
         },
         "mediaEstu" : {
             "nombre" : "Estudios Sociales Tercer Ciclo y Educación diversificada",              
-            "url" :"https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/estudios_sociales/educacion_diversificada/programa_estudios_sociales.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/esociales3ciclo_diversificada.pdf"
         },
         "mediaBiol" : {
             "nombre" : "Biología Educación diversificada",                        
-            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/biologia/educacion_diversificada/programa_de_biologia.pdf"            
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/biologia2017.pdf"            
         },
         "mediaQuim" : {
             "nombre" : "Química Educación diversificada",                        
-            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/quimica/educacion_diversificada/programa_estudio_educacion_quimica.pdf"            
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/quimica2018.pdf"            
         },
         "mediaIngl" : {
             "nombre" : "Inglés Tercer Ciclo y Educación diversificada",            
-    
-            "url" :"https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_media/ingles/educacion_diversificada/programa_estudio_ingles.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/ingles3ciclo_diversificada.pdf"
+        },
+        "mediaInglExp" : {
+            "nombre" : "Inglés - Liceos experimentales bilingües",            
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/ingles-espanol-3ciclo.pdf"
         },
         "mediaMate" : {
             "nombre" : "Matemáticas Tercer Ciclo y Educación diversificada",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/matematica.pdf"
         },
         "mediaFisi" : {
             "nombre" : "Física",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/fisica2018.pdf"
         },
         "mediaFran" : {
             "nombre" : "Francés Tercer Ciclo y Educación diversificada",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/frances3ciclo_diversificada.pdf"
         },
         "mediaAfec" : {
             "nombre" : "Afectividad y Sexualidad Tercer Ciclo y Educación diversificada",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/afectividad-sexualidad-diversificada.pdf"
         },
         "mediaPsic" : {
             "nombre" : "Psicología",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/psicologia3cicloydiversificada.pdf"
         },
         "mediaFilo" : {
             "nombre" : "Filosofía",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/filosofia2017.pdf"
         },
         "mediaArte" : {
             "nombre" : "Artes Plásticas Tercer Ciclo y Educación diversificada",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/descargas/programas-de-estudio/artesplasticas3cicloydiversificada.pdf"
         },
         "mediaMusi" : {
             "nombre" : "Música Tercer Ciclo y Educación diversificada",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/descargas/programas-de-estudio/musica3cicloydiversificada.pdf "
         },
         "mediaCivi" : {
             "nombre" : "Educación Cívica Tercer Ciclo y Educación diversificada",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/civica3ciclo_diversificada.pdf"
         },
         "mediaOrie" : {
             "nombre" : "Orientación Tercer Ciclo y Educación diversificada",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/orientacion-nuevo.pdf "
         },
         "mediaEdFi" : {
-            "nombre" : "Física",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "nombre" : "Educación física",                        
+            "url" :"https://www.mep.go.cr/sites/default/files/descargas/programas-de-estudio/educfisica3cicloydiversificada.pdf"
         },
         "mediaIndu" : {
             "nombre" : "Arts Industriales",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/artesindustriales3ciclo.pdf"
         },
         "mediaVida" : {
             "nombre" : "Educación para la Vida Cotidiana",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/educacion-vida-cotidiana.pdf"
         },
         "mediaItal" : {
             "nombre" : "Italiano Tercer Ciclo y Educación diversificada",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
-        },
-        "mediaRura" : {
-            "nombre" : "Liceos Rurales",                    
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/italiano_3ciclo_diversificada.pdf"
         },
         "mediaReli" : {
-            "nombre" : "Educación Religiosa Tercer Ciclo y Educación diversificada",              
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "nombre" : "Educación Religiosa Tercer Ciclo",              
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/educreligiosa3ciclo-2005.pdf"
+        },
+        "mediaReli2" : {
+            "nombre" : "Educación Religiosa Educación Diversificada",              
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/educreligiosadiversificada-2005.pdf "
         }
-
 
     }
   

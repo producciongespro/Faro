@@ -20,6 +20,10 @@
         "label" : "Inglés"
     },
     {
+        "id" : "mediaInglExp",
+        "label" : "Inglés Experimental bilingüe"
+    },
+    {
         "id" : "mediaBiol",
         "label" : "Biología"
     },
@@ -69,7 +73,11 @@
     },
     {
         "id" : "mediaReli",
-        "label" : "Educación Religiosa"
+        "label" : "Educación Religiosa III ciclo"
+    },
+    {
+        "id" : "mediaReli2",
+        "label" : "Educación Religiosa Educación diversificada"
     },
     {
         "id" : "mediaIndu",
@@ -82,10 +90,6 @@
     {
         "id" : "mediaItal",
         "label" : "Italiano"
-    },
-    {
-        "id" : "mediaRura",
-        "label" : "Liceos Rurales"
     }
    
 ]

@@ -1,20 +1,29 @@
 [ 
     {
         "maternoGuia" : {
-            "nombre" : "Guía",                       
-            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_materno_infantil/guia_ninos_ninas_0_4_anos.pdf"
+            "nombre" : "Guía del docente, programa de estudio - Interactivo I",                       
+            "url" : "https://www.mep.go.cr/sites/default/files/guia-pedagogica.pdf"
         },
+        "InteractivoIIProgramaEstudio" : {
+            "nombre" : "Programa de estudios de Interactivo II",                       
+            "url" : " https://www.mep.go.cr/sites/default/files/programadeestudio/programas/educacion_preescolar.pdf"
+        },
+        "InteractivoIIGuiaDocente" : {
+            "nombre" : "Guía del docente, programa de estudio - Interactivo II",                       
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/guiadocente.pdf"
+        },
+       
         "transicionGuiaDocente" : {
-            "nombre" : "Guía del docente Programa de Estudio",                       
-            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_transicion/guia_docente_programa_estudio_educacion_preescolar.pdf"
+            "nombre" : "Guía del docente, programa de estudio - Transición",                       
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/guiadocente.pdf"
         },
         "transicionProgramaEstudio" : {
-            "nombre" : "Programa de Estudio de Educación Preescolar",                       
-            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_transicion/programa_estudio_educacion_preescolar.pdf"
+            "nombre" : "Programa de estudio de Transición",                       
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/educacion_preescolar.pdf"
         },
         "transicionIngles": {
-            "nombre" : "Programa de Estudios Inglés Preescolar",                       
-            "url" : "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/programas/educacion_preescolar/ciclo_transicion/programa_estudios_ingles_preescolar_transicion.pdf"
+            "nombre" : "Programa de estudios Inglés de Transición",                       
+            "url" : "https://www.mep.go.cr/sites/default/files/descargas/programas-de-estudio/inglestransicion.pdf"
         }   
     }   
 

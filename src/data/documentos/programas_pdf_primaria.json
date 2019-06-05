@@ -2,76 +2,86 @@
     {
         "primaCien" : {
             "nombre" : "Ciencias",            
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"           
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/ciencias1y2ciclo2018.pdf"           
         },
         "primaEspa" : {
-            "nombre" : "Español",                        
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "nombre" : "Español primer ciclo",                        
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/espanol1ciclo.pdf"
+        },
+        "primaEspa2" : {
+            "nombre" : "Español segundo ciclo",                        
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/espanol2ciclo.pdf"
         },
         "primaMate" : {
             "nombre" : "Matemáticas",            
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/matematica.pdf"
         },
         "primaEstu" : {
             "nombre" : "Estudios Sociales",                   
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"            
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/esocialesecivica1y2ciclo.pdf"            
         },
         "primaIngl" : {
-            "nombre" : "Inglés",                        
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "nombre" : "Inglés primer ciclo",                        
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/ingles1ciclo.pdf"
+            
+        },
+        "primaIngl2" : {
+            "nombre" : "Inglés segundo ciclo",                        
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/ingles_2ciclo.pdf"
             
         },
         "primaFran" : {
             "nombre" : "Francés",                        
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"            
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/frances1y2ciclo.pdf "            
         },
        
         "primaItal" : {
             "nombre" : "Italiano",          
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/italiano_1y2ciclo.pdf"
             
         },
         "primaFrBi" : {
             "nombre" : "Frances secciones bilingues",            
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/frances_espanol_1y2ciclo.pdf"
             
         },    
         "primaArte" : {
             "nombre" : "Artes Plásticas",                        
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/aplasticas1y2ciclo.pdf"
             
         },
         "primaEdMu" : {
             "nombre" : "Educación Músical",          
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/emusical1y2ciclo.pdf "
             
         },
         "primaOrie" : {
             "nombre" : "Orientación",                        
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/orientacion-nuevo.pdf"
             
         },
         "primaEdFi" : {
             "nombre" : "Educación Física",           
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"            
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/efisica1y2ciclo.pdf "            
         },
         "primaReli" : {
-            "nombre" : "Educación Religiosa",  
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "nombre" : "Educación Religiosa I ciclo",  
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/educreligiosa1ciclo-2005.pdf"
+            
+        },
+        "primaReli2" : {
+            "nombre" : "Educación Religiosa II ciclo",  
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/educreligiosa2ciclo-2005.pdf"
             
         },
         "primaIndu" : {
             "nombre" : "Artes Industriales",
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" : "https://www.mep.go.cr/sites/default/files/descargas/programas-de-estudio/artesindustriales1y2ciclo.pdf"
             
         },
         "primaVida" : {
             "nombre" : "Vida Cotidiana",
-            "url" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"    
-        },
-        "primaUnid" : {
-            "nombre" : "Esc. Unidocentes", 
-            "url" :"https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf"
+            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/vida-cotidiana1y2ciclos.pdf"    
         }
 
     }
