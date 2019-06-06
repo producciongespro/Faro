@@ -1,0 +1,40 @@
+[
+    {
+        "nombre": "Proyecto de ecología (cambiar)",
+        "desc": "Orientaciones para el desarrollo de un proyecto ecológico (cambiar)",
+        "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/proyecto_ecologia.pdf",
+        "nivel" : "primaria",
+        "materia" : "ciencias"
+      },
+  
+      {
+        "nombre": "Orientaciones para la mediación (cambiar)",
+        "desc": "PPT con ideas metodológicas para la mediación docente (cambiar)",
+        "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/recursos_mediacion.pdf",
+        "nivel" : "primaria",
+        "materia" : "mediacion"
+      },
+  
+      {
+        "nombre": "¿Cómo enseñar a adultos?",
+        "desc": "Vídeo explicativo de los aspectos a considerar durante la atención educativa de estudiantes jóvenes y adultos.",
+        "url": "https://www.youtube.com/watch?v=6p_1uZarJ4o",
+        "nivel" : "primaria",
+        "materia" : "español"
+      },
+      {
+        "nombre": "(video) Imagine Elephants",
+        "desc": "El video se centra en la importancia del juego espontáneo como una de las actividades más importantes que realiza la niñez y que debe ser reconocida por los adultos al comprender qué, por qué es necesario jugar y todo lo que aporta a los niños y niñas.  El video entrevista a más de treinta profesionales del mundo de la educación, la infancia, la psicología, la pedagogía, entre otros.",
+        "url": "http://imaginelephants.com/es/",
+        "nivel" : "preescolar",
+        "materia" : ""
+      },
+  
+      {
+        "nombre": "Tecnoideas",
+        "desc": "En este enlace, la persona docente encontrará elementos para la incorporación de la tecnología en Educación Preescolar.",
+        "url": "https://tecnoideaspreescol.wixsite.com/tecnoideas",
+        "nivel" : "preescolar",
+        "materia" : ""
+      }
+]
