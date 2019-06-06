@@ -10,8 +10,7 @@ var links = dsLinks[0];
 const RecursosDidacticos = (props) => {
   return ( 
     <div className="row">
-
-
+      
       <div className="col-4">
             <img className="titulos img-fluid" src={images[0].RecDidacticosTitulo} alt="Documentos educativos oficiales" />
                <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" /> 
