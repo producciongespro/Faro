@@ -31,6 +31,7 @@ class Catalogo extends Component {
         this.imagenEncabezado = "";
         this.images = ImagesJson[0];
         this.leyendaCursos="";
+        this.colorFondo = "";
     }
 
    
@@ -45,7 +46,8 @@ componentWillMount () {
             this.tmpArray = cursos;
             //carga la referencia para la imagen del encabezado:
             this.imagenEncabezado = "DesarrolloTituloCursosVirt"; 
-            //Leyenda de cursos en Encabezado
+            this.colorFondo = "divRojo col-12";
+                        //Leyenda de cursos en Encabezado
             this.leyendaCursos = (
                 <React.Fragment>                    
                     <strong>
@@ -58,6 +60,7 @@ componentWillMount () {
         case "videoteca":
             this.tmpArray = videoteca;
             this.imagenEncabezado = "DesarrolloTituloVideoteca"; 
+            this.colorFondo = "divAzul col-12";
         break;
         case "pautas":
             //this.tmpArray = otrasOfertas;
@@ -66,6 +69,7 @@ componentWillMount () {
         case "ficha":
             this.tmpArray = otrasOfertas;
             this.imagenEncabezado = "DesarrolloTituloOtrasOfertas"; 
+            this.colorFondo = "divTurqueza col-12";
         break;
         case "preescolar":
             this.tmpArray = recursosPreescolar;
@@ -159,11 +163,10 @@ componentWillMount () {
         return ( 
             <React.Fragment>
             <div className="row">
-                <div className="col-8">
-                    <img className="hvr-pop img-fluid" id="imgTitulo" src={this.images[this.imagenEncabezado]} alt="titulo"/>
-                 </div>
-                 <div className="col-4">
-                    <img className="botones-portada hvr-pop img-fluid derecha" id="btnVolver"   onClick={this.props.handlerCloseCatalog}    src={this.images.BtnVolver} alt="Volver"/>
+                <div id=""  className={this.colorFondo}>
+                    <img className="img-fluid" id="imgTitulo" src={this.images[this.imagenEncabezado]} alt="titulo"/>
+
+                    <img className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver"   onClick={this.props.handlerCloseCatalog}    src={this.images.BtnVolver} alt="Volver"/>
                  </div>
                
              </div>
