@@ -106,17 +106,19 @@ var tipoPoblacion = [
                 "id" : "rurales"
             }
 ]
-//console.log(dataGeneral);
+
 
 
 class Buscador extends Component {
     constructor(props) {
         super(props);
-        this.state = {  };
+        this.state = {
+            tarjetas : []
+          };
         this.materia="";
         this.anno="";
         this.poblacion="";
-        this.apoyos="";
+        this.apoyos="";        
         this.claseCSSMaterias= "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
     }
@@ -148,9 +150,42 @@ handlerObtenerApoyos = (e) => {
         this.apoyos = "si"    
     }  else {
         this.apoyos = ""   
-    } 
+    }    
     
-    
+}
+
+
+
+buscarInfo = () => {
+
+        //console.log(dataGeneral);
+        
+        var arrayHtml;
+        var arrayTmp=[];
+
+        for (let index = 0; index < dataGeneral.length; index++) {
+            if (this.props.origen  ===  dataGeneral[index].nivel  ) {
+
+                console.log( dataGeneral[index].nombre );
+                
+
+                arrayHtml = (
+                    <React.Fragment>
+                        <h5> {dataGeneral[index].nombre  } </h5>
+                        <span>  {dataGeneral[index].desc  }  </span>
+                        <br/>
+                        <a href= {dataGeneral[index].url   }   target="_blank"   rel="noopener noreferrer" >  Ver recurso  </a>
+                        <hr/>
+                    </React.Fragment>
+                )
+                arrayTmp.push(arrayHtml);
+            }
+            
+        };      
+       this.setState({ tarjetas : arrayTmp });
+       
+
+
 }
 
 
@@ -271,13 +306,27 @@ componentWillMount () {
                         </div>
 
                         <div className="col-2">
-                            <button type="button" className="btn btn-secondary btn-lg">
+                            <button onClick={this.buscarInfo}   type="button" className="btn btn-secondary btn-lg">
                                     <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>
 
                         
                     </div>
+
+
+                                    <div className="row">
+                                        <div className="col-12">
+                                                {
+                                                    this.state.tarjetas.map((item, i) => ( 
+                                                        <div key={"tarjeta"+i  } > {item} </div>
+                                                     ))
+                                                }
+                                        </div>
+                                    </div>
+
+
+
                 </div>
 
 
