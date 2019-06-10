@@ -185,9 +185,9 @@ buscarInfo = () => {
         };  
 
         if (arrayTmp.length <= 0  ) {
-            this.mensaje = "No se han encontrado resultados";
+            this.mensaje =   "No se han encontrado resultados.";
         } else {
-            this.mensaje =  ( <React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success" >   {arrayTmp.length}   </span>  </React.Fragment> ) ;
+            this.mensaje =  ( <React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {arrayTmp.length}   </span>  </React.Fragment> ) ;
         }
         
         
@@ -329,9 +329,9 @@ componentWillMount () {
                     <div className="row">
                             <div className="col-12">
                                 
-                                <h5>
-                                    <span className="badge badge-secondary" >  {this.mensaje} </span>
-                                </h5>
+                                <h6>
+                                    {this.mensaje}
+                                </h6>
                             </div>
                     </div>
 
