@@ -486,6 +486,12 @@ padding-top:5%;
   margin-top: 5%;
 }
 
+.boton-volver{
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
 .etiquetas-busquedas{
   background-color: #6c757d;
   color: white;

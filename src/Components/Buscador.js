@@ -217,7 +217,7 @@ componentWillMount () {
                     }
 
                    
-                            <span  onClick={this.props.handlerCerrarBuscador}  className="btn btn-outline-info"  >  Volver </span>
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver"  onClick={this.props.handlerCerrarBuscador}  src={images[0].BtnVolver} alt="Volver"/>
                         </div>
                     </div>
                     
@@ -244,7 +244,7 @@ componentWillMount () {
                         <div className="col-3  ">
                                 <div className="input-group mb-3">
                                         <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
+                                            <label className="input-group-text" htmlFor="selAno">Año</label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                             <option defaultValue >Seleccione un año</option>
