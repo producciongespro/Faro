@@ -214,21 +214,21 @@ componentWillMount () {
             <React.Fragment>
                 <div className="row">
                  
-                <div className="col-12  text-right">   
-                    {
-                        this.props.origen=== "preescolar" &&   <img alt="Preescolar" className="bannerRecursos" src={images[0].RecDidacticosPreescolarBanner}/> 
-                    }
-                    {
-                        this.props.origen=== "primaria" &&   <img alt="Primaria" className="bannerRecursos" src={images[0].RecDidacticosPrimariaBanner}/> 
-                    }
-                    {
-                        this.props.origen=== "secundaria" &&   <img alt="Secundaria" className="bannerRecursos" src={images[0].RecDidacticosSecundariaBanner}/> 
-                    }
+                        <div className="col-12  text-right">   
+                            {
+                                this.props.origen=== "preescolar" &&   <img alt="Preescolar" className="bannerRecursos" src={images[0].RecDidacticosPreescolarBanner}/> 
+                            }
+                            {
+                                this.props.origen=== "primaria" &&   <img alt="Primaria" className="bannerRecursos" src={images[0].RecDidacticosPrimariaBanner}/> 
+                            }
+                            {
+                                this.props.origen=== "secundaria" &&   <img alt="Secundaria" className="bannerRecursos" src={images[0].RecDidacticosSecundariaBanner}/> 
+                            }
 
                    
-                            <span  onClick={this.props.handlerCerrarBuscador}  className="btn btn-outline-info"  >  Volver </span>
+                            <button  onClick={this.props.handlerCerrarBuscador}  className="botones-portada hvr-pop derecha"  >  Volver </button>
                         </div>
-                    </div>
+                </div>
                     
            
 
