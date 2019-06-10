@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import dataGeneral from '../data/recursos/generales.json';
-
+import images from '../data/images.json';
 
 var materias = [ 
             {
@@ -168,17 +168,16 @@ componentWillMount () {
     render() { 
         return ( 
             <React.Fragment>
-                <div className="jumbotron">
-                    <h1>Recursos</h1>
-
+                <div className="">
+                    
                     {
-                        this.props.origen=== "preescolar" &&   <h3>  Educación Preescolar </h3>
+                        this.props.origen=== "preescolar" &&   <img src={images[0].RecDidacticosPreescolarBanner}/> 
                     }
                     {
-                        this.props.origen=== "primaria" &&   <h3>  Educación Primaria </h3>
+                        this.props.origen=== "primaria" &&   <img src={images[0].RecDidacticosPrimariaBanner}/> 
                     }
                     {
-                        this.props.origen=== "secundaria" &&   <h3>  Educación Media </h3>
+                        this.props.origen=== "secundaria" &&   <img src={images[0].RecDidacticosSecundariaBanner}/> 
                     }
 
                     <div className="row">
