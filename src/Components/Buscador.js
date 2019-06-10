@@ -21,7 +21,7 @@ var materias = [
             },
             {
                 "label" :   "Mediación",
-                "id" : "mediacion"
+                "id" : "general"
             }
     
     ];
@@ -119,6 +119,7 @@ class Buscador extends Component {
         this.anno="";
         this.poblacion="";
         this.apoyos="";        
+        this.mensaje="";
         this.claseCSSMaterias= "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
     }
@@ -164,7 +165,7 @@ buscarInfo = () => {
         var arrayTmp=[];
 
         for (let index = 0; index < dataGeneral.length; index++) {
-            if (this.props.origen  ===  dataGeneral[index].nivel  ) {
+            if (this.props.origen  ===  dataGeneral[index].nivel &&   this.materia === dataGeneral[index].materia  ) {
 
                 console.log( dataGeneral[index].nombre );
                 
@@ -181,7 +182,15 @@ buscarInfo = () => {
                 arrayTmp.push(arrayHtml);
             }
             
-        };      
+        };  
+
+        if (arrayTmp.length <= 0  ) {
+            this.mensaje = "No se han encontrado resultados";
+        } else {
+            this.mensaje =  ( <React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success" >   {arrayTmp.length}   </span>  </React.Fragment> ) ;
+        }
+        
+        
        this.setState({ tarjetas : arrayTmp });
        
 
@@ -203,16 +212,16 @@ componentWillMount () {
     render() { 
         return ( 
             <React.Fragment>
-                <div className="">
+                <div className="div-encabezado">
                     
                     {
-                        this.props.origen=== "preescolar" &&   <img src={images[0].RecDidacticosPreescolarBanner}/> 
+                        this.props.origen=== "preescolar" &&   <img src={images[0].RecDidacticosPreescolarBanner} alt="Educación preescolar"/> 
                     }
                     {
-                        this.props.origen=== "primaria" &&   <img src={images[0].RecDidacticosPrimariaBanner}/> 
+                        this.props.origen=== "primaria" &&   <img src={images[0].RecDidacticosPrimariaBanner} alt="Educación primaria" /> 
                     }
                     {
-                        this.props.origen=== "secundaria" &&   <img src={images[0].RecDidacticosSecundariaBanner}/> 
+                        this.props.origen=== "secundaria" &&   <img src={images[0].RecDidacticosSecundariaBanner} alt="Educación media"  /> 
                     }
 
                     <div className="row">
@@ -222,6 +231,8 @@ componentWillMount () {
                     </div>
                     
                 </div>
+
+ 
 
                 <div className="container">
                     <div className="row">
@@ -312,6 +323,16 @@ componentWillMount () {
                         </div>
 
                         
+                    </div>
+
+
+                    <div className="row">
+                            <div className="col-12">
+                                
+                                <h5>
+                                    <span className="badge badge-secondary" >  {this.mensaje} </span>
+                                </h5>
+                            </div>
                     </div>
 
 
