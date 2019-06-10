@@ -30,17 +30,17 @@ const RecursosDidacticos = (props) => {
         <div className="row">
             <div className="col-4 hover12 ladoDer">
               <figure>
-                 <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar  }   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}   alt="Preescolar" />
+                 <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar  }   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}   alt="Preescolar" />
               </figure>
               </div>
             <div className="col-4 hover12 centro">
                 <figure>
-              <img className="btn img-fluid" id="primaria" src= {images[0].RecDidacticosPrimaria  }    data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}   alt="Primaria" />
+              <img className="btn img-fluid" id="primaria" src= {images[0].RecDidacticosPrimaria  }    data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}   alt="Primaria" />
               </figure>
             </div>
             <div className="col-4 hover12 ladoIzq">
                 <figure>
-              <img className="btn img-fluid" id="secundaria" src= {images[0].RecDidacticosSecundaria  }   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}  alt="Secundaria" />
+              <img className="btn img-fluid" id="secundaria" src= {images[0].RecDidacticosSecundaria  }   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Secundaria" />
               </figure>
             </div>
         </div>

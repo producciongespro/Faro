@@ -18,6 +18,8 @@ import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
 import CatalogoWeb from './Components/CatalogoWeb';
 import Catalogo from "./Components/Catalogo";
 import TagsInfo from './Components/Tags_info';
+import Buscador from './Components/Buscador';
+
 
 
 
@@ -47,7 +49,7 @@ class App extends Component {
 componentDidMount ( ) {
     setTimeout(() => {
       this.loadPortada();
-    }, 2000);
+    }, 500);
   }
 
 
@@ -84,7 +86,7 @@ componentDidMount ( ) {
           tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "RecursosDidacticos":
-        tmpComponent = <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+        tmpComponent = <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
       break;
       case "ApoyoClimaAula":
           tmpComponent = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
@@ -113,12 +115,30 @@ componentDidMount ( ) {
   }
 
 
+
+  //Abrir buscador de recursos
+
+  handlerOpenBuscador = (e) => {
+  let origen = e.target.id;
+  //console.log(origen);
+    this.setState({ 
+      currentPage:  <Buscador  origen={origen}  handlerCerrarBuscador={this.handlerCerrarBuscador}  />     });
+  }
+
+  handlerCerrarBuscador = () => {
+    this.setState ({
+      currentPage :  <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
+    }) 
+  }
+
+
+
+
   //Métodos de Programas de estudio ------------------------------------
 
   handlerOpenProgramasEducativos = (e) => {
     const id = e.target.id;
-    console.log("id", id);
-       
+    console.log("id", id);       
     this.setState ({
       currentPage : <TagsInfo   idCat={id}  handlerCloseProgramasEducativos={ () => this.handlerCloseProgramasEducativos (id, e )   } />
     })
