@@ -478,6 +478,26 @@ padding-top:5%;
     width: 23vw;
 }
 
+.bannerRecursos{
+  width: 100%;
+}
+
+#bnt-recursos{
+  margin-top: 5%;
+}
+
+.etiquetas-busquedas{
+  background-color: #6c757d;
+  color: white;
+  font-weight: bold;
+}
+
+.buscadores-materias{
+  background-color: #b3ae9b;
+  color: white;
+  font-weight: bold;
+}
+
 #textoDescripcion3{
     font-size: 1.3vw;
     margin-left: 17%;
