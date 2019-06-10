@@ -212,25 +212,25 @@ componentWillMount () {
     render() { 
         return ( 
             <React.Fragment>
-                <div className="div-encabezado">
-                    
+                <div className="row">
+                 
+                <div className="col-12  text-right">   
                     {
-                        this.props.origen=== "preescolar" &&   <img src={images[0].RecDidacticosPreescolarBanner} alt="Educación preescolar"/> 
+                        this.props.origen=== "preescolar" &&   <img alt="Preescolar" className="bannerRecursos" src={images[0].RecDidacticosPreescolarBanner}/> 
                     }
                     {
-                        this.props.origen=== "primaria" &&   <img src={images[0].RecDidacticosPrimariaBanner} alt="Educación primaria" /> 
+                        this.props.origen=== "primaria" &&   <img alt="Primaria" className="bannerRecursos" src={images[0].RecDidacticosPrimariaBanner}/> 
                     }
                     {
-                        this.props.origen=== "secundaria" &&   <img src={images[0].RecDidacticosSecundariaBanner} alt="Educación media"  /> 
+                        this.props.origen=== "secundaria" &&   <img alt="Secundaria" className="bannerRecursos" src={images[0].RecDidacticosSecundariaBanner}/> 
                     }
 
-                    <div className="row">
-                        <div className="col-12  text-right">
+                   
                             <span  onClick={this.props.handlerCerrarBuscador}  className="btn btn-outline-info"  >  Volver </span>
                         </div>
                     </div>
                     
-                </div>
+           
 
  
 
@@ -239,9 +239,9 @@ componentWillMount () {
                         <div className="col-3">
                                 <div className={this.claseCSSMaterias}   >
                                         <div className="input-group-prepend">
-                                            <label className="input-group-text" htmlFor="selMateria">Materia</label>
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Materia</label>
                                         </div>
-                                        <select className="custom-select" id="selMateria"  onChange={this.handlerobtenerMateria} >
+                                        <select className="custom-select buscadores-materias" id="selMateria"  onChange={this.handlerobtenerMateria} >
                                             <option defaultValue  >Seleccione una materia:</option>
                                             {
                                                 materias.map( (item, i) => (
@@ -255,9 +255,9 @@ componentWillMount () {
                         <div className="col-3  ">
                                 <div className="input-group mb-3">
                                         <div className="input-group-prepend">
-                                            <label className="input-group-text" htmlFor="selAno">Año</label>
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
                                         </div>
-                                        <select className="custom-select" id="selAno" onChange={this.handlerObtenerAnno}  >
+                                        <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                             <option defaultValue >Seleccione un año</option>
 
                                             {

@@ -26,7 +26,7 @@ const RecursosDidacticos = (props) => {
             <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
           </div>
           
-      <div className="col-8">
+      <div id="bnt-recursos" className="col-8">
         <div className="row">
             <div className="col-4 hover12 ladoDer">
               <figure>
