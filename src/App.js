@@ -46,7 +46,7 @@ class App extends Component {
 componentDidMount ( ) {
     setTimeout(() => {
       this.loadPortada();
-    }, 500);
+    }, 2000);
   }
 
 
