@@ -241,7 +241,7 @@ componentWillMount () {
                             }
 
                    
-                            <button  onClick={this.props.handlerCerrarBuscador}  className="botones-portada hvr-pop derecha"  >  Volver </button>
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver"  onClick={this.props.handlerCerrarBuscador}  src={images[0].BtnVolver} alt="Volver"/>
                         </div>
                 </div>
                     
