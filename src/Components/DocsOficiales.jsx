@@ -21,7 +21,7 @@ const DocsOficiales = ( props ) => {
       <div className="col-4">
             <img className="titulos img-fluid" src={images[0].DocsOficialesTitulo } alt="Documentos educativos oficiales" />
                <img  onClick={reproducirSonido} className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
-              <div id="textoDescripcion" className="texto_descripciones text-justify pr-3">
+              <div onClick={ reproducirSonido  }  id="textoDescripcion" className="texto_descripciones text-justify pr-3">
               <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
  

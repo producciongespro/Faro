@@ -464,11 +464,9 @@ padding-top:5%;
     padding-top: 7%;
   }
 
-  #textoDescripcion{
-    
-   
-    position: absolute;
-    
+  #textoDescripcion{   
+   position: absolute;
+   cursor: pointer;    
   }
 
 #textoDescripcion2{
@@ -477,6 +475,7 @@ padding-top:5%;
     position: absolute;
     margin-top: -51%;
     width: 23vw;
+    cursor: pointer;
 }
 
 .bannerRecursos{
