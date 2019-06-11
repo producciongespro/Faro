@@ -39,7 +39,7 @@ const ApoyosEvaluacion = (props) => {
               <div className="botones_salir col-12">
             <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
           </div>
-                <div className="col-7 "><br/><br/>
+                <div id="div-evaluacion" className="col-7 "><br/><br/>
                     <div className="row">
                       <div  className="col-12 col-sin-padding">
                         <figure>
