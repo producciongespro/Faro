@@ -566,6 +566,10 @@ padding-top:5%;
   z-index: 100;
 }
 
+#imgTitulo{
+  margin-left: -15px;
+}
+
 .derecha{
   float: right;
 }
