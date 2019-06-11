@@ -25,7 +25,7 @@ var materias = [
             },
             {
                 "label" :   "Biología",
-                "id" : "ebiologia"
+                "id" : "biologia"
             }        
     
     ];
@@ -164,7 +164,8 @@ handlerObtenerApoyos = (e) => {
 buscarInfo = () => {
 
         //console.log(dataGeneral);
-        console.log("Materia a buscar", this.materia );
+        //console.log("Materia a buscar", this.materia );
+        console.log("Año a buscar", this.anno );
         
         
         var arrayHtml;
@@ -172,14 +173,28 @@ buscarInfo = () => {
 
         for (let index = 0; index < dataGeneral.length; index++) {
 
-            let str = dataGeneral[index].materia;
-            let patt = new RegExp(  this.materia );
-            let res = patt.test(str); 
+            //Expresión regular para materia
+            let strMateria = dataGeneral[index].materia;
+            let pattMateria = new RegExp(  this.materia );
+            let resMateria = pattMateria.test(strMateria);
+
+            //Expresión regular para año
+            let strAnno = dataGeneral[index].anno;
+            let pattAnno = new RegExp(  this.anno );
+            let resAnno = pattAnno.test(strAnno);
+
+           // console.log(  "res Materia",  resMateria   );
+           // console.log("res Año", resAnno );
+            
+                       
+            
 
 
-            if (this.props.origen  ===  dataGeneral[index].nivel  && res  ) {
 
-                console.log( dataGeneral[index].nombre );
+            if (this.props.origen  ===  dataGeneral[index].nivel  &&  resMateria   &&  resAnno  ) {
+
+                console.log( "Nombre del recurso", dataGeneral[index].nombre );
+                console.log( "Año:", dataGeneral[index].anno );
                 
 
                 arrayHtml = (
@@ -189,6 +204,9 @@ buscarInfo = () => {
                         <br/>
                         {
                             this.materia === "" &&   ( <p> <strong>Materia:</strong>  {  dataGeneral[index].materia    }     </p> ) 
+                        } 
+                        {
+                            this.Anno === "" &&   ( <p> <strong>Año:</strong>  {  dataGeneral[index].Anno    }     </p> ) 
                         }                        
                         <a href= {dataGeneral[index].url   }   target="_blank"   rel="noopener noreferrer" >  Ver recurso  </a>
                         <hr/>

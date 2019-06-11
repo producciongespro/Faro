@@ -121,7 +121,7 @@
           "url": "https://youtu.be/nF772Mrco4w",
           "nivel" : "secundaria",
           "materia" : "biologia",
-          "anno" : "1",
+          "anno" : "10",
           "poblacion" : "",
           "apoyos" : ""
         },
@@ -131,9 +131,30 @@
           "url": "https://youtu.be/nF772Mrco4w",
           "nivel" : "secundaria",
           "materia" : "matematica",
-          "anno" : "1",
+          "anno" : "9",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Prueba setimo",
+          "desc": "bla bla bla",
+          "url": "https://youtu.be/nF772Mrco4w",
+          "nivel" : "secundaria",
+          "materia" : "matematica",
+          "anno" : "7",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "segunda prueba de setimos",
+          "desc": "bla bla bla",
+          "url": "https://youtu.be/nF772Mrco4w",
+          "nivel" : "secundaria",
+          "materia" : "Estudios Sociales",
+          "anno" : "7",
           "poblacion" : "",
           "apoyos" : ""
         }
+
 
 ]
