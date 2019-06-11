@@ -22,7 +22,11 @@ var materias = [
             {
                 "label" :   "Mediación",
                 "id" : "general"
-            }
+            },
+            {
+                "label" :   "Biología",
+                "id" : "ebiologia"
+            }        
     
     ];
 
@@ -160,21 +164,32 @@ handlerObtenerApoyos = (e) => {
 buscarInfo = () => {
 
         //console.log(dataGeneral);
+        console.log("Materia a buscar", this.materia );
+        
         
         var arrayHtml;
         var arrayTmp=[];
 
         for (let index = 0; index < dataGeneral.length; index++) {
-            if (this.props.origen  ===  dataGeneral[index].nivel &&   this.materia === dataGeneral[index].materia  ) {
+
+            let str = dataGeneral[index].materia;
+            let patt = new RegExp(  this.materia );
+            let res = patt.test(str); 
+
+
+            if (this.props.origen  ===  dataGeneral[index].nivel  && res  ) {
 
                 console.log( dataGeneral[index].nombre );
                 
 
                 arrayHtml = (
                     <React.Fragment>
-                        <h5> {dataGeneral[index].nombre  } </h5>
-                        <span>  {dataGeneral[index].desc  }  </span>
+                        <h5>    {dataGeneral[index].nombre  } </h5>
+                        <span> <strong>Descripción:</strong>  {dataGeneral[index].desc  }  </span> 
                         <br/>
+                        {
+                            this.materia === "" &&   ( <p> <strong>Materia:</strong>  {  dataGeneral[index].materia    }     </p> ) 
+                        }                        
                         <a href= {dataGeneral[index].url   }   target="_blank"   rel="noopener noreferrer" >  Ver recurso  </a>
                         <hr/>
                     </React.Fragment>
@@ -242,7 +257,7 @@ componentWillMount () {
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Materia</label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selMateria"  onChange={this.handlerobtenerMateria} >
-                                            <option defaultValue  >Seleccione una materia:</option>
+                                            <option defaultValue value="" >Todas</option>
                                             {
                                                 materias.map( (item, i) => (
                                                     <option key={"materia" + i }  value={item.id} >  {item.label  }  </option>
@@ -258,7 +273,7 @@ componentWillMount () {
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
-                                            <option defaultValue >Seleccione un año</option>
+                                            <option defaultValue  value="" > Todos </option>
 
                                             {
                                              this.props.origen === "preescolar" && 

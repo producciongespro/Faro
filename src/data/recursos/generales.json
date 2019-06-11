@@ -114,5 +114,26 @@
           "anno" : "1",
           "poblacion" : "",
           "apoyos" : ""
+        },
+        {
+          "nombre": "La célula",
+          "desc": "fsdfsdfsd",
+          "url": "https://youtu.be/nF772Mrco4w",
+          "nivel" : "secundaria",
+          "materia" : "biologia",
+          "anno" : "1",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "La magia de las funciones",
+          "desc": "bla bla bla",
+          "url": "https://youtu.be/nF772Mrco4w",
+          "nivel" : "secundaria",
+          "materia" : "matematica",
+          "anno" : "1",
+          "poblacion" : "",
+          "apoyos" : ""
         }
+
 ]
