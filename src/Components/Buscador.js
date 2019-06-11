@@ -21,7 +21,7 @@ var materias = [
             },
             {
                 "label" :   "Mediación",
-                "id" : "mediacion"
+                "id" : "general"
             }
     
     ];
@@ -119,6 +119,7 @@ class Buscador extends Component {
         this.anno="";
         this.poblacion="";
         this.apoyos="";        
+        this.mensaje="";
         this.claseCSSMaterias= "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
     }
@@ -164,7 +165,7 @@ buscarInfo = () => {
         var arrayTmp=[];
 
         for (let index = 0; index < dataGeneral.length; index++) {
-            if (this.props.origen  ===  dataGeneral[index].nivel  ) {
+            if (this.props.origen  ===  dataGeneral[index].nivel &&   this.materia === dataGeneral[index].materia  ) {
 
                 console.log( dataGeneral[index].nombre );
                 
@@ -181,7 +182,15 @@ buscarInfo = () => {
                 arrayTmp.push(arrayHtml);
             }
             
-        };      
+        };  
+
+        if (arrayTmp.length <= 0  ) {
+            this.mensaje =   "No se han encontrado resultados.";
+        } else {
+            this.mensaje =  ( <React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {arrayTmp.length}   </span>  </React.Fragment> ) ;
+        }
+        
+        
        this.setState({ tarjetas : arrayTmp });
        
 
@@ -205,23 +214,25 @@ componentWillMount () {
             <React.Fragment>
                 <div className="row">
                  
-                <div className="col-12  text-right">   
-                    {
-                        this.props.origen=== "preescolar" &&   <img alt="Preescolar" class="bannerRecursos" src={images[0].RecDidacticosPreescolarBanner}/> 
-                    }
-                    {
-                        this.props.origen=== "primaria" &&   <img alt="Primaria" class="bannerRecursos" src={images[0].RecDidacticosPrimariaBanner}/> 
-                    }
-                    {
-                        this.props.origen=== "secundaria" &&   <img alt="Secundaria" class="bannerRecursos" src={images[0].RecDidacticosSecundariaBanner}/> 
-                    }
+                        <div className="col-12  text-right">   
+                            {
+                                this.props.origen=== "preescolar" &&   <img alt="Preescolar" className="bannerRecursos" src={images[0].RecDidacticosPreescolarBanner}/> 
+                            }
+                            {
+                                this.props.origen=== "primaria" &&   <img alt="Primaria" className="bannerRecursos" src={images[0].RecDidacticosPrimariaBanner}/> 
+                            }
+                            {
+                                this.props.origen=== "secundaria" &&   <img alt="Secundaria" className="bannerRecursos" src={images[0].RecDidacticosSecundariaBanner}/> 
+                            }
 
                    
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver"  onClick={this.props.handlerCerrarBuscador}  src={images[0].BtnVolver} alt="Volver"/>
                         </div>
-                    </div>
+                </div>
                     
            
+
+ 
 
                 <div className="container">
                     <div className="row">
@@ -244,7 +255,7 @@ componentWillMount () {
                         <div className="col-3  ">
                                 <div className="input-group mb-3">
                                         <div className="input-group-prepend">
-                                            <label className="input-group-text" htmlFor="selAno">Año</label>
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                             <option defaultValue >Seleccione un año</option>
@@ -312,6 +323,16 @@ componentWillMount () {
                         </div>
 
                         
+                    </div>
+
+
+                    <div className="row">
+                            <div className="col-12">
+                                
+                                <h6>
+                                    {this.mensaje}
+                                </h6>
+                            </div>
                     </div>
 
 
