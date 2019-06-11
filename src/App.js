@@ -29,6 +29,37 @@ import descripciones from "./data/descripciones/descripciones.json";
 
 
 
+//audios con instrucciones generales:
+
+var audios = [
+  {
+    "url" : "https://recursos.mep.go.cr/ws_faro/audios/apoyos_clima.mp3",
+    "id" : "clima"
+  },
+  {
+    "url" : "https://recursos.mep.go.cr/ws_faro/audios/apoyos_evaluacion.mp3",
+    "id" : "evaluacion"
+  },
+  {
+    "url" : "https://recursos.mep.go.cr/ws_faro/audios/apoyos_plan.mp3",
+    "id" : "planeamiento"
+  },
+  {
+    "url" : "https://recursos.mep.go.cr/ws_faro/audios/desarrollo_profesional.mp3",
+    "id" : "desarrollo"
+  },
+  {
+    "url" : "https://recursos.mep.go.cr/ws_faro/audios/docs_oficales.mp3",
+    "id" : "oficiales"
+  },
+  {
+    "url" : "https://recursos.mep.go.cr/ws_faro/audios/recursos_didacticos.mp3",
+    "id" : "recursos"
+  }
+]
+
+
+
 
 class App extends Component { 
 
@@ -278,7 +309,15 @@ render() {
     return (      
       <div className="visor" >
             {this.state.currentPage}                          
-            {this.state.modalActive? this.state.modalComponent : "" }        
+            {this.state.modalActive && this.state.modalComponent }        
+
+             {
+               //Insercción de audios:
+               audios.map( (item, i) => (
+                 <audio src={item.url}  id={item.id}  key={item.id}  preload="true" ></audio>
+               ))
+             }             
+            
       </div>
     );
   }

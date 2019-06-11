@@ -7,14 +7,26 @@ import dsZip from "../data/comprimidos.json"
 var pdfs = dsPdfs[0];
 //var links = dsLinks[0];
 var zipDocs = dsZip[0];
+
+const  reproducirSonido = () => {
+  console.log("2Audio");
+  
+  var tmpAudio = document.getElementById("clima");
+  tmpAudio.currentTime = 0;
+  tmpAudio.play();
+}
+
+
+
+
 const ApoyoClimaAula = (props) => {
   return ( 
     <React.Fragment>
     <div className="row">
     
       <div className="col-5">
-            <img className="titulos img-fluid" src={images[0].ApoyoClimaAulaTitulo } alt="Apoyo clima en el aula" />
-               <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion } alt="Descripción" />
+            <img   className="titulos img-fluid" src={images[0].ApoyoClimaAulaTitulo } alt="Apoyo clima en el aula" />
+               <img onClick={ reproducirSonido  }  className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion } alt="Descripción" />
               <div id="textoDescripcion" className="texto_descripciones text-justify pr-3">
               <h2 className='desc'>Descripción:</h2> {props.infoCategory}
               </div>              
