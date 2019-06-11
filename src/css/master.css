@@ -351,17 +351,18 @@ padding-top:5%;
 
   .descripciones{
     margin-top: 28%;
-    
+    cursor: pointer;
   }
 
   .descripciones4{
     margin-top: 5%;
+    cursor: pointer;
     
   }
 
   .descripciones3{
     margin-top: 15%;
-    
+    cursor: pointer;
   }
 
   .centro{

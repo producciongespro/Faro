@@ -9,7 +9,7 @@ var pdfs = dsPdfs[0];
 var zipDocs = dsZip[0];
 
 const  reproducirSonido = () => {
-  console.log("2Audio");
+  console.log("Audio");
   
   var tmpAudio = document.getElementById("clima");
   tmpAudio.currentTime = 0;
@@ -84,6 +84,8 @@ const ApoyoClimaAula = (props) => {
     </div>
     </div>
     </div>
+
+    <audio src="https://recursos.mep.go.cr/ws_faro/audios/apoyos_clima.mp3" id="clima"   preload="true"  ></audio>
    
       </React.Fragment>
    );

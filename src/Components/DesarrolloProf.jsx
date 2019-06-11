@@ -9,6 +9,15 @@ links = dsLinks[0];
 var img = images[0];
 
 
+const  reproducirSonido = () => {
+  console.log("Audio");
+  
+  var tmpAudio = document.getElementById("desarrollo");
+  tmpAudio.currentTime = 0;
+  tmpAudio.play();
+}
+
+
 
 const DesarrolloProf = (props) => {
 
@@ -19,7 +28,7 @@ const DesarrolloProf = (props) => {
 <div className="row">
       <div className="col-5 col-derecha">
             <img className="titulos img-fluid" src={img.DesarrolloTitulo} alt="Documentos educativos oficiales" />
-               <img className="descripciones4 img-fluid" src={img.GeneralCajaDescripcion} alt="Descripción" />
+               <img  onClick={reproducirSonido} className="descripciones4 img-fluid" src={img.GeneralCajaDescripcion} alt="Descripción" />
               <div  id="textoDescripcion" className="texto_descripciones text-justify pr-3" >
               <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
@@ -70,8 +79,7 @@ const DesarrolloProf = (props) => {
   </div>
 <br/>
  
-
-
+    <audio src="https://recursos.mep.go.cr/ws_faro/audios/desarrollo_profesional.mp3" id="desarrollo"   preload="true"  ></audio>
 
       </React.Fragment>      
    );

@@ -8,6 +8,16 @@ var zipFiles = dsZip[0];
 var pdfs = dsPdfs[0];
 //links = dsLinks[0];
 
+
+const  reproducirSonido = () => {
+  console.log("Audio");
+  
+  var tmpAudio = document.getElementById("evaluacion");
+  tmpAudio.currentTime = 0;
+  tmpAudio.play();
+}
+
+
 const ApoyosEvaluacion = (props) => {
   return ( 
     <React.Fragment>
@@ -21,7 +31,7 @@ const ApoyosEvaluacion = (props) => {
                               <img alt="Apoyos para la evaluación" className="img-fluid titulos" src={images[0].EvaluacionTitulo } />
                             </div>
                       </div>
-                      <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion} alt="Descripción" />
+                      <img  onClick={reproducirSonido}  className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion} alt="Descripción" />
                      <div id="textoDescripcion" className="texto_descripciones text-justify pr-3">
                      <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
                      </div>
@@ -74,6 +84,11 @@ const ApoyosEvaluacion = (props) => {
 </div>
 
   </div>
+
+        <audio src="https://recursos.mep.go.cr/ws_faro/audios/apoyos_evaluacion.mp3" id="evaluacion"   preload="true"  ></audio>
+
+
+
   </React.Fragment>
    );
 }

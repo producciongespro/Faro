@@ -7,13 +7,23 @@ import dsPdfs from "../data/pdf.json";
 var pdfs = dsPdfs[0];
 //var links = dsLinks[0];
 
+
+const  reproducirSonido = () => {
+  console.log("Audio");
+  
+  var tmpAudio = document.getElementById("planeamiento");
+  tmpAudio.currentTime = 0;
+  tmpAudio.play();
+}
+
+
 const ApoyosPlan = (props) => {
   return ( 
     <div>
     <div  className="row">
   <div className="col-5">
         <img className="titulos img-fluid" src={images[0].TituloApoyos  } alt="Documentos educativos oficiales" />
-           <img className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
+           <img onClick={reproducirSonido}   className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
           <div id="textoDescripcion" className="texto_descripciones text-justify pr-3">          
           <h2 className='desc'>Descripción:</h2>  {  props.infoCategory }            
           </div>
@@ -57,6 +67,7 @@ const ApoyosPlan = (props) => {
     </div>
 </div>
 <br/><br/>
+<audio src="https://recursos.mep.go.cr/ws_faro/audios/apoyos_plan.mp3" id="planeamiento"   preload="true"  ></audio>
 
  </div>
    );

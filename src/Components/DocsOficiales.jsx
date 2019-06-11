@@ -7,12 +7,20 @@ import pdfJson from "../data/pdf.json";
 const  pdfs = pdfJson[0];
 
 
+const  reproducirSonido = () => {
+  console.log("Audio");
+  
+  var tmpAudio = document.getElementById("oficiales");
+  tmpAudio.currentTime = 0;
+  tmpAudio.play();
+}
+
 const DocsOficiales = ( props ) => {
   return ( 
     <div className="row">
       <div className="col-4">
             <img className="titulos img-fluid" src={images[0].DocsOficialesTitulo } alt="Documentos educativos oficiales" />
-               <img className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
+               <img  onClick={reproducirSonido} className="descripciones img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
               <div id="textoDescripcion" className="texto_descripciones text-justify pr-3">
               <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
@@ -72,6 +80,7 @@ const DocsOficiales = ( props ) => {
          
         </div>
       </div>
+      <audio src="https://recursos.mep.go.cr/ws_faro/audios/docs_oficales.mp3" id="oficiales"   preload="true"  ></audio>
 
     </div>
    );
