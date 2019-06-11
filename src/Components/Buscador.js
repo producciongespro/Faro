@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import dataGeneral from '../data/recursos/generales.json';
 import images from '../data/images.json';
 
-var materias = [ 
+var materiasPrimaria = [ 
             {
                 "label" :   "Matemática",
                 "id" : "matematica"
@@ -22,13 +22,46 @@ var materias = [
             {
                 "label" :   "Mediación",
                 "id" : "general"
-            },
-            {
-                "label" :   "Biología",
-                "id" : "biologia"
-            }        
+            }
+              
     
     ];
+
+var materiasSecundaria = [ 
+        {
+            "label" :   "Matemática",
+            "id" : "matematica"
+        },
+        {
+            "label" :   "Ciencias",
+            "id" : "ciencias"
+        },
+        {
+            "label" :   "Español",
+            "id" : "espanol"
+        },
+        {
+            "label" :   "Estudios sociales",
+            "id" : "estudios"
+        },
+        {
+            "label" :   "Mediación",
+            "id" : "general"
+        },
+        {
+            "label" :   "Biología",
+            "id" : "biologia"
+        },
+        {
+            "label" :   "Química",
+            "id" : "quimica"
+        },
+        {
+            "label" :   "Física",
+            "id" : "fisica"
+        }   
+
+];  
 
 var anoSecundaria = [ 
     {
@@ -142,20 +175,24 @@ handlerObtenerAnno = (e) => {
 
 handlerObtenerPoblacion = (e) => {
     let chk = e.target.checked;
+    console.log(chk);
     if (chk) {
-        
-    }
-    this.poblacion = e.target.value;
-    console.log(this.adultos);    
+        this.poblacion = e.target.value; 
+    } else {
+        this.poblacion = "";
+    }  
+    console.log  ( "Poblacion",    this.poblacion);    
 }
 
 handlerObtenerApoyos = (e) => {
     let chk = e.target.checked;
+    console.log("Valor de apoyos",  chk);
     if (chk) {
         this.apoyos = "si"    
     }  else {
         this.apoyos = ""   
-    }    
+    } 
+    console.log  ( "Apyos",    this.apoyos);      
     
 }
 
@@ -165,8 +202,7 @@ buscarInfo = () => {
 
         //console.log(dataGeneral);
         //console.log("Materia a buscar", this.materia );
-        console.log("Año a buscar", this.anno );
-        
+        //console.log("Año a buscar", this.anno );       
         
         var arrayHtml;
         var arrayTmp=[];
@@ -184,29 +220,37 @@ buscarInfo = () => {
             let resAnno = pattAnno.test(strAnno);
 
            // console.log(  "res Materia",  resMateria   );
-           // console.log("res Año", resAnno );
-            
-                       
-            
+           // console.log("res Año", resAnno );          
+            //console.log("this.apoyos=", this.apoyos  );
+            //console.log( "dataGeneral=", dataGeneral[index].apoyos );
+          
 
 
-
-            if (this.props.origen  ===  dataGeneral[index].nivel  &&  resMateria   &&  resAnno  ) {
-
-                console.log( "Nombre del recurso", dataGeneral[index].nombre );
-                console.log( "Año:", dataGeneral[index].anno );
-                
+            if (this.props.origen  ===  dataGeneral[index].nivel  &&  resMateria   &&  resAnno  && this.poblacion  === dataGeneral[index].poblacion  && this.apoyos ===  dataGeneral[index].apoyos   ) {
+                  
+                //console.log( "Nombre del recurso", dataGeneral[index].nombre );
+                //console.log( "Año:", dataGeneral[index].anno );                
 
                 arrayHtml = (
                     <React.Fragment>
                         <h5>    {dataGeneral[index].nombre  } </h5>
-                        <span> <strong>Descripción:</strong>  {dataGeneral[index].desc  }  </span> 
+                        <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].desc  }  </span> 
                         <br/>
                         {
-                            this.materia === "" &&   ( <p> <strong>Materia:</strong>  {  dataGeneral[index].materia    }     </p> ) 
+                            this.materia === "" &&   ( 
+                                    <React.Fragment>
+                                        <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {  dataGeneral[index].materia    }     </span>   
+                                        <br/> 
+                                    </React.Fragment>
+                                    ) 
                         } 
                         {
-                            this.Anno === "" &&   ( <p> <strong>Año:</strong>  {  dataGeneral[index].Anno    }     </p> ) 
+                            this.anno === "" &&   ( 
+                                <React.Fragment>
+                                    <span> <strong>  <i className="fab fa-diaspora"></i>  Año:</strong>  {  dataGeneral[index].anno    }   </span> 
+                                    <br/>
+                                </React.Fragment>
+                            ) 
                         }                        
                         <a href= {dataGeneral[index].url   }   target="_blank"   rel="noopener noreferrer" >  Ver recurso  </a>
                         <hr/>
@@ -277,7 +321,14 @@ componentWillMount () {
                                         <select className="custom-select buscadores-materias" id="selMateria"  onChange={this.handlerobtenerMateria} >
                                             <option defaultValue value="" >Todas</option>
                                             {
-                                                materias.map( (item, i) => (
+                                                this.props.origen === "primaria" && 
+                                                materiasPrimaria.map( (item, i) => (
+                                                    <option key={"materia" + i }  value={item.id} >  {item.label  }  </option>
+                                                ))
+                                            }
+                                                   {
+                                                this.props.origen === "secundaria" && 
+                                                materiasSecundaria.map( (item, i) => (
                                                     <option key={"materia" + i }  value={item.id} >  {item.label  }  </option>
                                                 ))
                                             }
@@ -329,6 +380,7 @@ componentWillMount () {
                         <div className="col-4">
                             
                         <div className= {this.claseCSSPoblacion }>
+                                
                                 <input className="form-check-input" type="checkbox" value={
                                     this.props.origen==="primaria" ? tipoPoblacion[0].id : tipoPoblacion[1].id
                                 } onClick={this.handlerObtenerPoblacion}  id="chkPoblacion"/>
