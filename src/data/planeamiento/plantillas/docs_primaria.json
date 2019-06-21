@@ -4,7 +4,7 @@
             "nombre" : "Ciencias",            
             "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_ciencias_primaria.pdf",
             "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/plantilla_generica.docx",
-            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/ejemplo_generico.pdf"
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/ejemplo_Ciencias.pdf"
 
         },
         "pPrimaMate" : {
@@ -25,7 +25,7 @@
             "nombre" : "Español",            
             "lineamientos" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/lineamientos/lineamientos_espanol_primaria.pdf",
             "plantilla" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/plantillas/plantilla_generica.docx",
-            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/ejemplo_generico.pdf"
+            "ejemplo" :"https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/plantilla/ejemplos/ejemplo_Espanol.pdf"
 
         },
         "pPrimaEducFisica" : {
