@@ -19,6 +19,7 @@ import CatalogoWeb from './Components/CatalogoWeb';
 import Catalogo from "./Components/Catalogo";
 import TagsInfo from './Components/Tags_info';
 import Buscador from './Components/Buscador';
+import BuscadorPlaneamiento from './Components/BuscadorPlaneamiento';
 
 
 
@@ -77,7 +78,7 @@ componentDidMount ( ) {
         tmpComponent = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
-        tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}     /> 
+        tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
       break;
       case "ApoyosEvaluacion":
           tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}/> 
@@ -130,6 +131,19 @@ componentDidMount ( ) {
 
 
 
+  // ************ Buscador Apoyos Planeamiento  
+
+  handlerOpenBuscadorPlaneamiento = (e) => {
+    this.setState({ currentPage :  <BuscadorPlaneamiento /> });
+  }
+
+  handlerCloseBuscadorPlaneamiento = (e) => {
+    this.setState({ currentPage :  <ApoyosPlan /> });
+  }
+
+
+//************************************
+
 
   //Métodos de Programas de estudio ------------------------------------
 
@@ -137,7 +151,7 @@ componentDidMount ( ) {
     const id = e.target.id;
     console.log("id", id);       
     this.setState ({
-      currentPage : <TagsInfo   idCat={id}  handlerCloseProgramasEducativos={ () => this.handlerCloseProgramasEducativos (id, e )   } />
+      currentPage : <TagsInfo   idCat={id}  handlerCloseProgramasEducativos={ () => this.handlerCloseProgramasEducativos (id, e )   } />      
     })
   }
 

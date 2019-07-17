@@ -1,0 +1,59 @@
+[
+    {
+        "nivel" : "primaria",
+        "grado" : "4",
+        "materia" : "ciencias",
+        "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/ciencias/ciencias-cuarto.pdf"
+    },
+    {
+        "nivel" : "primaria",
+        "grado" : "1",
+        "materia" : "espanol",
+        "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "grado" : "9",
+        "materia" : "artesIndustriales",
+        "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/artes-industriales/noveno.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "grado" : "8",
+        "materia" : "artesIndustriales",
+        "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/artes-industriales/octavo.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "grado" : "7",
+        "materia" : "artesIndustriales",
+        "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/artes-industriales/setimo.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "grado" : "10",
+        "materia" : "biologia",
+        "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/biologia/decimo-undecimo.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "grado" : "11",
+        "materia" : "biologia",
+        "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/biologia/decimo-undecimo.pdf"
+    }
+
+]
