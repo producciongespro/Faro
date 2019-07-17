@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import dataGeneral from '../data/recursos/generales.json';
+import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
 import images from '../data/images.json';
 
 var materiasPrimaria = [
@@ -28,6 +28,10 @@ var materiasPrimaria = [
 ];
 
 var materiasSecundaria = [
+    {
+        "label": "Artes Industriales",
+        "id": "artesIndustriales"
+    },
     {
         "label": "Matemática",
         "id": "matematica"
@@ -149,7 +153,7 @@ class BuscadorPlaneamiento extends Component {
         this.apoyos = "";
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
-        this.claseCSSPoblacion = "form-check";
+        
     }
 
     handlerobtenerNivel = (e) => {
@@ -196,7 +200,7 @@ class BuscadorPlaneamiento extends Component {
 
 
 
-            if (this.props.origen === dataGeneral[index].nivel && resMateria && resAnno && this.poblacion === dataGeneral[index].poblacion && this.apoyos === dataGeneral[index].apoyos) {
+            if (this.state.nivel === dataGeneral[index].nivel && resMateria && resAnno ) {
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
                 //console.log( "Año:", dataGeneral[index].anno );                
@@ -205,24 +209,9 @@ class BuscadorPlaneamiento extends Component {
                     <React.Fragment>
                         <h5>    {dataGeneral[index].nombre} </h5>
                         <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].desc}  </span>
-                        <br />
-                        {
-                            this.materia === "" && (
-                                <React.Fragment>
-                                    <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {dataGeneral[index].materia}     </span>
-                                    <br />
-                                </React.Fragment>
-                            )
-                        }
-                        {
-                            this.anno === "" && (
-                                <React.Fragment>
-                                    <span> <strong>  <i className="fab fa-diaspora"></i>  Año:</strong>  {dataGeneral[index].anno}   </span>
-                                    <br />
-                                </React.Fragment>
-                            )
-                        }
-                        <a href={dataGeneral[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
+                        <br />                 
+                    
+                        <a href={dataGeneral[index].ejemplo} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
                         <hr />
                     </React.Fragment>
                 )

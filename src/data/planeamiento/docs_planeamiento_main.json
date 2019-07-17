@@ -1,7 +1,7 @@
 [
     {
         "nivel" : "primaria",
-        "grado" : "4",
+        "anno" : "4",
         "materia" : "ciencias",
         "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -9,7 +9,7 @@
     },
     {
         "nivel" : "primaria",
-        "grado" : "1",
+        "anno" : "1",
         "materia" : "espanol",
         "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -17,7 +17,7 @@
     },
     {
         "nivel" : "secundaria",
-        "grado" : "9",
+        "anno" : "9",
         "materia" : "artesIndustriales",
         "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -25,7 +25,7 @@
     },
     {
         "nivel" : "secundaria",
-        "grado" : "8",
+        "anno" : "8",
         "materia" : "artesIndustriales",
         "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -33,7 +33,7 @@
     },
     {
         "nivel" : "secundaria",
-        "grado" : "7",
+        "anno" : "7",
         "materia" : "artesIndustriales",
         "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -41,7 +41,7 @@
     },
     {
         "nivel" : "secundaria",
-        "grado" : "10",
+        "anno" : "10",
         "materia" : "biologia",
         "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx",
@@ -49,7 +49,7 @@
     },
     {
         "nivel" : "secundaria",
-        "grado" : "11",
+        "anno" : "11",
         "materia" : "biologia",
         "lineamientos" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx",
