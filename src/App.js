@@ -134,11 +134,13 @@ componentDidMount ( ) {
   // ************ Buscador Apoyos Planeamiento  
 
   handlerOpenBuscadorPlaneamiento = (e) => {
-    this.setState({ currentPage :  <BuscadorPlaneamiento /> });
+    this.setState({ currentPage :  <BuscadorPlaneamiento  handlerCloseBuscadorPlaneamiento = {this.handlerCloseBuscadorPlaneamiento}  /> });
   }
 
   handlerCloseBuscadorPlaneamiento = (e) => {
-    this.setState({ currentPage :  <ApoyosPlan /> });
+    this.setState({ 
+        currentPage :  <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
+    });
   }
 
 

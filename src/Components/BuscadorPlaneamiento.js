@@ -335,7 +335,7 @@ cambiarEtiquetas = (dato) => {
                         <h2>Buscador documentos Apoyos Planeamiento</h2>
                     </div>
                     <div className="col-2">
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarBuscador} src={images[0].BtnVolver} alt="Volver" />
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={images[0].BtnVolver} alt="Volver" />
                     </div>
                 </div>
 
