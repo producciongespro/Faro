@@ -144,7 +144,8 @@ class BuscadorPlaneamiento extends Component {
         super(props);
         this.state = {
             tarjetas: [],
-            nivel: ""
+            nivel: "",
+            buscarActivo : false
         };
 
         this.materia = "";
@@ -171,6 +172,13 @@ class BuscadorPlaneamiento extends Component {
     }
 
 
+    activarBotonBuscar = (e) => {
+        if (e.target.value !== "seleccione") {
+            this.setState({ buscarActivo: true });
+        } else {
+            this.setState({ buscarActivo: false });
+        }
+    }
 
     buscarInfo = () => {
 
@@ -211,13 +219,13 @@ class BuscadorPlaneamiento extends Component {
                         <div className="card">
                             <div className="card-header">
                                 <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                    Nivel:  {dataGeneral[index].nivel}
+                                    Nivel:  {  this.cambiarEtiquetas(dataGeneral[index].nivel)  }
                                 </span>
                                 <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Año: {dataGeneral[index].anno}
+                                    Año: {  this.cambiarEtiquetas(dataGeneral[index].anno) }
                                 </span>
                                 <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Materia: {dataGeneral[index].materia} 
+                                    Materia: { this.cambiarEtiquetas(dataGeneral[index].materia) } 
                                 </span>
                                  
                             </div>
@@ -254,16 +262,70 @@ class BuscadorPlaneamiento extends Component {
 
     }
 
+// Cambio de etieuta según dato ingresado  como propiedad del json
 
-    componentWillMount() {
-
-        console.log("will mount");
-
+cambiarEtiquetas = (dato) => {
+    let salida = "";
+    switch (dato) {
+        case "primaria":
+            salida = "Primaria"
+        break;
+        case "secundaria":
+            salida = "Secundaria"
+        break;
+        case "1":
+            salida = "Primero"
+        break;
+        case "2":
+            salida = "Segundo"
+        break;
+        case "3":
+            salida = "Tercero"
+        break;
+        case "4":
+            salida = "Cuarto"
+        break;
+        case "5":
+            salida = "Quinto"
+        break;
+        case "6":
+            salida = "Sexto"
+        break;
+        case "7":
+            salida = "Sétimo"
+        break;
+        case "8":
+            salida = "Octavo"
+        break;
+        case "9":
+            salida = "Noveno"
+        break;
+        case "10":
+            salida = "Décimo"
+        break;
+        case "11":
+            salida = "Undécimo"
+        break;
+        case "artesIndustriales":
+            salida = "Artes Industriales"
+        break;
+        case "biologia":
+                salida = "Biología"
+        break;
+        case "espanol":
+                salida = "Español"
+        break;
+        case "ciencias":
+                salida = "Ciencias"
+        break;    
+        default:
+            salida = dato;
+            break;
     }
+    return salida;
+}
 
-
-
-
+// *********** fin cambio de eitueta
     render() {
         return (
             <React.Fragment>
@@ -278,19 +340,15 @@ class BuscadorPlaneamiento extends Component {
                 </div>
 
 
-
-
-
                 <div className="container">
                     <div className="row">
-
                         <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerobtenerNivel} >
-                                    <option defaultValue  disabled >Seleccione un valor</option>
+                                <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerobtenerNivel} onClick={this.activarBotonBuscar}  >
+                                    <option defaultValue   value="seleccione" >Seleccione:</option>
                                     <option value="primaria"> Primaria </option>
                                     <option value="secundaria"> Secundaria </option>
                                 </select>
@@ -363,9 +421,12 @@ class BuscadorPlaneamiento extends Component {
 
 
                         <div className="col-3">
-                            <button onClick={this.buscarInfo} type="button" className="btn btn-secondary btn-lg">
-                                <i className="fas fa-search"></i> Buscar
-                            </button>
+                            {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
+                                this.state.buscarActivo && 
+                                    <button onClick={this.buscarInfo} type="button" className="btn btn-secondary btn-lg">
+                                        <i className="fas fa-search"></i> Buscar
+                                    </button>
+                            }
                         </div>
 
 
