@@ -144,16 +144,16 @@ class BuscadorPlaneamiento extends Component {
         super(props);
         this.state = {
             tarjetas: [],
-            nivel : ""
+            nivel: ""
         };
-        
+
         this.materia = "";
         this.anno = "";
         this.poblacion = "";
         this.apoyos = "";
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
-        
+
     }
 
     handlerobtenerNivel = (e) => {
@@ -171,7 +171,7 @@ class BuscadorPlaneamiento extends Component {
     }
 
 
- 
+
     buscarInfo = () => {
 
         //console.log(dataGeneral);
@@ -200,19 +200,40 @@ class BuscadorPlaneamiento extends Component {
 
 
 
-            if (this.state.nivel === dataGeneral[index].nivel && resMateria && resAnno ) {
+            if (this.state.nivel === dataGeneral[index].nivel && resMateria && resAnno) {
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
                 //console.log( "Año:", dataGeneral[index].anno );                
 
                 arrayHtml = (
                     <React.Fragment>
-                        <h5>    {dataGeneral[index].nombre} </h5>
-                        <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].desc}  </span>
-                        <br />                 
-                    
-                        <a href={dataGeneral[index].ejemplo} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
-                        <hr />
+
+                        <div className="card">
+                            <div className="card-header">
+                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                    Nivel:  {dataGeneral[index].nivel}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Año: {dataGeneral[index].anno}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Materia: {dataGeneral[index].materia} 
+                                </span>
+                                 
+                            </div>
+                            <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={dataGeneral[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                <i className="fas fa-file-pdf"></i> Lineamiento                                
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2"  href={dataGeneral[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Plantilla
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={dataGeneral[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Ejemplo
+                                </a>
+                            </div>
+                        </div> 
+                        <br/>                    
                     </React.Fragment>
                 )
                 arrayTmp.push(arrayHtml);
@@ -263,15 +284,15 @@ class BuscadorPlaneamiento extends Component {
                 <div className="container">
                     <div className="row">
 
-                    <div className="col-3">
+                        <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerobtenerNivel} >
-                                    <option defaultValue value="" >Todas</option>
+                                    <option defaultValue  disabled >Seleccione un valor</option>
                                     <option value="primaria"> Primaria </option>
-                                    <option value="secundaria"> Secundaria </option>                                   
+                                    <option value="secundaria"> Secundaria </option>
                                 </select>
                             </div>
                         </div>
@@ -339,7 +360,7 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                         </div>
 
-                    
+
 
                         <div className="col-3">
                             <button onClick={this.buscarInfo} type="button" className="btn btn-secondary btn-lg">

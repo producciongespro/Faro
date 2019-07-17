@@ -10,6 +10,10 @@ body {
   max-width: 70%;
 }
 
+.font-2 {
+  font-size: 1.2em;
+}
+
 .pie-pagina{
   color:#00809B;
   font-size: 0.9rem;
