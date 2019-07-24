@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
+import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
 import images from '../data/images.json';
 
 var materiasPrimaria = [
@@ -26,6 +27,25 @@ var materiasPrimaria = [
 
 
 ];
+
+var materiasPrimariaAdultos = [
+    {
+        "label": "Matemática",
+        "id": "matematica"
+    },
+    {
+        "label": "Ciencias",
+        "id": "ciencias"
+    },
+    {
+        "label": "Español",
+        "id": "espanol"
+    },
+    {
+        "label": "Estudios sociales",
+        "id": "estudios"
+    }
+]
 
 var materiasSecundaria = [
     {
@@ -66,6 +86,92 @@ var materiasSecundaria = [
     }
 
 ];
+
+var materiasCan = [
+    {
+        "label": "Matemática",
+        "id": "matematica"
+    },
+    {
+        "label": "Cívica",
+        "id": "civica"
+    },
+    {
+        "label": "Educación Religiosa",
+        "id": "religion"
+    },
+    {
+        "label": "Ciencias",
+        "id": "ciencias"
+    },
+    {
+        "label": "Desarrollo Humano",
+        "id": "desarrolloHumano"
+    },
+    {
+        "label": "Desarrollo socio laboral",
+        "id": "desarrolloSocioLaboral"
+    },
+    {
+        "label": "Español",
+        "id": "espanol"
+    },
+    {
+        "label": "Estudios sociales",
+        "id": "estudios"
+    },
+    {
+        "label": "Biología",
+        "id": "biologia"
+    },
+    {
+        "label": "Química",
+        "id": "quimica"
+    },
+    {
+        "label": "Física",
+        "id": "fisica"
+    },
+    {
+        "label": "Francés",
+        "id": "frances"
+    },
+    {
+        "label": "Inglés",
+        "id": "ingles"
+    }
+
+];
+
+
+var materiasConed = [
+ 
+    {
+        "label": "Matemática",
+        "id": "matematica"
+    },
+    {
+        "label": "Ciencias",
+        "id": "ciencias"
+    },
+    {
+        "label": "Español",
+        "id": "espanol"
+    },
+    {
+        "label": "Estudios sociales",
+        "id": "estudios"
+    },
+    {
+        "label": "Biología",
+        "id": "biologia"
+    },
+    {
+        "label": "Técnico Básico",
+        "id": "tecnicoBasico"
+    }
+];
+
 
 var anoSecundaria = [
     {
@@ -121,6 +227,57 @@ var annoPrimaria = [
     }
 ];
 
+var annoAdultos = [
+    {
+        "label": "Colegios Académicos Nocturnos (CAN)",
+        "id": "can"
+    },
+    {
+        "label": "Colegio Nacional a Distancia",
+        "id": "coned"
+    },
+    {
+        "label": "Escuelas Nocturnas Nivel I",
+        "id": "en1"
+    },
+    {
+        "label": "Escuelas Nocturnas Nivel II",
+        "id": "en2"
+    },
+    {
+        "label": "Escuelas Nocturnas Nivel III",
+        "id": "en3"
+    },
+    {
+        "label": "Escuelas Nocturnas Nivel IV",
+        "id": "en4"
+    },
+    {
+        "label": "IPEC Cursos libres",
+        "id": "ipecCursosLibre"
+    },  
+    {
+        "label": "Educación Emergente CINDEA ",
+        "id": "ipecEmergente"
+    },  
+    {
+        "label": "IPEC - CINDEA Nivel I",
+        "id": "ipec1"
+    },
+    {
+        "label": "IPEC - CINDEA Nivel II",
+        "id": "ipec2"
+    },  
+    {
+        "label": "IPEC - CINDEA Nivel III",
+        "id": "ipec3"
+    },  
+    {
+        "label": "Móduilos opcionales IPEC-CINDEA",
+        "id": "ipecOpcionales"
+    }  
+];
+
 var annoPrrescolar = [
     {
         "label": "Interactivo I",
@@ -145,11 +302,14 @@ class BuscadorPlaneamiento extends Component {
         this.state = {
             tarjetas: [],
             nivel: "",
+            anno: "",
             buscarActivo : false
         };
-
-        this.materia = "";
-        this.anno = "";
+/*
+        La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
+        educaicón para adultos.  Esta propiedad debe camibar materia
+*/
+        this.materia = "";        
         this.poblacion = "";
         this.apoyos = "";
         this.mensaje = "";
@@ -167,8 +327,8 @@ class BuscadorPlaneamiento extends Component {
     }
 
     handlerObtenerAnno = (e) => {
-        this.anno = e.target.value;
-        console.log(this.anno);
+        this.setState({ anno: e.target.value });        
+        console.log(this.state.anno);
     }
 
 
@@ -184,7 +344,7 @@ class BuscadorPlaneamiento extends Component {
 
         //console.log(dataGeneral);
         //console.log("Materia a buscar", this.materia );
-        //console.log("Año a buscar", this.anno );       
+        //console.log("Año a buscar", this.state.anno );       
 
         var arrayHtml;
         var arrayTmp = [];
@@ -198,7 +358,7 @@ class BuscadorPlaneamiento extends Component {
 
             //Expresión regular para año
             let strAnno = dataGeneral[index].anno;
-            let pattAnno = new RegExp(this.anno);
+            let pattAnno = new RegExp(this.state.anno);
             let resAnno = pattAnno.test(strAnno);
 
             // console.log(  "res Materia",  resMateria   );
@@ -351,30 +511,7 @@ cambiarEtiquetas = (dato) => {
                                     <option defaultValue   value="seleccione" >Seleccione:</option>
                                     <option value="primaria"> Primaria </option>
                                     <option value="secundaria"> Secundaria </option>
-                                </select>
-                            </div>
-                        </div>
-
-
-                        <div className="col-3">
-                            <div className={this.claseCSSMaterias}   >
-                                <div className="input-group-prepend">
-                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Materia</label>
-                                </div>
-                                <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
-                                    <option defaultValue value="" >Todas</option>
-                                    {
-                                        this.state.nivel === "primaria" &&
-                                        materiasPrimaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.state.nivel === "secundaria" &&
-                                        materiasSecundaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
-                                        ))
-                                    }
+                                    <option value="adultos"> Jóvenes y adultos </option>
                                 </select>
                             </div>
                         </div>
@@ -413,11 +550,68 @@ cambiarEtiquetas = (dato) => {
 
                                     }
 
+                                    {
+                                        this.state.nivel === "adultos" &&
+                                        annoAdultos.map((item, i) => (
+                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                        ))
+
+                                    }
+
 
                                 </select>
                             </div>
                         </div>
 
+
+
+
+
+                        <div className="col-3">
+                            <div className={this.claseCSSMaterias}   >
+                                <div className="input-group-prepend">
+                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Materia</label>
+                                </div>
+                                <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
+                                    <option defaultValue value="" >Todas</option>
+                                    {
+                                        this.state.nivel === "primaria" &&
+                                        materiasPrimaria.map((item, i) => (
+                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        ))
+                                    }
+                                    {
+                                        this.state.nivel === "secundaria" &&
+                                        materiasSecundaria.map((item, i) => (
+                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        ))
+                                    }
+                                   {
+                                        this.state.anno === "can" &&
+                                        materiasCan.map((item, i) => (
+                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        ))
+                                    }
+                                    {
+                                        this.state.anno === "coned" &&
+                                        materiasConed.map((item, i) => (
+                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        ))
+                                    }
+                                    {
+                                        this.state.anno === "en1" ||  this.state.anno === "en2" || this.state.anno === "en3"  || this.state.anno === "en4" ?
+                                        materiasPrimariaAdultos.map((item, i) => (
+                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        )) : ""
+                                    }
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+  
 
 
                         <div className="col-3">
