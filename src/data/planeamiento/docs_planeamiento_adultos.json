@@ -409,9 +409,25 @@
     },
     {
         "anno" : "ipec3",        
+        "materia" : "biologia",
+        "nivel" : "adultos",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/biologia/lineamientos.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/biologia/ejemplo.pdf"
+    },
+    {
+        "anno" : "ipec3",        
+        "materia" : "civica",
+        "nivel" : "adultos",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/civica/lineamientos.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/biologia/ejemplo.pdf"
+    },
+    {
+        "anno" : "ipec3",        
         "materia" : "espanol",
         "nivel" : "adultos",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/espanol/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
@@ -419,7 +435,23 @@
         "anno" : "ipec3",        
         "materia" : "estudios",
         "nivel" : "adultos",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/estudios/lineamientos.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "anno" : "ipec3",        
+        "materia" : "filosofia",
+        "nivel" : "adultos",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/filosofia/lineamientos.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "anno" : "ipec3",        
+        "materia" : "fisica",
+        "nivel" : "adultos",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/fisica/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
@@ -427,40 +459,17 @@
         "anno" : "ipec3",        
         "materia" : "matematica",
         "nivel" : "adultos",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/matematica/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "anno" : "ipec4",        
-        "materia" : "ciencias",
+        "anno" : "ipec3",        
+        "materia" : "quimica",
         "nivel" : "adultos",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "anno" : "ipec4",        
-        "materia" : "espanol",
-        "nivel" : "adultos",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "anno" : "ipec4",        
-        "materia" : "estudios",
-        "nivel" : "adultos",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "anno" : "ipec4",        
-        "materia" : "matematica",
-        "nivel" : "adultos",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/matematica/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     }
+    
 ]

@@ -83,7 +83,11 @@ var materiasSecundaria = [
     {
         "label": "Física",
         "id": "fisica"
-    }
+    },
+    {
+        "label": "Filosofía",
+        "id": "filosofia"
+    }    
 
 ];
 
@@ -529,7 +533,10 @@ cambiarEtiquetas = (dato) => {
         break;    
         case "frances":
             salida = "Francés"
-        break;    
+        break; 
+        case "filosofia":
+            salida = "Filosofía"
+        break;            
         case "ingles":
             salida = "Inglés"
         break; 
@@ -582,16 +589,21 @@ cambiarEtiquetas = (dato) => {
         return (
             <React.Fragment>
                 <div className="row">
-
-                    <div className="col-10  text-right">
-                        <h2>Buscador documentos Apoyos Planeamiento</h2>
+                    <div className="col-10  text-right alert alert-secondary">
+                        <h3>Documentos de apoyo al Planeamiento</h3>
                     </div>
                     <div className="col-2">
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={images[0].BtnVolver} alt="Volver" />
                     </div>
                 </div>
 
-
+                <div className="row">
+                    <div className="col-6 font-italic">
+                        Seleccione primero el nivel que desea, posteriormente el año o modalidad, por último seleccione la materia y 
+                        el botón "buscar" para encontrar el resultado deseado.                      
+                    </div>
+                </div>
+                <hr/>
                 <div className="container">
                     <div className="row">
                         <div className="col-3">
