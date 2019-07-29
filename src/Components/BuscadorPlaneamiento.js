@@ -390,19 +390,26 @@ class BuscadorPlaneamiento extends Component {
 
                         <div className="card">
                             {
-                                this.state.nivel !== "adultos" && 
+                                this.state.nivel === "adultos"? 
                                 (
-                                    <div className="card-header">
-                                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                            Nivel:  {  this.cambiarEtiquetas(arrayNivel[index].nivel)  }
-                                        </span>
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Año: {  this.cambiarEtiquetas(arrayNivel[index].anno) }
-                                        </span>
+                                    <div className="card-header">                                                                        
                                         <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                             Materia: { this.cambiarEtiquetas(arrayNivel[index].materia) } 
                                         </span>                                 
                                     </div>
+                                ) : 
+                                (
+                                    <div className="card-header">
+                                    <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                        Nivel:  {  this.cambiarEtiquetas(arrayNivel[index].nivel)  }
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Año: {  this.cambiarEtiquetas(arrayNivel[index].anno) }
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Materia: { this.cambiarEtiquetas(arrayNivel[index].materia) } 
+                                    </span>                                 
+                                </div> 
                                 )
                             }
  
@@ -496,7 +503,35 @@ cambiarEtiquetas = (dato) => {
         break;
         case "ciencias":
                 salida = "Ciencias"
+        break; 
+        case "matematica":
+            salida = "Matemáticas"
         break;    
+        case "estudios":
+            salida = "Estudios Sociales"
+        break;    
+        case "religion":
+            salida = "Religión"
+        break;    
+        case "quimica":
+            salida = "Química"
+        break;    
+        case "fisica":
+            salida = "Física"
+        break;    
+        case "frances":
+            salida = "Francés"
+        break;    
+        case "ingles":
+            salida = "Inglés"
+        break; 
+        case "desarrolloHumano":
+            salida = "Desarrollo Humano"
+        break; 
+        case "tecnicoBasico":
+            salida = "Técnico Básico"
+        break; 
+           
         default:
             salida = dato;
             break;
@@ -538,7 +573,14 @@ cambiarEtiquetas = (dato) => {
                         <div className="col-3  ">
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
-                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
+                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
+                                        {
+                                            this.state.nivel === "adultos" ?                                            
+                                                <span> Modalidad </span>
+                                            :
+                                                <span> Año </span>                                            
+                                        }
+                                    </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                     <option defaultValue value="" > Todos </option>
@@ -589,7 +631,9 @@ cambiarEtiquetas = (dato) => {
                         <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
-                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Materia</label>
+                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
+                                            materia                                        
+                                    </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
                                     <option defaultValue value="" >Todas</option>
