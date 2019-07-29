@@ -172,7 +172,6 @@ var materiasConed = [
     }
 ];
 
-
 var anoSecundaria = [
     {
         "label": "Sétimo",
@@ -392,7 +391,10 @@ class BuscadorPlaneamiento extends Component {
                             {
                                 this.state.nivel === "adultos"? 
                                 (
-                                    <div className="card-header">                                                                        
+                                    <div className="card-header"> 
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Modalidad: {  this.cambiarEtiquetas(arrayNivel[index].anno) }
+                                        </span>                                                                       
                                         <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                             Materia: { this.cambiarEtiquetas(arrayNivel[index].materia) } 
                                         </span>                                 
@@ -530,7 +532,25 @@ cambiarEtiquetas = (dato) => {
         break; 
         case "tecnicoBasico":
             salida = "Técnico Básico"
+        break;
+        case "can":
+            salida = "Colegiogios Académicos Nocturnos"
+        break;  
+        case "coned":
+            salida = "Colegiogio Nacional a Distancia"
         break; 
+        case "en1":
+            salida = "Escuelas nocturnas - nivel I"
+        break;   
+        case "en2":
+            salida = "Escuelas nocturnas - nivel II"
+        break;   
+        case "en3":
+            salida = "Escuelas nocturnas - nivel III"
+        break;   
+        case "en4":
+            salida = "Escuelas nocturnas - nivel IV"
+        break;   
            
         default:
             salida = dato;
