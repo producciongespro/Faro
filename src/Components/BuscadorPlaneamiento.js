@@ -494,6 +494,12 @@ cambiarEtiquetas = (dato) => {
         case "11":
             salida = "Undécimo"
         break;
+        case "ipecOpcionales":
+            salida = "Módulos Opcionales"
+        break;  
+        case "ipecCursosLibre":
+            salida = "IPEC Cursos libres"
+        break;          
         case "artesIndustriales":
             salida = "Artes Industriales"
         break;
@@ -550,7 +556,19 @@ cambiarEtiquetas = (dato) => {
         break;   
         case "en4":
             salida = "Escuelas nocturnas - nivel IV"
-        break;   
+        break;
+        case "ipec1":
+            salida = "IPEC - CINDEA Nivel I"
+        break;    
+        case "ipec2":
+            salida = "IPEC - CINDEA Nivel II"
+        break;    
+        case "ipec3":
+            salida = "IPEC - CINDEA Nivel III"
+        break;    
+        case "ipec4":
+            salida = "IPEC - CINDEA Nivel IV"
+        break;    
            
         default:
             salida = dato;
@@ -684,6 +702,12 @@ cambiarEtiquetas = (dato) => {
                                     {
                                         this.state.anno === "en1" ||  this.state.anno === "en2" || this.state.anno === "en3"  || this.state.anno === "en4" ?
                                         materiasPrimariaAdultos.map((item, i) => (
+                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        )) : ""
+                                    }
+                                    {
+                                        this.state.anno === "ipec1" ||  this.state.anno === "ipec2" || this.state.anno === "ipec3"  || this.state.anno === "ipec4" ?
+                                        materiasSecundaria.map((item, i) => (
                                             <option key={"materia" + i} value={item.id} >  {item.label}  </option>
                                         )) : ""
                                     }
