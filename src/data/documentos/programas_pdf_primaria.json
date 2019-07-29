@@ -5,11 +5,11 @@
             "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/ciencias1y2ciclo2018.pdf"           
         },
         "primaEspa" : {
-            "nombre" : "Español primer ciclo",                        
+            "nombre" : "Español Primer Ciclo",                        
             "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/espanol1ciclo.pdf"
         },
         "primaEspa2" : {
-            "nombre" : "Español segundo ciclo",                        
+            "nombre" : "Español Segundo Ciclo",                        
             "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/espanol2ciclo.pdf"
         },
         "primaMate" : {
@@ -21,12 +21,12 @@
             "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/esocialesecivica1y2ciclo.pdf"            
         },
         "primaIngl" : {
-            "nombre" : "Inglés primer ciclo",                        
+            "nombre" : "Inglés Primer Ciclo",                        
             "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/ingles1ciclo.pdf"
             
         },
         "primaIngl2" : {
-            "nombre" : "Inglés segundo ciclo",                        
+            "nombre" : "Inglés Segundo Ciclo",                        
             "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/ingles_2ciclo.pdf"
             
         },

@@ -5,11 +5,11 @@
     },
     {
         "id" : "InteractivoIIGuiaDocente",
-        "label" : "Guía del docente Programa de Estudio (Interactivo II)"
+        "label" : "Guía del docente programa de estudio (Interactivo II)"
     },
     {
         "id" : "InteractivoIIProgramaEstudio",
-        "label" : "Programa de Estudio de Educación Preescolar (Interactivo II)"
+        "label" : "Programa de estudio de educación preescolar (Interactivo II)"
     },
     {
         "id" : "transicionGuiaDocente",
@@ -17,11 +17,11 @@
     },
     {
         "id" : "transicionProgramaEstudio",
-        "label" : "Programa de Estudio de Educación Preescolar (Transición)"
+        "label" : "Programa de estudio de educación preescolar (Transición)"
     },
     {
         "id" : "transicionIngles",
-        "label" : "Programa de Estudios Inglés Preescolar (Transición)"
+        "label" : "Programa de estudios Inglés en preescolar (Transición)"
     }
    
 ]

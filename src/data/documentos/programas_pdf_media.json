@@ -13,11 +13,11 @@
             "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/esociales3ciclo_diversificada.pdf"
         },
         "mediaBiol" : {
-            "nombre" : "Biología Educación diversificada",                        
+            "nombre" : "Biología Educación Diversificada",                        
             "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/biologia2017.pdf"            
         },
         "mediaQuim" : {
-            "nombre" : "Química Educación diversificada",                        
+            "nombre" : "Química Educación Diversificada",                        
             "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/quimica2018.pdf"            
         },
         "mediaIngl" : {
@@ -69,7 +69,7 @@
             "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/orientacion-nuevo.pdf "
         },
         "mediaEdFi" : {
-            "nombre" : "Educación física",                        
+            "nombre" : "Educación Física",                        
             "url" :"https://www.mep.go.cr/sites/default/files/descargas/programas-de-estudio/educfisica3cicloydiversificada.pdf"
         },
         "mediaIndu" : {
@@ -81,7 +81,7 @@
             "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/educacion-vida-cotidiana.pdf"
         },
         "mediaItal" : {
-            "nombre" : "Italiano Tercer Ciclo y Educación diversificada",                        
+            "nombre" : "Italiano Tercer Ciclo y Educación Diversificada",                        
             "url" :"https://www.mep.go.cr/sites/default/files/programadeestudio/programas/italiano_3ciclo_diversificada.pdf"
         },
         "mediaReli" : {

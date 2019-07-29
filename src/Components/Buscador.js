@@ -4,7 +4,7 @@ import images from '../data/images.json';
 
 var materiasPrimaria = [ 
             {
-                "label" :   "Matemática",
+                "label" :   "Matemáticas",
                 "id" : "matematica"
             },
             {
@@ -16,7 +16,7 @@ var materiasPrimaria = [
                 "id" : "espanol"
             },
             {
-                "label" :   "Estudios sociales",
+                "label" :   "Estudios Sociales",
                 "id" : "estudios"
             },
             {
@@ -29,7 +29,7 @@ var materiasPrimaria = [
 
 var materiasSecundaria = [ 
         {
-            "label" :   "Matemática",
+            "label" :   "Matemáticas",
             "id" : "matematica"
         },
         {
@@ -41,7 +41,7 @@ var materiasSecundaria = [
             "id" : "espanol"
         },
         {
-            "label" :   "Estudios sociales",
+            "label" :   "Estudios Sociales",
             "id" : "estudios"
         },
         {
@@ -139,7 +139,7 @@ var tipoPoblacion = [
                 "id" : "adultos"
             },
             {
-                "label" : "Liceos Rurales",
+                "label" : "Liceos rurales",
                 "id" : "rurales"
             }
 ]

@@ -30,7 +30,7 @@ var materiasPrimaria = [
 
 var materiasPrimariaAdultos = [
     {
-        "label": "Matemática",
+        "label": "Matemáticas",
         "id": "matematica"
     },
     {
@@ -42,7 +42,7 @@ var materiasPrimariaAdultos = [
         "id": "espanol"
     },
     {
-        "label": "Estudios sociales",
+        "label": "Estudios Sociales",
         "id": "estudios"
     }
 ]
@@ -65,7 +65,7 @@ var materiasSecundaria = [
         "id": "espanol"
     },
     {
-        "label": "Estudios sociales",
+        "label": "Estudios Sociales",
         "id": "estudios"
     },
     {
@@ -146,7 +146,6 @@ var materiasCan = [
     }
 
 ];
-
 
 var materiasConed = [
  
