@@ -1,168 +1,168 @@
 [
     {
-        "modalidad" : "can",        
-        "materia" : "biologia",
-        "nivel" : "0",
+        "anno" : "can",         
+        "materia" : "biologia",        
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/can/biologia/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "ciencias",
-        "nivel" : "0",
+        "nivel" : "adultos",        
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/can/ciencias/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
-        "materia" : "civica",
-        "nivel" : "0",
+        "anno" : "can",        
+        "materia" : "civica", 
+        "nivel" : "adultos",       
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/can/civica/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "desarrolloHumano",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "desarrolloSocioLaboral",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "religion",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/can/educacion_religiosa/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "espanol",
-        "nivel" : "0",
+      
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "estudios",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/can/estudios_sociales/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "fisica",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/can/fisica/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "frances",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "ingles",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "matematica",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/can/matematicas/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "can",        
+        "anno" : "can",        
         "materia" : "quimica",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/can/biologia/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "coned",        
+        "anno" : "coned",        
         "materia" : "ciencias",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/coned/ciencias/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "coned",        
+        "anno" : "coned",        
         "materia" : "civica",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/coned/civica/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "coned",        
+        "anno" : "coned",        
         "materia" : "espanol",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/coned/espanol/lineamientos_nuevo.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "coned",        
+        "anno" : "coned",        
         "materia" : "estudios",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/coned/estudios/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "coned",        
+        "anno" : "coned",        
         "materia" : "biologia",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/coned/biologia/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "coned",        
+        "anno" : "coned",        
         "materia" : "ingles",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "coned",        
+        "anno" : "coned",        
         "materia" : "matematica",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/coned/matematicas/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
-        "modalidad" : "coned",        
+        "anno" : "coned",        
         "materia" : "tecnicoBasico",
-        "nivel" : "0",
+        "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"

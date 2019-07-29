@@ -333,6 +333,7 @@ class BuscadorPlaneamiento extends Component {
 
 
     activarBotonBuscar = (e) => {
+        //Activa el botón buscar 
         if (e.target.value !== "seleccione") {
             this.setState({ buscarActivo: true });
         } else {
@@ -341,62 +342,80 @@ class BuscadorPlaneamiento extends Component {
     }
 
     buscarInfo = () => {
+    
+        //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
+        let arrayNivel; 
+        console.log( "Nivel", this.state.nivel );
+        if (this.state.nivel === "adultos" ) {
+            arrayNivel = dataAdultos;
+        } else {
+            arrayNivel = dataGeneral;
+        }
 
-        //console.log(dataGeneral);
-        //console.log("Materia a buscar", this.materia );
-        //console.log("Año a buscar", this.state.anno );       
+
+        console.log(arrayNivel);
+        console.log("Materia a buscar", this.materia );
+        console.log("Año a buscar", this.state.anno );       
 
         var arrayHtml;
         var arrayTmp = [];
 
-        for (let index = 0; index < dataGeneral.length; index++) {
+        for (let index = 0; index < arrayNivel.length; index++) {
 
             //Expresión regular para materia
-            let strMateria = dataGeneral[index].materia;
+            let strMateria = arrayNivel[index].materia;
             let pattMateria = new RegExp(this.materia);
             let resMateria = pattMateria.test(strMateria);
 
             //Expresión regular para año
-            let strAnno = dataGeneral[index].anno;
+            let strAnno = arrayNivel[index].anno;
             let pattAnno = new RegExp(this.state.anno);
             let resAnno = pattAnno.test(strAnno);
+            
 
             // console.log(  "res Materia",  resMateria   );
             // console.log("res Año", resAnno );          
             //console.log("this.apoyos=", this.apoyos  );
-            //console.log( "dataGeneral=", dataGeneral[index].apoyos );
+            //console.log( "arrayNivel=", arrayNivel[index].apoyos );
 
 
 
-            if (this.state.nivel === dataGeneral[index].nivel && resMateria && resAnno) {
+            if (this.state.nivel === arrayNivel[index].nivel && resMateria && resAnno) {
 
-                //console.log( "Nombre del recurso", dataGeneral[index].nombre );
-                //console.log( "Año:", dataGeneral[index].anno );                
+                //console.log( "Nombre del recurso", arrayNivel[index].nombre );
+                //console.log( "Año:", arrayNivel[index].anno );                
 
                 arrayHtml = (
                     <React.Fragment>
 
                         <div className="card">
-                            <div className="card-header">
-                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                    Nivel:  {  this.cambiarEtiquetas(dataGeneral[index].nivel)  }
-                                </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Año: {  this.cambiarEtiquetas(dataGeneral[index].anno) }
-                                </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Materia: { this.cambiarEtiquetas(dataGeneral[index].materia) } 
-                                </span>
-                                 
-                            </div>
+                            {
+                                this.state.nivel !== "adultos" && 
+                                (
+                                    <div className="card-header">
+                                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                            Nivel:  {  this.cambiarEtiquetas(arrayNivel[index].nivel)  }
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Año: {  this.cambiarEtiquetas(arrayNivel[index].anno) }
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Materia: { this.cambiarEtiquetas(arrayNivel[index].materia) } 
+                                        </span>                                 
+                                    </div>
+                                )
+                            }
+ 
+
+
                             <div className="card-body mr-2">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={dataGeneral[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                 <i className="fas fa-file-pdf"></i> Lineamiento                                
                                 </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2"  href={dataGeneral[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2"  href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Plantilla
                                 </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={dataGeneral[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Ejemplo
                                 </a>
                             </div>
