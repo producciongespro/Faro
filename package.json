@@ -7,8 +7,8 @@
     "jquery": "^3.4.1",
     "jstree": "^3.3.8",
     "query": "^0.2.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
   },
   "scripts": {
