@@ -59,7 +59,11 @@ var materiasSecundaria = [
         {
             "label" :   "Física",
             "id" : "fisica"
-        }   
+        },
+        {
+            "label" : "Educación Cívica",
+            "id" : "civica"
+        }    
 
 ];  
 
@@ -218,9 +222,10 @@ buscarInfo = () => {
             let strAnno = dataGeneral[index].anno;
             let pattAnno = new RegExp(  this.anno );
             let resAnno = pattAnno.test(strAnno);
+          
 
            // console.log(  "res Materia",  resMateria   );
-           // console.log("res Año", resAnno );          
+            //console.log("res Año", resAnno );          
             //console.log("this.apoyos=", this.apoyos  );
             //console.log( "dataGeneral=", dataGeneral[index].apoyos );
           

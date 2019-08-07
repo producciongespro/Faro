@@ -455,5 +455,40 @@
           "ciclo" : "2",
           "poblacion" : "",
           "apoyos" : ""
+        },
+        {
+          "nombre": "Cuaderno de actividades de Educación vial",
+          "desc": "Apoya los contenidos de las asignaturas de Cívica, Educación para la Vida Cotidiana y Artes Industriales en los niveles de 7°, 8° y 9° año. Se encuentra constituido por 21 fichas de trabajo que incluyen ejercicios dinámicos para ser desarrollados en periodos de 40 minutos, basados en los contenidos básicos de seguridad vial propuestos por el COSEVI y alineados a la malla curricular.",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/secundaria/civica/educacion_vial_secundaria.pdf",
+          "nivel" : "secundaria",
+          "materia" : "civica",
+          "anno" : "7, 8, 9",
+          "ciclo" : "3",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Estrategias metodológicas para el abordaje de contenidos del programa de Educación Cívica de Tercer Ciclo vinculados a temas de Desarrollo Sostenible y Gestión Integral de Residuos.",
+          "desc": "estrategias metodológicas que responden al enfoque socioconstructivista de los programas de estudio de Educación Cívica; constituye un recurso para que la persona docente pueda construir lecciones significativas para sus estudiantes y, a su vez, actualizar la educación con nuevos enfoques teóricos y prácticos. Dichas estrategias se fundamentan en la política curricular “Educar para una nueva ciudadanía”, los objetivos del desarrollo sostenible, el Programa de Educación para el desarrollo sostenible y la gestión ambiental e institucional y el Programa Nacional de Educación integral en gestión de residuos.",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/secundaria/civica/estrategias_metodologicas_civica.pdf",
+          "nivel" : "secundaria",
+          "materia" : "civica",
+          "anno" : "7, 8, 9",
+          "ciclo" : "3",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Guía Metodológica Educación Vial.",
+          "desc": "No disponible",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/secundaria/civica/guia_metodologica_educ_vial.pdf",
+          "nivel" : "secundaria",
+          "materia" : "civica",
+          "anno" : "7, 8, 9",
+          "ciclo" : "3",
+          "poblacion" : "",
+          "apoyos" : ""
         }
+   
+
 ]
