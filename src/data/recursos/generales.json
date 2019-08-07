@@ -323,5 +323,137 @@
           "ciclo" : "2",
           "poblacion" : "",
           "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente primer año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_docente_1.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "1",
+          "ciclo" : "1",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente segundo año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_docente_2.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "2",
+          "ciclo" : "1",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente tercer año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_docente_3.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "3",
+          "ciclo" : "1",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente cuarto año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_docente_4.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "4",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente quinto año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_docente_5.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "5",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente sexto año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_docente_6.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "6",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante primer año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_estudiante_1.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "1",
+          "ciclo" : "1",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante segundo año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_estudiante_2.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "2",
+          "ciclo" : "1",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante tercer año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_estudiante_3.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "3",
+          "ciclo" : "1",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante cuarto año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_estudiante_4.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "4",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante quinto año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_estudiante_5.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "5",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante sexto año",
+          "desc": "Olimpiada Costarricense de Matemática para Educación Primaria OLCOMEP-2019",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/olimpiadas/cuadernillo_estudiante_6.pdf",
+          "nivel" : "primaria",
+          "materia" : "matematica",
+          "anno" : "6",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
         }
 ]
