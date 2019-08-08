@@ -19,6 +19,10 @@ var materiasPrimaria = [
                 "label" :   "Estudios Sociales",
                 "id" : "estudios"
             },
+			            {
+                "label" :   "Educación Vial",
+                "id" : "educVial"
+            },				
             {
                 "label" :   "Mediación",
                 "id" : "general"

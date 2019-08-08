@@ -127,105 +127,6 @@
           "apoyos" : ""
         },
         {
-          "nombre": "La célula",
-          "desc": "fsdfsdfsd",
-          "url": "https://youtu.be/nF772Mrco4w",
-          "nivel" : "secundaria",
-          "materia" : "biologia",
-          "anno" : "10",
-          "ciclo" : "",
-          "poblacion" : "",
-          "apoyos" : ""
-        },
-        {
-          "nombre": "La magia de las funciones",
-          "desc": "bla bla bla",
-          "url": "https://youtu.be/nF772Mrco4w",
-          "nivel" : "secundaria",
-          "materia" : "matematica",
-          "anno" : "9",
-          "ciclo" : "",
-          "poblacion" : "",
-          "apoyos" : ""
-        },
-        {
-          "nombre": "Prueba setimo",
-          "desc": "bla bla bla",
-          "url": "https://youtu.be/nF772Mrco4w",
-          "nivel" : "secundaria",
-          "materia" : "matematica",
-          "anno" : "7",
-          "ciclo" : "",
-          "poblacion" : "",
-          "apoyos" : ""
-        },
-        {
-          "nombre": "segunda prueba de setimos sin poblacion ni apoyo",
-          "desc": "bla bla bla",
-          "url": "https://youtu.be/nF772Mrco4w",
-          "nivel" : "secundaria",
-          "materia" : "estudios",
-          "anno" : "7",
-          "ciclo" : "",
-          "poblacion" : "",
-          "apoyos" : ""
-        },
-        {
-          "nombre": "segunda prueba de setimos para liceos rurales ",
-          "desc": "bla bla bla",
-          "url": "https://youtu.be/nF772Mrco4w",
-          "nivel" : "secundaria",
-          "materia" : "estudios",
-          "anno" : "7",
-          "ciclo" : "",
-          "poblacion" : "rurales",
-          "apoyos" : ""
-        },
-        {
-          "nombre": "Apoyos 1 ",
-          "desc": "bla bla bla",
-          "url": "https://youtu.be/nF772Mrco4w",
-          "nivel" : "secundaria",
-          "materia" : "estudios",
-          "anno" : "7",
-          "ciclo" : "",
-          "poblacion" : "",
-          "apoyos" : "si"
-        },
-        {
-          "nombre": "Adultos Sociales",
-          "desc": "bla bla bla",
-          "url": "https://youtu.be/nF772Mrco4w",
-          "nivel" : "primaria",
-          "materia" : "estudios",
-          "anno" : "3",
-          "ciclo" : "",
-          "poblacion" : "adultos",
-          "apoyos" : ""
-        },
-        {
-          "nombre": "Apoyos 2 en secudnaria",
-          "desc": "bla bla bla",
-          "url": "https://youtu.be/nF772Mrco4w",
-          "nivel" : "secundaria",
-          "materia" : "matematicas",
-          "anno" : "7",
-          "ciclo" : "",
-          "poblacion" : "",
-          "apoyos" : "si"
-        },
-        {
-          "nombre": "Apoyos 1 en primaria",
-          "desc": "bla bla bla",
-          "url": "https://youtu.be/nF772Mrco4w",
-          "nivel" : "primaria",
-          "materia" : "matematicas",
-          "anno" : "3",
-          "ciclo" : "",
-          "poblacion" : "",
-          "apoyos" : "si"
-        },
-        {
           "nombre": "El círculo cromático",
           "desc": "Video de los colores primarios y secundarios/colores fríos y cálidos.",
           "url": "https://www.youtube.com/watch?v=FN9ycBXKHDY",
@@ -479,13 +380,13 @@
           "apoyos" : ""
         },
         {
-          "nombre": "Guía Metodológica Educación Vial.",
-          "desc": "No disponible",
-          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/secundaria/civica/guia_metodologica_educ_vial.pdf",
-          "nivel" : "secundaria",
-          "materia" : "civica",
-          "anno" : "7, 8, 9",
-          "ciclo" : "3",
+          "nombre": "Alianza para una Mejor Cultura Vial:  Guía Metodológica de Educación Vial para primaria",
+          "desc": "Herramienta didáctica que puede ser utilizada por los docentes u otro tipo de facilitador para trabajar con los estudiantes de primaria la importancia de la seguridad vial. La Guía cuenta con 21 fichas que incluyen dinámicas basadas en los contenidos de seguridad vial propuestos por el COSEVI.",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
+          "nivel" : "primaria",
+          "materia" : "educVial",
+          "anno" : "1, 2, 3, 4, 5, 6 ",
+          "ciclo" : "2",
           "poblacion" : "",
           "apoyos" : ""
         }
