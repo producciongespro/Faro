@@ -122,15 +122,25 @@ class Modal extends Component {
             <div className="row ">
               <div className="col-6 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
-                  <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf documento general"/>
-                  Lineamientos generales 
+                  <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf documento general"/>                 
                 </a>
               </div>
               <div className="col-6 text-center">
-                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
-                <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf jóvenes y adultos"/>
-                  Jóvenes y adultos 
+                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
+                    <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf jóvenes y adultos"/>                  
                 </a>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-6 text-center">
+              <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
+                  Orientaciones para la mediación generales
+                </a>
+              </div>
+              <div className="col-6 text-center">
+              <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
+                  Orientaciones para la mediación jóvenes y adultos
+              </a>
               </div>
             </div>
 
