@@ -42,7 +42,7 @@ const ApoyosPlan = (props) => {
       </div>
       <div className="col-10 hover11 ">
         <figure>
-          <img className="botones-portada derecha img-fluid" id="orientaciones" data-content= {pdfs.Apoyos_Plan_Orientaciones }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Apoyos para el planeamiento" src={images[0].ApoyosGuia  } />
+          <img className="botones-portada derecha img-fluid" id="orientaciones"   data-typecontent ="opcOrientaciones"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Apoyos para el planeamiento" src={images[0].ApoyosGuia  } />
         </figure>
         </div>
       <div className="col-10 hover11 ">

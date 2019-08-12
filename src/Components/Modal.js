@@ -113,6 +113,31 @@ class Modal extends Component {
                         </React.Fragment>
                       )
          break;
+
+      case "opcOrientaciones":
+        // this.modalAncho =  this.modalAncho + " modal-lg";
+        //this.classModalBody = this.classModalBody + " modal-alto";
+        tmpContent = (<React.Fragment>          
+          <div className="container">
+            <div className="row ">
+              <div className="col-6 text-center">
+                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
+                  <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf documento general"/>
+                  Lineamientos generales 
+                </a>
+              </div>
+              <div className="col-6 text-center">
+                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
+                <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf jóvenes y adultos"/>
+                  Jóvenes y adultos 
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </React.Fragment>
+        )
+        break;
          
          case "refUtiles" :
           this.modalAncho =  this.modalAncho + " modal-lg";
