@@ -28,11 +28,19 @@
       "desc": "Plataforma del Ministerio de Educación de España, que ofrece alrededor de 146 cursos bajo diferentes modalidades, algunos de ellos mediados y otros de autoformación tipo Mooc.  Los temas son variados, algunos estas organizados con base en alguno de los proyectos educativos que el mismo ministerio organiza.",
       "url": "http://enlinea.intef.es/courses"
     },
-
-
     {
       "nombre": "Programa de Mejoramiento Profesional",
       "desc": "La plataforma de mejoramiento profesional docente de la UNED ofrece a los administradores y educadores de Educación Preescolar, Primaria y Secundaria estrategias de enseñanza aprendizaje novedosas para la adquisición de una cultura de actualización permanente.  Algunos de estos cursos son en Modalidad presencial, virtual o mixta.",
       "url": "http://www.uned.ac.cr/extension/mejoramientoprofesionaldocente.shtml"
+    },
+	{
+      "nombre": "Plataforma UPE (Fundación Omar Dengo)",
+      "desc": "Desarrollada por la Fundación Omar Dengo, le ofrece a los docentes de diferentes modalidades, un conjunto de oportunidades de capacitación y formación gratuitas, todos los cursos son bajo la modalidad virtual.  Es importante destacar que existen rutas de aprendizaje que abarcan cursos relacionados alrededor de determinada temática.",
+      "url": "https://www.upe.ac.cr/"
+    },
+	{
+      "nombre": "Programa de Extensión de la UNED",
+      "desc": "Este grupo de cursos son ofrecidos por la UNED, mediante su oficina de Acción Social, los precios que tienen son según a la categoría que pertenecen, todo aquellos dentro del proyecto de mejoramiento profesional docente, tienen 40 horas, se pueden matricular en cualquier Centro Universitario de la misma institución y todos los cursos cuentan con cupo mínimo y cupo máximo de participantes.",
+      "url": "https://www.uned.ac.cr/extension/programa-desarrollo-educativo/programa-de-mejoramiento-profesional-docente"
     }
   ]
