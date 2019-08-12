@@ -662,6 +662,9 @@ cambiarEtiquetas = (dato) => {
         case "ipec4":
             salida = "IPEC - CINDEA Nivel IV"
         break;    
+        case "educFisica":
+            salida = "Educación física"
+        break;    
            
         default:
             salida = dato;

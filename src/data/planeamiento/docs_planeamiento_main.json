@@ -86,6 +86,46 @@
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/quimica/plantilla_qumica_10-11.docx",
         "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "7",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica7.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "8",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica8.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "9",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica9.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "10",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica10.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "11",
+        "materia" : "educFisica",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica11.docx",
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
     }
 
 ]
