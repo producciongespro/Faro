@@ -20,11 +20,55 @@ var materiasPrimaria = [
         "label": "Estudios sociales",
         "id": "estudios"
     },
-    {
-        "label": "Mediación",
-        "id": "general"
+	{
+        "label": "Educación física",
+        "id": "educFisica"
+    },
+	{
+        "label": "Artes plásticas",
+        "id": "artPlast"
+    },
+	{
+        "label": "Educación religiosa",
+        "id": "religion"
+    },
+	{
+        "label": "Educación Musical",
+        "id": "musica"
+    },
+	{
+        "label": "Inglés I Ciclo",
+        "id": "ingles1"
+    },
+	{
+        "label": "Inglés II Ciclo",
+        "id": "ingles2"
+    },
+	{
+        "label": "Francés",
+        "id": "frances"
+    },
+	{
+        "label": "Francés secciones biblingües",
+        "id": "francesBilingue"
+    },
+	{
+        "label": "Inglés I Ciclo",
+        "id": "ingles1"
+    },
+	{
+        "label": "Orientación",
+        "id": "orientacion"
+    },
+	{
+        "label": "Artes Industriales",
+        "id": "artIndust"
+    },
+	{
+        "label": "Educación para la vida Cotidiana",
+        "id": "vidaCotidiana"
     }
-
+	
 
 ];
 
@@ -69,10 +113,6 @@ var materiasSecundaria = [
         "id": "estudios"
     },
     {
-        "label": "Mediación",
-        "id": "general"
-    },
-    {
         "label": "Biología",
         "id": "biologia"
     },
@@ -87,8 +127,55 @@ var materiasSecundaria = [
     {
         "label": "Filosofía",
         "id": "filosofia"
-    }    
-
+    },
+{
+        "label": "Educación física",
+        "id": "educFisica"
+    },
+	{
+        "label": "Artes plásticas",
+        "id": "artPlast"
+    },
+	{
+        "label": "Educación Religiosa",
+        "id": "religion"
+    },
+	{
+        "label": "Inglés",
+        "id": "ingles"
+    },
+	{
+        "label": "Francés",
+        "id": "frances"
+    },
+	{
+        "label": "Psicología",
+        "id": "psicologia"
+    },
+	{
+        "label": "Educación Musical",
+        "id": "musica"
+    },
+	{
+        "label": "Educación Cívica",
+        "id": "civica"
+    },
+	{
+        "label": "Educación Musical",
+        "id": "musica"
+    },
+	{
+        "label": "Orienteción",
+        "id": "orientacion"
+    },
+		{
+        "label": "Italiano",
+        "id": "italiano"
+    },
+		{
+        "label": "Educación para la vida cotidiana",
+        "id": "vidaCotidiana"
+    }
 ];
 
 var materiasCan = [
