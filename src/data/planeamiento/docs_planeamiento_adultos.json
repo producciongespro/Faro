@@ -325,7 +325,7 @@
         "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel1/ciencias/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel1/ciencias/ejemplo.pdf"
     },
     {
         "anno" : "ipec1",        
@@ -333,7 +333,7 @@
         "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel1/espanol/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel1/espanol/ejemplo.pdf"
     },
     {
         "anno" : "ipec1",        
@@ -341,7 +341,7 @@
         "nivel" : "adultos",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel1/estudios/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel1/estudios/ejemplo.pdf"
     },
     {
         "anno" : "ipec1",        
@@ -467,9 +467,9 @@
         "anno" : "ipec3",        
         "materia" : "quimica",
         "nivel" : "adultos",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/matematica/lineamientos.pdf",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/quimica/lineamientos.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/jovenes_adultos/ipec_cindea/nivel3/quimica/ejemplo.pdf"
     }
     
 ]
