@@ -1,0 +1,43 @@
+[
+    {
+        "id" : "enero",
+        "etiqueta" : "Enero"
+    },
+    {
+        "id" : "febrero",
+        "etiqueta" : "Febrero"
+    },
+    {
+        "id" : "marzo",
+        "etiqueta" : "Marzo"
+    },
+    {
+        "id" : "abril",
+        "etiqueta" : "Abril"
+    },
+    {
+        "id" : "mayo",
+        "etiqueta" : "Mayo"
+    },
+    {
+        "id" : "junio",
+        "etiqueta" : "Junio"
+    },
+    {
+        "id" : "julio",
+        "etiqueta" : "Julio"
+    },
+    {
+        "id" : "agosto",
+        "etiqueta" : "Agosto"
+    },
+    {
+        "id" : "setiembre",
+        "etiqueta" : "Setiembre"
+    },
+    {
+        "id" : "octubre",
+        "etiqueta" : "Octubre"
+    }   
+
+]

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
 import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
 import images from '../data/images.json';
+import meses from '../data/meses.json';
+import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
 
 var materiasPrimaria = [
     {
@@ -20,55 +22,55 @@ var materiasPrimaria = [
         "label": "Estudios sociales",
         "id": "estudios"
     },
-	{
+    {
         "label": "Educación física",
         "id": "educFisica"
     },
-	{
+    {
         "label": "Artes plásticas",
         "id": "artPlast"
     },
-	{
+    {
         "label": "Educación religiosa",
         "id": "religion"
     },
-	{
+    {
         "label": "Educación Musical",
         "id": "musica"
     },
-	{
+    {
         "label": "Inglés I Ciclo",
         "id": "ingles1"
     },
-	{
+    {
         "label": "Inglés II Ciclo",
         "id": "ingles2"
     },
-	{
+    {
         "label": "Francés",
         "id": "frances"
     },
-	{
+    {
         "label": "Francés secciones biblingües",
         "id": "francesBilingue"
     },
-	{
+    {
         "label": "Inglés I Ciclo",
         "id": "ingles1"
     },
-	{
+    {
         "label": "Orientación",
         "id": "orientacion"
     },
-	{
+    {
         "label": "Artes Industriales",
         "id": "artIndust"
     },
-	{
+    {
         "label": "Educación para la vida Cotidiana",
         "id": "vidaCotidiana"
     }
-	
+
 
 ];
 
@@ -128,51 +130,51 @@ var materiasSecundaria = [
         "label": "Filosofía",
         "id": "filosofia"
     },
-{
+    {
         "label": "Educación física",
         "id": "educFisica"
     },
-	{
+    {
         "label": "Artes plásticas",
         "id": "artPlast"
     },
-	{
+    {
         "label": "Educación Religiosa",
         "id": "religion"
     },
-	{
+    {
         "label": "Inglés",
         "id": "ingles"
     },
-	{
+    {
         "label": "Francés",
         "id": "frances"
     },
-	{
+    {
         "label": "Psicología",
         "id": "psicologia"
     },
-	{
+    {
         "label": "Educación Musical",
         "id": "musica"
     },
-	{
+    {
         "label": "Educación Cívica",
         "id": "civica"
     },
-	{
+    {
         "label": "Educación Musical",
         "id": "musica"
     },
-	{
+    {
         "label": "Orienteción",
         "id": "orientacion"
     },
-		{
+    {
         "label": "Italiano",
         "id": "italiano"
     },
-		{
+    {
         "label": "Educación para la vida cotidiana",
         "id": "vidaCotidiana"
     }
@@ -235,7 +237,7 @@ var materiasCan = [
 ];
 
 var materiasConed = [
- 
+
     {
         "label": "Matemática",
         "id": "matematica"
@@ -344,11 +346,11 @@ var annoAdultos = [
     {
         "label": "IPEC Cursos libres",
         "id": "ipecCursosLibre"
-    },  
+    },
     {
         "label": "Educación Emergente CINDEA ",
         "id": "ipecEmergente"
-    },  
+    },
     {
         "label": "IPEC - CINDEA Nivel I",
         "id": "ipec1"
@@ -356,15 +358,15 @@ var annoAdultos = [
     {
         "label": "IPEC - CINDEA Nivel II",
         "id": "ipec2"
-    },  
+    },
     {
         "label": "IPEC - CINDEA Nivel III",
         "id": "ipec3"
-    },  
+    },
     {
         "label": "Móduilos opcionales IPEC-CINDEA",
         "id": "ipecOpcionales"
-    }  
+    }
 ];
 
 var annoPrrescolar = [
@@ -392,17 +394,20 @@ class BuscadorPlaneamiento extends Component {
             tarjetas: [],
             nivel: "",
             anno: "",
-            buscarActivo : false
+            buscarActivo: false,
+            // En etiqueta es asgintarua. Dependiendo de la asignatura se despliega información en la GUI
+            materia: ""
         };
-/*
-        La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
-        educaicón para adultos.  Esta propiedad debe camibar materia
-*/
-        this.materia = "";        
+        /*
+                La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
+                educaicón para adultos.  Esta propiedad debe camibar materia
+        */
+
         this.poblacion = "";
         this.apoyos = "";
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
+        this.cambiarEtiquetas = cambiarEtiquetas;
 
     }
 
@@ -411,12 +416,13 @@ class BuscadorPlaneamiento extends Component {
     }
 
     handlerobtenerMateria = (e) => {
-        this.materia = e.target.value;
-        console.log(this.materia);
+        this.setState({
+            materia: e.target.value
+        });
     }
 
     handlerObtenerAnno = (e) => {
-        this.setState({ anno: e.target.value });        
+        this.setState({ anno: e.target.value });
         console.log(this.state.anno);
     }
 
@@ -431,11 +437,11 @@ class BuscadorPlaneamiento extends Component {
     }
 
     buscarInfo = () => {
-    
+
         //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
-        let arrayNivel; 
-        console.log( "Nivel", this.state.nivel );
-        if (this.state.nivel === "adultos" ) {
+        let arrayNivel;
+        console.log("Nivel", this.state.nivel);
+        if (this.state.nivel === "adultos") {
             arrayNivel = dataAdultos;
         } else {
             arrayNivel = dataGeneral;
@@ -443,8 +449,8 @@ class BuscadorPlaneamiento extends Component {
 
 
         console.log(arrayNivel);
-        console.log("Materia a buscar", this.materia );
-        console.log("Año a buscar", this.state.anno );       
+        console.log("Materia a buscar", this.state.materia);
+        console.log("Año a buscar", this.state.anno);
 
         var arrayHtml;
         var arrayTmp = [];
@@ -453,14 +459,14 @@ class BuscadorPlaneamiento extends Component {
 
             //Expresión regular para materia
             let strMateria = arrayNivel[index].materia;
-            let pattMateria = new RegExp(this.materia);
+            let pattMateria = new RegExp(this.state.materia);
             let resMateria = pattMateria.test(strMateria);
 
             //Expresión regular para año
             let strAnno = arrayNivel[index].anno;
             let pattAnno = new RegExp(this.state.anno);
             let resAnno = pattAnno.test(strAnno);
-            
+
 
             // console.log(  "res Materia",  resMateria   );
             // console.log("res Año", resAnno );          
@@ -479,47 +485,47 @@ class BuscadorPlaneamiento extends Component {
 
                         <div className="card">
                             {
-                                this.state.nivel === "adultos"? 
-                                (
-                                    <div className="card-header"> 
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Modalidad: {  this.cambiarEtiquetas(arrayNivel[index].anno) }
-                                        </span>                                                                       
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Materia: { this.cambiarEtiquetas(arrayNivel[index].materia) } 
-                                        </span>                                 
-                                    </div>
-                                ) : 
-                                (
-                                    <div className="card-header">
-                                    <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                        Nivel:  {  this.cambiarEtiquetas(arrayNivel[index].nivel)  }
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Año: {  this.cambiarEtiquetas(arrayNivel[index].anno) }
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Materia: { this.cambiarEtiquetas(arrayNivel[index].materia) } 
-                                    </span>                                 
-                                </div> 
-                                )
+                                this.state.nivel === "adultos" ?
+                                    (
+                                        <div className="card-header">
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Modalidad: {this.cambiarEtiquetas(arrayNivel[index].anno)}
+                                            </span>
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Materia: {this.cambiarEtiquetas(arrayNivel[index].materia)}
+                                            </span>
+                                        </div>
+                                    ) :
+                                    (
+                                        <div className="card-header">
+                                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                                Nivel:  {this.cambiarEtiquetas(arrayNivel[index].nivel)}
+                                            </span>
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Año: {this.cambiarEtiquetas(arrayNivel[index].anno)}
+                                            </span>
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Asignatura: {this.cambiarEtiquetas(arrayNivel[index].materia)}
+                                            </span>
+                                        </div>
+                                    )
                             }
- 
+
 
 
                             <div className="card-body mr-2">
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                <i className="fas fa-file-pdf"></i> Lineamiento                                
+                                    <i className="fas fa-file-pdf"></i> Lineamiento
                                 </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2"  href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Plantilla
                                 </a>
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Ejemplo
                                 </a>
                             </div>
-                        </div> 
-                        <br/>                    
+                        </div>
+                        <br />
                     </React.Fragment>
                 )
                 arrayTmp.push(arrayHtml);
@@ -540,143 +546,15 @@ class BuscadorPlaneamiento extends Component {
 
     }
 
-// Cambio de etieuta según dato ingresado  como propiedad del json
+    // Cambio de etieuta según dato ingresado  como propiedad del json
 
-cambiarEtiquetas = (dato) => {
-    let salida = "";
-    switch (dato) {
-        case "primaria":
-            salida = "Primaria"
-        break;
-        case "secundaria":
-            salida = "Secundaria"
-        break;
-        case "1":
-            salida = "Primero"
-        break;
-        case "2":
-            salida = "Segundo"
-        break;
-        case "3":
-            salida = "Tercero"
-        break;
-        case "4":
-            salida = "Cuarto"
-        break;
-        case "5":
-            salida = "Quinto"
-        break;
-        case "6":
-            salida = "Sexto"
-        break;
-        case "7":
-            salida = "Sétimo"
-        break;
-        case "8":
-            salida = "Octavo"
-        break;
-        case "9":
-            salida = "Noveno"
-        break;
-        case "10":
-            salida = "Décimo"
-        break;
-        case "11":
-            salida = "Undécimo"
-        break;
-        case "ipecOpcionales":
-            salida = "Módulos Opcionales"
-        break;  
-        case "ipecCursosLibre":
-            salida = "IPEC Cursos libres"
-        break;          
-        case "artesIndustriales":
-            salida = "Artes Industriales"
-        break;
-        case "biologia":
-                salida = "Biología"
-        break;
-        case "espanol":
-                salida = "Español"
-        break;
-        case "ciencias":
-                salida = "Ciencias"
-        break; 
-        case "matematica":
-            salida = "Matemáticas"
-        break;    
-        case "estudios":
-            salida = "Estudios Sociales"
-        break;    
-        case "religion":
-            salida = "Religión"
-        break;    
-        case "quimica":
-            salida = "Química"
-        break;    
-        case "fisica":
-            salida = "Física"
-        break;    
-        case "frances":
-            salida = "Francés"
-        break; 
-        case "filosofia":
-            salida = "Filosofía"
-        break;            
-        case "ingles":
-            salida = "Inglés"
-        break; 
-        case "desarrolloHumano":
-            salida = "Desarrollo Humano"
-        break; 
-        case "tecnicoBasico":
-            salida = "Técnico Básico"
-        break;
-        case "can":
-            salida = "Colegiogios Académicos Nocturnos"
-        break;  
-        case "coned":
-            salida = "Colegiogio Nacional a Distancia"
-        break; 
-        case "en1":
-            salida = "Escuelas nocturnas - nivel I"
-        break;   
-        case "en2":
-            salida = "Escuelas nocturnas - nivel II"
-        break;   
-        case "en3":
-            salida = "Escuelas nocturnas - nivel III"
-        break;   
-        case "en4":
-            salida = "Escuelas nocturnas - nivel IV"
-        break;
-        case "ipec1":
-            salida = "IPEC - CINDEA Nivel I"
-        break;    
-        case "ipec2":
-            salida = "IPEC - CINDEA Nivel II"
-        break;    
-        case "ipec3":
-            salida = "IPEC - CINDEA Nivel III"
-        break;    
-        case "ipec4":
-            salida = "IPEC - CINDEA Nivel IV"
-        break;    
-        case "educFisica":
-            salida = "Educación física"
-        break;    
-           
-        default:
-            salida = dato;
-            break;
-    }
-    return salida;
-}
 
-// *********** fin cambio de eitueta
+
+    // *********** fin cambio de eitueta
     render() {
         return (
             <React.Fragment>
+
                 <div className="row">
                     <div className="col-10  text-right alert alert-secondary">
                         <h3>Documentos de apoyo al Planeamiento</h3>
@@ -688,36 +566,37 @@ cambiarEtiquetas = (dato) => {
 
                 <div className="row">
                     <div className="col-6 font-italic">
-                        Seleccione primero el nivel que desea, posteriormente el año o modalidad, por último seleccione la materia y 
-                        el botón "buscar" para encontrar el resultado deseado.                      
+                        Seleccione primero el nivel que desea, posteriormente el año o modalidad, por último seleccione la materia y
+                        el botón "buscar" para encontrar el resultado deseado.
                     </div>
-                </div>
-                <hr/>
+                </div> <hr />
+
                 <div className="container">
                     <div className="row">
+                        {/*******Coluimna 1*********/}
                         <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerobtenerNivel} onClick={this.activarBotonBuscar}  >
-                                    <option defaultValue   value="seleccione" >Seleccione:</option>
+                                    <option defaultValue value="seleccione" >Seleccione:</option>
                                     <option value="primaria"> Primaria </option>
                                     <option value="secundaria"> Secundaria </option>
                                     <option value="adultos"> Jóvenes y adultos </option>
                                 </select>
                             </div>
                         </div>
-
+                        {/*******Coluimna 2*********/}
                         <div className="col-3  ">
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
                                         {
-                                            this.state.nivel === "adultos" ?                                            
+                                            this.state.nivel === "adultos" ?
                                                 <span> Modalidad </span>
-                                            :
-                                                <span> Año </span>                                            
+                                                :
+                                                <span> Año </span>
                                         }
                                     </label>
                                 </div>
@@ -735,7 +614,6 @@ cambiarEtiquetas = (dato) => {
 
                                     {
                                         this.state.nivel === "primaria" &&
-
                                         annoPrimaria.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.label}  </option>
                                         ))
@@ -762,16 +640,12 @@ cambiarEtiquetas = (dato) => {
                                 </select>
                             </div>
                         </div>
-
-
-
-
-
-                        <div className="col-3">
+                            {/*******Coluimna 3*********/}
+                           <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
-                                            materia                                        
+                                        Asignatura
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
@@ -788,7 +662,7 @@ cambiarEtiquetas = (dato) => {
                                             <option key={"materia" + i} value={item.id} >  {item.label}  </option>
                                         ))
                                     }
-                                   {
+                                    {
                                         this.state.anno === "can" &&
                                         materiasCan.map((item, i) => (
                                             <option key={"materia" + i} value={item.id} >  {item.label}  </option>
@@ -801,16 +675,16 @@ cambiarEtiquetas = (dato) => {
                                         ))
                                     }
                                     {
-                                        this.state.anno === "en1" ||  this.state.anno === "en2" || this.state.anno === "en3"  || this.state.anno === "en4" ?
-                                        materiasPrimariaAdultos.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
-                                        )) : ""
+                                        this.state.anno === "en1" || this.state.anno === "en2" || this.state.anno === "en3" || this.state.anno === "en4" ?
+                                            materiasPrimariaAdultos.map((item, i) => (
+                                                <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                            )) : ""
                                     }
                                     {
-                                        this.state.anno === "ipec1" ||  this.state.anno === "ipec2" || this.state.anno === "ipec3"  || this.state.anno === "ipec4" ?
-                                        materiasSecundaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
-                                        )) : ""
+                                        this.state.anno === "ipec1" || this.state.anno === "ipec2" || this.state.anno === "ipec3" || this.state.anno === "ipec4" ?
+                                            materiasSecundaria.map((item, i) => (
+                                                <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                            )) : ""
                                     }
 
 
@@ -819,19 +693,46 @@ cambiarEtiquetas = (dato) => {
                             </div>
                         </div>
 
-  
 
 
+                        {/* Columna 4 de select del mes*/}
                         <div className="col-3">
-                            {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
-                                this.state.buscarActivo && 
-                                    <button onClick={this.buscarInfo} type="button" className="btn btn-secondary btn-lg">
-                                        <i className="fas fa-search"></i> Buscar
-                                    </button>
+                            {
+                                this.state.materia === "espanol" &&
+                                (
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                Mes
+                                        </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerAnno}  >
+                                            <option defaultValue value="seleccione" >Seleccione:</option>
+                                            {
+                                                meses.map((item, index) =>(
+                                                    <option key={"mes"+index} value={item.id}> {item.etiqueta} </option>
+                                                 ))
+                                            }
+                                        </select>
+                                    </div>
+                                )
                             }
+
+
                         </div>
 
 
+                    </div>
+
+                    <div className="row">
+                        <div className="col-12 text-right">
+                            {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
+                                this.state.buscarActivo &&
+                                <button onClick={this.buscarInfo} type="button" className="btn btn-secondary btn-lg">
+                                    <i className="fas fa-search"></i> Buscar
+                                    </button>
+                            }
+                        </div>
                     </div>
 
 
