@@ -3,6 +3,7 @@ import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
 import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
 import images from '../data/images.json';
 import meses from '../data/meses.json';
+import secundariaEspanol from '../data/planeamiento/plantillas/secundaria_espanol.json';
 import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
 
 var materiasPrimaria = [
@@ -385,6 +386,7 @@ var annoPrrescolar = [
 
 ]
 
+console.log("Secudnaria español", secundariaEspanol );
 
 
 class BuscadorPlaneamiento extends Component {

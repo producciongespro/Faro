@@ -1,5 +1,7 @@
 [
    {
+   "nivel" : "7", 
+   "mes" : "Enero",
     "lineamientos" : "https://www.nacion.com/",
     "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
     "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
@@ -8,11 +10,23 @@
     "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
    },
    {
+   "nivel" : "7", 
+   "mes" : "Febrero",
     "lineamientos" : "https://www.nacion.com/",
     "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
     "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
     "novela" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
     "transversal" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
     "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
+   },
+   {
+      "nivel" : "8", 
+      "mes" : "Enero",
+       "lineamientos" : "https://www.nacion.com/",
+       "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
+       "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
+       "novela" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
+       "transversal" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
+       "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
    }
 ]

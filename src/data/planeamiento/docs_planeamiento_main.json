@@ -93,7 +93,9 @@
         "materia" : "educFisica",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica7.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf",
+        "etiquetas" : ["plan", ]
+
     },
     {
         "nivel" : "secundaria",
