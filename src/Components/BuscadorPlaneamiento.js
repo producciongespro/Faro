@@ -404,7 +404,7 @@ class BuscadorPlaneamiento extends Component {
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
                 educaicón para adultos.  Esta propiedad debe camibar materia
         */
-
+        this.mes="";
         this.poblacion = "";
         this.apoyos = "";
         this.mensaje = "";
@@ -427,6 +427,10 @@ class BuscadorPlaneamiento extends Component {
         this.setState({ anno: e.target.value });
     }
 
+    handlerObtenerMes = (e) => {
+        this.mes = e.target.value;
+    }
+
 
     activarBotonBuscar = (e) => {
         //Activa el botón buscar 
@@ -441,7 +445,8 @@ class BuscadorPlaneamiento extends Component {
     cargarInformacionBusqueda = () => {
         //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
         let arrayNivel;
-        console.log("Nivel", this.state.nivel);
+        console.log("***Nivel", this.state.nivel);
+        console.log("***Mes", this.mes);
 
         if (this.state.nivel === "adultos") {
             console.log("Seleccion: Adultos");
@@ -523,10 +528,33 @@ class BuscadorPlaneamiento extends Component {
 
                             {
                                 //Renderizado del cuerpo de las tarjetas:
-                                this.state.nivel !== "secundaria" ?
-                                    (
-                                        <React.Fragment>
-                                            <div className="card-body mr-2">
+                                this.state.nivel === "secundaria" && this.state.materia === "espanol" ?
+                                     // Filtrado de tarjetas de español secundaria por mes                                  
+                                     this.mes === arrayNivel[index].mes && (
+                                        <div className="card-body mr-2">
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamientos} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Lineamientos
+                                        </a>
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Lectura
+                                        </a>
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Monografía
+                                        </a>
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].novela} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Novela
+                                        </a>
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Trasnversal
+                                        </a>
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Mensual
+                                        </a>                                            
+                                    </div> 
+                                     )                                                                                                 
+                                     : ( 
+                                        // Renderizado para los que no son secudnaria español 
+                                        <div className="card-body mr-2">
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Lineamiento
                                                 </a>
@@ -536,33 +564,9 @@ class BuscadorPlaneamiento extends Component {
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Ejemplo
                                                 </a>
-                                            </div>
-                                        </React.Fragment>
-                                    ) :
-                                    (
-                                        <div className="card-body mr-2">
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamientos} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Lineamientos
-                                            </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lectura} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Lectura
-                                            </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].monografia} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Monografía
-                                            </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].novela} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Novela
-                                            </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].transversal} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Trasnversal
-                                            </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].mensual} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Mensual
-                                            </a>
-
-                                            
-                                        </div>
-                                    )
+                                            </div>                                                
+                                    )  
+                                    
                             }
 
 
@@ -746,7 +750,7 @@ class BuscadorPlaneamiento extends Component {
                                                 Mes
                                         </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerAnno}  >
+                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
                                             <option defaultValue value="seleccione" >Seleccione:</option>
                                             {
                                                 meses.map((item, index) => (
