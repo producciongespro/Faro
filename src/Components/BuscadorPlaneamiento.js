@@ -381,9 +381,9 @@ var annoPrrescolar = [
         "id": "3"
     }
 
-]
+];
 
-var planEstudiosFrances = [
+var planEstudiosFrancesPrimaria = [
     {
         "id" : "extranjeraFrances",
         "etiqueta" : "Francés como lengua extranjera-Francés"
@@ -408,6 +408,17 @@ var planEstudiosFrances = [
         "id" : "bilingueMatematica",
         "etiqueta" : "Secciones Bilingües Español-Francés: Matemáticas"
     },
+];
+
+var planEstudiosFrancesSecundaria = [
+    {
+        "id" : "lenguaExtranjera",
+        "etiqueta" : "Francés como lengua extranjera"
+    },
+    {
+        "id" : "francesAvanzado",
+        "etiqueta" : "Secciones de Francés avanzado"
+    }    
 ]
 
 //console.log("Secudnaria frances", dataFrances );
@@ -495,8 +506,7 @@ class BuscadorPlaneamiento extends Component {
             //console.log("Seleccion: espanolSecundaria");
             arrayNivel = dataSecundariaEspanol;
         }
-        if (this.state.materia === "frances" && this.state.nivel === "primaria") {
-            //console.log("Seleccion: espanolSecundaria");
+        if (this.state.materia === "frances") {            
             arrayNivel = dataFrances;
         }
 
@@ -562,7 +572,8 @@ class BuscadorPlaneamiento extends Component {
                                                 Asignatura: {this.cambiarEtiquetas(arrayNivel[index].materia)}
                                             </span>
                                             {
-                                              (this.state.nivel === "primaria"  && this.state.materia === "frances"  ) && 
+                                                //Plan de estudio en caso de frances e inglés
+                                              ( this.state.materia === "frances" || this.state.materia === "ingles" ) && 
                                               (
                                                 <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                                     Plan: {this.etiquetaPlan}
@@ -628,8 +639,8 @@ class BuscadorPlaneamiento extends Component {
                     } 
                 } else {
                     // Si no se cumple español secundaria se compruban otras condiciones:
-                    //1 - Primaria - francés
-                    if (this.state.nivel === "primaria" && this.state.materia === "frances") {
+                    //1 - francés
+                    if ( this.state.materia === "frances") {
                         //console.log("Estado primaria francés");                       
                         if (this.tipoPlan === arrayNivel[index].tipoPlan  ) {
                             arrayTmp.push(arrayHtml);
@@ -830,7 +841,7 @@ class BuscadorPlaneamiento extends Component {
                             //Fin caso 1 **************************
                             }
                             {//CASO 2: primaria-frances
-                                (this.state.materia === "frances" && this.state.nivel === "primaria") &&
+                                (this.state.materia === "frances" ||  this.state.materia === "ingles") &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
@@ -840,10 +851,21 @@ class BuscadorPlaneamiento extends Component {
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
                                             <option defaultValue value="seleccione" >Seleccione:</option>
-                                            {
-                                                planEstudiosFrances.map((item, index) => (
-                                                    <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
-                                                ))
+                                            { //Frances primaria
+                                                (this.state.materia === "frances" && this.state.nivel === "primaria") && 
+                                                (
+                                                    planEstudiosFrancesPrimaria.map((item, index) => (
+                                                        <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                    ))
+                                                )
+                                            }
+                                            {  //Frances secundaria
+                                                (this.state.materia === "frances" && this.state.nivel === "secundaria") && 
+                                                (
+                                                    planEstudiosFrancesSecundaria.map((item, index) => (
+                                                        <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                    ))
+                                                )
                                             }
                                         </select>
                                     </div>
