@@ -529,8 +529,7 @@ class BuscadorPlaneamiento extends Component {
                             {
                                 //Renderizado del cuerpo de las tarjetas:
                                 this.state.nivel === "secundaria" && this.state.materia === "espanol" ?
-                                     // Filtrado de tarjetas de español secundaria por mes                                  
-                                     this.mes === arrayNivel[index].mes && (
+                                     (
                                         <div className="card-body mr-2">
                                         <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamientos} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-pdf"></i> Lineamientos
@@ -561,7 +560,7 @@ class BuscadorPlaneamiento extends Component {
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Plantilla
                                                 </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={                                                                                                                                                                [index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Ejemplo
                                                 </a>
                                             </div>                                                
@@ -574,7 +573,15 @@ class BuscadorPlaneamiento extends Component {
                         <br />
                     </React.Fragment>
                 )
-                arrayTmp.push(arrayHtml);
+                //Filtrado por mes en caso de español secundaria:
+                if ( this.state.nivel === "secundaria" && this.state.materia === "espanol") {
+                    if (this.mes === arrayNivel[index].mes ) {
+                        arrayTmp.push(arrayHtml);
+                    }
+                } else {
+                    // Si no se cumple español secundaria se renderiza todo el arreglo
+                    arrayTmp.push(arrayHtml);
+                }              
             }
 
         };
