@@ -620,6 +620,8 @@ class BuscadorPlaneamiento extends Component {
                     <div className="col-6 font-italic">
                         Seleccione primero el nivel que desea, posteriormente el año o modalidad, por último seleccione la materia y
                         el botón "buscar" para encontrar el resultado deseado.
+                        <br/>
+                        <strong>Importante:</strong> Si desea ver los planes de español en secundaria, seleccione "Español" en asignatura en lugar de seleccionar "Todas".
                     </div>
                 </div> <hr />
 
