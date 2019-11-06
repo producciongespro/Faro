@@ -432,6 +432,7 @@ class BuscadorPlaneamiento extends Component {
         this.mes="";
         //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
         this.tipoPlan="";
+        this.etiquetaPlan="";
         this.poblacion = "";
         this.apoyos = "";
         this.mensaje = "";
@@ -458,10 +459,10 @@ class BuscadorPlaneamiento extends Component {
     }
     handlerObtenerTipoPlan = (e) => {
         this.tipoPlan = e.target.value;
-        console.log("tipoPlan",  this.tipoPlan);
-        console.log( e.target.text  );
-        
-        
+        //console.log("tipoPlan",  this.tipoPlan);        
+        // * * * * * Obtiene el texto de la opcion seleccionada del select Nota: Esto es SOLO BUENO!!!!!
+        this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;        
+        console.log("this.etiquetaPlan",  this.etiquetaPlan );     
     }
 
 
@@ -560,6 +561,15 @@ class BuscadorPlaneamiento extends Component {
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                                 Asignatura: {this.cambiarEtiquetas(arrayNivel[index].materia)}
                                             </span>
+                                            {
+                                              (this.state.nivel === "primaria"  && this.state.materia === "frances"  ) && 
+                                              (
+                                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                    Plan: {this.etiquetaPlan}
+                                                </span>
+                                              )
+                                            }
+                                            
                                         </div>
                                     )
                             }
@@ -832,7 +842,7 @@ class BuscadorPlaneamiento extends Component {
                                             <option defaultValue value="seleccione" >Seleccione:</option>
                                             {
                                                 planEstudiosFrances.map((item, index) => (
-                                                    <option key={"plan" + index} value={item.id}> {item.etiqueta} </option>
+                                                    <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
                                                 ))
                                             }
                                         </select>
