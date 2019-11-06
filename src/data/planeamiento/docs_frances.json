@@ -3,7 +3,7 @@
             "nivel" : "primaria",
             "anno" : "1",
             "materia" : "frances",
-            "planEstudios" : "extranjeraFrances",
+            "tipoPlan" : "extranjeraFrances",
             "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
             "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
             "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
@@ -12,7 +12,7 @@
         "nivel" : "primaria",
         "anno" : "1",
         "materia" : "frances",
-        "planEstudios" : "extranjeraCiencias",
+        "tipoPlan" : "extranjeraCiencias",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
@@ -21,7 +21,7 @@
     "nivel" : "primaria",
     "anno" : "1",
     "materia" : "frances",
-    "planEstudios" : "extranjeraMatematica",
+    "tipoPlan" : "extranjeraMatematica",
     "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
     "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
     "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
@@ -30,7 +30,7 @@
         "nivel" : "primaria",
         "anno" : "1",
         "materia" : "frances",
-        "planEstudios" : "bilingueMatematica",
+        "tipoPlan" : "bilingueMatematica",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"

@@ -459,6 +459,8 @@ class BuscadorPlaneamiento extends Component {
     handlerObtenerTipoPlan = (e) => {
         this.tipoPlan = e.target.value;
         console.log("tipoPlan",  this.tipoPlan);
+        console.log( e.target.text  );
+        
         
     }
 
@@ -480,17 +482,21 @@ class BuscadorPlaneamiento extends Component {
         console.log("***Nivel", this.state.nivel);
         console.log("***Mes", this.mes);
 
-        if (this.state.nivel === "adultos") {
-            //console.log("Seleccion: Adultos");
-            arrayNivel = dataAdultos;
-        }
         if (this.state.nivel !== "adultos") {
             //console.log("Seleccion: general");
             arrayNivel = dataGeneral;
         }
+        if (this.state.nivel === "adultos") {
+            //console.log("Seleccion: Adultos");
+            arrayNivel = dataAdultos;
+        }
         if (this.state.materia === "espanol" && this.state.nivel === "secundaria") {
             //console.log("Seleccion: espanolSecundaria");
             arrayNivel = dataSecundariaEspanol;
+        }
+        if (this.state.materia === "frances" && this.state.nivel === "primaria") {
+            //console.log("Seleccion: espanolSecundaria");
+            arrayNivel = dataFrances;
         }
 
         //console.log(arrayNivel);  
@@ -611,8 +617,18 @@ class BuscadorPlaneamiento extends Component {
                         arrayTmp.push(arrayHtml);
                     } 
                 } else {
-                    // Si no se cumple español secundaria se renderiza todo el arreglo
-                    arrayTmp.push(arrayHtml);
+                    // Si no se cumple español secundaria se compruban otras condiciones:
+                    //1 - Primaria - francés
+                    if (this.state.nivel === "primaria" && this.state.materia === "frances") {
+                        //console.log("Estado primaria francés");                       
+                        if (this.tipoPlan === arrayNivel[index].tipoPlan  ) {
+                            arrayTmp.push(arrayHtml);
+                        }
+                    } else {
+                        //General (Generico)
+                        arrayTmp.push(arrayHtml);
+                    }
+                    
                 }              
             }
 
