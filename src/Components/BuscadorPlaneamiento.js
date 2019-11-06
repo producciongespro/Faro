@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
 import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
 import dataSecundariaEspanol from '../data/planeamiento/secundaria_espanol.json';
-import dataFrances from '../data/planeamiento/docs_frances.json';
+import dataIdiomas from '../data/planeamiento/docs_idiomas.json';
 import images from '../data/images.json';
 import meses from '../data/meses.json';
 import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
@@ -506,8 +506,8 @@ class BuscadorPlaneamiento extends Component {
             //console.log("Seleccion: espanolSecundaria");
             arrayNivel = dataSecundariaEspanol;
         }
-        if (this.state.materia === "frances") {            
-            arrayNivel = dataFrances;
+        if (this.state.materia === "frances" || this.state.materia === "ingles"   ) {            
+            arrayNivel = dataIdiomas;
         }
 
         //console.log(arrayNivel);  
