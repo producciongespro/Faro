@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
 import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
-import dataSecundariaEspanol from '../data/planeamiento/plantillas/secundaria_espanol.json';
+import dataSecundariaEspanol from '../data/planeamiento/secundaria_espanol.json';
+import dataFrances from '../data/planeamiento/docs_frances.json';
 import images from '../data/images.json';
 import meses from '../data/meses.json';
 import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
@@ -50,11 +51,7 @@ var materiasPrimaria = [
     {
         "label": "Francés",
         "id": "frances"
-    },
-    {
-        "label": "Francés secciones biblingües",
-        "id": "francesBilingue"
-    },
+    }, 
     {
         "label": "Inglés I Ciclo",
         "id": "ingles1"
@@ -386,7 +383,34 @@ var annoPrrescolar = [
 
 ]
 
-//console.log("Secudnaria español", dataSecundariaEspanol );
+var planEstudiosFrances = [
+    {
+        "id" : "extranjeraFrances",
+        "etiqueta" : "Francés como lengua extranjera-Francés"
+    },
+    {
+        "id" : "extranjeraCiencias",
+        "etiqueta" : "Francés como lengua extranjera-Ciencias"
+    },
+    {
+        "id" : "extranjeraMatematica",
+        "etiqueta" : "Francés como lengua extranjera-Matemáticas"
+    },
+    {
+        "id" : "bilingueFrances",
+        "etiqueta" : "Secciones Bilingües Español-Francés: Francés"
+    },
+    {
+        "planEstudios" : "bilingueCiencias",
+        "etiqueta" : "Secciones Bilingües Español-Francés: Ciencias"
+    },
+    {
+        "id" : "bilingueMatematica",
+        "etiqueta" : "Secciones Bilingües Español-Francés: Matemáticas"
+    },
+]
+
+//console.log("Secudnaria frances", dataFrances );
 
 
 class BuscadorPlaneamiento extends Component {
@@ -404,33 +428,40 @@ class BuscadorPlaneamiento extends Component {
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
                 educaicón para adultos.  Esta propiedad debe camibar materia
         */
+        //Mes se usa en caso de español
         this.mes="";
+        //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
+        this.tipoPlan="";
         this.poblacion = "";
         this.apoyos = "";
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
         this.cambiarEtiquetas = cambiarEtiquetas;
     }
-
-    handlerobtenerNivel = (e) => {
+    handlerObtenerNivel = (e) => {
         this.setState({ nivel: e.target.value });
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
         this.setState({ anno: "" });
         this.mes="";
+        console.log("handlerobtenerNivel");        
     }
-
-    handlerobtenerMateria = (e) => {
+    handlerObtenerMateria = (e) => {
         this.setState({ materia: e.target.value });
+        console.log("handlerobtenerMateria");        
     }
-
     handlerObtenerAnno = (e) => {
         this.setState({ anno: e.target.value });
     }
-
     handlerObtenerMes = (e) => {
-        this.mes = e.target.value;
+        this.mes = e.target.value;        
     }
+    handlerObtenerTipoPlan = (e) => {
+        this.tipoPlan = e.target.value;
+        console.log("tipoPlan",  this.tipoPlan);
+        
+    }
+
 
 
     activarBotonBuscar = (e) => {
@@ -633,7 +664,7 @@ class BuscadorPlaneamiento extends Component {
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerobtenerNivel} onClick={this.activarBotonBuscar}  >
+                                <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel} onClick={this.activarBotonBuscar}  >
                                     <option defaultValue value="seleccione" >Seleccione:</option>
                                     <option value="primaria"> Primaria </option>
                                     <option value="secundaria"> Secundaria </option>
@@ -702,7 +733,7 @@ class BuscadorPlaneamiento extends Component {
                                         Asignatura
                                     </label>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
+                                <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria} >
                                     <option defaultValue value="" >Todas</option>
                                     {
                                         this.state.nivel === "primaria" &&
@@ -749,9 +780,9 @@ class BuscadorPlaneamiento extends Component {
 
 
 
-                        {/* Columna 4 MES*/}
+                        {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS-   */}
                         <div className="col-3">
-                            {
+                            {//CASO 1: Secundaria-Español
                                 (this.state.materia === "espanol" && this.state.nivel === "secundaria") &&
                                 (
                                     <div className="input-group mb-3">
@@ -769,7 +800,29 @@ class BuscadorPlaneamiento extends Component {
                                             }
                                         </select>
                                     </div>
-                                )
+                                )                                
+                            //Fin caso 1 **************************
+                            }
+                            {//CASO 2: primaria-frances
+                                (this.state.materia === "frances" && this.state.nivel === "primaria") &&
+                                (
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selPlan">
+                                                Plan de estudios
+                                        </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
+                                            <option defaultValue value="seleccione" >Seleccione:</option>
+                                            {
+                                                planEstudiosFrances.map((item, index) => (
+                                                    <option key={"plan" + index} value={item.id}> {item.etiqueta} </option>
+                                                ))
+                                            }
+                                        </select>
+                                    </div>
+                                )                                
+                            //Fin caso 2 **************************
                             }
 
 
