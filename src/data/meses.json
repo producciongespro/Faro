@@ -1,5 +1,9 @@
 [
     {
+        "id" : "todos",
+        "etiqueta" : "Todos"
+    },
+    {
         "id" : "enero",
         "etiqueta" : "Enero"
     },

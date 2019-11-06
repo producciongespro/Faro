@@ -417,6 +417,7 @@ class BuscadorPlaneamiento extends Component {
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
         this.setState({ anno: "" });
+        this.mes="";
     }
 
     handlerobtenerMateria = (e) => {
@@ -449,15 +450,15 @@ class BuscadorPlaneamiento extends Component {
         console.log("***Mes", this.mes);
 
         if (this.state.nivel === "adultos") {
-            console.log("Seleccion: Adultos");
+            //console.log("Seleccion: Adultos");
             arrayNivel = dataAdultos;
         }
         if (this.state.nivel !== "adultos") {
-            console.log("Seleccion: general");
+            //console.log("Seleccion: general");
             arrayNivel = dataGeneral;
         }
         if (this.state.materia === "espanol" && this.state.nivel === "secundaria") {
-            console.log("Seleccion: espanolSecundaria");
+            //console.log("Seleccion: espanolSecundaria");
             arrayNivel = dataSecundariaEspanol;
         }
 
@@ -560,7 +561,7 @@ class BuscadorPlaneamiento extends Component {
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Plantilla
                                                 </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={                                                                                                                                                                [index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={ arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Ejemplo
                                                 </a>
                                             </div>                                                
@@ -575,9 +576,9 @@ class BuscadorPlaneamiento extends Component {
                 )
                 //Filtrado por mes en caso de español secundaria:
                 if ( this.state.nivel === "secundaria" && this.state.materia === "espanol") {
-                    if (this.mes === arrayNivel[index].mes ) {
+                    if (this.mes === arrayNivel[index].mes || this.mes === ""  || this.mes === "todos" ) {
                         arrayTmp.push(arrayHtml);
-                    }
+                    } 
                 } else {
                     // Si no se cumple español secundaria se renderiza todo el arreglo
                     arrayTmp.push(arrayHtml);
