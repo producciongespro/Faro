@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
 import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
+import dataSecundariaEspanol from '../data/planeamiento/plantillas/secundaria_espanol.json';
 import images from '../data/images.json';
 import meses from '../data/meses.json';
-import secundariaEspanol from '../data/planeamiento/plantillas/secundaria_espanol.json';
 import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
 
 var materiasPrimaria = [
@@ -386,7 +386,7 @@ var annoPrrescolar = [
 
 ]
 
-console.log("Secudnaria español", secundariaEspanol );
+//console.log("Secudnaria español", dataSecundariaEspanol );
 
 
 class BuscadorPlaneamiento extends Component {
@@ -397,7 +397,7 @@ class BuscadorPlaneamiento extends Component {
             nivel: "",
             anno: "",
             buscarActivo: false,
-            // En etiqueta es asgintarua. Dependiendo de la asignatura se despliega información en la GUI
+            // En etiqueta es asginatura. Dependiendo de la asignatura se despliega información en la GUI
             materia: ""
         };
         /*
@@ -410,27 +410,27 @@ class BuscadorPlaneamiento extends Component {
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
         this.cambiarEtiquetas = cambiarEtiquetas;
-
     }
 
     handlerobtenerNivel = (e) => {
         this.setState({ nivel: e.target.value });
+        //Limpia los estados para las siguientes búsquedas
+        this.setState({ materia: "" });
+        this.setState({ anno: "" });
     }
 
     handlerobtenerMateria = (e) => {
-        this.setState({
-            materia: e.target.value
-        });
+        this.setState({ materia: e.target.value });
     }
 
     handlerObtenerAnno = (e) => {
         this.setState({ anno: e.target.value });
-        console.log(this.state.anno);
     }
 
 
     activarBotonBuscar = (e) => {
         //Activa el botón buscar 
+        // "seleccione" es el valor que tiene el select por defeto, lo cual significa que no ha sido seleccionado
         if (e.target.value !== "seleccione") {
             this.setState({ buscarActivo: true });
         } else {
@@ -438,26 +438,32 @@ class BuscadorPlaneamiento extends Component {
         }
     }
 
-    buscarInfo = () => {
-
+    cargarInformacionBusqueda = () => {
         //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
         let arrayNivel;
         console.log("Nivel", this.state.nivel);
+
         if (this.state.nivel === "adultos") {
+            console.log("Seleccion: Adultos");
             arrayNivel = dataAdultos;
-        } else {
+        }
+        if (this.state.nivel !== "adultos") {
+            console.log("Seleccion: general");
             arrayNivel = dataGeneral;
         }
+        if (this.state.materia === "espanol" && this.state.nivel === "secundaria") {
+            console.log("Seleccion: espanolSecundaria");
+            arrayNivel = dataSecundariaEspanol;
+        }
 
-
-        console.log(arrayNivel);
-        console.log("Materia a buscar", this.state.materia);
-        console.log("Año a buscar", this.state.anno);
+        //console.log(arrayNivel);  
 
         var arrayHtml;
         var arrayTmp = [];
 
         for (let index = 0; index < arrayNivel.length; index++) {
+            // console.log("Array", arrayNivel[index].materia);
+
 
             //Expresión regular para materia
             let strMateria = arrayNivel[index].materia;
@@ -487,6 +493,7 @@ class BuscadorPlaneamiento extends Component {
 
                         <div className="card">
                             {
+                                //Renderizado de los encabezados de las tarjetas en el caso de  educación adultos
                                 this.state.nivel === "adultos" ?
                                     (
                                         <div className="card-header">
@@ -499,6 +506,7 @@ class BuscadorPlaneamiento extends Component {
                                         </div>
                                     ) :
                                     (
+                                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                                         <div className="card-header">
                                             <span className="mx-2 badge badge-secondary px-3 py-2 ">
                                                 Nivel:  {this.cambiarEtiquetas(arrayNivel[index].nivel)}
@@ -513,19 +521,34 @@ class BuscadorPlaneamiento extends Component {
                                     )
                             }
 
+                            {
+                                //Renderizado del cuerpo de las tarjetas:
+                                this.state.nivel !== "secundaria" ?
+                                    (
+                                        <React.Fragment>
+                                            <div className="card-body mr-2">
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Lineamiento
+                                        </a>
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla
+                                        </a>
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Ejemplo
+                                        </a>
+                                            </div>
+                                        </React.Fragment>
+                                    ) :
+                                    (
+                                        <div className="card-body mr-2">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Monografía
+                                        </a>
+                                        </div>
+                                    )
+                            }
 
 
-                            <div className="card-body mr-2">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Lineamiento
-                                </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Plantilla
-                                </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Ejemplo
-                                </a>
-                            </div>
                         </div>
                         <br />
                     </React.Fragment>
@@ -548,12 +571,14 @@ class BuscadorPlaneamiento extends Component {
 
     }
 
-    // Cambio de etieuta según dato ingresado  como propiedad del json
+    // Cambio de etiqeuta según dato ingresado  como propiedad del json
 
 
 
     // *********** fin cambio de eitueta
     render() {
+        console.log("Año a buscar", this.state.anno);
+        console.log("Materia a buscar", this.state.materia);
         return (
             <React.Fragment>
 
@@ -575,7 +600,7 @@ class BuscadorPlaneamiento extends Component {
 
                 <div className="container">
                     <div className="row">
-                        {/*******Coluimna 1*********/}
+                        {/*******Coluimna 1   NIVEL *********/}
                         <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
@@ -589,7 +614,7 @@ class BuscadorPlaneamiento extends Component {
                                 </select>
                             </div>
                         </div>
-                        {/*******Coluimna 2*********/}
+                        {/*******Coluimna 2******** AÑO*/}
                         <div className="col-3  ">
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
@@ -642,8 +667,8 @@ class BuscadorPlaneamiento extends Component {
                                 </select>
                             </div>
                         </div>
-                            {/*******Coluimna 3*********/}
-                           <div className="col-3">
+                        {/*******Coluimna 3  ASIGNATURA (MATERIA) *********/}
+                        <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
@@ -697,10 +722,10 @@ class BuscadorPlaneamiento extends Component {
 
 
 
-                        {/* Columna 4 de select del mes*/}
+                        {/* Columna 4 MES*/}
                         <div className="col-3">
                             {
-                                this.state.materia === "espanol" &&
+                                (this.state.materia === "espanol" && this.state.nivel === "secundaria") &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
@@ -711,9 +736,9 @@ class BuscadorPlaneamiento extends Component {
                                         <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerAnno}  >
                                             <option defaultValue value="seleccione" >Seleccione:</option>
                                             {
-                                                meses.map((item, index) =>(
-                                                    <option key={"mes"+index} value={item.id}> {item.etiqueta} </option>
-                                                 ))
+                                                meses.map((item, index) => (
+                                                    <option key={"mes" + index} value={item.id}> {item.etiqueta} </option>
+                                                ))
                                             }
                                         </select>
                                     </div>
@@ -730,7 +755,7 @@ class BuscadorPlaneamiento extends Component {
                         <div className="col-12 text-right">
                             {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
                                 this.state.buscarActivo &&
-                                <button onClick={this.buscarInfo} type="button" className="btn btn-secondary btn-lg">
+                                <button onClick={this.cargarInformacionBusqueda} type="button" className="btn btn-secondary btn-lg">
                                     <i className="fas fa-search"></i> Buscar
                                     </button>
                             }

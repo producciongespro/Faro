@@ -1,6 +1,8 @@
 [
    {
-   "nivel" : "7", 
+   "nivel" : "secundaria",
+   "materia" : "espanol",
+   "anno" : "7", 
    "mes" : "Enero",
     "lineamientos" : "https://www.nacion.com/",
     "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
@@ -10,7 +12,9 @@
     "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
    },
    {
-   "nivel" : "7", 
+   "nivel" : "secundaria",
+   "materia" : "espanol",
+   "anno" : "7", 
    "mes" : "Febrero",
     "lineamientos" : "https://www.nacion.com/",
     "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
@@ -20,7 +24,9 @@
     "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
    },
    {
-      "nivel" : "8", 
+      "nivel" : "secundaria",
+      "materia" : "espanol",
+      "anno" : "8", 
       "mes" : "Enero",
        "lineamientos" : "https://www.nacion.com/",
        "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
