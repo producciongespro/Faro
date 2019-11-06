@@ -529,21 +529,38 @@ class BuscadorPlaneamiento extends Component {
                                             <div className="card-body mr-2">
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Lineamiento
-                                        </a>
+                                                </a>
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Plantilla
-                                        </a>
+                                                </a>
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Ejemplo
-                                        </a>
+                                                </a>
                                             </div>
                                         </React.Fragment>
                                     ) :
                                     (
                                         <div className="card-body mr-2">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamientos} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamientos
+                                            </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lectura
+                                            </a>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].monografia} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Monografía
-                                        </a>
+                                            </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].novela} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Novela
+                                            </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Trasnversal
+                                            </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Mensual
+                                            </a>
+
+                                            
                                         </div>
                                     )
                             }
@@ -557,28 +574,24 @@ class BuscadorPlaneamiento extends Component {
             }
 
         };
-
         if (arrayTmp.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
             this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {arrayTmp.length}   </span>  </React.Fragment>);
         }
-
-
         this.setState({ tarjetas: arrayTmp });
-
-
-
     }
 
     // Cambio de etiqeuta según dato ingresado  como propiedad del json
 
 
 
-    // *********** fin cambio de eitueta
+    // *********** fin cambio de eitqueta
     render() {
+        /*
         console.log("Año a buscar", this.state.anno);
         console.log("Materia a buscar", this.state.materia);
+        */
         return (
             <React.Fragment>
 
