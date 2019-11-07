@@ -61,5 +61,60 @@
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "primaria",
+        "anno" : "1",
+        "materia" : "ingles",
+        "tipoPlan" : "lenguaExtranjera",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "primaria",
+        "anno" : "2",
+        "materia" : "ingles",
+        "tipoPlan" : "lenguaExtranjera",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "primaria",
+        "anno" : "1",
+        "materia" : "ingles",
+        "tipoPlan" : "bilingue",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "primaria",
+        "anno" : "2",
+        "materia" : "ingles",
+        "tipoPlan" : "bilingue",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "7",
+        "materia" : "ingles",
+        "tipoPlan" : "lenguaExtranjera",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "8",
+        "materia" : "ingles",
+        "tipoPlan" : "bilingue",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
     }
+
 ]

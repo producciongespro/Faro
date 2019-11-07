@@ -9,6 +9,10 @@ import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
 
 var materiasPrimaria = [
     {
+        "label": "Artes Industriales",
+        "id": "artIndust"
+    },
+    {
         "label": "Matemática",
         "id": "matematica"
     },
@@ -41,35 +45,21 @@ var materiasPrimaria = [
         "id": "musica"
     },
     {
-        "label": "Inglés I Ciclo",
-        "id": "ingles1"
-    },
-    {
-        "label": "Inglés II Ciclo",
-        "id": "ingles2"
-    },
-    {
         "label": "Francés",
         "id": "frances"
     }, 
     {
-        "label": "Inglés I Ciclo",
-        "id": "ingles1"
+        "label": "Inglés",
+        "id": "ingles"
     },
     {
         "label": "Orientación",
         "id": "orientacion"
     },
     {
-        "label": "Artes Industriales",
-        "id": "artIndust"
-    },
-    {
         "label": "Educación para la vida Cotidiana",
         "id": "vidaCotidiana"
     }
-
-
 ];
 
 var materiasPrimariaAdultos = [
@@ -141,13 +131,13 @@ var materiasSecundaria = [
         "id": "religion"
     },
     {
-        "label": "Inglés",
-        "id": "ingles"
-    },
-    {
         "label": "Francés",
         "id": "frances"
     },
+    {
+        "label": "Inglés",
+        "id": "ingles"
+    }, 
     {
         "label": "Psicología",
         "id": "psicologia"
@@ -421,6 +411,28 @@ var planEstudiosFrancesSecundaria = [
     }    
 ]
 
+var planEstudiosInglesPrimaria = [
+    {
+        "id" : "lenguaExtranjera",
+        "etiqueta" : "Inglés como lengua extranjera"
+    },
+    {
+        "id" : "bilingue",
+        "etiqueta" : "Secciones Bilingües"
+    }
+]
+
+var planEstudiosInglesSecundaria = [
+    {
+        "id" : "lenguaExtranjera",
+        "etiqueta" : "Inglés como lengua extranjera"
+    },
+    {
+        "id" : "bilingue",
+        "etiqueta" : "Liceos Experimentales bilingües/Secciones Bilingües Español-Inglés"
+    }
+]
+
 //console.log("Secudnaria frances", dataFrances );
 
 
@@ -639,8 +651,8 @@ class BuscadorPlaneamiento extends Component {
                     } 
                 } else {
                     // Si no se cumple español secundaria se compruban otras condiciones:
-                    //1 - francés
-                    if ( this.state.materia === "frances") {
+                    /* -(1) francés  -(2) inglés */
+                    if ( this.state.materia === "frances" || this.state.materia === "ingles" ) {
                         //console.log("Estado primaria francés");                       
                         if (this.tipoPlan === arrayNivel[index].tipoPlan  ) {
                             arrayTmp.push(arrayHtml);
@@ -840,7 +852,7 @@ class BuscadorPlaneamiento extends Component {
                                 )                                
                             //Fin caso 1 **************************
                             }
-                            {//CASO 2: primaria-frances
+                            {//CASO 2: primaria en frances - ingles
                                 (this.state.materia === "frances" ||  this.state.materia === "ingles") &&
                                 (
                                     <div className="input-group mb-3">
@@ -859,10 +871,26 @@ class BuscadorPlaneamiento extends Component {
                                                     ))
                                                 )
                                             }
+                                            { //Ingles primaria
+                                                (this.state.materia === "ingles" && this.state.nivel === "primaria") && 
+                                                (
+                                                    planEstudiosInglesPrimaria.map((item, index) => (
+                                                        <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                    ))
+                                                )
+                                            }
                                             {  //Frances secundaria
                                                 (this.state.materia === "frances" && this.state.nivel === "secundaria") && 
                                                 (
                                                     planEstudiosFrancesSecundaria.map((item, index) => (
+                                                        <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                    ))
+                                                )
+                                            }
+                                            {  //Inglés secundaria
+                                                (this.state.materia === "ingles" && this.state.nivel === "secundaria") && 
+                                                (
+                                                    planEstudiosInglesSecundaria.map((item, index) => (
                                                         <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
                                                     ))
                                                 )
