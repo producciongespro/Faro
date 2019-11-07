@@ -252,6 +252,29 @@ var materiasConed = [
     }
 ];
 
+var materiaInterculturaPrimaria = [
+    {
+        "id" : "cBribiBuenosAires",
+        "etiqueta" : "Cultura Bribí de Buenos Aires"
+    },
+    {
+        "id" : "cCabecarBuenosAires",
+        "etiqueta" : "Cultura Bribí de Buenos Aires"
+    },
+    {
+        "id" : "cCabecarChirripo",
+        "etiqueta" : "Cultura Cabécar Chirripó"
+    },
+    {
+        "id" : "lBribriBuenosAires",
+        "etiqueta" : "Lengua Bribrí Buenos Aires"
+    },
+    {
+        "id" : "lCabecarBuenosAires",
+        "etiqueta" : "Lengua Cabécar Buenos Aires"
+    }
+]
+
 var anoSecundaria = [
     {
         "label": "Sétimo",
@@ -715,9 +738,12 @@ class BuscadorPlaneamiento extends Component {
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel} onClick={this.activarBotonBuscar}  >
                                     <option defaultValue value="seleccione" >Seleccione:</option>
+                                    <option value="preescolar"> Preescolar</option>
                                     <option value="primaria"> Primaria </option>
                                     <option value="secundaria"> Secundaria </option>
                                     <option value="adultos"> Jóvenes y adultos </option>
+                                    <option value="interculturaPrimaria"> Interculturalidad primaria </option>
+                                    <option value="interculturaSecundaria"> Interculturalidad secundaria </option>
                                 </select>
                             </div>
                         </div>
@@ -727,11 +753,16 @@ class BuscadorPlaneamiento extends Component {
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
                                         {
+                                            // Si es "educación para adultos" se cambia a modalidad.  Para lo demás es "año"
                                             this.state.nivel === "adultos" ?
                                                 <span> Modalidad </span>
                                                 :
-                                                <span> Año </span>
-                                        }
+                                                // Si es preescolar cambia año por contenido
+                                                this.state.nivel === "preescolar" ?                                                    
+                                                    <span> Contenido </span>
+                                                    :
+                                                    <span> Año </span>
+                                        }                                 
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
@@ -794,6 +825,12 @@ class BuscadorPlaneamiento extends Component {
                                         this.state.nivel === "secundaria" &&
                                         materiasSecundaria.map((item, i) => (
                                             <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        ))
+                                    }
+                                    {
+                                        this.state.nivel === "interculturaPrimaria" &&
+                                        materiaInterculturaPrimaria.map((item, i) => (
+                                            <option key={"materia" + i} value={item.id} >  {item.etiqueta}  </option>
                                         ))
                                     }
                                     {
