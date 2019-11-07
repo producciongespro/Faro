@@ -380,18 +380,27 @@ var annoAdultos = [
     }
 ];
 
+//Se carga en el select con etieuta "Contendio"
 var annoPrrescolar = [
     {
-        "label": "Interactivo I",
-        "id": "1"
+        "id": "diagnostico",
+        "etiqueta": "Diagnóstico"        
     },
     {
-        "label": "Interactivo II",
-        "id": "2"
+        "id" :"concienciacorporal",
+        "etiqueta" : "Conciencia corporal"
     },
     {
-        "label": "Transición",
-        "id": "3"
+        "id" :"imagenCorporal",
+        "etiqueta" : "Imagen corporal"
+    },
+    {
+        "id" :"identidadSexual",
+        "etiqueta" : "Identidad Sexual"
+    },
+    {
+        "id" :"posibilidadesAccion",
+        "etiqueta" : "Posibilidades de acción"
     }
 
 ];
@@ -771,7 +780,7 @@ class BuscadorPlaneamiento extends Component {
                                     {
                                         this.state.nivel === "preescolar" &&
                                         annoPrrescolar.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                            <option key={"anno" + i} value={item.id} >  {item.etiqueta}  </option>
                                         ))
 
                                     }
@@ -810,11 +819,23 @@ class BuscadorPlaneamiento extends Component {
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
-                                        Asignatura
+                                        {
+                                            this.state.nivel==="preescolar" ?
+                                                <span>Niveles de desempeño</span>
+                                                :
+                                                <span>Asignatura</span>
+                                        }
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria} >
-                                    <option defaultValue value="" >Todas</option>
+                                    {
+                                        this.state.nivel === "preescolar" &&                                        
+                                        <React.Fragment>
+                                            <option key={"materia" + 1} value={1} >  I  </option>
+                                            <option key={"materia" + 2} value={2} >  II  </option>
+                                            <option key={"materia" + 3} value={3} >  III  </option>
+                                        </React.Fragment>                                        
+                                    }
                                     {
                                         this.state.nivel === "primaria" &&
                                         materiasPrimaria.map((item, i) => (
@@ -866,7 +887,7 @@ class BuscadorPlaneamiento extends Component {
 
 
 
-                        {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS-   */}
+                        {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar  */}
                         <div className="col-3">
                             {//CASO 1: Secundaria-Español
                                 (this.state.materia === "espanol" && this.state.nivel === "secundaria") &&
@@ -937,11 +958,42 @@ class BuscadorPlaneamiento extends Component {
                                 )                                
                             //Fin caso 2 **************************
                             }
-
-
+                            {
+                                //Caso 3 Preescolar
+                                this.state.nivel === "preescolar" &&
+                                    // Con diagnóstico
+                                    this.state.anno === "diagnostico" ?
+                                (
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                Mes
+                                        </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                            <option defaultValue value="seleccione" >Seleccione:</option>
+                                            <option key={"mes"+1} value="febrero"> Plan de febrero </option>                                            
+                                            <option key={"mes"+2} value="marzo"> Plan de marzo </option>                                            
+                                        </select>
+                                    </div>
+                                ) :
+                                (
+                                    //Sin diagnóstico
+                                    <div className="input-group mb-3">
+                                    <div className="input-group-prepend">
+                                        <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                            Acción procedimental
+                                    </label>
+                                    </div>
+                                    <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                        <option defaultValue value="seleccione" >Seleccione:</option>
+                                        <option key={"accion"+1} value="discriminacion"> Discriminación </option>                                            
+                                        <option key={"accion"+2} value="identificacion"> Identificación </option>                                            
+                                    </select>
+                                </div>
+                                )
+                            }                          
                         </div>
-
-
                     </div>
 
                     <div className="row">
