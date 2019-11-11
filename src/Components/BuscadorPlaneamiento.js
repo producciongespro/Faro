@@ -809,6 +809,13 @@ class BuscadorPlaneamiento extends Component {
                                         ))
 
                                     }
+                                           {
+                                    this.state.nivel === "interculturaPrimaria" &&
+                                    annoPrimaria.map((item, i) => (
+                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                        ))
+
+                                    }
 
 
                                 </select>
@@ -978,19 +985,23 @@ class BuscadorPlaneamiento extends Component {
                                     </div>
                                 ) :
                                 (
-                                    //Sin diagnóstico
-                                    <div className="input-group mb-3">
-                                    <div className="input-group-prepend">
-                                        <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
-                                            Acción procedimental
-                                    </label>
-                                    </div>
-                                    <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                        <option defaultValue value="seleccione" >Seleccione:</option>
-                                        <option key={"accion"+1} value="discriminacion"> Discriminación </option>                                            
-                                        <option key={"accion"+2} value="identificacion"> Identificación </option>                                            
-                                    </select>
-                                </div>
+                                    //Sin diagnóstico pero en preescolar
+                                    this.state.nivel === "preescolar" && 
+                                    (
+                                        <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                Acción procedimental
+                                        </label>
+                                        </div>
+                                            <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                                <option defaultValue value="seleccione" >Seleccione:</option>
+                                                <option key={"accion"+1} value="discriminacion"> Discriminación </option>                                            
+                                                <option key={"accion"+2} value="identificacion"> Identificación </option>                                            
+                                            </select>
+                                        </div>
+                                    )
+                                
                                 )
                             }                          
                         </div>
