@@ -2,89 +2,61 @@
     {
     "id" : "diagnostico",
     "etiqueta" : "Diagnótico",
-     "accion": [
-                        {
-                            "id" : "planFebrero",
-                            "etiqueta" : "Plan de Febrero"
-                        },
-                        {
-                            "id" : "planMarzo",
-                            "etiqueta" : "Plan de Marzo"
-                        }                                                    
-                      ] 
+        "I" :   [
+                "Plan de febrero",
+                "Plan de marzo"   
+                ],
+        "II" : [
+                "Plan de febrero",
+                "Plan de marzo"   
+                ],
+        "III" : [
+                "Plan de febrero",
+                "Plan de marzo"   
+                ]
     },
+
     {
-        "id" : "concienciaCorporal",
-        "etiqueta" : "Conciencia corporal",
-         "accion": [
-                            {
-                                "id" : "discriminacion",
-                                "etiqueta" : "Discriminación"
-                            },
-                            {
-                                "id" : "identificacion",
-                                "etiqueta" : "Identificación"
-                            },                                                    ,
-                            {
-                                "id" : "reconocimiento",
-                                "etiqueta" : "Reconocimiento"
-                            },
-                            {
-                                "id" : "desarrollo",
-                                "etiqueta" : "Desarrollo"
-                            }
-                          ] 
+    "id" : "diagnostico",
+    "etiqueta" : "Diagnótico",
+        "I" :   [
+                "Plan de febrero",
+                "Plan de marzo"   
+                ],
+        "II" : [
+                "Plan de febrero",
+                "Plan de marzo"   
+                ],
+        "III" : [
+                "Plan de febrero",
+                "Plan de marzo"   
+                ]
     },
-    {
-        "id" : "imagenCorporal",
-        "etiqueta" : "Imagen corporal",
-        "accion": [
-                                {
-                                    "id" : "identificacion",
-                                    "etiqueta" : "Identificación"
-                                },
-                                {
-                                    "id" : "recnonocimiento",
-                                    "etiqueta" : "Reconocimiento"
-                                },
-                                {
-                                    "id" : "demostracion",
-                                    "etiqueta" : "Demostración"
-                                }
-                              ] 
-    },
-    {
-        "id" : "IdentidadSexual",
-        "etiqueta" : "Identidad sexual",
-        "accion": [
-                                {
-                                    "id" : "descripcion",
-                                    "etiqueta" : "Descripción"
-                                },
-                                {
-                                    "id" : "reconocimiento",
-                                    "etiqueta" : "Reconocimiento"
-                                },
-                                {
-                                    "id" : "comprension",
-                                    "etiqueta" : "Comprension"
-                                }
-                              ] 
-    },
-    {
-        "id" : "posibilidadesAccion",
-        "etiqueta" : "Posibilidades de acción",
-        "accion": [
-                                {
-                                    "id" : "planFebrero",
-                                    "etiqueta" : "Plan de Febrero"
-                                },
-                                {
-                                    "id" : "planMarzo",
-                                    "etiqueta" : "Plan de Marzo"
-                                }                                                    
-                              ] 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 

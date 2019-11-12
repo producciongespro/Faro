@@ -13,12 +13,12 @@ var materiasPrimaria = [
         "id": "artIndust"
     },
     {
-        "label": "Matemática",
-        "id": "matematica"
-    },
-    {
         "label": "Ciencias",
         "id": "ciencias"
+    },
+    {
+        "label": "Matemática",
+        "id": "matematica"
     },
     {
         "label": "Español",

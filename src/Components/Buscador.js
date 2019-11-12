@@ -33,6 +33,10 @@ var materiasPrimaria = [
 
 var materiasSecundaria = [ 
         {
+            "label" :   "Francés",
+            "id" : "frances"
+        },
+        {
             "label" :   "Matemáticas",
             "id" : "matematica"
         },
