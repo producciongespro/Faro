@@ -405,7 +405,25 @@ class Buscador extends Component {
                             </div>
                         </div>
 
-                        <div className="col-4">
+                        <div className="col-3">
+                            {
+                                //Select que se genera al seleccionar francés
+                                this.state.materia === "frances" &&
+                                (
+                                    <React.Fragment>
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selfrances">Plan de estudio</label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selfrances">
+                                        <option value="extrangera">Francés como Lengua Extranjera</option>
+                                        <option value="bilingue">Secciones Bilingües Español- Francés</option>
+                                    </select>
+                            </React.Fragment>
+                                )
+                            }
+                       </div>
+
+                        <div className="col-3">
 
                             <div className={this.claseCSSPoblacion}>
 
@@ -429,23 +447,7 @@ class Buscador extends Component {
 
                         </div>
 
-                        <div className="col-2">
-                            {
-                                //Select que se genera al seleccionar francés
-                                this.state.materia === "frances" &&
-                                (
-                                    <React.Fragment>
-                                        <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selfrances">Plan de estudio</label>
-                                        </div>
-                                        <select className="custom-select" id="selfrances">
-                                        <option value="extrangera">Francés como Lengua Extranjera</option>
-                                        <option value="bilingue">Secciones Bilingües Español- Francés</option>
-                                    </select>
-                            </React.Fragment>
-                        )
-                    }
-                       </div>
+                        
 
 
                 </div>
