@@ -4,13 +4,13 @@ import images from '../data/images.json';
 
 var materiasPrimaria = [ 
             {
-                "label" :   "Matemáticas",
-                "id" : "matematica"
-            },
-            {
                 "label" :   "Ciencias",
                 "id" : "ciencias"
             },
+            {
+                "label" :   "Educación Vial",
+                "id" : "educVial"
+            },          
             {
                 "label" :   "Español",
                 "id" : "espanol"
@@ -19,9 +19,17 @@ var materiasPrimaria = [
                 "label" :   "Estudios Sociales",
                 "id" : "estudios"
             },
-			            {
-                "label" :   "Educación Vial",
-                "id" : "educVial"
+            {
+                "label" :   "Francés",
+                "id" : "frances"
+            },
+            {
+                "label" :   "Inglés",
+                "id" : "ingles"
+            },
+            {
+                "label" :   "Matemáticas",
+                "id" : "matematica"
             },				
             {
                 "label" :   "Mediación",
@@ -33,17 +41,17 @@ var materiasPrimaria = [
 
 var materiasSecundaria = [ 
         {
-            "label" :   "Francés",
-            "id" : "frances"
-        },
-        {
-            "label" :   "Matemáticas",
-            "id" : "matematica"
+            "label" :   "Biología",
+            "id" : "biologia"
         },
         {
             "label" :   "Ciencias",
             "id" : "ciencias"
         },
+        {
+            "label" : "Educación Cívica",
+            "id" : "civica"
+        }, 
         {
             "label" :   "Español",
             "id" : "espanol"
@@ -53,26 +61,30 @@ var materiasSecundaria = [
             "id" : "estudios"
         },
         {
-            "label" :   "Mediación",
-            "id" : "general"
-        },
-        {
-            "label" :   "Biología",
-            "id" : "biologia"
-        },
-        {
-            "label" :   "Química",
-            "id" : "quimica"
-        },
-        {
             "label" :   "Física",
             "id" : "fisica"
         },
         {
-            "label" : "Educación Cívica",
-            "id" : "civica"
-        }    
-
+            "label" :   "Francés",
+            "id" : "frances"
+        },
+        {
+            "label" :   "Inglés",
+            "id" : "ingles"
+        },
+        {
+            "label" :   "Matemáticas",
+            "id" : "matematica"
+        },
+        {
+            "label" :   "Mediación",
+            "id" : "general"
+        },
+      
+        {
+            "label" :   "Química",
+            "id" : "quimica"
+        }          
 ];  
 
 var anoSecundaria = [ 
@@ -329,7 +341,7 @@ componentWillMount () {
                         <div className="col-3">
                                 <div className={this.claseCSSMaterias}   >
                                         <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Materia</label>
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Asignatura</label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selMateria"  onChange={this.handlerobtenerMateria} >
                                             <option defaultValue value="" >Todas</option>
