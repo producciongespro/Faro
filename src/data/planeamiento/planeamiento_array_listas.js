@@ -364,30 +364,7 @@ const listasPlan = [
             "label": "Móduilos opcionales IPEC-CINDEA",
             "id": "ipecOpcionales"
         }
-    ],
-    "annoPrrescolar" : [
-        {
-            "id": "diagnostico",
-            "etiqueta": "Diagnóstico"        
-        },
-        {
-            "id" :"concienciacorporal",
-            "etiqueta" : "Conciencia corporal"
-        },
-        {
-            "id" :"imagenCorporal",
-            "etiqueta" : "Imagen corporal"
-        },
-        {
-            "id" :"identidadSexual",
-            "etiqueta" : "Identidad Sexual"
-        },
-        {
-            "id" :"posibilidadesAccion",
-            "etiqueta" : "Posibilidades de acción"
-        }
-    
-    ],
+    ],  
     "planEstudiosFrancesPrimaria" : [
         {
             "id" : "extranjeraFrances",
