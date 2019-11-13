@@ -57,9 +57,12 @@ class BuscadorPlaneamiento extends Component {
         console.log("handlerobtenerNivel");        
     }
     handlerObtenerMateria = (e) => {
-        let indice = e.target.selectedIndex - 1;  
-        //this.setState({ materia: e.target.value });
-        //this.setState({ indiceDesempeno: e.target.selectedIndex - 1  });  
+        //let indice = e.target.selectedIndex - 1;  
+        this.setState({ materia: e.target.value });
+        this.setState({ indiceDesempeno: e.target.selectedIndex - 1  });  
+        
+        //Prueba de carga de datos
+        /*
         this.setState({ materia: e.target.value },
             ()=>{
                 this.setState({ indiceDesempeno:  indice }, ()=>{
@@ -68,11 +71,7 @@ class BuscadorPlaneamiento extends Component {
                 });  
             }
             );
-        
-        
-
-       
-                     
+        */              
     }
     handlerObtenerAnno = (e) => {
         //almacena en un estado el indice de la opción seleccionada
@@ -401,7 +400,7 @@ class BuscadorPlaneamiento extends Component {
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria} >
-                                    <option value="" >  Selecione una opción  </option>
+                                    <option disabled value="" >  Selecione una opción  </option>
                                     {
                                         this.state.nivel === "preescolar" &&                                        
                                         categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i )=> (
@@ -459,7 +458,7 @@ class BuscadorPlaneamiento extends Component {
 
 
 
-                        {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar  */}
+                        {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones)  */}
                         <div className="col-3">
                             {//CASO 1: Secundaria-Español
                                 (this.state.materia === "espanol" && this.state.nivel === "secundaria") &&
@@ -533,41 +532,49 @@ class BuscadorPlaneamiento extends Component {
                             {
                                 //Caso 3 Preescolar
                                 this.state.nivel === "preescolar" &&
+                                (
                                     // Con diagnóstico
-                                    this.state.anno === "diagnostico" ?
-                                (
-                                    <div className="input-group mb-3">
-                                        <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
-                                                Mes
-                                        </label>
-                                        </div>
-                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                            <option defaultValue value="seleccione" >Seleccione:</option>
-                                            <option key={"mes"+1} value="febrero"> Plan de febrero </option>                                            
-                                            <option key={"mes"+2} value="marzo"> Plan de marzo </option>                                            
-                                        </select>
-                                    </div>
-                                ) :
-                                (
-                                    //Sin diagnóstico pero en preescolar
-                                    this.state.nivel === "preescolar" && 
-                                    (
-                                        <div className="input-group mb-3">
-                                        <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
-                                                Acción procedimental
-                                        </label>
-                                        </div>
-                                            <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                                <option defaultValue value="seleccione" >Seleccione:</option>
-                                                <option key={"accion"+1} value="discriminacion"> Discriminación </option>                                            
-                                                <option key={"accion"+2} value="identificacion"> Identificación </option>                                            
-                                            </select>
-                                        </div>
-                                    )
-                                
-                                )
+                                        this.state.anno === "diagnostico" ?
+                                                (
+                                                    <div className="input-group mb-3">
+                                                        <div className="input-group-prepend">
+                                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                                    Mes
+                                                            </label>
+                                                        </div>
+                                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                                                <option disabled defaultValue value="" >Seleccione un mes:</option>
+                                                                {
+                                                                categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
+                                                                    (item, i) => (
+                                                                        <option key = {"mes"+i }   value={item.id}>  {item.etiqueta} </option>
+                                                                    )
+                                                                )
+                                                                }                                         
+                                                        </select>
+                                                    </div>
+                                                ) : (
+                                                //Sin diagnóstico pero en preescolar
+                                                //this.state.nivel === "preescolar" &&                                                     
+                                                        <div className="input-group mb-3">
+                                                        <div className="input-group-prepend">
+                                                        <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                                Acción procedimental
+                                                        </label>
+                                                        </div>
+                                                            <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                                                <option disabled defaultValue value="" >Seleccione una opcion:</option>
+                                                                {
+                                                                categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
+                                                                    (item, i) => (
+                                                                        <option key = {"accion"+i } value={item.id}>  {item.etiqueta} </option>
+                                                                    )
+                                                                )
+                                                                }                                                
+                                                            </select>
+                                                        </div>                                                                                    
+                                                )
+                            )
                             }                          
                         </div>
                     </div>
