@@ -2,62 +2,151 @@
     {
     "id" : "diagnostico",
     "etiqueta" : "Diagnótico",
-        "I" :   [
-                "Plan de febrero",
-                "Plan de marzo"   
-                ],
-        "II" : [
-                "Plan de febrero",
-                "Plan de marzo"   
-                ],
-        "III" : [
-                "Plan de febrero",
-                "Plan de marzo"   
+    "niveles" : [
+        {
+                "id" : "I",
+                "acciones" : [
+                        {
+                                "id" : "febrero",
+                                "etiqueta" : "Plan de febrero"
+                                },
+                                {
+                                "id" : "marzo",
+                                "etiqueta" : "Plan de marzo"
+                        }  
                 ]
+        },
+        {
+                "id" : "II",
+                "acciones" : [
+                        {
+                                "id" : "febrero",
+                                "etiqueta" : "Plan de febrero"
+                                },
+                                {
+                                "id" : "marzo",
+                                "etiqueta" : "Plan de marzo"
+                        }  
+                ]
+        },
+        {
+                "id" : "III",
+                "acciones" : [
+                        {
+                                "id" : "febrero",
+                                "etiqueta" : "Plan de febrero"
+                                },
+                                {
+                                "id" : "marzo",
+                                "etiqueta" : "Plan de marzo"
+                        }  
+                ]
+        }
+     ]       
     },
-
     {
-    "id" : "diagnostico",
-    "etiqueta" : "Diagnótico",
-        "I" :   [
-                "Plan de febrero",
-                "Plan de marzo"   
-                ],
-        "II" : [
-                "Plan de febrero",
-                "Plan de marzo"   
-                ],
-        "III" : [
-                "Plan de febrero",
-                "Plan de marzo"   
-                ]
-    },
+        "id" : "concienciaCorporal",
+        "etiqueta" : "Conciencia corporal",
+        "niveles" : [
+            {
+                    "id" : "I",
+                    "acciones" : [
+                                {
+                                    "id" : "discriminacion",
+                                    "etiqueta" : "Discriminación"
+                                }
+                                ]
+            },
+            {
+                    "id" : "II",
+                    "acciones" : [
+                                {
+                                    "id" : "identificacion",
+                                    "etiqueta" : "Identificación"
+                                    }                                    
+                                ]
+            },
+            {
+                    "id" : "III",
+                    "acciones" : [
+                                {
+                                "id" : "reconocimiento",
+                                "etiqueta" : "Reconocimineto"
+                                },
+                                {
+                                "id" : "desarrollo",
+                                "etiqueta" : "Desarrollo"
+                                }
+                    ]
+            }
+         ]       
+        },
+        {
+                "id" : "imagenCorporal",
+                "etiqueta" : "Imagen corporal",
+                "niveles" : [
+                    {
+                            "id" : "I",
+                            "acciones" : [
+                                {
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }   
+                                        ]
+                    },
+                    {
+                            "id" : "II",
+                            "acciones" : [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        }                                  
+                                        ]
+                    },
+                    {
+                            "id" : "III",
+                            "acciones" : [
+                                {
+                                        "id" : "demostracion",
+                                        "etiqueta" : "Demostración"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+        {
+                "id" : "identidadSexual",
+                "etiqueta" : "Identidad sexual",
+                "niveles" : [
+                    {
+                            "id" : "I",
+                            "acciones" : [
+                                {
+                                        "id" : "descripcion",
+                                        "etiqueta" : "Descripción"
+                                        }   
+                                        ]
+                    },
+                    {
+                            "id" : "II",
+                            "acciones" : [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        }                                  
+                                        ]
+                    },
+                    {
+                            "id" : "III",
+                            "acciones" : [
+                                {
+                                        "id" : "comprension",
+                                        "etiqueta" : "Comprensión"
+                                        }  
+                            ]
+                    }
+                ]       
+        } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
 ]

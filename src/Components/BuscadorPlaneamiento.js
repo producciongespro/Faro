@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
 import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
 import dataSecundariaEspanol from '../data/planeamiento/secundaria_espanol.json';
+import categoriasPreescolar from '../data/planeamiento/categorias_preescolar.json';
 import dataIdiomas from '../data/planeamiento/docs_idiomas.json';
 import images from '../data/images.json';
 import meses from '../data/meses.json';
@@ -11,6 +12,10 @@ const listasPlan = arrayListasPlan[0];
 
 //console.log("Secudnaria frances", dataFrances );
 //console.log("listasPlan",listasPlan );
+console.log("categoriasPreescolar", categoriasPreescolar);
+
+
+
 
 
 class BuscadorPlaneamiento extends Component {
@@ -22,7 +27,11 @@ class BuscadorPlaneamiento extends Component {
             anno: "",
             buscarActivo: false,
             // En etiqueta es asginatura. Dependiendo de la asignatura se despliega información en la GUI
-            materia: ""
+            materia: "",
+            //estado en caso de preescolar para actualizar los select: "desempeño" y acción procedimental
+            indiceContenido : 0,
+            indiceDesempeno : 0
+
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
@@ -48,11 +57,27 @@ class BuscadorPlaneamiento extends Component {
         console.log("handlerobtenerNivel");        
     }
     handlerObtenerMateria = (e) => {
-        this.setState({ materia: e.target.value });
-        console.log("handlerobtenerMateria");        
+        let indice = e.target.selectedIndex - 1;  
+        //this.setState({ materia: e.target.value });
+        //this.setState({ indiceDesempeno: e.target.selectedIndex - 1  });  
+        this.setState({ materia: e.target.value },
+            ()=>{
+                this.setState({ indiceDesempeno:  indice }, ()=>{
+                    console.log("****NIVEL", categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones  );
+                    
+                });  
+            }
+            );
+        
+        
+
+       
+                     
     }
     handlerObtenerAnno = (e) => {
-        this.setState({ anno: e.target.value });
+        //almacena en un estado el indice de la opción seleccionada
+        this.setState({indiceContenido: e.target.selectedIndex - 1  });            
+        this.setState({ anno: e.target.value });        
     }
     handlerObtenerMes = (e) => {
         this.mes = e.target.value;        
@@ -64,9 +89,6 @@ class BuscadorPlaneamiento extends Component {
         this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;        
         console.log("this.etiquetaPlan",  this.etiquetaPlan );     
     }
-
-
-
     activarBotonBuscar = (e) => {
         //Activa el botón buscar 
         // "seleccione" es el valor que tiene el select por defeto, lo cual significa que no ha sido seleccionado
@@ -76,7 +98,6 @@ class BuscadorPlaneamiento extends Component {
             this.setState({ buscarActivo: false });
         }
     }
-
     cargarInformacionBusqueda = () => {
         //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
         let arrayNivel;
@@ -324,7 +345,7 @@ class BuscadorPlaneamiento extends Component {
 
                                     {
                                         this.state.nivel === "preescolar" &&
-                                        listasPlan.annoPrrescolar.map((item, i) => (
+                                        categoriasPreescolar.map((item, i) => (                                                                                       
                                             <option key={"anno" + i} value={item.id} >  {item.etiqueta}  </option>
                                         ))
 
@@ -380,13 +401,12 @@ class BuscadorPlaneamiento extends Component {
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria} >
+                                    <option value="" >  Selecione una opción  </option>
                                     {
                                         this.state.nivel === "preescolar" &&                                        
-                                        <React.Fragment>
-                                            <option key={"materia" + 1} value={1} >  I  </option>
-                                            <option key={"materia" + 2} value={2} >  II  </option>
-                                            <option key={"materia" + 3} value={3} >  III  </option>
-                                        </React.Fragment>                                        
+                                        categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i )=> (
+                                            <option key={"materia" + i} value={item.id } >  {item.id }  </option>                                           
+                                        ))  
                                     }
                                     {
                                         this.state.nivel === "primaria" &&
