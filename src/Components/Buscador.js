@@ -21,7 +21,7 @@ var materiasPrimaria = [
     },
     {
         "label": "Francés",
-        "id": "frances"
+        "id": "Francés"
     },
     {
         "label": "Inglés",
@@ -66,7 +66,7 @@ var materiasSecundaria = [
     },
     {
         "label": "Francés",
-        "id": "frances"
+        "id": "Francés"
     },
     {
         "label": "Inglés",
@@ -255,6 +255,7 @@ class Buscador extends Component {
 
 
             if (this.props.origen === dataGeneral[index].nivel && resMateria && resAnno && this.poblacion === dataGeneral[index].poblacion && this.apoyos === dataGeneral[index].apoyos) {
+                
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
                 //console.log( "Año:", dataGeneral[index].anno );                
@@ -268,17 +269,17 @@ class Buscador extends Component {
                             this.state.materia === "" && (
                                 <React.Fragment>
                                     {
-                                        (this.props.origen === "primaria" || this.props.origen === "secundaria") && 
+                                        (this.props.origen === "primaria" || this.props.origen === "secundaria") &&
                                         (
                                             <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {dataGeneral[index].materia}     </span>
-                                        )                                        
+                                        )
                                     }
                                     {
-                                        (this.props.origen === "intercultural" ) && 
+                                        (this.props.origen === "intercultural") &&
                                         (
                                             <span> <strong>   <i className="fab fa-diaspora"></i>    Unidad:</strong>  {dataGeneral[index].materia}     </span>
-                                        )                                        
-                                    }                                    
+                                        )
+                                    }
                                     <br />
                                 </React.Fragment>
                             )
@@ -343,11 +344,11 @@ class Buscador extends Component {
                             this.props.origen === "intercultural" && (
                                 <h1 className="text-center"  >Interculturalidad</h1>
                                 //<img alt="intercultural" className="bannerRecursos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Palenque_glyphs-edit1.jpg/350px-Palenque_glyphs-edit1.jpg" />
-                            )                            
-                                
+                            )
+
                         }
-                            
-                     
+
+
 
 
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarBuscador} src={images[0].BtnVolver} alt="Volver" />
@@ -361,16 +362,17 @@ class Buscador extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-3">
+                            {/* Columna 1 ASIGNATURA (MATERIA) */}
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     {
-                                        (this.props.origen==="primaria" || this.props.origen==="secundaria"  )  && 
+                                        (this.props.origen === "primaria" || this.props.origen === "secundaria") &&
                                         (
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Asignatura</label>
                                         )
                                     }
                                     {
-                                        this.props.origen==="intercultural" && 
+                                        this.props.origen === "intercultural" &&
                                         (
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Unidad</label>
                                         )
@@ -393,72 +395,73 @@ class Buscador extends Component {
                                     {
                                         this.props.origen === "intercultural" &&
                                         (
-                                        <React.Fragment>
-                                            <option value="Educación indígena" > Educación indígena  </option>
-                                            <option value="Contextualización y pertinencia cultural" > Contextualización y pertinencia cultural  </option>
-                                        </React.Fragment>
-                                        )                                        
-                                            
-
+                                            <React.Fragment>
+                                                <option value="Educación indígena" > Educación indígena  </option>
+                                                <option value="Contextualización y pertinencia cultural" > Contextualización y pertinencia cultural  </option>
+                                            </React.Fragment>
+                                        )
                                     }
                                 </select>
                             </div>
+                            {/* Fin de Columna 1 ASIGNATURA (MATERIA) */}
                         </div>
 
                         <div className="col-3  ">
-                            
+                            {/* Columna 2 AÑO -  */}
                             {
-                                this.props.origen !==  "intercultural" && (
+                                // SI NIVEL ES DIFERNETE DE INTERCULTURAL SE RENDERIZA EL SELECT AÑO
+                                this.props.origen !== "intercultural" && (
                                     <div className="input-group mb-3">
-                                <div className="input-group-prepend">
-                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
-                                </div>
-                                <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
-                                    <option defaultValue value="" > Todos </option>
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
+                                            <option defaultValue value="" > Todos </option>
 
-                                    {
-                                        this.props.origen === "preescolar" &&
-                                        annoPrrescolar.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.props.origen === "primaria" &&
-                                        annoPrimaria.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
-                                        ))
+                                            {
+                                                this.props.origen === "preescolar" &&
+                                                annoPrrescolar.map((item, i) => (
+                                                    <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                                ))
+                                            }
+                                            {
+                                                this.props.origen === "primaria" &&
+                                                annoPrimaria.map((item, i) => (
+                                                    <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                                ))
 
-                                    }
-                                    {
-                                        this.props.origen === "secundaria" &&
-                                        anoSecundaria.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
-                                        ))
-                                    }
-                                </select>
-                            </div>
+                                            }
+                                            {
+                                                this.props.origen === "secundaria" &&
+                                                anoSecundaria.map((item, i) => (
+                                                    <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                                ))
+                                            }
+                                        </select>
+                                    </div>
                                 )
                             }
 
                         </div>
 
                         <div className="col-3">
+                            {/* Columna 3 PLAN DE ESTUDIOS EN CASO DE FRANCÉS O ITALIANO -  */}
                             {
                                 //Select que se genera al seleccionar francés
-                                this.state.materia === "frances" &&
+                                this.state.materia === "Francés" &&
                                 (
-                                    <React.Fragment>
+                                    <div className="input-group mb-3">
                                         <div className="input-group-prepend">
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selfrances">Plan de estudio</label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selfrances">
-                                            <option value="extrangera">Francés como Lengua Extranjera</option>
-                                            <option value="bilingue">Secciones Bilingües Español- Francés</option>
-                                    </select>
-                            </React.Fragment>
+                                            <option value="Francés como Lengua Extranjera">Francés como Lengua Extranjera</option>
+                                            <option value="Secciones Bilingües Español-Francés">Secciones Bilingües Español-Francés</option>
+                                        </select>
+                                   </div>
                                 )
                             }
-                       </div>
+                        </div>
 
                         <div className="col-3">
 
@@ -484,40 +487,40 @@ class Buscador extends Component {
 
                         </div>
 
-                        
 
 
-                </div>
+
+                    </div>
 
 
-                <div className="row">
-                    <div className="col-2">
-                        <button onClick={this.buscarInfo} type="button" className="btn btn-secondary btn-lg">
-                            <i className="fas fa-search"></i> Buscar
+                    <div className="row">
+                        <div className="col-12 text-right">
+                            <button onClick={this.buscarInfo} type="button" className="btn btn-secondary btn-lg">
+                                <i className="fas fa-search"></i> Buscar
                             </button>
+                        </div>
                     </div>
-                </div>
 
 
-                <div className="row">
-                    <div className="col-12">
+                    <div className="row">
+                        <div className="col-12">
 
-                        <h6>
-                            {this.mensaje}
-                        </h6>
+                            <h6>
+                                {this.mensaje}
+                            </h6>
+                        </div>
                     </div>
-                </div>
 
 
-                <div className="row">
-                    <div className="col-12">
-                        {
-                            this.state.tarjetas.map((item, i) => (
-                                <div key={"tarjeta" + i} > {item} </div>
-                            ))
-                        }
+                    <div className="row">
+                        <div className="col-12">
+                            {
+                                this.state.tarjetas.map((item, i) => (
+                                    <div key={"tarjeta" + i} > {item} </div>
+                                ))
+                            }
+                        </div>
                     </div>
-                </div>
 
 
 
@@ -525,7 +528,7 @@ class Buscador extends Component {
 
 
             </React.Fragment >
-         );
+        );
     }
 }
 
