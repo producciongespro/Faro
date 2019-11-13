@@ -44,6 +44,8 @@
         }
      ]       
     },
+
+
     {
         "id" : "concienciaCorporal",
         "etiqueta" : "Conciencia corporal",
@@ -81,6 +83,8 @@
             }
          ]       
         },
+
+
         {
                 "id" : "imagenCorporal",
                 "etiqueta" : "Imagen corporal",
@@ -114,16 +118,125 @@
                     }
                 ]       
         },
+
+
+{
+        "id" : "identidadSexual",
+        "etiqueta" : "Identidad sexual",
+        "niveles" : [
+                {
+                        "id" : "I",
+                        "acciones" : [
+                        {
+                                "id" : "descripcion",
+                                "etiqueta" : "Descripción"
+                                }   
+                                ]
+                },
+                {
+                        "id" : "II",
+                        "acciones" : [
+                                {
+                                "id" : "reconocimiento",
+                                "etiqueta" : "Reconocimiento"
+                                }                                  
+                                ]
+                },
+                {
+                        "id" : "III",
+                        "acciones" : [
+                        {
+                                "id" : "comprension",
+                                "etiqueta" : "Comprensión"
+                                }  
+                        ]
+                }
+        ]       
+},
+        
+
+        
+{
+        "id" : "posibilidadesAccion",
+        "etiqueta" : "Posibilidades de acción",
+        "niveles" : [
+                {
+                        "id" : "I",
+                        "acciones" : [
+                        {
+                                "id" : "ejecucion1 ",
+                                "etiqueta" : "Ejecución"
+                                }   
+                                ]
+                },
+                {
+                        "id" : "II",
+                        "acciones" : [
+                                {
+                                "id" : "ejecucion2",
+                                "etiqueta" : "Ejecución"
+                                }                                  
+                                ]
+                },
+                {
+                        "id" : "III",
+                        "acciones" : [
+                        {
+                                "id" : "ejecucion3",
+                                "etiqueta" : "Ejecución"
+                                }  
+                        ]
+                }
+        ]       
+}, 
+
+
+{
+        "id" : "coordinacionVisomotora",
+        "etiqueta" : "Coordinación Visomotora",
+        "niveles" : [
+                {
+                        "id" : "I",
+                        "acciones" : [
+                                {
+                                "id" : "desarrollo",
+                                "etiqueta" : "Desarrollo"
+                                }   
+                                ]
+                },
+                {
+                        "id" : "II",
+                        "acciones" : [
+                                {
+                                "id" : "potenciacion",
+                                "etiqueta" : "Potenciación"
+                                }                                  
+                                ]
+                },
+                {
+                        "id" : "III",
+                        "acciones" : [
+                                {
+                                "id" : "coordinacion",
+                                "etiqueta" : "Coordinación"
+                                }  
+                        ]
+                }
+        ]       
+},
+
+
+
         {
-                "id" : "identidadSexual",
-                "etiqueta" : "Identidad sexual",
+                "id" : "lateralidad",
+                "etiqueta" : "Lateralidad",
                 "niveles" : [
                     {
                             "id" : "I",
                             "acciones" : [
-                                {
-                                        "id" : "descripcion",
-                                        "etiqueta" : "Descripción"
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
                                         }   
                                         ]
                     },
@@ -131,8 +244,49 @@
                             "id" : "II",
                             "acciones" : [
                                         {
-                                        "id" : "reconocimiento",
-                                        "etiqueta" : "Reconocimiento"
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }                                  
+                                        ]
+                    },
+                    {
+                            "id" : "III",
+                            "acciones" : [
+                                        {
+                                        "id" : "utilizacion",
+                                        "etiqueta" : "Utilización"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+
+
+        {
+                "id" : "autonomia",
+                "etiqueta" : "Autonomía",
+                "niveles" : [
+                    {
+                        "id" : "I",
+                        "acciones" : [
+                                    {
+                                    "id" : "manifestacion",
+                                    "etiqueta" : "Manifestación"
+                                    },
+                                    {
+                                    "id" : "practica",
+                                    "etiqueta" : "Práctica"
+                                    }
+                                        ]
+                    },
+                    {
+                            "id" : "II",
+                            "acciones" : [
+                                        {
+                                        "id" : "practica",
+                                        "etiqueta" : "Práctica"
                                         }                                  
                                         ]
                     },
@@ -140,13 +294,213 @@
                             "id" : "III",
                             "acciones" : [
                                 {
-                                        "id" : "comprension",
-                                        "etiqueta" : "Comprensión"
+                                        "id" : "realizacion",
+                                        "etiqueta" : "Realización"
                                         }  
                             ]
                     }
                 ]       
-        } 
+        },
+
+
+
+        {
+                "id" : "SaludNutricion",
+                "etiqueta" : "Salud y nutrición",
+                "niveles" : [
+                        {
+                                "id" : "I",
+                                "acciones" : [
+                                            {
+                                            "id" : "identificacion",
+                                            "etiqueta" : "Identificación "
+                                            }                                  
+                                            ]
+                        },
+                        {
+                            "id" : "II",
+                            "acciones" : [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" : [
+                                    {
+                                    "id" : "comprension",
+                                    "etiqueta" : "Comprensión"
+                                    },
+                                    {
+                                    "id" : "ejecucion",
+                                    "etiqueta" : "Ejecución"
+                                    }
+                            ]
+                    }
+                ]       
+         },
+
+
+
+        {
+                "id" : "atencion",
+                "etiqueta" : "Atención",
+                "niveles" : [
+                        {
+                                "id" : "I",
+                                "acciones" : [
+                                            {
+                                            "id" : "adquisicion",
+                                            "etiqueta" : "Adquisición"
+                                            }                                  
+                                            ]
+                        },
+                        {
+                            "id" : "II",
+                            "acciones" : [
+                                        {
+                                        "id" : "comprension",
+                                        "etiqueta" : "Comprensión"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" : [
+                                    {
+                                    "id" : "IdentificaciOn",
+                                    "etiqueta" : "Identificación"
+                                    }  
+                            ]
+                    }
+                ]       
+        },
+
+
+
+        {
+                "id" : "SentimientosEmociones",
+                "etiqueta" : "Sentimientos y emociones",
+                "niveles" : [
+                        {
+                                "id" : "I",
+                                "acciones" : [
+                                            {
+                                            "id" : "identificacion",
+                                            "etiqueta" : "Identificación"
+                                            }                                  
+                                            ]
+                        },
+                        {
+                                "id" : "II",
+                                "acciones" : [
+                                            {
+                                            "id" : "reconocimiento",
+                                            "etiqueta" : "Reconocimiento"
+                                            },
+                                            {
+                                            "id" : "desarrollo",
+                                            "etiqueta" : "Desarrollo"
+                                            }                              
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" : [
+                                    {
+                                    "id" : "demostracion",
+                                    "etiqueta" : "Demostración"
+                                    }  
+                            ]
+                    }
+                ]       
+        },
+
+
+        
+        {
+                "id" : "familia",
+                "etiqueta" : "Familia",
+                "niveles" : [
+                        {
+                                "id" : "I",
+                                "acciones" : [
+                                            {
+                                            "id" : "conocimiento",
+                                            "etiqueta" : "Conocimiento"
+                                            },
+                                            {
+                                            "id" : "identificacion",
+                                            "etiqueta" : "Identificación"
+                                            }                                  
+                                            ]
+                        },
+                        {
+                                "id" : "II",
+                                "acciones" : [
+                                            {
+                                            "id" : "identificacion",
+                                            "etiqueta" : "Identificación"
+                                            }                              
+                                        ]
+                        },
+                        {
+                                "id" : "III",
+                                "acciones" : [
+                                            {
+                                            "id" : "reconocimiento",
+                                            "etiqueta" : "Reconocimiento"
+                                            },
+                                            {
+                                            "id" : "identificacion",
+                                            "etiqueta" : "Identificación"
+                                    }  
+                            ]
+                    }
+                ]       
+        },
+
+
+        {
+                "id" : "atencion",
+                "etiqueta" : "Atención",
+                "niveles" : [
+                        {
+                                "id" : "I",
+                                "acciones" : [
+                                            {
+                                            "id" : "adquisicion",
+                                            "etiqueta" : "Adquisición"
+                                            }                                  
+                                            ]
+                        },
+                        {
+                            "id" : "II",
+                            "acciones" : [
+                                        {
+                                        "id" : "comprension",
+                                        "etiqueta" : "Comprensión"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" : [
+                                    {
+                                    "id" : "IdentificaciOn",
+                                    "etiqueta" : "Identificación"
+                                    }  
+                            ]
+                    }
+                ]       
+        }
+
+
+
+
+
 
 
 ]
