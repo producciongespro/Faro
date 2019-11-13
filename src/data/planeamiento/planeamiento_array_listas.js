@@ -7,59 +7,56 @@ const listasPlan = [
                 "id": "artIndust"
             },
             {
+                "label": "Artes Plásticas",
+                "id": "artPlast"
+            },
+            {
                 "label": "Ciencias",
                 "id": "ciencias"
             },
             {
-                "label": "Matemática",
-                "id": "matematica"
-            },
-            {
-                "label": "Español",
-                "id": "espanol"
-            },
-            {
-                "label": "Estudios sociales",
-                "id": "estudios"
-            },
-            {
-                "label": "Educación física",
+                "label": "Educación Física",
                 "id": "educFisica"
-            },
-            {
-                "label": "Artes plásticas",
-                "id": "artPlast"
-            },
-            {
-                "label": "Educación religiosa",
-                "id": "religion"
             },
             {
                 "label": "Educación Musical",
                 "id": "musica"
             },
             {
+                "label": "Educación para la vida cotidiana",
+                "id": "vidaCotidiana"
+            },
+            {
+                "label": "Educación Religiosa",
+                "id": "religion"
+            },
+            {
+                "label": "Español",
+                "id": "espanol"
+            },
+            {
+                "label": "Estudios Sociales",
+                "id": "estudios"
+            },
+            {
                 "label": "Francés",
                 "id": "frances"
-            }, 
+            },
             {
                 "label": "Inglés",
                 "id": "ingles"
+            }, 
+            {
+                "label": "Matemática",
+                "id": "matematica"
             },
             {
                 "label": "Orientación",
                 "id": "orientacion"
-            },
-            {
-                "label": "Educación para la vida Cotidiana",
-                "id": "vidaCotidiana"
             }
+            
     ],
     "materiasPrimariaAdultos" : [
-        {
-            "label": "Matemáticas",
-            "id": "matematica"
-        },
         {
             "label": "Ciencias",
             "id": "ciencias"
@@ -71,6 +68,10 @@ const listasPlan = [
         {
             "label": "Estudios Sociales",
             "id": "estudios"
+        },
+        {
+            "label": "Matemáticas",
+            "id": "matematica"
         }
     ],
     "materiasSecundaria" : [
@@ -79,12 +80,36 @@ const listasPlan = [
             "id": "artesIndustriales"
         },
         {
-            "label": "Matemática",
-            "id": "matematica"
+            "label": "Artes Plásticas",
+            "id": "artPlast"
+        },
+        {
+            "label": "Biología",
+            "id": "biologia"
         },
         {
             "label": "Ciencias",
             "id": "ciencias"
+        },
+        {
+            "label": "Educación Cívica",
+            "id": "civica"
+        },
+        {
+            "label": "Educación Física",
+            "id": "educFisica"
+        },
+        {
+            "label": "Educación Musical",
+            "id": "musica"
+        },
+        {
+            "label": "Educación para la Vida Cotidiana",
+            "id": "vidaCotidiana"
+        },
+        {
+            "label": "Educación Religiosa",
+            "id": "religion"
         },
         {
             "label": "Español",
@@ -95,32 +120,12 @@ const listasPlan = [
             "id": "estudios"
         },
         {
-            "label": "Biología",
-            "id": "biologia"
-        },
-        {
-            "label": "Química",
-            "id": "quimica"
-        },
-        {
-            "label": "Física",
-            "id": "fisica"
-        },
-        {
             "label": "Filosofía",
             "id": "filosofia"
         },
         {
-            "label": "Educación física",
-            "id": "educFisica"
-        },
-        {
-            "label": "Artes plásticas",
-            "id": "artPlast"
-        },
-        {
-            "label": "Educación Religiosa",
-            "id": "religion"
+            "label": "Física",
+            "id": "fisica"
         },
         {
             "label": "Francés",
@@ -131,46 +136,30 @@ const listasPlan = [
             "id": "ingles"
         }, 
         {
-            "label": "Psicología",
-            "id": "psicologia"
+            "label": "Italiano",
+            "id": "italiano"
         },
         {
-            "label": "Educación Musical",
-            "id": "musica"
-        },
-        {
-            "label": "Educación Cívica",
-            "id": "civica"
-        },
-        {
-            "label": "Educación Musical",
-            "id": "musica"
+            "label": "Matemática",
+            "id": "matematica"
         },
         {
             "label": "Orienteción",
             "id": "orientacion"
         },
         {
-            "label": "Italiano",
-            "id": "italiano"
-        },
+            "label": "Psicología",
+            "id": "psicologia"
+        },  
         {
-            "label": "Educación para la vida cotidiana",
-            "id": "vidaCotidiana"
+            "label": "Química",
+            "id": "quimica"
         }
     ],
     "materiasCan" : [
         {
-            "label": "Matemática",
-            "id": "matematica"
-        },
-        {
-            "label": "Cívica",
-            "id": "civica"
-        },
-        {
-            "label": "Educación Religiosa",
-            "id": "religion"
+            "label": "Biología",
+            "id": "biologia"
         },
         {
             "label": "Ciencias",
@@ -181,24 +170,24 @@ const listasPlan = [
             "id": "desarrolloHumano"
         },
         {
-            "label": "Desarrollo socio laboral",
+            "label": "Desarrollo Socio Laboral",
             "id": "desarrolloSocioLaboral"
+        },
+        {
+            "label": "Educación Cívica",
+            "id": "civica"
+        },
+        {
+            "label": "Educación Religiosa",
+            "id": "religion"
         },
         {
             "label": "Español",
             "id": "espanol"
         },
         {
-            "label": "Estudios sociales",
+            "label": "Estudios Sociales",
             "id": "estudios"
-        },
-        {
-            "label": "Biología",
-            "id": "biologia"
-        },
-        {
-            "label": "Química",
-            "id": "quimica"
         },
         {
             "label": "Física",
@@ -211,14 +200,20 @@ const listasPlan = [
         {
             "label": "Inglés",
             "id": "ingles"
-        }
-    
-    ],
-    "materiasConed" : [
-
+        },
         {
             "label": "Matemática",
             "id": "matematica"
+        },
+        {
+            "label": "Química",
+            "id": "quimica"
+        }
+    ],
+    "materiasConed" : [
+        {
+            "label": "Biología",
+            "id": "biologia"
         },
         {
             "label": "Ciencias",
@@ -229,12 +224,12 @@ const listasPlan = [
             "id": "espanol"
         },
         {
-            "label": "Estudios sociales",
+            "label": "Estudios Sociales",
             "id": "estudios"
         },
         {
-            "label": "Biología",
-            "id": "biologia"
+            "label": "Matemática",
+            "id": "matematica"
         },
         {
             "label": "Técnico Básico",
@@ -243,24 +238,84 @@ const listasPlan = [
     ],
     "materiaInterculturaPrimaria" : [
         {
+            "id" : "cBoruca",
+            "etiqueta" : "Cultura Boruca"
+        },
+        {
             "id" : "cBribiBuenosAires",
             "etiqueta" : "Cultura Bribí de Buenos Aires"
         },
         {
+            "id" : "cBribriSula",
+            "etiqueta" : "Cultura Bribri de Sulá"
+        },
+        {
             "id" : "cCabecarBuenosAires",
-            "etiqueta" : "Cultura Bribí de Buenos Aires"
+            "etiqueta" : "Cultura Cabécar de Buenos Aires"
         },
         {
             "id" : "cCabecarChirripo",
-            "etiqueta" : "Cultura Cabécar Chirripó"
+            "etiqueta" : "Cultura Cabécar de Chirripó"
+        },
+        {
+            "id" : "cCabecarSula",
+            "etiqueta" : "Cultura Cabécar de Sulá"
+        },
+        {
+            "id" : "cChorotega",
+            "etiqueta" : "Cultura Chorotega"
+        },
+        {
+            "id" : "cHuetar",
+            "etiqueta" : "Cultura Huetar"
+        },
+        {
+            "id" : "cMaleku",
+            "etiqueta" : "Cultura Maleku"
+        },
+        {
+            "id" : "cNgabe",
+            "etiqueta" : "Cultura Ngäbe"
+        },
+        {
+            "id" : "cTerraba",
+            "etiqueta" : "Cultura Térraba"
+        },
+        {
+            "id" : "iNgabere",
+            "etiqueta" : "Idioma Ngäbere"
+        },
+        {
+            "id" : "lBoruca",
+            "etiqueta" : "Lengua Boruca"
         },
         {
             "id" : "lBribriBuenosAires",
-            "etiqueta" : "Lengua Bribrí Buenos Aires"
+            "etiqueta" : "Lengua Bribri de Buenos Aires"
+        },
+        {
+            "id" : "lBribriSula",
+            "etiqueta" : "Lengua Bribri de Sulá"
         },
         {
             "id" : "lCabecarBuenosAires",
-            "etiqueta" : "Lengua Cabécar Buenos Aires"
+            "etiqueta" : "Lengua Cabécar de Buenos Aires"
+        },
+        {
+            "id" : "lCabecarChirripo",
+            "etiqueta" : "Lengua Cabécar de Chirripó"
+        },
+        {
+            "id" : "lCabecarSula",
+            "etiqueta" : "Lengua Cabécar de Sulá"
+        },
+        {
+            "id" : "lMaleku",
+            "etiqueta" : "Lengua Maleku"
+        },
+        {
+            "id" : "lTerraba",
+            "etiqueta" : "Lengua Térraba"
         }
     ],
     "anoSecundaria" : [
@@ -321,7 +376,7 @@ const listasPlan = [
             "id": "can"
         },
         {
-            "label": "Colegio Nacional a Distancia",
+            "label": "Colegio Nacional de Educación a Distancia (CONED)",
             "id": "coned"
         },
         {
@@ -341,23 +396,15 @@ const listasPlan = [
             "id": "en4"
         },
         {
-            "label": "IPEC Cursos libres",
-            "id": "ipecCursosLibre"
-        },
-        {
-            "label": "Educación Emergente CINDEA ",
-            "id": "ipecEmergente"
-        },
-        {
-            "label": "IPEC - CINDEA Nivel I",
+            "label": "IPEC-CINDEA Nivel I",
             "id": "ipec1"
         },
         {
-            "label": "IPEC - CINDEA Nivel II",
+            "label": "IPEC-CINDEA Nivel II",
             "id": "ipec2"
         },
         {
-            "label": "IPEC - CINDEA Nivel III",
+            "label": "IPEC-CINDEA Nivel III",
             "id": "ipec3"
         },
         {
@@ -408,7 +455,7 @@ const listasPlan = [
         },
         {
             "id" : "bilingue",
-            "etiqueta" : "Secciones Bilingües"
+            "etiqueta" : "Secciones Bilingües Español- Inglés"
         }
     ],
     "planEstudiosInglesSecundaria" : [
