@@ -267,7 +267,18 @@ class Buscador extends Component {
                         {
                             this.state.materia === "" && (
                                 <React.Fragment>
-                                    <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {dataGeneral[index].materia}     </span>
+                                    {
+                                        (this.props.origen === "primaria" || this.props.origen === "secundaria") && 
+                                        (
+                                            <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {dataGeneral[index].materia}     </span>
+                                        )                                        
+                                    }
+                                    {
+                                        (this.props.origen === "intercultural" ) && 
+                                        (
+                                            <span> <strong>   <i className="fab fa-diaspora"></i>    Unidad:</strong>  {dataGeneral[index].materia}     </span>
+                                        )                                        
+                                    }                                    
                                     <br />
                                 </React.Fragment>
                             )
@@ -286,7 +297,6 @@ class Buscador extends Component {
                 )
                 arrayTmp.push(arrayHtml);
             }
-
         };
 
         if (arrayTmp.length <= 0) {
@@ -384,8 +394,8 @@ class Buscador extends Component {
                                         this.props.origen === "intercultural" &&
                                         (
                                         <React.Fragment>
-                                            <option value="educacionIndigena" > Educación indígena  </option>
-                                            <option value="contextualizacionCultural" > Contextualización y pertinencia cultural  </option>
+                                            <option value="Educación indígena" > Educación indígena  </option>
+                                            <option value="Contextualización y pertinencia cultural" > Contextualización y pertinencia cultural  </option>
                                         </React.Fragment>
                                         )                                        
                                             
@@ -408,14 +418,12 @@ class Buscador extends Component {
 
                                     {
                                         this.props.origen === "preescolar" &&
-
                                         annoPrrescolar.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.label}  </option>
                                         ))
                                     }
                                     {
                                         this.props.origen === "primaria" &&
-
                                         annoPrimaria.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.label}  </option>
                                         ))
@@ -423,7 +431,6 @@ class Buscador extends Component {
                                     }
                                     {
                                         this.props.origen === "secundaria" &&
-
                                         anoSecundaria.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.label}  </option>
                                         ))
@@ -445,8 +452,8 @@ class Buscador extends Component {
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selfrances">Plan de estudio</label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selfrances">
-                                        <option value="extrangera">Francés como Lengua Extranjera</option>
-                                        <option value="bilingue">Secciones Bilingües Español- Francés</option>
+                                            <option value="extrangera">Francés como Lengua Extranjera</option>
+                                            <option value="bilingue">Secciones Bilingües Español- Francés</option>
                                     </select>
                             </React.Fragment>
                                 )
