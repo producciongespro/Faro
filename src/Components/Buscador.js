@@ -329,6 +329,15 @@ class Buscador extends Component {
                         {
                             this.props.origen === "secundaria" && <img alt="Secundaria" className="bannerRecursos" src={images[0].RecDidacticosSecundariaBanner} />
                         }
+                        {
+                            this.props.origen === "intercultural" && (
+                                <h1 className="text-center"  >Interculturalidad</h1>
+                                //<img alt="intercultural" className="bannerRecursos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Palenque_glyphs-edit1.jpg/350px-Palenque_glyphs-edit1.jpg" />
+                            )                            
+                                
+                        }
+                            
+                     
 
 
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarBuscador} src={images[0].BtnVolver} alt="Volver" />
@@ -344,7 +353,18 @@ class Buscador extends Component {
                         <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
-                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Asignatura</label>
+                                    {
+                                        (this.props.origen==="primaria" || this.props.origen==="secundaria"  )  && 
+                                        (
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Asignatura</label>
+                                        )
+                                    }
+                                    {
+                                        this.props.origen==="intercultural" && 
+                                        (
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Unidad</label>
+                                        )
+                                    }
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
                                     <option defaultValue value="" >Todas</option>
@@ -360,12 +380,26 @@ class Buscador extends Component {
                                             <option key={"materia" + i} value={item.id} >  {item.label}  </option>
                                         ))
                                     }
+                                    {
+                                        this.props.origen === "intercultural" &&
+                                        (
+                                        <React.Fragment>
+                                            <option value="educacionIndigena" > Educación indígena  </option>
+                                            <option value="contextualizacionCultural" > Contextualización y pertinencia cultural  </option>
+                                        </React.Fragment>
+                                        )                                        
+                                            
+
+                                    }
                                 </select>
                             </div>
                         </div>
 
                         <div className="col-3  ">
-                            <div className="input-group mb-3">
+                            
+                            {
+                                this.props.origen !==  "intercultural" && (
+                                    <div className="input-group mb-3">
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
                                 </div>
@@ -378,10 +412,7 @@ class Buscador extends Component {
                                         annoPrrescolar.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.label}  </option>
                                         ))
-
                                     }
-
-
                                     {
                                         this.props.origen === "primaria" &&
 
@@ -390,19 +421,18 @@ class Buscador extends Component {
                                         ))
 
                                     }
-
                                     {
                                         this.props.origen === "secundaria" &&
 
                                         anoSecundaria.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.label}  </option>
                                         ))
-
                                     }
-
-
                                 </select>
                             </div>
+                                )
+                            }
+
                         </div>
 
                         <div className="col-3">
