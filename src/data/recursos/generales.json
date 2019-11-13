@@ -389,7 +389,63 @@
           "ciclo" : "2",
           "poblacion" : "",
           "apoyos" : ""
+        },
+        {
+          "nombre": "Recurso 1 interulturalidad",
+          "desc": "intercultural ABC",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
+          "nivel" : "intercultural",
+          "materia" : "Educación indígena",
+          "anno" : "1, 2, 3, 4, 5, 6 ",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Recurso 2 interulturalidad",
+          "desc": "intercultural ABC",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
+          "nivel" : "intercultural",
+          "materia" : "Educación indígena",
+          "anno" : "1, 2, 3, 4, 5, 6 ",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Recurso 1 de 3 de Contextualización",
+          "desc": "intercultural ABC",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
+          "nivel" : "intercultural",
+          "materia" : "Contextualización y pertinencia cultural",
+          "anno" : "1, 2, 3, 4, 5, 6 ",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Recurso 2 de 3 de Contextualización",
+          "desc": "intercultural ABC",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
+          "nivel" : "intercultural",
+          "materia" : "Contextualización y pertinencia cultural",
+          "anno" : "1, 2, 3, 4, 5, 6 ",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
+        },
+        {
+          "nombre": "Recurso 3 de 3 de Contextualización",
+          "desc": "intercultural ABC",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
+          "nivel" : "intercultural",
+          "materia" : "Contextualización y pertinencia cultural",
+          "anno" : "1, 2, 3, 4, 5, 6 ",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : ""
         }
+
    
 
 ]
