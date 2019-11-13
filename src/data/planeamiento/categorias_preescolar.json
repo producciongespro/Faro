@@ -113,6 +113,39 @@
                             ]
                     }
                 ]       
+        },
+        {
+                "id" : "identidadSexual",
+                "etiqueta" : "Identidad sexual",
+                "niveles" : [
+                    {
+                            "id" : "I",
+                            "acciones" : [
+                                {
+                                        "id" : "descripcion",
+                                        "etiqueta" : "Descripción"
+                                        }   
+                                        ]
+                    },
+                    {
+                            "id" : "II",
+                            "acciones" : [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        }                                  
+                                        ]
+                    },
+                    {
+                            "id" : "III",
+                            "acciones" : [
+                                {
+                                        "id" : "comprension",
+                                        "etiqueta" : "Comprensión"
+                                        }  
+                            ]
+                    }
+                ]       
         } 
 
 

@@ -57,10 +57,25 @@ class BuscadorPlaneamiento extends Component {
         console.log("handlerobtenerNivel");        
     }
     handlerObtenerMateria = (e) => {
-        this.setState({ materia: e.target.value });
-        console.log("handlerobtenerMateria");        
+        let indice = e.target.selectedIndex - 1;  
+        //this.setState({ materia: e.target.value });
+        //this.setState({ indiceDesempeno: e.target.selectedIndex - 1  });  
+        this.setState({ materia: e.target.value },
+            ()=>{
+                this.setState({ indiceDesempeno:  indice }, ()=>{
+                    console.log("****NIVEL", categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones  );
+                    
+                });  
+            }
+            );
+        
+        
+
+       
+                     
     }
     handlerObtenerAnno = (e) => {
+        //almacena en un estado el indice de la opción seleccionada
         this.setState({indiceContenido: e.target.selectedIndex - 1  });            
         this.setState({ anno: e.target.value });        
     }
@@ -386,6 +401,7 @@ class BuscadorPlaneamiento extends Component {
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria} >
+                                    <option value="" >  Selecione una opción  </option>
                                     {
                                         this.state.nivel === "preescolar" &&                                        
                                         categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i )=> (
