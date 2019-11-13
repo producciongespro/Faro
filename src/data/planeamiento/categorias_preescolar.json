@@ -327,15 +327,15 @@
                                         ]
                         },
                         {
-                        "id" : "III",
-                        "acciones" : [
-                                    {
-                                    "id" : "comprension",
-                                    "etiqueta" : "Comprensión"
-                                    },
-                                    {
-                                    "id" : "ejecucion",
-                                    "etiqueta" : "Ejecución"
+                                "id" : "III",
+                                "acciones" : [
+                                        {
+                                        "id" : "comprension",
+                                        "etiqueta" : "Comprensión"
+                                        },
+                                        {
+                                        "id" : "ejecucion",
+                                        "etiqueta" : "Ejecución"
                                     }
                             ]
                     }
@@ -367,11 +367,11 @@
                                         ]
                         },
                         {
-                        "id" : "III",
-                        "acciones" : [
-                                    {
-                                    "id" : "IdentificaciOn",
-                                    "etiqueta" : "Identificación"
+                                "id" : "III",
+                                "acciones" : [
+                                        {
+                                        "id" : "IdentificaciOn",
+                                        "etiqueta" : "Identificación"
                                     }  
                             ]
                     }
@@ -407,13 +407,13 @@
                                         ]
                         },
                         {
-                        "id" : "III",
-                        "acciones" : [
-                                    {
-                                    "id" : "demostracion",
-                                    "etiqueta" : "Demostración"
-                                    }  
-                            ]
+                                "id" : "III",
+                                "acciones" : [
+                                        {
+                                        "id" : "demostracion",
+                                        "etiqueta" : "Demostración"
+                                        }  
+                                ]
                     }
                 ]       
         },
@@ -464,21 +464,238 @@
 
 
         {
-                "id" : "atencion",
-                "etiqueta" : "Atención",
+                "id" : "centroEducativo",
+                "etiqueta" : "Centro educativo ",
                 "niveles" : [
                         {
-                                "id" : "I",
-                                "acciones" : [
-                                            {
-                                            "id" : "adquisicion",
-                                            "etiqueta" : "Adquisición"
-                                            }                                  
-                                            ]
+                        "id" : "I",
+                        "acciones" : [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        }                                  
+                                        ]
                         },
                         {
-                            "id" : "II",
-                            "acciones" : [
+                        "id" : "II",
+                        "acciones" : [
+                                {
+                                "id" : "identificacion",
+                                "etiqueta" : "Identificación"
+                                }                                  
+                                ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" : [
+                                    {
+                                    "id" : "experimentacion",
+                                    "etiqueta" : "Experimentación"
+                                    }  
+                            ]
+                    }
+                ]       
+        },
+
+
+
+        {
+                "id" : "comunidad",
+                "etiqueta" : "Comunidad",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        },
+                                        {
+                                        "id" : "aplicacion",
+                                        "etiqueta" : "Aplicación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+
+        {
+                "id" : "somosDiferentes",
+                "etiqueta" : "Somos diferentes e iguales",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "demostracion",
+                                        "etiqueta" : "Demostración"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+        {
+                "id" : "Convivencia",
+                "etiqueta" : "Convivencia ",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "demostracion",
+                                        "etiqueta" : "Demostración"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "practica",
+                                        "etiqueta" : "Práctica"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+        {
+                "id" : "elementosMedio",
+                "etiqueta" : "Elementos del medio",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "discriminacion",
+                                        "etiqueta" : "Discriminación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "clasificacion",
+                                        "etiqueta" : "Clasificación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "utilizacion",
+                                        "etiqueta" : "Utilización"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+        {
+                "id" : "sentidoEspacial",
+                "etiqueta" : "Sentido espacial",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "conocimiento",
+                                        "etiqueta" : "Conocimiento"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "aplicacion",
+                                        "etiqueta" : "Aplicación"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+
+        {
+                "id" : "sentidoTemporal",
+                "etiqueta" : "Sentido temporal",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
                                         {
                                         "id" : "comprension",
                                         "etiqueta" : "Comprensión"
@@ -487,17 +704,15 @@
                         },
                         {
                         "id" : "III",
-                        "acciones" : [
-                                    {
-                                    "id" : "IdentificaciOn",
-                                    "etiqueta" : "Identificación"
-                                    }  
+                        "acciones" :    [
+                                        {
+                                        "id" : "aplicacion",
+                                        "etiqueta" : "Aplicación"
+                                        }  
                             ]
                     }
                 ]       
         }
-
-
 
 
 
