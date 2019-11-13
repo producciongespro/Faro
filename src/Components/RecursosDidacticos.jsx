@@ -51,6 +51,18 @@ const RecursosDidacticos = (props) => {
               </figure>
             </div>
         </div>
+
+        <div className="row">
+          <div className="col-4">
+            <button id="intercultural" className="btn btn-success" onClick={props.handlerOpenBuscador} >Educación Intercultural</button>
+          </div>
+          <div className="col-4">
+            <button className="btn btn-success">Feria Científica</button>
+          </div>
+          <div className="col-4">
+            <button className="btn btn-success">Bandera Azul</button>
+          </div>
+        </div>
       
 
         </div>
