@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import dataGeneral from '../data/recursos/generales.json';
+import dataOtros from '../data/recursos/generales.json';
+import dataIngles from '../data/recursos/recursos_ingles.json';
+import dataFrances from '../data/recursos/recursos_frances.json';
+import dataMediacion from '../data/recursos/recursos_mediacion.json';
+import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import images from '../data/images.json';
 
 var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Matemáticas", "Mediación"]
-
-
 var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Matemáticas", "Mediación", "Química"]
-
-
 var anoSecundaria = [
     {
         "label": "Sétimo",
@@ -34,7 +34,6 @@ var anoSecundaria = [
         "id": "12"
     }
 ];
-
 var annoPrimaria = [
     {
         "label": "Primero",
@@ -61,7 +60,6 @@ var annoPrimaria = [
         "id": "6"
     }
 ];
-
 var annoPrrescolar = [
     {
         "label": "Interactivo I",
@@ -76,8 +74,7 @@ var annoPrrescolar = [
         "id": "3"
     }
 
-]
-
+];
 var tipoPoblacion = [
     {
         "label": "Educación para adultos",
@@ -87,8 +84,10 @@ var tipoPoblacion = [
         "label": "Liceos rurales",
         "id": "rurales"
     }
-]
+];
 
+var dataGeneral="";
+console.log("dataIngles", dataIngles);
 
 
 class Buscador extends Component {
@@ -104,9 +103,43 @@ class Buscador extends Component {
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
-        this.planEstudios = "";
+        this.planEstudios = "";        
         //Oculta la materia en caso de preescolar
         this.ocultarMateria();
+    }
+
+
+    cargarDatasetRecursos = (materia) => {
+        dataGeneral="";
+        switch (materia) {
+            case "Inglés":
+                dataGeneral = dataIngles;
+            break;
+            case "Ciencias":
+            case "Español":
+            case "Estudios Sociales":
+            case "Matemáticas":
+            case "Cívica":
+                dataGeneral = dataOtros;
+            break;
+            case "Francés":
+                    dataGeneral = dataFrances;
+            break;
+            case "Mediación":
+                    dataGeneral = dataMediacion;
+            break;  
+            case "Artes Plásticas":
+                    dataGeneral = dataArtesPlasticas;
+            break; 
+                             
+        
+            default:
+                dataGeneral = dataOtros;
+                console.log("Opción fuera de rango");                
+            break;
+        }
+
+       
     }
 
 
@@ -115,9 +148,10 @@ class Buscador extends Component {
         this.planEstudios = "";
 
         let valor = e.target.value;
-        console.log("materia", this.state.materia);
-        this.setState({
-            materia: valor
+        
+        this.setState({materia: valor}, ()=>{
+            this.cargarDatasetRecursos(this.state.materia);
+            console.log("materia", this.state.materia);
         })
     }
 

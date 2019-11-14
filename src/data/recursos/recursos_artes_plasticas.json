@@ -1,0 +1,110 @@
+[
+    {
+        "nombre": "El círculo cromático",
+        "desc": "Video de los colores primarios y secundarios/colores fríos y cálidos.",
+        "url": "https://www.youtube.com/watch?v=FN9ycBXKHDY",
+        "nivel" : "primaria",
+        "materia" : "Artes Plásticas",
+        "anno" : "",
+        "ciclo" : "1",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+      {
+        "nombre": "La identidad",
+        "desc": "Video sobre la identidad en el descubrimiento de mis favoritos.",
+        "url": "https://www.youtube.com/watch?v=-zMEPVRWvD0",
+        "nivel" : "primaria",
+        "materia" : "Artes Plásticas",
+        "anno" : "",
+        "ciclo" : "1",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+      {
+        "nombre": "El concepto de belleza en la naturaleza",
+        "desc": "Video sobre el realismo y la creación del concepto de belleza en la naturaleza.",
+        "url": "https://www.youtube.com/watch?v=AW7cESlH19Q",
+        "nivel" : "primaria",
+        "materia" : "Artes Plásticas",
+        "anno" : "",
+        "ciclo" : "1",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+      {
+        "nombre": "La escuela del bosque. (cuento ilustrado)",
+        "desc": "Video sobre diferentes situaciones que se presentan en la escuela y la comunidad.",
+        "url": "https://www.youtube.com/watch?v=NZlekoHEkV8",
+        "nivel" : "primaria",
+        "materia" : "Artes Plásticas",
+        "anno" : "",
+        "ciclo" : "1",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+      {
+        "nombre": "El lenguaje estético",
+        "desc": "Video interactivo de preguntas y respuestas sobre el significado de las Artes Plásticas",
+        "url": "https://www.mep.go.cr/educatico/recurso-interactivo/artes-plasticas",
+        "nivel" : "primaria",
+        "materia" : "Artes Plásticas",
+        "anno" : "",
+        "ciclo" : "2",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+      {
+        "nombre": "El lenguaje estético en la identidad artística",
+        "desc": "Recurso apoyo sobre Sintaxis del lenguaje plástico - visual. Punto, Línea, Plano.",
+        "url": "https://www.youtube.com/watch?v=J2yGiUIx514",
+        "nivel" : "primaria",
+        "materia" : "Artes Plásticas",
+        "anno" : "",
+        "ciclo" : "2",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+      {
+        "nombre": "La geometría fractal en la naturaleza",
+        "desc": "Recurso apoyo sobre las formas no figurativas proporcionadas en la naturaleza, como motivo de las formas del arte y el concepto de belleza en la naturaleza.",
+        "url": "https://www.youtube.com/watch?v=97tb6WwalwM",
+        "nivel" : "primaria",
+        "materia" : "Artes Plásticas",
+        "anno" : "",
+        "ciclo" : "2",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+      {
+        "nombre": "La sostenibilidad y la naturaleza en la creación de significados",
+        "desc": "Video-apoyo sobre diferentes formas de la naturaleza, el color y la forma, unidos a la libre expresión del arte plástico.",
+        "url": "https://www.youtube.com/watch?v=L7f4nCguFnc",
+        "nivel" : "primaria",
+        "materia" : "Artes Plásticas",
+        "anno" : "",
+        "ciclo" : "2",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+      {
+        "nombre": "Contexto social: Cuento ilustrado “El respeto a la diversidad”",
+        "desc": "Recurso  apoyo cuento Infantil sobre el respeto a la diversidad en el contexto escolar.",
+        "url": "https://www.youtube.com/watch?v=NZlekoHEkV8",
+        "nivel" : "primaria",
+        "materia" : "Artes Plásticas",
+        "anno" : "",
+        "ciclo" : "2",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      }
+]

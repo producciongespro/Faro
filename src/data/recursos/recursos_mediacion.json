@@ -1,0 +1,88 @@
+[
+    {
+        "nombre": "Orientaciones para la mediación (cambiar)",
+        "desc": "PPT con ideas metodológicas para la mediación docente (cambiar)",
+        "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/recursos_mediacion.pdf",
+        "nivel" : "primaria",
+        "materia" : "Mediación",
+        "anno" : "1",
+        "ciclo" : "",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      }, 
+      {
+        "nombre": "Mediacion 2 (cambiar)",
+        "desc": "PPT con ideas metodológicas para la mediación docente (cambiar)",
+        "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/recursos_mediacion.pdf",
+        "nivel" : "primaria",
+        "materia" : "Mediación",
+        "anno" : "1,2,3,4",
+        "ciclo" : "",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },  
+      {
+        "nombre": "¿Cómo enseñar a adultos?",
+        "desc": "Vídeo explicativo de los aspectos a considerar durante la atención educativa de estudiantes jóvenes y adultos.",
+        "url": "https://www.youtube.com/watch?v=6p_1uZarJ4o",
+        "nivel" : "secundaria",
+        "materia" : "Mediación",
+        "anno" : "1",
+        "ciclo" : "",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+      {
+        "nombre": "Actividades de grupo- Ensalada de frutas",
+        "desc": "La atención educativa de estudiantes jóvenes y adultos, puede conllevar acciones recreativas. El video presenta una actividad grupal, que permite la integración grupal o el reforzamiento de conceptos, según el abordaje y la estrategia pedagógica establecidos por la persona docente.",
+        "url": "https://youtu.be/T7x3Nn-41eY",
+        "nivel" : "secundaria",
+        "materia" : "Mediación",
+        "anno" : "9,10,11,12",
+        "ciclo" : "",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+  
+      {
+        "nombre": "Capturología, el arte de captar la atención Dr. Roberto Rosler",
+        "desc": "Este video orienta en el arte de captar la atención del estudiantado, como factor relevante en la  mediación pedagógica.",
+        "url": "https://youtu.be/iCemTZXU7NM",
+        "nivel" : "secundaria",
+        "materia" : "Mediación",
+        "anno" : "1",
+        "ciclo" : "",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""
+      },
+  
+      {
+        "nombre": "¿Cómo emocionar a nuestros alumnos?  Dr. Roberto Rosler",
+        "desc": "Se presenta un vídeo donde se explica cómo emocionar a nuestros estudiantes para dar contenidos relevantes con la vida diaria.",
+        "url": "https://youtu.be/n6gfzo-Pbsk",
+        "nivel" : "secundaria",
+        "materia" : "Mediación",
+        "anno" : "1",
+        "ciclo" : "",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : ""    
+      },
+      {
+          "nombre": "¿Cómo lograr que sus alumnos recuerden? Dr. Roberto Rosler",
+          "desc": "Video en el que  se presentan  algunas estrategias orientadoras que los docentes de Educación de Jóvenes y Adultos pueden tomar en cuenta en los ámbitos en que desarrolla su mediación pedagógica.",
+          "url": "https://youtu.be/nF772Mrco4w",
+          "nivel" : "secundaria",
+          "materia" : "Mediación",
+          "anno" : "1",
+          "ciclo" : "",
+          "poblacion" : "",
+          "apoyos" : "",
+          "plan" : ""
+        }
+]

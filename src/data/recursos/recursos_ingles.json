@@ -1,0 +1,27 @@
+[
+    {
+        "nombre": "Recurso 1 de inglés",
+        "desc": "Este video presenta como la ciencia ha descubierto que las primeras experiencias de vida inciden en el desarrollo del cerebro del niño y la niña. Esto lleva a comprender que las docentes que tienen a su cargo la educación de la niñez desde su nacimiento, contribuyen a la construcción cerebral por lo cual esta debe ser sólida desde el inicio para garantizar un sano desarrollo del niño y su futuro.  El video explica lo más esencial de este proceso.",
+        "url": "https://eligeeducar.cl/asi-se-construye-la-arquitectura-del-cerebro-durante-la-primera-infancia",
+        "nivel" : "primaria",
+        "materia" : "Inglés",
+        "anno" : "1,2,3",
+        "ciclo" : "1",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : "Inglés como Lengua Extranjera"
+      },
+      {
+        "nombre": "Recurso 2 de inglés",
+        "desc": "Este video presenta como la ciencia ha descubierto que las primeras experiencias de vida inciden en el desarrollo del cerebro del niño y la niña. Esto lleva a comprender que las docentes que tienen a su cargo la educación de la niñez desde su nacimiento, contribuyen a la construcción cerebral por lo cual esta debe ser sólida desde el inicio para garantizar un sano desarrollo del niño y su futuro.  El video explica lo más esencial de este proceso.",
+        "url": "https://eligeeducar.cl/asi-se-construye-la-arquitectura-del-cerebro-durante-la-primera-infancia",
+        "nivel" : "secundaria",
+        "materia" : "Inglés",
+        "anno" : "7,8,9",
+        "ciclo" : "3",
+        "poblacion" : "",
+        "apoyos" : "",
+        "plan" : "Liceos experimentales Bilingües/Secciones Bilingües Español-Inglés"
+      }
+
+]
