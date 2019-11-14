@@ -8,7 +8,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""
       },
   
       {
@@ -20,7 +21,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""
       },
   
       {
@@ -32,7 +34,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""
       },
       {
         "nombre": "(video) Imagine Elephants",
@@ -43,7 +46,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""
       },
   
       {
@@ -55,7 +59,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""
       },
       {
         "nombre": "(video) Presentación de la Guía pedagógica para niños y niñas desde el nacimiento hasta los 4 años",
@@ -66,7 +71,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""
       },
   
       {
@@ -78,7 +84,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""
       },
       {
         "nombre": "Actividades de grupo- Ensalada de frutas",
@@ -89,7 +96,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""
       },
   
       {
@@ -101,7 +109,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""
       },
   
       {
@@ -113,7 +122,8 @@
         "anno" : "1",
         "ciclo" : "",
         "poblacion" : "",
-        "apoyos" : ""
+        "apoyos" : "",
+        "plan" : ""    
       },
       {
           "nombre": "¿Cómo lograr que sus alumnos recuerden? Dr. Roberto Rosler",
@@ -124,7 +134,8 @@
           "anno" : "1",
           "ciclo" : "",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "El círculo cromático",
@@ -135,7 +146,8 @@
           "anno" : "",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "La identidad",
@@ -146,7 +158,8 @@
           "anno" : "",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "El concepto de belleza en la naturaleza",
@@ -157,7 +170,8 @@
           "anno" : "",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "La escuela del bosque. (cuento ilustrado)",
@@ -168,7 +182,8 @@
           "anno" : "",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "El lenguaje estético",
@@ -179,7 +194,8 @@
           "anno" : "",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "El lenguaje estético en la identidad artística",
@@ -190,7 +206,8 @@
           "anno" : "",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "La geometría fractal en la naturaleza",
@@ -201,7 +218,8 @@
           "anno" : "",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "La sostenibilidad y la naturaleza en la creación de significados",
@@ -212,7 +230,8 @@
           "anno" : "",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Contexto social: Cuento ilustrado “El respeto a la diversidad”",
@@ -223,7 +242,8 @@
           "anno" : "",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente primer año",
@@ -234,7 +254,8 @@
           "anno" : "1",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente segundo año",
@@ -245,7 +266,8 @@
           "anno" : "2",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente tercer año",
@@ -256,7 +278,8 @@
           "anno" : "3",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente cuarto año",
@@ -267,7 +290,8 @@
           "anno" : "4",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente quinto año",
@@ -278,7 +302,8 @@
           "anno" : "5",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el docente sexto año",
@@ -289,7 +314,8 @@
           "anno" : "6",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante primer año",
@@ -300,7 +326,8 @@
           "anno" : "1",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante segundo año",
@@ -311,7 +338,8 @@
           "anno" : "2",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante tercer año",
@@ -322,7 +350,8 @@
           "anno" : "3",
           "ciclo" : "1",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante cuarto año",
@@ -333,7 +362,8 @@
           "anno" : "4",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante quinto año",
@@ -344,7 +374,8 @@
           "anno" : "5",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Olimpiadas de Matemática - Cuadernillo de apoyo para el estudiante sexto año",
@@ -355,7 +386,8 @@
           "anno" : "6",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Cuaderno de actividades de Educación vial",
@@ -366,7 +398,8 @@
           "anno" : "7, 8, 9",
           "ciclo" : "3",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Estrategias metodológicas para el abordaje de contenidos del programa de Educación Cívica de Tercer Ciclo vinculados a temas de Desarrollo Sostenible y Gestión Integral de Residuos.",
@@ -377,7 +410,8 @@
           "anno" : "7, 8, 9",
           "ciclo" : "3",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Alianza para una Mejor Cultura Vial:  Guía Metodológica de Educación Vial para primaria",
@@ -388,7 +422,8 @@
           "anno" : "1, 2, 3, 4, 5, 6 ",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Recurso 1 interulturalidad",
@@ -399,7 +434,8 @@
           "anno" : "1, 2, 3, 4, 5, 6 ",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Recurso 2 interulturalidad",
@@ -410,7 +446,8 @@
           "anno" : "1, 2, 3, 4, 5, 6 ",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Recurso 1 de 3 de Contextualización",
@@ -421,7 +458,8 @@
           "anno" : "1, 2, 3, 4, 5, 6 ",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Recurso 2 de 3 de Contextualización",
@@ -432,7 +470,8 @@
           "anno" : "1, 2, 3, 4, 5, 6 ",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Recurso 3 de 3 de Contextualización",
@@ -443,31 +482,44 @@
           "anno" : "1, 2, 3, 4, 5, 6 ",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         },
         {
           "nombre": "Recurso 1 de Francés",
           "desc": "Francés, Francés ",
           "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
           "nivel" : "primaria",
-          "materia" : "Francés",
-          "plan" : "Francés como Lengua Extranjera",
+          "materia" : "Francés",          
           "anno" : "1, 2, 3, 4, 5, 6 ",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : "Francés como Lengua Extranjera"
+        },
+        {
+          "nombre": "Recurso 2 de Francés",
+          "desc": "Francés, Francés ",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
+          "nivel" : "primaria",
+          "materia" : "Francés",          
+          "anno" : "1, 2, 3, 4, 5, 6 ",
+          "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : "",
+          "plan" : "Secciones Bilingües Español-Francés"
         },
         {
           "nombre": "Recurso Estudios Sociales",
           "desc": "Prueba ES ",
           "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
           "nivel" : "primaria",
-          "materia" : "Estudios Sociales",
-          "plan" : "",
+          "materia" : "Estudios Sociales",          
           "anno" : "1, 2, 3, 4, 5, 6 ",
           "ciclo" : "2",
           "poblacion" : "",
-          "apoyos" : ""
+          "apoyos" : "",
+          "plan" : ""
         }
 
 

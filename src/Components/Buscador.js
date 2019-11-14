@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import dataGeneral from '../data/recursos/generales.json';
 import images from '../data/images.json';
 
-var materiasPrimaria = ["Artes Plásticas", "Ciencias","Educación Vial","Español","Estudios Sociales","Francés","Inglés","Matemáticas","Mediación"]
+var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Matemáticas", "Mediación"]
 
 
-var materiasSecundaria = ["Biología","Ciencias","Cívica","Educación Cívica","Español","Estudios Sociales","Estudios Sociales","Física","Francés","Inglés","Matemáticas","Mediación","Química"]
+var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Matemáticas", "Mediación", "Química"]
 
 
 var anoSecundaria = [
@@ -104,10 +104,14 @@ class Buscador extends Component {
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
+        this.planEstudios = "";
     }
 
 
     handlerobtenerMateria = (e) => {
+        //Limpia la variable plan en caso de que haya sido utilizada anteriormente:
+        this.planEstudios="";
+
         let valor = e.target.value;
         console.log("materia", this.state.materia);
         this.setState({
@@ -141,7 +145,11 @@ class Buscador extends Component {
             this.apoyos = ""
         }
         console.log("Apyos", this.apoyos);
+    }
 
+    handlerObtenerPlanEstudios = (e) => {
+        this.planEstudios = e.target.value
+        console.log("Plan estudios", this.planEstudios);
     }
 
 
@@ -175,8 +183,10 @@ class Buscador extends Component {
 
 
 
-            if (this.props.origen === dataGeneral[index].nivel && resMateria && resAnno && this.poblacion === dataGeneral[index].poblacion && this.apoyos === dataGeneral[index].apoyos) {
-                
+
+
+            if (this.props.origen === dataGeneral[index].nivel && resMateria && resAnno && this.poblacion === dataGeneral[index].poblacion && this.apoyos === dataGeneral[index].apoyos &&  dataGeneral[index].plan === this.planEstudios  ) {
+
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
                 //console.log( "Año:", dataGeneral[index].anno );                
@@ -375,11 +385,12 @@ class Buscador extends Component {
                                         <div className="input-group-prepend">
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selfrances">Plan de estudio</label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selfrances">
+                                        <select className="custom-select buscadores-materias" id="selfrances" onClick={this.handlerObtenerPlanEstudios} >
+                                            <option value="" disabled> Seleccione una opción:</option>
                                             <option value="Francés como Lengua Extranjera">Francés como Lengua Extranjera</option>
                                             <option value="Secciones Bilingües Español-Francés">Secciones Bilingües Español-Francés</option>
                                         </select>
-                                   </div>
+                                    </div>
                                 )
                             }
                         </div>
