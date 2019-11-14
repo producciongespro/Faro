@@ -105,6 +105,8 @@ class Buscador extends Component {
         this.claseCSSMaterias = "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
         this.planEstudios = "";
+        //Oculta la materia en caso de preescolar
+        this.ocultarMateria();
     }
 
 
@@ -245,8 +247,7 @@ class Buscador extends Component {
     }
 
 
-    componentWillMount() {
-
+    ocultarMateria() {
         if (this.props.origen === "preescolar") {
             this.claseCSSMaterias = this.claseCSSMaterias + " invisible";
             this.claseCSSPoblacion = this.claseCSSPoblacion + " invisible";
