@@ -486,7 +486,7 @@
           "plan" : ""
         },
         {
-          "nombre": "Recurso 1 de Francés",
+          "nombre": "Recurso 1 de Francés primaria",
           "desc": "Francés, Francés ",
           "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
           "nivel" : "primaria",
@@ -498,13 +498,37 @@
           "plan" : "Francés como Lengua Extranjera"
         },
         {
-          "nombre": "Recurso 2 de Francés",
+          "nombre": "Recurso 2 de Francés primaria",
           "desc": "Francés, Francés ",
           "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
           "nivel" : "primaria",
           "materia" : "Francés",          
           "anno" : "1, 2, 3, 4, 5, 6 ",
           "ciclo" : "2",
+          "poblacion" : "",
+          "apoyos" : "",
+          "plan" : "Secciones Bilingües Español-Francés"
+        },
+        {
+          "nombre": "Recurso 1 de Francés Secundaria",
+          "desc": "Francés como Lengua Extranjera",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
+          "nivel" : "secundaria",
+          "materia" : "Francés",          
+          "anno" : "8",
+          "ciclo" : "",
+          "poblacion" : "",
+          "apoyos" : "",
+          "plan" : "Francés como Lengua Extranjera"
+        },
+        {
+          "nombre": "Recurso 2 de Francés Secundaria",
+          "desc": "Secciones Bilingües Español-Francés ",
+          "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/educ_vial/guia_metodologica-educacion-vial.pdf",
+          "nivel" : "secundaria",
+          "materia" : "Francés",          
+          "anno" : "8,9",
+          "ciclo" : "",
           "poblacion" : "",
           "apoyos" : "",
           "plan" : "Secciones Bilingües Español-Francés"
