@@ -2,90 +2,11 @@ import React, { Component } from 'react';
 import dataGeneral from '../data/recursos/generales.json';
 import images from '../data/images.json';
 
-var materiasPrimaria = [
-    {
-        "label": "Ciencias",
-        "id": "ciencias"
-    },
-    {
-        "label": "Educación Vial",
-        "id": "educVial"
-    },
-    {
-        "label": "Español",
-        "id": "espanol"
-    },
-    {
-        "label": "Estudios Sociales",
-        "id": "estudios"
-    },
-    {
-        "label": "Francés",
-        "id": "Francés"
-    },
-    {
-        "label": "Inglés",
-        "id": "ingles"
-    },
-    {
-        "label": "Matemáticas",
-        "id": "matematica"
-    },
-    {
-        "label": "Mediación",
-        "id": "general"
-    }
+var materiasPrimaria = ["Artes Plásticas", "Ciencias","Educación Vial","Español","Estudios Sociales","Francés","Inglés","Matemáticas","Mediación"]
 
 
-];
+var materiasSecundaria = ["Biología","Ciencias","Cívica","Educación Cívica","Español","Estudios Sociales","Estudios Sociales","Física","Francés","Inglés","Matemáticas","Mediación","Química"]
 
-var materiasSecundaria = [
-    {
-        "label": "Biología",
-        "id": "biologia"
-    },
-    {
-        "label": "Ciencias",
-        "id": "ciencias"
-    },
-    {
-        "label": "Educación Cívica",
-        "id": "civica"
-    },
-    {
-        "label": "Español",
-        "id": "espanol"
-    },
-    {
-        "label": "Estudios Sociales",
-        "id": "estudios"
-    },
-    {
-        "label": "Física",
-        "id": "fisica"
-    },
-    {
-        "label": "Francés",
-        "id": "Francés"
-    },
-    {
-        "label": "Inglés",
-        "id": "ingles"
-    },
-    {
-        "label": "Matemáticas",
-        "id": "matematica"
-    },
-    {
-        "label": "Mediación",
-        "id": "general"
-    },
-
-    {
-        "label": "Química",
-        "id": "quimica"
-    }
-];
 
 var anoSecundaria = [
     {
@@ -383,13 +304,13 @@ class Buscador extends Component {
                                     {
                                         this.props.origen === "primaria" &&
                                         materiasPrimaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
                                         this.props.origen === "secundaria" &&
                                         materiasSecundaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {

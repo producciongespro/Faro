@@ -9,14 +9,6 @@ import ImagesJson from "../data/images.json";
 import cursos from '../data/desarrollo/cursos.json';
 import videoteca from '../data/desarrollo/videoteca.json';
 import otrasOfertas from '../data/desarrollo/otras_ofertas.json';
-import recursosPreescolar from '../data/recursos/recursosPreescolar.json';
-import recursosPrimaria from '../data/recursos/recursosPrimaria.json';
-import recursosSecundaria from '../data/recursos/recursosSecundaria.json';
-
-
-
-
-
 
 class Catalogo extends Component {
     constructor(props) {
@@ -70,19 +62,7 @@ componentWillMount () {
             this.tmpArray = otrasOfertas;
             this.imagenEncabezado = "DesarrolloTituloOtrasOfertas"; 
             this.colorFondo = "divTurqueza col-12";
-        break;
-        case "preescolar":
-            this.tmpArray = recursosPreescolar;
-            this.imagenEncabezado = "RecDidacticosPreescolarCatalogo"; 
-        break;
-        case "primaria":
-            this.tmpArray = recursosPrimaria;
-            this.imagenEncabezado = "RecDidacticosPrimariaCatalogo"; 
-        break;
-        case "secundaria":
-            this.tmpArray = recursosSecundaria;
-            this.imagenEncabezado = "RecDidacticosSecundariaCatalogo"; 
-        break;
+        break;      
 
         default:
             console.log("parámetro fuera de rango");        
