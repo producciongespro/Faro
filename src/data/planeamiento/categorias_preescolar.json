@@ -712,6 +712,335 @@
                             ]
                     }
                 ]       
+        },
+
+        {
+                "id" : "conservacionCantidad",
+                "etiqueta" : "Conservación de la cantidad",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "construccion",
+                                        "etiqueta" : "Construcción"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "adquisicion",
+                                        "etiqueta" : "Adquisición"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+        {
+                "id" : "correspondenciaTerminoTermino",
+                "etiqueta" : "Correspondencia término a término",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "categorizacion",
+                                        "etiqueta" : "Categorización "
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "aplicacion",
+                                        "etiqueta" : "Aplicación"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+        {
+                "id" : "seriacion",
+                "etiqueta" : "Seriación",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "construccion",
+                                        "etiqueta" : "Construcción"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "aplicacion",
+                                        "etiqueta" : "Aplicación"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+
+        
+        {
+                "id" : "inclusionParteTodo",
+                "etiqueta" : "Inclusión de la parte al todo",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "observacion",
+                                        "etiqueta" : "Observación "
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "agrupacion",
+                                        "etiqueta" : "Agrupación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+        {
+                "id" : "expresionOral",
+                "etiqueta" : "Expresión oral",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "identificacion",
+                                        "etiqueta" : "Identificación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "comprension",
+                                        "etiqueta" : "Comprensión"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "utilizacion",
+                                        "etiqueta" : "Utilización"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+        {
+                "id" : "comprensionOral",
+                "etiqueta" : "Comprensión oral",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "reconocimiento",
+                                        "etiqueta" : "Reconocimiento "
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "demostracion",
+                                        "etiqueta" : "Demostración  "
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "construccion",
+                                        "etiqueta" : "Construcción "
+                                        },
+                                        {
+                                        "id" : "Ejecucion",
+                                        "etiqueta" : "Ejecución "
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+        {
+                "id" : "Lectura",
+                "etiqueta" : "Lectura ",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "manifestacion",
+                                        "etiqueta" : "Manifestación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "apreciacion",
+                                        "etiqueta" : "Apreciación"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "interpretacion",
+                                        "etiqueta" : "Interpretación  "
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+
+
+        {
+                "id" : "escritura",
+                "etiqueta" : "Escritura  ",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "concientizacion",
+                                        "etiqueta" : "Concientización "
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "representacion",
+                                        "etiqueta" : "Representación "
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "produccion",
+                                        "etiqueta" : "Producción"
+                                        }  
+                            ]
+                    }
+                ]       
+        },
+
+        {
+                "id" : "escritura",
+                "etiqueta" : "Escritura  ",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                        {
+                                        "id" : "utilizacion",
+                                        "etiqueta" : "Utilización"
+                                        },
+                                        {
+                                        "id" : "concientizacion",
+                                        "etiqueta" : "Concientización"
+                                        }                                  
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                        {
+                                        "id" : "reconoceSilabas",
+                                        "etiqueta" : "Reconoce sílabas"
+                                        },
+                                        {
+                                        "id" : "reconoceSonidos",
+                                        "etiqueta" : "Reconoce sonidos"
+                                        }
+                                        {
+                                        "id" : "reconoceRimas",
+                                        "etiqueta" : "Reconoce rimas"
+                                        }                                      
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "experimentacion",
+                                        "etiqueta" : "Experimentación "
+                                        }  
+                            ]
+                    }
+                ]       
         }
 
 
