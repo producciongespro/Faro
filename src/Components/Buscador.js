@@ -112,7 +112,7 @@ class Buscador extends Component {
 
     handlerobtenerMateria = (e) => {
         //Limpia la variable plan en caso de que haya sido utilizada anteriormente:
-        this.planEstudios="";
+        this.planEstudios = "";
 
         let valor = e.target.value;
         console.log("materia", this.state.materia);
@@ -187,7 +187,7 @@ class Buscador extends Component {
 
 
 
-            if (this.props.origen === dataGeneral[index].nivel && resMateria && resAnno && this.poblacion === dataGeneral[index].poblacion && this.apoyos === dataGeneral[index].apoyos &&  dataGeneral[index].plan === this.planEstudios  ) {
+            if (this.props.origen === dataGeneral[index].nivel && resMateria && resAnno && this.poblacion === dataGeneral[index].poblacion && this.apoyos === dataGeneral[index].apoyos && dataGeneral[index].plan === this.planEstudios) {
 
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
@@ -377,7 +377,7 @@ class Buscador extends Component {
                         </div>
 
                         <div className="col-3">
-                            {/* Columna 3 PLAN DE ESTUDIOS EN CASO DE FRANCÉS O ITALIANO -  */}
+                            {/* Columna 3 PLAN DE ESTUDIOS EN CASO DE FRANCÉS - INGLÉS - ITALIANO*/}
                             {
                                 //Select que se genera al seleccionar francés
                                 this.state.materia === "Francés" &&
@@ -393,6 +393,38 @@ class Buscador extends Component {
                                         </select>
                                     </div>
                                 )
+                            }
+                            {
+                                //Select que se genera al seleccionar inglés
+                                this.state.materia === "Inglés" &&
+                                (
+                                    this.props.origen === "primaria" ?
+                                        (
+                                            <div className="input-group mb-3">
+                                                <div className="input-group-prepend">
+                                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selIngles">Plan de estudio</label>
+                                                </div>
+                                                <select className="custom-select buscadores-materias" id="selIngles" onClick={this.handlerObtenerPlanEstudios} >
+                                                    <option value="" disabled> Seleccione una opción:</option>
+                                                    <option value="Inglés como Lengua Extranjera">Inglés como Lengua Extranjera</option>
+                                                    <option value="Secciones Bilingües Español-Inglés">Secciones Bilingües Español-Inglés</option>
+                                                </select>
+                                            </div>
+                                        ):
+                                        (
+                                            <div className="input-group mb-3">
+                                            <div className="input-group-prepend">
+                                                <label className="input-group-text etiquetas-busquedas" htmlFor="selIngles">Plan de estudio</label>
+                                            </div>
+                                            <select className="custom-select buscadores-materias" id="selIngles" onClick={this.handlerObtenerPlanEstudios} >
+                                                <option value="" disabled> Seleccione una opción:</option>
+                                                <option value="Inglés como Lengua Extranjera">Inglés como Lengua Extranjera</option>
+                                                <option value="Liceos experimentales Bilingües/Secciones Bilingües Español-Inglés">Liceos experimentales Bilingües/Secciones Bilingües Español-Inglés</option>
+                                            </select>
+                                        </div>  
+                                        )
+                                    )
+
                             }
                         </div>
 
