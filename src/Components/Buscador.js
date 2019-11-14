@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import dataOtros from '../data/recursos/generales.json';
 import dataIngles from '../data/recursos/recursos_ingles.json';
 import dataFrances from '../data/recursos/recursos_frances.json';
+import dataItaliano from '../data/recursos/recursos_italiano.json';
 import dataMediacion from '../data/recursos/recursos_mediacion.json';
 import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import images from '../data/images.json';
 
-var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Matemáticas", "Mediación"]
-var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Matemáticas", "Mediación", "Química"]
+var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación"]
+var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés","Italiano","Matemáticas", "Mediación", "Química"]
 var anoSecundaria = [
     {
         "label": "Sétimo",
@@ -124,6 +125,9 @@ class Buscador extends Component {
             break;
             case "Francés":
                     dataGeneral = dataFrances;
+            break;
+            case "Italiano":
+                    dataGeneral = dataItaliano;
             break;
             case "Mediación":
                     dataGeneral = dataMediacion;
@@ -459,6 +463,22 @@ class Buscador extends Component {
                                         )
                                     )
 
+                            }
+                            {
+                                //Select que se genera al seleccionar Italiano en secundaria
+                                (this.state.materia === "Italiano"  && this.props.origen === "secundaria" )   &&
+                                (
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selfrances">Plan de estudio</label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selfrances" onClick={this.handlerObtenerPlanEstudios} >
+                                            <option value="" disabled> Seleccione una opción:</option>
+                                            <option value="Lengua Italiana">Lengua Italiana</option>
+                                            <option value="Aspectos Culturales">Aspectos Culturales</option>
+                                        </select>
+                                    </div>
+                                )
                             }
                         </div>
 
