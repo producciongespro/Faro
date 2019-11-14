@@ -5,6 +5,7 @@ import dataFrances from '../data/recursos/recursos_frances.json';
 import dataItaliano from '../data/recursos/recursos_italiano.json';
 import dataMediacion from '../data/recursos/recursos_mediacion.json';
 import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
+import dataPreescolar from '../data/recursos/recursos_preescolar.json';
 import images from '../data/images.json';
 
 var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación"]
@@ -61,21 +62,6 @@ var annoPrimaria = [
         "id": "6"
     }
 ];
-var annoPrrescolar = [
-    {
-        "label": "Interactivo I",
-        "id": "1"
-    },
-    {
-        "label": "Interactivo II",
-        "id": "2"
-    },
-    {
-        "label": "Transición",
-        "id": "3"
-    }
-
-];
 var tipoPoblacion = [
     {
         "label": "Educación para adultos",
@@ -106,7 +92,7 @@ class Buscador extends Component {
         this.claseCSSPoblacion = "form-check";
         this.planEstudios = "";        
         //Oculta la materia en caso de preescolar
-        this.ocultarMateria();
+        this.cargarAmbientePreescolar();
     }
 
 
@@ -134,8 +120,7 @@ class Buscador extends Component {
             break;  
             case "Artes Plásticas":
                     dataGeneral = dataArtesPlasticas;
-            break; 
-                             
+            break;                             
         
             default:
                 dataGeneral = dataOtros;
@@ -193,8 +178,71 @@ class Buscador extends Component {
     }
 
 
+    seleccionarBusqueda = () => {
+        switch (this.props.origen) {
+            case "preescolar":
+                this.buscarRecursosPreescolar();
+            break;
+            case "primaria":
+            case "secundaria":
+            case "intercultural":
+                this.buscarRecursosGenerales();
+            break;
+        
+            default:
+                break;
+        }
 
-    buscarInfo = () => {
+    }
+
+buscarRecursosPreescolar = () => {
+        console.log("dataGeneral", dataGeneral);
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < dataGeneral.length; index++) {
+            arrayHtml = (
+                <React.Fragment>
+                    <h5>    {dataGeneral[index].nombre} </h5>
+                    <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].desc}  </span>
+                    <br />
+                    {
+                        this.state.materia === "" && (
+                            <React.Fragment>
+                                {
+                                    (this.props.origen === "primaria" || this.props.origen === "secundaria") &&
+                                    (
+                                        <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {dataGeneral[index].materia}     </span>
+                                    )
+                                }
+                                {
+                                    (this.props.origen === "intercultural") &&
+                                    (
+                                        <span> <strong>   <i className="fab fa-diaspora"></i>    Unidad:</strong>  {dataGeneral[index].materia}     </span>
+                                    )
+                                }
+                                <br />
+                            </React.Fragment>
+                        )
+                    }
+                    {
+                        this.anno === "" && (
+                            <React.Fragment>
+                                <span> <strong>  <i className="fab fa-diaspora"></i>  Año:</strong>  {dataGeneral[index].anno}   </span>
+                                <br />
+                            </React.Fragment>
+                        )
+                    }
+                    <a href={dataGeneral[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
+                    <hr />
+                </React.Fragment>
+            )
+            arrayTmp.push(arrayHtml);    
+        };        
+        this.setState({ tarjetas: arrayTmp });
+};
+
+
+buscarRecursosGenerales = () => {
 
         //console.log(dataGeneral);
         //console.log("Materia a buscar", this.materia );
@@ -276,19 +324,14 @@ class Buscador extends Component {
         } else {
             this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {arrayTmp.length}   </span>  </React.Fragment>);
         }
-
-
         this.setState({ tarjetas: arrayTmp });
-
-
-
     }
 
 
-    ocultarMateria() {
-        if (this.props.origen === "preescolar") {
-            this.claseCSSMaterias = this.claseCSSMaterias + " invisible";
-            this.claseCSSPoblacion = this.claseCSSPoblacion + " invisible";
+    cargarAmbientePreescolar() {
+        if (this.props.origen === "preescolar") {       
+            //Carga el json de preescolar
+            dataGeneral= dataPreescolar;
         }
     }
 
@@ -348,30 +391,35 @@ class Buscador extends Component {
                                         )
                                     }
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
-                                    <option defaultValue value="" >Todas</option>
                                     {
-                                        this.props.origen === "primaria" &&
-                                        materiasPrimaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.props.origen === "secundaria" &&
-                                        materiasSecundaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.props.origen === "intercultural" &&
+                                        this.props.origen !== "preescolar" && 
                                         (
-                                            <React.Fragment>
-                                                <option value="Educación indígena" > Educación indígena  </option>
-                                                <option value="Contextualización y pertinencia cultural" > Contextualización y pertinencia cultural  </option>
-                                            </React.Fragment>
+                                            <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
+                                            <option defaultValue value="" >Todas</option>
+                                            {
+                                                this.props.origen === "primaria" &&
+                                                materiasPrimaria.map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                this.props.origen === "secundaria" &&
+                                                materiasSecundaria.map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                this.props.origen === "intercultural" &&
+                                                (
+                                                    <React.Fragment>
+                                                        <option value="Educación indígena" > Educación indígena  </option>
+                                                        <option value="Contextualización y pertinencia cultural" > Contextualización y pertinencia cultural  </option>
+                                                    </React.Fragment>
+                                                )
+                                            }
+                                        </select>
                                         )
                                     }
-                                </select>
                             </div>
                             {/* Fin de Columna 1 ASIGNATURA (MATERIA) */}
                         </div>
@@ -380,36 +428,39 @@ class Buscador extends Component {
                             {/* Columna 2 AÑO -  */}
                             {
                                 // SI NIVEL ES DIFERNETE DE INTERCULTURAL SE RENDERIZA EL SELECT AÑO
-                                this.props.origen !== "intercultural" && (
-                                    <div className="input-group mb-3">
-                                        <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
+                                 (this.props.origen !== "intercultural")  && (
+                                        (this.props.origen !== "preescolar") ? (
+                                            <div className="input-group mb-3">
+                                            <div className="input-group-prepend">
+                                                <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
+                                            </div>
+                                            <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
+                                                <option defaultValue value="" > Todos </option>                                          
+                                                {
+                                                    this.props.origen === "primaria" &&
+                                                    annoPrimaria.map((item, i) => (
+                                                        <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                                    ))
+                                                }
+                                                {
+                                                    this.props.origen === "secundaria" &&
+                                                    anoSecundaria.map((item, i) => (
+                                                        <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                                    ))
+                                                }
+                                            </select>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
-                                            <option defaultValue value="" > Todos </option>
+                                        ) : 
+                                        (
+                                            // mensaje de preescolar                                 
+                                            <span>Oprima el botón buscar para desplegar los recursos.</span>
 
-                                            {
-                                                this.props.origen === "preescolar" &&
-                                                annoPrrescolar.map((item, i) => (
-                                                    <option key={"anno" + i} value={item.id} >  {item.label}  </option>
-                                                ))
-                                            }
-                                            {
-                                                this.props.origen === "primaria" &&
-                                                annoPrimaria.map((item, i) => (
-                                                    <option key={"anno" + i} value={item.id} >  {item.label}  </option>
-                                                ))
+                                        )
+                                        
 
-                                            }
-                                            {
-                                                this.props.origen === "secundaria" &&
-                                                anoSecundaria.map((item, i) => (
-                                                    <option key={"anno" + i} value={item.id} >  {item.label}  </option>
-                                                ))
-                                            }
-                                        </select>
-                                    </div>
                                 )
+                                
+                                
                             }
 
                         </div>
@@ -514,7 +565,7 @@ class Buscador extends Component {
 
                     <div className="row">
                         <div className="col-12 text-right">
-                            <button onClick={this.buscarInfo} type="button" className="btn btn-secondary btn-lg">
+                            <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>
