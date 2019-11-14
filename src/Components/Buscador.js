@@ -8,6 +8,7 @@ import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import dataPreescolar from '../data/recursos/recursos_preescolar.json';
 import images from '../data/images.json';
 
+
 var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación"]
 var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés","Italiano","Matemáticas", "Mediación", "Química"]
 var anoSecundaria = [
@@ -142,6 +143,7 @@ class Buscador extends Component {
             this.cargarDatasetRecursos(this.state.materia);
             console.log("materia", this.state.materia);
         })
+        
     }
 
     handlerObtenerAnno = (e) => {
