@@ -52,18 +52,19 @@ const RecursosDidacticos = (props) => {
         </div>
 
         <div className="row">
-          <div className="col-4">
-          <img className="btn img-fluid" id="intercultural" src= {images[0].RecDidacticosSecundaria  }   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Secundaria" />
+          <div className="col-4 hover12 ladoDer">
+          <img className="btn img-fluid" id="jovenesAdultos" src= {images[0].RecDidacticosJovenesAdultos}   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Jovenes y Adultos" />
           {
             //<button id="intercultural" className="btn btn-success" onClick={props.handlerOpenBuscador} >Educación Intercultural</button>
           }
            
           </div>
-          <div className="col-4">
-            <button className="btn btn-success">Feria Científica</button>
+          <div className="col-4 hover12 centro">
+          <img className="btn img-fluid" id="feriaCientifica" src= {images[0].RecDidacticosFeriaCientifica}   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Feria Científica" />
           </div>
-          <div className="col-4">
-            <button className="btn btn-success">Bandera Azul</button>
+
+          <div className="col-4 hover12 ladoIzq">
+          <img className="btn img-fluid" id="banderaAzul" src= {images[0].RecDidacticosBanderaAzul}   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Bandera Azul" />
           </div>
         </div>
       
@@ -71,7 +72,7 @@ const RecursosDidacticos = (props) => {
         </div>
         <audio src="https://recursos.mep.go.cr/ws_faro/audios/recursos_didacticos.mp3" id="recursos"   preload="true"  ></audio>
       </div>
-   );
+     );
 }
  
 export default RecursosDidacticos;
