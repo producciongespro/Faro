@@ -536,9 +536,6 @@
                     }
                 ]       
         },
-
-
-
         {
                 "id" : "somosDiferentes",
                 "etiqueta" : "Somos diferentes e iguales",
@@ -642,8 +639,6 @@
                     }
                 ]       
         },
-
-
         {
                 "id" : "sentidoEspacial",
                 "etiqueta" : "Sentido espacial",
@@ -747,8 +742,6 @@
                     }
                 ]       
         },
-
-
         {
                 "id" : "correspondenciaTerminoTermino",
                 "etiqueta" : "Correspondencia término a término",
@@ -853,8 +846,6 @@
                     }
                 ]       
         },
-
-
         {
                 "id" : "expresionOral",
                 "etiqueta" : "Expresión oral",
@@ -928,8 +919,8 @@
         },
 
         {
-                "id" : "Lectura",
-                "etiqueta" : "Lectura ",
+                "id" : "lectura",
+                "etiqueta" : "Lectura",
                 "niveles" : [
                         {
                         "id" : "I",
@@ -995,53 +986,11 @@
                             ]
                     }
                 ]       
-        },
-
-        {
-                "id" : "escritura",
-                "etiqueta" : "Escritura  ",
-                "niveles" : [
-                        {
-                        "id" : "I",
-                        "acciones" :    [
-                                        {
-                                        "id" : "utilizacion",
-                                        "etiqueta" : "Utilización"
-                                        },
-                                        {
-                                        "id" : "concientizacion",
-                                        "etiqueta" : "Concientización"
-                                        }                                  
-                                        ]
-                        },
-                        {
-                        "id" : "II",
-                        "acciones" :    [
-                                        {
-                                        "id" : "reconoceSilabas",
-                                        "etiqueta" : "Reconoce sílabas"
-                                        },
-                                        {
-                                        "id" : "reconoceSonidos",
-                                        "etiqueta" : "Reconoce sonidos"
-                                        }
-                                        {
-                                        "id" : "reconoceRimas",
-                                        "etiqueta" : "Reconoce rimas"
-                                        }                                      
-                                        ]
-                        },
-                        {
-                        "id" : "III",
-                        "acciones" :    [
-                                        {
-                                        "id" : "experimentacion",
-                                        "etiqueta" : "Experimentación "
-                                        }  
-                            ]
-                    }
-                ]       
         }
+
+
+
+     
 
 
 
