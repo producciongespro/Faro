@@ -20,6 +20,7 @@ import Catalogo from "./Components/Catalogo";
 import TagsInfo from './Components/Tags_info';
 import Buscador from './Components/Buscador';
 import BuscadorPlaneamiento from './Components/BuscadorPlaneamiento';
+import HomeMovil from './Components/HomeMovil';
 
 
 
@@ -38,25 +39,54 @@ class App extends Component {
       modalActive : false,
       modalComponent: "",
       typeContent : ""      
-    };          
-    
+    };
+    this.plataforma = "no disponible";
   }
 
-  
+ 
 
 componentDidMount ( ) {
+  this.plataforma = this.detectarPlataforma();
     setTimeout(() => {
       this.loadPortada();
-    }, 100);
+    }, 2000);
+  }
+
+
+  detectarPlataforma () {
+    return navigator.platform;    
   }
 
 
   loadPortada = ( )  => {     
-    //Método que carga la Portada
+    //Método que carga la Portada   
     this.setState ({      
       nameCurrentPage : "Portada",      
-      currentPage : <Portada  changePage={this.changePage}  showModal ={ this.showModal }  />      
+      currentPage : <Portada  changePage={this.changePage}  showModal ={ this.showModal }  />            
     });        
+
+  }
+
+  cargarHome = () =>{    
+    //Realiza la comprobación del tipo de dispositivo para cargar
+    // un home para dispotivos moviles
+    let tmpHome;
+    console.log("Plataforma", this.plataforma);
+    switch (this.plataforma) {
+      case "Linux armv7l":
+      case "Linux armv8l":
+          tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />
+      break;
+      case "Win32":
+          tmpHome = <Home showModal={this.showModal}  changePage={this.changePage}/>
+      break;
+    
+      default:
+          tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />
+        break;
+    }
+    return tmpHome;
+
   }
 
 
@@ -68,11 +98,12 @@ componentDidMount ( ) {
     //console.log("Target", targetPage );
 
     switch (targetPage) {
-      case "Portada":
-        tmpComponent = <Portada showModal={this.showModal}  changePage={this.changePage}/> 
+      case "Portada": 
+        tmpComponent = <Portada showModal={this.showModal}  changePage={this.changePage}/>         
       break;
       case "Home":
-        tmpComponent = <Home showModal={this.showModal}  changePage={this.changePage}/> 
+        //tmpComponent = <Home showModal={this.showModal}  changePage={this.changePage}/> 
+        tmpComponent = this.cargarHome();
       break;
       case "DocsOficiales":
         tmpComponent = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/> 
@@ -289,7 +320,7 @@ handlerShowInfoGeneral (e) {
 
 render() {    
     return (      
-      <div className="visor" >
+      <div className="visor" >            
             {this.state.currentPage}                          
             {this.state.modalActive && this.state.modalComponent }                           
             

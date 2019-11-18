@@ -53,7 +53,11 @@ const RecursosDidacticos = (props) => {
 
         <div className="row">
           <div className="col-4">
-            <button id="intercultural" className="btn btn-success" onClick={props.handlerOpenBuscador} >Educación Intercultural</button>
+          <img className="btn img-fluid" id="intercultural" src= {images[0].RecDidacticosSecundaria  }   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Secundaria" />
+          {
+            //<button id="intercultural" className="btn btn-success" onClick={props.handlerOpenBuscador} >Educación Intercultural</button>
+          }
+           
           </div>
           <div className="col-4">
             <button className="btn btn-success">Feria Científica</button>
