@@ -986,6 +986,51 @@
                             ]
                     }
                 ]       
+        },
+        {
+                "id" : "concienciaFonologica",
+                "etiqueta" : "Conciencia Fonológica",
+                "niveles" : [
+                        {
+                        "id" : "I",
+                        "acciones" :    [
+                                                {
+                                                "id" : "utilizacion",
+                                                "etiqueta" : "Utilización"
+                                                },
+                                                {
+                                                "id" : "concientizacion",
+                                                "etiqueta" : "Concientización"
+                                                }
+                                        ]
+                        },
+                        {
+                        "id" : "II",
+                        "acciones" :    [
+                                                {
+                                                "id" : "reconoceSilabas",
+                                                "etiqueta" : "Reconoce silábas"
+                                                },
+                                                {
+                                                "id" : "reconoceSonidos",
+                                                "etiqueta" : "Reconoce sonidos"
+                                                },
+                                                {
+                                                 "id" : "reconoceRimas",
+                                                "etiqueta" : "Reconoce rimas"
+                                                }
+                                        ]
+                        },
+                        {
+                        "id" : "III",
+                        "acciones" :    [
+                                        {
+                                        "id" : "experimetnacion",
+                                        "etiqueta" : "Experimentación"
+                                        }  
+                            ]
+                    }
+                ]       
         }
 
 
