@@ -13,12 +13,12 @@ const HomeMovil = (props) => {
             </div>
             <div className="row">
                 <div className="col-12">
-                    <button className="btn btn-success"   data-tar="ApoyosEvaluacion"> Apoyos para la evaluación </button>
+                    <button className="btn btn-success"   data-tar="ApoyosEvaluacion" onClick={props.changePage} > Apoyos para la evaluación </button>
                 </div>
             </div>
             <div className="row">
                 <div className="col-12">
-                    <button className="btn btn-success"  data-tar="RecursosDidacticos"> Recursos didácticos </button>
+                    <button className="btn btn-success"  data-tar="RecursosDidacticos" onClick={props.changePage}> Recursos didácticos </button>
                 </div>
             </div>
         </div>
