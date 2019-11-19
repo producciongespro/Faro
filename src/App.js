@@ -49,7 +49,7 @@ componentDidMount ( ) {
   this.plataforma = this.detectarPlataforma();
     setTimeout(() => {
       this.loadPortada();
-    }, 2000);
+    }, 500);
   }
 
 
