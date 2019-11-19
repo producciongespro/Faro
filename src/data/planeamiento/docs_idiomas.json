@@ -115,6 +115,42 @@
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "primaria",
+        "anno" : "3",
+        "materia" : "italiano",
+        "tipoPlan" : "",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "7",
+        "materia" : "italiano",
+        "tipoPlan" : "Aspectos Culturales",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "8",
+        "materia" : "italiano",
+        "tipoPlan" : "Aspectos Culturales",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+    },
+    {
+        "nivel" : "secundaria",
+        "anno" : "9",
+        "materia" : "italiano",
+        "tipoPlan" : "Lengua italiana",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
+        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
     }
 
 ]
