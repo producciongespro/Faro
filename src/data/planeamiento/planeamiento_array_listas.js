@@ -45,6 +45,10 @@ const listasPlan = [
             {
                 "label": "Inglés",
                 "id": "ingles"
+            },
+            {
+                "label": "Italiano",
+                "id": "italiano"
             }, 
             {
                 "label": "Matemática",

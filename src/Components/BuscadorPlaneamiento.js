@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+
 import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
 import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
 import dataSecundariaEspanol from '../data/planeamiento/secundaria_espanol.json';
-import categoriasPreescolar from '../data/planeamiento/categorias_preescolar.json';
 import dataIdiomas from '../data/planeamiento/docs_idiomas.json';
+
+import categoriasPreescolar from '../data/planeamiento/categorias_preescolar.json';
 import images from '../data/images.json';
 import meses from '../data/meses.json';
 import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
-import arrayListasPlan  from '../data/planeamiento/planeamiento_array_listas';
+import arrayListasPlan from '../data/planeamiento/planeamiento_array_listas';
 const listasPlan = arrayListasPlan[0];
 
 //console.log("Secudnaria frances", dataFrances );
@@ -29,8 +31,8 @@ class BuscadorPlaneamiento extends Component {
             // En etiqueta es asginatura. Dependiendo de la asignatura se despliega información en la GUI
             materia: "",
             //estado en caso de preescolar para actualizar los select: "desempeño" y acción procedimental
-            indiceContenido : 0,
-            indiceDesempeno : 0
+            indiceContenido: 0,
+            indiceDesempeno: 0
 
         };
         /*
@@ -38,10 +40,10 @@ class BuscadorPlaneamiento extends Component {
                 educaicón para adultos.  Esta propiedad debe camibar materia
         */
         //Mes se usa en caso de español
-        this.mes="";
+        this.mes = "";
         //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
-        this.tipoPlan="";
-        this.etiquetaPlan="";
+        this.tipoPlan = "";
+        this.etiquetaPlan = "";
         this.poblacion = "";
         this.apoyos = "";
         this.mensaje = "";
@@ -53,40 +55,28 @@ class BuscadorPlaneamiento extends Component {
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
         this.setState({ anno: "" });
-        this.mes="";
-        console.log("handlerobtenerNivel");        
+        this.mes = "";
+        console.log("handlerobtenerNivel");
     }
     handlerObtenerMateria = (e) => {
         //let indice = e.target.selectedIndex - 1;  
         this.setState({ materia: e.target.value });
-        this.setState({ indiceDesempeno: e.target.selectedIndex - 1  });  
-        
-        //Prueba de carga de datos
-        /*
-        this.setState({ materia: e.target.value },
-            ()=>{
-                this.setState({ indiceDesempeno:  indice }, ()=>{
-                    console.log("****NIVEL", categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones  );
-                    
-                });  
-            }
-            );
-        */              
+        this.setState({ indiceDesempeno: e.target.selectedIndex - 1 });
     }
     handlerObtenerAnno = (e) => {
         //almacena en un estado el indice de la opción seleccionada
-        this.setState({indiceContenido: e.target.selectedIndex - 1  });            
-        this.setState({ anno: e.target.value });        
+        this.setState({ indiceContenido: e.target.selectedIndex - 1 });
+        this.setState({ anno: e.target.value });
     }
     handlerObtenerMes = (e) => {
-        this.mes = e.target.value;        
+        this.mes = e.target.value;
     }
     handlerObtenerTipoPlan = (e) => {
         this.tipoPlan = e.target.value;
         //console.log("tipoPlan",  this.tipoPlan);        
         // * * * * * Obtiene el texto de la opcion seleccionada del select Nota: Esto es SOLO BUENO!!!!!
-        this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;        
-        console.log("this.etiquetaPlan",  this.etiquetaPlan );     
+        this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;
+        console.log("this.etiquetaPlan", this.etiquetaPlan);
     }
     activarBotonBuscar = (e) => {
         //Activa el botón buscar 
@@ -115,7 +105,7 @@ class BuscadorPlaneamiento extends Component {
             //console.log("Seleccion: espanolSecundaria");
             arrayNivel = dataSecundariaEspanol;
         }
-        if (this.state.materia === "frances" || this.state.materia === "ingles"   ) {            
+        if (this.state.materia === "frances" || this.state.materia === "ingles" || this.state.materia === "italiano") {
             arrayNivel = dataIdiomas;
         }
 
@@ -153,7 +143,6 @@ class BuscadorPlaneamiento extends Component {
 
                 arrayHtml = (
                     <React.Fragment>
-
                         <div className="card">
                             {
                                 //Renderizado de los encabezados de las tarjetas en el caso de  educación adultos
@@ -182,14 +171,15 @@ class BuscadorPlaneamiento extends Component {
                                             </span>
                                             {
                                                 //Plan de estudio en caso de frances e inglés
-                                              ( this.state.materia === "frances" || this.state.materia === "ingles" ) && 
-                                              (
-                                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                    Plan: {this.etiquetaPlan}
-                                                </span>
-                                              )
+                                                (this.state.materia === "frances" || this.state.materia === "ingles") &&
+                                                (
+                                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                        Plan: {this.etiquetaPlan}
+                                                    </span>
+                                                )
                                             }
-                                            
+
+
                                         </div>
                                     )
                             }
@@ -197,43 +187,43 @@ class BuscadorPlaneamiento extends Component {
                             {
                                 //Renderizado del cuerpo de las tarjetas:
                                 this.state.nivel === "secundaria" && this.state.materia === "espanol" ?
-                                     (
+                                    (
                                         <div className="card-body mr-2">
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamientos} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Lineamientos
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamientos} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamientos
                                         </a>
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lectura} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Lectura
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lectura
                                         </a>
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].monografia} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Monografía
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Monografía
                                         </a>
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].novela} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Novela
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].novela} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Novela
                                         </a>
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].transversal} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Trasnversal
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Trasnversal
                                         </a>
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].mensual} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Mensual
-                                        </a>                                            
-                                    </div> 
-                                     )                                                                                                 
-                                     : ( 
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Mensual
+                                        </a>
+                                        </div>
+                                    )
+                                    : (
                                         // Renderizado para los que no son secudnaria español 
                                         <div className="card-body mr-2">
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Lineamiento
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamiento
                                                 </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla
                                                 </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={ arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Ejemplo
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Ejemplo
                                                 </a>
-                                            </div>                                                
-                                    )  
-                                    
+                                        </div>
+                                    )
+
                             }
 
 
@@ -241,25 +231,38 @@ class BuscadorPlaneamiento extends Component {
                         <br />
                     </React.Fragment>
                 )
+                //Proceso de filtrado por segunda vez para casos que tienen un cuarto criterio (cuarto select)
                 //Filtrado por mes en caso de español secundaria:
-                if ( this.state.nivel === "secundaria" && this.state.materia === "espanol") {
-                    if (this.mes === arrayNivel[index].mes || this.mes === ""  || this.mes === "todos" ) {
+                if (this.state.nivel === "secundaria" && this.state.materia === "espanol") {
+                    if (this.mes === arrayNivel[index].mes || this.mes === "" || this.mes === "todos") {
                         arrayTmp.push(arrayHtml);
-                    } 
+                    }
                 } else {
                     // Si no se cumple español secundaria se compruban otras condiciones:
                     /* -(1) francés  -(2) inglés */
-                    if ( this.state.materia === "frances" || this.state.materia === "ingles" ) {
+                    if (this.state.materia === "frances" || this.state.materia === "ingles") {
                         //console.log("Estado primaria francés");                       
-                        if (this.tipoPlan === arrayNivel[index].tipoPlan  ) {
+                        if (this.tipoPlan === arrayNivel[index].tipoPlan) {
                             arrayTmp.push(arrayHtml);
                         }
                     } else {
+                       
+                            //En caso de secundaria italiano
+                        if (this.state.materia === "italiano" && this.state.nivel === "secundaria") {
+                            if (this.tipoPlan === arrayNivel[index].tipoPlan) {
+                                console.log("tipo de plan seleccionado", this.tipoPlan);
+                                console.log("tipo de plan del array coincidencia", arrayNivel[index].tipoPlan);  
+                                arrayTmp.push(arrayHtml);
+                            }
+                        } else {
                         //General (Generico)
                         arrayTmp.push(arrayHtml);
+                        }
                     }
                     
-                }              
+             
+
+                }
             }
 
         };
@@ -297,7 +300,7 @@ class BuscadorPlaneamiento extends Component {
                     <div className="col-6 font-italic">
                         Seleccione primero el nivel que desea, posteriormente el año o modalidad, por último seleccione la materia y
                         el botón "buscar" para encontrar el resultado deseado.
-                        <br/>
+                        <br />
                         <strong>Importante:</strong> Si desea ver los planes de español en secundaria, seleccione "Español" en asignatura en lugar de seleccionar "Todas".
                     </div>
                 </div> <hr />
@@ -332,11 +335,11 @@ class BuscadorPlaneamiento extends Component {
                                                 <span> Modalidad </span>
                                                 :
                                                 // Si es preescolar cambia año por contenido
-                                                this.state.nivel === "preescolar" ?                                                    
+                                                this.state.nivel === "preescolar" ?
                                                     <span> Contenido </span>
                                                     :
                                                     <span> Año </span>
-                                        }                                 
+                                        }
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
@@ -344,7 +347,7 @@ class BuscadorPlaneamiento extends Component {
 
                                     {
                                         this.state.nivel === "preescolar" &&
-                                        categoriasPreescolar.map((item, i) => (                                                                                       
+                                        categoriasPreescolar.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.etiqueta}  </option>
                                         ))
 
@@ -374,9 +377,9 @@ class BuscadorPlaneamiento extends Component {
                                         ))
 
                                     }
-                                           {
-                                    this.state.nivel === "interculturaPrimaria" &&
-                                    listasPlan.annoPrimaria.map((item, i) => (
+                                    {
+                                        this.state.nivel === "interculturaPrimaria" &&
+                                        listasPlan.annoPrimaria.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.label}  </option>
                                         ))
 
@@ -392,7 +395,7 @@ class BuscadorPlaneamiento extends Component {
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
                                         {
-                                            this.state.nivel==="preescolar" ?
+                                            this.state.nivel === "preescolar" ?
                                                 <span>Niveles de desempeño</span>
                                                 :
                                                 <span>Asignatura</span>
@@ -402,10 +405,10 @@ class BuscadorPlaneamiento extends Component {
                                 <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria} >
                                     <option disabled value="" >  Selecione una opción  </option>
                                     {
-                                        this.state.nivel === "preescolar" &&                                        
-                                        categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i )=> (
-                                            <option key={"materia" + i} value={item.id } >  {item.id }  </option>                                           
-                                        ))  
+                                        this.state.nivel === "preescolar" &&
+                                        categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i) => (
+                                            <option key={"materia" + i} value={item.id} >  {item.id}  </option>
+                                        ))
                                     }
                                     {
                                         this.state.nivel === "primaria" &&
@@ -439,13 +442,13 @@ class BuscadorPlaneamiento extends Component {
                                     }
                                     {
                                         this.state.anno === "en1" || this.state.anno === "en2" || this.state.anno === "en3" || this.state.anno === "en4" ?
-                                        listasPlan.materiasPrimariaAdultos.map((item, i) => (
+                                            listasPlan.materiasPrimariaAdultos.map((item, i) => (
                                                 <option key={"materia" + i} value={item.id} >  {item.label}  </option>
                                             )) : ""
                                     }
                                     {
                                         this.state.anno === "ipec1" || this.state.anno === "ipec2" || this.state.anno === "ipec3" || this.state.anno === "ipec4" ?
-                                        listasPlan.materiasSecundaria.map((item, i) => (
+                                            listasPlan.materiasSecundaria.map((item, i) => (
                                                 <option key={"materia" + i} value={item.id} >  {item.label}  </option>
                                             )) : ""
                                     }
@@ -478,11 +481,11 @@ class BuscadorPlaneamiento extends Component {
                                             }
                                         </select>
                                     </div>
-                                )                                
-                            //Fin caso 1 **************************
+                                )
+                                //Fin caso 1 **************************
                             }
                             {//CASO 2: primaria en frances - ingles
-                                (this.state.materia === "frances" ||  this.state.materia === "ingles") &&
+                                (this.state.materia === "frances" || this.state.materia === "ingles") &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
@@ -493,89 +496,109 @@ class BuscadorPlaneamiento extends Component {
                                         <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
                                             <option defaultValue value="seleccione" >Seleccione:</option>
                                             { //Frances primaria
-                                                (this.state.materia === "frances" && this.state.nivel === "primaria") && 
+                                                (this.state.materia === "frances" && this.state.nivel === "primaria") &&
                                                 (
                                                     listasPlan.planEstudiosFrancesPrimaria.map((item, index) => (
-                                                        <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                        <option key={"plan" + index} value={item.id} data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
                                                     ))
                                                 )
                                             }
                                             { //Ingles primaria
-                                                (this.state.materia === "ingles" && this.state.nivel === "primaria") && 
+                                                (this.state.materia === "ingles" && this.state.nivel === "primaria") &&
                                                 (
                                                     listasPlan.planEstudiosInglesPrimaria.map((item, index) => (
-                                                        <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                        <option key={"plan" + index} value={item.id} data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
                                                     ))
                                                 )
                                             }
                                             {  //Frances secundaria
-                                                (this.state.materia === "frances" && this.state.nivel === "secundaria") && 
+                                                (this.state.materia === "frances" && this.state.nivel === "secundaria") &&
                                                 (
                                                     listasPlan.planEstudiosFrancesSecundaria.map((item, index) => (
-                                                        <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                        <option key={"plan" + index} value={item.id} data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
                                                     ))
                                                 )
                                             }
                                             {  //Inglés secundaria
-                                                (this.state.materia === "ingles" && this.state.nivel === "secundaria") && 
+                                                (this.state.materia === "ingles" && this.state.nivel === "secundaria") &&
                                                 (
                                                     listasPlan.planEstudiosInglesSecundaria.map((item, index) => (
-                                                        <option key={"plan" + index} value={item.id}  data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                        <option key={"plan" + index} value={item.id} data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
                                                     ))
                                                 )
                                             }
                                         </select>
                                     </div>
-                                )                                
-                            //Fin caso 2 **************************
+                                )
+                                //Fin caso 2 **************************
                             }
                             {
                                 //Caso 3 Preescolar
                                 this.state.nivel === "preescolar" &&
                                 (
                                     // Con diagnóstico
-                                        this.state.anno === "diagnostico" ?
-                                                (
-                                                    <div className="input-group mb-3">
-                                                        <div className="input-group-prepend">
-                                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
-                                                                    Mes
+                                    this.state.anno === "diagnostico" ?
+                                        (
+                                            <div className="input-group mb-3">
+                                                <div className="input-group-prepend">
+                                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                        Mes
                                                             </label>
-                                                        </div>
-                                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                                                <option disabled defaultValue value="" >Seleccione un mes:</option>
-                                                                {
-                                                                categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
-                                                                    (item, i) => (
-                                                                        <option key = {"mes"+i }   value={item.id}>  {item.etiqueta} </option>
-                                                                    )
-                                                                )
-                                                                }                                         
-                                                        </select>
-                                                    </div>
-                                                ) : (
-                                                //Sin diagnóstico pero en preescolar
-                                                //this.state.nivel === "preescolar" &&                                                     
-                                                        <div className="input-group mb-3">
-                                                        <div className="input-group-prepend">
-                                                        <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
-                                                                Acción procedimental
+                                                </div>
+                                                <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                                    <option disabled defaultValue value="" >Seleccione un mes:</option>
+                                                    {
+                                                        categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
+                                                            (item, i) => (
+                                                                <option key={"mes" + i} value={item.id}>  {item.etiqueta} </option>
+                                                            )
+                                                        )
+                                                    }
+                                                </select>
+                                            </div>
+                                        ) : (
+                                            //Sin diagnóstico pero en preescolar
+                                            //this.state.nivel === "preescolar" &&                                                     
+                                            <div className="input-group mb-3">
+                                                <div className="input-group-prepend">
+                                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                        Acción procedimental
                                                         </label>
-                                                        </div>
-                                                            <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                                                <option disabled defaultValue value="" >Seleccione una opcion:</option>
-                                                                {
-                                                                categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
-                                                                    (item, i) => (
-                                                                        <option key = {"accion"+i } value={item.id}>  {item.etiqueta} </option>
-                                                                    )
-                                                                )
-                                                                }                                                
-                                                            </select>
-                                                        </div>                                                                                    
-                                                )
-                            )
-                            }                          
+                                                </div>
+                                                <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                                    <option disabled defaultValue value="" >Seleccione una opcion:</option>
+                                                    {
+                                                        categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
+                                                            (item, i) => (
+                                                                <option key={"accion" + i} value={item.id}>  {item.etiqueta} </option>
+                                                            )
+                                                        )
+                                                    }
+                                                </select>
+                                            </div>
+                                        )
+                                )
+                            }
+
+                            {
+                                //Italiano en secundaria
+                                (this.state.materia === "italiano" && this.state.nivel === "secundaria") &&
+                                (
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                Plan de estudio
+                                        </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
+                                            <option disabled defaultValue value="" >Seleccione una opcion:</option>
+                                            <option value="Lengua italiana" >Lengua italiana</option>
+                                            <option value="Aspectos Culturales" > Aspectos Culturales </option>
+                                        </select>
+                                    </div>
+                                )
+                            }
+
                         </div>
                     </div>
 
