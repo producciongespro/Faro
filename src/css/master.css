@@ -3,7 +3,7 @@ body {
 }
 
 #botones-planeamiento{
-  margin-top: -3%;
+  margin-top: 14%;
 }
 
 #img-portada{
@@ -541,7 +541,7 @@ padding-top:5%;
 
 
 #botones-desarrollo{
-  margin-top: 25%;
+  margin-top: 38%;
 }
 
 .btn-idp{
@@ -568,7 +568,7 @@ padding-top:5%;
 
 #fondo-desarrollo{
   position: absolute;
-  margin-top: -16%;
+  margin-top: 25%;
   margin-left: -30%;
   max-width: 108%;
 }

@@ -34,15 +34,21 @@ const DesarrolloProf = (props) => {
               </div>
               <a href={links.IDP} target="_blank" rel="noopener noreferrer"  >
                 <img id="material_adicional" className="img-fluid hvr-wobble-bottom" src={img.DesarrolloEnlaceDesarrollo} alt="Enlaces desarrollo" />
-              </a>
+              </a>             
       </div>
+
+      
+          
+      <div  className="col-7">
 
       <div className="botones_salir col-12">
             <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
-          </div>
-      <div id="botones-desarrollo" className="col-7">
+        </div>
+
+
           <img alt="" id="fondo-desarrollo" className="img-fluid" src={img.DesarrolloFondo2} />
-        <div  className="row" id="desarrolloIDP">
+      
+      <div  className="row" id="botones-desarrollo">
             <div  className="col-4  hover11 ">
               <figure>
                 <img className="botones-portada  img-fluid" id="cursos" src={img.DesarrolloCursos} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalog}  alt="Cursos" />

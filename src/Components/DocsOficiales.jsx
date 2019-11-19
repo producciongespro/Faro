@@ -26,10 +26,13 @@ const DocsOficiales = ( props ) => {
               </div>
  
       </div>
+     
+      <div className="col-8" >
+
       <div className="botones_salir col-12">
             <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
           </div>
-      <div className="col-8" >
+
         <div className="row">
             <div className="col-4  ladoIzq">
               <figure>
