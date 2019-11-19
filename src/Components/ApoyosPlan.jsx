@@ -27,6 +27,7 @@ const ApoyosPlan = (props) => {
                   <div onClick={ reproducirSonido  } id="textoDescripcion" className="texto_descripciones text-justify pr-3">          
                   <h2 className='desc'>Descripción:</h2>  {  props.infoCategory }            
                   </div>
+              
           </div>
 
         
