@@ -432,17 +432,32 @@ padding-top:5%;
   }
 
   #prescolar{
-    margin-top: 25%;
+    margin-top: 15%;
    float: right;
   }
 
   #primaria{
-    margin-top: 22%;
+    margin-top: 18%;
   }
 
   #secundaria{
-    margin-top: 45%;
+    margin-top: 42%;
   }
+
+  #jovenesAdultos{
+   margin-top: -49%;
+   float: right;
+  }
+
+  #feriaCientifica{
+    margin-top: -30%;
+  }
+
+  #banderaAzul{
+    margin-top: -7%;
+  }
+
+  
 
   .descripciones2{
     margin-top: 9%;
