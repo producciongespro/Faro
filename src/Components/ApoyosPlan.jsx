@@ -21,20 +21,23 @@ const ApoyosPlan = (props) => {
   return ( 
     <div>
     <div  className="row">
-  <div className="col-5">
-        <img className="titulos img-fluid" src={images[0].TituloApoyos  } alt="Documentos educativos oficiales" />
-           <img onClick={reproducirSonido}   className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
-          <div onClick={ reproducirSonido  } id="textoDescripcion" className="texto_descripciones text-justify pr-3">          
-          <h2 className='desc'>Descripción:</h2>  {  props.infoCategory }            
+          <div className="col-5">
+                <img className="titulos img-fluid" src={images[0].TituloApoyos  } alt="Documentos educativos oficiales" />
+                  <img onClick={reproducirSonido}   className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" />
+                  <div onClick={ reproducirSonido  } id="textoDescripcion" className="texto_descripciones text-justify pr-3">          
+                  <h2 className='desc'>Descripción:</h2>  {  props.infoCategory }            
+                  </div>
           </div>
-          
-  </div>
 
-        <div className="botones_salir col-12">
-            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
-          </div>
-  <div id="botones-planeamiento" className="col-7">
-    <div id="botones-aula" className="row">
+        
+  <div  className="col-7">
+
+      <div className="botones_salir col-12">
+                <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+      </div>
+
+
+    <div id="botones-planeamiento" className="row">
     <div className="col-10 hover11 centro">
           <figure>
               <img className="botones-portada derecha img-fluid" id="definicionHabilidades" data-content= {pdfs.Tacaco }  data-typecontent ="defHabilidades"  onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Enofque por habilidaes" src={images[0].ApoyosPlanHabilidades  } />

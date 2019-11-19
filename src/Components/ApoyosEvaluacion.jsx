@@ -26,21 +26,24 @@ const ApoyosEvaluacion = (props) => {
                 <div className="col-5">
                    
                       <div className="row">
-  
-                            <div className="col-12">
-                              <img alt="Apoyos para la evaluación" className="img-fluid titulos" src={images[0].EvaluacionTitulo } />
-                            </div>
+                        <div className="col-12">
+                        <img alt="Apoyos para la evaluación" className="img-fluid titulos" src={images[0].EvaluacionTitulo } />
+                        </div>
                       </div>
                       <img  onClick={reproducirSonido}  className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion} alt="Descripción" />
                      <div  onClick={ reproducirSonido  }  id="textoDescripcion" className="texto_descripciones text-justify pr-3">
                      <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
                      </div>
               </div>
-              <div className="botones_salir col-12">
-            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
-          </div>
-                <div id="div-evaluacion" className="col-7 "><br/><br/>
-                    <div className="row">
+
+              
+                <div  className="col-7 "><br/><br/>
+                    
+                <div className="botones_salir col-12">
+                <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+                </div>
+                    
+                    <div id="div-evaluacion" className="row">
                       <div  className="col-12 col-sin-padding">
                         <figure>
                         <a href={zipFiles.tecnicas} rel="noopener noreferrer">

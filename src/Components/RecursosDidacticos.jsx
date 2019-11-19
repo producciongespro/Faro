@@ -27,13 +27,14 @@ const RecursosDidacticos = (props) => {
                   <img id="material_adicional" className="img-fluid btn hvr-wobble-bottom" src={images[0].GeneralEducatico } alt="Educatico" />
               </a>
       </div>
+               
+      <div  className="col-8">
 
-      <div className="botones_salir col-12">
+      <div className="botones_salir col-12 ">
             <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
       </div>
-          
-      <div id="bnt-recursos" className="col-8">
-        <div className="row">
+
+        <div id="bnt-recursos" className="row">
             <div className="col-4 hover12 ladoDer">
               <figure>
                  <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar  }   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}   alt="Preescolar" />
