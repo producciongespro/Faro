@@ -2,8 +2,10 @@ import React from 'react';
 //import textos from "../data/textos.json";
 import images from "../data/images.json";
 import dsPdfs from "../data/pdf.json";
+import textosJson from "../data/textos.json";
 //import dsLinks from "../data/links.json";
 
+const textos = textosJson[0];
 var pdfs = dsPdfs[0];
 //var links = dsLinks[0];
 
@@ -27,7 +29,14 @@ const ApoyosPlan = (props) => {
                   <div onClick={ reproducirSonido  } id="textoDescripcion" className="texto_descripciones text-justify pr-3">          
                   <h2 className='desc'>Descripción:</h2>  {  props.infoCategory }            
                   </div>
-              
+
+                  <div className="row">
+                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoDidac} alt="Planeamiento Didáctico"/>
+                  </div>
+
+                  <div className="row">
+                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoCorrel} alt="Planeamiento Correlacionado"/>
+                  </div>
           </div>
 
         
