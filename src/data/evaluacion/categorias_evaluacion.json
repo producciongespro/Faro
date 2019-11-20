@@ -66,12 +66,14 @@
                     }
                  ]          
    },
+
+
    {
     "categoria" : "Componentes de la calificación", 
     "subcategorias" :
             [
                  {
-                    "nombre" : "Taabajo cotidiano",
+                    "nombre" : "Trabajo cotidiano",
                     "detalles" : [
                         {
                             "nombre" : "Definición",
