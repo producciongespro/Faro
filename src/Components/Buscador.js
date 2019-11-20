@@ -480,7 +480,7 @@ buscarRecursosGenerales = () => {
                                         <select className="custom-select buscadores-materias" id="selfrances" onClick={this.handlerObtenerPlanEstudios} >
                                             <option value="" disabled> Seleccione una opción:</option>
                                             <option value="Francés como Lengua Extranjera">Francés como Lengua Extranjera</option>
-                                            <option value="Secciones Bilingües Español-Francés">Secciones Bilingües Español-Francés</option>
+                                            <option value="Secciones de Francés avanzado">Secciones de Francés avanzado</option>
                                         </select>
                                     </div>
                                 )
