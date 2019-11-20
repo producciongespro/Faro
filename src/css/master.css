@@ -53,6 +53,8 @@ a {
   width: 90%;
 }
 
+
+
 .img-ico-audio {
   position: absolute;
   top: 4.5%;
@@ -773,6 +775,11 @@ padding-top:5%;
  #home{
   margin-left: 0px;
  }
+
+ #uso{
+  margin-left: 15px;
+ }
+
 
  .derecha{
   float: right;

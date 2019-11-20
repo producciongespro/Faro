@@ -13,7 +13,9 @@ const Home = (props) => {
       
     <img className="btn img-fluid hvr-pop" id="indicaciones" src={ images.HomeCaja } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> <br/>
     <img className="btn img-fluid hvr-pop" id="home"  src={ images.HomeVolver } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
-    
+    <img className="img-fluid botones-portada hvr-pop" id="uso" src={images.BtnUso} onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/>
+                  
+
 
     </div>
       <div className="row">
