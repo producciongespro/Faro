@@ -48,7 +48,21 @@
                         ]
                     },
                     {
-                        "nombre" : "Instrumentos para la evaluacióh"
+                        "nombre" : "Instrumentos para la evaluacióh",
+                        "detalles" : [
+                            {
+                                "nombre" : "Escalas de calificación",
+                                "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Rúbricas",
+                                "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Listas de cotejo",
+                                "url" : "https://www.nacion.com/"
+                            }
+                        ]
                     }
                  ]          
    },
