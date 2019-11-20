@@ -1,7 +1,9 @@
 import React from 'react';
 import images from "../data/images.json";
+import textosJson from "../data/textos.json";
 
 
+const textos = textosJson[0];
 const  reproducirSonido = () => {
   console.log("Audio");
   
@@ -27,6 +29,17 @@ const ApoyosEvaluacion = (props) => {
                      <div  onClick={ reproducirSonido  }  id="textoDescripcion" className="texto_descripciones text-justify pr-3">
                      <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
                      </div>
+
+                  <div className="row img_btn_der">
+                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoDidac} alt="Planeamiento Didáctico"/>
+                  </div>
+
+                  <div className="row img_btn_der">
+                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoCorrel} alt="Planeamiento Correlacionado"/>
+                  </div>
+
+
+
               </div>
 
               
