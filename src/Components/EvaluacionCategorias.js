@@ -11,8 +11,7 @@ class EvaluacionCategorias extends Component {
             <div className="container">
                 <div className="jumbotron">
                     <h1>
-                    {this.props.origen}
-                    Prueba Evaluacion
+                        {this.props.origen}                    
                     </h1>                    
                 </div>
                 <div className="row">

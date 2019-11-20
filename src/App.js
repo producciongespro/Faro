@@ -259,15 +259,17 @@ handlerCloseCatalogWeb = (e) => {
 
 //Método para abrir Categorías evaluación -----------------------------------------
 handlerAbrirCategoriasEvaluacion = (e) => {  
+  const origen = e.target.dataset.origen;
+  console.log("origen", origen);  
   this.setState ({
-    currentPage : <EvaluacionCategorias  handlerCerrarCategoriasEvaluacion={ this.handlerCerrarCategoriasEvaluacion} />
+    currentPage : <EvaluacionCategorias origen={origen} handlerCerrarCategoriasEvaluacion={ this.handlerCerrarCategoriasEvaluacion} />
   })
 }
 
 
 handlerCerrarCategoriasEvaluacion = (e) => {  
   e.preventDefault();
-  console.log(e.target);  
+  //console.log(e.target);  
   this.setState ({
     currentPage : <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
   })
