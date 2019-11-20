@@ -30,11 +30,11 @@ const ApoyosPlan = (props) => {
                   <h2 className='desc'>Descripción:</h2>  {  props.infoCategory }            
                   </div>
 
-                  <div className="row">
+                  <div className="row img_btn_der">
                   <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoDidac} alt="Planeamiento Didáctico"/>
                   </div>
 
-                  <div className="row">
+                  <div className="row img_btn_der">
                   <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoCorrel} alt="Planeamiento Correlacionado"/>
                   </div>
           </div>
