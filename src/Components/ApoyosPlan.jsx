@@ -31,11 +31,11 @@ const ApoyosPlan = (props) => {
                   </div>
 
                   <div className="row">
-                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoDidac} alt="Planeamiento Didáctico"/>
+                  <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoDidac} alt="Planeamiento Didáctico"/>
                   </div>
 
                   <div className="row">
-                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoCorrel} alt="Planeamiento Correlacionado"/>
+                  <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoCorrel} alt="Planeamiento Correlacionado"/>
                   </div>
           </div>
 
