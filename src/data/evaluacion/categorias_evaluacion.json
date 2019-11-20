@@ -1,47 +1,105 @@
 [
    {
-       "Funciones de la evaluación" : [
-           {
-               "subcategoria" : [
+       "categoria" :  "Funciones de la evaluación",
+       "subcategorias"  :           
+               [
                     {
-                       "nombre" : "Diagnóstica"
+                       "nombre" : "Diagnóstica",
+                       "detalles" : [
+                                        {
+                                            "nombre" : "Implementacion e importancia",
+                                            "url" : "https://www.nacion.com/"
+                                        }
+                                    ]
                     },
                     {
-                        "nombre" : "Formativa"
+                        "nombre" : "Formativa",
+                        "detalles" : [
+                            {
+                                "nombre" : "Implementacion e importancia",
+                                "url" : "https://www.nacion.com/"
+                            }
+                        ]
                     },
                     {
-                        "nombre" : "Sumativa"
+                        "nombre" : "Sumativa",
+                        "detalles" : [
+                            {
+                                "nombre" : "Implementacion e importancia",
+                                "url" : "https://www.nacion.com/"
+                            }
+                        ]
                     },
                     {
-                        "nombre" : "Técnicas de evaluación"
+                        "nombre" : "Técnicas de evaluación",
+                        "detalles" : [
+                            {
+                                "nombre" : "Mapa conceptual",
+                                "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Diario Reflexivo",
+                                "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Cuestionario",
+                                "url" : "https://www.nacion.com/"
+                            }
+                        ]
                     },
                     {
                         "nombre" : "Instrumentos para la evaluacióh"
                     }
-               ]
-           }
-       ],
-       "Componentes de la calificación" : [
-        {
-            "subcategoria" : [
+                 ]          
+   },
+   {
+    "categoria" : "Componentes de la calificación", 
+    "subcategorias" :
+            [
                  {
-                    "nombre" : "TRabajo cotidiano"
+                    "nombre" : "Taabajo cotidiano",
+                    "detalles" : [
+                        {
+                            "nombre" : "Definición",
+                            "url" : "https://www.nacion.com/"
+                        },
+                        {
+                            "nombre" : "Lineaminetos técnicos",
+                            "url" : "https://www.nacion.com/"
+                        }
+                    ]                       
                  },
                  {
-                     "nombre" : "Pruebas"
+                     "nombre" : "Pruebas",
+                     "detalles" : [
+                        {
+                            "nombre" : "Definición",
+                            "url" : "https://www.nacion.com/"
+                        },
+                        {
+                            "nombre" : "Lineaminetos técnicos",
+                            "url" : "https://www.nacion.com/"
+                        },
+                        {
+                            "nombre" : "Ejemplos de itemes",
+                            "url" : "https://www.nacion.com/"
+                        }
+                    ] 
                  },
                  {
-                     "nombre" : "Tareas"
-                 },
-                 {
-                     "nombre" : "Proyecto"
-                 },
-                 {
-                    "nombre" : "Demostración de lo aprendido"
-                }
-            ]
-        } 
-       ]
-     
-   } 
+                     "nombre" : "Tareas",
+                     "detalles" : [
+                        {
+                            "nombre" : "Definición",
+                            "url" : "https://www.nacion.com/"
+                        },
+                        {
+                            "nombre" : "Lineaminetos técnicos",
+                            "url" : "https://www.nacion.com/"
+                        }
+                    ] 
+                 }
+                                  
+              ]          
+    } 
 ]
