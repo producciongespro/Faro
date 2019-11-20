@@ -1,0 +1,45 @@
+[
+    {
+        "Ciencias" : [
+                {
+                    "nombre" : "Selección simple",
+                    "url" : "https://www.mep.go.cr/educatico"
+                },
+                {
+                    "nombre" : "Selección de contexto",
+                    "url" : "https://www.mep.go.cr/educatico"
+                }
+        ],
+        "Francés" : [
+            {
+                "nombre" : "Selección simple",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "Respuesta corta",
+                "url" : "https://www.mep.go.cr/educatico"
+            }
+        ],
+        "Estudios Sociales" : [
+            {
+                "nombre" : "pepito",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "juanita",
+                "url" : "https://www.mep.go.cr/educatico"
+            }
+        ],
+        "Español" : [
+            {
+                "nombre" : "Selección simple",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "Respuesta corta",
+                "url" : "https://www.mep.go.cr/educatico"
+            }
+        ] 
+
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "Ciencias" : [
+                {
+                    "nombre" : "Selección simple",
+                    "url" : "https://www.mep.go.cr/educatico"
+                },
+                {
+                    "nombre" : "Selección de contexto",
+                    "url" : "https://www.mep.go.cr/educatico"
+                }
+        ],
+        "Francés" : [
+            {
+                "nombre" : "Selección simple",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "Respuesta corta",
+                "url" : "https://www.mep.go.cr/educatico"
+            }
+        ]
+   
+ 
+
+    }
+]
