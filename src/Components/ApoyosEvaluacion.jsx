@@ -31,11 +31,11 @@ const ApoyosEvaluacion = (props) => {
                      </div>
 
                   <div className="row img_btn_der">
-                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPruebaEscrita} className="img-fluid botones-portada hvr-pop"   src={images[0].EvaluacionPruebas} alt="Elaboración de Prueba Escrita"/>
+                  <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPruebaEscrita} className="img-fluid botones-portada hvr-pop"   src={images[0].EvaluacionPruebas} alt="Elaboración de Prueba Escrita"/>
                   </div>
 
                   <div className="row img_btn_der">
-                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoTrabajoCotidiano} className="img-fluid botones-portada hvr-pop"   src={images[0].EvaluacionCotidiano} alt="Valoración del trabajo cotidiano"/>
+                  <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoTrabajoCotidiano} className="img-fluid botones-portada hvr-pop"   src={images[0].EvaluacionCotidiano} alt="Valoración del trabajo cotidiano"/>
                   </div>
 
 
