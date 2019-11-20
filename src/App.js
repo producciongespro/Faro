@@ -22,6 +22,7 @@ import Buscador from './Components/Buscador';
 import BuscadorPlaneamiento from './Components/BuscadorPlaneamiento';
 import HomeMovil from './Components/HomeMovil';
 import EvaluacionCategorias from './Components/EvaluacionCategorias';
+import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 
 
 
@@ -113,7 +114,7 @@ componentDidMount ( ) {
         tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
       break;
       case "ApoyosEvaluacion":
-          tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion}  /> 
+          tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
       break;
       case "RecursosDidacticos":
         tmpComponent = <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
@@ -262,12 +263,31 @@ handlerAbrirCategoriasEvaluacion = (e) => {
   const origen = e.target.dataset.origen;
   console.log("origen", origen);  
   this.setState ({
-    currentPage : <EvaluacionCategorias origen={origen} handlerCerrarCategoriasEvaluacion={ this.handlerCerrarCategoriasEvaluacion} />
+    currentPage : <EvaluacionCategorias origen={origen} handlerCerrarCategoriasEvaluacion={ this.handlerCerrarCategoriasEvaluacion} handlerAbrirEjemplosItemes={this.handlerAbrirEjemplosItemes } />
   })
 }
 
 
 handlerCerrarCategoriasEvaluacion = (e) => {  
+  e.preventDefault();
+  //console.log(e.target);  
+  this.setState ({
+    currentPage : <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
+  })
+}
+//Fin Método para abrir Categorías evaluación -----------------------------------------
+
+
+
+//Método para abrir ejemplos itemes evaluación -----------------------------------------
+handlerAbrirEjemplosItemes = (e) => {    
+  this.setState ({
+    currentPage : <EjemplosItemes  handlerCerrarEjemplosItemes={ this.handlerCerrarEjemplosItemes}   />
+  })
+}
+
+
+handlerCerrarEjemplosItemes = (e) => {  
   e.preventDefault();
   //console.log(e.target);  
   this.setState ({
