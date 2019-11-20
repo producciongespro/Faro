@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import images from '../data/images.json';
+import categoriasEvaluacion from '../data/evaluacion/categorias_evaluacion.json';
 
 class EvaluacionCategorias extends Component {
     constructor(props) {
@@ -11,7 +12,10 @@ class EvaluacionCategorias extends Component {
             <div className="container">
                 <div className="jumbotron">
                     <h1>
-                        {this.props.origen}                    
+                        {this.props.origen}                     
+                        {
+                            console.log(categoriasEvaluacion[0][this.props.origen][0].subcategoria  )                            
+                        }                    
                     </h1>                    
                 </div>
                 <div className="row">
@@ -21,7 +25,13 @@ class EvaluacionCategorias extends Component {
                 </div>
                 <div className="row">
                     <div className="col-4">
-                        <button className="btn btn-success"> Prueba </button>
+                        {
+                           
+                           categoriasEvaluacion[0][this.props.origen][0].subcategoria.map((item, i)=>(
+                                <button className="btn btn-outline-info btn-lg btn-block" key={"subcategoria"+i} > {item.nombre} </button>
+                            ))
+                            
+                        }
                     </div>
                 </div>
             </div>

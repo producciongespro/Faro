@@ -75,7 +75,7 @@ var tipoPoblacion = [
 ];
 
 var dataGeneral="";
-console.log("dataIngles", dataIngles);
+//console.log("dataIngles", dataIngles);
 
 
 class Buscador extends Component {

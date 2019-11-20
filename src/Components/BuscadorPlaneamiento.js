@@ -14,7 +14,7 @@ const listasPlan = arrayListasPlan[0];
 
 //console.log("Secudnaria frances", dataFrances );
 //console.log("listasPlan",listasPlan );
-console.log("categoriasPreescolar", categoriasPreescolar);
+//console.log("categoriasPreescolar", categoriasPreescolar);
 
 
 

@@ -1,0 +1,47 @@
+[
+   {
+       "Funciones de la evaluación" : [
+           {
+               "subcategoria" : [
+                    {
+                       "nombre" : "Diagnóstica"
+                    },
+                    {
+                        "nombre" : "Formativa"
+                    },
+                    {
+                        "nombre" : "Sumativa"
+                    },
+                    {
+                        "nombre" : "Técnicas de evaluación"
+                    },
+                    {
+                        "nombre" : "Instrumentos para la evaluacióh"
+                    }
+               ]
+           }
+       ],
+       "Componentes de la calificación" : [
+        {
+            "subcategoria" : [
+                 {
+                    "nombre" : "TRabajo cotidiano"
+                 },
+                 {
+                     "nombre" : "Pruebas"
+                 },
+                 {
+                     "nombre" : "Tareas"
+                 },
+                 {
+                     "nombre" : "Proyecto"
+                 },
+                 {
+                    "nombre" : "Demostración de lo aprendido"
+                }
+            ]
+        } 
+       ]
+     
+   } 
+]
