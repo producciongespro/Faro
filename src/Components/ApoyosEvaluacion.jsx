@@ -1,12 +1,5 @@
 import React from 'react';
 import images from "../data/images.json";
-//import textos from "../data/textos.json";
-import dsPdfs from "../data/pdf.json";
-import dsZip from "../data/comprimidos.json";
-//import dsLinks from "../data/links.json";
-var zipFiles = dsZip[0];
-var pdfs = dsPdfs[0];
-//links = dsLinks[0];
 
 
 const  reproducirSonido = () => {
