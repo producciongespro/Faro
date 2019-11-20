@@ -21,6 +21,7 @@ import TagsInfo from './Components/Tags_info';
 import Buscador from './Components/Buscador';
 import BuscadorPlaneamiento from './Components/BuscadorPlaneamiento';
 import HomeMovil from './Components/HomeMovil';
+import EvaluacionCategorias from './Components/EvaluacionCategorias';
 
 
 
@@ -112,7 +113,7 @@ componentDidMount ( ) {
         tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
       break;
       case "ApoyosEvaluacion":
-          tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}/> 
+          tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion}  /> 
       break;
       case "RecursosDidacticos":
         tmpComponent = <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
@@ -122,9 +123,7 @@ componentDidMount ( ) {
       break;
       case "DesarrolloProf":
         tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
-      break;
-
-    
+      break;    
       default:
         console.log("Opción fuera de rango");      
       break;
@@ -189,9 +188,7 @@ componentDidMount ( ) {
   }
 
 
-  handlerCloseProgramasEducativos = (id) => {
-    
-
+  handlerCloseProgramasEducativos = (id) => {  
     console.log("Boton-", id  );
 
     if (id === "programas" ) {
@@ -203,10 +200,7 @@ componentDidMount ( ) {
       this.setState ({
         currentPage :  <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}     /> 
       }) 
-    }
-    
-
- 
+    }  
   }
 
 // Fin de métodos de Programas de estudio -------------------------------
@@ -227,23 +221,18 @@ componentDidMount ( ) {
 
   handlerCloseCatalog = (id) => {
     console.log( "Destino",  id);
-
-    if (id === "preescolar"  ||  id === "primaria" || id === "secundaria"  ) {     
-      
+    if (id === "preescolar"  ||  id === "primaria" || id === "secundaria"  ) {           
       this.setState({
           currentPage  : <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
-         });
-      
+         });      
     };
 
     if (id === "cursos" || id === "videoteca" || id === "ficha"  ) {
       console.log("ID DIP");
       this.setState({
           currentPage  : <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
-         });
-      
-    }    
-
+         });      
+    } 
   }
 
 // Fin de métodos de catalogo -------------------------------
@@ -260,13 +249,30 @@ handlerOpenCatalogWeb = (e) => {
 
 handlerCloseCatalogWeb = (e) => {  
   e.preventDefault();
-  console.log(e.target);
-  
+  console.log(e.target);  
   this.setState ({
     currentPage : <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
   })
 }
 //Fin Método para abrir catálogo web -----------------------------------------
+
+
+//Método para abrir Categorías evaluación -----------------------------------------
+handlerAbrirCategoriasEvaluacion = (e) => {  
+  this.setState ({
+    currentPage : <EvaluacionCategorias  handlerCerrarCategoriasEvaluacion={ this.handlerCerrarCategoriasEvaluacion} />
+  })
+}
+
+
+handlerCerrarCategoriasEvaluacion = (e) => {  
+  e.preventDefault();
+  console.log(e.target);  
+  this.setState ({
+    currentPage : <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
+  })
+}
+//Fin Método para abrir Categorías evaluación -----------------------------------------
 
 
 showModal = (e) => {
