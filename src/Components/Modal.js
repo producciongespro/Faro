@@ -119,29 +119,49 @@ class Modal extends Component {
         //this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = (<React.Fragment>          
           <div className="container">
+
             <div className="row ">
-              <div className="col-6 text-center">
+
+              <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
                   <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf documento general"/>                 
                 </a>
               </div>
-              <div className="col-6 text-center">
+
+              <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
                     <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf jóvenes y adultos"/>                  
                 </a>
               </div>
+
+              <div className="col-4 text-center">
+                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
+                    <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf jóvenes y adultos"/>                  
+                </a>
+              </div>
+
             </div>
+
             <div className="row">
-              <div className="col-6 text-center">
+
+              <div className="col-4 text-center">
               <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
                   Orientaciones para la mediación generales
                 </a>
               </div>
-              <div className="col-6 text-center">
+
+              <div className="col-4 text-center">
               <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
                   Orientaciones para la mediación jóvenes y adultos
               </a>
               </div>
+
+              <div className="col-4 text-center">
+              <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/Orientaciones_Preescolar.pdf.pdf" target="_blank"  rel="noopener noreferrer"> 
+                  Orientaciones para la mediación pedagógica por habilidades para la Educación Preescolar
+              </a>
+              </div>
+
             </div>
 
           </div>
