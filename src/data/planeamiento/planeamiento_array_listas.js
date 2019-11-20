@@ -410,16 +410,12 @@ const listasPlan = [
         {
             "label": "IPEC-CINDEA Nivel III",
             "id": "ipec3"
-        },
-        {
-            "label": "Móduilos opcionales IPEC-CINDEA",
-            "id": "ipecOpcionales"
         }
     ],  
     "planEstudiosFrancesPrimaria" : [
         {
             "id" : "extranjeraFrances",
-            "etiqueta" : "Francés como lengua Extranjera"
+            "etiqueta" : "Francés como Lengua Extranjera"
         },     
         {
             "id" : "extranjeraMatematica",
@@ -430,7 +426,7 @@ const listasPlan = [
     "planEstudiosFrancesSecundaria" : [
         {
             "id" : "lenguaExtranjera",
-            "etiqueta" : "Francés como lengua extranjera"
+            "etiqueta" : "Francés como Lengua Extranjera"
         },
         {
             "id" : "francesAvanzado",
@@ -440,7 +436,7 @@ const listasPlan = [
     "planEstudiosInglesPrimaria" : [
         {
             "id" : "lenguaExtranjera",
-            "etiqueta" : "Inglés como lengua extranjera"
+            "etiqueta" : "Inglés como Lengua Extranjera"
         },
         {
             "id" : "bilingue",
@@ -450,11 +446,11 @@ const listasPlan = [
     "planEstudiosInglesSecundaria" : [
         {
             "id" : "lenguaExtranjera",
-            "etiqueta" : "Inglés como lengua extranjera"
+            "etiqueta" : "Inglés como Lengua Extranjera"
         },
         {
             "id" : "bilingue",
-            "etiqueta" : "Liceos Experimentales bilingües/Secciones Bilingües Español-Inglés"
+            "etiqueta" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés"
         }
     ]   
 

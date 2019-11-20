@@ -414,7 +414,7 @@ buscarRecursosGenerales = () => {
                                                 this.props.origen === "intercultural" &&
                                                 (
                                                     <React.Fragment>
-                                                        <option value="Educación indígena" > Educación indígena  </option>
+                                                        <option value="Educación Indígena" > Educación Indígena  </option>
                                                         <option value="Contextualización y pertinencia cultural" > Contextualización y pertinencia cultural  </option>
                                                     </React.Fragment>
                                                 )
@@ -510,7 +510,7 @@ buscarRecursosGenerales = () => {
                                             <select className="custom-select buscadores-materias" id="selIngles" onClick={this.handlerObtenerPlanEstudios} >
                                                 <option value="" disabled> Seleccione una opción:</option>
                                                 <option value="Inglés como Lengua Extranjera">Inglés como Lengua Extranjera</option>
-                                                <option value="Liceos experimentales Bilingües/Secciones Bilingües Español-Inglés">Liceos experimentales Bilingües/Secciones Bilingües Español-Inglés</option>
+                                                <option value="Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés">Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés</option>
                                             </select>
                                         </div>  
                                         )
