@@ -135,8 +135,8 @@ class Modal extends Component {
               </div>
 
               <div className="col-4 text-center">
-                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
-                    <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf jóvenes y adultos"/>                  
+                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
+                    <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf educación preescolar"/>                  
                 </a>
               </div>
 
@@ -157,7 +157,7 @@ class Modal extends Component {
               </div>
 
               <div className="col-4 text-center">
-              <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/Orientaciones_Preescolar.pdf.pdf" target="_blank"  rel="noopener noreferrer"> 
+              <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
                   Orientaciones para la mediación pedagógica por habilidades para la Educación Preescolar
               </a>
               </div>
