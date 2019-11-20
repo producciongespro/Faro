@@ -1,11 +1,12 @@
 import React from 'react';
 import images from "../data/images.json";
+import textosJson from "../data/textos.json";
 
 
 
+const textos = textosJson[0];
 const  reproducirSonido = () => {
-  console.log("Audio");
-  
+  console.log("Audio");  
   var tmpAudio = document.getElementById("evaluacion");
   tmpAudio.currentTime = 0;
   tmpAudio.play();
@@ -28,6 +29,17 @@ const ApoyosEvaluacion = (props) => {
                      <div  onClick={ reproducirSonido  }  id="textoDescripcion" className="texto_descripciones text-justify pr-3">
                      <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
                      </div>
+
+                  <div className="row img_btn_der">
+                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPruebaEscrita} className="img-fluid botones-portada hvr-pop"   src={images[0].EvaluacionPruebas} alt="Elaboración de Prueba Escrita"/>
+                  </div>
+
+                  <div className="row img_btn_der">
+                  <img className="img-fluid" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoTrabajoCotidiano} className="img-fluid botones-portada hvr-pop"   src={images[0].EvaluacionCotidiano} alt="Valoración del trabajo cotidiano"/>
+                  </div>
+
+
+
               </div>
 
               
@@ -37,8 +49,9 @@ const ApoyosEvaluacion = (props) => {
                 <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
                 </div>
                     
-                    <div id="div-evaluacion" className="row">
-                      <div  className="col-12 col-sin-padding">
+                    <div  className="row">
+                    
+                    <div  className="col-12 col-sin-padding">
                         <figure>                        
                           <img id="tecnicas" className="img-fluid btn hvr-pop evaluacion"  data-infosource={3} onMouseOver={props.onMouseOver}  data-origen="Funciones de la evaluación"  onClick={props.handlerAbrirCategoriasEvaluacion}  onMouseOut={ props.onMouseOut } alt="Funciones de la evaluación"    src={images[0].EvaluacionLRubricas} role="button" />                        
                         </figure>
@@ -52,7 +65,8 @@ const ApoyosEvaluacion = (props) => {
                       </figure>
                     </div>
                   </div>
-                      <div className="row">
+
+                    <div className="row">
                      <div className="col-12  col-sin-padding">
                       <figure>
                         <img id="documentos" className="img-fluid  btn hvr-pop evaluacion" data-infosource={3} onMouseOver={props.onMouseOver}  data-origen="Documentos"  onMouseOut={ props.onMouseOut }  alt="Itemes"  src={images[0].EvaluacionLogros} />
