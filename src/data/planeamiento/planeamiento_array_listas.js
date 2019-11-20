@@ -419,29 +419,14 @@ const listasPlan = [
     "planEstudiosFrancesPrimaria" : [
         {
             "id" : "extranjeraFrances",
-            "etiqueta" : "Francés como lengua extranjera-Francés"
-        },
-        {
-            "id" : "extranjeraCiencias",
-            "etiqueta" : "Francés como lengua extranjera-Ciencias"
-        },
+            "etiqueta" : "Francés como lengua Extranjera"
+        },     
         {
             "id" : "extranjeraMatematica",
-            "etiqueta" : "Francés como lengua extranjera-Matemáticas"
-        },
-        {
-            "id" : "bilingueFrances",
-            "etiqueta" : "Secciones Bilingües Español-Francés: Francés"
-        },
-        {
-            "planEstudios" : "bilingueCiencias",
-            "etiqueta" : "Secciones Bilingües Español-Francés: Ciencias"
-        },
-        {
-            "id" : "bilingueMatematica",
-            "etiqueta" : "Secciones Bilingües Español-Francés: Matemáticas"
-        },
+            "etiqueta" : "Secciones Bilingües Español Francés"
+        }
     ],
+    
     "planEstudiosFrancesSecundaria" : [
         {
             "id" : "lenguaExtranjera",
