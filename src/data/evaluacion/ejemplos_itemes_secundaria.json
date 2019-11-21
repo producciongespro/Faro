@@ -3,11 +3,11 @@
 
         "Biología" : [
             {
-                "nombre" : "Selección de contexto",
+                "nombre" : "Selección de Contexto",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Resolución de problemas",
+                "nombre" : "Resolución de Problemas",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
@@ -19,11 +19,11 @@
 
         "Ciencias" : [
                 {
-                    "nombre" : "Selección simple",
+                    "nombre" : "Selección Simple",
                     "url" : "https://www.mep.go.cr/educatico"
                 },
                 {
-                    "nombre" : "Selección de contexto",
+                    "nombre" : "Selección de Contexto",
                     "url" : "https://www.mep.go.cr/educatico"
                 },
                 {
@@ -35,7 +35,7 @@
                     "url" : "https://www.mep.go.cr/educatico"
                 },
                 {
-                    "nombre" : "Resolución de casos",
+                    "nombre" : "Resolución de Casos",
                     "url" : "https://www.mep.go.cr/educatico"
                 },
                 {
@@ -48,7 +48,7 @@
 
         "Cívica" : [
             {
-                "nombre" : "Selección de contexto",
+                "nombre" : "Selección de Contexto",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
@@ -59,7 +59,7 @@
 
         "Español" : [
             {
-                "nombre" : "Selección simple",
+                "nombre" : "Selección Simple",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
@@ -71,15 +71,15 @@
 
         "Estudios Sociales" : [
             {
-                "nombre" : "Selección simple",
+                "nombre" : "Selección Simple",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Respuesta restringida",
+                "nombre" : "Respuesta Restringida",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Resolución de casos",
+                "nombre" : "Resolución de Casos",
                 "url" : "https://www.mep.go.cr/educatico"
             }
         ], 
@@ -87,26 +87,26 @@
         
         "Física" : [
             {
-                "nombre" : "Selección de contexto",
+                "nombre" : "Selección de Contexto",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Respuesta corta",
+                "nombre" : "Respuesta Corta",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Resolución de problemas",
+                "nombre" : "Resolución de Problemas",
                 "url" : "https://www.mep.go.cr/educatico"
             }
         ], 
 
         "Francés" : [
             {
-                "nombre" : "Selección de contexto",
+                "nombre" : "Selección de Contexto",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Respuesta corta",
+                "nombre" : "Respuesta Corta",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
@@ -117,11 +117,11 @@
 
         "Inglés" : [
             {
-                "nombre" : "Selección de contexto",
+                "nombre" : "Selección de Contexto",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Respuesta corta",
+                "nombre" : "Respuesta Corta",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
@@ -133,11 +133,11 @@
         
         "Italiano" : [
             {
-                "nombre" : "Selección de contexto",
+                "nombre" : "Selección de Contexto",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Respuesta corta",
+                "nombre" : "Respuesta Corta",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
@@ -149,19 +149,19 @@
          
         "Química" : [
             {
-                "nombre" : "Selección simple",
+                "nombre" : "Selección Simple",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Respuesta de contexto",
+                "nombre" : "Respuesta de Contexto",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Respuesta corta",
+                "nombre" : "Respuesta Corta",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
-                "nombre" : "Resolución de problemas",
+                "nombre" : "Resolución de Problemas",
                 "url" : "https://www.mep.go.cr/educatico"
             }
         ]
