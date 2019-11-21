@@ -560,7 +560,7 @@ class Buscador extends Component {
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" id="chkApyos" onClick={this.handlerObtenerApoyos} />
                                 <label className="form-check-label" htmlFor="chkApyos">
-                                    Apoyos educativos especiales
+                                    Apoyos educativos <br />  especiales
                                 </label>
                             </div>
 
@@ -575,7 +575,7 @@ class Buscador extends Component {
 
                     <div className="row">
                         <div className="col-12 text-right">
-                            <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg">
+                            <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>

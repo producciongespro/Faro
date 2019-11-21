@@ -57,20 +57,33 @@ class EjemplosItemesEvaluacion extends Component {
             <div className="container">
                 <div className="jumbotron">
                     <h2>Ejemplos de itemes</h2>
-                </div>
+                
                 <div className="row">
                     <div className="col-12 text-right">
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarEjemplosItemes} src={images[0].BtnVolver} alt="Volver" />
                     </div>
                 </div>
+                </div>
+
+           
+                <div className="input-group-prepend">
+                    <label className="input-group-text etiquetas-busquedas" htmlFor="selNiv">
+                        Nivel
+                    </label>
+                </div>
+
                 <div className="row">
                     <div className="col-2">
-                        <select onClick={this.handlerCargarAsignatura}>
+                        <select className="custom-select buscadores-materias" onClick={this.handlerCargarAsignatura}>
                             <option value="" defaultValue disabled > Seleccione un nivel </option>
                             <option value="primaria"> Primaria </option>
                             <option value="secundaria"> Secundaria </option>
                         </select>
                     </div>
+            
+           
+
+
                     <div className="col-3">
                         <select onClick={this.handlerSeleccionarAsignatura} >
                             <option value="" defaultValue disabled> Seleccione una asginatura </option>
@@ -84,7 +97,7 @@ class EjemplosItemesEvaluacion extends Component {
                         </select>
                     </div>                    
                     <div className="col-7">
-                        <button onClick={this.handlerCargarItemes} className="btn btn-success">
+                        <button onClick={this.handlerCargarItemes} className="btn btn-secondary btn-lg">
                             Buscar
                         </button>
                     </div>                    

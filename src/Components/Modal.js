@@ -96,7 +96,7 @@ class Modal extends Component {
         this.modalAncho =  this.modalAncho + " modal-lg";
         this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = ( <React.Fragment>
-                          <h2 className="text-center">Concepto de Habilidades</h2>                        
+                          <h2 className="text-center">Concepto de Habilidades</h2>               
                           <h3 className="text-center">Ministerio de Educación Pública</h3>
                           <br/>
                           <div className="container">
