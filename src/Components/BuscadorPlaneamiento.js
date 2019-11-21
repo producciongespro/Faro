@@ -286,20 +286,17 @@ class BuscadorPlaneamiento extends Component {
             <React.Fragment>
 
                 <div className="row">
-                    <div className="col-10  text-right alert alert-secondary">
-                        <h3>Documentos de apoyo al Planeamiento</h3>
-                    </div>
-                    <div className="col-2">
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={images[0].BtnVolver} alt="Volver" />
+                    <div className="col-12  text-right alert alert-secondary">
+                        <img className="bannerRecursos" src={images[0].ApoyosPlaneamientoDidacBanner} alt="Encabezado de Documentos de apoyo"/>
+                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={images[0].BtnVolver} alt="Volver" />
                     </div>
                 </div>
 
                 <div className="row">
-                    <div className="col-6 font-italic">
+                    <div className="col-10 font-italic">
                         Seleccione primero el nivel que desea, posteriormente el año o modalidad, por último seleccione la materia y
-                        el botón "buscar" para encontrar el resultado deseado.
-                        <br />
-                        <strong>Importante:</strong> Si desea ver los planes de español en secundaria, seleccione "Español" en asignatura en lugar de seleccionar "Todas".
+                        el botón "buscar" para encontrar el resultado deseado. 
+                        <strong>    Importante:</strong> Si desea ver los planes de español en secundaria, seleccione "Español" en asignatura en lugar de seleccionar "Todas".
                     </div>
                 </div> <hr />
 
@@ -629,7 +626,7 @@ class BuscadorPlaneamiento extends Component {
                         <div className="col-12 text-right">
                             {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
                                 this.state.buscarActivo &&
-                                <button onClick={this.cargarInformacionBusqueda} type="button" className="btn btn-secondary btn-lg">
+                                <button onClick={this.cargarInformacionBusqueda} type="button" className="btn btn-secondary btn-lg btn_Buscar">
                                     <i className="fas fa-search"></i> Buscar
                                     </button>
                             }

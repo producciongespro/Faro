@@ -21,6 +21,10 @@ body {
   margin-top: 5em;
 }
 
+.btn_Buscar{
+  margin-top: -30%;
+}
+
 .visor {
     box-sizing: border-box;
     background-color: #fff;
