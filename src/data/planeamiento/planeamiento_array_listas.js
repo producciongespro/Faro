@@ -452,6 +452,16 @@ const listasPlan = [
             "id" : "bilingue",
             "etiqueta" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés"
         }
+    ],
+    "adultos" : [
+        {
+            "id" : "mod1",
+            "etiqueta" : "Módulo 1"
+        },
+        {
+            "id" : "mod2",
+            "etiqueta" : "Módulo 2"
+        }
     ]   
 
 
