@@ -10,7 +10,7 @@ import images from '../data/images.json';
 
 
 var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación"]
-var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés","Italiano","Matemáticas", "Mediación", "Química"]
+var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación", "Química"]
 var anoSecundaria = [
     {
         "label": "Sétimo",
@@ -74,7 +74,7 @@ var tipoPoblacion = [
     }
 ];
 
-var dataGeneral="";
+var dataGeneral = "";
 //console.log("dataIngles", dataIngles);
 
 
@@ -91,45 +91,45 @@ class Buscador extends Component {
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
-        this.planEstudios = "";        
+        this.planEstudios = "";
         //Oculta la materia en caso de preescolar
         this.cargarAmbientePreescolar();
     }
 
 
     cargarDatasetRecursos = (materia) => {
-        dataGeneral="";
+        dataGeneral = "";
         switch (materia) {
             case "Inglés":
                 dataGeneral = dataIngles;
-            break;
+                break;
             case "Ciencias":
             case "Español":
             case "Estudios Sociales":
             case "Matemáticas":
             case "Cívica":
                 dataGeneral = dataOtros;
-            break;
+                break;
             case "Francés":
-                    dataGeneral = dataFrances;
-            break;
+                dataGeneral = dataFrances;
+                break;
             case "Italiano":
-                    dataGeneral = dataItaliano;
-            break;
+                dataGeneral = dataItaliano;
+                break;
             case "Mediación":
-                    dataGeneral = dataMediacion;
-            break;  
+                dataGeneral = dataMediacion;
+                break;
             case "Artes Plásticas":
-                    dataGeneral = dataArtesPlasticas;
-            break;                             
-        
+                dataGeneral = dataArtesPlasticas;
+                break;
+
             default:
                 dataGeneral = dataOtros;
-                console.log("Opción fuera de rango");                
-            break;
+                console.log("Opción fuera de rango");
+                break;
         }
 
-       
+
     }
 
 
@@ -138,12 +138,12 @@ class Buscador extends Component {
         this.planEstudios = "";
 
         let valor = e.target.value;
-        
-        this.setState({materia: valor}, ()=>{
+
+        this.setState({ materia: valor }, () => {
             this.cargarDatasetRecursos(this.state.materia);
             console.log("materia", this.state.materia);
         })
-        
+
     }
 
     handlerObtenerAnno = (e) => {
@@ -184,20 +184,20 @@ class Buscador extends Component {
         switch (this.props.origen) {
             case "preescolar":
                 this.buscarRecursosPreescolar();
-            break;
+                break;
             case "primaria":
             case "secundaria":
             case "intercultural":
                 this.buscarRecursosGenerales();
-            break;
-        
+                break;
+
             default:
                 break;
         }
 
     }
 
-buscarRecursosPreescolar = () => {
+    buscarRecursosPreescolar = () => {
         console.log("dataGeneral", dataGeneral);
         var arrayHtml;
         var arrayTmp = [];
@@ -238,13 +238,13 @@ buscarRecursosPreescolar = () => {
                     <hr />
                 </React.Fragment>
             )
-            arrayTmp.push(arrayHtml);    
-        };        
+            arrayTmp.push(arrayHtml);
+        };
         this.setState({ tarjetas: arrayTmp });
-};
+    };
 
 
-buscarRecursosGenerales = () => {
+    buscarRecursosGenerales = () => {
 
         //console.log(dataGeneral);
         //console.log("Materia a buscar", this.materia );
@@ -331,9 +331,9 @@ buscarRecursosGenerales = () => {
 
 
     cargarAmbientePreescolar() {
-        if (this.props.origen === "preescolar") {       
+        if (this.props.origen === "preescolar") {
             //Carga el json de preescolar
-            dataGeneral= dataPreescolar;
+            dataGeneral = dataPreescolar;
         }
     }
 
@@ -393,10 +393,10 @@ buscarRecursosGenerales = () => {
                                         )
                                     }
                                 </div>
-                                    {
-                                        this.props.origen !== "preescolar" && 
-                                        (
-                                            <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
+                                {
+                                    this.props.origen !== "preescolar" &&
+                                    (
+                                        <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
                                             <option defaultValue value="" >Todas</option>
                                             {
                                                 this.props.origen === "primaria" &&
@@ -420,8 +420,8 @@ buscarRecursosGenerales = () => {
                                                 )
                                             }
                                         </select>
-                                        )
-                                    }
+                                    )
+                                }
                             </div>
                             {/* Fin de Columna 1 ASIGNATURA (MATERIA) */}
                         </div>
@@ -430,14 +430,14 @@ buscarRecursosGenerales = () => {
                             {/* Columna 2 AÑO -  */}
                             {
                                 // SI NIVEL ES DIFERNETE DE INTERCULTURAL SE RENDERIZA EL SELECT AÑO
-                                 (this.props.origen !== "intercultural")  && (
-                                        (this.props.origen !== "preescolar") ? (
-                                            <div className="input-group mb-3">
+                                (this.props.origen !== "intercultural") && (
+                                    (this.props.origen !== "preescolar") ? (
+                                        <div className="input-group mb-3">
                                             <div className="input-group-prepend">
                                                 <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
                                             </div>
                                             <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
-                                                <option defaultValue value="" > Todos </option>                                          
+                                                <option defaultValue value="" > Todos </option>
                                                 {
                                                     this.props.origen === "primaria" &&
                                                     annoPrimaria.map((item, i) => (
@@ -452,17 +452,17 @@ buscarRecursosGenerales = () => {
                                                 }
                                             </select>
                                         </div>
-                                        ) : 
+                                    ) :
                                         (
                                             // mensaje de preescolar                                 
                                             <span>Oprima el botón buscar para desplegar los recursos.</span>
 
                                         )
-                                        
+
 
                                 )
-                                
-                                
+
+
                             }
 
                         </div>
@@ -501,25 +501,25 @@ buscarRecursosGenerales = () => {
                                                     <option value="Secciones Bilingües Español-Inglés">Secciones Bilingües Español-Inglés</option>
                                                 </select>
                                             </div>
-                                        ):
+                                        ) :
                                         (
                                             <div className="input-group mb-3">
-                                            <div className="input-group-prepend">
-                                                <label className="input-group-text etiquetas-busquedas" htmlFor="selIngles">Plan de estudio</label>
+                                                <div className="input-group-prepend">
+                                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selIngles">Plan de estudio</label>
+                                                </div>
+                                                <select className="custom-select buscadores-materias" id="selIngles" onClick={this.handlerObtenerPlanEstudios} >
+                                                    <option value="" disabled> Seleccione una opción:</option>
+                                                    <option value="Inglés como Lengua Extranjera">Inglés como Lengua Extranjera</option>
+                                                    <option value="Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés">Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés</option>
+                                                </select>
                                             </div>
-                                            <select className="custom-select buscadores-materias" id="selIngles" onClick={this.handlerObtenerPlanEstudios} >
-                                                <option value="" disabled> Seleccione una opción:</option>
-                                                <option value="Inglés como Lengua Extranjera">Inglés como Lengua Extranjera</option>
-                                                <option value="Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés">Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés</option>
-                                            </select>
-                                        </div>  
                                         )
-                                    )
+                                )
 
                             }
                             {
                                 //Select que se genera al seleccionar Italiano en secundaria
-                                (this.state.materia === "Italiano"  && this.props.origen === "secundaria" )   &&
+                                (this.state.materia === "Italiano" && this.props.origen === "secundaria") &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
@@ -537,17 +537,21 @@ buscarRecursosGenerales = () => {
 
                         <div className="col-3">
 
-                            <div className={this.claseCSSPoblacion}>
-
-                                <input className="form-check-input" type="checkbox" value={
-                                    this.props.origen === "primaria" ? tipoPoblacion[0].id : tipoPoblacion[1].id
-                                } onClick={this.handlerObtenerPoblacion} id="chkPoblacion" />
-                                <label className="form-check-label" htmlFor="chkPoblacion">
-                                    {
-                                        this.props.origen === "primaria" ? tipoPoblacion[0].label : tipoPoblacion[1].label
-                                    }
-                                </label>
-                            </div>
+                            {
+                                this.props.origen !== "preescolar" &&
+                                (
+                                    <div className={this.claseCSSPoblacion}>
+                                        <input className="form-check-input" type="checkbox" value={
+                                            this.props.origen === "primaria" ? tipoPoblacion[0].id : tipoPoblacion[1].id
+                                        } onClick={this.handlerObtenerPoblacion} id="chkPoblacion" />
+                                        <label className="form-check-label" htmlFor="chkPoblacion">
+                                            {
+                                                this.props.origen === "primaria" ? tipoPoblacion[0].label : tipoPoblacion[1].label
+                                            }
+                                        </label>
+                                    </div>
+                                )
+                            }
 
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" id="chkApyos" onClick={this.handlerObtenerApoyos} />

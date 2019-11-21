@@ -78,6 +78,7 @@ componentDidMount ( ) {
     switch (this.plataforma) {
       case "Linux armv7l":
       case "Linux armv8l":
+      case "iPhone":
           tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />
       break;
       case "Win32":

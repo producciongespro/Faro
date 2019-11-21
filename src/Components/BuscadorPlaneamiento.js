@@ -218,9 +218,7 @@ class BuscadorPlaneamiento extends Component {
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla
                                                 </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Ejemplo
-                                                </a>
+                                           
                                         </div>
                                     )
 
@@ -396,9 +394,22 @@ class BuscadorPlaneamiento extends Component {
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
                                         {
                                             this.state.nivel === "preescolar" ?
-                                                <span>Niveles de desempeño</span>
+                                                (
+                                                    <span>Niveles de desempeño</span>
+                                                )
                                                 :
-                                                <span>Asignatura</span>
+                                                (
+                                                    this.state.nivel==="adultos" ? 
+                                                    (
+                                                        <span>Módulos</span>
+                                                    ) :
+                                                    (
+                                                        <span>Asignatura</span>
+                                                    )
+                                                )
+
+
+
                                         }
                                     </label>
                                 </div>
@@ -451,6 +462,18 @@ class BuscadorPlaneamiento extends Component {
                                             listasPlan.materiasSecundaria.map((item, i) => (
                                                 <option key={"materia" + i} value={item.id} >  {item.label}  </option>
                                             )) : ""
+                                    }
+                                    {
+                                        this.state.nivel==="adultos" &&                                                                                (                                           
+                                            
+                                            listasPlan.adultos.map((item,i)=>(
+                                                <option key={"materia" + i} value={item.id} >  {item.etiqueta}  </option> 
+                                            ))  
+                                        )
+                                    }
+                                    {
+                                        console.log("listasPlan.adultos", listasPlan.adultos )
+                                        
                                     }
 
 

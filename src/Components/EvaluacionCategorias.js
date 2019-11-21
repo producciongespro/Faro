@@ -59,7 +59,7 @@ class EvaluacionCategorias extends Component {
                         {
                             this.state.seleccion !== null && (
                                 this.state.seleccion.map((item, i)=>(                                 
-                                      (item.nombre !== "Ejemplos de itemes") ? 
+                                      (item.nombre !== "Ejemplos de ítemes") ? 
                                         (
                                         <div key={"opcion"+i  }  className="alert alert-primary text-center" role="alert">
                                             <a href={item.url} className="alert-link" target="_blank" rel="noopener noreferrer"  >

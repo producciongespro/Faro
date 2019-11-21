@@ -34,7 +34,7 @@
                         "nombre" : "Técnicas de evaluación",
                         "detalles" : [
                             {
-                                "nombre" : "Mapa conceptual",
+                                "nombre" : "Mapa Conceptual",
                                 "url" : "https://www.nacion.com/"
                             },
                             {
@@ -43,6 +43,22 @@
                             },
                             {
                                 "nombre" : "Cuestionario",
+                                "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Portafolio",
+                                "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Diario de clase",
+                                "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Debate",
+                                "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Estudio de casos",
                                 "url" : "https://www.nacion.com/"
                             }
                         ]
@@ -61,6 +77,14 @@
                             {
                                 "nombre" : "Listas de cotejo",
                                 "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Registro de desempeño",
+                                "url" : "https://www.nacion.com/"
+                            },
+                            {
+                                "nombre" : "Registro anecdótico",
+                                "url" : "https://www.nacion.com/"
                             }
                         ]
                     }
@@ -72,6 +96,84 @@
     "categoria" : "Componentes de la calificación", 
     "subcategorias" :
             [
+
+                {
+                    "nombre" : "Asistencia",
+                    "detalles" : [
+                       {
+                           "nombre" : "Definición",
+                           "url" : "https://www.nacion.com/"
+                       },
+                       {
+                           "nombre" : "Lineamientos técnicos",
+                           "url" : "https://www.nacion.com/"
+                       }
+                   ] 
+                },
+
+
+                {
+                    "nombre" : "Demostración de lo aprendido",
+                    "detalles" : [
+                       {
+                           "nombre" : "Definición",
+                           "url" : "https://www.nacion.com/"
+                       },
+                       {
+                           "nombre" : "Lineamientos técnicos",
+                           "url" : "https://www.nacion.com/"
+                       }
+                   ] 
+                },
+
+                {
+                    "nombre" : "Proyectos",
+                    "detalles" : [
+                       {
+                           "nombre" : "Definición",
+                           "url" : "https://www.nacion.com/"
+                       },
+                       {
+                           "nombre" : "Lineamientos técnicos",
+                           "url" : "https://www.nacion.com/"
+                       }
+                   ] 
+                },
+
+
+                {
+                    "nombre" : "Pruebas",
+                    "detalles" : [
+                       {
+                           "nombre" : "Definición",
+                           "url" : "https://www.nacion.com/"
+                       },
+                       {
+                           "nombre" : "Lineaminetos técnicos",
+                           "url" : "https://www.nacion.com/"
+                       },
+                       {
+                           "nombre" : "Ejemplos de ítemes",
+                           "url" : "https://www.nacion.com/"
+                       }
+                   ] 
+                },
+
+                {
+                    "nombre" : "Tareas",
+                    "detalles" : [
+                       {
+                           "nombre" : "Definición",
+                           "url" : "https://www.nacion.com/"
+                       },
+                       {
+                           "nombre" : "Lineamientos técnicos",
+                           "url" : "https://www.nacion.com/"
+                       }
+                   ] 
+                },
+
+
                  {
                     "nombre" : "Trabajo cotidiano",
                     "detalles" : [
@@ -84,37 +186,8 @@
                             "url" : "https://www.nacion.com/"
                         }
                     ]                       
-                 },
-                 {
-                     "nombre" : "Pruebas",
-                     "detalles" : [
-                        {
-                            "nombre" : "Definición",
-                            "url" : "https://www.nacion.com/"
-                        },
-                        {
-                            "nombre" : "Lineaminetos técnicos",
-                            "url" : "https://www.nacion.com/"
-                        },
-                        {
-                            "nombre" : "Ejemplos de itemes",
-                            "url" : "https://www.nacion.com/"
-                        }
-                    ] 
-                 },
-                 {
-                     "nombre" : "Tareas",
-                     "detalles" : [
-                        {
-                            "nombre" : "Definición",
-                            "url" : "https://www.nacion.com/"
-                        },
-                        {
-                            "nombre" : "Lineaminetos técnicos",
-                            "url" : "https://www.nacion.com/"
-                        }
-                    ] 
                  }
+              
                                   
               ]          
     } 

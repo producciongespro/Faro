@@ -20,7 +20,7 @@ class EjemplosItemesEvaluacion extends Component {
     //CArga su valor en tiempo de ejecución dependiendo del nivel seleccionado
     ejemplosItemesJson = "";
     materiasPrimaria = ["Ciencias", "Francés", "Italiano", "Inglés", "Matemática"];
-    materiasSecundaria = ["Ciencias", "Estudios Sociales", "Cívica", "Francés", "Inglés", "Itaiano", "Biología", "Español"]
+    materiasSecundaria = ["Biología","Ciencias", "Cívica","Español","Estudios Sociales", "Física", "Francés", "Inglés", "Italiano","Química"]
 
     handlerCargarAsignatura = (e) => {
         const nivel = e.target.value;
