@@ -5,7 +5,7 @@ import textosJson from "../data/textos.json";
 
 const textos = textosJson[0];
 const images = imagesJson[0];
-
+//Portada en caso de móviles
 const PortadaMovil = (props) => {
     return ( 
         <React.Fragment>
