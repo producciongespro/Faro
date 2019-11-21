@@ -87,7 +87,7 @@ componentDidMount ( ) {
          //Carga componente 
          tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />
          //guarda en sessión tipo de plataforma:
-         sessionStorage.setItem("tipoPlataforma", "ios"  );
+         sessionStorage.setItem("tipoPlataforma", "iphone"  );
       break;
       case "Win32":
           tmpHome = <Home showModal={this.showModal}  changePage={this.changePage}/>
