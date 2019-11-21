@@ -9,24 +9,26 @@ const images = imagesJson[0];
 const PortadaMovil = (props) => {
     return ( 
         <React.Fragment>
+            <br/>
             <div className="row">
                 <div className="col-12 text-center">
-                    <img id="img-portada" src={images.logoMEPCH   } className="img-fluid" alt="Título portada"/>
+                    <img id="logoMCH" src={images.logoMEPCH   } className="img-fluid" alt="Título portada"/>
                 </div>
             </div>
+            <br/> <br/>
             <div className="row" >
                 <div className="col-2 ">                     
                 </div>
-                <div className="col-8 text-right">                        
+                <div className="col-8 ">                        
                     <img onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoMinistro } className="img-fluid botones-portada hvr-pop"   src={images.BtnBienvenida} alt="Bienvenida"/>
                 </div>
                 <div className="col-2 ">                     
                 </div>         
-            </div> 
+            </div>  <br/>
             <div className="row" >
                 <div className="col-2 ">                     
                 </div>
-                <div className="col-5 text-left">                     
+                <div className="col-8 ">                     
                     <img  data-tar="Home"  onClick={props.changePage}  className="img-fluid botones-portada hvr-pop" src={images.BtnIngresar} alt="Ingresar"/>
                 </div>
                 <div className="col-2 ">                     
@@ -34,8 +36,7 @@ const PortadaMovil = (props) => {
             </div>
         <div className="row">
             <div className="col-12 text-center pie-pagina">
-                <br/>
-                <br/>
+                
                 INSTITUTO DE DESARROLLO PROFESIONAL ULADISLAO GÁMEZ SOLANO - DIRECCIÓN DE RECURSOS TECNOLÓGICOS EN EDUCACIÓN - DIRECCIÓN DE DESARROLLO CURRICULAR
             </div>
        
