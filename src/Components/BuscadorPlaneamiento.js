@@ -218,9 +218,7 @@ class BuscadorPlaneamiento extends Component {
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla
                                                 </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].ejemplo} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Ejemplo
-                                                </a>
+                                           
                                         </div>
                                     )
 
