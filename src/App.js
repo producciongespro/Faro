@@ -77,12 +77,21 @@ componentDidMount ( ) {
     console.log("Plataforma", this.plataforma);
     switch (this.plataforma) {
       case "Linux armv7l":
-      case "Linux armv8l":
-      case "iPhone":
+      case "Linux armv8l":     
+          //Carga componente 
           tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />
+          //guarda en sessión tipo de plataforma:
+          sessionStorage.setItem("tipoPlataforma", "android"  );
+      break;
+      case "iPhone":
+         //Carga componente 
+         tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />
+         //guarda en sessión tipo de plataforma:
+         sessionStorage.setItem("tipoPlataforma", "iphone"  );
       break;
       case "Win32":
           tmpHome = <Home showModal={this.showModal}  changePage={this.changePage}/>
+          sessionStorage.setItem("tipoPlataforma", "win"  );
       break;
     
       default:
