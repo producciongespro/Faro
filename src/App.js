@@ -291,7 +291,7 @@ handlerCerrarEjemplosItemes = (e) => {
   e.preventDefault();
   //console.log(e.target);  
   this.setState ({
-    currentPage : <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
+    currentPage : <EvaluacionCategorias origen="Componentes de la calificación" handlerCerrarCategoriasEvaluacion={ this.handlerCerrarCategoriasEvaluacion} handlerAbrirEjemplosItemes={this.handlerAbrirEjemplosItemes } />
   })
 }
 //Fin Método para abrir Categorías evaluación -----------------------------------------
