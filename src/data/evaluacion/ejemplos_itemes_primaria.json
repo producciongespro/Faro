@@ -8,19 +8,79 @@
                 {
                     "nombre" : "Selección de contexto",
                     "url" : "https://www.mep.go.cr/educatico"
+                },
+                {
+                    "nombre" : "Respuesta Corta",
+                    "url" : "https://www.mep.go.cr/educatico"
+                },
+                {
+                    "nombre" : "Respuesta Restringida",
+                    "url" : "https://www.mep.go.cr/educatico"
                 }
         ],
+
         "Francés" : [
             {
                 "nombre" : "Selección simple",
                 "url" : "https://www.mep.go.cr/educatico"
             },
             {
+                "nombre" : "Respuesta Corta",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "https://www.mep.go.cr/educatico"
+            }
+        ],
+
+
+        "Italiano" : [
+            {
+                "nombre" : "Selección simple",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "Respuesta Corta",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "https://www.mep.go.cr/educatico"
+            }
+        ],
+
+        "Inglés" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
                 "nombre" : "Respuesta corta",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "https://www.mep.go.cr/educatico"
+            }
+        ],
+
+        "Matemática" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "https://www.mep.go.cr/educatico"
+            },
+            {
+                "nombre" : "Repuesta Corta",
                 "url" : "https://www.mep.go.cr/educatico"
             }
         ]
-   
+
+
  
 
     }
