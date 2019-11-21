@@ -25,6 +25,7 @@ body {
   margin-top: -30%;
 }
 
+
 .visor {
     box-sizing: border-box;
     background-color: #fff;
@@ -56,6 +57,13 @@ a {
   left: 6%;
   width: 90%;
 }
+
+.img_apoy{
+  width: 75%;
+  height: 75%;
+  margin-right: 17%;
+}
+
 
 .etiquetas-1 {  
   font-size: 1.5em;
@@ -366,18 +374,18 @@ padding-top:5%;
   }
 
   .descripciones{
-    margin-top: 28%;
+    margin-top: 3%;
     cursor: pointer;
   }
 
   .descripciones4{
-    margin-top: 5%;
+    margin-top: 3%;
     cursor: pointer;
     
   }
 
   .descripciones3{
-    margin-top: 15%;
+    margin-top: 3%;
     cursor: pointer;
   }
 
