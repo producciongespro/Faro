@@ -13,12 +13,12 @@ const HomeMovil = (props) => {
             <div className="col-1 text-center">
                 </div>
                 <div className="col-4 text-center">
-                    <img className="iconosMovil" data-tar="ApoyoClimaAula" src={ images.GafasMovil } onClick={props.changePage} /> 
+                    <img className="iconosMovil" data-tar="ApoyoClimaAula" src={ images.GafasMovil } onClick={props.changePage} alt="" /> 
                 </div>
                 <div className="col-1 text-center">
                 </div>
                 <div className="col-4 text-center">
-                    <img className="iconosMovil" data-tar="ApoyosEvaluacion" src={ images.TabletMovil } onClick={props.changePage} /> 
+                    <img className="iconosMovil" data-tar="ApoyosEvaluacion" src={ images.TabletMovil } onClick={props.changePage} alt=""/> 
                 </div>
                 <div className="col-1 text-center">
                 </div>
@@ -28,13 +28,13 @@ const HomeMovil = (props) => {
             <div className="col-1 text-center">
                 </div>
                 <div className="col-4 text-center">
-                    <img className="iconosMovil" data-tar="RecursosDidacticos" src={ images.LapiceroMovil } onClick={props.changePage}/>
+                    <img className="iconosMovil" data-tar="RecursosDidacticos" src={ images.LapiceroMovil } onClick={props.changePage} alt=""/>
 
                 </div>               
                 <div className="col-1 text-center">
                 </div>   
             <div className="col-4 text-center">
-                    <img className="iconosMovil" data-tar="DocsOficiales" src={ images.CelularMovil } onClick={props.changePage}/>
+                    <img className="iconosMovil" data-tar="DocsOficiales" src={ images.CelularMovil } onClick={props.changePage} alt=""/>
                 </div>
                 <div className="col-1 text-center">
                 </div>
@@ -44,12 +44,12 @@ const HomeMovil = (props) => {
             <div className="col-1 text-center">
                 </div>
                 <div className="col-4 text-center">
-                    <img className="iconosMovil" data-tar="DesarrolloProf" src={ images.LaptopMovil } onClick={props.changePage}/>
+                    <img className="iconosMovil" data-tar="DesarrolloProf" src={ images.LaptopMovil } onClick={props.changePage} alt=""/>
                 </div>                
                 <div className="col-1 text-center">
                 </div>   
             <div className="col-4 text-center">
-                    <img className="iconosMovil" data-tar="ApoyosPlan" src={ images.BolsoMovil }  onClick={props.changePage}/>
+                    <img className="iconosMovil" data-tar="ApoyosPlan" src={ images.BolsoMovil }  onClick={props.changePage} alt=""/>
 
                 </div>
                 <div className="col-1 text-center">
@@ -64,7 +64,7 @@ const HomeMovil = (props) => {
             <br/>
             <div className="row">
             <div className="col-12 text-center">
-            <img id="logoMovil" data-tar="" src={ images.Logo }/>
+            <img id="logoMovil" data-tar="" src={ images.Logo } alt="logo"/>
             </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ const PortadaMovil = (props) => {
             <br/>
             <div className="row">
                 <div className="col-12 text-center">
-                    <img id="logoMCH" src={images.logoMEPCH   } className="img-fluid" alt="Título portada"/>
+                    <img id="logoMCH" src={images.logoMEPCH   } className="img-fluid" alt="Título portada"  />
                 </div>
             </div>
             <br/> <br/>
