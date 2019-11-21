@@ -394,9 +394,22 @@ class BuscadorPlaneamiento extends Component {
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
                                         {
                                             this.state.nivel === "preescolar" ?
-                                                <span>Niveles de desempeño</span>
+                                                (
+                                                    <span>Niveles de desempeño</span>
+                                                )
                                                 :
-                                                <span>Asignatura</span>
+                                                (
+                                                    this.state.nivel==="adultos" ? 
+                                                    (
+                                                        <span>Módulos</span>
+                                                    ) :
+                                                    (
+                                                        <span>Asignatura</span>
+                                                    )
+                                                )
+
+
+
                                         }
                                     </label>
                                 </div>
@@ -449,6 +462,18 @@ class BuscadorPlaneamiento extends Component {
                                             listasPlan.materiasSecundaria.map((item, i) => (
                                                 <option key={"materia" + i} value={item.id} >  {item.label}  </option>
                                             )) : ""
+                                    }
+                                    {
+                                        this.state.nivel==="adultos" &&                                                                                (                                           
+                                            
+                                            listasPlan.adultos.map((item,i)=>(
+                                                <option key={"materia" + i} value={item.id} >  {item.etiqueta}  </option> 
+                                            ))  
+                                        )
+                                    }
+                                    {
+                                        console.log("listasPlan.adultos", listasPlan.adultos )
+                                        
                                     }
 
 
