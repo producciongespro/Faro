@@ -21,6 +21,7 @@ import TagsInfo from './Components/Tags_info';
 import Buscador from './Components/Buscador';
 import BuscadorPlaneamiento from './Components/BuscadorPlaneamiento';
 import HomeMovil from './Components/HomeMovil';
+import PortadaMovil from './Components/PortadaMovil';
 import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 
@@ -42,13 +43,12 @@ class App extends Component {
       modalComponent: "",
       typeContent : ""      
     };
-    this.plataforma = "no disponible";
+    this.plataforma = this.detectarPlataforma();
   }
 
  
 
-componentDidMount ( ) {
-  this.plataforma = this.detectarPlataforma();
+componentDidMount ( ) {  
     setTimeout(() => {
       this.loadPortada();
     }, 500);
@@ -56,16 +56,49 @@ componentDidMount ( ) {
 
 
   detectarPlataforma () {
-    return navigator.platform;    
+    let tipoPlataforma = navigator.platform;
+    switch (tipoPlataforma) {
+      case "Linux armv7l":
+      case "Linux armv8l":
+      case "iPhone": 
+          tipoPlataforma = "movil";          
+      break;     
+      case "win32":
+          tipoPlataforma = "escritorio"; 
+      break;    
+      default:
+          tipoPlataforma = "escritorio"; 
+        break;
+    }
+    sessionStorage.setItem("tipoPlataforma", tipoPlataforma  );
+    return tipoPlataforma;    
   }
 
 
   loadPortada = ( )  => {     
     //Método que carga la Portada   
-    this.setState ({      
-      nameCurrentPage : "Portada",      
-      currentPage : <Portada  changePage={this.changePage}  showModal ={ this.showModal }  />            
-    });        
+    
+    switch (this.plataforma) {
+      case "escritorio":
+          this.setState ({      
+            nameCurrentPage : "Portada",      
+            currentPage : <Portada  changePage={this.changePage}  showModal ={ this.showModal }  />            
+          });        
+        break;
+        case "movil":
+            this.setState ({      
+              nameCurrentPage : "Portada",      
+              currentPage : <PortadaMovil  changePage={this.changePage}  showModal ={ this.showModal }  />            
+            });        
+        break;
+    
+      default:
+          this.setState ({      
+            nameCurrentPage : "Portada",      
+            currentPage : <Portada  changePage={this.changePage}  showModal ={ this.showModal }  />            
+          }); 
+        break;
+    }
 
   }
 
@@ -76,26 +109,16 @@ componentDidMount ( ) {
     let tmpHome;
     console.log("Plataforma", this.plataforma);
     switch (this.plataforma) {
-      case "Linux armv7l":
-      case "Linux armv8l":     
+      case "movil":      
           //Carga componente 
-          tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />
-          //guarda en sessión tipo de plataforma:
-          sessionStorage.setItem("tipoPlataforma", "android"  );
-      break;
-      case "iPhone":
-         //Carga componente 
-         tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />
-         //guarda en sessión tipo de plataforma:
-         sessionStorage.setItem("tipoPlataforma", "iphone"  );
-      break;
-      case "Win32":
-          tmpHome = <Home showModal={this.showModal}  changePage={this.changePage}/>
-          sessionStorage.setItem("tipoPlataforma", "win"  );
+          tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />         
+      break;    
+      case "escritorio":
+          tmpHome = <Home showModal={this.showModal}  changePage={this.changePage}/>          
       break;
     
       default:
-          tmpHome = <HomeMovil  showModal={this.showModal}  changePage={this.changePage} />
+          tmpHome =  <Home showModal={this.showModal}  changePage={this.changePage}/>    
         break;
     }
     return tmpHome;
@@ -112,7 +135,8 @@ componentDidMount ( ) {
 
     switch (targetPage) {
       case "Portada": 
-        tmpComponent = <Portada showModal={this.showModal}  changePage={this.changePage}/>         
+        //tmpComponent = <Portada showModal={this.showModal}  changePage={this.changePage}/>         
+        this.loadPortada();
       break;
       case "Home":
         //tmpComponent = <Home showModal={this.showModal}  changePage={this.changePage}/> 
@@ -140,17 +164,20 @@ componentDidMount ( ) {
         console.log("Opción fuera de rango");      
       break;
     }
-    this.setState({ 
-      nameCurrentPage: targetPage         
-    }, () => {
-       //console.log(this.state.valor) => 1
-       //console.log( "Página actual", this.state.nameCurrentPage );
-       this.setState (
-         {
-          currentPage:  tmpComponent          
-         }
-       )
-    });       
+    
+    if (targetPage != "Portada") {
+        this.setState({ 
+          nameCurrentPage: targetPage         
+        }, () => {
+          //console.log(this.state.valor) => 1
+          //console.log( "Página actual", this.state.nameCurrentPage );
+          this.setState (
+            {
+              currentPage:  tmpComponent          
+            }
+          )
+        });      
+    }
      
   }
 
