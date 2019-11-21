@@ -8,59 +8,65 @@ const textos = textosJson[0];
 const HomeMovil = (props) => {
     return (
         <div className="container">
-            <div className="jumbotron text-center">
-                <h1> Caja de Herramientas</h1>
-                <img className="btn img-fluid hvr-pop" id="indicaciones" src={ images.HomeCaja } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> <br/>
-                <img className="btn img-fluid hvr-pop" id="home"  src={ images.HomeVolver } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
-            </div>
+            <div id="recuadroBlanco"></div>
             <div className="row">
-                <div className="col-12 text-center">
-                    <span className="alert alert-success lg" data-tar="ApoyoClimaAula" onClick={props.changePage} >
-                        Apoyos para el clima de aula
-                    </span>
+            <div className="col-1 text-center">
+                </div>
+                <div className="col-4 text-center">
+                    <img className="iconosMovil" data-tar="ApoyoClimaAula" src={ images.GafasMovil } onClick={props.changePage} /> 
+                </div>
+                <div className="col-1 text-center">
+                </div>
+                <div className="col-4 text-center">
+                    <img className="iconosMovil" data-tar="ApoyosEvaluacion" src={ images.TabletMovil } onClick={props.changePage} /> 
+                </div>
+                <div className="col-1 text-center">
                 </div>
             </div>
             <br/>
             <div className="row">
-                <div className="col-12 text-center">
-                    <span className="alert alert-success lg" data-tar="ApoyosEvaluacion" onClick={props.changePage} >
-                        Apoyos para la evaluación
-                    </span>
+            <div className="col-1 text-center">
                 </div>
-            </div>
-            <br/>
-            <div className="row">
-                <div className="col-12 text-center">
-                    <span className="alert alert-success lg" data-tar="RecursosDidacticos" onClick={props.changePage}>
-                        Recursos didácticos
-                    </span>
-                </div>               
-            </div>
-            <br/>
-            <div className="row">
-            <div className="col-12 text-center">
-                    <span className="alert alert-success lg" data-tar="DocsOficiales" onClick={props.changePage}>
-                        Documentos educativos oficiales
-                    </span>
-                </div>
-            </div>
-            <br/>
-            <div className="row">
-                <div className="col-12 text-center">
-                    <span className="alert alert-success lg" data-tar="DesarrolloProf" onClick={props.changePage}>
-                        Desarrollo profesional
-                    </span>
-                </div>                
-            </div>
-            <br/>
-            <div className="row">
-            <div className="col-12 text-center">
-                    <span className="alert alert-success lg" data-tar="ApoyosPlan" onClick={props.changePage}>
-                        Apoyo al planeamiento
-                    </span>
-                </div>
-            </div>
+                <div className="col-4 text-center">
+                    <img className="iconosMovil" data-tar="RecursosDidacticos" src={ images.LapiceroMovil } onClick={props.changePage}/>
 
+                </div>               
+                <div className="col-1 text-center">
+                </div>   
+            <div className="col-4 text-center">
+                    <img className="iconosMovil" data-tar="DocsOficiales" src={ images.CelularMovil } onClick={props.changePage}/>
+                </div>
+                <div className="col-1 text-center">
+                </div>
+            </div>
+            <br/>
+            <div className="row">
+            <div className="col-1 text-center">
+                </div>
+                <div className="col-4 text-center">
+                    <img className="iconosMovil" data-tar="DesarrolloProf" src={ images.LaptopMovil } onClick={props.changePage}/>
+                </div>                
+                <div className="col-1 text-center">
+                </div>   
+            <div className="col-4 text-center">
+                    <img className="iconosMovil" data-tar="ApoyosPlan" src={ images.BolsoMovil }  onClick={props.changePage}/>
+
+                </div>
+                <div className="col-1 text-center">
+                </div>
+            </div>
+          
+            <br/>
+            <div className=" text-center">
+                <img className="btn img-fluid hvr-pop botonesNavegarMovil" id="indicaciones" src={ images.HomeCajaMovil } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> 
+                <img className="btn img-fluid hvr-pop botonesNavegarMovil" id="home"  src={ images.HomeVolverMovil } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
+            </div>
+            <br/>
+            <div className="row">
+            <div className="col-12 text-center">
+            <img id="logoMovil" data-tar="" src={ images.Logo }/>
+            </div>
+            </div>
         </div>
     );
 }
