@@ -135,7 +135,8 @@ componentDidMount ( ) {
 
     switch (targetPage) {
       case "Portada": 
-        tmpComponent = <Portada showModal={this.showModal}  changePage={this.changePage}/>         
+        //tmpComponent = <Portada showModal={this.showModal}  changePage={this.changePage}/>         
+        this.loadPortada();
       break;
       case "Home":
         //tmpComponent = <Home showModal={this.showModal}  changePage={this.changePage}/> 
@@ -163,17 +164,20 @@ componentDidMount ( ) {
         console.log("Opción fuera de rango");      
       break;
     }
-    this.setState({ 
-      nameCurrentPage: targetPage         
-    }, () => {
-       //console.log(this.state.valor) => 1
-       //console.log( "Página actual", this.state.nameCurrentPage );
-       this.setState (
-         {
-          currentPage:  tmpComponent          
-         }
-       )
-    });       
+    
+    if (targetPage != "Portada") {
+        this.setState({ 
+          nameCurrentPage: targetPage         
+        }, () => {
+          //console.log(this.state.valor) => 1
+          //console.log( "Página actual", this.state.nameCurrentPage );
+          this.setState (
+            {
+              currentPage:  tmpComponent          
+            }
+          )
+        });      
+    }
      
   }
 
