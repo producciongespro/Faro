@@ -165,7 +165,7 @@ componentDidMount ( ) {
       break;
     }
     
-    if (targetPage != "Portada") {
+    if (targetPage !== "Portada") {
         this.setState({ 
           nameCurrentPage: targetPage         
         }, () => {
