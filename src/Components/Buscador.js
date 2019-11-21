@@ -356,15 +356,19 @@ class Buscador extends Component {
                             this.props.origen === "secundaria" && <img alt="Secundaria" className="bannerRecursos" src={images[0].RecDidacticosSecundariaBanner} />
                         }
                         {
-                            this.props.origen === "intercultural" && (
-                                <h1 className="text-center"  >Interculturalidad</h1>
-                                //<img alt="intercultural" className="bannerRecursos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Palenque_glyphs-edit1.jpg/350px-Palenque_glyphs-edit1.jpg" />
-                            )
-
+                            this.props.origen === "intercultural" && <img alt="intercultural" className="bannerRecursos" src={images[0].RecDidacticosInterculturalBanner} />
+                        }
+                        {
+                            this.props.origen === "jovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src={images[0].RecDidacticosJovenesAdultosBanner} />
+                        }
+                        {
+                            this.props.origen === "feriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={images[0].RecDidacticosFeriaCientificaBanner} />
+                        }
+                        {
+                            this.props.origen === "banderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src={images[0].RecDidacticosBanderaAzulBanner} />
                         }
 
-
-
+                        
 
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarBuscador} src={images[0].BtnVolver} alt="Volver" />
                     </div>
