@@ -70,6 +70,7 @@ componentDidMount ( ) {
   }
 
   cargarHome = () =>{    
+    //cualquier tontera
     //Realiza la comprobación del tipo de dispositivo para cargar
     // un home para dispotivos moviles
     let tmpHome;

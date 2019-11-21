@@ -1,4 +1,16 @@
+.botonesNavegarMovil{
+  width: 50%;
+}
+.iconosMovil{
+  width: 140%;
+}
+#recuadroBlanco{
+  height: 50px;
+}
 
+#logoMovil{
+  width: 50%;
+}
 
 #visor{
   text-align: center;
