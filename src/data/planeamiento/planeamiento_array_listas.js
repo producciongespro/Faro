@@ -148,7 +148,7 @@ const listasPlan = [
             "id": "matematica"
         },
         {
-            "label": "Orienteción",
+            "label": "Orientación",
             "id": "orientacion"
         },
         {
