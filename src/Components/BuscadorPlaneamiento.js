@@ -310,12 +310,9 @@ class BuscadorPlaneamiento extends Component {
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel} onClick={this.activarBotonBuscar}  >
                                     <option defaultValue value="seleccione" >Seleccione:</option>
-                                    <option value="preescolar"> Preescolar</option>
-                                    <option value="primaria"> Primaria </option>
-                                    <option value="secundaria"> Secundaria </option>
-                                    <option value="adultos"> Jóvenes y adultos </option>
-                                    <option value="interculturaPrimaria"> Interculturalidad primaria </option>
-                                    <option value="interculturaSecundaria"> Interculturalidad secundaria </option>
+                                  {  listasPlan.nivelesApoyosPlan.map((item, i)=> (
+                                        <option key={"niveles"+i } value={item.id}> {item.nombre} </option>
+                                    )) }                             
                                 </select>
                             </div>
                         </div>
