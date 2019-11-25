@@ -319,7 +319,7 @@ class BuscadorPlaneamiento extends Component {
                                 </select>
                             </div>
                         </div>
-                        {/*******Coluimna 2******** AÑO*/}
+                        {/*******Columna 2******** AÑO*/}
                         <div className="col-3  ">
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
@@ -384,7 +384,7 @@ class BuscadorPlaneamiento extends Component {
                                 </select>
                             </div>
                         </div>
-                        {/*******Coluimna 3  ASIGNATURA (MATERIA) *********/}
+                        {/*******Columna 3  ASIGNATURA (MATERIA) *********/}
                         <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
