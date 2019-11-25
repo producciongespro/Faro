@@ -1,55 +1,6 @@
 
 const listasPlan = [
-    {
-    "nivelesApoyosPlan": [
-       {
-           "id" : "preescolar",
-           "nombre" : "Preescolar"
-       },
-       {
-           "id" : "primaria",
-           "nombre" : "Primaria"
-       },
-       {
-        "id" : "secundaria",
-        "nombre" : "Secundaria"
-        },
-        {
-        "id" : "adultos",
-        "nombre" : "Jóvenes y adultos"
-        },
-        {
-        "id" : "interculturaPrimaria",
-        "nombre" : "Interculturalidad primaria"
-        },
-        {
-        "id" : "interculturaSecundaria",
-        "nombre" : "Interculturalidad secudnaria"
-        },
-        {
-            "id" : "unidocentes",
-            "nombre" : "Unidocentes"
-        }
-
-    ],
-    "materiasUnidocente" : [
-        {
-            "label": "ciencias",
-            "id": "ciencias"
-        },
-        {
-            "label": "Español",
-            "id": "espanol"
-        },
-        {
-            "label": "Estudios Sociales",
-            "id": "estudios"
-        },
-        {
-            "label": "Matemáticas",
-            "id": "matematica"
-        }            
-],
+    {        
     "materiasPrimaria" : [
             {
                 "label": "Artes Industriales",
@@ -197,7 +148,7 @@ const listasPlan = [
             "id": "matematica"
         },
         {
-            "label": "Orientación",
+            "label": "Orienteción",
             "id": "orientacion"
         },
         {

@@ -1,0 +1,101 @@
+[
+    {
+    "niveles generales": [
+        "Preescolar",
+        "Primaria",
+        "Secundaria",
+        "Jóvenes y adultos",                 
+        "Interculturalidad primaria",        
+        "Interculturalidad secudnaria",
+        "Unidocentes"
+    ],
+    "Unidocentes" : [
+            "Ciencias",
+            "Español",            
+            "Estudios Sociales",            
+            "Matemática"                           
+    ],
+    "Primaria" : [            
+            "Artes Industriales",
+            "Artes Plásticas",
+            "Ciencias",                            
+            "Educación Física",
+            "Educación Musical",
+            "Educación para la vida cotidiana",                
+            "Educación Religiosa",
+            "Español",
+            "Estudios Sociales",
+            "Francés",
+            "Inglés",
+            "Italiano",
+            "Matemática",
+            "Orientación" 
+    ],
+    "Secundaria" : [        
+        "Artes Industriales",            
+        "Artes Plásticas",        
+        "Biología",        
+        "Ciencias",
+        "Educación Cívica",            
+        "Educación Física",        
+        "Educación Musical",
+        "Educación para la Vida Cotidiana",
+        "Educación Religiosa",        
+        "Español",        
+        "Estudios Sociales",
+        "Filosofía",        
+        "Física",
+        "Francés",        
+        "Inglés",
+        "Italiano",        
+        "Matemática",
+        "Orienteción",
+        "Psicología",
+        "Química"        
+    ],
+    "años primaria" : [        
+        "Primero",
+        "Segundo",
+        "Tercero",
+        "Cuarto",
+        "Quinto",
+        "Sexto"
+    ],
+    "años secundaria" : [
+        "Sétimo",
+        "Octavo",
+        "Noveno",
+        "Décimo"
+    ]
+
+
+    }  
+]
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
