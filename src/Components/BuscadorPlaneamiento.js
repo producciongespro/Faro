@@ -16,10 +16,6 @@ const listasPlan = arrayListasPlan[0];
 //console.log("listasPlan",listasPlan );
 //console.log("categoriasPreescolar", categoriasPreescolar);
 
-
-
-
-
 class BuscadorPlaneamiento extends Component {
     constructor(props) {
         super(props);
@@ -56,7 +52,7 @@ class BuscadorPlaneamiento extends Component {
         this.setState({ materia: "" });
         this.setState({ anno: "" });
         this.mes = "";
-        console.log("handlerobtenerNivel");
+       // console.log("handlerobtenerNivel");
     }
     handlerObtenerMateria = (e) => {
         //let indice = e.target.selectedIndex - 1;  
@@ -76,7 +72,7 @@ class BuscadorPlaneamiento extends Component {
         //console.log("tipoPlan",  this.tipoPlan);        
         // * * * * * Obtiene el texto de la opcion seleccionada del select Nota: Esto es SOLO BUENO!!!!!
         this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;
-        console.log("this.etiquetaPlan", this.etiquetaPlan);
+        //console.log("this.etiquetaPlan", this.etiquetaPlan);
     }
     activarBotonBuscar = (e) => {
         //Activa el botón buscar 
@@ -90,8 +86,8 @@ class BuscadorPlaneamiento extends Component {
     cargarInformacionBusqueda = () => {
         //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
         let arrayNivel;
-        console.log("***Nivel", this.state.nivel);
-        console.log("***Mes", this.mes);
+        //console.log("***Nivel", this.state.nivel);
+        //console.log("***Mes", this.mes);
 
         if (this.state.nivel !== "adultos") {
             //console.log("Seleccion: general");
@@ -248,8 +244,8 @@ class BuscadorPlaneamiento extends Component {
                             //En caso de secundaria italiano
                         if (this.state.materia === "Italiano" && this.state.nivel === "Secundaria") {
                             if (this.tipoPlan === arrayNivel[index].tipoPlan) {
-                                console.log("tipo de plan seleccionado", this.tipoPlan);
-                                console.log("tipo de plan del array coincidencia", arrayNivel[index].tipoPlan);  
+                                //console.log("tipo de plan seleccionado", this.tipoPlan);
+                                //console.log("tipo de plan del array coincidencia", arrayNivel[index].tipoPlan);  
                                 arrayTmp.push(arrayHtml);
                             }
                         } else {
@@ -425,46 +421,61 @@ class BuscadorPlaneamiento extends Component {
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
-                                    {
+                                    {/*
                                         this.state.nivel === "interculturaPrimaria" &&
                                         listasPlan.materiaInterculturaPrimaria.map((item, i) => (
                                             <option key={"materia" + i} value={item.id} >  {item.etiqueta}  </option>
                                         ))
+                                        */
                                     }
                                     {
                                         this.state.anno === "Colegios Académicos Nocturnos (CAN)" &&
-                                        listasPlan.materiasCan.map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item.label}  </option>
+                                        listasPlan["Colegios Académicos Nocturnos (CAN)"].map((item, i) => (
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.anno === "coned" &&
-                                        listasPlan.materiasConed.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        this.state.anno === "Colegio Nacional de Educación a Distancia (CONED)" &&
+                                        listasPlan["Colegio Nacional de Educación a Distancia (CONED)"].map((item, i) => (
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
-                                    {
-                                        this.state.anno === "en1" || this.state.anno === "en2" || this.state.anno === "en3" || this.state.anno === "en4" ?
-                                            listasPlan.materiasPrimariaAdultos.map((item, i) => (
-                                                <option key={"materia" + i} value={item.id} >  {item.label}  </option>
-                                            )) : ""
+                                    {                                    
+                                        (this.state.anno === "Escuelas Nocturnas Nivel I"  || this.state.anno === "Escuelas Nocturnas Nivel II" || this.state.anno === "Escuelas Nocturnas Nivel III" || this.state.anno === "Escuelas Nocturnas Nivel IV") &&                                       
+                                        listasPlan["materias básicas"].map((item, i) => (
+                                                <option key={"materia" + i} value={item} >  {item}  </option>
+                                            ))                                                                                                                                    
+                                    }
+                                    {                                    
+                                        this.state.anno === "IPEC CINDEA Nivel I" &&
+                                            listasPlan["IPEC CINDEA Nivel I"].map((item, i) => (
+                                                <option key={"materia" + i} value={item} >  {item}  </option>
+                                            ))                                    
+                                    }
+                                    {                                        
+                                        this.state.anno === "IPEC CINDEA Nivel II" &&
+                                            listasPlan["IPEC CINDEA Nivel II"].map((item, i) => (
+                                                <option key={"materia" + i} value={item} >  {item}  </option>
+                                            ))                                     
                                     }
                                     {
-                                        this.state.anno === "ipec1" || this.state.anno === "ipec2" || this.state.anno === "ipec3" || this.state.anno === "ipec4" ?
-                                            listasPlan.materiasSecundaria.map((item, i) => (
-                                                <option key={"materia" + i} value={item.id} >  {item.label}  </option>
-                                            )) : ""
+                                        this.state.anno ==="IPEC CINDEA Nivel III" &&
+                                            listasPlan["IPEC CINDEA Nivel III"].map((item, i) => (
+                                                <option key={"materia" + i} value={item} >  {item}  </option>
+                                            ))                                     
                                     }
                                     {
+                                        /*
                                         this.state.nivel==="Jóvenes y adultos" &&                                                                                (                                           
                                             
                                             listasPlan.adultos.map((item,i)=>(
                                                 <option key={"materia" + i} value={item.id} >  {item.etiqueta}  </option> 
                                             ))  
                                         )
+                                        */
                                     }
                                     {
-                                        console.log("listasPlan.adultos", listasPlan["Jóvenes y adultos"] )
+                                        //console.log("listasPlan.adultos", listasPlan["Jóvenes y adultos"] )
                                         
                                     }
 
