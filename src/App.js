@@ -13,6 +13,7 @@ import DocsOficiales from "./Components/DocsOficiales.jsx";
 import DocsOficialesMovil from "./Components/DocsOficialesMovil.jsx";
 import DesarrolloProf from "./Components/DesarrolloProf.jsx";
 import ApoyosPlan from "./Components/ApoyosPlan.jsx";
+import ApoyosPlanMovil from "./Components/ApoyosPlanMovil.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
 import ApoyosEvaluacionMovil from "./Components/ApoyosEvaluacionMovil.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
@@ -197,6 +198,29 @@ componentDidMount ( ) {
 
   }
 
+
+  cargarPlaneamiento = () =>{    
+    //cualquier tontera
+    //Realiza la comprobación del tipo de dispositivo para cargar
+    // un home para dispotivos moviles
+    let tmpDocumentos;
+    console.log("Plataforma", this.plataforma);
+    switch (this.plataforma) {
+      case "movil":      
+          //Carga componente 
+          tmpDocumentos =  <ApoyosPlanMovil  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}   changePage={this.changePage}/>      
+      break;    
+      case "escritorio":
+          tmpDocumentos =  <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}    changePage={this.changePage} />       
+      break;
+    
+      default:
+          tmpDocumentos  = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}    changePage={this.changePage} />   
+        break;
+    }
+    return tmpDocumentos;
+
+  }
   changePage = (e) => { 
     e.preventDefault();     
     const targetPage = e.target.dataset.tar;
@@ -217,7 +241,7 @@ componentDidMount ( ) {
         //tmpComponent = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
-        tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
+        tmpComponent =  this.cargarPlaneamiento();
       break;
       case "ApoyosEvaluacion":
           tmpComponent = this.cargarEvaluacion();
