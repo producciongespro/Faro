@@ -15,6 +15,12 @@
     "Estudios Sociales",
     "Matemática"
 ],
+
+"Ciclo Primaria" : [
+    "I Ciclo",
+    "II Ciclo"
+],
+
 "Unidocentes" : [
         "Ciencias",
         "Español",            
