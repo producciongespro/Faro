@@ -10,11 +10,14 @@ import Splash from "./Components/Splash.jsx";
 import Portada from "./Components/Portada.jsx";
 import Home from "./Components/Home.jsx";
 import DocsOficiales from "./Components/DocsOficiales.jsx";
+import DocsOficialesMovil from "./Components/DocsOficialesMovil.jsx";
 import DesarrolloProf from "./Components/DesarrolloProf.jsx";
 import ApoyosPlan from "./Components/ApoyosPlan.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
+import ApoyosEvaluacionMovil from "./Components/ApoyosEvaluacionMovil.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
+import ApoyoClimaAulaMovil from "./Components/ApoyoClimaAulaMovil.jsx";
 import CatalogoWeb from './Components/CatalogoWeb';
 import Catalogo from "./Components/Catalogo";
 import TagsInfo from './Components/Tags_info';
@@ -56,22 +59,22 @@ componentDidMount ( ) {
 
 
   detectarPlataforma () {
-    let tipoPlataforma = navigator.platform;
-    switch (tipoPlataforma) {
+    let plataforma = navigator.platform;
+    switch (plataforma) {
       case "Linux armv7l":
       case "Linux armv8l":
       case "iPhone": 
-          tipoPlataforma = "movil";          
+      plataforma = "movil";          
       break;     
       case "win32":
-          tipoPlataforma = "escritorio"; 
+          plataforma = "escritorio"; 
       break;    
       default:
-          tipoPlataforma = "escritorio"; 
+          plataforma = "escritorio"; 
         break;
     }
-    sessionStorage.setItem("tipoPlataforma", tipoPlataforma  );
-    return tipoPlataforma;    
+    sessionStorage.setItem("tipoPlataforma", plataforma  );
+    return plataforma;    
   }
 
 
@@ -125,7 +128,74 @@ componentDidMount ( ) {
 
   }
 
+  cargarClima = () =>{    
+    //cualquier tontera
+    //Realiza la comprobación del tipo de dispositivo para cargar
+    // un home para dispotivos moviles
+    let tmpClima;
+    console.log("Plataforma", this.plataforma);
+    switch (this.plataforma) {
+      case "movil":      
+          //Carga componente 
+          tmpClima =  <ApoyoClimaAulaMovil infoCategory={descripciones[1].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/>         
+      break;    
+      case "escritorio":
+          tmpClima =  <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/>         
+      break;
+    
+      default:
+          tmpClima  = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/>    
+        break;
+    }
+    return tmpClima;
 
+  }
+
+  cargarEvaluacion = () =>{    
+    //cualquier tontera
+    //Realiza la comprobación del tipo de dispositivo para cargar
+    // un home para dispotivos moviles
+    let tmpEvaluacion;
+    console.log("Plataforma", this.plataforma);
+    switch (this.plataforma) {
+      case "movil":      
+          //Carga componente 
+          tmpEvaluacion =  <ApoyosEvaluacionMovil  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} />      
+      break;    
+      case "escritorio":
+          tmpEvaluacion =  <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} />        
+      break;
+    
+      default:
+          tmpEvaluacion  = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} />    
+        break;
+    }
+    return tmpEvaluacion;
+
+  }
+
+  cargarDocumentos = () =>{    
+    //cualquier tontera
+    //Realiza la comprobación del tipo de dispositivo para cargar
+    // un home para dispotivos moviles
+    let tmpDocumentos;
+    console.log("Plataforma", this.plataforma);
+    switch (this.plataforma) {
+      case "movil":      
+          //Carga componente 
+          tmpDocumentos =  <DocsOficialesMovil infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/>      
+      break;    
+      case "escritorio":
+          tmpDocumentos =  <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/>        
+      break;
+    
+      default:
+          tmpDocumentos  = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/>   
+        break;
+    }
+    return tmpDocumentos;
+
+  }
 
   changePage = (e) => { 
     e.preventDefault();     
@@ -143,19 +213,22 @@ componentDidMount ( ) {
         tmpComponent = this.cargarHome();
       break;
       case "DocsOficiales":
-        tmpComponent = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/> 
+          tmpComponent = this.cargarDocumentos();
+        //tmpComponent = <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal}  handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos}   changePage={this.changePage}/> 
       break;
       case "ApoyosPlan":
         tmpComponent = <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
       break;
       case "ApoyosEvaluacion":
-          tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
+          tmpComponent = this.cargarEvaluacion();
+          //tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
       break;
       case "RecursosDidacticos":
         tmpComponent = <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
       break;
       case "ApoyoClimaAula":
-          tmpComponent = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
+          tmpComponent = this.cargarClima();
+         // tmpComponent = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
         tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
@@ -369,7 +442,9 @@ Se ejecuta con el evento "mouseover" */
   let infoSource = e.target.dataset.infosource;  
   //console.log("infoSource",infoSource);  
   //console.log(opcion);  
-  document.getElementById("textoDescripcion").innerHTML = "<h2 class='desc'>Descripción:</h2>" + descripciones[infoSource][opcion];  
+    document.getElementById("textoDescripcion").innerHTML = "<h2 class='desc'>Descripción:</h2>" + descripciones[infoSource][opcion];
+
+   
 }
 
 

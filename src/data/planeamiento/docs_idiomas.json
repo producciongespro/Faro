@@ -2,7 +2,7 @@
     {
             "nivel" : "primaria",
             "anno" : "1",
-            "materia" : "frances",
+            "materia" : "Franceés",
             "tipoPlan" : "extranjeraFrances",
             "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
             "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -11,7 +11,7 @@
     {
         "nivel" : "primaria",
         "anno" : "1",
-        "materia" : "frances",
+        "materia" : "Franceés",
         "tipoPlan" : "extranjeraCiencias",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -20,7 +20,7 @@
     {
     "nivel" : "primaria",
     "anno" : "1",
-    "materia" : "frances",
+    "materia" : "Franceés",
     "tipoPlan" : "extranjeraMatematica",
     "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
     "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -29,7 +29,7 @@
     {
         "nivel" : "primaria",
         "anno" : "1",
-        "materia" : "frances",
+        "materia" : "Franceés",
         "tipoPlan" : "bilingueMatematica",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -38,7 +38,7 @@
     {
         "nivel" : "secundaria",
         "anno" : "7",
-        "materia" : "frances",
+        "materia" : "Francés",
         "tipoPlan" : "lenguaExtranjera",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -47,7 +47,7 @@
     {
         "nivel" : "secundaria",
         "anno" : "7",
-        "materia" : "frances",
+        "materia" : "Francés",
         "tipoPlan" : "francesAvanzado",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
@@ -56,7 +56,7 @@
     {
         "nivel" : "secundaria",
         "anno" : "8",
-        "materia" : "frances",
+        "materia" : "Francés",
         "tipoPlan" : "lenguaExtranjera",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",

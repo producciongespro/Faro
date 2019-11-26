@@ -1,0 +1,172 @@
+[
+    {
+    "niveles generales": [
+        "Preescolar",
+        "Primaria",
+        "Secundaria",
+        "Jóvenes y adultos",                 
+        "Interculturalidad primaria",        
+        "Interculturalidad secudnaria",
+        "Unidocentes"
+    ],
+    "Unidocentes" : [
+            "Ciencias",
+            "Español",            
+            "Estudios Sociales",            
+            "Matemática"                           
+    ],
+    "Primaria" : [            
+            "Artes Industriales",
+            "Artes Plásticas",
+            "Ciencias",                            
+            "Educación Física",
+            "Educación Musical",
+            "Educación para la vida cotidiana",                
+            "Educación Religiosa",
+            "Español",
+            "Estudios Sociales",
+            "Francés",
+            "Inglés",
+            "Italiano",
+            "Matemática",
+            "Orientación" 
+    ],
+    "Secundaria" : [        
+        "Artes Industriales",            
+        "Artes Plásticas",        
+        "Biología",        
+        "Ciencias",
+        "Educación Cívica",            
+        "Educación Física",        
+        "Educación Musical",
+        "Educación para la Vida Cotidiana",
+        "Educación Religiosa",        
+        "Español",        
+        "Estudios Sociales",
+        "Filosofía",        
+        "Física",
+        "Francés",        
+        "Inglés",
+        "Italiano",        
+        "Matemática",
+        "Orienteción",
+        "Psicología",
+        "Química"        
+    ],
+    "años primaria" : [        
+        "Primero",
+        "Segundo",
+        "Tercero",
+        "Cuarto",
+        "Quinto",
+        "Sexto"
+    ],
+    "años secundaria" : [
+        "Sétimo",
+        "Octavo",
+        "Noveno",
+        "Décimo"
+    ],
+    "Jóvenes y adultos" : [       
+            "Colegios Académicos Nocturnos (CAN)",       
+            "Colegio Nacional de Educación a Distancia (CONED)",
+            "Escuelas Nocturnas Nivel I",            
+            "Escuelas Nocturnas Nivel II",
+            "Escuelas Nocturnas Nivel III",
+            "Escuelas Nocturnas Nivel IV",
+            "IPEC-CINDEA Nivel I",
+            "IPEC-CINDEA Nivel II",
+            "IPEC-CINDEA Nivel III"
+    ],
+    "Colegios Académicos Nocturnos (CAN)" : [
+            "Biología",
+            "Ciencias",
+            "Desarrollo Humano",
+            "Desarrollo Socio Laboral",            
+            "Educación Cívica",
+            "Educación Religiosa",
+            "Español",
+            "Estudios Sociales",
+            "Física",
+            "Francés",
+            "Inglés",
+            "Matemática",
+            "Química",
+            
+    ],
+    "Colegio Nacional de Educación a Distancia (CONED)" : [
+       "Biología",
+       "Ciencias",
+       "Español",
+       "Estudios Sociales",
+       "Matemática",
+       "Técnico Básico"       
+    ],
+    "Escuelas Nocturnas Nivel I" :  [
+        "Ciencias",
+        "Español",
+        "Estudios Sociales",
+        "Matemática"
+    ],
+    "Escuelas Nocturnas Nivel II" :  [
+        "Ciencias",
+        "Español",
+        "Estudios Sociales",
+        "Matemática"
+    ],
+    "Escuelas Nocturnas Nivel III" :  [
+        "Ciencias",
+        "Español",
+        "Estudios Sociales",
+        "Matemática"
+    ],
+    "Escuelas Nocturnas Nivel IV" :  [
+        "Ciencias",
+        "Español",
+        "Estudios Sociales",
+        "Matemática"
+    ],
+    "IPEC-CINDEA Nivel I" : [
+        "Módulo 1",
+        "Módulo 2"
+    ],
+    "IPEC-CINDEA Nivel II" : [
+        "Módulo 3",
+        "Módulo 4"
+    ],
+    "IPEC-CINDEA Nivel III" : [
+        "Módulo 5",
+        "Módulo 6"
+    ]
+
+
+    }  
+]
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+

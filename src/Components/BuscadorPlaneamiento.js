@@ -9,7 +9,7 @@ import categoriasPreescolar from '../data/planeamiento/categorias_preescolar.jso
 import images from '../data/images.json';
 import meses from '../data/meses.json';
 import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
-import arrayListasPlan from '../data/planeamiento/planeamiento_array_listas';
+import arrayListasPlan from '../data/planeamiento/opciones_select_plan.json';
 const listasPlan = arrayListasPlan[0];
 
 //console.log("Secudnaria frances", dataFrances );
@@ -101,11 +101,11 @@ class BuscadorPlaneamiento extends Component {
             //console.log("Seleccion: Adultos");
             arrayNivel = dataAdultos;
         }
-        if (this.state.materia === "espanol" && this.state.nivel === "secundaria") {
+        if (this.state.materia === "Español" && this.state.nivel === "Secundaria") {
             //console.log("Seleccion: espanolSecundaria");
             arrayNivel = dataSecundariaEspanol;
         }
-        if (this.state.materia === "frances" || this.state.materia === "ingles" || this.state.materia === "italiano") {
+        if (this.state.materia === "Francés" || this.state.materia === "Inglés" || this.state.materia === "Italiano") {
             arrayNivel = dataIdiomas;
         }
 
@@ -186,7 +186,7 @@ class BuscadorPlaneamiento extends Component {
 
                             {
                                 //Renderizado del cuerpo de las tarjetas:
-                                this.state.nivel === "secundaria" && this.state.materia === "espanol" ?
+                                this.state.nivel === "Secundaria" && this.state.materia === "Español" ?
                                     (
                                         <div className="card-body mr-2">
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamientos} target="_blank" rel="noopener noreferrer" >
@@ -231,14 +231,14 @@ class BuscadorPlaneamiento extends Component {
                 )
                 //Proceso de filtrado por segunda vez para casos que tienen un cuarto criterio (cuarto select)
                 //Filtrado por mes en caso de español secundaria:
-                if (this.state.nivel === "secundaria" && this.state.materia === "espanol") {
+                if (this.state.nivel === "Secundaria" && this.state.materia === "Español") {
                     if (this.mes === arrayNivel[index].mes || this.mes === "" || this.mes === "todos") {
                         arrayTmp.push(arrayHtml);
                     }
                 } else {
                     // Si no se cumple español secundaria se compruban otras condiciones:
                     /* -(1) francés  -(2) inglés */
-                    if (this.state.materia === "frances" || this.state.materia === "ingles") {
+                    if (this.state.materia === "Francés" || this.state.materia === "Inglés") {
                         //console.log("Estado primaria francés");                       
                         if (this.tipoPlan === arrayNivel[index].tipoPlan) {
                             arrayTmp.push(arrayHtml);
@@ -246,7 +246,7 @@ class BuscadorPlaneamiento extends Component {
                     } else {
                        
                             //En caso de secundaria italiano
-                        if (this.state.materia === "italiano" && this.state.nivel === "secundaria") {
+                        if (this.state.materia === "Italiano" && this.state.nivel === "Secundaria") {
                             if (this.tipoPlan === arrayNivel[index].tipoPlan) {
                                 console.log("tipo de plan seleccionado", this.tipoPlan);
                                 console.log("tipo de plan del array coincidencia", arrayNivel[index].tipoPlan);  
@@ -310,12 +310,9 @@ class BuscadorPlaneamiento extends Component {
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel} onClick={this.activarBotonBuscar}  >
                                     <option defaultValue value="seleccione" >Seleccione:</option>
-                                    <option value="preescolar"> Preescolar</option>
-                                    <option value="primaria"> Primaria </option>
-                                    <option value="secundaria"> Secundaria </option>
-                                    <option value="adultos"> Jóvenes y adultos </option>
-                                    <option value="interculturaPrimaria"> Interculturalidad primaria </option>
-                                    <option value="interculturaSecundaria"> Interculturalidad secundaria </option>
+                                  {  listasPlan["niveles generales"].map((item, i)=> (
+                                        <option key={"niveles"+i } value={item}> {item} </option>
+                                    )) }                             
                                 </select>
                             </div>
                         </div>
@@ -326,11 +323,11 @@ class BuscadorPlaneamiento extends Component {
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
                                         {
                                             // Si es "educación para adultos" se cambia a modalidad.  Para lo demás es "año"
-                                            this.state.nivel === "adultos" ?
+                                            this.state.nivel === "Jóvenes y adultos" ?
                                                 <span> Modalidad </span>
                                                 :
                                                 // Si es preescolar cambia año por contenido
-                                                this.state.nivel === "preescolar" ?
+                                                this.state.nivel === "Preescolar" ?
                                                     <span> Contenido </span>
                                                     :
                                                     <span> Año </span>
@@ -339,36 +336,37 @@ class BuscadorPlaneamiento extends Component {
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                     <option defaultValue value="" > Todos </option>
-
                                     {
-                                        this.state.nivel === "preescolar" &&
+                                       
+                                       /*
+                                        this.state.nivel === "Preescolar" &&
                                         categoriasPreescolar.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.etiqueta}  </option>
                                         ))
-
+                                        */
                                     }
 
 
                                     {
-                                        this.state.nivel === "primaria" &&
-                                        listasPlan.annoPrimaria.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                        this.state.nivel === "Primaria" &&
+                                        listasPlan["años primaria"].map((item, i) => (
+                                            <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
 
                                     }
 
                                     {
-                                        this.state.nivel === "secundaria" &&
-                                        listasPlan.anoSecundaria.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                        this.state.nivel === "Secundaria" &&
+                                        listasPlan["años secundaria"].map((item, i) => (
+                                            <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
 
                                     }
 
                                     {
-                                        this.state.nivel === "adultos" &&
-                                        listasPlan.annoAdultos.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                        this.state.nivel === "Jóvenes y adultos" &&
+                                        listasPlan["Jóvenes y adultos"].map((item, i) => (
+                                            <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
 
                                     }
@@ -377,10 +375,7 @@ class BuscadorPlaneamiento extends Component {
                                         listasPlan.annoPrimaria.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.label}  </option>
                                         ))
-
-                                    }
-
-
+                                    }                               
                                 </select>
                             </div>
                         </div>
@@ -390,13 +385,13 @@ class BuscadorPlaneamiento extends Component {
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
                                         {
-                                            this.state.nivel === "preescolar" ?
+                                            this.state.nivel === "Preescolar" ?
                                                 (
                                                     <span>Niveles de desempeño</span>
                                                 )
                                                 :
                                                 (
-                                                    this.state.nivel==="adultos" ? 
+                                                    this.state.nivel==="Jóvenes y adultos" ? 
                                                     (
                                                         <span>Módulos</span>
                                                     ) :
@@ -413,21 +408,21 @@ class BuscadorPlaneamiento extends Component {
                                 <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria} >
                                     <option disabled value="" >  Selecione una opción  </option>
                                     {
-                                        this.state.nivel === "preescolar" &&
+                                        this.state.nivel === "Preescolar" &&
                                         categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i) => (
                                             <option key={"materia" + i} value={item.id} >  {item.id}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.nivel === "primaria" &&
-                                        listasPlan.materiasPrimaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        this.state.nivel === "Primaria" &&
+                                        listasPlan["Primaria"].map((item, i) => (
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.nivel === "secundaria" &&
-                                        listasPlan.materiasSecundaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                        this.state.nivel === "Secundaria" &&
+                                        listasPlan["Secundaria"].map((item, i) => (
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
@@ -437,9 +432,9 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
-                                        this.state.anno === "can" &&
+                                        this.state.anno === "Colegios Académicos Nocturnos (CAN)" &&
                                         listasPlan.materiasCan.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                            <option key={"materia" + i} value={item} >  {item.label}  </option>
                                         ))
                                     }
                                     {
@@ -461,7 +456,7 @@ class BuscadorPlaneamiento extends Component {
                                             )) : ""
                                     }
                                     {
-                                        this.state.nivel==="adultos" &&                                                                                (                                           
+                                        this.state.nivel==="Jóvenes y adultos" &&                                                                                (                                           
                                             
                                             listasPlan.adultos.map((item,i)=>(
                                                 <option key={"materia" + i} value={item.id} >  {item.etiqueta}  </option> 
@@ -469,7 +464,7 @@ class BuscadorPlaneamiento extends Component {
                                         )
                                     }
                                     {
-                                        console.log("listasPlan.adultos", listasPlan.adultos )
+                                        console.log("listasPlan.adultos", listasPlan["Jóvenes y adultos"] )
                                         
                                     }
 
