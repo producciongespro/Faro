@@ -17,6 +17,7 @@ import ApoyosPlanMovil from "./Components/ApoyosPlanMovil.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
 import ApoyosEvaluacionMovil from "./Components/ApoyosEvaluacionMovil.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
+import RecursosDidacticosMovil from "./Components/RecursosDidacticosMovil.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
 import ApoyoClimaAulaMovil from "./Components/ApoyoClimaAulaMovil.jsx";
 import CatalogoWeb from './Components/CatalogoWeb';
@@ -198,6 +199,29 @@ componentDidMount ( ) {
 
   }
 
+  cargarRecursos = () =>{    
+    //cualquier tontera
+    //Realiza la comprobación del tipo de dispositivo para cargar
+    // un home para dispotivos moviles
+    let tmpDocumentos;
+    console.log("Plataforma", this.plataforma);
+    switch (this.plataforma) {
+      case "movil":      
+          //Carga componente 
+          tmpDocumentos =  <RecursosDidacticosMovil infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/>     
+      break;    
+      case "escritorio":
+          tmpDocumentos =  <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/>       
+      break;
+    
+      default:
+          tmpDocumentos  = <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/>  
+        break;
+    }
+    return tmpDocumentos;
+
+  }
+
 
   cargarPlaneamiento = () =>{    
     //cualquier tontera
@@ -248,7 +272,8 @@ componentDidMount ( ) {
           //tmpComponent = <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
       break;
       case "RecursosDidacticos":
-        tmpComponent = <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
+          tmpComponent = this.cargarRecursos();
+        //tmpComponent = <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
       break;
       case "ApoyoClimaAula":
           tmpComponent = this.cargarClima();

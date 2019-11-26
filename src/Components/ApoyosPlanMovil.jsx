@@ -44,7 +44,7 @@ const ApoyosPlanMovil = (props) => {
                 <img className=" derecha img-fluid  hvr-pop" id="plantilla" src={images[0].ApoyosPlantilla}  data-typecontent ="plantillaPlan"  onClick={props.handlerOpenBuscadorPlaneamiento}  data-infosource={2}    alt="Apoyos para el planeamiento"  />
             </figure>
         </div>
-        <div className=""><br/><br/>
+        <div className="">
           <figure>
               <img className=" derecha img-fluid hvr-pop" id="ejemplos" data-content= {pdfs.EjemplosTecnicas }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2}  alt="Ejemplos planeamiento" src={images[0].ApoyosEjemplo  } />
             </figure>
@@ -56,16 +56,16 @@ const ApoyosPlanMovil = (props) => {
    
 
 <br/><br/>
-<div class="row">
+<div class="row ">
     <div className="col-1">   
     </div>
-    <div className="col-4">          
-        <div className="row img_btn_der">
+    <div className="col-4 text-center">          
+        <div className="">
                 <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoDidac} alt="Planeamiento Didáctico"/>
         </div> 
     </div>
-    <div className="col-4">        
-            <div className="row img_btn_der">
+    <div className="col-4 text-center">        
+            <div className="">
                 <img onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada hvr-pop"   src={images[0].ApoyosPlaneamientoCorrel} alt="Planeamiento Correlacionado"/>
             </div>
     </div>
