@@ -149,7 +149,21 @@
     "Enero",
     "Febrero",
     "Marzo"
+],
+
+"Plan Estudios Francés Primaria" : [
+    "Francés como Lengua Extranjera", 
+    "Secciones Bilingües Español Francés" 
+],
+"Plan Estudios Francés Secundaria" : [
+    "Francés como Lengua Extranjera",
+     "Secciones de Francés avanzado"
 ]
+
+
+
+
+
 
 
     }  
