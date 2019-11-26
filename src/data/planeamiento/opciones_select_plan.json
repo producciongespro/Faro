@@ -1,15 +1,15 @@
 [
     {
-"niveles generales": [
+"Niveles Generales": [
         "Preescolar",
         "Primaria",
         "Secundaria",
-        "Jóvenes y adultos",                 
-        "Interculturalidad primaria",        
-        "Interculturalidad secundaria",
+        "Jóvenes y Adultos",                 
+        "Interculturalidad Primaria",        
+        "Interculturalidad Secundaria",
         "Unidocentes"
     ],
-"materias básicas" : [
+"Materias Básicas" : [
     "Ciencias",
     "Español",
     "Estudios Sociales",
@@ -71,7 +71,8 @@
     "Sétimo",
     "Octavo",
     "Noveno",
-    "Décimo"
+    "Décimo",
+    "Undécimo"
 ],
 "Jóvenes y Adultos" : [       
         "Colegios Académicos Nocturnos (CAN)",       

@@ -306,7 +306,7 @@ class BuscadorPlaneamiento extends Component {
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel} onClick={this.activarBotonBuscar}  >
                                     <option defaultValue value="seleccione" >Seleccione:</option>
-                                  {  listasPlan["niveles generales"].map((item, i)=> (
+                                  {  listasPlan["Niveles Generales"].map((item, i)=> (
                                         <option key={"niveles"+i } value={item}> {item} </option>
                                     )) }                             
                                 </select>
@@ -368,7 +368,13 @@ class BuscadorPlaneamiento extends Component {
                                         listasPlan["Años Primaria"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
-                                    }                               
+                                    }
+                                    {
+                                        this.state.nivel === "Interculturalidad Secundaria" &&
+                                        listasPlan["Años Secundaria"].map((item, i) => (
+                                            <option key={"anno" + i} value={item} >  {item}  </option>
+                                        ))
+                                    }                                 
                                 </select>
                             </div>
                         </div>
@@ -438,7 +444,7 @@ class BuscadorPlaneamiento extends Component {
                                     }
                                     {                                    
                                         (this.state.anno === "Escuelas Nocturnas Nivel I"  || this.state.anno === "Escuelas Nocturnas Nivel II" || this.state.anno === "Escuelas Nocturnas Nivel III" || this.state.anno === "Escuelas Nocturnas Nivel IV") &&                                       
-                                        listasPlan["materias básicas"].map((item, i) => (
+                                        listasPlan["Materias Básicas"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
                                             ))                                                                                                                                    
                                     }
