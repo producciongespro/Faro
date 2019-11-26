@@ -365,8 +365,8 @@ class BuscadorPlaneamiento extends Component {
 
                                     {
                                         this.state.nivel === "Jóvenes y adultos" &&
-                                        listasPlan.annoAdultos.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                        listasPlan["Jóvenes y adultos"].map((item, i) => (
+                                            <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
 
                                     }
@@ -432,9 +432,9 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
-                                        this.state.anno === "can" &&
+                                        this.state.anno === "Colegios Académicos Nocturnos (CAN)" &&
                                         listasPlan.materiasCan.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.label}  </option>
+                                            <option key={"materia" + i} value={item} >  {item.label}  </option>
                                         ))
                                     }
                                     {
