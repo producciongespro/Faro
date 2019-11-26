@@ -4,9 +4,9 @@
         "Preescolar",
         "Primaria",
         "Secundaria",
-        "Jóvenes y adultos",                 
-        "Interculturalidad primaria",        
-        "Interculturalidad secudnaria",
+        "Jóvenes y Adultos",                 
+        "Interculturalidad Primaria",        
+        "Interculturalidad Secudnaria",
         "Unidocentes"
     ],
 "materias básicas" : [
@@ -59,7 +59,7 @@
     "Psicología",
     "Química"        
 ],
-"años primaria" : [        
+"Años Primaria" : [        
     "Primero",
     "Segundo",
     "Tercero",
@@ -67,13 +67,13 @@
     "Quinto",
     "Sexto"
 ],
-"años secundaria" : [
+"Años Secundaria" : [
     "Sétimo",
     "Octavo",
     "Noveno",
     "Décimo"
 ],
-"Jóvenes y adultos" : [       
+"Jóvenes y Adultos" : [       
         "Colegios Académicos Nocturnos (CAN)",       
         "Colegio Nacional de Educación a Distancia (CONED)",
         "Escuelas Nocturnas Nivel I",            
@@ -119,9 +119,29 @@
 "IPEC CINDEA Nivel III" : [
 "Módulo 60",
 "Módulo 61"
+],
+"Interculturalidad" : [
+    "Cultura Boruca",
+    "Cultura Bribí de Buenos Aires",
+    "Cultura Bribri de Sulá",
+    "Cultura Cabécar de Buenos Aires",
+    "Cultura Cabécar de Chirripó",
+    "Cultura Cabécar de Sulá",
+    "Cultura Chorotega",
+    "Cultura Huetar",
+    "Cultura Maleku",
+    "Cultura Ngäbe",
+    "Cultura Térraba",
+    "Idioma Ngäbere",
+    "Lengua Boruca",
+    "Lengua Bribri de Buenos Aires",
+    "Lengua Bribri de Sulá",
+    "Lengua Cabécar de Buenos Aires",
+    "Lengua Cabécar de Chirripó",
+    "Lengua Cabécar de Sulá",
+    "Lengua Maleku",
+    "Lengua Térraba"
 ]
- 
- 
 
 
     }  

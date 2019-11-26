@@ -333,19 +333,16 @@ class BuscadorPlaneamiento extends Component {
                                 <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                     <option defaultValue value="" > Todos </option>
                                     {
-                                       
-                                       /*
                                         this.state.nivel === "Preescolar" &&
                                         categoriasPreescolar.map((item, i) => (
                                             <option key={"anno" + i} value={item.id} >  {item.etiqueta}  </option>
                                         ))
-                                        */
                                     }
 
 
                                     {
                                         this.state.nivel === "Primaria" &&
-                                        listasPlan["años primaria"].map((item, i) => (
+                                        listasPlan["Años Primaria"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
 
@@ -353,23 +350,23 @@ class BuscadorPlaneamiento extends Component {
 
                                     {
                                         this.state.nivel === "Secundaria" &&
-                                        listasPlan["años secundaria"].map((item, i) => (
+                                        listasPlan["Años Secundaria"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
 
                                     }
 
                                     {
-                                        this.state.nivel === "Jóvenes y adultos" &&
-                                        listasPlan["Jóvenes y adultos"].map((item, i) => (
+                                        this.state.nivel === "Jóvenes y Adultos" &&
+                                        listasPlan["Jóvenes y Adultos"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
 
                                     }
                                     {
-                                        this.state.nivel === "interculturaPrimaria" &&
-                                        listasPlan.annoPrimaria.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                        this.state.nivel === "Interculturalidad Primaria" &&
+                                        listasPlan["Años Primaria"].map((item, i) => (
+                                            <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
                                     }                               
                                 </select>
@@ -387,7 +384,7 @@ class BuscadorPlaneamiento extends Component {
                                                 )
                                                 :
                                                 (
-                                                    this.state.nivel==="Jóvenes y adultos" ? 
+                                                    this.state.nivel==="Jóvenes y Adultos" ? 
                                                     (
                                                         <span>Módulos</span>
                                                     ) :
@@ -421,12 +418,11 @@ class BuscadorPlaneamiento extends Component {
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
-                                    {/*
-                                        this.state.nivel === "interculturaPrimaria" &&
-                                        listasPlan.materiaInterculturaPrimaria.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.etiqueta}  </option>
-                                        ))
-                                        */
+                                    {
+                                        (this.state.nivel ===  "Interculturalidad Primaria" || this.state.nivel ===  "Interculturalidad Secundaria")   &&
+                                            listasPlan.Interculturalidad.map((item, i) => (
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
+                                        ))                                     
                                     }
                                     {
                                         this.state.anno === "Colegios Académicos Nocturnos (CAN)" &&
@@ -473,13 +469,7 @@ class BuscadorPlaneamiento extends Component {
                                             ))  
                                         )
                                         */
-                                    }
-                                    {
-                                        //console.log("listasPlan.adultos", listasPlan["Jóvenes y adultos"] )
-                                        
-                                    }
-
-
+                                    }                                
 
                                 </select>
                             </div>
