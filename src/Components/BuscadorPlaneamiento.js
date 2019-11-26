@@ -47,8 +47,7 @@ class BuscadorPlaneamiento extends Component {
     }
     handlerObtenerNivel = (e) => {
         this.setState({ nivel: e.target.value },()=> {
-            console.log("nivel", this.state.nivel);
-            
+            //console.log("nivel", this.state.nivel);            
         }   );
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
@@ -59,7 +58,11 @@ class BuscadorPlaneamiento extends Component {
     handlerObtenerMateria = (e) => {
         //let indice = e.target.selectedIndex - 1;  
         this.setState({ materia: e.target.value });
-        this.setState({ indiceDesempeno: e.target.selectedIndex - 1 });
+        this.setState({ indiceDesempeno: e.target.selectedIndex - 1 }, ()=>{
+            //console.log( "indice desempeño", this.state.indiceDesempeno  );
+            
+        }
+            );
     }
     handlerObtenerAnno = (e) => {
         //almacena en un estado el indice de la opción seleccionada
@@ -430,7 +433,7 @@ class BuscadorPlaneamiento extends Component {
                                         }
                                     </label>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria} >
+                                <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria} >
                                     <option disabled value="" >  Selecione una opción  </option>
                                     {
                                         this.state.nivel === "Preescolar" &&
@@ -579,7 +582,7 @@ class BuscadorPlaneamiento extends Component {
                             }
                             {
                                 //Caso 3 Preescolar
-                                this.state.nivel === "preescolar" &&
+                                this.state.nivel === "Preescolar" &&
                                 (
                                     // Con diagnóstico
                                     this.state.anno === "diagnostico" ?

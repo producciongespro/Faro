@@ -8,7 +8,7 @@
         "Interculturalidad Primaria",        
         "Interculturalidad Secundaria",
         "Unidocentes"
-    ],
+],
 "Materias Básicas" : [
     "Todas",
     "Ciencias",
@@ -16,12 +16,10 @@
     "Estudios Sociales",
     "Matemática"
 ],
-
 "Ciclo Primaria" : [
     "I Ciclo",
     "II Ciclo"
 ],
-
 "Primaria" : [            
         "Artes Industriales",
         "Artes Plásticas",
@@ -150,7 +148,6 @@
     "Febrero",
     "Marzo"
 ],
-
 "Plan Estudios Francés Primaria" : [
     "Francés como Lengua Extranjera", 
     "Secciones Bilingües Español Francés" 
