@@ -10,17 +10,18 @@
         "Unidocentes"
     ],
 "Materias Básicas" : [
+    "Todas",
     "Ciencias",
     "Español",
     "Estudios Sociales",
     "Matemática"
 ],
-"Unidocentes" : [
-        "Ciencias",
-        "Español",            
-        "Estudios Sociales",            
-        "Matemática"                           
+
+"Ciclo Primaria" : [
+    "I Ciclo",
+    "II Ciclo"
 ],
+
 "Primaria" : [            
         "Artes Industriales",
         "Artes Plásticas",
@@ -142,6 +143,12 @@
     "Lengua Cabécar de Sulá",
     "Lengua Maleku",
     "Lengua Térraba"
+],
+"Meses" : [
+    "Todos",
+    "Enero",
+    "Febrero",
+    "Marzo"
 ]
 
 
