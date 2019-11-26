@@ -539,7 +539,7 @@ class BuscadorPlaneamiento extends Component {
                                         </label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
-                                            <option defaultValue value="seleccione" >Seleccione:</option>
+                                            <option defaultValue  disabled value="seleccione" >Seleccione:</option>
                                             { //Frances primaria
                                                 (this.state.materia === "Francés" && this.state.nivel === "Primaria") &&
                                                 (
@@ -549,10 +549,10 @@ class BuscadorPlaneamiento extends Component {
                                                 )
                                             }
                                             { //Ingles primaria
-                                                (this.state.materia === "ingles" && this.state.nivel === "primaria") &&
+                                                (this.state.materia === "Inglés" && this.state.nivel === "Primaria") &&
                                                 (
-                                                    listasPlan.planEstudiosInglesPrimaria.map((item, index) => (
-                                                        <option key={"plan" + index} value={item.id} data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                    listasPlan["Plan Estudios Inglés Primaria"].map((item, index) => (
+                                                        <option key={"plan" + index} value={item} data-etiqueta={item} > {item} </option>
                                                     ))
                                                 )
                                             }
@@ -565,10 +565,10 @@ class BuscadorPlaneamiento extends Component {
                                                 )
                                             }
                                             {  //Inglés secundaria
-                                                (this.state.materia === "ingles" && this.state.nivel === "secundaria") &&
+                                                (this.state.materia === "Inglés" && this.state.nivel === "Secundaria") &&
                                                 (
-                                                    listasPlan.planEstudiosInglesSecundaria.map((item, index) => (
-                                                        <option key={"plan" + index} value={item.id} data-etiqueta={item.etiqueta} > {item.etiqueta} </option>
+                                                    listasPlan["Plan Estudios Inglés Secundaria"].map((item, index) => (
+                                                        <option key={"plan" + index} value={item} data-etiqueta={item} > {item} </option>
                                                     ))
                                                 )
                                             }
