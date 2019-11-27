@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import imagesJson from "../data/images.json";
-import audiosJson from "../data/audios.json";
 import assets from '../data/config/config.json';
 
 import plantillasGenerales from '../data/documentos/lineamientos_planeamiento_generales.json';
@@ -10,6 +8,8 @@ import plantillasPrimaria from '../data/documentos/lineamientos_planeamiento_pri
 import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_secundaria.json';
 
 const video = assets.video;
+const audio = assets.audio;
+const img = assets.img.general;
 
 
 
@@ -22,10 +22,8 @@ class Modal extends Component {
     };
     this.selectTypeContent = this.selectTypeContent.bind(this);
     setTimeout( this.selectTypeContent, 10 );
-  }
+  } 
 
-    images = imagesJson[0];
-    audios = audiosJson[0];
     classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
     modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
     plantillasDePreescolar = plantillasPreescolar[0];
@@ -75,7 +73,7 @@ class Modal extends Component {
               tmpContent =   
                     <React.Fragment>
                       <div>
-                        <img  className="img-fluid"  src= {this.images.BgIndicaciones} alt="fondo indicaciones"/>  
+                        <img  className="img-fluid"  src= {img + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
                       </div>
                       <div className="texto-indicaciones">
 
@@ -98,8 +96,8 @@ class Modal extends Component {
                           </p>
 
                       </div>
-                      <img  className="img-ico-audio"  src= {this.images.Audio} onClick={this.playAudio}  alt="Icono activar audio"/>                                         
-                      <audio src={this.audios.intro}  id="audioIntro" ></audio>                                                       
+                      <img  className="img-ico-audio"  src= {img + "audio.png" } onClick={this.playAudio}  alt="Icono activar audio"/>                                         
+                      <audio src={audio + "intro.mp3" }  id="audioIntro" ></audio>                                                       
                     </React.Fragment>
       break;
        case "defHabilidades" :
@@ -134,19 +132,19 @@ class Modal extends Component {
 
               <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
-                  <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf documento general"/>                 
+                  <img src={img + "ico_pdf.png"} alt="pdf documento general"/>                 
                 </a>
               </div>
 
               <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
-                    <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf jóvenes y adultos"/>                  
+                    <img src={img + "ico_pdf.png"}  alt="pdf jóvenes y adultos"/>                  
                 </a>
               </div>
 
               <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
-                    <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf educación preescolar"/>                  
+                    <img src={img + "ico_pdf.png"}  alt="pdf educación preescolar"/>                  
                 </a>
               </div>
 

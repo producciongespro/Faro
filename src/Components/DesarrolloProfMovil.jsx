@@ -82,7 +82,7 @@ const DesarrolloProfMovil = (props) => {
     <audio src="https://recursos.mep.go.cr/ws_faro/audios/desarrollo_profesional.mp3" id="desarrollo"   preload="true"  ></audio>
     <div class="row text-center">
         <div className=" col-12">
-                <img  data-tar="Home" onClick={props.changePage}   className="img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+                <img data-tar="Home" onClick={props.changePage}   className="img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
         </div>
     </div>
 </div>  
