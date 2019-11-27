@@ -113,7 +113,7 @@ componentDidMount ( ) {
     //Realiza la comprobación del tipo de dispositivo para cargar
     // un home para dispotivos moviles
     let tmpHome;
-    console.log("Plataforma", this.plataforma);
+    //console.log("Plataforma", this.plataforma);
     switch (this.plataforma) {
       case "movil":      
           //Carga componente 
@@ -252,7 +252,7 @@ componentDidMount ( ) {
     //Realiza la comprobación del tipo de dispositivo para cargar
     // un home para dispotivos moviles
     let tmpDocumentos;
-    console.log("Plataforma", this.plataforma);
+    //console.log("Plataforma", this.plataforma);
     switch (this.plataforma) {
       case "movil":      
           //Carga componente 
