@@ -1,131 +1,121 @@
 [
     {
-        "nivel" : "primaria",
-        "anno" : "4",
-        "materia" : "ciencias",
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/ciencias/ciencias-cuarto.pdf"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        
     },
     {
-        "nivel" : "primaria",
-        "anno" : "1",
-        "materia" : "espanol",
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Español",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "9",
-        "materia" : "artesIndustriales",
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Artes Industriales",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/artes-industriales/noveno.pdf"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "8",
-        "materia" : "artesIndustriales",
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Artes Industriales",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/artes-industriales/octavo.pdf"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "7",
-        "materia" : "artesIndustriales",
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Artes Industriales",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/artes-industriales/setimo.pdf"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "10",
-        "materia" : "biologia",
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Biología",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/biologia/decimo-undecimo.pdf"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "11",
-        "materia" : "biologia",
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Biología",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/biologia/decimo-undecimo.pdf"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "10",
-        "materia" : "fisica",
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Física",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/fisica/decimo-undecimo.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/fisica/decimo-undecimo.docx"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "11",
-        "materia" : "fisica",
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Física",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/fisica/decimo-undecimo.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/fisica/decimo-undecimo.docx"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "10",
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
         "materia" : "quimica",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/quimica/plantilla_qumica_10-11.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/quimica/plantilla_qumica_Décimo-Undécimo.docx"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "11",
-        "materia" : "quimica",
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Química",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/quimica/plantilla_qumica_10-11.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/quimica/plantilla_qumica_Décimo-Undécimo.docx"        
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "7",
-        "materia" : "educFisica",
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Física",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica7.docx",
         "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"        
 
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "8",
-        "materia" : "educFisica",
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Física",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica8.docx",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisicaOctavo.docx",
         "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "9",
-        "materia" : "educFisica",
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Física",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica9.docx",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisicaNoveno.docx",
         "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "10",
-        "materia" : "educFisica",
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Física",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica10.docx",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisicaDécimo.docx",
         "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "11",
-        "materia" : "educFisica",
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Física",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica11.docx",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisicaUndécimo.docx",
         "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
     }
 

@@ -7,7 +7,6 @@ import dataIdiomas from '../data/planeamiento/docs_idiomas.json';
 
 import categoriasPreescolar from '../data/planeamiento/categorias_preescolar.json';
 import images from '../data/images.json';
-import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
 import arrayListasPlan from '../data/planeamiento/opciones_select_plan.json';
 const listasPlan = arrayListasPlan[0];
 
@@ -42,8 +41,7 @@ class BuscadorPlaneamiento extends Component {
         this.poblacion = "";
         this.apoyos = "";
         this.mensaje = "";
-        this.claseCSSMaterias = "input-group mb-3";
-        this.cambiarEtiquetas = cambiarEtiquetas;
+        this.claseCSSMaterias = "input-group mb-3";        
     }
     handlerObtenerNivel = (e) => {
         this.setState({ nivel: e.target.value },()=> {
@@ -154,10 +152,10 @@ class BuscadorPlaneamiento extends Component {
                                     (
                                         <div className="card-header">
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Modalidad: {this.cambiarEtiquetas(arrayNivel[index].anno)}
+                                                Modalidad: { arrayNivel[index].anno  }
                                             </span>
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Materia: {this.cambiarEtiquetas(arrayNivel[index].materia)}
+                                                Asignatura: { arrayNivel[index].materia }
                                             </span>
                                         </div>
                                     ) :
@@ -165,13 +163,13 @@ class BuscadorPlaneamiento extends Component {
                                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                                         <div className="card-header">
                                             <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                                Nivel:  {this.cambiarEtiquetas(arrayNivel[index].nivel)}
+                                                Nivel:  {arrayNivel[index].nivel}
                                             </span>
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Año: {this.cambiarEtiquetas(arrayNivel[index].anno)}
+                                                Año: {arrayNivel[index].anno}
                                             </span>
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Asignatura: {this.cambiarEtiquetas(arrayNivel[index].materia)}
+                                                Asignatura: {arrayNivel[index].materia}
                                             </span>
                                             {
                                                 //Plan de estudio en caso de frances e inglés
@@ -313,7 +311,7 @@ class BuscadorPlaneamiento extends Component {
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel} onClick={this.activarBotonBuscar}  >
-                                    <option defaultValue value="seleccione" >Seleccione:</option>
+                                    <option defaultValue value="" >Seleccione:</option>
                                   {  listasPlan["Niveles Generales"].map((item, i)=> (
                                         <option key={"niveles"+i } value={item}> {item} </option>
                                     )) }                             
@@ -437,7 +435,14 @@ class BuscadorPlaneamiento extends Component {
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria} >
-                                    <option disabled value="" >  Selecione una opción  </option>
+                                    {
+                                        this.state.nivel !== "Preescolar" ? 
+                                            <option defaultValue value="" >  Todas  </option> 
+                                            :
+                                            <option defaultValue disabled value="" >  Seleccione una opción  </option> 
+                                    }
+
+
                                     {
                                         this.state.nivel === "Preescolar" &&
                                         categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i) => (
@@ -596,8 +601,7 @@ class BuscadorPlaneamiento extends Component {
                                                         Mes
                                                             </label>
                                                 </div>
-                                                <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                                    <option disabled defaultValue value="" >Seleccione un mes:</option>
+                                                <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >                                                    
                                                     {
                                                         categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
                                                             (item, i) => (
@@ -616,8 +620,7 @@ class BuscadorPlaneamiento extends Component {
                                                         Acción procedimental
                                                         </label>
                                                 </div>
-                                                <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                                    <option disabled defaultValue value="" >Seleccione una opcion:</option>
+                                                <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >                                                    
                                                     {
                                                         categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
                                                             (item, i) => (
