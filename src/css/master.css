@@ -416,10 +416,24 @@ padding-top:5%;
     margin-left: 73%;
   }
 
+  #politica2{
+    position: absolute;
+     margin-top: 30%; 
+    z-index: 12;
+    margin-left: -43%;
+  }
+
   #estudiante{
     margin-top: -28%;
     z-index: 3;
     margin-left: -40%;
+}
+
+#estudiante2{
+  position: absolute;
+  margin-top: 181%;
+  z-index: 3;
+  margin-left: -28%;
 }
 
 
@@ -429,13 +443,29 @@ padding-top:5%;
     margin-left: -40%;
   }
 
+  
+
   #programas{
     margin-top: 18%;
     margin-left: -41%;
   }
 
+  #programas2{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: -32%;
+  }
+
   #transformacion{
     margin-top: -39%;
+  }
+
+  #transformacion2{
+    position: absolute;
+    margin-top: 55%;
+    margin-left: -55%;
+    /* height: 200%; */
+    width: 170%;
   }
 
   #faro{
@@ -444,15 +474,41 @@ padding-top:5%;
     margin-left: 18%;
   }
 
+  #faro2{
+    position: absolute;
+    margin-top: 226%;
+    z-index: 3;
+    margin-left: -35%;
+  }
+
   #fundamentos{
     margin-top: -2%;
     z-index: 3; 
     margin-left: 16%;
   }
 
+  #fundamentos2{
+    position: absolute;
+    margin-top: -20%;
+    z-index: 3; 
+    margin-left: -39%;
+  }
+
   #reglamento{
     margin-left: -11%;
     margin-top: -15%;
+  }
+
+  #reglamento2{
+    position: absolute;
+    margin-left: 14%;
+    margin-top: 93%;
+  }
+
+  #btn-volver-doc{
+    position: absolute;
+    margin-top: 75%;
+    margin-left: -15%;
   }
 
   #preescolar{
