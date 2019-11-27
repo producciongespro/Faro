@@ -104,8 +104,14 @@ class Modal extends Component {
         this.modalAncho =  this.modalAncho + " modal-lg";
         this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = ( <React.Fragment>
-                          <h2 className="text-center">Concepto de Habilidades</h2>               
-                          <h3 className="text-center">Ministerio de Educación Pública</h3>
+                      <div>
+                        <img  className="img-fluid"  src= {img + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
+                      </div> 
+
+                      <div className="texto-indicaciones">
+
+                          <h2 className="text-center">Definición</h2>               
+                         
                           <br/>
                           <div className="container">
                             <div className="row ">
@@ -117,7 +123,8 @@ class Modal extends Component {
    
                           <br/>
                           <strong>Fuente</strong> <cite> :   Alfaro et al. Por qué un currículo por habilidades en la reforma curricular de Costa Rica.  Ministerio de Educación Pública, Dirección de Desarrollo Curricular.  </cite>
-                          </div>         
+                          </div>  
+                          </div>       
                         </React.Fragment>
                       )
          break;
