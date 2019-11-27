@@ -2,8 +2,15 @@ import React  from 'react';
 import imagesJson from "../data/images.json";
 import textosJson from "../data/textos.json";
 
+import assets from '../data/config/config.json';
+
 const images = imagesJson[0];
 const textos = textosJson[0];
+
+
+const img = assets.img.home;
+console.log("img desde home", img );
+
 
 
 const Home = (props) => {
@@ -11,7 +18,7 @@ const Home = (props) => {
     <React.Fragment>
     <div className="barra-botones">
       
-    <img className="btn img-fluid hvr-pop" id="indicaciones" src={ images.HomeCaja } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> <br/>
+    <img className="btn img-fluid hvr-pop" id="indicaciones" src={ img + "caja.png" } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> <br/>
     <img className="btn img-fluid hvr-pop" id="home"  src={ images.HomeVolver } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
     <img className="img-fluid botones-portada hvr-pop" id="uso" src={images.BtnUso} onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/>
                   

@@ -10,7 +10,7 @@ import plantillasPrimaria from '../data/documentos/lineamientos_planeamiento_pri
 import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_secundaria.json';
 
 const video = assets.video;
-console.log("video", video);
+
 
 
 class Modal extends Component {
