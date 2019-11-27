@@ -5,5 +5,8 @@
         "portada" : "http://localhost/Faro/asset/img/1_portada/",
         "home" : "http://localhost/Faro/asset/img/2_home/web/",
         "homeM" : "http://localhost/Faro/asset/img/2_home/movil/"
+    },
+    "video" : {
+        "ministra" : "https://www.youtube.com/embed/KdWgysitPgU"
     }
 }
