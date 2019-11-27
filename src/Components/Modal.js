@@ -11,6 +11,7 @@ const video = assets.video;
 const audio = assets.audio;
 const imgGeneral = assets.img.general;
 const img = assets.img.desarrolloProfesional;
+const imgApoyoPlan = assets.img.apoyosPlan;
 
 class Modal extends Component {
 
@@ -104,7 +105,7 @@ class Modal extends Component {
         this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = ( <React.Fragment>
                       <div>
-                        <img  className="img-fluid"  src= {img + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
+                        <img  className="img-fluid"  src= {imgApoyoPlan + "modal_habilidad.png"} alt="fondo indicaciones"/>  
                       </div> 
 
                       <div className="texto-indicaciones">
