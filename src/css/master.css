@@ -8,6 +8,7 @@ body {
 
 #img-portada{
   max-width: 70%;
+  margin-top: -5%;
 }
 
 .font-2 {
@@ -18,7 +19,7 @@ body {
   color:#00809B;
   font-size: 0.9rem;
   font-weight: 600;
-  margin-top: 5em;
+  margin-top: -3%;
 }
 
 .btn_Buscar{
