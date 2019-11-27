@@ -23,11 +23,12 @@ body {
 
 .btn_Buscar{
   margin-top: -30%;
+  margin-right: -15%;
 }
 
 .btn_BuscarR{
   margin-top: -13%;
-  padding-left: 0%;
+  margin-right: -15%;
 }
 
 .visor {
@@ -864,6 +865,7 @@ padding-top:5%;
 .barra-botones{
   margin-top: 2%;
   float: right;
+  margin-right: 15%;
  }
 
  #caja, #audio{
@@ -888,6 +890,7 @@ padding-top:5%;
    position: absolute;
    top: 10px;
    z-index: 50000;
+   margin-left: -10%;
  }
 
  .enlace-pree{
