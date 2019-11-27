@@ -1,6 +1,10 @@
 import React from 'react';
+import assets from '../data/config/config.json';
 import images from "../data/images.json";
 import textosJson from "../data/textos.json";
+
+const audio = assets.audio;
+const img = assets.img.apoyosEvaluacion;
 
 
 
@@ -22,7 +26,7 @@ const ApoyosEvaluacion = (props) => {
                    
                       <div className="row">
                         <div className="col-12">
-                        <img alt="Apoyos para la evaluación" className="img-fluid titulos" src={images[0].EvaluacionTitulo } />
+                        <img alt="Apoyos para la evaluación" className="img-fluid titulos" src={img + "evaluacion_titulo.png" } />
                         </div>
                       </div>
                       <img  onClick={reproducirSonido}  className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion} alt="Descripción" />
@@ -92,7 +96,7 @@ const ApoyosEvaluacion = (props) => {
 
   </div>
 
-        <audio src="https://recursos.mep.go.cr/ws_faro/audios/apoyos_evaluacion.mp3" id="evaluacion"   preload="true"  ></audio>
+        <audio src={ audio+"apoyos_evaluacion.mp3"} id="evaluacion"   preload="true"  ></audio>
 
 
 
