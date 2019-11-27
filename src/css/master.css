@@ -706,6 +706,14 @@ padding-top:5%;
 .derecha{
   float: right;
 }
+
+#correlacionado{
+  margin-left: 35px;
+}
+
+#planDidactico{
+  margin-left: 35px;
+}
   #salir{
   margin-top: 10%;
   }
