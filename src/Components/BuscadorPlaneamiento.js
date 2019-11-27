@@ -47,19 +47,19 @@ class BuscadorPlaneamiento extends Component {
     }
     handlerObtenerNivel = (e) => {
         this.setState({ nivel: e.target.value },()=> {
-            //console.log("nivel", this.state.nivel);            
+            console.log("nivel seleccionado", this.state.nivel);            
         }   );
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
         this.setState({ anno: "" });
-        this.mes = "";
-       // console.log("handlerobtenerNivel");
+        this.mes = "";       
     }
-    handlerObtenerMateria = (e) => {
-        //let indice = e.target.selectedIndex - 1;  
-        this.setState({ materia: e.target.value });
+    handlerObtenerMateria = (e) => {        
+        this.setState({ materia: e.target.value }, ()=>{
+            console.log( "Materia seleccionada", this.state.materia )            
+        });
         this.setState({ indiceDesempeno: e.target.selectedIndex - 1 }, ()=>{
-            //console.log( "indice desempeño", this.state.indiceDesempeno  );
+            console.log( "indice desempeño", this.state.indiceDesempeno  );
             
         }
             );
@@ -67,17 +67,20 @@ class BuscadorPlaneamiento extends Component {
     handlerObtenerAnno = (e) => {
         //almacena en un estado el indice de la opción seleccionada
         this.setState({ indiceContenido: e.target.selectedIndex - 1 });
-        this.setState({ anno: e.target.value });
+        this.setState({ anno: e.target.value }, ()=>{
+            console.log("Año seleccionado", this.state.anno )            
+        });
     }
     handlerObtenerMes = (e) => {
         this.mes = e.target.value;
+        console.log("Mes seleccionado", this.mes);        
     }
     handlerObtenerTipoPlan = (e) => {
         this.tipoPlan = e.target.value;
         //console.log("tipoPlan",  this.tipoPlan);        
         // * * * * * Obtiene el texto de la opcion seleccionada del select Nota: Esto es SOLO BUENO!!!!!
         this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;
-        //console.log("this.etiquetaPlan", this.etiquetaPlan);
+        console.log("Tipo de plan seleccionado:", this.etiquetaPlan);
     }
     activarBotonBuscar = (e) => {
         //Activa el botón buscar 
@@ -147,7 +150,7 @@ class BuscadorPlaneamiento extends Component {
                         <div className="card">
                             {
                                 //Renderizado de los encabezados de las tarjetas en el caso de  educación adultos
-                                this.state.nivel === "adultos" ?
+                                this.state.nivel === "Jóvenes y Adultos" ?
                                     (
                                         <div className="card-header">
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">

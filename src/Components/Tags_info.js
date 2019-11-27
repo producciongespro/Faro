@@ -32,17 +32,17 @@ import materiasPreescolar from '../data/documentos/programas_materias_preescolar
 //--------------------- PLANTILLAS JSON
 
 
-import plantillasMedia from '../data/planeamiento/plantillas/plantillas_secundaria.json';
-import comboMedia from '../data/planeamiento/plantillas/docs_secundaria.json';
+import plantillasMedia from '../data/documentos/plantillas/plantillas_secundaria.json';
+import comboMedia from '../data/documentos/plantillas/docs_secundaria.json';
 
-import plantillasPrimaria from '../data/planeamiento/plantillas/plantillas_primaria.json';
-import comboPrimaria from '../data/planeamiento/plantillas/docs_primaria.json';
+import plantillasPrimaria from '../data/documentos/plantillas/plantillas_primaria.json';
+import comboPrimaria from '../data/documentos/plantillas/docs_primaria.json';
 
-import plantillasPreescolar from '../data/planeamiento/plantillas/plantillas_preescolar.json';
-import comboPreescolar from '../data/planeamiento/plantillas/docs_preescolar.json';
+import plantillasPreescolar from '../data/documentos/plantillas/plantillas_preescolar.json';
+import comboPreescolar from '../data/documentos/plantillas/docs_preescolar.json';
 
-import plantillasGenerales from '../data/planeamiento/plantillas/plantillas_generales.json';
-import comboGenerales from '../data/planeamiento/plantillas/docs_generales.json';
+import plantillasGenerales from '../data/documentos/plantillas/plantillas_generales.json';
+import comboGenerales from '../data/documentos/plantillas/docs_generales.json';
 
 
 
