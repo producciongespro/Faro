@@ -9,9 +9,8 @@ import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_s
 
 const video = assets.video;
 const audio = assets.audio;
-const img = assets.img.general;
-
-
+const imgGeneral = assets.img.general;
+const img = assets.img.desarrolloProfesional;
 
 class Modal extends Component {
 
@@ -189,7 +188,7 @@ class Modal extends Component {
           this.classModalBody = this.classModalBody + " modal-alto";
           tmpContent = ( <React.Fragment> 
                       <div>
-                        <img  className="img-fluid"  src= {img + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
+                        <img  className="img-fluid"  src= {img + "modal_referencias.png"} alt="fondo indicaciones"/>  
                       </div> 
 
                       <div className="texto-indicaciones">            
