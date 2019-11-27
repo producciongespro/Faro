@@ -39,6 +39,7 @@ const Portada = (props) => {
         <div className="col-12 text-center pie-pagina">
            <br/>
         <br/>
+    
         DIRECCIÓN DE RECURSOS TECNOLÓGICOS EN EDUCACIÓN - DIRECCIÓN DE DESARROLLO CURRICULAR - INSTITUTO DE DESARROLLO PROFESIONAL ULADISLAO GÁMEZ SOLANO
         </div>
        
