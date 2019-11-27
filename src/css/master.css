@@ -65,6 +65,13 @@ a {
   text-align: left;
 }
 
+#acercade {
+  position: absolute;
+  margin-top: 26%;
+  margin-left: 3%;
+  
+}
+
 .img_apoy{
   width: 75%;
   height: 75%;
