@@ -26,7 +26,7 @@ const RecursosDidacticos = (props) => {
               </div>
               
               <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
-                  <img id="material_adicional" className="img-fluid btn hvr-wobble-bottom" src={images[0].GeneralEducatico } alt="Referenciar COLECCION GESPRO" />
+                  <img id="material_adicional" className="img-fluid btn hvr-wobble-bottom" src={img + "coleccion_gespro.png" } alt="Referenciar COLECCION GESPRO" />
               </a>
       </div>
                
