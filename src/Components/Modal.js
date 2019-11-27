@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import imagesJson from "../data/images.json";
-import audiosJson from "../data/audios.json";
 import assets from '../data/config/config.json';
 
 import plantillasGenerales from '../data/documentos/lineamientos_planeamiento_generales.json';
@@ -10,6 +8,8 @@ import plantillasPrimaria from '../data/documentos/lineamientos_planeamiento_pri
 import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_secundaria.json';
 
 const video = assets.video;
+const audio = assets.audio;
+const img = assets.img.general;
 
 
 
@@ -22,10 +22,8 @@ class Modal extends Component {
     };
     this.selectTypeContent = this.selectTypeContent.bind(this);
     setTimeout( this.selectTypeContent, 10 );
-  }
+  } 
 
-    images = imagesJson[0];
-    audios = audiosJson[0];
     classModalBody = "modal-body"; // Se agrega "modal-body large cuando carga un pdf"
     modalAncho = "modal-dialog"; // clase que contiene el tamaño del modal
     plantillasDePreescolar = plantillasPreescolar[0];
@@ -75,7 +73,7 @@ class Modal extends Component {
               tmpContent =   
                     <React.Fragment>
                       <div>
-                        <img  className="img-fluid"  src= {this.images.BgIndicaciones} alt="fondo indicaciones"/>  
+                        <img  className="img-fluid"  src= {img + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
                       </div>
                       <div className="texto-indicaciones">
 
@@ -98,16 +96,22 @@ class Modal extends Component {
                           </p>
 
                       </div>
-                      <img  className="img-ico-audio"  src= {this.images.Audio} onClick={this.playAudio}  alt="Icono activar audio"/>                                         
-                      <audio src={this.audios.intro}  id="audioIntro" ></audio>                                                       
+                      <img  className="img-ico-audio"  src= {img + "audio.png" } onClick={this.playAudio}  alt="Icono activar audio"/>                                         
+                      <audio src={audio + "intro.mp3" }  id="audioIntro" ></audio>                                                       
                     </React.Fragment>
       break;
        case "defHabilidades" :
         this.modalAncho =  this.modalAncho + " modal-lg";
         this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = ( <React.Fragment>
-                          <h2 className="text-center">Concepto de Habilidades</h2>               
-                          <h3 className="text-center">Ministerio de Educación Pública</h3>
+                      <div>
+                        <img  className="img-fluid"  src= {img + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
+                      </div> 
+
+                      <div className="texto-indicaciones">
+
+                          <h2 className="text-center">Definición</h2>               
+                         
                           <br/>
                           <div className="container">
                             <div className="row ">
@@ -119,7 +123,8 @@ class Modal extends Component {
    
                           <br/>
                           <strong>Fuente</strong> <cite> :   Alfaro et al. Por qué un currículo por habilidades en la reforma curricular de Costa Rica.  Ministerio de Educación Pública, Dirección de Desarrollo Curricular.  </cite>
-                          </div>         
+                          </div>  
+                          </div>       
                         </React.Fragment>
                       )
          break;
@@ -134,19 +139,19 @@ class Modal extends Component {
 
               <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
-                  <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf documento general"/>                 
+                  <img src={img + "ico_pdf.png"} alt="pdf documento general"/>                 
                 </a>
               </div>
 
               <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
-                    <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf jóvenes y adultos"/>                  
+                    <img src={img + "ico_pdf.png"}  alt="pdf jóvenes y adultos"/>                  
                 </a>
               </div>
 
               <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
-                    <img src="https://recursos.mep.go.cr/ws_faro/generales/ico_pdf.png" alt="pdf educación preescolar"/>                  
+                    <img src={img + "ico_pdf.png"}  alt="pdf educación preescolar"/>                  
                 </a>
               </div>
 
@@ -182,34 +187,34 @@ class Modal extends Component {
          case "refUtiles" :
           this.modalAncho =  this.modalAncho + " modal-lg";
           this.classModalBody = this.classModalBody + " modal-alto";
-          tmpContent = ( <React.Fragment>                
-                  <div className="row ">
-                    <div className="col-12 text-center">
-                      <img className="img-ref" src= "https://recursos.mep.go.cr/ws_faro/p07-desarrollo-profesional/titu-referencias.png"   alt="titulo"/>
-                      <hr/><hr/>
-                    </div>
-                  </div>
-                   <div className="row referencias text-justify">
-                     <div className="col-12">
-                      <p className="p-ref">
+          tmpContent = ( <React.Fragment> 
+                      <div>
+                        <img  className="img-fluid"  src= {img + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
+                      </div> 
+
+                      <div className="texto-indicaciones">            
+                    <div className="container">
+                      <h2 className="text-center">Útiles para la docencia</h2>  
+                     <br/>
+
+                    <div className="col-12">
+                      <p>
                         <a  href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2017.pdf" target = "_blank"  rel="noopener noreferrer"> <strong> Lectura 2017</strong> </a>  y 
                         <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2018.pdf" target = "_blank" rel="noopener noreferrer"><strong> Lectura 2018: </strong>  </a>
                          Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, por medio de las cuales se fortalece la comprensión lectora, respondiendo a los momentos de antes, durante y después de la lectura. 
                       </p>                      
-                      <p className="p-ref">
+                      <p>
                       <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/escritura2017.pdf" target = "_blank" rel="noopener noreferrer"><strong>Escritura 2017:</strong>  </a>
                       Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, que fomentan la escritura en el estudiantado, en concordancia con el programa de estudio.
                       </p> 
                       <hr/>
                       <h5 className="tit_ref2"><strong>Dispositivos Móviles para la Educación:</strong> </h5>
-                      <p className="p-ref">                     
+                      <p>                     
                           <a href="https://multimedia.uned.ac.cr/pem/aprendizaje_moviles/pag/conceptos.html" target = "_blank" rel="noopener noreferrer"><strong>Aprendizajes Móviles:</strong> </a> Este recurso publicado por la UNED de Costa Rica presenta las principales características de los dispositivos móviles, por un lado, la ubicuidad, en la que se aprende desde cualquier momento y lugar, por otro lado, la adaptabilidad o flexibilidad de estos dispositivos gracias a la conexión e ideas de cómo aprovecharlas en el área educativa.
                       </p>
                     </div>
                   </div>
-
-
-
+                  </div>
           </React.Fragment>
           )
            break;  
