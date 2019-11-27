@@ -5,7 +5,13 @@
         "general" : "http://localhost/Faro/asset/img/9_generales/",
         "portada" : "http://localhost/Faro/asset/img/1_portada/",
         "home" : "http://localhost/Faro/asset/img/2_home/web/",
-        "homeM" : "http://localhost/Faro/asset/img/2_home/movil/"
+        "homeM" : "http://localhost/Faro/asset/img/2_home/movil/",
+        "apoyosAula" : "http://localhost/Faro/asset/img/3_apoyos_aula/",
+        "apoyosEvaluacion" : "http://localhost/Faro/asset/img/4_apoyos_eval/",
+        "recursosDidacticos" : "http://localhost/Faro/asset/img/5_recursos_did/",
+        "docsOficiales" : "http://localhost/Faro/asset/img/6__documen_educ/",
+        "desarrolloProfesional" : "http://localhost/Faro/asset/img/7_desarrollo_prof/",
+        "apoyosPlan" : "http://localhost/Faro/asset/img/8_apoyo_planea/"
     },
     "video" : {
         "ministra" : "https://www.youtube.com/embed/KdWgysitPgU"

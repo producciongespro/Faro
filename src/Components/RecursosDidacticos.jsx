@@ -1,14 +1,15 @@
 import React from 'react';
 import images from "../data/images.json";
-//import textos from "../data/textos.json";
-
 import dsLinks from "../data/links.json";
+import assets from '../data/config/config.json';
 
 var links = dsLinks[0];
+const audio = assets.audio;
+const img = assets.img.recursosDidacticos;
+
 
 const  reproducirSonido = () => {
-  console.log("Audio");
-  
+  console.log("Audio");  
   var tmpAudio = document.getElementById("recursos");
   tmpAudio.currentTime = 0;
   tmpAudio.play();
@@ -18,7 +19,7 @@ const RecursosDidacticos = (props) => {
   return ( 
     <div className="row">      
       <div className="col-4">
-            <img className="titulos img-fluid" src={images[0].RecDidacticosTitulo} alt="Documentos educativos oficiales" />
+            <img className="titulos img-fluid" src={img + "titulo.png"} alt="Documentos educativos oficiales" />
                <img  onClick={reproducirSonido} className="descripciones3 img-fluid" src={images[0].GeneralCajaDescripcion  } alt="Descripción" /> 
               <div onClick={reproducirSonido} id="textoDescripcion" className="texto_descripciones text-justify pr-3">
               <h2 className='desc'>Descripción:</h2>  { props.infoCategory }                
@@ -96,7 +97,7 @@ const RecursosDidacticos = (props) => {
 
         </div>
         </div>
-        <audio src="https://recursos.mep.go.cr/ws_faro/audios/recursos_didacticos.mp3" id="recursos"   preload="true"  ></audio>
+        <audio src={ audio +  "recursos_didacticos.mp3"} id="recursos"   preload="true"  ></audio>
         </div>
      );
 }
