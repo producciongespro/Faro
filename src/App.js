@@ -12,6 +12,7 @@ import Home from "./Components/Home.jsx";
 import DocsOficiales from "./Components/DocsOficiales.jsx";
 import DocsOficialesMovil from "./Components/DocsOficialesMovil.jsx";
 import DesarrolloProf from "./Components/DesarrolloProf.jsx";
+import DesarrolloProfMovil from "./Components/DesarrolloProfMovil.jsx";
 import ApoyosPlan from "./Components/ApoyosPlan.jsx";
 import ApoyosPlanMovil from "./Components/ApoyosPlanMovil.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
@@ -222,6 +223,29 @@ componentDidMount ( ) {
 
   }
 
+  cargarDesarrollo = () =>{    
+    //cualquier tontera
+    //Realiza la comprobación del tipo de dispositivo para cargar
+    // un home para dispotivos moviles
+    let tmpDocumentos;
+    console.log("Plataforma", this.plataforma);
+    switch (this.plataforma) {
+      case "movil":      
+          //Carga componente 
+          tmpDocumentos =  <DesarrolloProfMovil   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   />    
+      break;    
+      case "escritorio":
+          tmpDocumentos =  <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   />     
+      break;
+    
+      default:
+          tmpDocumentos  = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   />
+        break;
+    }
+    return tmpDocumentos;
+
+  }
+
 
   cargarPlaneamiento = () =>{    
     //cualquier tontera
@@ -280,7 +304,8 @@ componentDidMount ( ) {
          // tmpComponent = <ApoyoClimaAula infoCategory={descripciones[1].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog}  showModal={this.showModal} changePage={this.changePage}/> 
       break;
       case "DesarrolloProf":
-        tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
+          tmpComponent = this.cargarDesarrollo();
+       // tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
       break;    
       default:
         console.log("Opción fuera de rango");      
