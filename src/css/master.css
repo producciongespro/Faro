@@ -23,11 +23,12 @@ body {
 
 .btn_Buscar{
   margin-top: -30%;
+  margin-right: -15%;
 }
 
 .btn_BuscarR{
   margin-top: -13%;
-  padding-left: 0%;
+  margin-right: -15%;
 }
 
 .visor {
