@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import imagesJson from "../data/images.json";
 import audiosJson from "../data/audios.json";
+import assets from '../data/config/config.json';
+
 import plantillasGenerales from '../data/documentos/lineamientos_planeamiento_generales.json';
 import plantillasPreescolar from '../data/documentos/lineamientos_planeamiento_prescolar.json';
 import plantillasPrimaria from '../data/documentos/lineamientos_planeamiento_primaria.json';
 import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_secundaria.json';
+
+const video = assets.video;
+
+
 
 class Modal extends Component {
 
@@ -42,7 +48,11 @@ class Modal extends Component {
       case "video":        
       //console.log("Video");       
         this.modalAncho =  this.modalAncho + " modal-lg";          
-        tmpContent = <video controls width="100%" src={this.props.content} type="video/mp4" autoPlay  ></video>
+        //tmpContent = <video controls width="100%" src={this.props.content} type="video/mp4" autoPlay  ></video>
+        tmpContent = (
+          <iframe title="video ministra" width="720" height="512" src={video.ministra} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        )
+
       break;
       case "html":
       //console.log("html");        
@@ -234,7 +244,7 @@ class Modal extends Component {
       <div>
     <div className="modal fade show  element-top" id="modalScreen"   >
         <div className= {this.modalAncho}   role="document">
-          <div className="modal-content">
+          <div className="modal-content text-center">
 
         <div className="col-12 text-right">
                 <button   onClick={this.props.closeModal}  type="button" className="close" data-dismiss="modal" aria-label="Close">
