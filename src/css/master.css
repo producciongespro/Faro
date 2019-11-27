@@ -865,6 +865,7 @@ padding-top:5%;
 .barra-botones{
   margin-top: 2%;
   float: right;
+  margin-right: 15%;
  }
 
  #caja, #audio{
@@ -889,6 +890,7 @@ padding-top:5%;
    position: absolute;
    top: 10px;
    z-index: 50000;
+   margin-left: -10%;
  }
 
  .enlace-pree{
