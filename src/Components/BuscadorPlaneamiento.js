@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import dataPreescolar from '../data/planeamiento/docs_plan_preescolar.json';
 import dataPrimaria from '../data/planeamiento/docs_plan_primaria.json';
 import dataSecundaria from '../data/planeamiento/docs_plan_secundaria.json';
 import dataAdultos from '../data/planeamiento/docs_plan_adultos.json';
@@ -98,7 +99,10 @@ class BuscadorPlaneamiento extends Component {
         let arrayNivel;
         //console.log("***Nivel", this.state.nivel);
         //console.log("***Mes", this.mes);
-
+        if (this.state.nivel === "Preescolar") {
+            //console.log("Seleccion: general");
+            arrayNivel = dataPreescolar;
+        }
         if (this.state.nivel === "Primaria") {
             //console.log("Seleccion: general");
             arrayNivel = dataPrimaria;
