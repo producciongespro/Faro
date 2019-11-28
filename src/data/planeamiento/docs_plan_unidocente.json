@@ -1,0 +1,18 @@
+[
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Español",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }    
+
+]

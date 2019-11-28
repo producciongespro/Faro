@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 
-import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
-import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
-import dataSecundariaEspanol from '../data/planeamiento/secundaria_espanol.json';
-import dataIdiomas from '../data/planeamiento/docs_idiomas.json';
+import dataPrimaria from '../data/planeamiento/docs_plan_primaria.json';
+import dataSecundaria from '../data/planeamiento/docs_plan_secundaria.json';
+import dataAdultos from '../data/planeamiento/docs_plan_adultos.json';
+import dataSecundariaEspanol from '../data/planeamiento/docs_plan_secundaria_espanol.json';
+import dataIdiomas from '../data/planeamiento/docs_plan_idiomas.json';
+import dataIntercultural from '../data/planeamiento/docs_plan_intercultural.json';
+import dataUnidocente from '../data/planeamiento/docs_plan_unidocente.json';
 
-import categoriasPreescolar from '../data/planeamiento/categorias_preescolar.json';
+import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
+import listasPlan from '../data/planeamiento/select_general.json';
+
 import images from '../data/images.json';
-import arrayListasPlan from '../data/planeamiento/opciones_select_plan.json';
-const listasPlan = arrayListasPlan[0];
+
 
 //console.log("Secudnaria frances", dataFrances );
 //console.log("listasPlan",listasPlan );
@@ -95,9 +99,13 @@ class BuscadorPlaneamiento extends Component {
         //console.log("***Nivel", this.state.nivel);
         //console.log("***Mes", this.mes);
 
-        if (this.state.nivel !== "adultos") {
+        if (this.state.nivel === "Primaria") {
             //console.log("Seleccion: general");
-            arrayNivel = dataGeneral;
+            arrayNivel = dataPrimaria;
+        }
+        if (this.state.nivel === "Secundaria") {
+            //console.log("Seleccion: general");
+            arrayNivel = dataSecundaria;
         }
         if (this.state.nivel === "adultos") {
             //console.log("Seleccion: Adultos");
@@ -110,6 +118,14 @@ class BuscadorPlaneamiento extends Component {
         if (this.state.materia === "Francés" || this.state.materia === "Inglés" || this.state.materia === "Italiano") {
             arrayNivel = dataIdiomas;
         }
+        if (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria"  ) {
+            //console.log("Seleccion: Adultos");
+            arrayNivel = dataIntercultural;
+        }
+        if (this.state.nivel === "Unidocentes") {
+            //console.log("Seleccion: Adultos");
+            arrayNivel = dataUnidocente;
+        }       
 
         //console.log(arrayNivel);  
 
