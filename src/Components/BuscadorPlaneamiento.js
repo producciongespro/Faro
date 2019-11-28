@@ -188,6 +188,14 @@ class BuscadorPlaneamiento extends Component {
                                                 Asignatura: {arrayNivel[index].materia}
                                             </span>
                                             {
+                                                this.state.materia === "Español"  && this.state.nivel === "Secundaria" &&
+                                                (
+                                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                        Mes: {arrayNivel[index].mes}
+                                                    </span>   
+                                                )
+                                            }
+                                            {
                                                 //Plan de estudio en caso de frances e inglés
                                                 (this.state.materia === "frances" || this.state.materia === "ingles") &&
                                                 (
