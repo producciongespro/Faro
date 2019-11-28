@@ -57,18 +57,18 @@ class BuscadorPlaneamiento extends Component {
         this.mes = "";       
     }
     handlerObtenerMateria = (e) => {        
+        console.log("indice de select Niveles de desempeño: ",e.target.selectedIndex);        
         this.setState({ materia: e.target.value }, ()=>{
             console.log( "Materia seleccionada", this.state.materia )            
         });
-        this.setState({ indiceDesempeno: e.target.selectedIndex - 1 }, ()=>{
-            console.log( "indice desempeño", this.state.indiceDesempeno  );
-            
+        this.setState({ indiceDesempeno: e.target.selectedIndex }, ()=>{
+            console.log( "indice desempeño", this.state.indiceDesempeno  );            
         }
             );
     }
     handlerObtenerAnno = (e) => {
         //almacena en un estado el indice de la opción seleccionada
-        this.setState({ indiceContenido: e.target.selectedIndex - 1 });
+        this.setState({ indiceContenido: e.target.selectedIndex });
         this.setState({ anno: e.target.value }, ()=>{
             console.log("Año seleccionado", this.state.anno )            
         });
@@ -380,7 +380,13 @@ class BuscadorPlaneamiento extends Component {
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
-                                    <option defaultValue value="" > Todos </option>
+                                    {
+                                        this.state.nivel !== "Preescolar" &&
+                                        (
+                                            <option defaultValue value="" > Todos </option>
+                                        )
+                                    }                                    
+
                                     {
                                         this.state.nivel === "Preescolar" &&
                                         categoriasPreescolar.map((item, i) => (
@@ -460,12 +466,9 @@ class BuscadorPlaneamiento extends Component {
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria} >
                                     {
-                                        this.state.nivel !== "Preescolar" ? 
-                                            <option defaultValue value="" >  Todas  </option> 
-                                            :
-                                            <option defaultValue disabled value="" >  Seleccione una opción  </option> 
+                                        this.state.nivel !== "Preescolar" && 
+                                            <option defaultValue value="" >  Todas  </option>                                             
                                     }
-
 
                                     {
                                         this.state.nivel === "Preescolar" &&
