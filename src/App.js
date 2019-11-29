@@ -268,7 +268,8 @@ componentDidMount ( ) {
     }
     return tmpDocumentos;
 
-  }
+  }  
+  
   changePage = (e) => { 
     e.preventDefault();     
     const targetPage = e.target.dataset.tar;
