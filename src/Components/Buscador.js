@@ -345,7 +345,7 @@ class Buscador extends Component {
             <React.Fragment>
                 <div className="row">
 
-                    <div className="col-12  text-right">
+                    <div className="col-sm-12  text-right">
                         {
                             this.props.origen === "preescolar" && <img alt="Preescolar" className="bannerRecursos" src={images[0].RecDidacticosPreescolarBanner} />
                         }
@@ -371,7 +371,7 @@ class Buscador extends Component {
                         
 
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarBuscador} src={images[0].BtnVolver} alt="Volver" />
-                    </div>
+                    </div><br/><br/>
                 </div>
 
 
@@ -380,7 +380,7 @@ class Buscador extends Component {
 
                 <div className="container">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-sm-3">
                             {/* Columna 1 ASIGNATURA (MATERIA) */}
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
@@ -430,7 +430,7 @@ class Buscador extends Component {
                             {/* Fin de Columna 1 ASIGNATURA (MATERIA) */}
                         </div>
 
-                        <div className="col-3  ">
+                        <div className="col-sm-3  ">
                             {/* Columna 2 AÑO -  */}
                             {
                                 // SI NIVEL ES DIFERNETE DE INTERCULTURAL SE RENDERIZA EL SELECT AÑO
@@ -471,7 +471,7 @@ class Buscador extends Component {
 
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-sm-3">
                             {/* Columna 3 PLAN DE ESTUDIOS EN CASO DE FRANCÉS - INGLÉS - ITALIANO*/}
                             {
                                 //Select que se genera al seleccionar francés
@@ -539,7 +539,7 @@ class Buscador extends Component {
                             }
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-sm-3">
 
                             {
                                 this.props.origen !== "preescolar" &&
@@ -574,7 +574,7 @@ class Buscador extends Component {
 
 
                     <div className="row">
-                        <div className="col-12 text-right">
+                        <div className="col-sm-12 text-right">
                             <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
@@ -583,7 +583,7 @@ class Buscador extends Component {
 
 
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-sm-12">
 
                             <h6>
                                 {this.mensaje}
@@ -593,7 +593,7 @@ class Buscador extends Component {
 
 
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-sm-12">
                             {
                                 this.state.tarjetas.map((item, i) => (
                                     <div key={"tarjeta" + i} > {item} </div>
