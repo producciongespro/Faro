@@ -269,7 +269,7 @@ componentDidMount ( ) {
     return tmpDocumentos;
 
   }  
-  
+
   changePage = (e) => { 
     e.preventDefault();     
     const targetPage = e.target.dataset.tar;
@@ -355,9 +355,27 @@ componentDidMount ( ) {
   }
 
   handlerCloseBuscadorPlaneamiento = (e) => {
-    this.setState({ 
-        currentPage :  <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
-    });
+    switch (this.plataforma) {
+      case "movil":
+          this.setState({ 
+            currentPage :  <ApoyosPlanMovil  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
+        });
+      break;
+      case "escritorio":
+          this.setState({ 
+            currentPage :  <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
+        });
+      break;
+    
+      default:
+          this.setState({ 
+            currentPage :  <ApoyosPlan  showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={ this.handlerShowInfoGeneral}   onMouseOver={ this.handlerShowInfoCategories} changePage={this.changePage}  handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento}     /> 
+        });
+        break;
+    }
+    
+
+ 
   }
 
 
