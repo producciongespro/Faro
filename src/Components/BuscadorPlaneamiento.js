@@ -12,7 +12,14 @@ import dataUnidocente from '../data/planeamiento/docs_plan_unidocente.json';
 import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
 import listasPlan from '../data/planeamiento/select_general.json';
 
+import config from '../data/config/config.json';
+
+//TODO Quitar esto cuando el otro esté listo:
 import images from '../data/images.json';
+
+const serv = config.servidor;
+console.log("servidor", serv);
+
 
 
 //console.log("Secudnaria frances", dataFrances );
@@ -282,7 +289,7 @@ class BuscadorPlaneamiento extends Component {
                                     : (
                                         // Renderizado para los que no son secudnaria español 
                                         <div className="card-body mr-2">
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={ serv + arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Lineamiento
                                                 </a>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
