@@ -138,7 +138,7 @@ class BuscadorPlaneamiento extends Component {
         }
     }
 
-obtenerArrayGeneral =()=> {
+    cargarArrayGeneral =()=> {
         //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
         let arrayNivel;
         //console.log("***Nivel", this.state.nivel);
@@ -178,34 +178,196 @@ obtenerArrayGeneral =()=> {
     }
 
 
-filtrarBusquedaGeneral =(array, nivel, anno, materia  )=> {       
-    //Devuelve un array filtrado con la búsqueda del usuario
-        let tmpArray=[];
+    filtrarBusquedaGeneral =(array, nivel, anno, materia  )=> {
+        let arrayResultado=[];
         for (let index = 0; index < array.length; index++) {
-            //console.log("nivel", array[index].nivel);            
-            //console.log("año", array[index].anno);
-            console.log("materia", array[index].materia  );
-             
-            if (array[index].nivel === nivel && array[index].anno === anno  && array[index].materia === materia ) {
-                tmpArray.push(array[index]);
-                console.log("MATCH");                
+            if (nivel===array.nivel && anno === array.anno  &&  materia === array.materia ) {
+                arrayResultado.push(array[index]);
             }            
         }
-        return tmpArray;       
+        console.log("arrayResultado:", arrayResultado);
+        
     }
 
 
-buscarRegistro = () => {
-        /*
+    cargarInformacionBusqueda = () => {
+
         console.log("********Contenido", this.state.contenido );
         console.log("***********Desempeño", this.state.desempeno );
         console.log("*********Accion", this.accion);
-        */
-        this.arrayResultado = this.filtrarBusquedaGeneral(this.obtenerArrayGeneral(), this.state.nivel, this.state.anno, this.state.materia );
-        console.log("Resultado", this.arrayResultado );        
+        const arrayNivel = this.cargarArrayGeneral();
+        //console.log(arrayNivel);  
+        var arrayHtml;
+        var arrayTmp = [];
+
+        for (let index = 0; index < arrayNivel.length; index++) {
+            // console.log("Array", arrayNivel[index].materia);
+
+            //Expresión regular para materia
+            let strMateria = arrayNivel[index].materia;
+            let pattMateria = new RegExp(this.state.materia);
+            let resMateria = pattMateria.test(strMateria);
+
+            //Expresión regular para año
+            let strAnno = arrayNivel[index].anno;
+            let pattAnno = new RegExp(this.state.anno);
+            let resAnno = pattAnno.test(strAnno);
+
+            // console.log(  "res Materia",  resMateria   );
+            // console.log("res Año", resAnno );          
+            //console.log("this.apoyos=", this.apoyos  );
+            //console.log( "arrayNivel=", arrayNivel[index].apoyos );
+
+            if (this.state.nivel === arrayNivel[index].nivel && resMateria && resAnno) {
+
+                //console.log( "Nombre del recurso", arrayNivel[index].nombre );
+                //console.log( "Año:", arrayNivel[index].anno );                
+
+                arrayHtml = (
+                    <React.Fragment>
+                        <div className="card">
+                            {
+                                //Renderizado de los encabezados de las tarjetas en el caso de  educación adultos
+                                this.state.nivel === "Jóvenes y Adultos" ?
+                                    (
+                                        <div className="card-header">
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Modalidad: { arrayNivel[index].anno  }
+                                            </span>
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Asignatura: { arrayNivel[index].materia }
+                                            </span>
+                                        </div>
+                                    ) :
+                                    (
+                                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                                        <div className="card-header">
+                                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                                Nivel:  {arrayNivel[index].nivel}
+                                            </span>
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Año: {arrayNivel[index].anno}
+                                            </span>
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Asignatura: {arrayNivel[index].materia}
+                                            </span>
+                                            {
+                                                this.state.materia === "Español"  && this.state.nivel === "Secundaria" &&
+                                                (
+                                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                        Mes: {arrayNivel[index].mes}
+                                                    </span>   
+                                                )
+                                            }
+                                            {
+                                                //Plan de estudio en caso de frances e inglés
+                                                (this.state.materia === "frances" || this.state.materia === "ingles") &&
+                                                (
+                                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                        Plan: {this.etiquetaPlan}
+                                                    </span>
+                                                )
+                                            }
+
+
+                                        </div>
+                                    )
+                            }
+
+                            {
+                                //Renderizado del cuerpo de las tarjetas:
+                                this.state.nivel === "Secundaria" && this.state.materia === "Español" ?
+                                    (
+                                        <div className="card-body mr-2">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamientos} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamientos
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lectura
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Monografía
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].novela} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Novela
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Trasnversal
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Mensual
+                                        </a>
+                                        </div>
+                                    )
+                                    : (
+                                        // Renderizado para los que no son secudnaria español 
+                                        <div className="card-body mr-2">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={ serv + arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                                </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla
+                                                </a>
+                                           
+                                        </div>
+                                    )
+
+                            }
+
+
+                        </div>
+                        <br />
+                    </React.Fragment>
+                )
+                //Proceso de filtrado por segunda vez para casos que tienen un cuarto criterio (cuarto select)
+                //Filtrado por mes en caso de español secundaria:
+                if (this.state.nivel === "Secundaria" && this.state.materia === "Español") {
+                    if (this.mes === arrayNivel[index].mes || this.mes === "" || this.mes === "todos") {
+                        arrayTmp.push(arrayHtml);
+                    }
+                } else {
+                    // Si no se cumple español secundaria se compruban otras condiciones:
+                    /* -(1) francés  -(2) inglés */
+                    if (this.state.materia === "Francés" || this.state.materia === "Inglés") {
+                        //console.log("Estado primaria francés");                       
+                        if (this.tipoPlan === arrayNivel[index].tipoPlan) {
+                            arrayTmp.push(arrayHtml);
+                        }
+                    } else {
+                       
+                            //En caso de secundaria italiano
+                        if (this.state.materia === "Italiano" && this.state.nivel === "Secundaria") {
+                            if (this.tipoPlan === arrayNivel[index].tipoPlan) {
+                                //console.log("tipo de plan seleccionado", this.tipoPlan);
+                                //console.log("tipo de plan del array coincidencia", arrayNivel[index].tipoPlan);  
+                                arrayTmp.push(arrayHtml);
+                            }
+                        } else {
+                        //General (Generico)
+                        arrayTmp.push(arrayHtml);
+                        }
+                    }
+                    
+             
+
+                }
+            }
+
+        };
+        if (arrayTmp.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {arrayTmp.length}   </span>  </React.Fragment>);
+        }
+        this.setState({ tarjetas: arrayTmp });
     }
 
-render() {
+    // Cambio de etiqeuta según dato ingresado  como propiedad del json
+
+
+
+    // *********** fin cambio de eitqueta
+    render() {
         /*
         console.log("Año a buscar", this.state.anno);
         console.log("Materia a buscar", this.state.materia);
@@ -613,7 +775,7 @@ render() {
                         <div className="col-12 text-right">
                             {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
                                 this.state.buscarActivo &&
-                                <button id="btnBuscar" onClick={this.buscarRegistro} type="button" className="btn btn-secondary btn-lg btn_Buscar">
+                                <button id="btnBuscar" onClick={this.cargarInformacionBusqueda} type="button" className="btn btn-secondary btn-lg btn_Buscar">
                                     <i className="fas fa-search"></i> Buscar
                                     </button>
                             }
