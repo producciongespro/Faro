@@ -44,12 +44,12 @@ class EvaluacionCategorias extends Component {
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarCategoriasEvaluacion} src={images[0].BtnVolver} alt="Volver" />
                     </div>
                 </div>
-                <br/>
+                <br/><br/>
                 <div className="row">
                     <div className="col-4">
                         {                           
                            this.subcategorias.map((item, i)=>(
-                                <button className="btn btn-outline-info btn-lg btn-block" key={"subcategoria"+i}  data-indice={i}  title={item.nombre} onClick={this.handlerSeleccionar}  > {item.nombre} </button>
+                                <button className=" btn-outline-info  btn-block text-center" key={"subcategoria"+i}  data-indice={i}  title={item.nombre} onClick={this.handlerSeleccionar}  > {item.nombre} </button>
                             ))                        
                            
                         }
