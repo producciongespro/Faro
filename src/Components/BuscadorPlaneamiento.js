@@ -39,8 +39,8 @@ class BuscadorPlaneamiento extends Component {
             //estado en caso de preescolar para actualizar los select: "desempeño" y acción procedimental
             indiceContenido: 0,
             indiceDesempeno: 0,
-            contenido : "",
-            desempeno : ""
+            contenido: "",
+            desempeno: ""
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
@@ -55,35 +55,35 @@ class BuscadorPlaneamiento extends Component {
         this.apoyos = "";
         this.mensaje = "";
         //Datos de json para preescolar        
-        this.accion="";
+        this.accion = "";
         //Array filtrado con los criterios establecidos por el usuario
-        this.arrayResultado=null;
+        this.arrayResultado = null;
 
 
         //Clase CSS
-        this.claseCSSMaterias = "input-group mb-3";        
+        this.claseCSSMaterias = "input-group mb-3";
     }
     handlerObtenerNivel = (e) => {
         //SELECT 1
-        this.setState({ nivel: e.target.value },()=> {
-            console.log("nivel seleccionado", this.state.nivel);            
-        }   );
+        this.setState({ nivel: e.target.value }, () => {
+            console.log("nivel seleccionado", this.state.nivel);
+        });
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
         this.setState({ anno: "" });
-        this.mes = "";       
+        this.mes = "";
     }
 
     handlerObtenerAnno = (e) => {
         //SELECT 2
         //almacena en un estado el indice de la opción seleccionada
-        
-        if (this.state.nivel==="Preescolar") {
-            this.setState({ indiceContenido: e.target.selectedIndex }); 
+
+        if (this.state.nivel === "Preescolar") {
+            this.setState({ indiceContenido: e.target.selectedIndex });
             this.setState({ contenido: e.target.value });
         } else {
-            this.setState({ anno: e.target.value }, ()=>{
-                console.log("Año seleccionado", this.state.anno )            
+            this.setState({ anno: e.target.value }, () => {
+                console.log("Año seleccionado", this.state.anno)
             });
         }
 
@@ -91,25 +91,25 @@ class BuscadorPlaneamiento extends Component {
 
     handlerObtenerMateria = (e) => {
         //SELECT 3        
-        console.log("indice de select Niveles de desempeño: ",e.target.selectedIndex);        
+        console.log("indice de select Niveles de desempeño: ", e.target.selectedIndex);
 
         if (this.state.nivel === "Preescolar") {
-            this.setState({ indiceDesempeno: e.target.selectedIndex }, ()=>{
-                console.log( "indice desempeño", this.state.indiceDesempeno  );            
+            this.setState({ indiceDesempeno: e.target.selectedIndex }, () => {
+                console.log("indice desempeño", this.state.indiceDesempeno);
             });
-            this.setState({ desempeno: e.target.value }); 
+            this.setState({ desempeno: e.target.value });
         } else {
-            this.setState({ materia: e.target.value }, ()=>{
-                console.log( "Materia seleccionada", this.state.materia )            
+            this.setState({ materia: e.target.value }, () => {
+                console.log("Materia seleccionada", this.state.materia)
             });
-        }  
-    
+        }
+
     }
 
     // SELECT 4 (COMODIN) Varía el manejador de eventos según el nivel que se escoja
     handlerObtenerMes = (e) => {
         this.mes = e.target.value;
-        console.log("Mes seleccionado", this.mes);        
+        console.log("Mes seleccionado", this.mes);
     }
 
     handlerObtenerTipoPlan = (e) => {
@@ -122,12 +122,12 @@ class BuscadorPlaneamiento extends Component {
     }
 
     handlerObtenerAccion = (e) => {
-        this.accion = e.target.value;     
+        this.accion = e.target.value;
     }
 
     /** Botón Buscar */
 
-    activarBotonBuscar = (e) => {    
+    activarBotonBuscar = (e) => {
 
         //Activa el botón buscar 
         // "seleccione" es el valor que tiene el select por defeto, lo cual significa que no ha sido seleccionado
@@ -138,7 +138,7 @@ class BuscadorPlaneamiento extends Component {
         }
     }
 
-obtenerArrayGeneral =()=> {
+    obtenerArrayGeneral = () => {
         //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
         let arrayNivel;
         //console.log("***Nivel", this.state.nivel);
@@ -166,46 +166,144 @@ obtenerArrayGeneral =()=> {
         if (this.state.materia === "Francés" || this.state.materia === "Inglés" || this.state.materia === "Italiano") {
             arrayNivel = dataIdiomas;
         }
-        if (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria"  ) {
+        if (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria") {
             //console.log("Seleccion: Adultos");
             arrayNivel = dataIntercultural;
         }
         if (this.state.nivel === "Unidocentes") {
             //console.log("Seleccion: Adultos");
             arrayNivel = dataUnidocente;
-        }   
+        }
         return arrayNivel;
     }
 
 
-filtrarBusquedaGeneral =(array, nivel, anno, materia  )=> {       
-    //Devuelve un array filtrado con la búsqueda del usuario
-        let tmpArray=[];
+    obtenerFiltradoPrimariaSecundaria = (array, nivel, anno, materia) => {
+        //Devuelve un array filtrado con la búsqueda del usuario
+        let tmpArray = [];
+
         for (let index = 0; index < array.length; index++) {
-            //console.log("nivel", array[index].nivel);            
-            //console.log("año", array[index].anno);
-            console.log("materia", array[index].materia  );
-             
-            if (array[index].nivel === nivel && array[index].anno === anno  && array[index].materia === materia ) {
+            if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
                 tmpArray.push(array[index]);
-                console.log("MATCH");                
-            }            
+            }
         }
-        return tmpArray;       
+        return tmpArray;
     }
 
 
-buscarRegistro = () => {
+    buscarRegistroPorNivel = () => {
         /*
         console.log("********Contenido", this.state.contenido );
         console.log("***********Desempeño", this.state.desempeno );
         console.log("*********Accion", this.accion);
         */
-        this.arrayResultado = this.filtrarBusquedaGeneral(this.obtenerArrayGeneral(), this.state.nivel, this.state.anno, this.state.materia );
-        console.log("Resultado", this.arrayResultado );        
+        switch (this.state.nivel) {
+            case "Primaria":
+            case "Secudnaria":
+                this.arrayResultado = this.obtenerFiltradoPrimariaSecundaria(this.obtenerArrayGeneral(), this.state.nivel, this.state.anno, this.state.materia);
+                this.tarjetaPrimariaSecudnaria(this.arrayResultado);
+                break;
+
+            default:
+                break;
+        }
+        console.log("Resultado", this.arrayResultado);
     }
 
-render() {
+
+    tarjetaPrimariaSecudnaria = (array) => {
+
+        console.log("array recibido:",array  );
+        
+        var arrayHtml;
+        var arrayTmp = [];
+
+       for (let index = 0; index < array.length; index++) {
+        arrayHtml = (
+            <div className="card">                
+                     {
+                    //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                    <div className="card-header">
+                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                            Nivel:  {array[index].nivel}
+                        </span>
+                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            Año: {array[index].anno}
+                        </span>
+                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            Asignatura: {array[index].materia}
+                        </span>
+                        {
+                            this.state.materia === "Español" && this.state.nivel === "Secundaria" &&
+                            (
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Mes: {array[index].mes}
+                                </span>
+                            )
+                        }
+                        {
+                            //Plan de estudio en caso de frances e inglés
+                            (this.state.materia === "frances" || this.state.materia === "ingles") &&
+                            (
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Plan: {this.etiquetaPlan}
+                                </span>
+                            )
+                        }
+                    </div>
+                }
+                    {
+                                //Renderizado del cuerpo de las tarjetas:
+                                this.state.nivel === "Secundaria" && this.state.materia === "Español" ?
+                                    (
+                                        <div className="card-body mr-2">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamientos
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lectura
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Monografía
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Novela
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Trasnversal
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Mensual
+                                        </a>
+                                        </div>
+                                    )
+                                    : (
+                                        // Renderizado para los que no son secudnaria español 
+                                        <div className="card-body mr-2">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={ serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                                </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla
+                                                </a>
+                                           
+                                        </div>
+                                    )
+
+                            }                 
+            </div>
+        );
+        arrayTmp.push(arrayHtml);           
+       }
+       this.setState({ tarjetas: arrayTmp });
+    }
+
+
+
+
+
+
+    render() {
         /*
         console.log("Año a buscar", this.state.anno);
         console.log("Materia a buscar", this.state.materia);
@@ -215,71 +313,68 @@ render() {
 
                 <div className="row">
                     <div className="col-12  text-right alert alert-secondary">
-                        <img className="bannerRecursos" src={images[0].ApoyosPlaneamientoDidacBanner} alt="Encabezado de Documentos de apoyo"/>
-                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={images[0].BtnVolver} alt="Volver" />
+                        <img className="bannerRecursos" src={images[0].ApoyosPlaneamientoDidacBanner} alt="Encabezado de Documentos de apoyo" />
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={images[0].BtnVolver} alt="Volver" />
                     </div>
                 </div>
 
                 <div className="row">
-                    <div className="col-sm-10 font-italic">
+                    <div className="col-10 font-italic">
                         Seleccione primero el nivel que desea, posteriormente el año o modalidad, por último seleccione la materia y
-                        el botón "buscar" para encontrar el resultado deseado. 
+                        el botón "buscar" para encontrar el resultado deseado.
                         <strong>    Importante:</strong> Si desea ver los planes de español en secundaria, seleccione "Español" en asignatura en lugar de seleccionar "Todas".
                     </div>
                 </div> <hr />
 
                 <div className="container">
-                    <form class="form-inline">
                     <div className="row">
                         {/*******Coluimna 1   NIVEL *********/}
-                        <div className="col-sm-3">
-                        
+                        <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel} onClick={this.activarBotonBuscar}  >
                                     <option defaultValue value="" >Seleccione:</option>
-                                  {  listasPlan["Niveles Generales"].map((item, i)=> (
-                                        <option key={"niveles"+i } value={item}> {item} </option>
-                                    )) }                             
+                                    {listasPlan["Niveles Generales"].map((item, i) => (
+                                        <option key={"niveles" + i} value={item}> {item} </option>
+                                    ))}
                                 </select>
                             </div>
-                         
                         </div>
                         {/*******Columna 2******** AÑO*/}
-                        <div className="col-sm-3">
+                        <div className="col-3  ">
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
                                         {
                                             // Si es "educación para adultos" se cambia a modalidad.  Para lo demás es "año"
-                                        this.state.nivel === "Jóvenes y Adultos" && 
-                                                (
-                                                    <span> Modalidad </span>
-                                                )
+                                            this.state.nivel === "Jóvenes y Adultos" &&
+                                            (
+                                                <span> Modalidad </span>
+                                            )
                                         }
                                         {
-                                        // Si es preescolar cambia año por contenido
-                                        this.state.nivel === "Preescolar" && 
-                                              (
-                                                  <span> Contenido </span>
-                                              )
+                                            // Si es preescolar cambia año por contenido
+                                            this.state.nivel === "Preescolar" &&
+                                            (
+                                                <span> Contenido </span>
+                                            )
 
                                         }
                                         {
-                                             // Si es unidocentes cambia año por Correlacionado
-                                        this.state.nivel === "Unidocentes" && 
-                                                (
-                                                    <span> Correlacionado </span>
-                                                )
+                                            // Si es unidocentes cambia año por Correlacionado
+                                            this.state.nivel === "Unidocentes" &&
+                                            (
+                                                <span> Correlacionado </span>
+                                            )
                                         }
                                         {
                                             //año para todos los demás
-                                        (this.state.nivel === "Primaria"  ||  this.state.nivel === "Secundaria" || this.state.nivel === "Interculturalidad Primaria" ||  this.state.nivel === "Interculturalidad Secundaria")  && 
-                                                (
-                                                    <span> Año </span>
-                                                )
+                                            (this.state.nivel === "Primaria" || this.state.nivel === "Secundaria" || this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria") &&
+                                            (
+                                                <span> Año </span>
+                                            )
 
                                         }
                                     </label>
@@ -290,7 +385,7 @@ render() {
                                         (
                                             <option defaultValue value="" > Todos </option>
                                         )
-                                    }                                    
+                                    }
 
                                     {
                                         this.state.nivel === "Preescolar" &&
@@ -339,12 +434,12 @@ render() {
                                         listasPlan["Ciclo Primaria"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
-                                    }                                  
+                                    }
                                 </select>
                             </div>
                         </div>
                         {/*******Columna 3  ASIGNATURA (MATERIA) *********/}
-                        <div className="col-sm-3">
+                        <div className="col-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
@@ -355,13 +450,13 @@ render() {
                                                 )
                                                 :
                                                 (
-                                                    this.state.nivel==="Jóvenes y Adultos" ? 
-                                                    (
-                                                        <span>Módulos</span>
-                                                    ) :
-                                                    (
-                                                        <span>Asignatura</span>
-                                                    )
+                                                    this.state.nivel === "Jóvenes y Adultos" ?
+                                                        (
+                                                            <span>Módulos</span>
+                                                        ) :
+                                                        (
+                                                            <span>Asignatura</span>
+                                                        )
                                                 )
 
 
@@ -371,8 +466,8 @@ render() {
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria} >
                                     {
-                                        this.state.nivel !== "Preescolar" && 
-                                            <option defaultValue value="" >  Todas  </option>                                             
+                                        this.state.nivel !== "Preescolar" &&
+                                        <option defaultValue value="" >  Todas  </option>
                                     }
 
                                     {
@@ -394,10 +489,10 @@ render() {
                                         ))
                                     }
                                     {
-                                        (this.state.nivel ===  "Interculturalidad Primaria" || this.state.nivel ===  "Interculturalidad Secundaria")   &&
-                                            listasPlan.Interculturalidad.map((item, i) => (
+                                        (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria") &&
+                                        listasPlan.Interculturalidad.map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))                                     
+                                        ))
                                     }
                                     {
                                         this.state.anno === "Colegios Académicos Nocturnos (CAN)" &&
@@ -411,37 +506,37 @@ render() {
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
-                                    {                                    
-                                        (this.state.anno === "Escuelas Nocturnas Nivel I"  || this.state.anno === "Escuelas Nocturnas Nivel II" || this.state.anno === "Escuelas Nocturnas Nivel III" || this.state.anno === "Escuelas Nocturnas Nivel IV") &&                                       
+                                    {
+                                        (this.state.anno === "Escuelas Nocturnas Nivel I" || this.state.anno === "Escuelas Nocturnas Nivel II" || this.state.anno === "Escuelas Nocturnas Nivel III" || this.state.anno === "Escuelas Nocturnas Nivel IV") &&
                                         listasPlan["Materias Básicas"].map((item, i) => (
-                                                <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))                                                                                                                                    
-                                    }
-                                    {                                    
-                                        this.state.anno === "IPEC CINDEA Nivel I" &&
-                                            listasPlan["IPEC CINDEA Nivel I"].map((item, i) => (
-                                                <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))                                    
-                                    }
-                                    {                                        
-                                        this.state.anno === "IPEC CINDEA Nivel II" &&
-                                            listasPlan["IPEC CINDEA Nivel II"].map((item, i) => (
-                                                <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))                                     
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
+                                        ))
                                     }
                                     {
-                                        this.state.anno ==="IPEC CINDEA Nivel III" &&
-                                            listasPlan["IPEC CINDEA Nivel III"].map((item, i) => (
-                                                <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))                                     
+                                        this.state.anno === "IPEC CINDEA Nivel I" &&
+                                        listasPlan["IPEC CINDEA Nivel I"].map((item, i) => (
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
+                                        ))
                                     }
-                                    {                                        
-                                        this.state.nivel==="Unidocentes" &&                                                                                (                                                                                       
-                                            listasPlan["Materias Básicas"].map((item,i)=>(
-                                                <option key={"materia" + i} value={item} >  {item}  </option> 
-                                            ))  
-                                        )                                     
-                                    }                                
+                                    {
+                                        this.state.anno === "IPEC CINDEA Nivel II" &&
+                                        listasPlan["IPEC CINDEA Nivel II"].map((item, i) => (
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
+                                        ))
+                                    }
+                                    {
+                                        this.state.anno === "IPEC CINDEA Nivel III" &&
+                                        listasPlan["IPEC CINDEA Nivel III"].map((item, i) => (
+                                            <option key={"materia" + i} value={item} >  {item}  </option>
+                                        ))
+                                    }
+                                    {
+                                        this.state.nivel === "Unidocentes" && (
+                                            listasPlan["Materias Básicas"].map((item, i) => (
+                                                <option key={"materia" + i} value={item} >  {item}  </option>
+                                            ))
+                                        )
+                                    }
 
                                 </select>
                             </div>
@@ -450,7 +545,7 @@ render() {
 
 
                         {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) - mes en Unidocentes */}
-                        <div className="col-sm-3">
+                        <div className="col-3">
                             {//CASO 1: Secundaria-Español
                                 (this.state.materia === "Español" && this.state.nivel === "Secundaria") &&
                                 (
@@ -482,7 +577,7 @@ render() {
                                         </label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
-                                            <option defaultValue  disabled value="seleccione" >Seleccione:</option>
+                                            <option defaultValue disabled value="seleccione" >Seleccione:</option>
                                             { //Frances primaria
                                                 (this.state.materia === "Francés" && this.state.nivel === "Primaria") &&
                                                 (
@@ -533,7 +628,7 @@ render() {
                                                         Mes
                                                             </label>
                                                 </div>
-                                                <select className="custom-select buscadores-materias" id="selMes" onClick={this.handlerObtenerAccion}  >                                                    
+                                                <select className="custom-select buscadores-materias" id="selMes" onClick={this.handlerObtenerAccion}  >
                                                     {
                                                         categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
                                                             (item, i) => (
@@ -552,7 +647,7 @@ render() {
                                                         Acción procedimental
                                                         </label>
                                                 </div>
-                                                <select className="custom-select buscadores-materias" id="selMes" onClick={this.handlerObtenerAccion}  >                                                    
+                                                <select className="custom-select buscadores-materias" id="selMes" onClick={this.handlerObtenerAccion}  >
                                                     {
                                                         categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
                                                             (item, i) => (
@@ -587,8 +682,8 @@ render() {
 
                             {
                                 // Caso 5 Meses de unidocentes
-                                this.state.nivel === "Unidocentes" && 
-                                (                              
+                                this.state.nivel === "Unidocentes" &&
+                                (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
@@ -596,11 +691,11 @@ render() {
                                         </label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                        {
-                                            listasPlan["Meses"].map((item, index) => (
-                                                <option key={"mes" + index} value={item}> {item} </option>
-                                            ))
-                                        }
+                                            {
+                                                listasPlan["Meses"].map((item, index) => (
+                                                    <option key={"mes" + index} value={item}> {item} </option>
+                                                ))
+                                            }
                                         </select>
                                     </div>
 
@@ -611,12 +706,12 @@ render() {
 
                         </div>
                     </div>
-                    </form><br/><br/>
-                    <div className="row"><br/>
+
+                    <div className="row">
                         <div className="col-12 text-right">
                             {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
                                 this.state.buscarActivo &&
-                                <button id="btnBuscar" onClick={this.buscarRegistro} type="button" className="btn btn-secondary btn-lg btn_Buscar">
+                                <button id="btnBuscar" onClick={this.buscarRegistroPorNivel} type="button" className="btn btn-secondary btn-lg btn_Buscar">
                                     <i className="fas fa-search"></i> Buscar
                                     </button>
                             }
