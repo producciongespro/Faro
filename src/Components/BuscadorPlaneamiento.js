@@ -370,7 +370,7 @@ class BuscadorPlaneamiento extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="col-10 font-italic">
+                    <div className="col-sm-10 font-italic">
                         Seleccione primero el nivel que desea, posteriormente el año o modalidad, por último seleccione la materia y
                         el botón "buscar" para encontrar el resultado deseado. 
                         <strong>    Importante:</strong> Si desea ver los planes de español en secundaria, seleccione "Español" en asignatura en lugar de seleccionar "Todas".
@@ -378,9 +378,11 @@ class BuscadorPlaneamiento extends Component {
                 </div> <hr />
 
                 <div className="container">
+                    <form class="form-inline">
                     <div className="row">
                         {/*******Coluimna 1   NIVEL *********/}
-                        <div className="col-3">
+                        <div className="col-sm-3">
+                        
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
@@ -392,9 +394,10 @@ class BuscadorPlaneamiento extends Component {
                                     )) }                             
                                 </select>
                             </div>
+                         
                         </div>
                         {/*******Columna 2******** AÑO*/}
-                        <div className="col-3  ">
+                        <div className="col-sm-3">
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
@@ -490,7 +493,7 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                         </div>
                         {/*******Columna 3  ASIGNATURA (MATERIA) *********/}
-                        <div className="col-3">
+                        <div className="col-sm-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
@@ -596,7 +599,7 @@ class BuscadorPlaneamiento extends Component {
 
 
                         {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) - mes en Unidocentes */}
-                        <div className="col-3">
+                        <div className="col-sm-3">
                             {//CASO 1: Secundaria-Español
                                 (this.state.materia === "Español" && this.state.nivel === "Secundaria") &&
                                 (
@@ -757,8 +760,8 @@ class BuscadorPlaneamiento extends Component {
 
                         </div>
                     </div>
-
-                    <div className="row">
+                    </form><br/><br/>
+                    <div className="row"><br/>
                         <div className="col-12 text-right">
                             {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
                                 this.state.buscarActivo &&
