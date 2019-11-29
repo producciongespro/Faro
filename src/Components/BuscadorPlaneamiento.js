@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
 
-import dataGeneral from '../data/planeamiento/docs_planeamiento_main.json';
-import dataAdultos from '../data/planeamiento/docs_planeamiento_adultos.json';
-import dataSecundariaEspanol from '../data/planeamiento/secundaria_espanol.json';
-import dataIdiomas from '../data/planeamiento/docs_idiomas.json';
+import dataPreescolar from '../data/planeamiento/docs_plan_preescolar.json';
+import dataPrimaria from '../data/planeamiento/docs_plan_primaria.json';
+import dataSecundaria from '../data/planeamiento/docs_plan_secundaria.json';
+import dataAdultos from '../data/planeamiento/docs_plan_adultos.json';
+import dataSecundariaEspanol from '../data/planeamiento/docs_plan_secundaria_espanol.json';
+import dataIdiomas from '../data/planeamiento/docs_plan_idiomas.json';
+import dataIntercultural from '../data/planeamiento/docs_plan_intercultural.json';
+import dataUnidocente from '../data/planeamiento/docs_plan_unidocente.json';
 
-import categoriasPreescolar from '../data/planeamiento/categorias_preescolar.json';
+import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
+import listasPlan from '../data/planeamiento/select_general.json';
+
+import config from '../data/config/config.json';
+
+//TODO Quitar esto cuando el otro esté listo:
 import images from '../data/images.json';
-import cambiarEtiquetas from '../modulos/cambiarEtiquetas';
-import arrayListasPlan from '../data/planeamiento/opciones_select_plan.json';
-const listasPlan = arrayListasPlan[0];
+
+const serv = config.servidor;
+console.log("servidor", serv);
+
+
 
 //console.log("Secudnaria frances", dataFrances );
 //console.log("listasPlan",listasPlan );
@@ -27,8 +38,9 @@ class BuscadorPlaneamiento extends Component {
             materia: "",
             //estado en caso de preescolar para actualizar los select: "desempeño" y acción procedimental
             indiceContenido: 0,
-            indiceDesempeno: 0
-
+            indiceDesempeno: 0,
+            contenido : "",
+            desempeno : ""
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
@@ -42,10 +54,15 @@ class BuscadorPlaneamiento extends Component {
         this.poblacion = "";
         this.apoyos = "";
         this.mensaje = "";
-        this.claseCSSMaterias = "input-group mb-3";
-        this.cambiarEtiquetas = cambiarEtiquetas;
+        //Datos de json para preescolar        
+        this.accion="";
+
+
+        //Clase CSS
+        this.claseCSSMaterias = "input-group mb-3";        
     }
     handlerObtenerNivel = (e) => {
+        //SELECT 1
         this.setState({ nivel: e.target.value },()=> {
             console.log("nivel seleccionado", this.state.nivel);            
         }   );
@@ -54,35 +71,63 @@ class BuscadorPlaneamiento extends Component {
         this.setState({ anno: "" });
         this.mes = "";       
     }
-    handlerObtenerMateria = (e) => {        
-        this.setState({ materia: e.target.value }, ()=>{
-            console.log( "Materia seleccionada", this.state.materia )            
-        });
-        this.setState({ indiceDesempeno: e.target.selectedIndex - 1 }, ()=>{
-            console.log( "indice desempeño", this.state.indiceDesempeno  );
-            
-        }
-            );
-    }
+
     handlerObtenerAnno = (e) => {
+        //SELECT 2
         //almacena en un estado el indice de la opción seleccionada
-        this.setState({ indiceContenido: e.target.selectedIndex - 1 });
-        this.setState({ anno: e.target.value }, ()=>{
-            console.log("Año seleccionado", this.state.anno )            
-        });
+        
+        if (this.state.nivel==="Preescolar") {
+            this.setState({ indiceContenido: e.target.selectedIndex }); 
+            this.setState({ contenido: e.target.value });
+        } else {
+            this.setState({ anno: e.target.value }, ()=>{
+                console.log("Año seleccionado", this.state.anno )            
+            });
+        }
+
     }
+
+    handlerObtenerMateria = (e) => {
+        //SELECT 3        
+        console.log("indice de select Niveles de desempeño: ",e.target.selectedIndex);        
+
+        if (this.state.nivel === "Preescolar") {
+            this.setState({ indiceDesempeno: e.target.selectedIndex }, ()=>{
+                console.log( "indice desempeño", this.state.indiceDesempeno  );            
+            });
+            this.setState({ desempeno: e.target.value }); 
+        } else {
+            this.setState({ materia: e.target.value }, ()=>{
+                console.log( "Materia seleccionada", this.state.materia )            
+            });
+        }  
+    
+    }
+
+    // SELECT 4 (COMODIN) Varía el manejador de eventos según el nivel que se escoja
     handlerObtenerMes = (e) => {
         this.mes = e.target.value;
         console.log("Mes seleccionado", this.mes);        
     }
+
     handlerObtenerTipoPlan = (e) => {
+        //En el caso de idiomas
         this.tipoPlan = e.target.value;
         //console.log("tipoPlan",  this.tipoPlan);        
         // * * * * * Obtiene el texto de la opcion seleccionada del select Nota: Esto es SOLO BUENO!!!!!
         this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;
         console.log("Tipo de plan seleccionado:", this.etiquetaPlan);
     }
-    activarBotonBuscar = (e) => {
+
+    handlerObtenerAccion = (e) => {
+        this.accion = e.target.value;     
+    }
+
+
+    /** Botón Buscar */
+
+    activarBotonBuscar = (e) => {    
+
         //Activa el botón buscar 
         // "seleccione" es el valor que tiene el select por defeto, lo cual significa que no ha sido seleccionado
         if (e.target.value !== "seleccione") {
@@ -92,14 +137,26 @@ class BuscadorPlaneamiento extends Component {
         }
     }
     cargarInformacionBusqueda = () => {
+
+        console.log("********Contenido", this.state.contenido );
+        console.log("***********Desempeño", this.state.desempeno );
+        console.log("*********Accion", this.accion);
+
         //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
         let arrayNivel;
         //console.log("***Nivel", this.state.nivel);
         //console.log("***Mes", this.mes);
-
-        if (this.state.nivel !== "adultos") {
+        if (this.state.nivel === "Preescolar") {
             //console.log("Seleccion: general");
-            arrayNivel = dataGeneral;
+            arrayNivel = dataPreescolar;
+        }
+        if (this.state.nivel === "Primaria") {
+            //console.log("Seleccion: general");
+            arrayNivel = dataPrimaria;
+        }
+        if (this.state.nivel === "Secundaria") {
+            //console.log("Seleccion: general");
+            arrayNivel = dataSecundaria;
         }
         if (this.state.nivel === "adultos") {
             //console.log("Seleccion: Adultos");
@@ -112,6 +169,14 @@ class BuscadorPlaneamiento extends Component {
         if (this.state.materia === "Francés" || this.state.materia === "Inglés" || this.state.materia === "Italiano") {
             arrayNivel = dataIdiomas;
         }
+        if (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria"  ) {
+            //console.log("Seleccion: Adultos");
+            arrayNivel = dataIntercultural;
+        }
+        if (this.state.nivel === "Unidocentes") {
+            //console.log("Seleccion: Adultos");
+            arrayNivel = dataUnidocente;
+        }       
 
         //console.log(arrayNivel);  
 
@@ -154,10 +219,10 @@ class BuscadorPlaneamiento extends Component {
                                     (
                                         <div className="card-header">
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Modalidad: {this.cambiarEtiquetas(arrayNivel[index].anno)}
+                                                Modalidad: { arrayNivel[index].anno  }
                                             </span>
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Materia: {this.cambiarEtiquetas(arrayNivel[index].materia)}
+                                                Asignatura: { arrayNivel[index].materia }
                                             </span>
                                         </div>
                                     ) :
@@ -165,14 +230,22 @@ class BuscadorPlaneamiento extends Component {
                                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                                         <div className="card-header">
                                             <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                                Nivel:  {this.cambiarEtiquetas(arrayNivel[index].nivel)}
+                                                Nivel:  {arrayNivel[index].nivel}
                                             </span>
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Año: {this.cambiarEtiquetas(arrayNivel[index].anno)}
+                                                Año: {arrayNivel[index].anno}
                                             </span>
                                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Asignatura: {this.cambiarEtiquetas(arrayNivel[index].materia)}
+                                                Asignatura: {arrayNivel[index].materia}
                                             </span>
+                                            {
+                                                this.state.materia === "Español"  && this.state.nivel === "Secundaria" &&
+                                                (
+                                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                        Mes: {arrayNivel[index].mes}
+                                                    </span>   
+                                                )
+                                            }
                                             {
                                                 //Plan de estudio en caso de frances e inglés
                                                 (this.state.materia === "frances" || this.state.materia === "ingles") &&
@@ -216,7 +289,7 @@ class BuscadorPlaneamiento extends Component {
                                     : (
                                         // Renderizado para los que no son secudnaria español 
                                         <div className="card-body mr-2">
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={ serv + arrayNivel[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Lineamiento
                                                 </a>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={arrayNivel[index].plantilla} target="_blank" rel="noopener noreferrer" >
@@ -313,7 +386,7 @@ class BuscadorPlaneamiento extends Component {
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel} onClick={this.activarBotonBuscar}  >
-                                    <option defaultValue value="seleccione" >Seleccione:</option>
+                                    <option defaultValue value="" >Seleccione:</option>
                                   {  listasPlan["Niveles Generales"].map((item, i)=> (
                                         <option key={"niveles"+i } value={item}> {item} </option>
                                     )) }                             
@@ -358,7 +431,13 @@ class BuscadorPlaneamiento extends Component {
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
-                                    <option defaultValue value="" > Todos </option>
+                                    {
+                                        this.state.nivel !== "Preescolar" &&
+                                        (
+                                            <option defaultValue value="" > Todos </option>
+                                        )
+                                    }                                    
+
                                     {
                                         this.state.nivel === "Preescolar" &&
                                         categoriasPreescolar.map((item, i) => (
@@ -437,7 +516,11 @@ class BuscadorPlaneamiento extends Component {
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria} >
-                                    <option disabled value="" >  Selecione una opción  </option>
+                                    {
+                                        this.state.nivel !== "Preescolar" && 
+                                            <option defaultValue value="" >  Todas  </option>                                             
+                                    }
+
                                     {
                                         this.state.nivel === "Preescolar" &&
                                         categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i) => (
@@ -596,8 +679,7 @@ class BuscadorPlaneamiento extends Component {
                                                         Mes
                                                             </label>
                                                 </div>
-                                                <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                                    <option disabled defaultValue value="" >Seleccione un mes:</option>
+                                                <select className="custom-select buscadores-materias" id="selMes" onClick={this.handlerObtenerAccion}  >                                                    
                                                     {
                                                         categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
                                                             (item, i) => (
@@ -616,8 +698,7 @@ class BuscadorPlaneamiento extends Component {
                                                         Acción procedimental
                                                         </label>
                                                 </div>
-                                                <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                                    <option disabled defaultValue value="" >Seleccione una opcion:</option>
+                                                <select className="custom-select buscadores-materias" id="selMes" onClick={this.handlerObtenerAccion}  >                                                    
                                                     {
                                                         categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
                                                             (item, i) => (
@@ -681,7 +762,7 @@ class BuscadorPlaneamiento extends Component {
                         <div className="col-12 text-right">
                             {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
                                 this.state.buscarActivo &&
-                                <button onClick={this.cargarInformacionBusqueda} type="button" className="btn btn-secondary btn-lg btn_Buscar">
+                                <button id="btnBuscar" onClick={this.cargarInformacionBusqueda} type="button" className="btn btn-secondary btn-lg btn_Buscar">
                                     <i className="fas fa-search"></i> Buscar
                                     </button>
                             }

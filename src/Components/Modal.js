@@ -11,6 +11,8 @@ const video = assets.video;
 const audio = assets.audio;
 const imgGeneral = assets.img.general;
 const img = assets.img.desarrolloProfesional;
+const imgApoyoPlan = assets.img.apoyosPlan;
+const imgHome = assets.img.home;
 
 class Modal extends Component {
 
@@ -72,7 +74,7 @@ class Modal extends Component {
               tmpContent =   
                     <React.Fragment>
                       <div>
-                        <img  className="img-fluid"  src= {img + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
+                        <img  className="img-fluid"  src= {imgHome + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
                       </div>
                       <div className="texto-indicaciones">
 
@@ -104,7 +106,7 @@ class Modal extends Component {
         this.classModalBody = this.classModalBody + " modal-alto";
         tmpContent = ( <React.Fragment>
                       <div>
-                        <img  className="img-fluid"  src= {img + "bg_indicaciones.png"} alt="fondo indicaciones"/>  
+                        <img  className="img-fluid"  src= {imgApoyoPlan + "modal_habilidad.png"} alt="fondo indicaciones"/>  
                       </div> 
 
                       <div className="texto-indicaciones">
@@ -127,6 +129,36 @@ class Modal extends Component {
                         </React.Fragment>
                       )
          break;
+
+         case "acercaDe" :
+        this.modalAncho =  this.modalAncho + " modal-lg";
+        this.classModalBody = this.classModalBody + " modal-alto";
+        tmpContent = ( <React.Fragment>
+                      <div>
+                        <img  className="img-fluid"  src= {imgHome + "modal_acercade.png"} alt="fondo indicaciones"/>  
+                      </div> 
+
+                      <div className="texto-indicaciones">
+
+                          <h2 className="text-center">Acerca de</h2>               
+                         
+                          <br/>
+                          <div className="container">
+                            <div className="row ">
+                                <div className="col-12 text-justify">
+                                  Texto de créditos
+                                </div>
+                            </div>
+                          
+   
+                          <br/>
+                          <strong>Fuente</strong> <cite> :   MEP.CR  </cite>
+                          </div>  
+                          </div>       
+                        </React.Fragment>
+                      )
+         break;
+
 
       case "opcOrientaciones":
         // this.modalAncho =  this.modalAncho + " modal-lg";

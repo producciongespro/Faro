@@ -1,5 +1,4 @@
-[
-    {
+{
 "Niveles Generales": [
         "Preescolar",
         "Primaria",
@@ -9,8 +8,7 @@
         "Interculturalidad Secundaria",
         "Unidocentes"
 ],
-"Materias Básicas" : [
-    "Todas",
+"Materias Básicas" : [    
     "Ciencias",
     "Español",
     "Estudios Sociales",
@@ -205,8 +203,7 @@
     "Lengua Maleku",
     "Lengua Térraba"
 ],
-"Meses" : [
-    "Todos",
+"Meses" : [    
     "Enero",
     "Febrero",
     "Marzo"
@@ -229,14 +226,8 @@
     "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés"
 ]
 
-
-
-
-
-
-
     }  
-]
+
 
 
 
