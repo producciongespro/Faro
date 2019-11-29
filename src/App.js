@@ -341,10 +341,24 @@ componentDidMount ( ) {
   }
 
   handlerCerrarBuscador = () => {
-    this.setState ({
-      currentPage :  <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
-    }) 
+    switch (this.plataforma) {
+      case "movil":
+      this.setState ({
+        currentPage :  <RecursosDidacticosMovil infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
+      });
+      break;
+      case "escritorio":
+          this.setState ({
+            currentPage :  <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
+      }); 
+      break;
+      default:
+          this.setState ({
+            currentPage :  <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={ this.handlerShowInfoGeneral} onMouseOver={ this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage}/> 
+      });
+      break;
   }
+}
 
 
 
@@ -474,10 +488,24 @@ handlerAbrirCategoriasEvaluacion = (e) => {
 
 handlerCerrarCategoriasEvaluacion = (e) => {  
   e.preventDefault();
-  //console.log(e.target);  
-  this.setState ({
-    currentPage : <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
-  })
+  //console.log(e.target); 
+  switch (this.plataforma) {
+    case "movil": 
+      this.setState ({
+        currentPage : <ApoyosEvaluacionMovil  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
+      });
+    break;
+    case "escritorio":
+      this.setState ({
+        currentPage : <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
+      });
+    break;   
+    default:
+      this.setState ({
+        currentPage : <ApoyosEvaluacion  infoCategory={descripciones[3].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage}  handlerAbrirCategoriasEvaluacion={this.handlerAbrirCategoriasEvaluacion} /> 
+      });
+    break; 
+}
 }
 //Fin Método para abrir Categorías evaluación -----------------------------------------
 
