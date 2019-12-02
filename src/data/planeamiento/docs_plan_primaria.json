@@ -1,0 +1,88 @@
+[
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Artes Industriales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Artes Industriales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Artes Industriales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Artes Industriales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Artes Industriales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Artes Industriales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }
+   
+
+]

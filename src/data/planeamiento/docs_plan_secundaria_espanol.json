@@ -1,9 +1,9 @@
 [
    {
-   "nivel" : "secundaria",
-   "materia" : "espanol",
-   "anno" : "7", 
-   "mes" : "enero",
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Enero",
     "lineamientos" : "https://www.nacion.com/",
     "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
     "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
@@ -12,10 +12,10 @@
     "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
    },
    {
-   "nivel" : "secundaria",
-   "materia" : "espanol",
-   "anno" : "7", 
-   "mes" : "febrero",
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Febrero",
     "lineamientos" : "https://www.nacion.com/",
     "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
     "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
@@ -24,10 +24,10 @@
     "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
    },
    {
-      "nivel" : "secundaria",
-      "materia" : "espanol",
-      "anno" : "8", 
-      "mes" : "enero",
+      "nivel" : "Secundaria",
+      "materia" : "Español",
+      "anno" : "Octavo", 
+      "mes" : "Enero",
        "lineamientos" : "https://www.nacion.com/",
        "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
        "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
@@ -36,10 +36,10 @@
        "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
    },
    {
-      "nivel" : "secundaria",
-      "materia" : "espanol",
-      "anno" : "9", 
-      "mes" : "enero",
+      "nivel" : "Secundaria",
+      "materia" : "Español",
+      "anno" : "Noveno", 
+      "mes" : "Enero",
        "lineamientos" : "https://www.nacion.com/",
        "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
        "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
@@ -48,10 +48,10 @@
        "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
    },
    {
-      "nivel" : "secundaria",
-      "materia" : "espanol",
-      "anno" : "9", 
-      "mes" : "marzo",
+      "nivel" : "Secundaria",
+      "materia" : "Español",
+      "anno" : "Noveno", 
+      "mes" : "Marzo",
        "lineamientos" : "https://www.nacion.com/",
        "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
        "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",

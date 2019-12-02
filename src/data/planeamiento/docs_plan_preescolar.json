@@ -1,0 +1,22 @@
+[
+    {
+        "nivel" : "Preescolar",
+        "contenido" : "Conciencia corporal",
+        "desempeno" : "I",
+        "accion" : "discriminacion",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        
+    },
+    {
+        "nivel" : "Preescolar",
+        "contenido" : "Conciencia corporal",
+        "desempeno" : "II",
+        "accion" : "Reconocimiento",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        
+    } 
+  
+
+]
