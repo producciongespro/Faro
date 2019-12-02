@@ -18,6 +18,7 @@ import ApoyosPlanMovil from "./Components/ApoyosPlanMovil.jsx";
 import ApoyosEvaluacion from "./Components/ApoyosEvaluacion.jsx";
 import ApoyosEvaluacionMovil from "./Components/ApoyosEvaluacionMovil.jsx";
 import RecursosDidacticos from "./Components/RecursosDidacticos.jsx";
+import Construccion from "./Components/Construccion.jsx";
 import RecursosDidacticosMovil from "./Components/RecursosDidacticosMovil.jsx";
 import ApoyoClimaAula from "./Components/ApoyoClimaAula.jsx";
 import ApoyoClimaAulaMovil from "./Components/ApoyoClimaAulaMovil.jsx";
