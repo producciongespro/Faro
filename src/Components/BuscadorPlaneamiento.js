@@ -174,9 +174,11 @@ class BuscadorPlaneamiento extends Component {
         return arrayNivel;
     }
 
-    obtenerFiltradoPrimariaSecundaria = (array, nivel, anno, materia) => {
+    filtrarPrimariaSecundaria = (array, nivel, anno, materia) => {
         //Devuelve un array filtrado con la búsqueda del usuario
         let tmpArray = [];
+        console.log("Array para filtrar", array );
+        
 
         for (let index = 0; index < array.length; index++) {
             if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
@@ -195,11 +197,10 @@ class BuscadorPlaneamiento extends Component {
         */
         switch (this.state.nivel) {
             case "Primaria":
-            case "Secudnaria":
-                this.arrayResultado = this.obtenerFiltradoPrimariaSecundaria(this.obtenerArrayGeneral(), this.state.nivel, this.state.anno, this.state.materia);
+            case "Secundaria":
+                this.arrayResultado = this.filtrarPrimariaSecundaria(this.obtenerArrayGeneral(), this.state.nivel, this.state.anno, this.state.materia);
                 this.tarjetaPrimariaSecudnaria(this.arrayResultado);
                 break;
-
             default:
                 break;
         }
@@ -208,12 +209,9 @@ class BuscadorPlaneamiento extends Component {
 
 
     tarjetaPrimariaSecudnaria = (array) => {
-
-        console.log("array recibido:",array  );
-        
-        var arrayHtml;
+        console.log("array recibido:",array  );        
+        var arrayHtml;         
         var arrayTmp = [];
-
        for (let index = 0; index < array.length; index++) {
         arrayHtml = (
             <div className="card">                
@@ -290,8 +288,13 @@ class BuscadorPlaneamiento extends Component {
             </div>
         );
         arrayTmp.push(arrayHtml);           
-       }
+       }     
        this.setState({ tarjetas: arrayTmp });
+       if (array.length <= 0) {
+        this.mensaje = "No se han encontrado resultados.";
+    } else {
+        this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+    }
     }
 
 
@@ -700,6 +703,15 @@ class BuscadorPlaneamiento extends Component {
 
                         </div>
                     </div>
+                    <br/>           
+
+                    <div className="row">
+                        <div className="col-12">
+                            <h6>
+                                {this.mensaje}
+                            </h6>
+                        </div>
+                    </div>
 
                     <div className="row">
                         <div className="col-12 text-right">
@@ -709,16 +721,6 @@ class BuscadorPlaneamiento extends Component {
                                     <i className="fas fa-search"></i> Buscar
                                     </button>
                             }
-                        </div>
-                    </div>
-
-
-                    <div className="row">
-                        <div className="col-12">
-
-                            <h6>
-                                {this.mensaje}
-                            </h6>
                         </div>
                     </div>
 
