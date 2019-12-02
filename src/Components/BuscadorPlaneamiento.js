@@ -136,60 +136,43 @@ class BuscadorPlaneamiento extends Component {
         this.setState({ buscarActivo: true });
     }
 
-    obtenerArrayGeneral = () => {
-        //Asigna el array del nivel correspondiente de acuerdo al val del select nivel
-        let arrayNivel;
-        //console.log("***Nivel", this.state.nivel);
-        //console.log("***Mes", this.mes);
-        if (this.state.nivel === "Preescolar") {
-            //console.log("Seleccion: general");
-            arrayNivel = dataPreescolar;
+
+
+    filtrarBasico = (nivel, anno, materia) => {
+        let array;
+        let tmpArray = []; 
+        /*
+        Devuelve un array filtrado con la búsqueda del usuario en 
+        primaria, secundaria (excepto español) e interulturalidad
+        */
+       if (this.state.nivel === "Primaria") {
+        //console.log("Seleccion: general");
+        array = dataPrimaria;
+    }
+    if (this.state.nivel === "Secundaria") {
+        //console.log("Seleccion: general");
+        array = dataSecundaria;
+    }
+    if (this.state.nivel === "Interculturalidad Primaria") {
+        //console.log("Seleccion: Adultos");
+        array = dataInterculturalPrimaria;            
+    }
+    if (this.state.nivel === "Interculturalidad Secundaria") {
+        array = dataInterculturalSecundaria; 
+    }
+     
+    for (let index = 0; index < array.length; index++) {
+        if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
+            tmpArray.push(array[index]);
         }
-        if (this.state.nivel === "Primaria") {
-            //console.log("Seleccion: general");
-            arrayNivel = dataPrimaria;
-        }
-        if (this.state.nivel === "Secundaria") {
-            //console.log("Seleccion: general");
-            arrayNivel = dataSecundaria;
-        }
-        if (this.state.nivel === "adultos") {
-            //console.log("Seleccion: Adultos");
-            arrayNivel = dataAdultos;
-        }
-        if (this.state.materia === "Español" && this.state.nivel === "Secundaria") {
-            //console.log("Seleccion: espanolSecundaria");
-            arrayNivel = dataSecundariaEspanol;
-        }
-        if (this.state.materia === "Francés" || this.state.materia === "Inglés" || this.state.materia === "Italiano") {
-            arrayNivel = dataIdiomas;
-        }
-        if (this.state.nivel === "Interculturalidad Primaria") {
-            //console.log("Seleccion: Adultos");
-            arrayNivel = dataInterculturalPrimaria;            
-        }
-        if (this.state.nivel === "Interculturalidad Secundaria") {
-            arrayNivel = dataInterculturalSecundaria; 
-        }
-        if (this.state.nivel === "Unidocentes") {
-            //console.log("Seleccion: Adultos");
-            arrayNivel = dataUnidocente;
-        }
-        return arrayNivel;
+    }
+    return tmpArray;
+       
     }
 
-    filtrarPrimariaSecundaria = (array, nivel, anno, materia) => {
-        //Devuelve un array filtrado con la búsqueda del usuario
-        let tmpArray = [];
-        console.log("Array para filtrar", array );
+    filtrarUnidocente = (nivel, correlacionado, materia, mes )=> {
+        console.log("correlacionado", correlacionado );
         
-
-        for (let index = 0; index < array.length; index++) {
-            if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
-                tmpArray.push(array[index]);
-            }
-        }
-        return tmpArray;
     }
 
 
@@ -204,11 +187,16 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarPrimariaSecundaria(this.obtenerArrayGeneral(), this.state.nivel, this.state.anno, this.state.materia);
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia);
                 this.tarjetaPrimariaSecudnaria(this.arrayResultado);
                 break;
+            case "Unidocentes":
+                this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.anno, this.state.materia);
+                this.tarjetaPrimariaSecudnaria(this.arrayResultado);
+            break;
+
             default:
-                break;
+            break;
         }
         console.log("Resultado", this.arrayResultado);
     }
