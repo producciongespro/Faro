@@ -37,7 +37,7 @@ class BuscadorPlaneamiento extends Component {
             anno: "",
             //unidocentes:
             correlacionado: "",
-            asginatura : "",
+            asginatura: "",
             buscarActivo: false,
             // En etiqueta es asginatura. Dependiendo de la asignatura se despliega información en la GUI
             materia: "",
@@ -51,7 +51,7 @@ class BuscadorPlaneamiento extends Component {
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
                 educaicón para adultos.  Esta propiedad debe camibar materia
         */
-        //Mes se usa en caso de español
+        //Mes se usa en caso de español o unidocentes
         this.mes = "";
         //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
         this.tipoPlan = "";
@@ -114,27 +114,27 @@ class BuscadorPlaneamiento extends Component {
 
         switch (this.state.nivel) {
             case "Preescolar":
-                    this.setState({ indiceDesempeno: e.target.selectedIndex }, () => {
-                        console.log("indice desempeño", this.state.indiceDesempeno);
-                    });
-                    this.setState({ desempeno: e.target.value });
-            break;
-            case "Primaria" :
-            case "Secundaria" :
-            case "Interculturalidad Primaria" :
+                this.setState({ indiceDesempeno: e.target.selectedIndex }, () => {
+                    console.log("indice desempeño", this.state.indiceDesempeno);
+                });
+                this.setState({ desempeno: e.target.value });
+                break;
+            case "Primaria":
+            case "Secundaria":
+            case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
                 this.setState({ materia: e.target.value }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                 });
-            break;
+                break;
             case "Unidocentes":
-                    this.setState({ asignatura: e.target.value }, () => {
-                        console.log("Asignatura seleccionada", this.state.asignatura)
-                    });
-                break        
+                this.setState({ asignatura: e.target.value }, () => {
+                    console.log("Asignatura seleccionada", this.state.asignatura)
+                });
+                break
             default:
-                console.log("Opcion en select materia fuera de rango");                
-            break;
+                console.log("Opcion en select materia fuera de rango");
+                break;
         }
 
 
@@ -226,7 +226,7 @@ class BuscadorPlaneamiento extends Component {
 
         for (let index = 0; index < array.length; index++) {
             //if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura) {
-            if (array[index].nivel === nivel  && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura ) {                
+            if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].mes === mes) {
                 tmpArray.push(array[index]);
             }
         }
@@ -248,7 +248,7 @@ class BuscadorPlaneamiento extends Component {
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
-                this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.correlacionado, this.state.asignatura);
+                this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.correlacionado, this.state.asignatura, this.mes);
                 this.tarjetasUnidocente(this.arrayResultado);
                 break;
 
@@ -358,33 +358,35 @@ class BuscadorPlaneamiento extends Component {
                 <div className="card">
                     {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
-                        <div className="card-header">
-                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                Nivel:  {array[index].nivel}
-                            </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                Correlacionado: {array[index].correlacionado}
-                            </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                Asignatura: {array[index].asignatura}
-                            </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                Mes: {array[index].mes}
-                            </span>
-                        </div>
+                        <React.Fragment>
+                            <div className="card-header">
+                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                    Nivel:  {array[index].nivel}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Correlacionado: {array[index].correlacionado}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Asignatura: {array[index].asignatura}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Mes: {array[index].mes}
+                                </span>
+                            </div>
+                            <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lineamiento
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Plantilla
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Círculo de la Armonía
+                                            </a>
+                            </div>
+                        </React.Fragment>
                     }
-                    {
-                    // Renderizado para los que no son secudnaria español 
-                        <div className="card-body mr-2">
-                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                <i className="fas fa-file-pdf"></i> Lineamiento
-                                            </a>
-                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                <i className="fas fa-file-word"></i> Plantilla
-                                            </a>
-                        </div>
-            }
-        </div>
+                </div>
             );
             arrayTmp.push(arrayHtml);
         }
@@ -652,7 +654,7 @@ class BuscadorPlaneamiento extends Component {
                                         </label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                            <option defaultValue disabled value="seleccione" >Seleccione:</option>
+                                            <option defaultValue value="" >Seleccione:</option>
                                             {
                                                 listasPlan["Meses"].map((item, index) => (
                                                     <option key={"mes" + index} value={item}> {item} </option>
@@ -787,6 +789,7 @@ class BuscadorPlaneamiento extends Component {
                                         </label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                            <option defaultValue value="" > Seleccione: </option>
                                             {
                                                 listasPlan["Meses"].map((item, index) => (
                                                     <option key={"mes" + index} value={item}> {item} </option>
