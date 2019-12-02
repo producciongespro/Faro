@@ -66,7 +66,7 @@ class BuscadorPlaneamiento extends Component {
     handlerObtenerNivel = (e) => {
         //SELECT 1
         this.setState({ nivel: e.target.value }, () => {
-            console.log("nivel seleccionado", this.state.nivel);
+            console.log("nivel seleccionado", this.state.nivel);           
         });
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
@@ -104,6 +104,10 @@ class BuscadorPlaneamiento extends Component {
             });
         }
 
+
+        //Activa el boton buscar:
+        this.activarBotonBuscar();
+
     }
 
     // SELECT 4 (COMODIN) Varía el manejador de eventos según el nivel que se escoja
@@ -126,16 +130,9 @@ class BuscadorPlaneamiento extends Component {
     }
 
     /** Botón Buscar */
-
     activarBotonBuscar = (e) => {
-
         //Activa el botón buscar 
-        // "seleccione" es el valor que tiene el select por defeto, lo cual significa que no ha sido seleccionado
-        if (e.target.value !== "seleccione") {
-            this.setState({ buscarActivo: true });
-        } else {
-            this.setState({ buscarActivo: false });
-        }
+        this.setState({ buscarActivo: true });
     }
 
     obtenerArrayGeneral = () => {
@@ -176,7 +173,6 @@ class BuscadorPlaneamiento extends Component {
         }
         return arrayNivel;
     }
-
 
     obtenerFiltradoPrimariaSecundaria = (array, nivel, anno, materia) => {
         //Devuelve un array filtrado con la búsqueda del usuario
@@ -334,7 +330,7 @@ class BuscadorPlaneamiento extends Component {
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel} onClick={this.activarBotonBuscar}  >
+                                <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel}   >
                                     <option defaultValue value="" >Seleccione:</option>
                                     {listasPlan["Niveles Generales"].map((item, i) => (
                                         <option key={"niveles" + i} value={item}> {item} </option>
@@ -383,7 +379,7 @@ class BuscadorPlaneamiento extends Component {
                                     {
                                         this.state.nivel !== "Preescolar" &&
                                         (
-                                            <option defaultValue value="" > Todos </option>
+                                            <option defaultValue value="" > Seleccione:</option>
                                         )
                                     }
 
@@ -396,13 +392,11 @@ class BuscadorPlaneamiento extends Component {
 
 
                                     {
-                                        this.state.nivel === "Primaria" &&
+                                        this.state.nivel === "Primaria" &&                                        
                                         listasPlan["Años Primaria"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
-
-                                    }
-
+                                    }                                 
                                     {
                                         this.state.nivel === "Secundaria" &&
                                         listasPlan["Años Secundaria"].map((item, i) => (
@@ -464,10 +458,10 @@ class BuscadorPlaneamiento extends Component {
                                         }
                                     </label>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria} >
+                                <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria}  >
                                     {
                                         this.state.nivel !== "Preescolar" &&
-                                        <option defaultValue value="" >  Todas  </option>
+                                        <option defaultValue value="" >  Seleccione:  </option>
                                     }
 
                                     {
