@@ -1,16 +1,27 @@
 [
     {
-        "nivel" : "Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Ciencias",
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Ciencias",
+        "mes" : "febrero",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
         
     },
     {
-        "nivel" : "Primaria",
-        "anno" : "Primero",
-        "materia" : "Español",
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Español",
+        "mes" : "febrero",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Español",
+        "mes" : "febrero",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
     }    
