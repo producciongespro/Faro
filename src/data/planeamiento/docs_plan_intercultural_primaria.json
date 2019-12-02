@@ -1,0 +1,32 @@
+[    
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Boruca",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" :  "Lengua Boruca",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Bribri de Sulá",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" :"Lengua Bribri de Sulá",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx"        
+    }
+   
+
+]

@@ -6,7 +6,7 @@ import dataSecundaria from '../data/planeamiento/docs_plan_secundaria.json';
 import dataAdultos from '../data/planeamiento/docs_plan_adultos.json';
 import dataSecundariaEspanol from '../data/planeamiento/docs_plan_secundaria_espanol.json';
 import dataIdiomas from '../data/planeamiento/docs_plan_idiomas.json';
-import dataIntercultural from '../data/planeamiento/docs_plan_intercultural.json';
+import dataInterculturalPrimaria from '../data/planeamiento/docs_plan_intercultural_primaria.json';
 import dataUnidocente from '../data/planeamiento/docs_plan_unidocente.json';
 
 import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
@@ -163,9 +163,12 @@ class BuscadorPlaneamiento extends Component {
         if (this.state.materia === "Francés" || this.state.materia === "Inglés" || this.state.materia === "Italiano") {
             arrayNivel = dataIdiomas;
         }
-        if (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria") {
+        if (this.state.nivel === "Interculturalidad Primaria") {
             //console.log("Seleccion: Adultos");
-            arrayNivel = dataIntercultural;
+            arrayNivel = dataInterculturalPrimaria;            
+        }
+        if (this.state.nivel === "Interculturalidad Secundaria") {
+            //arrayNivel = dataInterculturalSecundaria; 
         }
         if (this.state.nivel === "Unidocentes") {
             //console.log("Seleccion: Adultos");
@@ -198,6 +201,7 @@ class BuscadorPlaneamiento extends Component {
         switch (this.state.nivel) {
             case "Primaria":
             case "Secundaria":
+            case "Interculturalidad Primaria":
                 this.arrayResultado = this.filtrarPrimariaSecundaria(this.obtenerArrayGeneral(), this.state.nivel, this.state.anno, this.state.materia);
                 this.tarjetaPrimariaSecudnaria(this.arrayResultado);
                 break;
