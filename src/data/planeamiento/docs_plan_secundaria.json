@@ -1,107 +1,528 @@
-[    
+[
     {
         "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Artes Industriales",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+        "anno" : "Sétimo",
+        "materia" : "Matemática",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
-        "materia" : "Artes Industriales",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+        "materia" : "Matemática",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Matemática",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Matemática",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Matemática",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
-        "materia" : "Artes Industriales",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/artes_industriales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+        "materia" : "Ciencias",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Ciencias",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Ciencias",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+        {
+        "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Biología",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx"        
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/07_lin_biologia_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Biología",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/biologia_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/biologia/decimo-undecimo.docx"        
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/07_lin_biologia_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
+
     {
         "nivel" : "Secundaria",
         "anno" : "Décimo",
-        "materia" : "Física",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/fisica/decimo-undecimo.docx"        
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Física",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/fisica/decimo-undecimo.docx"        
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "quimica",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/quimica/plantilla_qumica_Décimo-Undécimo.docx"        
+        "materia" : "Química",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Química",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/quimica/plantilla_qumica_Décimo-Undécimo.docx"        
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Física",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Física",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Cívica",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Cívica",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Cívica",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Cívica",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Cívica",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Psicología",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/13_lin_psicologia_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Filosofía",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/14_lin_filosofia_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación para la Afectividad y la Sexualidad",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/15_lin_afectividad_y_sexualidad_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
         "materia" : "Educación Física",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisica7.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"        
-
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Educación Física",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisicaOctavo.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Educación Física",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisicaNoveno.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Educación Física",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisicaDécimo.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Educación Física",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/educ_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/plantillas/educ-fisica/educ_fisicaUndécimo.docx",
-        "ejemplo" :  "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/secundaria/ejemplos/educ-fisica/educ_fisica.pdf"
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Artes Plásticas",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Musical",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Musical",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Musical",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Musical",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Musical",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Artes Industriales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/23_lin_artes_indusctriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Artes Industriales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/23_lin_artes_indusctriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Artes Industriales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/23_lin_artes_indusctriales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+        {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Francés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Francés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Francés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Francés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Francés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Italiano",
+        "planEstudio":"Lengua Italiana",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Italiano",
+        "planEstudio":"Lengua Italiana",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Italiano",
+        "planEstudio":"Lengua Italiana",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Italiano",
+        "planEstudio":"Lengua Italiana",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Italiano",
+        "planEstudio":"Lengua Italiana",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Italiano",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Italiano",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Italiano",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Italiano",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Italiano",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación para la Vida Cotidiana",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación para la Vida Cotidiana",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación para la Vida Cotidiana",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     }
-
 ]
