@@ -169,19 +169,19 @@ class Modal extends Component {
             <div className="row ">
 
               <div className="col-4 text-center">
-                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
+                <a href="https://recursos.mep.go.cr/faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
                   <img src={imgGeneral + "ico_pdf.png"} alt="pdf documento general"/>                 
                 </a>
               </div>
 
               <div className="col-4 text-center">
-                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
+                <a href="https://recursos.mep.go.cr/faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
                     <img src={imgGeneral + "ico_pdf.png"}  alt="pdf jóvenes y adultos"/>                  
                 </a>
               </div>
 
               <div className="col-4 text-center">
-                <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
+                <a href="https://recursos.mep.go.cr/faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
                     <img src={imgGeneral + "ico_pdf.png"}  alt="pdf educación preescolar"/>                  
                 </a>
               </div>
@@ -191,19 +191,19 @@ class Modal extends Component {
             <div className="row">
 
               <div className="col-4 text-center">
-              <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
+              <a href="https://recursos.mep.go.cr/faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
                   Orientaciones para la mediación generales
                 </a>
               </div>
 
               <div className="col-4 text-center">
-              <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
+              <a href="https://recursos.mep.go.cr/faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
                   Orientaciones para la mediación jóvenes y adultos
               </a>
               </div>
 
               <div className="col-4 text-center">
-              <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
+              <a href="https://recursos.mep.go.cr/faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
                   Orientaciones para la mediación pedagógica por habilidades para la Educación Preescolar
               </a>
               </div>
