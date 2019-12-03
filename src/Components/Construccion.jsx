@@ -13,9 +13,10 @@ const imgGeneral = assets.img.general;
 
 
 
-const Portada = (props) => {
+const Construccion = (props) => {
     return ( 
         <React.Fragment>
+            <h1>En construccion</h1>
         <div className="row">
             <div className="col-12 text-center">
                 <img id="img-portada" src={imgGeneral + "enConstruccion.png"} className="img-fluid" alt="Pantalla en construcción"/>
@@ -33,4 +34,4 @@ const Portada = (props) => {
      );
 }
  
-export default Portada;
+export default Construccion;
