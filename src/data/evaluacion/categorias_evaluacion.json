@@ -8,25 +8,30 @@
                        "detalles" : [
                                         {
                                             "nombre" : "Implementacion e importancia",
-                                            "url" : "https://www.nacion.com/"
+                                            "url" : "faro_referencias/4_ref_apoyos_eval/funciones/diagnostica/diagnostica.pdf"
                                         }
                                     ]
                     },
+
                     {
                         "nombre" : "Formativa",
                         "detalles" : [
-                            {
-                                "nombre" : "Implementacion e importancia",
-                                "url" : "https://www.nacion.com/"
-                            }
-                        ]
+                           {
+                               "nombre" : "Implementación e importancia",
+                               "url" : "faro_referencias/4_ref_apoyos_eval/funciones/formativa/auto_y_coevaluacion.pdf"
+                           },
+                           {
+                               "url" : "faro_referencias/4_ref_apoyos_eval/funciones/formativa/evaluacion_formativa.pdf"
+                           }
+                       ] 
                     },
+
                     {
                         "nombre" : "Sumativa",
                         "detalles" : [
                             {
                                 "nombre" : "Implementacion e importancia",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/sumativa/evaluacion_sumativa.pdf"
                             }
                         ]
                     },
@@ -35,31 +40,31 @@
                         "detalles" : [
                             {
                                 "nombre" : "Mapa Conceptual",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/mapa_conceptual.pdf"
                             },
                             {
                                 "nombre" : "Diario Reflexivo",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/diario_reflexivo.pdf"
                             },
                             {
                                 "nombre" : "Cuestionario",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/cuestionario.pdf"
                             },
                             {
                                 "nombre" : "Portafolio",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/portafolio.pdf"
                             },
                             {
                                 "nombre" : "Diario de clase",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/diario_clase.pdf"
                             },
                             {
                                 "nombre" : "Debate",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/debate.pdf"
                             },
                             {
                                 "nombre" : "Estudio de casos",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/estudio_de_casos.pdf"
                             }
                         ]
                     },
@@ -68,23 +73,23 @@
                         "detalles" : [
                             {
                                 "nombre" : "Escalas de calificación",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/escalas_de_calificacion.pdf"
                             },
                             {
                                 "nombre" : "Rúbricas",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/rubricas.pdf"
                             },
                             {
                                 "nombre" : "Listas de cotejo",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/lista_de_cotejo.pdf"
                             },
                             {
                                 "nombre" : "Registro de desempeño",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/registro_desempeno.pdf"
                             },
                             {
                                 "nombre" : "Registro anecdótico",
-                                "url" : "https://www.nacion.com/"
+                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/registro_anecdotico.pdf"
                             }
                         ]
                     }
@@ -102,11 +107,11 @@
                     "detalles" : [
                        {
                            "nombre" : "Definición",
-                           "url" : "https://www.nacion.com/"
+                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/asistencia/asistencia.pdf"
                        },
                        {
                            "nombre" : "Lineamientos técnicos",
-                           "url" : "https://www.nacion.com/"
+                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/asistencia/lin_asistencia.pdf"
                        }
                    ] 
                 },
@@ -117,11 +122,11 @@
                     "detalles" : [
                        {
                            "nombre" : "Definición",
-                           "url" : "https://www.nacion.com/"
+                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/demostracion/demostracion_aprendido.pdf"
                        },
                        {
                            "nombre" : "Lineamientos técnicos",
-                           "url" : "https://www.nacion.com/"
+                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/demostracion/lin_demostracion_aprendido.pdf"
                        }
                    ] 
                 },
@@ -131,11 +136,11 @@
                     "detalles" : [
                        {
                            "nombre" : "Definición",
-                           "url" : "https://www.nacion.com/"
+                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/proyectos/proyecto.pdf"
                        },
                        {
                            "nombre" : "Lineamientos técnicos",
-                           "url" : "https://www.nacion.com/"
+                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/proyectos/lin_proyecto.pdf"
                        }
                    ] 
                 },
@@ -146,7 +151,7 @@
                     "detalles" : [
                        {
                            "nombre" : "Definición",
-                           "url" : "https://www.nacion.com/"
+                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/pruebas.pdf"
                        },
                        {
                            "nombre" : "Lineamientos técnicos",
@@ -164,7 +169,7 @@
                     "detalles" : [
                        {
                            "nombre" : "Definición",
-                           "url" : "https://www.nacion.com/"
+                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/tareas/tareas.pdf"
                        },
                        {
                            "nombre" : "Lineamientos técnicos",
@@ -179,7 +184,7 @@
                     "detalles" : [
                         {
                             "nombre" : "Definición",
-                            "url" : "https://www.nacion.com/"
+                            "url" : "faro_referencias/4_ref_apoyos_eval/componentes/trabajo_cot/trabajo_cotidiano.pdf"
                         },
                         {
                             "nombre" : "Lineamientos técnicos",
