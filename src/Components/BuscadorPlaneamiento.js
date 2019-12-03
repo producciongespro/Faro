@@ -374,15 +374,28 @@ class BuscadorPlaneamiento extends Component {
                                 </span>
                             </div>
                             <div className="card-body mr-2">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Lineamiento
-                                            </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Plantilla
-                                            </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Círculo de la Armonía
-                                            </a>
+                                <div className="row">
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Lineamiento
+                                </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Plantilla
+                                </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Círculo de la armonía
+                                </a>
+                                </div>
+                                <div className="row">
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].circuloCreatividad} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Círculo de la creatividad
+                                </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].actividadCierre} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Actividad de cierre
+                                </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> No correlacionado
+                                </a>
+                                </div>
                             </div>
                         </React.Fragment>
                     }
