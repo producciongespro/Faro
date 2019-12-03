@@ -6,6 +6,10 @@ import plantillasGenerales from '../data/documentos/lineamientos_planeamiento_ge
 import plantillasPreescolar from '../data/documentos/lineamientos_planeamiento_prescolar.json';
 import plantillasPrimaria from '../data/documentos/lineamientos_planeamiento_primaria.json';
 import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_secundaria.json';
+import config from '../data/config/config.json';
+const serv = config.servidor;
+
+
 
 const video = assets.video;
 const audio = assets.audio;
@@ -169,19 +173,21 @@ class Modal extends Component {
             <div className="row ">
 
               <div className="col-4 text-center">
-                <a href="faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
+              
+              
+                <a href= {serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank"  rel="noopener noreferrer"> 
                   <img src={imgGeneral + "ico_pdf.png"} alt="pdf documento general"/>                 
                 </a>
               </div>
 
               <div className="col-4 text-center">
-                <a href="faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
+                <a href= {serv +"faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf"} target="_blank"  rel="noopener noreferrer"> 
                     <img src={imgGeneral + "ico_pdf.png"}  alt="pdf jóvenes y adultos"/>                  
                 </a>
               </div>
 
               <div className="col-4 text-center">
-                <a href="faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
+                <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf"} target="_blank"  rel="noopener noreferrer"> 
                     <img src={imgGeneral + "ico_pdf.png"}  alt="pdf educación preescolar"/>                  
                 </a>
               </div>
@@ -191,19 +197,19 @@ class Modal extends Component {
             <div className="row">
 
               <div className="col-4 text-center">
-              <a href="faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
+              <a href= {serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"}  target="_blank"  rel="noopener noreferrer"> 
                   Orientaciones para la mediación generales
                 </a>
               </div>
 
               <div className="col-4 text-center">
-              <a href="faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
+              <a href= {serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf"}  target="_blank"  rel="noopener noreferrer"> 
                   Orientaciones para la mediación jóvenes y adultos
               </a>
               </div>
 
               <div className="col-4 text-center">
-              <a href="faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
+              <a href= {serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf"} target="_blank"  rel="noopener noreferrer"> 
                   Orientaciones para la mediación pedagógica por habilidades para la Educación Preescolar
               </a>
               </div>
