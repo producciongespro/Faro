@@ -11,6 +11,19 @@ body {
   margin-top: -5%;
 }
 
+.btn_volv{
+  margin-top: 5%;
+  margin-left: 200%;
+  }
+
+#img-construc{
+max-width: 73%;
+margin-top: -2%;
+margin-left: 16%
+}
+
+
+
 .font-2 {
   font-size: 1.2em;
 }
