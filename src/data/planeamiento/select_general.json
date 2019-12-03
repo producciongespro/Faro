@@ -81,7 +81,7 @@
         "IPEC CINDEA Nivel I",
         "IPEC CINDEA Nivel II",
         "IPEC CINDEA Nivel III"
-],
+        ],
 "Colegios Académicos Nocturnos (CAN)" : [
     "Biología",
     "Ciencias",
@@ -100,7 +100,7 @@
 ],
 "Colegio Nacional de Educación a Distancia (CONED)" : [
 "Biología",
-"Ciencias",
+"Biología",
 "Español",
 "Estudios Sociales",
 "Matemática",
