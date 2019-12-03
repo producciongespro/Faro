@@ -31,6 +31,7 @@ import HomeMovil from './Components/HomeMovil';
 import PortadaMovil from './Components/PortadaMovil';
 import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
+import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
 
 
 

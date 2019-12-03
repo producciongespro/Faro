@@ -591,7 +591,7 @@ class BuscadorPlaneamiento extends Component {
                 <div className="row">
                     <div className="col-10 font-italic">
                         Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
-                        Por último, presiones el botón "buscar" para encontrar el resultado deseado.                        
+                            Por último, presiones el botón "buscar" para encontrar el resultado deseado.
                     </div>
                 </div> <hr />
 
