@@ -308,7 +308,10 @@ componentDidMount ( ) {
       case "DesarrolloProf":
           tmpComponent = this.cargarDesarrollo();
        // tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
-      break;    
+      break; 
+      case "Construccion":        
+      tmpComponent = <Construccion  handlerCerrarEnconstruccion={this.handlerCerrarEnconstruccion} />   
+    break;   
       default:
         console.log("Opción fuera de rango");      
       break;
@@ -330,7 +333,9 @@ componentDidMount ( ) {
      
   }
 
-
+handlerCerrarEnconstruccion = () => {
+  this.setState({ currentPage: this.cargarRecursos() });  
+}
 
   //Abrir buscador de recursos
 
