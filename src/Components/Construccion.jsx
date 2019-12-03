@@ -27,8 +27,7 @@ const Construccion = (props) => {
         <br/>
   
             <div className="row" >
-                    <div className="col-5 text-left"> 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus pariatur repellendus labore reprehenderit quas deserunt sunt aspernatur quam, asperiores, repellat, voluptates consectetur! Eligendi vel voluptate, alias possimus consectetur doloribus neque.                    
+                    <div className="col-5 text-left">              
                     <img alt="Recursos didáctico"  data-tar="RecursosDidacticos"  onClick={props.handlerCerrarEnconstruccion}    className="pepito" src={imgGeneral + "btn_volver.png"  }  />
             </div>
       

@@ -67,7 +67,7 @@ const RecursosDidacticos = (props) => {
         <div  className="row">
           <div className="col-3 hover12 ladoDer">
           <figure>
-          <img className="btn img-fluid" id="jovenesAdultos" src= {images[0].RecDidacticosJovenesAdultos}   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Jovenes y Adultos" />
+          <img className="btn img-fluid" id="jovenesAdultos" src= {images[0].RecDidacticosJovenesAdultos}     data-tar="Construccion"  onClick={props.changePage}    alt="Jovenes y Adultos" />
           </figure>
                   
           </div>
@@ -79,7 +79,7 @@ const RecursosDidacticos = (props) => {
 
           <div className="col-3 hover12 centro">
           <figure>
-          <img className="btn img-fluid" id="banderaAzul" src= {images[0].RecDidacticosBanderaAzul}   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Bandera Azul" />
+          <img className="btn img-fluid" id="banderaAzul" src= {images[0].RecDidacticosBanderaAzul}   data-tar="Construccion"  onClick={props.changePage}    alt="Bandera Azul" />
           </figure>
           </div>
 
