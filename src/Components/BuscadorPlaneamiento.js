@@ -48,6 +48,7 @@ class BuscadorPlaneamiento extends Component {
             //estado en caso de preescolar para actualizar los select: "desempeño" y acción procedimental
             indiceContenido: 0,
             indiceDesempeno: 0,
+            //Preecolar: 
             contenido: "",
             desempeno: ""
         };
@@ -90,7 +91,9 @@ class BuscadorPlaneamiento extends Component {
         switch (this.state.nivel) {
             case "Preescolar":
                 this.setState({ indiceContenido: e.target.selectedIndex });
-                this.setState({ contenido: e.target.value });
+                this.setState({ contenido: e.target.value }, () => {
+                    console.log("Contenido seleccionado:", this.state.contenido);
+                });
                 break;
             case "Primaria":
             case "Secundaria":
@@ -126,7 +129,9 @@ class BuscadorPlaneamiento extends Component {
                 this.setState({ indiceDesempeno: e.target.selectedIndex }, () => {
                     console.log("indice desempeño", this.state.indiceDesempeno);
                 });
-                this.setState({ desempeno: e.target.value });
+                this.setState({ desempeno: e.target.value }, () => {
+                    console.log("Desempeño:", this.state.desempeno);
+                });
                 break;
             case "Primaria":
             case "Secundaria":
@@ -174,6 +179,8 @@ class BuscadorPlaneamiento extends Component {
 
     handlerObtenerAccion = (e) => {
         this.accion = e.target.value;
+        console.log("Accion", this.accion);
+
     }
 
     /** Botón Buscar */
@@ -235,9 +242,9 @@ class BuscadorPlaneamiento extends Component {
     filtrarUnidocente = (nivel, correlacionado, asignatura, mes) => {
         console.log("correlacionado", correlacionado);
         let array;
-        let tmpArray = [];      
+        let tmpArray = [];
         //Carga del array de unidocentes:
-        array = dataUnidocente;      
+        array = dataUnidocente;
 
         for (let index = 0; index < array.length; index++) {
             //if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura) {
@@ -248,15 +255,30 @@ class BuscadorPlaneamiento extends Component {
         return tmpArray;
     }
 
-    filtrarJovenesAdultos = (nivel, modalidad, modulo )=> {
+    filtrarJovenesAdultos = (nivel, modalidad, modulo) => {
         //console.log("modalidad", modalidad);
         let array;
-        let tmpArray = [];      
+        let tmpArray = [];
         //Carga del array de unidocentes:
-        array = dataAdultos;      
+        array = dataAdultos;
 
-        for (let index = 0; index < array.length; index++) {            
+        for (let index = 0; index < array.length; index++) {
             if (array[index].nivel === nivel && array[index].modalidad === modalidad && array[index].modulo === modulo) {
+                tmpArray.push(array[index]);
+            }
+        }
+        return tmpArray;
+    }
+
+    filtrarPreescolar = (nivel, contenido, desempeno, accion) => {
+        //console.log("modalidad", modalidad);
+        let array;
+        let tmpArray = [];
+        //Carga del array de unidocentes:
+        array = dataPreescolar;
+
+        for (let index = 0; index < array.length; index++) {
+            if (array[index].nivel === nivel && array[index].contenido === contenido && array[index].desempeno === desempeno && array[index].accion === accion) {
                 tmpArray.push(array[index]);
             }
         }
@@ -286,6 +308,10 @@ class BuscadorPlaneamiento extends Component {
                 this.arrayResultado = this.filtrarJovenesAdultos(this.state.nivel, this.state.modalidad, this.state.modulo);
                 this.tarjetasJovenesAdultos(this.arrayResultado);
                 break;
+            case "Preescolar":
+                this.arrayResultado = this.filtrarPreescolar(this.state.nivel, this.state.contenido, this.state.desempeno, this.accion);
+                this.tarjetasPreescolar(this.arrayResultado);
+                break;
 
             default:
                 break;
@@ -293,6 +319,7 @@ class BuscadorPlaneamiento extends Component {
         console.log("Resultado", this.arrayResultado);
     }
 
+    /* TARJETAS PARA RENDERIZA*/
     tarjetasBasico = (array) => {
         // Primaria, secudnaria e intercultural
         console.log("array recibido:", array);
@@ -466,7 +493,7 @@ class BuscadorPlaneamiento extends Component {
                                 </span>
                                 <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                     Módulo: {array[index].modulo}
-                                </span>                             
+                                </span>
                             </div>
                             <div className="card-body mr-2">
                                 <div className="row">
@@ -475,7 +502,56 @@ class BuscadorPlaneamiento extends Component {
                                 </a>
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plantilla
-                                </a>                                   
+                                </a>
+                                </div>
+                            </div>
+                        </React.Fragment>
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+    tarjetasPreescolar = (array) => {
+        // Primaria, secudnaria e intercultural
+        console.log("array recibido:", array);
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <React.Fragment>
+                            <div className="card-header">
+                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                    Nivel:  {array[index].nivel}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Contenido: {array[index].contenido}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Desempeño: {array[index].desempeno}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Acción: {array[index].accion}
+                                </span>
+                            </div>
+                            <div className="card-body mr-2">
+                                <div className="row">
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Lineamiento
+                                </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Plantilla
+                                </a>
                                 </div>
                             </div>
                         </React.Fragment>
