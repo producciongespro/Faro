@@ -180,11 +180,10 @@ class BuscadorPlaneamiento extends Component {
         this.setState({ buscarActivo: true });
     }
 
-
-
-    filtrarBasico = (nivel, anno, materia) => {
+    filtrarBasico = (nivel, anno, materia, mes) => {
         let array;
         let tmpArray = [];
+        let mesActivo = false;
         /*
         Devuelve un array filtrado con la búsqueda del usuario en 
         primaria, secundaria (excepto español) e interulturalidad
@@ -193,7 +192,7 @@ class BuscadorPlaneamiento extends Component {
             //console.log("Seleccion: general");
             array = dataPrimaria;
         }
-        if (this.state.nivel === "Secundaria") {
+        if (this.state.nivel === "Secundaria" && this.state.materia !== "Español") {
             //console.log("Seleccion: general");
             array = dataSecundaria;
         }
@@ -205,13 +204,30 @@ class BuscadorPlaneamiento extends Component {
             array = dataInterculturalSecundaria;
         }
 
-        for (let index = 0; index < array.length; index++) {
-            if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
-                tmpArray.push(array[index]);
+        //Condiciones para  las diferentes modalidades con MES:
+        //Español secundaria:
+        if (this.state.nivel=== "Secundaria" && this.state.materia === "Español"  ) {
+            mesActivo=true;
+            array = dataSecundariaEspanol;
+        }
+
+        if (mesActivo) {
+            for (let index = 0; index < array.length; index++) {
+                if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia  && array[index].mes === mes  ) {
+                    tmpArray.push(array[index]);
+                }
+            }  
+        } else {
+            for (let index = 0; index < array.length; index++) {
+                if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
+                    tmpArray.push(array[index]);
+                }
             }
         }
+        //console.log("Array para buscar", array);
+        //console.log("mesActivo", mesActivo);        
+        
         return tmpArray;
-
     }
 
     filtrarUnidocente = (nivel, correlacionado, asignatura, mes) => {
@@ -233,7 +249,8 @@ class BuscadorPlaneamiento extends Component {
         return tmpArray;
     }
 
-    buscarRegistrosPorNivel = () => {
+    //en evento del botón buscar
+    handlerBuscarRegistrosPorNivel = () => {
         /*
         console.log("********Contenido", this.state.contenido );
         console.log("***********Desempeño", this.state.desempeno );
@@ -244,7 +261,7 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia);
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes );
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
@@ -832,7 +849,7 @@ class BuscadorPlaneamiento extends Component {
                         <div className="col-12 text-right">
                             {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
                                 this.state.buscarActivo &&
-                                <button id="btnBuscar" onClick={this.buscarRegistrosPorNivel} type="button" className="btn btn-secondary btn-lg btn_Buscar">
+                                <button id="btnBuscar" onClick={this.handlerBuscarRegistrosPorNivel} type="button" className="btn btn-secondary btn-lg btn_Buscar">
                                     <i className="fas fa-search"></i> Buscar
                                     </button>
                             }
