@@ -314,7 +314,7 @@ class App extends Component {
         tmpComponent = <Construccion handlerCerrarEnconstruccion={this.handlerCerrarEnconstruccion} />
         break;
       case "DocumentosEvaluacion":
-            tmpComponent = <DocumentosEvaluacion />
+            tmpComponent = <DocumentosEvaluacion  handlerCerrarDocumentosEvaluacion={this.handlerCerrarDocumentosEvaluacion}  />
             break;
       default:
         console.log("Opción fuera de rango");
@@ -334,11 +334,16 @@ class App extends Component {
         )
       });
     }
-
   }
+
+
 
   handlerCerrarEnconstruccion = () => {
     this.setState({ currentPage: this.cargarRecursos() });
+  }
+
+  handlerCerrarDocumentosEvaluacion = () => {
+    this.setState({ currentPage: this.cargarEvaluacion() });
   }
 
   //Abrir buscador de recursos
