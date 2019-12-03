@@ -97,7 +97,7 @@ class Modal extends Component {
                           </p>
 
                       </div>
-                      <img  className="img-ico-audio"  src= {img + "audio.png" } onClick={this.playAudio}  alt="Icono activar audio"/>                                         
+                      <img  className="img-ico-audio"  src= {imgGeneral + "audio.png" } onClick={this.playAudio}  alt="Icono activar audio"/>                                         
                       <audio src={audio + "intro.mp3" }  id="audioIntro" ></audio>                                                       
                     </React.Fragment>
       break;
@@ -170,19 +170,19 @@ class Modal extends Component {
 
               <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_mediacion_pedagogica.pdf" target="_blank"  rel="noopener noreferrer"> 
-                  <img src={img + "ico_pdf.png"} alt="pdf documento general"/>                 
+                  <img src={imgGeneral + "ico_pdf.png"} alt="pdf documento general"/>                 
                 </a>
               </div>
 
               <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_adultos.pdf" target="_blank"  rel="noopener noreferrer"> 
-                    <img src={img + "ico_pdf.png"}  alt="pdf jóvenes y adultos"/>                  
+                    <img src={imgGeneral + "ico_pdf.png"}  alt="pdf jóvenes y adultos"/>                  
                 </a>
               </div>
 
               <div className="col-4 text-center">
                 <a href="https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/orientaciones_Preescolar.pdf" target="_blank"  rel="noopener noreferrer"> 
-                    <img src={img + "ico_pdf.png"}  alt="pdf educación preescolar"/>                  
+                    <img src={imgGeneral + "ico_pdf.png"}  alt="pdf educación preescolar"/>                  
                 </a>
               </div>
 
