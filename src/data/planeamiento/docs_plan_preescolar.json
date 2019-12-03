@@ -1,9 +1,18 @@
 [
     {
         "nivel" : "Preescolar",
+        "contenido" : "Diagnóstico",
+        "desempeno" : "III",
+        "accion" : "Plan de marzo",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        
+    },
+    {
+        "nivel" : "Preescolar",
         "contenido" : "Conciencia corporal",
         "desempeno" : "I",
-        "accion" : "discriminacion",
+        "accion" : "Discriminación",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
         
@@ -12,11 +21,20 @@
         "nivel" : "Preescolar",
         "contenido" : "Conciencia corporal",
         "desempeno" : "II",
-        "accion" : "Reconocimiento",
+        "accion" : "Identificación",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
         
-    } 
+    },
+    {
+        "nivel" : "Preescolar",
+        "contenido" : "Conciencia corporal",
+        "desempeno" : "III",
+        "accion" : "Desarrollo",
+        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/ciencias_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        
+    }  
   
 
 ]
