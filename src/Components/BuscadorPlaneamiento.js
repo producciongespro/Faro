@@ -590,9 +590,8 @@ class BuscadorPlaneamiento extends Component {
 
                 <div className="row">
                     <div className="col-10 font-italic">
-                        Seleccione primero el nivel que desea, posteriormente el año o modalidad, por último seleccione la materia y
-                        el botón "buscar" para encontrar el resultado deseado.
-                        <strong>    Importante:</strong> Si desea ver los planes de español en secundaria, seleccione "Español" en asignatura en lugar de seleccionar "Todas".
+                        Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
+                            Por último, presiones el botón "buscar" para encontrar el resultado deseado.
                     </div>
                 </div> <hr />
 
@@ -660,7 +659,7 @@ class BuscadorPlaneamiento extends Component {
                                     {
                                         this.state.nivel === "Preescolar" &&
                                         categoriasPreescolar.map((item, i) => (
-                                            <option key={"anno" + i} value={item.id} >  {item.etiqueta}  </option>
+                                            <option key={"anno" + i} value={item.etiqueta} >  {item.etiqueta}  </option>
                                         ))
                                     }
 
@@ -900,7 +899,7 @@ class BuscadorPlaneamiento extends Component {
                                                     {
                                                         categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
                                                             (item, i) => (
-                                                                <option key={"mes" + i} value={item.id}>  {item.etiqueta} </option>
+                                                                <option key={"mes" + i} value={item.etiqueta}>  {item.etiqueta} </option>
                                                             )
                                                         )
                                                     }
@@ -919,7 +918,7 @@ class BuscadorPlaneamiento extends Component {
                                                     {
                                                         categoriasPreescolar[this.state.indiceContenido].niveles[this.state.indiceDesempeno].acciones.map(
                                                             (item, i) => (
-                                                                <option key={"accion" + i} value={item.id}>  {item.etiqueta} </option>
+                                                                <option key={"accion" + i} value={item.etiqueta}>  {item.etiqueta} </option>
                                                             )
                                                         )
                                                     }
