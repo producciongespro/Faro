@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import images from '../data/images.json';
 import categoriasEvaluacion from '../data/evaluacion/categorias_evaluacion.json';
+import config from '../data/config/config.json';
+const serv = config.servidor;
 
 class EvaluacionCategorias extends Component {
     constructor(props) {
@@ -27,7 +29,10 @@ class EvaluacionCategorias extends Component {
     handlerSeleccionar = (e)=> {
         const i = e.target.dataset.indice;
         console.log("indice", this.subcategorias[i].detalles  );
-        this.setState({ seleccion: this.subcategorias[i].detalles });
+        this.setState({ seleccion: this.subcategorias[i].detalles }, ()=> {
+                console.log("Seleccion", this.state.seleccion );
+                
+        });
 
     }
 
@@ -49,7 +54,7 @@ class EvaluacionCategorias extends Component {
                     <div className="col-4">
                         {                           
                            this.subcategorias.map((item, i)=>(
-                                <button className=" btn-outline-info  btn-block text-center" key={"subcategoria"+i}  data-indice={i}  title={item.nombre} onClick={this.handlerSeleccionar}  > {item.nombre} </button>
+                                <button className="btn-outline-info  btn-block text-center" key={"subcategoria"+i}  data-indice={i}  title={item.nombre} onClick={this.handlerSeleccionar}  > {item.nombre} </button>
                             ))                        
                            
                         }
@@ -62,7 +67,7 @@ class EvaluacionCategorias extends Component {
                                       (item.nombre !== "Ejemplos de ítemes") ? 
                                         (
                                         <div key={"opcion"+i  }  className="alert alert-primary text-center" role="alert">
-                                            <a href={item.url} className="alert-link" target="_blank" rel="noopener noreferrer"  >
+                                            <a href={serv +  item.url} className="alert-link" target="_blank" rel="noopener noreferrer"  >
                                                 {item.nombre}
                                             </a>                                            
                                         </div>
