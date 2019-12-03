@@ -37,6 +37,10 @@ class BuscadorPlaneamiento extends Component {
             anno: "",
             //unidocentes:
             correlacionado: "",
+            //En jóvenes y adultos en lugar de año:
+            modalidad: "",
+            // En jóvens y adultos en lugar de asignatura (materia)
+            modulo: "",
             asginatura: "",
             buscarActivo: false,
             // En etiqueta es asginatura. Dependiendo de la asignatura se despliega información en la GUI
@@ -101,6 +105,11 @@ class BuscadorPlaneamiento extends Component {
                     console.log("Correlacionado", this.state.correlacionado)
                 });
                 break;
+            case "Jóvenes y Adultos":
+                this.setState({ modalidad: e.target.value }, () => {
+                    console.log("modalidad:", this.state.modalidad)
+                });
+                break;
             default:
                 console.log("Opcion fuera de rango en select nivel");
                 break;
@@ -132,21 +141,14 @@ class BuscadorPlaneamiento extends Component {
                     console.log("Asignatura seleccionada", this.state.asignatura)
                 });
                 break
+            case "Jóvenes y Adultos":
+                this.setState({ modulo: e.target.value }, () => {
+                    console.log("Módulo seleccionado:", this.state.modulo)
+                });
+                break;
             default:
                 console.log("Opcion en select materia fuera de rango");
                 break;
-        }
-
-
-        if (this.state.nivel === "Preescolar") {
-            this.setState({ indiceDesempeno: e.target.selectedIndex }, () => {
-                console.log("indice desempeño", this.state.indiceDesempeno);
-            });
-            this.setState({ desempeno: e.target.value });
-        } else {
-            this.setState({ materia: e.target.value }, () => {
-                console.log("Materia seleccionada", this.state.materia)
-            });
         }
 
 
@@ -206,17 +208,17 @@ class BuscadorPlaneamiento extends Component {
 
         //Condiciones para  las diferentes modalidades con MES:
         //Español secundaria:
-        if (this.state.nivel=== "Secundaria" && this.state.materia === "Español"  ) {
-            mesActivo=true;
+        if (this.state.nivel === "Secundaria" && this.state.materia === "Español") {
+            mesActivo = true;
             array = dataSecundariaEspanol;
         }
 
         if (mesActivo) {
             for (let index = 0; index < array.length; index++) {
-                if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia  && array[index].mes === mes  ) {
+                if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].mes === mes) {
                     tmpArray.push(array[index]);
                 }
-            }  
+            }
         } else {
             for (let index = 0; index < array.length; index++) {
                 if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
@@ -226,23 +228,35 @@ class BuscadorPlaneamiento extends Component {
         }
         //console.log("Array para buscar", array);
         //console.log("mesActivo", mesActivo);        
-        
+
         return tmpArray;
     }
 
     filtrarUnidocente = (nivel, correlacionado, asignatura, mes) => {
         console.log("correlacionado", correlacionado);
         let array;
-        let tmpArray = [];
-
-        if (this.state.nivel === "Unidocentes") {
-            //console.log("Seleccion: general");
-            array = dataUnidocente;
-        }
+        let tmpArray = [];      
+        //Carga del array de unidocentes:
+        array = dataUnidocente;      
 
         for (let index = 0; index < array.length; index++) {
             //if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura) {
             if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].mes === mes) {
+                tmpArray.push(array[index]);
+            }
+        }
+        return tmpArray;
+    }
+
+    filtrarJovenesAdultos = (nivel, modalidad, modulo )=> {
+        //console.log("modalidad", modalidad);
+        let array;
+        let tmpArray = [];      
+        //Carga del array de unidocentes:
+        array = dataAdultos;      
+
+        for (let index = 0; index < array.length; index++) {            
+            if (array[index].nivel === nivel && array[index].modalidad === modalidad && array[index].modulo === modulo) {
                 tmpArray.push(array[index]);
             }
         }
@@ -261,12 +275,16 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes );
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes);
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
                 this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.correlacionado, this.state.asignatura, this.mes);
                 this.tarjetasUnidocente(this.arrayResultado);
+                break;
+            case "Jóvenes y Adultos":
+                this.arrayResultado = this.filtrarJovenesAdultos(this.state.nivel, this.state.modalidad, this.state.modulo);
+                this.tarjetasJovenesAdultos(this.arrayResultado);
                 break;
 
             default:
@@ -412,6 +430,52 @@ class BuscadorPlaneamiento extends Component {
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> No correlacionado
                                 </a>
+                                </div>
+                            </div>
+                        </React.Fragment>
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+    tarjetasJovenesAdultos = (array) => {
+        // Primaria, secudnaria e intercultural
+        console.log("array recibido:", array);
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <React.Fragment>
+                            <div className="card-header">
+                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                    Nivel:  {array[index].nivel}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Modalidad: {array[index].modalidad}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Módulo: {array[index].modulo}
+                                </span>                             
+                            </div>
+                            <div className="card-body mr-2">
+                                <div className="row">
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Lineamiento
+                                </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Plantilla
+                                </a>                                   
                                 </div>
                             </div>
                         </React.Fragment>
@@ -623,37 +687,37 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
-                                        this.state.anno === "Colegios Académicos Nocturnos (CAN)" &&
+                                        this.state.modalidad === "Colegios Académicos Nocturnos (CAN)" &&
                                         listasPlan["Colegios Académicos Nocturnos (CAN)"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.anno === "Colegio Nacional de Educación a Distancia (CONED)" &&
+                                        this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)" &&
                                         listasPlan["Colegio Nacional de Educación a Distancia (CONED)"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        (this.state.anno === "Escuelas Nocturnas Nivel I" || this.state.anno === "Escuelas Nocturnas Nivel II" || this.state.anno === "Escuelas Nocturnas Nivel III" || this.state.anno === "Escuelas Nocturnas Nivel IV") &&
+                                        (this.state.modalidad === "Escuelas Nocturnas Nivel I" || this.state.modalidad === "Escuelas Nocturnas Nivel II" || this.state.modalidad === "Escuelas Nocturnas Nivel III" || this.state.modalidad === "Escuelas Nocturnas Nivel IV") &&
                                         listasPlan["Materias Básicas"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.anno === "IPEC CINDEA Nivel I" &&
+                                        this.state.modalidad === "IPEC CINDEA Nivel I" &&
                                         listasPlan["IPEC CINDEA Nivel I"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.anno === "IPEC CINDEA Nivel II" &&
+                                        this.state.modalidad === "IPEC CINDEA Nivel II" &&
                                         listasPlan["IPEC CINDEA Nivel II"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.anno === "IPEC CINDEA Nivel III" &&
+                                        this.state.modalidad === "IPEC CINDEA Nivel III" &&
                                         listasPlan["IPEC CINDEA Nivel III"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
