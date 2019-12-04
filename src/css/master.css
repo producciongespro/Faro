@@ -26,11 +26,9 @@ margin-left: 16%
 
 .btn-documen{
   font-family: 'Montserrat', sans-serif;
-  color:rgb(247, 244, 241);
+  color:#D8D8D8;
   font-weight: bold;
-  background-color:#FF80AA;
-  border-color:#E23365;
-  max-width: 500%;
+  background-color:#E23365;
   }
 
   .btn-celeste{

@@ -18,16 +18,19 @@ const DocumentosEvaluacion = (props) => {
             </div>
 
 
-        <div className="row col-6">
-            <button className="btn-outline text-center btn-documen "> Primer Documento  </button>
-       </div>
+            <div className="row col-6">
+                <a href="faro_referencias/4_ref_apoyos_eval/documentos/evaluacion_diagnostica_2013.pdf" rel="noopener noreferrer">
+                    <button className="Btn btn-lg btn-block text-center btn-documen " onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } data-typecontent ="pdf"  onClick={props.showModal} > PRIMER DOCUMENTO  </button>
+                </a>
+            </div>
 
-              
-       </div>
+       
 
-        
-           
-      
+        </div>
+
+
+
+
     );
 }
 

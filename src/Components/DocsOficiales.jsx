@@ -45,7 +45,6 @@ const DocsOficiales = ( props ) => {
             <div className="col-4 ">
                 <figure>
                 <img className="botones-portada hvr-pop img-fluid" id="fundamentos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {images[0].DocsOficialesFundCurriculo }  data-content= {pdfs.Transformacion_curricular }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
-              
               </figure>
             </div>
             <div className="col-4  ladoIzq">
