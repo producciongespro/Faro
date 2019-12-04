@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 body {
     background-color: #ffff;
 }
@@ -22,6 +24,22 @@ margin-top: -2%;
 margin-left: 16%
 }
 
+.btn-documen{
+  font-family: 'Montserrat', sans-serif;
+  color:rgb(247, 244, 241);
+  font-weight: bold;
+  background-color:#FF80AA;
+  border-color:#E23365;
+  max-width: 500%;
+  }
+
+  .btn-celeste{
+    background-color:blue;
+  }
+
+  .btn-naranja{
+    background-color:orangered;
+  }
 
 
 .font-2 {

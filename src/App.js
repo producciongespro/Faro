@@ -4,6 +4,7 @@ import "./css/animate.css";
 import "./css/master.css";
 import "./css/home.css";
 
+
 //Componentes
 import Modal from "./Components/Modal";
 import Splash from "./Components/Splash.jsx";
