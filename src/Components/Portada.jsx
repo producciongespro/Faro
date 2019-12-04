@@ -9,6 +9,8 @@ const textos = textosJson[0];
 
 
 const img = assets.img.portada;
+console.log("img", img);
+
 
 
 

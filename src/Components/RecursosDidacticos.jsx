@@ -6,6 +6,7 @@ import assets from '../data/config/config.json';
 var links = dsLinks[0];
 const audio = assets.audio;
 const img = assets.img.recursosDidacticos;
+const imgGenerales = assets.img.general;
 
 
 const  reproducirSonido = () => {
@@ -33,14 +34,14 @@ const RecursosDidacticos = (props) => {
       <div  className="col-8">
 
       <div className="botones_salir col-12 ">
-            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {imgGenerales + "btn_salir.png" }  alt="Salir" />
       </div>
 
         <div id="bnt-recursos" className="row">
 
             <div className="col-3 hover12 ladoDer">
               <figure>
-                 <img className="btn img-fluid" id="preescolar" src= {images[0].RecDidacticosPreescolar}   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}   alt="Preescolar" />
+                 <img className="btn img-fluid" id="preescolar" src= {img+"preescolar.png"}   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}   alt="Preescolar" />
               </figure>
               </div>
 
