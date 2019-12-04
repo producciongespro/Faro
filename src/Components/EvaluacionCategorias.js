@@ -13,23 +13,35 @@ class EvaluacionCategorias extends Component {
         super(props);
         this.state = {
             seleccion: null,
-            claseBotones: ""
+            claseBotones: "",
+            claseBotones2: "",
         }
         this.subcategorias = "";
-        this.obtenerSubCategorias();
-     
-
+        this.obtenerSubCategorias();    
     }
-    cambiarClaseBotones = () => {
+
+    componentDidMount =()=>{
+        this.cambiarClaseBotones();
+    }
+
+
+    cambiarClaseBotones = () => {        
         if (this.props.origen === "Funciones de la evaluación") {
-            this.setState({claseBotones : "text-center btn-celeste " },()=>{
-                console.log("clase",this.state.claseBotones);
-                
+            //Estilos para boton 1
+            this.setState({claseBotones : "btn btn-lg btn-block text-center btn-celeste" },()=>{
+                console.log("clase",this.state.claseBotones);                
             });
-           
+            //******Estilos par boton 2 */
+            this.setState({claseBotones2 : "btn btn-lg btn-block text-center btn-celeste" },()=>{
+                console.log("clase",this.state.claseBotones);                
+            });           
         } else {
-            this.setState({claseBotones : "text-center btn-naranja " },()=>{
+            this.setState({claseBotones : "btn btn-lg btn-block text-center btn-naranja" },()=>{
                 console.log("clase",this.state.claseBotones);
+            });
+               //******Estilos par boton 2 */
+               this.setState({claseBotones2 : "btn btn-lg btn-block text-center btn-naranja" },()=>{
+                console.log("clase",this.state.claseBotones);                
             });
         }
     }
@@ -41,8 +53,7 @@ class EvaluacionCategorias extends Component {
                 this.subcategorias = categoriasEvaluacion[index].subcategorias;
             }
         }
-        console.log("this.subcategorias", this.subcategorias);
-        this.cambiarClaseBotones();
+        console.log("this.subcategorias", this.subcategorias);        
     }
 
 
@@ -84,8 +95,9 @@ class EvaluacionCategorias extends Component {
                 <div className="row">
                     <div className="col-4">
                         {
+                            //Botones de la izquierda:
                             this.subcategorias.map((item, i) => (
-                                <button className="btn-outline-info  btn-block text-center" key={"subcategoria" + i} data-indice={i} title={item.nombre} onClick={this.handlerSeleccionar}  > {item.nombre} </button>
+                                <button className={this.state.claseBotones2} key={"subcategoria" + i} data-indice={i} title={item.nombre} onClick={this.handlerSeleccionar}  > {item.nombre} </button>
                             ))
 
                         }
@@ -97,14 +109,14 @@ class EvaluacionCategorias extends Component {
                                 this.state.seleccion.map((item, i) => (
                                     (item.nombre !== "Ejemplos de ítemes") ?
                                         (
-                                            <div key={"opcion" + i} className="alert alert-primary text-center" role="alert">
+                                            <div key={"opcion" + i} className={this.state.claseBotones2} role="button">
                                                 <a href={serv + item.url} className="alert-link" target="_blank" rel="noopener noreferrer"  >
                                                     {item.nombre}
                                                 </a>
                                             </div>
                                         ) :
                                         (
-                                            <div key={"opcion" + i} className={this.state.claseBotones} role="alert" onClick={this.props.handlerAbrirEjemplosItemes}  >
+                                            <div key={"opcion" + i} className={this.state.claseBotones2} role="alert" onClick={this.props.handlerAbrirEjemplosItemes}  >
                                                 <strong> {item.nombre}</strong>
                                             </div>
                                         )
