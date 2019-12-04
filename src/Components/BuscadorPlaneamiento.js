@@ -192,7 +192,9 @@ class BuscadorPlaneamiento extends Component {
     filtrarBasico = (nivel, anno, materia, mes) => {
         let array;
         let tmpArray = [];
-        let mesActivo = false;
+        //el comoidn determina cual es el tipo del cuarto select
+        // puede ser: mes o plan estudios
+        let tipoComodin = "nulo";        
         /*
         Devuelve un array filtrado con la búsqueda del usuario en 
         primaria, secundaria (excepto español) e interulturalidad
@@ -203,7 +205,12 @@ class BuscadorPlaneamiento extends Component {
         }
         if (this.state.nivel === "Secundaria" && this.state.materia !== "Español") {
             //console.log("Seleccion: general");
-            array = dataSecundaria;
+            if (this.state.materia === "Inglés" || this.state.materia === "Francés" || this.state.materia === "Italiano") {
+                array = dataIdiomas;
+                tipoComodin = "plan"
+            } else {
+                array = dataSecundaria;
+            }
         }
         if (this.state.nivel === "Interculturalidad Primaria") {
             //console.log("Seleccion: Adultos");
@@ -216,23 +223,33 @@ class BuscadorPlaneamiento extends Component {
         //Condiciones para  las diferentes modalidades con MES:
         //Español secundaria:
         if (this.state.nivel === "Secundaria" && this.state.materia === "Español") {
-            mesActivo = true;
+            tipoComodin = "mes";
             array = dataSecundariaEspanol;
         }
 
-        if (mesActivo) {
-            for (let index = 0; index < array.length; index++) {
-                if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].mes === mes) {
-                    tmpArray.push(array[index]);
+
+        switch (tipoComodin) {
+            case "mes":
+                for (let index = 0; index < array.length; index++) {
+                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].mes === mes) {
+                        tmpArray.push(array[index]);
+                    }
                 }
-            }
-        } else {
-            for (let index = 0; index < array.length; index++) {
-                if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
-                    tmpArray.push(array[index]);
-                }
-            }
-        }
+                break;
+                case "nulo":
+                    for (let index = 0; index < array.length; index++) {
+                        if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
+                            tmpArray.push(array[index]);
+                        }
+                    }
+                    break;
+
+            default:
+                break;
+        }      
+
+
+
         //console.log("Array para buscar", array);
         //console.log("mesActivo", mesActivo);        
 
