@@ -6,6 +6,7 @@ import assets from '../data/config/config.json';
 const serv = assets.servidor;
 
 const img = assets.img.apoyosEvaluacion;
+const imgGeneral = assets.img.general;
 
 
 class EvaluacionCategorias extends Component {
@@ -28,19 +29,20 @@ class EvaluacionCategorias extends Component {
     cambiarClaseBotones = () => {        
         if (this.props.origen === "Funciones de la evaluación") {
             //Estilos para boton 1
-            this.setState({claseBotones : "btn btn-lg btn-block text-center btn-celeste" },()=>{
+            this.setState({claseBotones : "btn btn-lg btn-block text-center btn-funcion" },()=>{
                 console.log("clase",this.state.claseBotones);                
             });
             //******Estilos par boton 2 */
-            this.setState({claseBotones2 : "btn btn-lg btn-block text-center btn-celeste" },()=>{
+            this.setState({claseBotones2 : "btn btn-lg btn-block text-center btn-funcion2" },()=>{
                 console.log("clase",this.state.claseBotones);                
             });           
         } else {
-            this.setState({claseBotones : "btn btn-lg btn-block text-center btn-naranja" },()=>{
+             //******Estilos par boton 1 */
+            this.setState({claseBotones : "btn btn-lg btn-block text-center btn-component" },()=>{
                 console.log("clase",this.state.claseBotones);
             });
                //******Estilos par boton 2 */
-               this.setState({claseBotones2 : "btn btn-lg btn-block text-center btn-naranja" },()=>{
+               this.setState({claseBotones2 : "btn btn-lg btn-block text-center btn-component2" },()=>{
                 console.log("clase",this.state.claseBotones);                
             });
         }
@@ -71,24 +73,27 @@ class EvaluacionCategorias extends Component {
     render() {
         return (
             <div className="container">
+
                 <div className="jumbotron">
-                    <h1>
+
+                <div className="row">
+                    <div className="col-12 text-right">
+                        <h1>
                         {
                             this.props.origen === "Funciones de la evaluación" ?
 
                                 (
-                                    <img className="" src={img + "encabezado_funciones.png"} alt="Encabezado" />
+                                    <img className="bannerRecursos" src={img + "encabezado_funciones.png"} alt="Encabezado" />
                                 )
                                 :
                                 (
-                                    <img className="" src={img + "encabezado_componentes.png"} alt="Encabezado" />
+                                    <img className="bannerRecursos" src={img + "encabezado_componentes.png"} alt="Encabezado" />
                                 )
                         }
                     </h1>
-                </div>
-                <div className="row">
-                    <div className="col-12 text-right">
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarCategoriasEvaluacion} src={images[0].BtnVolver} alt="Volver" />
+                
+                        <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarCategoriasEvaluacion} src={imgGeneral + "btn_volver.png"} alt="Volver" />
+                    </div>
                     </div>
                 </div>
                 <br /><br />
@@ -97,7 +102,7 @@ class EvaluacionCategorias extends Component {
                         {
                             //Botones de la izquierda:
                             this.subcategorias.map((item, i) => (
-                                <button className={this.state.claseBotones2} key={"subcategoria" + i} data-indice={i} title={item.nombre} onClick={this.handlerSeleccionar}  > {item.nombre} </button>
+                                <button className={this.state.claseBotones} key={"subcategoria" + i} data-indice={i} title={item.nombre} onClick={this.handlerSeleccionar}  > {item.nombre} </button>
                             ))
 
                         }

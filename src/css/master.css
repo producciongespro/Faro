@@ -26,20 +26,41 @@ margin-left: 16%
 
 .btn-documen{
   font-family: 'Montserrat', sans-serif;
-  color:#D8D8D8;
+  color:#BDBDBD;
   font-weight: bold;
   background-color:#E23365;
   }
 
-  .btn-celeste{
-    background-color:blue;
+
+  .btn-funcion{
+    font-family: 'Montserrat', sans-serif;
+    color:#BDBDBD;
+    font-weight: bold;
+    background-color:#1B75BD;
   }
 
-  .btn-naranja{
-    background-color:orangered;
+  .btn-funcion2{
+    font-family: 'Montserrat', sans-serif;
+    color:#BDBDBD;
+    font-weight: bold;
+    background-color:#72CBFC;
   }
 
+  .btn-component{
+    font-family: 'Montserrat', sans-serif;
+    color:#BDBDBD;
+    font-weight: bold;
+    background-color:#DB6505;
+  }
 
+  .btn-component2{
+    font-family: 'Montserrat', sans-serif;
+    color:#BDBDBD;
+    font-weight: bold;
+    background-color:#FF9220;
+  }
+
+ 
 .font-2 {
   font-size: 1.2em;
 }
@@ -660,6 +681,8 @@ padding-top:5%;
   top: 30%;
   right: 5%;
 }
+
+
 
 #div-evaluacion{
   padding-left: 7%;

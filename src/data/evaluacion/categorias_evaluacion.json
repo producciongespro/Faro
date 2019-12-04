@@ -1,199 +1,183 @@
 [
-   {
-       "categoria" :  "Funciones de la evaluación",
-       "subcategorias"  :           
-               [
+    {
+        "categoria": "Funciones de la evaluación",
+        "subcategorias": [
+            {
+                "nombre": "Diagnóstica",
+                "detalles": [
                     {
-                       "nombre" : "Diagnóstica",
-                       "detalles" : [
-                                        {
-                                            "nombre" : "Implementacion e importancia",
-                                            "url" : "faro_referencias/4_ref_apoyos_eval/funciones/diagnostica/diagnostica.pdf"
-                                        }
-                                    ]
-                    },
-
-                    {
-                        "nombre" : "Formativa",
-                        "detalles" : [
-                           {
-                               "nombre" : "Implementación e importancia",
-                               "url" : "faro_referencias/4_ref_apoyos_eval/funciones/formativa/auto_y_coevaluacion.pdf"
-                           },
-                           {
-                               "url" : "faro_referencias/4_ref_apoyos_eval/funciones/formativa/evaluacion_formativa.pdf"
-                           }
-                       ] 
-                    },
-
-                    {
-                        "nombre" : "Sumativa",
-                        "detalles" : [
-                            {
-                                "nombre" : "Implementacion e importancia",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/sumativa/evaluacion_sumativa.pdf"
-                            }
-                        ]
-                    },
-                    {
-                        "nombre" : "Técnicas de evaluación",
-                        "detalles" : [
-                            {
-                                "nombre" : "Mapa Conceptual",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/mapa_conceptual.pdf"
-                            },
-                            {
-                                "nombre" : "Diario Reflexivo",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/diario_reflexivo.pdf"
-                            },
-                            {
-                                "nombre" : "Cuestionario",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/cuestionario.pdf"
-                            },
-                            {
-                                "nombre" : "Portafolio",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/portafolio.pdf"
-                            },
-                            {
-                                "nombre" : "Diario de clase",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/diario_clase.pdf"
-                            },
-                            {
-                                "nombre" : "Debate",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/debate.pdf"
-                            },
-                            {
-                                "nombre" : "Estudio de casos",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/estudio_de_casos.pdf"
-                            }
-                        ]
-                    },
-                    {
-                        "nombre" : "Instrumentos para la evaluacióh",
-                        "detalles" : [
-                            {
-                                "nombre" : "Escalas de calificación",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/escalas_de_calificacion.pdf"
-                            },
-                            {
-                                "nombre" : "Rúbricas",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/rubricas.pdf"
-                            },
-                            {
-                                "nombre" : "Listas de cotejo",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/lista_de_cotejo.pdf"
-                            },
-                            {
-                                "nombre" : "Registro de desempeño",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/registro_desempeno.pdf"
-                            },
-                            {
-                                "nombre" : "Registro anecdótico",
-                                "url" : "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/registro_anecdotico.pdf"
-                            }
-                        ]
+                        "nombre": "Implementacion e importancia",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/diagnostica/diagnostica.pdf"
                     }
-                 ]          
-   },
-
-
-   {
-    "categoria" : "Componentes de la calificación", 
-    "subcategorias" :
-            [
-
-                {
-                    "nombre" : "Asistencia",
-                    "detalles" : [
-                       {
-                           "nombre" : "Definición",
-                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/asistencia/asistencia.pdf"
-                       },
-                       {
-                           "nombre" : "Lineamientos técnicos",
-                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/asistencia/lin_asistencia.pdf"
-                       }
-                   ] 
-                },
-
-
-                {
-                    "nombre" : "Demostración de lo aprendido",
-                    "detalles" : [
-                       {
-                           "nombre" : "Definición",
-                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/demostracion/demostracion_aprendido.pdf"
-                       },
-                       {
-                           "nombre" : "Lineamientos técnicos",
-                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/demostracion/lin_demostracion_aprendido.pdf"
-                       }
-                   ] 
-                },
-
-                {
-                    "nombre" : "Proyectos",
-                    "detalles" : [
-                       {
-                           "nombre" : "Definición",
-                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/proyectos/proyecto.pdf"
-                       },
-                       {
-                           "nombre" : "Lineamientos técnicos",
-                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/proyectos/lin_proyecto.pdf"
-                       }
-                   ] 
-                },
-
-
-                {
-                    "nombre" : "Pruebas",
-                    "detalles" : [
-                       {
-                           "nombre" : "Definición",
-                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/pruebas.pdf"
-                       },
-                       {
-                           "nombre" : "Lineamientos técnicos",
-                           "url" : "https://www.nacion.com/"
-                       },
-                       {
-                           "nombre" : "Ejemplos de ítemes",
-                           "url" : "https://www.nacion.com/"
-                       }
-                   ] 
-                },
-
-                {
-                    "nombre" : "Tareas",
-                    "detalles" : [
-                       {
-                           "nombre" : "Definición",
-                           "url" : "faro_referencias/4_ref_apoyos_eval/componentes/tareas/tareas.pdf"
-                       },
-                       {
-                           "nombre" : "Lineamientos técnicos",
-                           "url" : "https://www.nacion.com/"
-                       }
-                   ] 
-                },
-
-
-                 {
-                    "nombre" : "Trabajo cotidiano",
-                    "detalles" : [
-                        {
-                            "nombre" : "Definición",
-                            "url" : "faro_referencias/4_ref_apoyos_eval/componentes/trabajo_cot/trabajo_cotidiano.pdf"
-                        },
-                        {
-                            "nombre" : "Lineamientos técnicos",
-                            "url" : "https://www.nacion.com/"
-                        }
-                    ]                       
-                 }
-              
-                                  
-              ]          
-    } 
+                ]
+            },
+            {
+                "nombre": "Formativa",
+                "detalles": [
+                    {
+                        "nombre": "Implementación e importancia",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/formativa/evaluacion_formativa.pdf"
+                    },
+                    {
+                        "nombre": "Autoevaluación y Coevaluación",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/formativa/auto_y_coevaluacion.pdf"
+                    }
+                ]
+            },
+            {
+                "nombre": "Sumativa",
+                "detalles": [
+                    {
+                        "nombre": "Implementacion e importancia",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/sumativa/evaluacion_sumativa.pdf"
+                    }
+                ]
+            },
+            {
+                "nombre": "Técnicas de evaluación",
+                "detalles": [
+                    {
+                        "nombre": "Mapa Conceptual",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/mapa_conceptual.pdf"
+                    },
+                    {
+                        "nombre": "Diario Reflexivo",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/diario_reflexivo.pdf"
+                    },
+                    {
+                        "nombre": "Cuestionario",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/cuestionario.pdf"
+                    },
+                    {
+                        "nombre": "Portafolio",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/portafolio.pdf"
+                    },
+                    {
+                        "nombre": "Diario de clase",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/diario_clase.pdf"
+                    },
+                    {
+                        "nombre": "Debate",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/debate.pdf"
+                    },
+                    {
+                        "nombre": "Estudio de casos",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/tecnicas/estudio_de_casos.pdf"
+                    }
+                ]
+            },
+            {
+                "nombre": "Instrumentos para la evaluacióh",
+                "detalles": [
+                    {
+                        "nombre": "Escalas de calificación",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/escalas_de_calificacion.pdf"
+                    },
+                    {
+                        "nombre": "Rúbricas",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/rubricas.pdf"
+                    },
+                    {
+                        "nombre": "Listas de cotejo",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/lista_de_cotejo.pdf"
+                    },
+                    {
+                        "nombre": "Registro de desempeño",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/registro_desempeno.pdf"
+                    },
+                    {
+                        "nombre": "Registro anecdótico",
+                        "url": "faro_referencias/4_ref_apoyos_eval/funciones/instrumentos/registro_anecdotico.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoria": "Componentes de la calificación",
+        "subcategorias": [
+            {
+                "nombre": "Asistencia",
+                "detalles": [
+                    {
+                        "nombre": "Definición",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/asistencia/asistencia.pdf"
+                    },
+                    {
+                        "nombre": "Lineamientos técnicos",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/asistencia/lin_asistencia.pdf"
+                    }
+                ]
+            },
+            {
+                "nombre": "Demostración de lo aprendido",
+                "detalles": [
+                    {
+                        "nombre": "Definición",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/demostracion/demostracion_aprendido.pdf"
+                    },
+                    {
+                        "nombre": "Lineamientos técnicos",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/demostracion/lin_demostracion_aprendido.pdf"
+                    }
+                ]
+            },
+            {
+                "nombre": "Proyectos",
+                "detalles": [
+                    {
+                        "nombre": "Definición",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/proyectos/proyecto.pdf"
+                    },
+                    {
+                        "nombre": "Lineamientos técnicos",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/proyectos/lin_proyecto.pdf"
+                    }
+                ]
+            },
+            {
+                "nombre": "Pruebas",
+                "detalles": [
+                    {
+                        "nombre": "Definición",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/pruebas.pdf"
+                    },
+                    {
+                        "nombre": "Lineamientos técnicos",
+                        "url": "https://www.nacion.com/"
+                    },
+                    {
+                        "nombre": "Ejemplos de ítemes",
+                        "url": "https://www.nacion.com/"
+                    }
+                ]
+            },
+            {
+                "nombre": "Tareas",
+                "detalles": [
+                    {
+                        "nombre": "Definición",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/tareas/tareas.pdf"
+                    },
+                    {
+                        "nombre": "Lineamientos técnicos",
+                        "url": "https://www.nacion.com/"
+                    }
+                ]
+            },
+            {
+                "nombre": "Trabajo cotidiano",
+                "detalles": [
+                    {
+                        "nombre": "Definición",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/trabajo_cot/trabajo_cotidiano.pdf"
+                    },
+                    {
+                        "nombre": "Lineamientos técnicos",
+                        "url": "https://www.nacion.com/"
+                    }
+                ]
+            }
+        ]
+    }
 ]
