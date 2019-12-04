@@ -189,12 +189,12 @@ class BuscadorPlaneamiento extends Component {
         this.setState({ buscarActivo: true });
     }
 
-    filtrarBasico = (nivel, anno, materia, mes) => {
+    filtrarBasico = (nivel, anno, materia, mes, tipoPlan ) => {
         let array;
         let tmpArray = [];
         //el comoidn determina cual es el tipo del cuarto select
         // puede ser: mes o plan estudios
-        let tipoComodin = "nulo";        
+        let tipoComodin = "nulo";
         /*
         Devuelve un array filtrado con la búsqueda del usuario en 
         primaria, secundaria (excepto español) e interulturalidad
@@ -229,6 +229,13 @@ class BuscadorPlaneamiento extends Component {
 
 
         switch (tipoComodin) {
+            case "nulo":
+                for (let index = 0; index < array.length; index++) {
+                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
+                        tmpArray.push(array[index]);
+                    }
+                }
+                break;
             case "mes":
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].mes === mes) {
@@ -236,17 +243,19 @@ class BuscadorPlaneamiento extends Component {
                     }
                 }
                 break;
-                case "nulo":
-                    for (let index = 0; index < array.length; index++) {
-                        if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
-                            tmpArray.push(array[index]);
-                        }
+            case "plan":
+                for (let index = 0; index < array.length; index++) {
+                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].tipoPlan === tipoPlan) {
+                        tmpArray.push(array[index]);
                     }
-                    break;
+                }
+                break;
+
 
             default:
+                console.log("tipoComodin seleccionado fuera de rango");
                 break;
-        }      
+        }
 
 
 
@@ -314,7 +323,7 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes);
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan );
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":

@@ -37,7 +37,7 @@
     },
     {
         "nivel" : "secundaria",
-        "anno" : "7",
+        "anno" : "Sétimo",
         "materia" : "Francés",
         "tipoPlan" : "lenguaExtranjera",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
@@ -46,7 +46,7 @@
     },
     {
         "nivel" : "secundaria",
-        "anno" : "7",
+        "anno" : "Sétimo",
         "materia" : "Francés",
         "tipoPlan" : "francesAvanzado",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
@@ -99,13 +99,12 @@
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "7",
-        "materia" : "ingles",
-        "tipoPlan" : "lenguaExtranjera",
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Inglés",
+        "tipoPlan" : " Inglés como Lengua Extranjera",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
-        "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
     {
         "nivel" : "secundaria",
