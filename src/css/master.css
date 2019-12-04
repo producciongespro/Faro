@@ -10,7 +10,7 @@ body {
 
 #img-portada{
   max-width: 70%;
-  margin-top: -5%;
+  margin-top: -3%;
 }
 
 .btn_volv{
@@ -60,6 +60,11 @@ margin-left: 16%
     background-color:#FF9220;
   }
 
+
+  .dado-dec{
+    margin-top: -136%;
+    margin-left: 910%;
+  }
  
 .font-2 {
   font-size: 1.2em;
@@ -416,7 +421,7 @@ padding-top:5%;
   margin-top: -56%;
   font-weight: 550;
   font-size: 1.2vw;
-  line-height: 19px;
+  line-height: 26px;
   width: 80%;
   height: auto;
   margin-left: 8%;
@@ -580,48 +585,48 @@ padding-top:5%;
 
   #preescolar{
     margin-top: 30%;
-    max-width: 80%;
+    max-width: 90%;
     margin-left: 60%;
   }
 
   #primaria{
     margin-top: 30%;
-    max-width: 80%;
+    max-width: 90%;
     margin-left: 29%;
     
   }
 
   #secundaria{
     margin-top: 30%;
-    max-width: 80%;
+    max-width: 90%;
   }
 
     #intercultural{
     margin-top: 30%;
-    max-width: 80%;
+    max-width: 90%;
     margin-left: -20%;
   }
 
   #jovenesAdultos{
    margin-top: -7%;
-   max-width: 80%;
+   max-width: 90%;
    margin-left: 60%;
   }
 
   #feriaCientifica{
     margin-top: -7%;
-    max-width: 80%;
+    max-width: 90%;
     margin-left: 29%;
   }
 
   #banderaAzul{
     margin-top: -7%;
-    max-width: 80%;
+    max-width: 90%;
   }
 
   #educatico{
     margin-top: -7%;
-    max-width: 80%;
+    max-width: 90%;
     margin-left: -20%;
   }
 

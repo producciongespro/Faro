@@ -86,7 +86,7 @@ class EjemplosItemesEvaluacion extends Component {
 
                     <div className="col-3">
                         <select onClick={this.handlerSeleccionarAsignatura} >
-                            <option value="" defaultValue disabled> Seleccione una asginatura </option>
+                            <option value="" defaultValue disabled> Seleccione una asignatura </option>
                             {
                                 this.state.asignaturas != null && (
                                     this.state.asignaturas.map((item, i) => (

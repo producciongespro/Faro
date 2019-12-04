@@ -20,9 +20,8 @@ const DocumentosEvaluacion = (props) => {
                 </div>
             </div>
 
-            <div className="row col-12">
-            <div className="col-3">            </div>
-
+            <div className="row">
+            
             <div className="col-sm-6">
                 <a href={serv + "faro_referencias/4_ref_apoyos_eval/documentos/evaluacion_diagnostica_2013.pdf"} target="_blank"  rel="noopener noreferrer">
                     <button className="Btn btn-lg btn-block text-center btn-documen " onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } data-typecontent ="pdf"  onClick={props.showModal} > Evaluación Diagnóstica 2013  </button> <br/>
@@ -47,10 +46,12 @@ const DocumentosEvaluacion = (props) => {
                 <a href={serv + "faro_referencias/4_ref_apoyos_eval/documentos/reglto_eva._decrt_ejec_40862-mep.pdf"} target="_blank"  rel="noopener noreferrer">
                     <button className="Btn btn-lg btn-block text-center btn-documen " onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } data-typecontent ="pdf"  onClick={props.showModal} > Registro de Evaluación Decreto ejecutivo 40862 </button> <br/>
                 </a>
+            
+            <div className="col-3"> 
+            <img className="dado-dec" src={img + "caja2.png"} alt="Imagen decorativa" />
+           </div>
 
-
-            <div className="col-3">            </div>
-             </div>
+            </div>
 
             </div>
 
