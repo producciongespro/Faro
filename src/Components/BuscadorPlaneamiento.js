@@ -189,7 +189,17 @@ class BuscadorPlaneamiento extends Component {
         this.setState({ buscarActivo: true });
     }
 
-    filtrarBasico = (nivel, anno, materia, mes, tipoPlan ) => {
+    filtrarBasico = (nivel, anno, materia, mes, tipoPlan) => {
+
+        console.log("parametros de filtrarBasico***********************");
+        console.log("nivel", nivel);
+        console.log("anno", anno);
+        console.log("mes", mes);
+        console.log("********tipoPlan", tipoPlan);
+        console.log("tipoPlan", tipoPlan);
+        console.log("*****************************************************");
+
+
         let array;
         let tmpArray = [];
         //el comoidn determina cual es el tipo del cuarto select
@@ -203,13 +213,13 @@ class BuscadorPlaneamiento extends Component {
             //console.log("Seleccion: general");
             array = dataPrimaria;
         }
+        if (this.state.nivel === "Secundaria" && this.state.materia !== "Español") {
+            //console.log("Seleccion: general");
+            array = dataSecundaria;
+        }
         if (this.state.materia === "Inglés" || this.state.materia === "Francés" || this.state.materia === "Italiano") {
             array = dataIdiomas;
             tipoComodin = "plan"
-        }      
-        if (this.state.nivel === "Secundaria" && this.state.materia !== "Español") {
-            //console.log("Seleccion: general");
-                array = dataSecundaria;           
         }
         if (this.state.nivel === "Interculturalidad Primaria") {
             //console.log("Seleccion: Adultos");
@@ -243,8 +253,9 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
             case "plan":
+                console.log("-----Busqueda con plan --- ARRAY:", array);
                 for (let index = 0; index < array.length; index++) {
-                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
+                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].tipoPlan === tipoPlan) {
                         tmpArray.push(array[index]);
                     }
                 }
@@ -322,7 +333,7 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan );
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan);
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
@@ -339,7 +350,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
 
             default:
-                console.log("Nvel fuera de rango");                
+                console.log("Nvel fuera de rango");
                 break;
         }
         console.log("Resultado", this.arrayResultado);
@@ -861,7 +872,7 @@ class BuscadorPlaneamiento extends Component {
                                 //Fin caso 1 **************************
                             }
                             {//CASO 2: primaria en frances - ingles
-                                (this.state.materia === "Francés" || this.state.materia === "Inglés") &&
+                                (this.state.materia === "Francés" || this.state.materia === "Inglés" || this.state.materia === "Italiano") &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
@@ -899,6 +910,14 @@ class BuscadorPlaneamiento extends Component {
                                                 (this.state.materia === "Inglés" && this.state.nivel === "Secundaria") &&
                                                 (
                                                     listasPlan["Plan Estudios Inglés Secundaria"].map((item, index) => (
+                                                        <option key={"plan" + index} value={item} data-etiqueta={item} > {item} </option>
+                                                    ))
+                                                )
+                                            }
+                                            {  //italiano secundaria
+                                                (this.state.materia === "Italiano" && this.state.nivel === "Secundaria") &&
+                                                (
+                                                    listasPlan["Plan Estudios Italiano Secundaria"].map((item, index) => (
                                                         <option key={"plan" + index} value={item} data-etiqueta={item} > {item} </option>
                                                     ))
                                                 )
