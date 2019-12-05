@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import images from '../data/images.json';
 import categoriasEvaluacion from '../data/evaluacion/categorias_evaluacion.json';
 import assets from '../data/config/config.json';
 

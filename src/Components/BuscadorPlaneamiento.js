@@ -14,9 +14,11 @@ import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
 import listasPlan from '../data/planeamiento/select_general.json';
 
 import config from '../data/config/config.json';
+// esto se repite....es necesario? Ana T.
+import assets from '../data/config/config.json';
 
-//TODO Quitar esto cuando el otro esté listo:
-import images from '../data/images.json';
+const img = assets.img.apoyosPlan;
+const imgGenerales = assets.img.general;
 
 const serv = config.servidor;
 console.log("servidor", serv);
@@ -189,7 +191,17 @@ class BuscadorPlaneamiento extends Component {
         this.setState({ buscarActivo: true });
     }
 
-    filtrarBasico = (nivel, anno, materia, mes, tipoPlan ) => {
+    filtrarBasico = (nivel, anno, materia, mes, tipoPlan) => {
+/*
+        console.log("parametros de filtrarBasico***********************");
+        console.log("nivel", nivel);
+        console.log("anno", anno);
+        console.log("mes", mes);
+        console.log("********tipoPlan", tipoPlan);
+        console.log("tipoPlan", tipoPlan);
+        console.log("*****************************************************");
+*/
+
         let array;
         let tmpArray = [];
         //el comoidn determina cual es el tipo del cuarto select
@@ -203,13 +215,19 @@ class BuscadorPlaneamiento extends Component {
             //console.log("Seleccion: general");
             array = dataPrimaria;
         }
-        if (this.state.materia === "Inglés" || this.state.materia === "Francés" || this.state.materia === "Italiano") {
-            array = dataIdiomas;
-            tipoComodin = "plan"
-        }      
         if (this.state.nivel === "Secundaria" && this.state.materia !== "Español") {
             //console.log("Seleccion: general");
-                array = dataSecundaria;           
+            array = dataSecundaria;
+        }
+        if (this.state.materia === "Inglés" || this.state.materia === "Francés" || this.state.materia === "Italiano") {
+            array = dataIdiomas;
+            if (this.state.nivel === "Secundaria") {
+                tipoComodin = "plan"    
+            }
+            if (this.state.nivel==="Primaria" && this.state.materia !== "Italiano"  ) {
+                tipoComodin = "plan" 
+            }
+            
         }
         if (this.state.nivel === "Interculturalidad Primaria") {
             //console.log("Seleccion: Adultos");
@@ -229,6 +247,8 @@ class BuscadorPlaneamiento extends Component {
 
         switch (tipoComodin) {
             case "nulo":
+                console.log("tipoComodin: NULO");
+                
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
                         tmpArray.push(array[index]);
@@ -236,6 +256,7 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
             case "mes":
+                    console.log("tipoComodin: MES");
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].mes === mes) {
                         tmpArray.push(array[index]);
@@ -243,8 +264,9 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
             case "plan":
+                console.log("-----Busqueda con PLAN --- ARRAY:", array);
                 for (let index = 0; index < array.length; index++) {
-                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
+                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].tipoPlan === tipoPlan) {
                         tmpArray.push(array[index]);
                     }
                 }
@@ -322,7 +344,7 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan );
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan);
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
@@ -339,7 +361,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
 
             default:
-                console.log("Nvel fuera de rango");                
+                console.log("Nvel fuera de rango");
                 break;
         }
         console.log("Resultado", this.arrayResultado);
@@ -609,8 +631,8 @@ class BuscadorPlaneamiento extends Component {
 
                 <div className="row">
                     <div className="col-12  text-right alert alert-secondary">
-                        <img className="bannerRecursos" src={images[0].ApoyosPlaneamientoDidacBanner} alt="Encabezado de Documentos de apoyo" />
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={images[0].BtnVolver} alt="Volver" />
+                        <img className="bannerRecursos" src= {img + "encabezado_documentos_apoyo.png"} alt="Encabezado de Documentos de apoyo" />
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"}  alt="Volver" />
                     </div>
                 </div>
 
@@ -861,7 +883,7 @@ class BuscadorPlaneamiento extends Component {
                                 //Fin caso 1 **************************
                             }
                             {//CASO 2: primaria en frances - ingles
-                                (this.state.materia === "Francés" || this.state.materia === "Inglés") &&
+                                (this.state.materia === "Francés" || this.state.materia === "Inglés" || this.state.materia === "Italiano") &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
@@ -899,6 +921,14 @@ class BuscadorPlaneamiento extends Component {
                                                 (this.state.materia === "Inglés" && this.state.nivel === "Secundaria") &&
                                                 (
                                                     listasPlan["Plan Estudios Inglés Secundaria"].map((item, index) => (
+                                                        <option key={"plan" + index} value={item} data-etiqueta={item} > {item} </option>
+                                                    ))
+                                                )
+                                            }
+                                            {  //italiano secundaria
+                                                (this.state.materia === "Italiano" && this.state.nivel === "Secundaria") &&
+                                                (
+                                                    listasPlan["Plan Estudios Italiano Secundaria"].map((item, index) => (
                                                         <option key={"plan" + index} value={item} data-etiqueta={item} > {item} </option>
                                                     ))
                                                 )
@@ -952,26 +982,7 @@ class BuscadorPlaneamiento extends Component {
                                             </div>
                                         )
                                 )
-                            }
-
-                            {
-                                // Caso 4 Italiano en secundaria
-                                (this.state.materia === "italiano" && this.state.nivel === "secundaria") &&
-                                (
-                                    <div className="input-group mb-3">
-                                        <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selPlan">
-                                                Plan de estudio
-                                        </label>
-                                        </div>
-                                        <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
-                                            <option disabled defaultValue value="" >Seleccione una opcion:</option>
-                                            <option value="Lengua italiana" >Lengua italiana</option>
-                                            <option value="Aspectos Culturales" > Aspectos Culturales </option>
-                                        </select>
-                                    </div>
-                                )
-                            }
+                            }                        
 
                             {
                                 // Caso 5 Meses de unidocentes

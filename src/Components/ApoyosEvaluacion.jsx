@@ -1,6 +1,5 @@
 import React from 'react';
 import assets from '../data/config/config.json';
-import images from "../data/images.json";
 import textosJson from "../data/textos.json";
 
 const audio = assets.audio;

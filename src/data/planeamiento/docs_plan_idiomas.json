@@ -11,7 +11,7 @@
     },        
     {
         "nivel" : "Secundaria",
-        "anno" : "Ocatvo",
+        "anno" : "Octavo",
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
@@ -20,7 +20,7 @@
     },
     {
         "nivel" : "Secundaria",
-        "anno" : "Ocatvo",
+        "anno" : "Octavo",
         "materia" : "Inglés",
         "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
@@ -28,27 +28,28 @@
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
     },
     {
-        "nivel" : "primaria",
-        "anno" : "3",
-        "materia" : "italiano",
-        "tipoPlan" : "",
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Inglés",
+        "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
     },
     {
-        "nivel" : "secundaria",
-        "anno" : "7",
-        "materia" : "italiano",
-        "tipoPlan" : "Aspectos Culturales",
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Inglés",
+        "tipoPlan" : "Secciones Bilingües Español-Inglés",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
         "ejemplo" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/primaria/ejemplos/espanol/espanol-primero.pdf"
     },
+ 
     {
-        "nivel" : "secundaria",
-        "anno" : "8",
-        "materia" : "italiano",
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Italiano",
         "tipoPlan" : "Aspectos Culturales",
         "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html",
