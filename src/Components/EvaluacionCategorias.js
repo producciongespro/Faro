@@ -28,20 +28,20 @@ class EvaluacionCategorias extends Component {
     cambiarClaseBotones = () => {        
         if (this.props.origen === "Funciones de la evaluación") {
             //Estilos para boton 1
-            this.setState({claseBotones : "btn btn-lg btn-block text-center btn-funcion" },()=>{
+            this.setState({claseBotones : "btn txt-ajustable btn-lg btn-block text-center btn-funcion" },()=>{
                 console.log("clase",this.state.claseBotones);                
             });
             //******Estilos par boton 2 */
-            this.setState({claseBotones2 : "btn btn-lg btn-block text-center btn-funcion2" },()=>{
+            this.setState({claseBotones2 : "btn txt-ajustable btn-lg btn-block text-center btn-funcion2" },()=>{
                 console.log("clase",this.state.claseBotones);                
             });           
         } else {
              //******Estilos par boton 1 */
-            this.setState({claseBotones : "btn btn-lg btn-block text-center btn-component" },()=>{
+            this.setState({claseBotones : "btn btn-lg txt-ajustable btn-block text-center btn-component" },()=>{
                 console.log("clase",this.state.claseBotones);
             });
                //******Estilos par boton 2 */
-               this.setState({claseBotones2 : "btn btn-lg btn-block text-center btn-component2" },()=>{
+               this.setState({claseBotones2 : "btn btn-lg txt-ajustable btn-block text-center btn-component2" },()=>{
                 console.log("clase",this.state.claseBotones);                
             });
         }
@@ -97,7 +97,7 @@ class EvaluacionCategorias extends Component {
                 </div>
                 <br /><br />
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-5">
                         {
                             //Botones de la izquierda:
                             this.subcategorias.map((item, i) => (
@@ -106,7 +106,7 @@ class EvaluacionCategorias extends Component {
 
                         }
                     </div>
-                    <div className="col-1"></div>
+                    {/* <div className="col-1"></div> */}
                     <div className="col-6">
                         {
                             this.state.seleccion !== null && (

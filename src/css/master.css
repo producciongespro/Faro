@@ -18,6 +18,11 @@ body {
   margin-left: 200%;
   }
 
+  .txt-ajustable{
+    white-space: normal;
+    font-size: 1rem;
+  }
+
 #img-construc{
 max-width: 73%;
 margin-top: -2%;
