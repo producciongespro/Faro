@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import images from '../data/images.json';
 import ejemplosItemesPrimaria from '../data/evaluacion/ejemplos_itemes_primaria.json';
 import ejemplosItemesSecundaria from '../data/evaluacion/ejemplos_itemes_secundaria.json';
+import assets from '../data/config/config.json';
+
 
 //console.log("ejemplosItemesPrimaria",ejemplosItemesPrimaria[0]["Estudios sociales"] );
-
+const img = assets.img.apoyosEvaluacion;
+const imgGeneral = assets.img.general; 
 
 class EjemplosItemesEvaluacion extends Component {
     constructor(props) {
@@ -20,7 +23,7 @@ class EjemplosItemesEvaluacion extends Component {
     //CArga su valor en tiempo de ejecución dependiendo del nivel seleccionado
     ejemplosItemesJson = "";
     materiasPrimaria = ["Ciencias", "Francés", "Italiano", "Inglés", "Matemática"];
-    materiasSecundaria = ["Biología","Ciencias", "Cívica","Español","Estudios Sociales", "Física", "Francés", "Inglés", "Italiano","Química"]
+    materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Química"]
 
     handlerCargarAsignatura = (e) => {
         const nivel = e.target.value;
@@ -40,6 +43,8 @@ class EjemplosItemesEvaluacion extends Component {
         }
     }
 
+    
+
     handlerSeleccionarAsignatura = (e) => {
         this.valor = e.target.value;
         //console.log("valor", this.valor);             
@@ -55,17 +60,15 @@ class EjemplosItemesEvaluacion extends Component {
     render() {
         return (
             <div className="container">
-                <div className="jumbotron">
-                    <h2>Ejemplos de itemes</h2>
-                
                 <div className="row">
-                    <div className="col-12 text-right">
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarEjemplosItemes} src={images[0].BtnVolver} alt="Volver" />
+                    <div className="col-12  text-right alert alert-secondary">
+                        <img className="bannerRecursos" src={img + "encabezado_ejemplos.jpg"} alt="Encabezado de " />
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarEjemplosItemes} src={imgGeneral + "btn_volver.png"} alt="Volver" />
                     </div>
                 </div>
-                </div>
 
-           
+
+
                 <div className="input-group-prepend">
                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNiv">
                         Nivel
@@ -80,8 +83,8 @@ class EjemplosItemesEvaluacion extends Component {
                             <option value="secundaria"> Secundaria </option>
                         </select>
                     </div>
-            
-           
+
+
 
 
                     <div className="col-3">
@@ -95,20 +98,20 @@ class EjemplosItemesEvaluacion extends Component {
                                 )
                             }
                         </select>
-                    </div>                    
+                    </div>
                     <div className="col-7">
                         <button onClick={this.handlerCargarItemes} className="btn btn-secondary btn-lg">
                             Buscar
                         </button>
-                    </div>                    
-                   
+                    </div>
+
                 </div>
                 <div className="row">
                     <div className="col-12">
                         {
-                          this.state.itemes != null && (
-                              <span> <strong> {this.state.itemes.length} </strong>  Itemes encontrados  </span>
-                            ) 
+                            this.state.itemes != null && (
+                                <span> <strong> {this.state.itemes.length} </strong>  Itemes encontrados  </span>
+                            )
                         }
                     </div>
                 </div>
@@ -118,9 +121,9 @@ class EjemplosItemesEvaluacion extends Component {
                             this.state.itemes != null &&
                             (
                                 this.state.itemes.map((item, i) => (
-                                    <a key={"item" + i} href={item.url} className="badge badge-info etiquetas-1" target="_blank"  rel="noopener noreferrer">
+                                    <a key={"item" + i} href={item.url} className="badge badge-info etiquetas-1" target="_blank" rel="noopener noreferrer">
                                         {item.nombre}
-                                    </a>                                    
+                                    </a>
                                 ))
                             )
                         }
