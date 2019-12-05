@@ -52,7 +52,7 @@ class BuscadorPlaneamiento extends Component {
             indiceDesempeno: 0,
             //Preecolar: 
             contenido: "",
-            desempeno: ""
+            desempeno: ""            
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
@@ -70,6 +70,8 @@ class BuscadorPlaneamiento extends Component {
         this.accion = "";
         //Array filtrado con los criterios establecidos por el usuario
         this.arrayResultado = null;
+        //tipo de materia presenta dos valores: complementaria y básíca
+        this.tipoMateria = null;
 
 
         //Clase CSS
@@ -125,13 +127,13 @@ class BuscadorPlaneamiento extends Component {
     handlerObtenerMateria = (e) => {
         //SELECT 3        
         console.log("indice de select Niveles de desempeño: ", e.target.selectedIndex);
-
+        let valor = e.target.value;
         switch (this.state.nivel) {
             case "Preescolar":
                 this.setState({ indiceDesempeno: e.target.selectedIndex }, () => {
                     console.log("indice desempeño", this.state.indiceDesempeno);
                 });
-                this.setState({ desempeno: e.target.value }, () => {
+                this.setState({ desempeno: valor }, () => {
                     console.log("Desempeño:", this.state.desempeno);
                 });
                 break;
@@ -139,17 +141,17 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.setState({ materia: e.target.value }, () => {
+                this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                 });
                 break;
             case "Unidocentes":
-                this.setState({ asignatura: e.target.value }, () => {
+                this.setState({ asignatura: valor }, () => {
                     console.log("Asignatura seleccionada", this.state.asignatura)
                 });
                 break
             case "Jóvenes y Adultos":
-                this.setState({ modulo: e.target.value }, () => {
+                this.setState({ modulo: valor }, () => {
                     console.log("Módulo seleccionado:", this.state.modulo)
                 });
                 break;
@@ -158,6 +160,12 @@ class BuscadorPlaneamiento extends Component {
                 break;
         }
 
+
+
+        console.log("Materias complementarias",listasPlan["Materias Complementarias"] );
+        console.log("Materia seleccionada", valor);
+        
+        
 
         //Activa el boton buscar:
         this.activarBotonBuscar();
