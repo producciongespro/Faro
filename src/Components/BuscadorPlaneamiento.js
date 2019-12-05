@@ -203,14 +203,13 @@ class BuscadorPlaneamiento extends Component {
             //console.log("Seleccion: general");
             array = dataPrimaria;
         }
+        if (this.state.materia === "Inglés" || this.state.materia === "Francés" || this.state.materia === "Italiano") {
+            array = dataIdiomas;
+            tipoComodin = "plan"
+        }      
         if (this.state.nivel === "Secundaria" && this.state.materia !== "Español") {
             //console.log("Seleccion: general");
-            if (this.state.materia === "Inglés" || this.state.materia === "Francés" || this.state.materia === "Italiano") {
-                array = dataIdiomas;
-                tipoComodin = "plan"
-            } else {
-                array = dataSecundaria;
-            }
+                array = dataSecundaria;           
         }
         if (this.state.nivel === "Interculturalidad Primaria") {
             //console.log("Seleccion: Adultos");
@@ -245,7 +244,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
             case "plan":
                 for (let index = 0; index < array.length; index++) {
-                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].tipoPlan === tipoPlan) {
+                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
                         tmpArray.push(array[index]);
                     }
                 }
@@ -340,6 +339,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
 
             default:
+                console.log("Nvel fuera de rango");                
                 break;
         }
         console.log("Resultado", this.arrayResultado);
@@ -348,7 +348,7 @@ class BuscadorPlaneamiento extends Component {
     /* TARJETAS PARA RENDERIZA*/
     tarjetasBasico = (array) => {
         // Primaria, secudnaria e intercultural
-        console.log("array recibido:", array);
+        console.log("array recibido en tarjetas:", array);
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {
@@ -376,7 +376,7 @@ class BuscadorPlaneamiento extends Component {
                             }
                             {
                                 //Plan de estudio en caso de frances e inglés
-                                (this.state.materia === "frances" || this.state.materia === "ingles") &&
+                                (this.state.materia === "Francés" || this.state.materia === "Inglés") &&
                                 (
                                     <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                         Plan: {this.etiquetaPlan}
