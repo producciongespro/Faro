@@ -190,7 +190,7 @@ class BuscadorPlaneamiento extends Component {
     }
 
     filtrarBasico = (nivel, anno, materia, mes, tipoPlan) => {
-
+/*
         console.log("parametros de filtrarBasico***********************");
         console.log("nivel", nivel);
         console.log("anno", anno);
@@ -198,7 +198,7 @@ class BuscadorPlaneamiento extends Component {
         console.log("********tipoPlan", tipoPlan);
         console.log("tipoPlan", tipoPlan);
         console.log("*****************************************************");
-
+*/
 
         let array;
         let tmpArray = [];
@@ -219,7 +219,13 @@ class BuscadorPlaneamiento extends Component {
         }
         if (this.state.materia === "Inglés" || this.state.materia === "Francés" || this.state.materia === "Italiano") {
             array = dataIdiomas;
-            tipoComodin = "plan"
+            if (this.state.nivel === "Secundaria") {
+                tipoComodin = "plan"    
+            }
+            if (this.state.nivel==="Primaria" && this.state.materia !== "Italiano"  ) {
+                tipoComodin = "plan" 
+            }
+            
         }
         if (this.state.nivel === "Interculturalidad Primaria") {
             //console.log("Seleccion: Adultos");
@@ -239,6 +245,8 @@ class BuscadorPlaneamiento extends Component {
 
         switch (tipoComodin) {
             case "nulo":
+                console.log("tipoComodin: NULO");
+                
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
                         tmpArray.push(array[index]);
@@ -246,6 +254,7 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
             case "mes":
+                    console.log("tipoComodin: MES");
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].mes === mes) {
                         tmpArray.push(array[index]);
@@ -253,7 +262,7 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
             case "plan":
-                console.log("-----Busqueda con plan --- ARRAY:", array);
+                console.log("-----Busqueda con PLAN --- ARRAY:", array);
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].tipoPlan === tipoPlan) {
                         tmpArray.push(array[index]);
@@ -971,26 +980,7 @@ class BuscadorPlaneamiento extends Component {
                                             </div>
                                         )
                                 )
-                            }
-
-                            {
-                                // Caso 4 Italiano en secundaria
-                                (this.state.materia === "italiano" && this.state.nivel === "secundaria") &&
-                                (
-                                    <div className="input-group mb-3">
-                                        <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selPlan">
-                                                Plan de estudio
-                                        </label>
-                                        </div>
-                                        <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
-                                            <option disabled defaultValue value="" >Seleccione una opcion:</option>
-                                            <option value="Lengua italiana" >Lengua italiana</option>
-                                            <option value="Aspectos Culturales" > Aspectos Culturales </option>
-                                        </select>
-                                    </div>
-                                )
-                            }
+                            }                        
 
                             {
                                 // Caso 5 Meses de unidocentes
