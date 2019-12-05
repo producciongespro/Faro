@@ -1,5 +1,4 @@
 import React from 'react';
-import images from "../data/images.json";
 import assets from '../data/config/config.json';
 //import textos from "../data/textos.json";
 import dsPdfs from "../data/pdf.json";
