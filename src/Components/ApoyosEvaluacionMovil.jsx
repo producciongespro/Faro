@@ -5,12 +5,7 @@ import textosJson from "../data/textos.json";
 
 
 const textos = textosJson[0];
-const  reproducirSonido = () => {
-  console.log("Audio");  
-  var tmpAudio = document.getElementById("evaluacion");
-  tmpAudio.currentTime = 0;
-  tmpAudio.play();
-}
+
 
 
 const ApoyosEvaluacionMovil = (props) => {
