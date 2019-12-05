@@ -1,5 +1,4 @@
 import React from 'react';
-import images from "../data/images.json";
 import dsLinks from "../data/links.json";
 import assets from '../data/config/config.json';
 

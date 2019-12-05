@@ -1,5 +1,4 @@
 import React  from 'react';
-import images from "../data/images.json";
 import assets from '../data/config/config.json';
 import pdfJson from "../data/pdf.json";
 //import linksJson from "../data/links.json";
