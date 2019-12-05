@@ -216,15 +216,21 @@
     "Francés como Lengua Extranjera",
      "Secciones de Francés avanzado"
 ],
-"Plan Estudios Inglés Primaria" : [
-    "lenguaExtranjera",
+"Plan Estudios Inglés Primaria" : [    
     "Inglés como Lengua Extranjera",
     "Secciones Bilingües Español-Inglés"
 ],
 "Plan Estudios Inglés Secundaria" : [
     "Inglés como Lengua Extranjera",        
     "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés"
+],
+"Plan Estudios Italiano Secundaria" : [
+    "Lengua Italiana",        
+    "Aspectos Culturales"
 ]
+
+
+
 
     }  
 
