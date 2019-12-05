@@ -86,7 +86,8 @@ const RecursosDidacticos = (props) => {
           <div className="col-3 hover12 ladoIzq">
           <figure>
           <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
-          <img className="btn img-fluid" id="educatico" src= {img+"educatico.png"} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="educatico" />
+          {/* <img className="btn img-fluid" id="educatico" src= {img+"educatico.png"} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="educatico" /> */}
+          <img className="btn img-fluid" id="educatico" src= {img+"educatico.png"} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } alt="educatico" />
           </a>
           </figure>
           </div>

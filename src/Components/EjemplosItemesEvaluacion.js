@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import images from '../data/images.json';
+
+
 import ejemplosItemesPrimaria from '../data/evaluacion/ejemplos_itemes_primaria.json';
 import ejemplosItemesSecundaria from '../data/evaluacion/ejemplos_itemes_secundaria.json';
+
+import assets from '../data/config/config.json';
+const imgGenerales = assets.img.general;
 
 //console.log("ejemplosItemesPrimaria",ejemplosItemesPrimaria[0]["Estudios sociales"] );
 
@@ -60,7 +64,7 @@ class EjemplosItemesEvaluacion extends Component {
                 
                 <div className="row">
                     <div className="col-12 text-right">
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarEjemplosItemes} src={images[0].BtnVolver} alt="Volver" />
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarEjemplosItemes} src= {imgGenerales + "btn_volver.png"} alt="Volver" />
                     </div>
                 </div>
                 </div>

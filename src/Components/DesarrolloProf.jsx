@@ -3,12 +3,8 @@ import dsPdfs from "../data/pdf.json";
 import dsLinks from "../data/links.json";
 import assets from '../data/config/config.json';
 
-
-
 var pdfs = dsPdfs[0],
 links = dsLinks[0];
-
-
 
 const audio = assets.audio;
 const img = assets.img.desarrolloProfesional;

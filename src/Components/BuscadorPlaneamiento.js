@@ -14,9 +14,11 @@ import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
 import listasPlan from '../data/planeamiento/select_general.json';
 
 import config from '../data/config/config.json';
+// esto se repite....es necesario? Ana T.
+import assets from '../data/config/config.json';
 
-//TODO Quitar esto cuando el otro esté listo:
-import images from '../data/images.json';
+const img = assets.img.apoyosPlan;
+const imgGenerales = assets.img.general;
 
 const serv = config.servidor;
 console.log("servidor", serv);
@@ -609,8 +611,8 @@ class BuscadorPlaneamiento extends Component {
 
                 <div className="row">
                     <div className="col-12  text-right alert alert-secondary">
-                        <img className="bannerRecursos" src={images[0].ApoyosPlaneamientoDidacBanner} alt="Encabezado de Documentos de apoyo" />
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={images[0].BtnVolver} alt="Volver" />
+                        <img className="bannerRecursos" src= {img + "encabezado_documentos_apoyo.png"} alt="Encabezado de Documentos de apoyo" />
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"}  alt="Volver" />
                     </div>
                 </div>
 

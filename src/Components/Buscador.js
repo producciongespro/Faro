@@ -6,7 +6,11 @@ import dataItaliano from '../data/recursos/recursos_italiano.json';
 import dataMediacion from '../data/recursos/recursos_mediacion.json';
 import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import dataPreescolar from '../data/recursos/recursos_preescolar.json';
-import images from '../data/images.json';
+
+import assets from '../data/config/config.json';
+
+const img = assets.img.recursosDidacticos;
+const imgGenerales = assets.img.general;
 
 
 var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación"]
@@ -347,30 +351,30 @@ class Buscador extends Component {
 
                     <div className="col-sm-12  text-right">
                         {
-                            this.props.origen === "preescolar" && <img alt="Preescolar" className="bannerRecursos" src={images[0].RecDidacticosPreescolarBanner} />
+                            this.props.origen === "preescolar" && <img alt="Preescolar" className="bannerRecursos" src= {img + "preescolar_banner.png"} />
                         }
                         {
-                            this.props.origen === "primaria" && <img alt="Primaria" className="bannerRecursos" src={images[0].RecDidacticosPrimariaBanner} />
+                            this.props.origen === "primaria" && <img alt="Primaria" className="bannerRecursos" src={img + "primaria_banner.png"}/>
                         }
                         {
-                            this.props.origen === "secundaria" && <img alt="Secundaria" className="bannerRecursos" src={images[0].RecDidacticosSecundariaBanner} />
+                            this.props.origen === "secundaria" && <img alt="Secundaria" className="bannerRecursos" src= {img + "secundaria_banner.png"} />
                         }
                         {
-                            this.props.origen === "intercultural" && <img alt="intercultural" className="bannerRecursos" src={images[0].RecDidacticosInterculturalBanner} />
+                            this.props.origen === "intercultural" && <img alt="intercultural" className="bannerRecursos" src= {img + "encabezado_intercultural.png"} />
                         }
                         {
-                            this.props.origen === "jovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src={images[0].RecDidacticosJovenesAdultosBanner} />
+                            this.props.origen === "jovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src= {img + "encabezado_jovenes_adultos.png"} />
                         }
                         {
-                            this.props.origen === "feriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={images[0].RecDidacticosFeriaCientificaBanner} />
+                            this.props.origen === "feriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={img + "encabezado_feria_cientifica.png"} />
                         }
                         {
-                            this.props.origen === "banderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src={images[0].RecDidacticosBanderaAzulBanner} />
+                            this.props.origen === "banderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src= {img + "encabezado_bandera_azul.png"} />
                         }
 
                         
 
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarBuscador} src={images[0].BtnVolver} alt="Volver" />
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarBuscador} src= {imgGenerales + "btn_volver.png"} alt="Volver" />
                     </div><br/><br/>
                 </div>
 
