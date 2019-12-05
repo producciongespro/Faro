@@ -8,7 +8,7 @@ import assets from '../data/config/config.json';
 
 //console.log("ejemplosItemesPrimaria",ejemplosItemesPrimaria[0]["Estudios sociales"] );
 const img = assets.img.apoyosEvaluacion;
-const imgGeneral = assets.img.general; 
+const imgGenerales = assets.img.general;
 
 class EjemplosItemesEvaluacion extends Component {
     constructor(props) {
@@ -44,7 +44,7 @@ class EjemplosItemesEvaluacion extends Component {
         }
     }
 
-    
+
 
     handlerSeleccionarAsignatura = (e) => {
         this.valor = e.target.value;
@@ -62,14 +62,8 @@ class EjemplosItemesEvaluacion extends Component {
         return (
             <div className="container">
                 <div className="row">
-<<<<<<< HEAD
                     <div className="col-12 text-right">
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarEjemplosItemes} src= {imgGenerales + "btn_volver.png"} alt="Volver" />
-=======
-                    <div className="col-12  text-right alert alert-secondary">
-                        <img className="bannerRecursos" src={img + "encabezado_ejemplos.jpg"} alt="Encabezado de " />
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarEjemplosItemes} src={imgGeneral + "btn_volver.png"} alt="Volver" />
->>>>>>> 99ae9e8d4607a2179fe8f2a05f3126ad704e4ebd
+                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
                     </div>
                 </div>
 
