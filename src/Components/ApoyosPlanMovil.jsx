@@ -9,16 +9,6 @@ const textos = textosJson[0];
 var pdfs = dsPdfs[0];
 //var links = dsLinks[0];
 
-
-const  reproducirSonido = () => {
-  console.log("Audio");
-  
-  var tmpAudio = document.getElementById("planeamiento");
-  tmpAudio.currentTime = 0;
-  tmpAudio.play();
-}
-
-
 const ApoyosPlanMovil = (props) => {
   return (
     <div>

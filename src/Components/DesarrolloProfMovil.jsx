@@ -1,24 +1,11 @@
 import React from 'react';
 import images from "../data/images.json";
 import dsPdfs from "../data/pdf.json";
-import dsLinks from "../data/links.json";
 
-var pdfs = dsPdfs[0],
-links = dsLinks[0];
+
+var pdfs = dsPdfs[0];
 
 var img = images[0];
-
-
-const  reproducirSonido = () => {
-  console.log("Audio");
-  
-  var tmpAudio = document.getElementById("desarrollo");
-  tmpAudio.currentTime = 0;
-  tmpAudio.play();
-}
-
-
-
 const DesarrolloProfMovil = (props) => {
 
   return ( 

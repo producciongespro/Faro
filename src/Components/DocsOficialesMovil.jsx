@@ -6,15 +6,6 @@ import pdfJson from "../data/pdf.json";
 
 const  pdfs = pdfJson[0];
 
-
-const  reproducirSonido = () => {
-  console.log("Audio");
-  
-  var tmpAudio = document.getElementById("oficiales");
-  tmpAudio.currentTime = 0;
-  tmpAudio.play();
-}
-
 const DocsOficialesMovil =( props ) => {
     return ( 
     <div>   

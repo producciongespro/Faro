@@ -8,17 +8,6 @@ var pdfs = dsPdfs[0];
 //var links = dsLinks[0];
 var zipDocs = dsZip[0];
 
-const  reproducirSonido = () => {
-  console.log("Audio");
-  
-  var tmpAudio = document.getElementById("clima");
-  tmpAudio.currentTime = 0;
-  tmpAudio.play();
-}
-
-
-
-
 const ApoyoClimaAulaMovil = (props) => {
   return ( 
     <React.Fragment>
@@ -90,7 +79,7 @@ const ApoyoClimaAulaMovil = (props) => {
             <img  data-tar="Home" onClick={props.changePage}   className="centro btn img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
           </div>
 
-    <audio src="https://recursos.mep.go.cr/ws_faro/audios/apoyos_clima.mp3" id="clima"   preload="true"  ></audio>
+    
    
       </React.Fragment>
    );

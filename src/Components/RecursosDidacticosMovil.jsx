@@ -6,13 +6,6 @@ import dsLinks from "../data/links.json";
 
 var links = dsLinks[0];
 
-const  reproducirSonido = () => {
-  console.log("Audio");
-  
-  var tmpAudio = document.getElementById("recursos");
-  tmpAudio.currentTime = 0;
-  tmpAudio.play();
-}
 
 const RecursosDidacticosMovil = (props) => {
   return ( 

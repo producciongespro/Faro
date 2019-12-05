@@ -1,10 +1,9 @@
 import React from 'react';
 //json:
-import imagesJson from "../data/images.json";
+
 import textosJson from "../data/textos.json";
 import assets from "../data/config/config_m.json";
 const textos = textosJson[0];
-const images = imagesJson[0];
 const img  = assets.img.portada;
 //Portada en caso de móviles
 const PortadaMovil = (props) => {
