@@ -405,6 +405,15 @@ class BuscadorPlaneamiento extends Component {
                                     </span>
                                 )
                             }
+                            {
+                                //Plan de estudio en caso de italiano en secundaria
+                                (this.state.materia === "Italiano" && this.state.nivel === "Secundaria") &&
+                                (
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Plan: {this.etiquetaPlan}
+                                    </span>
+                                )
+                            }
                         </div>
                     }
                     {
