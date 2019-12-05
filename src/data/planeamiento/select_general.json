@@ -24,7 +24,7 @@
         "Ciencias",                            
         "Educación Física",
         "Educación Musical",
-        "Educación para la vida cotidiana",                
+        "Educación para la Vida Cotidiana",                
         "Educación Religiosa",
         "Español",
         "Estudios Sociales",
@@ -226,6 +226,14 @@
 "Plan Estudios Italiano Secundaria" : [
     "Lengua Italiana",        
     "Aspectos Culturales"
+],
+"Materias Complementarias" : [
+    "Artes Plásticas",
+    "Artes Industriales",
+    "Educación Física",
+    "Educación Musical",
+    "Educación para la Vida Cotidiana",                
+    "Educación Religiosa"
 ]
 
 
