@@ -1,16 +1,17 @@
 import React from 'react';
 import images from "../data/images.json";
+import assets from '../data/config/config_m.json';
 //import textos from "../data/textos.json";
 
 import dsLinks from "../data/links.json";
 
 var links = dsLinks[0];
-
+const img = assets.img.recursosDidacticos;
 
 const RecursosDidacticosMovil = (props) => {
   return ( 
 <div>
-    <img className="titulos img-fluid" src={images[0].RecDidacticosTitulo} alt="Documentos educativos oficiales" />
+<img className="titulos img-fluid" src={img + "titulo.png"} alt="Documentos educativos oficiales" />
     <div className="row">      
         <div className="col-1">
               
@@ -19,18 +20,18 @@ const RecursosDidacticosMovil = (props) => {
             <div className="row">  
                 <div className="col-4">
                 <figure>
-                    <img className=" img-fluid hvr-pop" id="" src= {images[0].RecDidacticosPreescolar}   data-infosource={4}   onClick={props.handlerOpenBuscador}   alt="Preescolar" />
+                 <img className="hvr-pop  img-fluid" id="preescolar" src= {img+"preescolar.png"}   data-infosource={4}  onClick={props.handlerOpenBuscador}   alt="Preescolar" />
                 </figure>
                 </div>
                 <div className="col-4  ">
-                    <figure>
-                        <img className=" img-fluid hvr-pop" id="" src= {images[0].RecDidacticosPrimaria}    data-infosource={4}   onClick={props.handlerOpenBuscador}   alt="Primaria" />
-                    </figure>
+                <figure>
+                    <img className="hvr-pop img-fluid" id="primaria" src= {img+"primaria.png"} data-infosource={4}  onClick={props.handlerOpenBuscador}   alt="Primaria" />
+                </figure>
                 </div>
                 <div className="col-4  ">
-                    <figure>
-                    <img className=" img-fluid hvr-pop" id="" src= {images[0].RecDidacticosSecundaria}   data-infosource={4}   onClick={props.handlerOpenBuscador}  alt="Secundaria" />
-                    </figure>
+                <figure>
+                    <img className="hvr-pop img-fluid" id="secundaria" src= {img+"secundaria.png"} data-infosource={4}   onClick={props.handlerOpenBuscador}  alt="Secundaria" />
+                </figure>
                 </div>
             </div>
         </div>
@@ -46,19 +47,19 @@ const RecursosDidacticosMovil = (props) => {
         <div  className="col-10">
             <div className="row">  
                 <div className="col-4  ">
-                    <figure>
-                        <img className="img-fluid hvr-pop" id="" src= {images[0].RecDidacticosIntercultualidad}   data-infosource={4}  onClick={props.handlerOpenBuscador}  alt="Intercultural" />
-                    </figure>
+                <figure>
+                    <img className="hvr-pop img-fluid" id="intercultural" src= {img+"intercultural.png"} data-tar="Construccion"  onClick={props.changePage}      alt="Intercultural" />
+                </figure>
                 </div>          
                 <div className="col-4 ">
-                    <figure>
-                        <img className="img-fluid hvr-pop" id="" src= {images[0].RecDidacticosJovenesAdultos}   data-infosource={4}  onClick={props.handlerOpenBuscador}  alt="Jovenes y Adultos" />
-                    </figure>    
+                <figure>
+                    <img className="hvr-pop img-fluid" id="jovenesAdultos" src= {img+"jovenes_adultos.png"} data-tar="Construccion"  onClick={props.changePage}    alt="Jovenes y Adultos" />
+                </figure>   
                 </div>
                 <div className="col-4  ">
-                    <figure>
-                        <img className="img-fluid hvr-pop" id="" src= {images[0].RecDidacticosFeriaCientifica}   data-infosource={4}   onClick={props.handlerOpenBuscador}  alt="Feria Científica" />
-                    </figure>
+                <figure>
+                    <img className="hvr-pop img-fluid" id="feriaCientifica" src= {img+"feria_cientifica.png"} data-infosource={4}   onClick={props.handlerOpenBuscador}  alt="Feria Científica" />
+                </figure>
                 </div>
             </div>
         </div> 
@@ -73,22 +74,23 @@ const RecursosDidacticosMovil = (props) => {
         </div>
         <div  className="col-8">
             <div className="row">
-                <div className="col-2">  
-                </div>   
-                <div className="col-4  ">
-                    <figure>
-                        <img className="img-fluid hvr-pop" id="" src= {images[0].RecDidacticosBanderaAzul}   data-infosource={4}   onClick={props.handlerOpenBuscador}  alt="Bandera Azul" />
-                    </figure>
-                </div>
+            <div className="col-1">  
+            </div>   
+            <div className="col-5  ">
+                <figure>
+                    <img className="hvr-pop img-fluid" id="banderaAzul" src= {img+"programa_azul.png"} data-tar="Construccion"  onClick={props.changePage}    alt="Bandera Azul" />
+                </figure>
+            </div>
 
-                <div className="col-4  ">
-                    <figure>
-                        <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
-                        <img className="img-fluid hvr-pop" id="" src= {images[0].RecDidacticosEducatico}   data-infosource={4}   onClick={props.handlerOpenBuscador}  alt="educatico" />
-                        </a>
-                    </figure>
+                <div className="col-5  ">
+                <figure>
+                <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
+                    {/* <img className="btn img-fluid" id="educatico" src= {img+"educatico.png"} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="educatico" /> */}
+                    <img className="hvr-pop img-fluid" id="educatico" src= {img+"educatico.png"} data-infosource={4}  alt="educatico" />
+          </a>
+          </figure>
                 </div>
-                <div className="col-2">  
+                <div className="col-1">  
                 </div> 
 
         </div>

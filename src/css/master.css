@@ -588,48 +588,48 @@ padding-top:5%;
     margin-left: -15%;
   }
 
-  #preescolar{
+  .preescolar{
     margin-top: 30%;
     max-width: 90%;
     margin-left: 60%;
   }
 
-  #primaria{
+  .primaria{
     margin-top: 30%;
     max-width: 90%;
     margin-left: 29%;
     
   }
 
-  #secundaria{
+  .secundaria{
     margin-top: 30%;
     max-width: 90%;
   }
 
-    #intercultural{
+    .intercultural{
     margin-top: 30%;
     max-width: 90%;
     margin-left: -20%;
   }
 
-  #jovenesAdultos{
+  .jovenesAdultos{
    margin-top: -7%;
    max-width: 90%;
    margin-left: 60%;
   }
 
-  #feriaCientifica{
+  .feriaCientifica{
     margin-top: -7%;
     max-width: 90%;
     margin-left: 29%;
   }
 
-  #banderaAzul{
+  .banderaAzul{
     margin-top: -7%;
     max-width: 90%;
   }
 
-  #educatico{
+  .educatico{
     margin-top: -7%;
     max-width: 90%;
     margin-left: -20%;
