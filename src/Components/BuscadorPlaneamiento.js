@@ -12,6 +12,7 @@ import dataUnidocente from '../data/planeamiento/docs_plan_unidocente.json';
 
 import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
 import listasPlan from '../data/planeamiento/select_general.json';
+import selectEspanolPrimaria from '../data/planeamiento/select_espanol_primaria.json';
 
 import config from '../data/config/config.json';
 // esto se repite....es necesario? Ana T.
@@ -22,9 +23,9 @@ const imgGenerales = assets.img.general;
 const materiasComplementarias = listasPlan["Materias Complementarias"];
 
 const serv = config.servidor;
-console.log("servidor", serv);
+//console.log("servidor", serv);
 
-
+console.log("selectEspanolPrimaria", selectEspanolPrimaria["Primero"] );
 
 //console.log("Secudnaria frances", dataFrances );
 //console.log("listasPlan",listasPlan );
@@ -1018,6 +1019,30 @@ class BuscadorPlaneamiento extends Component {
                                                 </select>
                                             </div>
                                         )
+                                )
+                            }
+                            {
+                                // Caso 4 contenidos de español primaria
+                                (this.state.nivel === "Primaria" && this.state.materia === "Español"  ) &&
+                                (
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                Contenidos
+                                        </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                            <option defaultValue value="" > Seleccione: </option>
+                                            {
+                                                listasPlan["Meses"].map((item, index) => (
+                                                    <option key={"mes" + index} value={item}> {item} </option>
+                                                ))
+                                            }
+                                        </select>
+                                    </div>
+
+
+
                                 )
                             }
 
