@@ -161,12 +161,12 @@ class BuscadorPlaneamiento extends Component {
                 break;
         }
         //console.log("Materias complementarias", materiasComplementarias );
-        console.log("Materia seleccionada", valor);
+        //console.log("Materia seleccionada", valor);
         let limite = materiasComplementarias.length;
         //inicializa tipo de materia:
         this.tipoMateria = "basica"
         for (let index = 0; index < limite; index++) {
-            console.log( "ITEM:",materiasComplementarias[index]);            
+            //console.log( "ITEM:",materiasComplementarias[index]);            
             if (valor == materiasComplementarias[index]) {
                 this.tipoMateria = "complementaria"
             }            

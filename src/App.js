@@ -70,9 +70,10 @@ class App extends Component {
       case "Linux armv7l":
       case "Linux armv8l":
       case "iPhone":
+      case "iPad":    
         plataforma = "movil";
         break;
-      case "win32":
+      case "win32":     
         plataforma = "escritorio";
         break;
       default:
@@ -600,6 +601,7 @@ class App extends Component {
   render() {
     return (
       <div className="visor" >
+        {this.plataforma}
         {this.state.currentPage}
         {this.state.modalActive && this.state.modalComponent}
 
