@@ -143,6 +143,12 @@
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
 
+
+
+
+
+
+
     {
         "nivel" : "Primaria",
         "anno" : "Primero",
@@ -190,6 +196,73 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     },
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Orientación",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_primero_orientacion.docx"
+    },
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Orientación",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_segundo_orientacion.docx"
+    },
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Orientación",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_tercero_orientacion.docx"
+    },
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Orientación",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_cuarto_orientacion.docx"
+    },
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Orientación",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_quinto_orientacion.docx"
+    },
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Orientación",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_sexto_orientacion.docx"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
 
     {
         "nivel" : "Primaria",

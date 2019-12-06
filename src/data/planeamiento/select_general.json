@@ -64,6 +64,7 @@
     "Quinto",
     "Sexto"
 ],
+
 "Años Secundaria" : [
     "Sétimo",
     "Octavo",
@@ -71,33 +72,32 @@
     "Décimo",
     "Undécimo"
 ],
+
 "Jóvenes y Adultos" : [       
         "Colegios Académicos Nocturnos (CAN)",       
         "Colegio Nacional de Educación a Distancia (CONED)",
-        "Escuelas Nocturnas Nivel I",            
-        "Escuelas Nocturnas Nivel II",
-        "Escuelas Nocturnas Nivel III",
-        "Escuelas Nocturnas Nivel IV",
         "IPEC CINDEA Nivel I",
         "IPEC CINDEA Nivel II",
         "IPEC CINDEA Nivel III"
         ],
+
 "Colegios Académicos Nocturnos (CAN)" : [
-    "Biología",
-    "Ciencias",
-    "Desarrollo Humano",
-    "Desarrollo Socio Laboral",            
-    "Educación Cívica",
-    "Educación Religiosa",
-    "Español",
-    "Estudios Sociales",
-    "Física",
-    "Francés",
-    "Inglés",
-    "Matemática",
-    "Química"
-    
+        "Biología",
+        "Ciencias",
+        "Desarrollo Humano",
+        "Desarrollo Socio Laboral",            
+        "Educación Cívica",
+        "Educación Religiosa",
+        "Español",
+        "Estudios Sociales",
+        "Física",
+        "Francés",
+        "Inglés",
+        "Matemática",
+        "Química",
+        "Orientación"
 ],
+
 "Colegio Nacional de Educación a Distancia (CONED)" : [
 "Biología",
 "Español",

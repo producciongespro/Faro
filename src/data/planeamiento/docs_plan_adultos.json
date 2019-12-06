@@ -103,6 +103,60 @@
 
 
 
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "anno": "Sétimo",   
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "modulo" : "Orientación", 
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/40_lin_orientacion_secundaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/Orient/7_septimo_orientacion_can.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "anno": "Octavo",   
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "modulo" : "Orientación", 
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/40_lin_orientacion_secundaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/Orient/8_octavo_orientacion_can.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "anno": "Noveno",   
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "modulo" : "Orientación", 
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/40_lin_orientacion_secundaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/Orient/9_noveno_orientacion_can.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "anno": "Décimo",   
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "modulo" : "Orientación", 
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/40_lin_orientacion_secundaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/Orient/10_decimo_academico_can.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "anno": "Undécimo",   
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "modulo" : "Orientación", 
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/Orient/11_undecimo_academico_can.docx"        
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",        
