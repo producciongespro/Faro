@@ -1,0 +1,19 @@
+[
+   {
+   "nivel" : "Primaria",
+   "materia" : "Español",
+   "anno" : "Primero", 
+   "contenido" : "1.1 Contenido",
+    "plantilla" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
+    "lineamientos" : "https://www.nacion.com/"
+   },
+   
+   {
+      "nivel" : "Primaria",
+      "materia" : "Español",
+      "anno" : "Primero", 
+      "contenido" : "1.1 Contenido",
+      "plantilla" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
+      "lineamientos" : "https://www.nacion.com/"
+   }
+]
