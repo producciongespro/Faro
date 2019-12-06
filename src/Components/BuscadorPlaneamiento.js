@@ -20,6 +20,7 @@ import assets from '../data/config/config.json';
 
 const img = assets.img.apoyosPlan;
 const imgGenerales = assets.img.general;
+//TODO ver si se quita esto:
 const materiasComplementarias = listasPlan["Materias Complementarias"];
 
 const serv = config.servidor;
@@ -52,7 +53,7 @@ class BuscadorPlaneamiento extends Component {
             //estado en caso de preescolar para actualizar los select: "desempeño" y acción procedimental
             indiceContenido: 0,
             indiceDesempeno: 0,
-            //Preecolar: 
+            //Preecolar o español primaria: 
             contenido: "",
             desempeno: ""            
         };
@@ -74,6 +75,8 @@ class BuscadorPlaneamiento extends Component {
         this.arrayResultado = null;
         //tipo de materia presenta dos valores: complementaria y básíca
         this.tipoMateria = null;
+        
+        
 
 
         //Clase CSS
@@ -196,6 +199,14 @@ class BuscadorPlaneamiento extends Component {
         this.accion = e.target.value;
         console.log("Accion", this.accion);
 
+    }
+
+    handlerObtenerContenido = (e) => {
+        //Obtener contenido en caso de primaria Español
+        let valor = e.target.value;
+        this.setState({ contenido: valor }, ()=>{
+            console.log("Cotenido en español primaria", this.state.contenido);            
+        });
     }
 
     /** Botón Buscar */
@@ -1031,12 +1042,12 @@ class BuscadorPlaneamiento extends Component {
                                                 Contenidos
                                         </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                        <select className="custom-select buscadores-materias" id="selMes" onClick={this.handlerObtenerContenido}  >
                                             <option defaultValue value="" > Seleccione: </option>
-                                            {
-                                                listasPlan["Meses"].map((item, index) => (
-                                                    <option key={"mes" + index} value={item}> {item} </option>
-                                                ))
+                                            {                                              
+                                                    selectEspanolPrimaria[this.state.anno].map((item, index) => (
+                                                        <option key={"Contenido" + index} value={item}> {item} </option>
+                                                    ))                                               
                                             }
                                         </select>
                                     </div>
