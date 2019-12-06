@@ -10,6 +10,7 @@ import dataIdiomas from '../data/planeamiento/docs_plan_idiomas.json';
 import dataInterculturalPrimaria from '../data/planeamiento/docs_plan_intercultural_primaria.json';
 import dataInterculturalSecundaria from '../data/planeamiento/docs_plan_intercultural_secundaria.json';
 import dataUnidocente from '../data/planeamiento/docs_plan_unidocente.json';
+import dataPedagogiaHospitalaria from '../data/planeamiento/docs_plan_pedagogia_hosp.json'
 
 
 import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
@@ -31,6 +32,8 @@ const materiasComplementarias = listasPlan["Materias Complementarias"];
 //console.log("listasPlan",listasPlan );
 //console.log("categoriasPreescolar", categoriasPreescolar);
 //console.log("dataPrimariaEspanol", dataPrimariaEspanol);
+//console.log("dataPedagogiaHospitalaria", dataPedagogiaHospitalaria);
+
 
 
 class BuscadorPlaneamiento extends Component {
@@ -109,6 +112,7 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
+            case "Pedagogía Hospitalaria":
                 this.setState({ anno: e.target.value }, () => {
                     console.log("Año seleccionado", this.state.anno)
                 });
@@ -147,6 +151,7 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
+            case "Pedagogía Hospitalaria":
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                 });
@@ -216,7 +221,7 @@ class BuscadorPlaneamiento extends Component {
         this.setState({ buscarActivo: true });
     }
 
-    filtrarBasico = (nivel, anno, materia, mes, tipoPlan, contenido ) => {
+    filtrarBasico = (nivel, anno, materia, mes, tipoPlan, contenido) => {
         /*
                 console.log("parametros de filtrarBasico***********************");
                 console.log("nivel", nivel);
@@ -275,11 +280,15 @@ class BuscadorPlaneamiento extends Component {
             array = dataPrimariaEspanol;
         }
 
+        //"Pedagogía Hospitalaria"
+        if (this.state.nivel === "Pedagogía Hospitalaria") {
+            array = dataPedagogiaHospitalaria;
+        }
 
+        //Opciones para la búsqueda
         switch (tipoComodin) {
             case "nulo":
                 console.log("tipoComodin: NULO");
-
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
                         tmpArray.push(array[index]);
@@ -383,7 +392,7 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido );
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
@@ -397,6 +406,10 @@ class BuscadorPlaneamiento extends Component {
             case "Preescolar":
                 this.arrayResultado = this.filtrarPreescolar(this.state.nivel, this.state.contenido, this.state.desempeno, this.accion);
                 this.tarjetasPreescolar(this.arrayResultado);
+                break;
+            case "Pedagogía Hospitalaria":
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
+                this.tarjetasPedagogiaHosp(this.arrayResultado);
                 break;
 
             default:
@@ -615,6 +628,53 @@ class BuscadorPlaneamiento extends Component {
         }
     }
 
+    tarjetasPedagogiaHosp = (array) => {
+        // Primaria, secudnaria e intercultural
+        console.log("array recibido:", array);
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <React.Fragment>
+                            <div className="card-header">
+                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                    Nivel:  {array[index].nivel}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Año: {array[index].anno}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Asignatura: {array[index].materia}
+                                </span>
+                            </div>
+                            <div className="card-body mr-2">
+                                <div className="row">
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Potenciación
+                                </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido1.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 1.1
+                                </a>
+                                </div>
+                            </div>
+                        </React.Fragment>
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+
     tarjetasPreescolar = (array) => {
         // Primaria, secudnaria e intercultural
         console.log("array recibido:", array);
@@ -736,7 +796,7 @@ class BuscadorPlaneamiento extends Component {
                                         }
                                         {
                                             //año para todos los demás
-                                            (this.state.nivel === "Primaria" || this.state.nivel === "Secundaria" || this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria") &&
+                                            (this.state.nivel === "Primaria" || this.state.nivel === "Secundaria" || this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria" || this.state.nivel === "Pedagogía Hospitalaria") &&
                                             (
                                                 <span> Año </span>
                                             )
@@ -792,9 +852,16 @@ class BuscadorPlaneamiento extends Component {
                                         listasPlan["Años Secundaria"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
-                                    }                                                                       {
+                                    }
+                                    {
                                         this.state.nivel === "Unidocentes" &&
                                         listasPlan["Ciclo Primaria"].map((item, i) => (
+                                            <option key={"anno" + i} value={item} >  {item}  </option>
+                                        ))
+                                    }
+                                    {
+                                        this.state.nivel === "Pedagogía Hospitalaria" &&
+                                        listasPlan["Años Primaria"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
                                     }
@@ -896,6 +963,13 @@ class BuscadorPlaneamiento extends Component {
                                     {
                                         this.state.nivel === "Unidocentes" && (
                                             listasPlan["Materias Básicas"].map((item, i) => (
+                                                <option key={"materia" + i} value={item} >  {item}  </option>
+                                            ))
+                                        )
+                                    }
+                                    {
+                                        this.state.nivel === "Pedagogía Hospitalaria" && (
+                                            listasPlan["Pedagogía Hospitalaria"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
                                             ))
                                         )
