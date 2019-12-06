@@ -30,7 +30,7 @@ const materiasComplementarias = listasPlan["Materias Complementarias"];
 //console.log("Secudnaria frances", dataFrances );
 //console.log("listasPlan",listasPlan );
 //console.log("categoriasPreescolar", categoriasPreescolar);
-console.log("dataPrimariaEspanol", dataPrimariaEspanol);
+//console.log("dataPrimariaEspanol", dataPrimariaEspanol);
 
 
 class BuscadorPlaneamiento extends Component {
@@ -303,7 +303,7 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
             case "contenido":
-                console.log("-----Busqueda con contenido:", array);
+                //console.log("-----Busqueda con contenido:", array);
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].contenido === contenido) {
                         tmpArray.push(array[index]);
