@@ -1,11 +1,12 @@
 {
 "Niveles Generales": [
-        "Preescolar",
-        "Primaria",
-        "Secundaria",
-        "Jóvenes y Adultos",                 
+        "Pedagogía Hospitalaria",
         "Interculturalidad Primaria",        
         "Interculturalidad Secundaria",
+        "Jóvenes y Adultos",                 
+        "Preescolar",
+        "Primaria",
+        "Secundaria",        
         "Unidocentes"
 ],
 "Materias Básicas" : [    
@@ -18,6 +19,15 @@
     "I Ciclo",
     "II Ciclo"
 ],
+"Pedagogía Hospitalaria" : [
+    "Español",
+    "Matemática",
+    "Ciencias",
+    "Estudios Sociales",
+    "Educación Musical",
+    "Educación Física"
+],
+
 "Primaria" : [            
         "Artes Industriales",
         "Artes Plásticas",
