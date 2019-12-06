@@ -19,6 +19,7 @@ import assets from '../data/config/config.json';
 
 const img = assets.img.apoyosPlan;
 const imgGenerales = assets.img.general;
+const materiasComplementarias = listasPlan["Materias Complementarias"];
 
 const serv = config.servidor;
 console.log("servidor", serv);
@@ -126,7 +127,7 @@ class BuscadorPlaneamiento extends Component {
 
     handlerObtenerMateria = (e) => {
         //SELECT 3        
-        console.log("indice de select Niveles de desempeño: ", e.target.selectedIndex);
+        //console.log("indice de select Niveles de desempeño: ", e.target.selectedIndex);
         let valor = e.target.value;
         switch (this.state.nivel) {
             case "Preescolar":
@@ -159,17 +160,20 @@ class BuscadorPlaneamiento extends Component {
                 console.log("Opcion en select materia fuera de rango");
                 break;
         }
-
-
-
-        console.log("Materias complementarias",listasPlan["Materias Complementarias"] );
+        //console.log("Materias complementarias", materiasComplementarias );
         console.log("Materia seleccionada", valor);
-        
-        
-
+        let limite = materiasComplementarias.length;
+        //inicializa tipo de materia:
+        this.tipoMateria = "basica"
+        for (let index = 0; index < limite; index++) {
+            console.log( "ITEM:",materiasComplementarias[index]);            
+            if (valor == materiasComplementarias[index]) {
+                this.tipoMateria = "complementaria"
+            }            
+        }        
+        console.log("tipo de materia", this.tipoMateria);      
         //Activa el boton buscar:
         this.activarBotonBuscar();
-
     }
 
     // SELECT 4 (COMODIN) Varía el manejador de eventos según el nivel que se escoja
