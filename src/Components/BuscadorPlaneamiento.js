@@ -5,30 +5,33 @@ import dataPrimaria from '../data/planeamiento/docs_plan_primaria.json';
 import dataSecundaria from '../data/planeamiento/docs_plan_secundaria.json';
 import dataAdultos from '../data/planeamiento/docs_plan_adultos.json';
 import dataSecundariaEspanol from '../data/planeamiento/docs_plan_secundaria_espanol.json';
+import dataPrimariaEspanol from '../data/planeamiento/docs_plan_primaria_espanol';
 import dataIdiomas from '../data/planeamiento/docs_plan_idiomas.json';
 import dataInterculturalPrimaria from '../data/planeamiento/docs_plan_intercultural_primaria.json';
 import dataInterculturalSecundaria from '../data/planeamiento/docs_plan_intercultural_secundaria.json';
 import dataUnidocente from '../data/planeamiento/docs_plan_unidocente.json';
 
+
 import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
 import listasPlan from '../data/planeamiento/select_general.json';
+import selectEspanolPrimaria from '../data/planeamiento/select_espanol_primaria.json';
 
-import config from '../data/config/config.json';
-// esto se repite....es necesario? Ana T.
 import assets from '../data/config/config.json';
 
 const img = assets.img.apoyosPlan;
 const imgGenerales = assets.img.general;
+const serv = assets.servidor;
+//TODO ver si se quita esto:
 const materiasComplementarias = listasPlan["Materias Complementarias"];
 
-const serv = config.servidor;
-console.log("servidor", serv);
 
-
-
+//console.log("servidor", serv);
+//console.log("selectEspanolPrimaria", selectEspanolPrimaria["Primero"] );
 //console.log("Secudnaria frances", dataFrances );
 //console.log("listasPlan",listasPlan );
 //console.log("categoriasPreescolar", categoriasPreescolar);
+console.log("dataPrimariaEspanol", dataPrimariaEspanol);
+
 
 class BuscadorPlaneamiento extends Component {
     constructor(props) {
@@ -51,9 +54,9 @@ class BuscadorPlaneamiento extends Component {
             //estado en caso de preescolar para actualizar los select: "desempeño" y acción procedimental
             indiceContenido: 0,
             indiceDesempeno: 0,
-            //Preecolar: 
+            //Preecolar o español primaria: 
             contenido: "",
-            desempeno: ""            
+            desempeno: ""
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
@@ -73,6 +76,8 @@ class BuscadorPlaneamiento extends Component {
         this.arrayResultado = null;
         //tipo de materia presenta dos valores: complementaria y básíca
         this.tipoMateria = null;
+
+
 
 
         //Clase CSS
@@ -169,9 +174,9 @@ class BuscadorPlaneamiento extends Component {
             //console.log( "ITEM:",materiasComplementarias[index]);            
             if (valor == materiasComplementarias[index]) {
                 this.tipoMateria = "complementaria"
-            }            
-        }        
-        console.log("tipo de materia", this.tipoMateria);      
+            }
+        }
+        console.log("tipo de materia", this.tipoMateria);
         //Activa el boton buscar:
         this.activarBotonBuscar();
     }
@@ -197,13 +202,21 @@ class BuscadorPlaneamiento extends Component {
 
     }
 
+    handlerObtenerContenido = (e) => {
+        //Obtener contenido en caso de primaria Español
+        let valor = e.target.value;
+        this.setState({ contenido: valor }, () => {
+            console.log("Cotenido en español primaria", this.state.contenido);
+        });
+    }
+
     /** Botón Buscar */
     activarBotonBuscar = (e) => {
         //Activa el botón buscar 
         this.setState({ buscarActivo: true });
     }
 
-    filtrarBasico = (nivel, anno, materia, mes, tipoPlan) => {
+    filtrarBasico = (nivel, anno, materia, mes, tipoPlan, contenido ) => {
         /*
                 console.log("parametros de filtrarBasico***********************");
                 console.log("nivel", nivel);
@@ -256,6 +269,12 @@ class BuscadorPlaneamiento extends Component {
             array = dataSecundariaEspanol;
         }
 
+        if (this.state.nivel === "Primaria" && this.state.materia === "Español") {
+            console.log("Seleccion: español primaria");
+            tipoComodin = "contenido";
+            array = dataPrimariaEspanol;
+        }
+
 
         switch (tipoComodin) {
             case "nulo":
@@ -279,6 +298,14 @@ class BuscadorPlaneamiento extends Component {
                 console.log("-----Busqueda con PLAN --- ARRAY:", array);
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].tipoPlan === tipoPlan) {
+                        tmpArray.push(array[index]);
+                    }
+                }
+                break;
+            case "contenido":
+                console.log("-----Busqueda con contenido:", array);
+                for (let index = 0; index < array.length; index++) {
+                    if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].contenido === contenido) {
                         tmpArray.push(array[index]);
                     }
                 }
@@ -356,7 +383,7 @@ class BuscadorPlaneamiento extends Component {
             case "Secundaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan);
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido );
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
@@ -962,7 +989,7 @@ class BuscadorPlaneamiento extends Component {
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
                                             <option defaultValue disabled value="seleccione" >Seleccione:</option>
-                                            {  
+                                            {
                                                 (this.state.materia === "Italiano" && this.state.nivel === "Secundaria") &&
                                                 (
                                                     listasPlan["Plan Estudios Italiano Secundaria"].map((item, index) => (
@@ -1018,6 +1045,30 @@ class BuscadorPlaneamiento extends Component {
                                                 </select>
                                             </div>
                                         )
+                                )
+                            }
+                            {
+                                // Caso 4 contenidos de español primaria
+                                (this.state.nivel === "Primaria" && this.state.materia === "Español") &&
+                                (
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                Contenidos
+                                        </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selMes" onClick={this.handlerObtenerContenido}  >
+                                            <option defaultValue value="" > Seleccione: </option>
+                                            {
+                                                selectEspanolPrimaria[this.state.anno].map((item, index) => (
+                                                    <option key={"Contenido" + index} value={item}> {item} </option>
+                                                ))
+                                            }
+                                        </select>
+                                    </div>
+
+
+
                                 )
                             }
 

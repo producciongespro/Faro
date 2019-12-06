@@ -1,0 +1,28 @@
+{
+"Primero" :    [
+                "1.1 Contenido",
+                "2.1 Contenido",
+                "3.1 Contenido",
+                "4.1 Contenido",
+                "1.1 Contenido Articulado"
+                ],
+"Segundo" :     [
+                "1.1 Contenido",
+                "2.1 Contenido",
+                "3.1 Contenido",
+                "4.1-4.2-4.3 Contenidos",
+                "5.1 Contenido",
+                "5. Comprensión y Expresión oral"
+                ],
+"Tercero" :     [
+                    "1.1 Contenido Tercero",
+                    "2.1 Contenido Tercero",
+                    "3.1 Contenido Tercero"                    
+                ],
+"Cuarto" :     [
+                    "1.1 Contenido Cuarto",
+                    "2.1 Contenido Cuarto",
+                    "3.1 Contenido Cuarto"                    
+                ]
+
+}
