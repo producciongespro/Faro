@@ -586,7 +586,7 @@ class Buscador extends Component {
 
                     <div className="row">
                         <div className="col-sm-12 text-right">
-                            <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR">
+                            <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>
