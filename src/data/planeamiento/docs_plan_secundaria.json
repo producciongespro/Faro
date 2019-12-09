@@ -102,6 +102,20 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_noveno_ano.docx"
     },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Ciencias",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_octavo_ano.docx"
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Ciencias",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_noveno_ano.docx"
+    },
 
 
 

@@ -1,0 +1,546 @@
+[
+  {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "   "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "   "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    }, 
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Ciencias",
+        "distribucion" : "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },   
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },   
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },  
+     {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },   
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },   
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },   
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },   
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },   
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Ciencias",
+        "distribucion" : "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+    
+
+
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Ciencias",
+        "distribucion" : "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Abril ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Mayo ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Junio ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Julio ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Agosto ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Septiembre ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Octubre ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Ciencias",
+        "distribucion" : "Noviembre ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Febrero ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Marzo ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Abril ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Mayo ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Junio ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Julio ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Agosto ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Septiembre ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Octubre ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Ciencias",
+        "distribucion" : "Noviembre ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Febrero ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Marzo ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Abril ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Mayo ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Junio ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Julio ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Agosto ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Septiembre ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Octubre ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Ciencias",
+        "distribucion" : "Noviembre ",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
+        "plantilla" : "  "
+    }
+
+
+]
