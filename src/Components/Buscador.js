@@ -67,6 +67,8 @@ var annoPrimaria = [
         "id": "6"
     }
 ];
+
+/*
 var tipoPoblacion = [
     {
         "label": "Educación para adultos",
@@ -77,7 +79,7 @@ var tipoPoblacion = [
         "id": "rurales"
     }
 ];
-
+*/
 var dataGeneral = "";
 //console.log("dataIngles", dataIngles);
 

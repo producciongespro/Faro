@@ -261,14 +261,14 @@ class App extends Component {
     switch (this.plataforma) {
       case "movil":
         //Carga componente 
-        tmpDocumentos = <ApoyosPlanMovil showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} changePage={this.changePage} />
+        tmpDocumentos = <ApoyosPlanMovil showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} />
         break;
       case "escritorio":
-        tmpDocumentos = <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} changePage={this.changePage} />
+        tmpDocumentos = <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} />
         break;
 
       default:
-        tmpDocumentos = <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} changePage={this.changePage} />
+        tmpDocumentos = <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} />
         break;
     }
     return tmpDocumentos;
