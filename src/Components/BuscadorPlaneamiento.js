@@ -894,7 +894,7 @@ class BuscadorPlaneamiento extends Component {
                                         }
                                     </label>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria}  >
+                                <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria}  >
                                     {
                                         this.state.nivel !== "Preescolar" &&
                                         <option defaultValue value="" >  Seleccione:  </option>
@@ -1013,7 +1013,7 @@ class BuscadorPlaneamiento extends Component {
                                                 Plan de estudios
                                         </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
+                                        <select className="custom-select buscadores-materias" id="selPlan" onClick={this.handlerObtenerTipoPlan}  >
                                             <option defaultValue disabled value="seleccione" >Seleccione:</option>
                                             { //Frances primaria
                                                 (this.state.materia === "Francés" && this.state.nivel === "Primaria") &&
