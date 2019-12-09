@@ -1108,11 +1108,30 @@
     },
     {
         "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Inglés",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "recurso" : " "        
+    },
+
+
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Inglés",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "recurso" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
         "correlacionado" : "II Ciclo",
         "asignatura" : "Inglés",
         "lineamiento" : "  ",
         "plantilla" : "  ",
         "recurso" : " "        
     }
+
 
 ]
