@@ -34,12 +34,13 @@ import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
 
-
+import assets from './data/config/config.json';
 
 
 //Json
-import images from "./data/images.json";
 import descripciones from "./data/descripciones/descripciones.json";
+const imgGenerales = assets.img.general;
+
 
 class App extends Component {
 
@@ -47,7 +48,7 @@ class App extends Component {
     super();
     this.state = {
       nameCurrentPage: "Splash",
-      currentPage: <Splash urlImage={images[0].logoFaro} />,
+      currentPage: <Splash urlImage={imgGenerales + "splash.jpg"} />,
       modalActive: false,
       modalComponent: "",
       typeContent: ""
@@ -260,14 +261,14 @@ class App extends Component {
     switch (this.plataforma) {
       case "movil":
         //Carga componente 
-        tmpDocumentos = <ApoyosPlanMovil showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} changePage={this.changePage} />
+        tmpDocumentos = <ApoyosPlanMovil showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} />
         break;
       case "escritorio":
-        tmpDocumentos = <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} changePage={this.changePage} />
+        tmpDocumentos = <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} />
         break;
 
       default:
-        tmpDocumentos = <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} changePage={this.changePage} />
+        tmpDocumentos = <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenBuscadorPlaneamiento={this.handlerOpenBuscadorPlaneamiento} />
         break;
     }
     return tmpDocumentos;

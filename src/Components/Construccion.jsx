@@ -1,18 +1,6 @@
 import React from 'react';
-//json:
-
-import textosJson from "../data/textos.json";
 import assets from '../data/config/config.json';
-
-//TODO: sustituir esto: 
-const textos = textosJson[0];
-
-
-const img = assets.img.portada;
 const imgGeneral = assets.img.general;
-
-console.log("imgGeneral", imgGeneral );
-
 
 const Construccion = (props) => {
     return ( 

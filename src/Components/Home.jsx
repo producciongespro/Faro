@@ -1,17 +1,8 @@
 import React  from 'react';
-import imagesJson from "../data/images.json";
 import textosJson from "../data/textos.json";
-
 import assets from '../data/config/config.json';
-
-const images = imagesJson[0];
 const textos = textosJson[0];
-
-
 const img = assets.img.home;
-console.log("img desde home", img );
-
-
 
 const Home = (props) => {
   return ( 

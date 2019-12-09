@@ -67,6 +67,8 @@ var annoPrimaria = [
         "id": "6"
     }
 ];
+
+/*
 var tipoPoblacion = [
     {
         "label": "Educación para adultos",
@@ -77,7 +79,7 @@ var tipoPoblacion = [
         "id": "rurales"
     }
 ];
-
+*/
 var dataGeneral = "";
 //console.log("dataIngles", dataIngles);
 
@@ -157,14 +159,16 @@ class Buscador extends Component {
 
 
     handlerObtenerPoblacion = (e) => {
-        let chk = e.target.checked;
+        let chk = e.target.checked;        
         console.log(chk);
+        /*
         if (chk) {
             this.poblacion = e.target.value;
         } else {
             this.poblacion = "";
         }
         console.log("Poblacion", this.poblacion);
+        */
     }
 
     handlerObtenerApoyos = (e) => {
@@ -546,6 +550,8 @@ class Buscador extends Component {
                         <div className="col-sm-3">
 
                             {
+                                /*
+                                Se elimina tipo de población
                                 this.props.origen !== "preescolar" &&
                                 (
                                     <div className={this.claseCSSPoblacion}>
@@ -559,6 +565,7 @@ class Buscador extends Component {
                                         </label>
                                     </div>
                                 )
+                                */
                             }
 
                             <div className="form-check">
@@ -579,7 +586,7 @@ class Buscador extends Component {
 
                     <div className="row">
                         <div className="col-sm-12 text-right">
-                            <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR">
+                            <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>

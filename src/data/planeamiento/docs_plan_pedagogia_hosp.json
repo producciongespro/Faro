@@ -1,0 +1,659 @@
+[ 
+
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Primero",
+        "materia": "Español",
+        "potenciancion": " ",
+        "contenido1.1": " ",
+        "contenido2.1": " ",
+        "contenido3.1": " ",
+        "contenido4.1": " ",
+        "contenido5.1": " ",
+        "contenido6.1": " ",
+        "contenido7.1": " ",
+        "contenido8.1": " ",
+        "contenido9.1": " ",
+        "contenido10.1": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Primero",
+        "materia": "Matemática",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+   {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Primero",
+        "materia": "Ciencias",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Primero",
+        "materia": "Estudios Sociales",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Primero",
+        "materia": "Educación Musical",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Primero",
+        "materia": "Educación Física",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Segundo",
+        "materia": "Español",
+        "potenciancion": " ",
+        "contenido1.1": " ",
+        "contenido2.1": " ",
+        "contenido3.1": " ",
+        "contenido4.1": " ",
+        "contenido5.1": " ",
+        "contenido6.1": " ",
+        "contenido7.1": " ",
+        "contenido8.1": " ",
+        "contenido9.1": " ",
+        "contenido10.1": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Segundo",
+        "materia": "Matemática",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    }, 
+   {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Segundo",
+        "materia": "Ciencias",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Segundo",
+        "materia": "Estudios Sociales",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Segundo",
+        "materia": "Educación Musical",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Segundo",
+        "materia": "Educación Física",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Tercero",
+        "materia": "Español",
+        "potenciancion": " ",
+        "contenido1.1": " ",
+        "contenido2.1": " ",
+        "contenido3.1": " ",
+        "contenido4.1": " ",
+        "contenido5.1": " ",
+        "contenido6.1": " ",
+        "contenido7.1": " ",
+        "contenido8.1": " ",
+        "contenido9.1": " ",
+        "contenido10.1": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Tercero",
+        "materia": "Matemática",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    }, 
+   {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Tercero",
+        "materia": "Ciencias",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Tercero",
+        "materia": "Estudios Sociales",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Tercero",
+        "materia": "Educación Musical",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Tercero",
+        "materia": "Educación Física",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Cuarto",
+        "materia": "Español",
+        "potenciancion": " ",
+        "contenido1.1": " ",
+        "contenido2.1": " ",
+        "contenido3.1": " ",
+        "contenido4.1": " ",
+        "contenido5.1": " ",
+        "contenido6.1": " ",
+        "contenido7.1": " ",
+        "contenido8.1": " ",
+        "contenido9.1": " ",
+        "contenido10.1": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Cuarto",
+        "materia": "Matemática",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    }, 
+   {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Cuarto",
+        "materia": "Ciencias",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Cuarto",
+        "materia": "Estudios Sociales",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Cuarto",
+        "materia": "Educación Musical",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Cuarto",
+        "materia": "Educación Física",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Quinto",
+        "materia": "Español",
+        "potenciancion": " ",
+        "contenido1.1": " ",
+        "contenido2.1": " ",
+        "contenido3.1": " ",
+        "contenido4.1": " ",
+        "contenido5.1": " ",
+        "contenido6.1": " ",
+        "contenido7.1": " ",
+        "contenido8.1": " ",
+        "contenido9.1": " ",
+        "contenido10.1": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Quinto",
+        "materia": "Matemática",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    }, 
+   {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Quinto",
+        "materia": "Ciencias",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Quinto",
+        "materia": "Estudios Sociales",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Quinto",
+        "materia": "Educación Musical",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Quinto",
+        "materia": "Educación Física",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Sexto",
+        "materia": "Español",
+        "potenciancion": " ",
+        "contenido1.1": " ",
+        "contenido2.1": " ",
+        "contenido3.1": " ",
+        "contenido4.1": " ",
+        "contenido5.1": " ",
+        "contenido6.1": " ",
+        "contenido7.1": " ",
+        "contenido8.1": " ",
+        "contenido9.1": " ",
+        "contenido10.1": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Sexto",
+        "materia": "Matemática",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    }, 
+   {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Sexto",
+        "materia": "Ciencias",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Sexto",
+        "materia": "Estudios Sociales",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Sexto",
+        "materia": "Educación Musical",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Sexto",
+        "materia": "Educación Física",
+        "potenciancion": "  ",
+        "plantilla1": "  ",
+        "plantilla2": "  ",
+        "plantilla3": "  ",
+        "plantilla4": "  ",
+        "plantilla5": "  ",
+        "plantilla6": "  ",
+        "plantilla7": "  ",
+        "plantilla8": "  ",
+        "plantilla9": "  ",
+        "plantilla10": "  "
+    }
+
+
+
+]
