@@ -32,7 +32,7 @@ const DocsOficialesMovil =( props ) => {
             </div>
             <div className="col-4  ladoIzq">
                 <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="programas2" data-infosource={5}  src= {img + "programas_estudio.png"}  alt="Programas de estudio de estudio" />
+              <img className="botones-portada hvr-pop img-fluid" id="programas2" data-infosource={5}  src= {img + "programas_estudio.png"} data-content= {pdfs.Tacaco }  data-typecontent ="programasEstudio"  onClick={props.handlerOpenProgramasEducativos}  alt="Programas de estudio de estudio"  />
               </figure>
             </div>
         </div>
