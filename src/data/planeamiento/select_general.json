@@ -1,13 +1,13 @@
 {
 "Niveles Generales": [
-        "Pedagogía Hospitalaria",
-        "Interculturalidad Primaria",        
-        "Interculturalidad Secundaria",
-        "Jóvenes y Adultos",                 
         "Preescolar",
         "Primaria",
-        "Secundaria",        
-        "Unidocentes"
+        "Secundaria", 
+        "Unidocentes",
+        "Jóvenes y Adultos",
+        "Pedagogía Hospitalaria",
+        "Interculturalidad Primaria",        
+        "Interculturalidad Secundaria"
 ],
 "Materias Básicas" : [    
     "Ciencias",
