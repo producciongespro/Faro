@@ -4,12 +4,12 @@
         "correlacionado" : "I Ciclo",
         "asignatura" : "Ciencias",
         "mes" : "Febrero",
-        "lineamiento" : "  ",
-        "plantilla" : "  ",
-        "circuloArmonia" :  " ",
-        "circuloCreatividad" : " ",
-        "actividadCierre" : " ",
-        "noCorrelacionado" : " "        
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf  ",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf  ",
+        "circuloArmonia" :  "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf ",
+        "circuloCreatividad" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf ",
+        "actividadCierre" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf ",
+        "noCorrelacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf "        
     },
     {
         "nivel" : "Unidocentes",
@@ -290,13 +290,44 @@
         "nivel" : "Unidocentes",
         "correlacionado" : "I Ciclo",
         "asignatura" : "Educación Física",
-        "mes" : "Noviembre",
+        "periodo" : "I",
         "lineamiento" : "  ",
         "plantilla" : "  ",
-        "circuloArmonia" :  " ",
-        "circuloCreatividad" : " ",
-        "actividadCierre" : " ",
         "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Artes Plásticas",
+        "periodo" : "II",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Educación para el hogar",
+        "periodo" : "III",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Inglés",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "recurso" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Inglés",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "recurso" : " "        
     }
 
 ]
