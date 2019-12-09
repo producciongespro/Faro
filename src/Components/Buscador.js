@@ -157,14 +157,16 @@ class Buscador extends Component {
 
 
     handlerObtenerPoblacion = (e) => {
-        let chk = e.target.checked;
+        let chk = e.target.checked;        
         console.log(chk);
+        /*
         if (chk) {
             this.poblacion = e.target.value;
         } else {
             this.poblacion = "";
         }
         console.log("Poblacion", this.poblacion);
+        */
     }
 
     handlerObtenerApoyos = (e) => {
@@ -546,6 +548,8 @@ class Buscador extends Component {
                         <div className="col-sm-3">
 
                             {
+                                /*
+                                Se elimina tipo de población
                                 this.props.origen !== "preescolar" &&
                                 (
                                     <div className={this.claseCSSPoblacion}>
@@ -559,6 +563,7 @@ class Buscador extends Component {
                                         </label>
                                     </div>
                                 )
+                                */
                             }
 
                             <div className="form-check">
