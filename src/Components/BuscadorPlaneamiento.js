@@ -82,9 +82,8 @@ class BuscadorPlaneamiento extends Component {
         this.arrayResultado = null;
         //tipo de materia presenta dos valores: complementaria y básíca
         this.tipoMateria = null;
-
-
-
+        //Para las materias que presentan plan por trimestre:
+        this.periodo = "";
 
         //Clase CSS
         this.claseCSSMaterias = "input-group mb-3";
@@ -193,6 +192,13 @@ class BuscadorPlaneamiento extends Component {
     handlerObtenerMes = (e) => {
         this.mes = e.target.value;
         console.log("Mes seleccionado", this.mes);
+    }
+
+    handlerObtenerPeriodo = (e) => {
+        //Materias que presetnan plan por periodos:
+        // complementarias de unidocentes, 
+        this.periodo = e.target.value;
+        console.log("Periodo seleccionado", this.periodo);
     }
 
     handlerObtenerTipoPlan = (e) => {
@@ -337,19 +343,49 @@ class BuscadorPlaneamiento extends Component {
         return tmpArray;
     }
 
-    filtrarUnidocente = (nivel, correlacionado, asignatura, mes) => {
+    filtrarUnidocente = (nivel, correlacionado, asignatura, mes, periodo) => {
         console.log("correlacionado", correlacionado);
         let array;
         let tmpArray = [];
         //Carga del array de unidocentes:
         array = dataUnidocente;
 
-        for (let index = 0; index < array.length; index++) {
-            //if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura) {
-            if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].mes === mes) {
-                tmpArray.push(array[index]);
-            }
+        switch (asignatura) {
+            case "Ciencias":
+            case "Matemática":
+            case "Español":
+            case "Estudios Sociales":
+                for (let index = 0; index < array.length; index++) {
+                    //if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura) {
+                    if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].mes === mes) {
+                        tmpArray.push(array[index]);
+                    }
+                }
+                break;
+            case "Educación Física":
+            case "Artes Plásticas":
+            case "Educación para el Hogar":
+                for (let index = 0; index < array.length; index++) {
+                    if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].periodo === periodo) {
+                        tmpArray.push(array[index]);
+                    }
+                }
+                break;
+            case "Inglés":
+                for (let index = 0; index < array.length; index++) {
+                    if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura) {
+                        tmpArray.push(array[index]);
+                    }
+                }
+                break;
+
+            default:
+                console.log("asignatura fuera de rango en busqueda unidocentes");
+                break;
         }
+
+
+
         return tmpArray;
     }
 
@@ -399,7 +435,7 @@ class BuscadorPlaneamiento extends Component {
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
-                this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.correlacionado, this.state.asignatura, this.mes);
+                this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.correlacionado, this.state.asignatura, this.mes, this.periodo);
                 this.tarjetasUnidocente(this.arrayResultado);
                 break;
             case "Jóvenes y Adultos":
@@ -533,20 +569,61 @@ class BuscadorPlaneamiento extends Component {
                     {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <React.Fragment>
-                            <div className="card-header">
-                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                    Nivel:  {array[index].nivel}
-                                </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Correlacionado: {array[index].correlacionado}
-                                </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Asignatura: {array[index].asignatura}
-                                </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Mes: {array[index].mes}
-                                </span>
-                            </div>
+                            {
+                                //Materias báscias:
+                                (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales" ) &&
+                                (
+                                    <div className="card-header">
+                                    <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                        Nivel:  {array[index].nivel}
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Correlacionado: {array[index].correlacionado}
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Asignatura: {array[index].asignatura}
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Mes: {array[index].mes}
+                                    </span>
+                                </div>
+                                )
+                            }
+                            {
+                                (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar" ) &&
+                                (
+                                    <div className="card-header">
+                                    <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                        Nivel:  {array[index].nivel}
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Correlacionado: {array[index].correlacionado}
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Asignatura: {array[index].asignatura}
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Periodo: {array[index].periodo}
+                                    </span>
+                                </div>
+                                )
+                            }
+                                    {
+                                (this.state.asignatura === "Inglés" ) &&
+                                (
+                                    <div className="card-header">
+                                    <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                        Nivel:  {array[index].nivel}
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Correlacionado: {array[index].correlacionado}
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Asignatura: {array[index].asignatura}
+                                    </span>                                   
+                                </div>
+                                )
+                            }
                             <div className="card-body mr-2">
                                 <div className="row">
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
@@ -654,91 +731,91 @@ class BuscadorPlaneamiento extends Component {
                                 </span>
                             </div>
                             {
-                                this.state.materia==="Español" ? 
-                                (
-                                    <div className="card-body mr-2">
-                                    <div className="row">
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Potenciación
+                                this.state.materia === "Español" ?
+                                    (
+                                        <div className="card-body mr-2">
+                                            <div className="row">
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Potenciación
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido1.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 1.1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido1.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 1.1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido2.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 2.1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido2.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 2.1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido3.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 3.1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido3.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 3.1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido4.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 3.1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido4.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 3.1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido5.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 5.1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido5.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 5.1
                                     </a>
-                                    </div>
-                                    <div className="row">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido6.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 6.1
+                                            </div>
+                                            <div className="row">
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido6.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 6.1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido7.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 7.1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido7.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 7.1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido8.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 8.1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido8.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 8.1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido9.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 9.1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido9.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 9.1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido10.1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 10.1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido10.1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Contenido 10.1
                                     </a>
-                                    </div>
-                                </div>  
-                                ):
-                                (
-                                    <div className="card-body mr-2">
-                                    <div className="row">
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Potenciación
+                                            </div>
+                                        </div>
+                                    ) :
+                                    (
+                                        <div className="card-body mr-2">
+                                            <div className="row">
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Potenciación
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla1"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 1
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla1"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla2"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 2
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla2"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 2
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla3"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 3
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla3"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 3
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla4"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 4
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla4"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 4
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla5"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 5
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla5"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 5
                                     </a>
-                                   
-                                    </div>
-                                    <div className="row">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla6"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 6
+
+                                            </div>
+                                            <div className="row">
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla6"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 6
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla7"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 7
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla7"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 7
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla8"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 8
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla8"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 8
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla9"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 9
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla9"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 9
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla10"]} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Plantilla 10
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["plantilla10"]} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla 10
                                     </a>
-                                    
-                                    </div>
-                                </div>
-                                )
+
+                                            </div>
+                                        </div>
+                                    )
                             }
 
 
@@ -996,22 +1073,22 @@ class BuscadorPlaneamiento extends Component {
                                     }
                                     {
                                         //Materias secundaria de III Ciclo
-                                        this.state.nivel === "Secundaria"  &&                                        
+                                        this.state.nivel === "Secundaria" &&
                                         (
-                                            (this.state.anno === "Sétimo" || this.state.anno==="Octavo"  || this.state.anno==="Noveno"  ) &&
+                                            (this.state.anno === "Sétimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
                                             listasPlan["Secundaria III Ciclo"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))                                         
+                                            ))
                                         )
                                     }
                                     {
                                         //Materias de secudaria IV ciclo
-                                    this.state.nivel === "Secundaria"  &&                                        
+                                        this.state.nivel === "Secundaria" &&
                                         (
-                                            (this.state.anno === "Décimo" || this.state.anno==="Undécimo") &&
+                                            (this.state.anno === "Décimo" || this.state.anno === "Undécimo") &&
                                             listasPlan["Secundaria IV Ciclo"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))                                         
+                                            ))
                                         )
                                     }
                                     {
@@ -1243,58 +1320,58 @@ class BuscadorPlaneamiento extends Component {
                             }
                             {
                                 console.log("nivel", this.state.nivel)
-                                
+
                             }
 
                             {
-                            
+
                                 // Caso 5 Meses de unidocentes para materias básicas
                                 (this.state.nivel === "Unidocentes") &&
                                 (
-                                    (this.state.asignatura==="Ciencias" || this.state.asignatura==="Matemática" || this.state.asignatura==="Español" || this.state.asignatura==="Estudios Sociales" ) && 
+                                    (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
                                     (
                                         <div className="input-group mb-3">
-                                        <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
-                                                Meses
+                                            <div className="input-group-prepend">
+                                                <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                    Meses
                                         </label>
+                                            </div>
+                                            <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                                <option defaultValue value="" > Seleccione: </option>
+                                                {
+                                                    listasPlan["Meses"].map((item, index) => (
+                                                        <option key={"mes" + index} value={item}> {item} </option>
+                                                    ))
+                                                }
+                                            </select>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                            <option defaultValue value="" > Seleccione: </option>
-                                            {
-                                                listasPlan["Meses"].map((item, index) => (
-                                                    <option key={"mes" + index} value={item}> {item} </option>
-                                                ))
-                                            }
-                                        </select>
-                                    </div>
-                                    )                                    
-                                )                          
+                                    )
+                                )
                             }
-                            {                            
-                            // Caso 6 Meses de unidocentes para materias complementarias
-                            (this.state.nivel === "Unidocentes") &&
-                            (
-                                (this.state.asignatura==="Ciencias" || this.state.asignatura==="Educación Física" || this.state.asignatura==="Artes Plásticas" || this.state.asignatura==="Educación para el Hogar" ) && 
+                            {
+                                // Caso 6 Meses de unidocentes para materias complementarias
+                                (this.state.nivel === "Unidocentes") &&
                                 (
-                                    <div className="input-group mb-3">
-                                    <div className="input-group-prepend">
-                                        <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
-                                            Periodo
+                                    (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar") &&
+                                    (
+                                        <div className="input-group mb-3">
+                                            <div className="input-group-prepend">
+                                                <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                    Periodo
                                     </label>
-                                    </div>
-                                    <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                        <option defaultValue value="" > Seleccione: </option>
-                                        {
-                                            listasPlan["Periodos"].map((item, index) => (
-                                                <option key={"mes" + index} value={item}> {item} </option>
-                                            ))
-                                        }
-                                    </select>
-                                </div>
-                                )                                    
-                            )                          
-                        }                                               
+                                            </div>
+                                            <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerPeriodo}  >
+                                                <option defaultValue value="" > Seleccione: </option>
+                                                {
+                                                    listasPlan["Periodos"].map((item, index) => (
+                                                        <option key={"mes" + index} value={item}> {item} </option>
+                                                    ))
+                                                }
+                                            </select>
+                                        </div>
+                                    )
+                                )
+                            }
                         </div>
                     </div>
                     <br />
