@@ -4,12 +4,12 @@
         "correlacionado" : "I Ciclo",
         "asignatura" : "Ciencias",
         "mes" : "Febrero",
-        "lineamiento" : "  ",
-        "plantilla" : "  ",
-        "circuloArmonia" :  " ",
-        "circuloCreatividad" : " ",
-        "actividadCierre" : " ",
-        "noCorrelacionado" : " "        
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf  ",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf  ",
+        "circuloArmonia" :  "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf ",
+        "circuloCreatividad" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf ",
+        "actividadCierre" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf ",
+        "noCorrelacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf "        
     },
     {
         "nivel" : "Unidocentes",
@@ -59,7 +59,67 @@
         "actividadCierre" : " ",
         "noCorrelacionado" : " "        
     },
-
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Ciencias",
+        "mes" : "Julio",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Ciencias",
+        "mes" : "Agosto",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Ciencias",
+        "mes" : "Septiembre",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Ciencias",
+        "mes" : "Octubre",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Ciencias",
+        "mes" : "Noviembre",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+     
     
 
 
@@ -75,19 +135,19 @@
     {
         "nivel" : "Unidocentes",
         "correlacionado" : "I Ciclo",
-        "asignatura" : "Matemáticas",
+        "asignatura" : "Matemática",
         "mes" : "Febrero",
-        "lineamiento" : "  ",
-        "plantilla" : "  ",
-        "circuloArmonia" :  " ",
-        "circuloCreatividad" : " ",
-        "actividadCierre" : " ",
-        "noCorrelacionado" : " "        
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf  ",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf  ",
+        "circuloArmonia" :  "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf ",
+        "circuloCreatividad" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf ",
+        "actividadCierre" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf ",
+        "noCorrelacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf "      
     },
     {
         "nivel" : "Unidocentes",
         "correlacionado" : "I Ciclo",
-        "asignatura" : "Matemáticas",
+        "asignatura" : "Matemática",
         "mes" : "Marzo",
         "lineamiento" : "  ",
         "plantilla" : "  ",
@@ -99,7 +159,7 @@
     {
         "nivel" : "Unidocentes",
         "correlacionado" : "I Ciclo",
-        "asignatura" : "Matemáticas",
+        "asignatura" : "Matemática",
         "mes" : "Abril",
         "lineamiento" : "  ",
         "plantilla" : "  ",
@@ -111,7 +171,7 @@
     {
         "nivel" : "Unidocentes",
         "correlacionado" : "I Ciclo",
-        "asignatura" : "Matemáticas",
+        "asignatura" : "Matemática",
         "mes" : "Mayo",
         "lineamiento" : "  ",
         "plantilla" : "  ",
@@ -123,8 +183,68 @@
     {
         "nivel" : "Unidocentes",
         "correlacionado" : "I Ciclo",
-        "asignatura" : "Matemáticas",
+        "asignatura" : "Matemática",
         "mes" : "Junio",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Matemática",
+        "mes" : "Julio",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Matemática",
+        "mes" : "Agosto",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Matemática",
+        "mes" : "Septiembre",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Matemática",
+        "mes" : "Octubre",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Matemática",
+        "mes" : "Noviembre",
         "lineamiento" : "  ",
         "plantilla" : "  ",
         "circuloArmonia" :  " ",
@@ -142,7 +262,62 @@
 
 
 
-
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Español",
+        "mes" : "Febrero",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Español",
+        "mes" : "Marzo",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Español",
+        "mes" : "Abril",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Español",
+        "mes" : "Mayo",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Español",
+        "mes" : "Junio",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
     
     {
         "nivel" : "Unidocentes",
@@ -204,6 +379,7 @@
         "actividadCierre" : " ",
         "noCorrelacionado" : " "        
     },
+  
 
 
 
@@ -217,6 +393,64 @@
 
 
 
+
+
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Estudios Sociales",
+        "mes" : "Febrero",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },   {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Estudios Sociales",
+        "mes" : "Marzo",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },   {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Estudios Sociales",
+        "mes" : "Abril",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },   {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Estudios Sociales",
+        "mes" : "Mayo",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },   {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Estudios Sociales",
+        "mes" : "Junio",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "circuloArmonia" :  " ",
+        "circuloCreatividad" : " ",
+        "actividadCierre" : " ",
+        "noCorrelacionado" : " "        
+    },
     {
         "nivel" : "Unidocentes",
         "correlacionado" : "II Ciclo",
@@ -290,13 +524,94 @@
         "nivel" : "Unidocentes",
         "correlacionado" : "I Ciclo",
         "asignatura" : "Educación Física",
-        "mes" : "Noviembre",
+        "periodo" : "I",
         "lineamiento" : "  ",
         "plantilla" : "  ",
-        "circuloArmonia" :  " ",
-        "circuloCreatividad" : " ",
-        "actividadCierre" : " ",
         "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Educación Física",
+        "periodo" : "II",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Educación Física",
+        "periodo" : "I",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Educación Física",
+        "periodo" : "II",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "noCorrelacionado" : " "        
+    },
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Artes Plásticas",
+        "periodo" : "II",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Artes Plásticas",
+        "periodo" : "II",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "noCorrelacionado" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Educación para el hogar",
+        "periodo" : "III",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "noCorrelacionado" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "I Ciclo",
+        "asignatura" : "Inglés",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "recurso" : " "        
+    },
+    {
+        "nivel" : "Unidocentes",
+        "correlacionado" : "II Ciclo",
+        "asignatura" : "Inglés",
+        "lineamiento" : "  ",
+        "plantilla" : "  ",
+        "recurso" : " "        
     }
 
 ]
