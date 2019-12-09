@@ -29,7 +29,7 @@ const materiasComplementarias = listasPlan["Materias Complementarias"];
 //console.log("servidor", serv);
 //console.log("selectEspanolPrimaria", selectEspanolPrimaria["Primero"] );
 //console.log("Secudnaria frances", dataFrances );
-//console.log("listasPlan",listasPlan );
+console.log("listasPlanipec cindea ",listasPlan["IPEC CINDEA Nivel III"] );
 //console.log("categoriasPreescolar", categoriasPreescolar);
 //console.log("dataPrimariaEspanol", dataPrimariaEspanol);
 //console.log("dataPedagogiaHospitalaria", dataPedagogiaHospitalaria);
@@ -654,9 +654,38 @@ class BuscadorPlaneamiento extends Component {
                                 <div className="row">
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Potenciación
-                                </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido1.1"]} target="_blank" rel="noopener noreferrer" >
+                                    </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido1.1"]} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 1.1
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido2.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 2.1
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido3.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 3.1
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido4.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 3.1
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido5.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 5.1
+                                </a>
+                                </div>
+                                <div className="row">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido6.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 6.1
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido7.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 7.1
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido8.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 8.1
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido9.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 9.1
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index]["contenido10.1"]} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 10.1
                                 </a>
                                 </div>
                             </div>
