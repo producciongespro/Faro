@@ -602,7 +602,10 @@ class App extends Component {
   render() {
     return (
       <div className="visor" >
-        {this.plataforma}
+        {
+        //this.plataforma
+        }
+
         {this.state.currentPage}
         {this.state.modalActive && this.state.modalComponent}
 
