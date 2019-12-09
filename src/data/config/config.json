@@ -3,7 +3,7 @@
     "nombre" : "Caja de Herramientas",
     "servidor" : "http://localhost/",
     "img" : {
-        "general" : "http://recursos.mep.go.cr/Faro/asset/img/9_generales/",
+        "general" : "http://localhost/Faro/asset/img/9_generales/",
         "portada" : "http://localhost/Faro/asset/img/1_portada/",
         "home" : "http://localhost/Faro/asset/img/2_home/web/",
         "homeM" : "http://localhost/Faro/asset/img/2_home/movil/",

@@ -34,12 +34,13 @@ import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
 
-
+import assets from './data/config/config.json';
 
 
 //Json
-import images from "./data/images.json";
 import descripciones from "./data/descripciones/descripciones.json";
+const imgGenerales = assets.img.general;
+
 
 class App extends Component {
 
@@ -47,7 +48,7 @@ class App extends Component {
     super();
     this.state = {
       nameCurrentPage: "Splash",
-      currentPage: <Splash urlImage={images[0].logoFaro} />,
+      currentPage: <Splash urlImage={imgGenerales + "splash.jpg"} />,
       modalActive: false,
       modalComponent: "",
       typeContent: ""
