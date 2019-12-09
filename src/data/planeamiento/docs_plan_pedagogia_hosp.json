@@ -14,5 +14,37 @@
         "contenido8.1": "https://www.youtube.com/watch?v=lofShi0UcmM",
         "contenido9.1": "https://www.youtube.com/watch?v=lofShi0UcmM",
         "contenido10.1": "https://www.youtube.com/watch?v=lofShi0UcmM"
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Primero",
+        "materia": "Matemática",
+        "potenciancion": "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla1" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla2" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla3" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla4" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla5" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla6" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla7" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla8" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla9" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla10" : "https://www.youtube.com/watch?v=lofShi0UcmM"
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Segundo",
+        "materia": "Ciencias",
+        "potenciancion": "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla1" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla2" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla3" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla4" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla5" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla6" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla7" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla8" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla9" : "https://www.youtube.com/watch?v=lofShi0UcmM",
+        "plantilla10" : "https://www.youtube.com/watch?v=lofShi0UcmM"
     }
 ]
