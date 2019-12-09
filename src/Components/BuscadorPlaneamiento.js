@@ -29,7 +29,7 @@ const materiasComplementarias = listasPlan["Materias Complementarias"];
 //console.log("servidor", serv);
 //console.log("selectEspanolPrimaria", selectEspanolPrimaria["Primero"] );
 //console.log("Secudnaria frances", dataFrances );
-console.log("listasPlanipec cindea ",listasPlan["IPEC CINDEA Nivel III"] );
+//console.log("listasPlanipec",listasPlan);
 //console.log("categoriasPreescolar", categoriasPreescolar);
 //console.log("dataPrimariaEspanol", dataPrimariaEspanol);
 //console.log("dataPedagogiaHospitalaria", dataPedagogiaHospitalaria);
@@ -177,7 +177,7 @@ class BuscadorPlaneamiento extends Component {
         this.tipoMateria = "basica"
         for (let index = 0; index < limite; index++) {
             //console.log( "ITEM:",materiasComplementarias[index]);            
-            if (valor == materiasComplementarias[index]) {
+            if (valor === materiasComplementarias[index]) {
                 this.tipoMateria = "complementaria"
             }
         }
