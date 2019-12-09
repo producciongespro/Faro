@@ -53,10 +53,9 @@
     ],
 
 
-"Secundaria" : [    
+"Secundaria III Ciclo" : [    
     "Artes Industriales",            
-    "Artes Plásticas",        
-    "Biología",        
+    "Artes Plásticas",            
     "Ciencias",
     "Educación Cívica",            
     "Educación Física",        
@@ -64,17 +63,34 @@
     "Educación para la Vida Cotidiana",
     "Educación Religiosa",        
     "Español",        
-    "Estudios Sociales",
-    "Filosofía",        
-    "Física",
+    "Estudios Sociales",        
     "Francés",        
     "Inglés",
     "Italiano",        
     "Matemática",
-    "Orientación",
-    "Psicología",
-    "Química"        
+    "Orientación"    
     ],
+
+"Secundaria IV Ciclo" : [      
+        "Artes Plásticas",        
+        "Biología",                
+        "Educación Cívica",            
+        "Educación Física",        
+        "Educación Musical",
+        "Educación para la Vida Cotidiana",
+        "Educación Religiosa",        
+        "Español",        
+        "Estudios Sociales",
+        "Filosofía",        
+        "Física",
+        "Francés",        
+        "Inglés",
+        "Italiano",        
+        "Matemática",
+        "Orientación",
+        "Psicología",
+        "Química"        
+],
 
 
 

@@ -25,6 +25,9 @@ const serv = assets.servidor;
 //TODO ver si se quita esto:
 const materiasComplementarias = listasPlan["Materias Complementarias"];
 
+//console.log("III ciclo", listasPlan["Secundaria III Ciclo"] );
+//console.log("Secundaria IV Ciclo", listasPlan["Secundaria IV Ciclo"] );
+
 
 //console.log("servidor", serv);
 //console.log("selectEspanolPrimaria", selectEspanolPrimaria["Primero"] );
@@ -992,10 +995,24 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
-                                        this.state.nivel === "Secundaria" &&
-                                        listasPlan["Secundaria"].map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
+                                        //Materias secundaria de III Ciclo
+                                        this.state.nivel === "Secundaria"  &&                                        
+                                        (
+                                            (this.state.anno === "Sétimo" || this.state.anno==="Octavo"  || this.state.anno==="Noveno"  ) &&
+                                            listasPlan["Secundaria III Ciclo"].map((item, i) => (
+                                                <option key={"materia" + i} value={item} >  {item}  </option>
+                                            ))                                         
+                                        )
+                                    }
+                                    {
+                                        //Materias de secudaria IV ciclo
+                                    this.state.nivel === "Secundaria"  &&                                        
+                                        (
+                                            (this.state.anno === "Décimo" || this.state.anno==="Undécimo") &&
+                                            listasPlan["Secundaria IV Ciclo"].map((item, i) => (
+                                                <option key={"materia" + i} value={item} >  {item}  </option>
+                                            ))                                         
+                                        )
                                     }
                                     {
                                         (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria") &&
