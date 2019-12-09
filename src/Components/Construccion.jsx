@@ -1,10 +1,6 @@
 import React from 'react';
 import assets from '../data/config/config.json';
-
 const imgGeneral = assets.img.general;
-
-console.log("imgGeneral", imgGeneral );
-
 
 const Construccion = (props) => {
     return ( 
