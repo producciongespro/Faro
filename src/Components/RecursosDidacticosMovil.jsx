@@ -1,5 +1,4 @@
 import React from 'react';
-import images from "../data/images.json";
 import assets from '../data/config/config_m.json';
 //import textos from "../data/textos.json";
 
@@ -7,6 +6,7 @@ import dsLinks from "../data/links.json";
 
 var links = dsLinks[0];
 const img = assets.img.recursosDidacticos;
+const img2 = assets.img.general;
 
 const RecursosDidacticosMovil = (props) => {
   return ( 
@@ -102,7 +102,7 @@ const RecursosDidacticosMovil = (props) => {
     <br/>  
         <div class="row text-center">
             <div className="col-12 ">
-                 <img  data-tar="Home" onClick={props.changePage}   className="img-fluid hvr-pop"  src= {images[0].BtnSalir }  alt="Salir" />
+                 <img  data-tar="Home" onClick={props.changePage}   className="img-fluid hvr-pop"  src= {img2+"btn_salir.png" }  alt="Salir" />
             </div>
         </div>
 </div>
