@@ -1,10 +1,7 @@
 import React from 'react';
-import imagesJson from "../data/images.json";
 import textosJson from "../data/textos.json";
-//import assets from '../data/config/config.json';
 import assets from "../data/config/config_m.json";
 const img  = assets.img.homeM;
-const images = imagesJson[0];
 const textos = textosJson[0];
 
 
@@ -66,12 +63,6 @@ const HomeMovil = (props) => {
                 <img className="btn img-fluid hvr-pop botonesNavegarMovil" id="indicaciones" src={ img + "btn_indicaciones.png" } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> 
                 <img className="btn img-fluid hvr-pop botonesNavegarMovil" id="home"  src={ img + "volver_portada.png" } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
                 <img className="img-fluid botones-portada hvr-pop" id="uso2" src={img + "btn_usocaja.png"} onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/> <br/>
-            </div>
-            
-            <div className="row">
-            <div className="col-12 text-center">
-            <img id="logoMovil" data-tar="" src={ images.Logo } alt="logo"/>
-            </div>
             </div>
         </div>
     );
