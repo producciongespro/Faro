@@ -57,7 +57,7 @@ const ApoyosEvaluacion = (props) => {
                     
                     <div  className="col-12 col-sin-padding">
                         <figure>                        
-                          <img id="tecnicas" className="img-fluid btn hvr-pop evaluacion"  data-infosource={3} onMouseOver={props.onMouseOver}  data-origen="Funciones de la evaluación"  onClick={props.handlerAbrirCategoriasEvaluacion}  onMouseOut={ props.onMouseOut } alt="Funciones de la evaluación"    src={img + "evaluacion_tecnicas.png" } role="button" />                        
+                          <img id="tecnicas" className="img-fluid btn hvr-pop evaluacion"  data-infosource={3} onMouseOver={props.onMouseOver}  data-origen="Funciones de la evaluación"  onClick={props.handlerAbrirCategoriasEvaluacion}  onMouseOut={ props.onMouseOut } alt="Funciones de la evaluación"    src={img + "funciones.png" } role="button" />                        
                         </figure>
                       </div>
                     </div>
@@ -65,7 +65,7 @@ const ApoyosEvaluacion = (props) => {
                   <div className="row">
                     <div  className="col-12 col-sin-padding"  >
                       <figure>                      
-                        <img id="instrumentos" className="img-fluid btn hvr-pop evaluacion"  data-infosource={3} onMouseOver={props.onMouseOver}   data-origen="Componentes de la calificación" onClick={props.handlerAbrirCategoriasEvaluacion}  onMouseOut={ props.onMouseOut }  alt="Componentes de la calificación" src={img + "evaluacion_instrumentos.png" }  role="button" />                      
+                        <img id="instrumentos" className="img-fluid btn hvr-pop evaluacion"  data-infosource={3} onMouseOver={props.onMouseOver}   data-origen="Componentes de la calificación" onClick={props.handlerAbrirCategoriasEvaluacion}  onMouseOut={ props.onMouseOut }  alt="Componentes de la calificación" src={img + "componentes.png" }  role="button" />                      
                       </figure>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ const ApoyosEvaluacion = (props) => {
                     <div className="row">
                      <div className="col-12  col-sin-padding">
                       <figure>
-                        <img id="documentos" className="img-fluid  btn hvr-pop evaluacion" data-infosource={3} onMouseOver={props.onMouseOver}  data-tar="DocumentosEvaluacion" onClick= {props.changePage}  onMouseOut={ props.onMouseOut }  alt="Itemes"  src={img + "evaluacion_documentos.png" } />
+                        <img id="documentos" className="img-fluid  btn hvr-pop evaluacion" data-infosource={3} onMouseOver={props.onMouseOver}  data-tar="DocumentosEvaluacion" onClick= {props.changePage}  onMouseOut={ props.onMouseOut }  alt="Itemes"  src={img + "documentos.png" } />
                       </figure>
                       </div>
                     </div>
