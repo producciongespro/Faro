@@ -1,20 +1,280 @@
 [   
-    
     {
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
-    },        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Inglés",
+        "tipoPlan" : "Inglés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Inglés",
+        "tipoPlan" : "Inglés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Inglés",
+        "tipoPlan" : "Inglés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Inglés",
+        "tipoPlan" : "Inglés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Inglés",
+        "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Inglés",
+        "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Inglés",
+        "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Inglés",
+        "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Inglés",
+        "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },   
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Francés",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Francés",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Francés",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Francés",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Francés",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Francés",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Francés",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Francés",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Francés",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Francés",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+
+    
+
+
+
+
+
+    
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Italiano",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Italiano",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Italiano",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Italiano",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Italiano",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Italiano",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Italiano",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Italiano",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Italiano",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Italiano",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+    },  
+
+
+
+
+
     {
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Inglés",
+        "tipoPlan" : "Inglés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
+        "plantilla" : ""        
     }
     
 
