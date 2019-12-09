@@ -4,7 +4,7 @@
         "anno" : "Sétimo",
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
     },  
     {
@@ -265,8 +265,16 @@
         "anno" : "Primero",
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
-        "lineamiento" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/lineamientos/espanol_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"        
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Inglés",
+        "tipoPlan" : "Inglés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
+        "plantilla" : ""        
     }
     
 
