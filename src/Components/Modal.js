@@ -149,8 +149,21 @@ class Modal extends Component {
                           <br/>
                           <div className="container">
                             <div className="row ">
-                                <div className="col-12 text-justify">
-                                  Texto de créditos
+                                <div className="col-12 text-justify creditos">
+                                <strong>Dirección de Recursos Tecnológicos</strong><br/>
+                                <strong>Departamento de Gestión y Producción</strong><br/>
+                                Luis Angel Chacón Campos <br/>
+                                Patricia Hernández Conejo<br/>
+                                Óscar Pérez Ramíres <br/>
+                                Ana Teresa Araya Salazar <br/>
+                                Karla Guevara Murillo <br/>
+                                <br/><br/>
+
+                                <strong>Dirección de Desarrollo Curricular</strong> <br/>
+                                <strong> Viceministerio Académico</strong><br/>
+                                Tatiana Navarro Mata<br/>
+                                Nelson Campos Quesada <br/>
+                                Henry Arias Guido <br/>
                                 </div>
                             </div>
                           
