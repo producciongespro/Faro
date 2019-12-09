@@ -18,6 +18,12 @@
     "Matemática"
     ],
 
+"Periodos" : [
+    "I",
+    "II",
+    "III"
+],
+
 
 "Ciclo Primaria" : [
     "I Ciclo",
@@ -300,6 +306,20 @@
     "Educación Musical",
     "Educación para la Vida Cotidiana",                
     "Educación Religiosa"    
+    ],
+
+"Materias Básicas Unidocentes" : [    
+        "Ciencias",
+        "Español",
+        "Estudios Sociales",
+        "Matemática",
+        "Educación Física",
+        "Artes Plásticas",
+        "Inglés"
+    ],
+"Correlacionado Unidocentes" : [
+    "I Ciclo",
+    "II Ciclo"
     ]
 
 }  

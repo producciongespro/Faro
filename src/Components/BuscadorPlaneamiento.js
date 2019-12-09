@@ -937,7 +937,7 @@ class BuscadorPlaneamiento extends Component {
                                     }
                                     {
                                         this.state.nivel === "Unidocentes" &&
-                                        listasPlan["Ciclo Primaria"].map((item, i) => (
+                                        listasPlan["Correlacionado Unidocentes"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
                                     }
@@ -1058,7 +1058,7 @@ class BuscadorPlaneamiento extends Component {
                                     }
                                     {
                                         this.state.nivel === "Unidocentes" && (
-                                            listasPlan["Materias Básicas"].map((item, i) => (
+                                            listasPlan["Materias Básicas Unidocentes"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
                                             ))
                                         )
@@ -1241,12 +1241,19 @@ class BuscadorPlaneamiento extends Component {
 
                                 )
                             }
+                            {
+                                console.log("nivel", this.state.nivel)
+                                
+                            }
 
                             {
-                                // Caso 5 Meses de unidocentes
-                                this.state.nivel === "Unidocentes" &&
+                            
+                                // Caso 5 Meses de unidocentes para materias básicas
+                                (this.state.nivel === "Unidocentes") &&
                                 (
-                                    <div className="input-group mb-3">
+                                    (this.state.asignatura==="Ciencias" || this.state.asignatura==="Matemática" || this.state.asignatura==="Español" || this.state.asignatura==="Estudios Sociales" ) && 
+                                    (
+                                        <div className="input-group mb-3">
                                         <div className="input-group-prepend">
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
                                                 Meses
@@ -1261,12 +1268,33 @@ class BuscadorPlaneamiento extends Component {
                                             }
                                         </select>
                                     </div>
-
-
-
-                                )
+                                    )                                    
+                                )                          
                             }
-
+                            {                            
+                            // Caso 6 Meses de unidocentes para materias complementarias
+                            (this.state.nivel === "Unidocentes") &&
+                            (
+                                (this.state.asignatura==="Ciencias" || this.state.asignatura==="Educación Física" || this.state.asignatura==="Artes Plásticas" || this.state.asignatura==="Educación para el Hogar" ) && 
+                                (
+                                    <div className="input-group mb-3">
+                                    <div className="input-group-prepend">
+                                        <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                            Periodo
+                                    </label>
+                                    </div>
+                                    <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                        <option defaultValue value="" > Seleccione: </option>
+                                        {
+                                            listasPlan["Periodos"].map((item, index) => (
+                                                <option key={"mes" + index} value={item}> {item} </option>
+                                            ))
+                                        }
+                                    </select>
+                                </div>
+                                )                                    
+                            )                          
+                        }                                               
                         </div>
                     </div>
                     <br />
