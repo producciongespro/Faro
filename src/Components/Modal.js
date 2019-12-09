@@ -154,7 +154,7 @@ class Modal extends Component {
                                 <strong>Departamento de Gestión y Producción</strong><br/>
                                 Luis Angel Chacón Campos <br/>
                                 Patricia Hernández Conejo<br/>
-                                Óscar Pérez Ramíres <br/>
+                                Óscar Pérez Ramírez <br/>
                                 Ana Teresa Araya Salazar <br/>
                                 Karla Guevara Murillo <br/>
                                 <br/><br/>
