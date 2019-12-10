@@ -76,9 +76,11 @@ class App extends Component {
         break;
       case "win32":     
         plataforma = "escritorio";
+        //plataforma = "movil";
         break;
       default:
         plataforma = "escritorio";
+        //plataforma = "movil";
         break;
     }
     sessionStorage.setItem("tipoPlataforma", plataforma);
