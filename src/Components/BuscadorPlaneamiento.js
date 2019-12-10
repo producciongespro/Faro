@@ -22,8 +22,8 @@ import assets from '../data/config/config.json';
 const img = assets.img.apoyosPlan;
 const imgGenerales = assets.img.general;
 const serv = assets.servidor;
-//TODO ver si se quita esto:
-const materiasComplementarias = listasPlan["Materias Complementarias"];
+
+
 
 //console.log("III ciclo", listasPlan["Secundaria III Ciclo"] );
 //console.log("Secundaria IV Ciclo", listasPlan["Secundaria IV Ciclo"] );
@@ -79,9 +79,7 @@ class BuscadorPlaneamiento extends Component {
         //Datos de json para preescolar        
         this.accion = "";
         //Array filtrado con los criterios establecidos por el usuario
-        this.arrayResultado = null;
-        //tipo de materia presenta dos valores: complementaria y básíca
-        this.tipoMateria = null;
+        this.arrayResultado = null;            
         //Para las materias que presentan plan por trimestre:
         this.periodo = "";
 
@@ -171,19 +169,8 @@ class BuscadorPlaneamiento extends Component {
             default:
                 console.log("Opcion en select materia fuera de rango");
                 break;
-        }
-        //console.log("Materias complementarias", materiasComplementarias );
-        //console.log("Materia seleccionada", valor);
-        let limite = materiasComplementarias.length;
-        //inicializa tipo de materia:
-        this.tipoMateria = "basica"
-        for (let index = 0; index < limite; index++) {
-            //console.log( "ITEM:",materiasComplementarias[index]);            
-            if (valor === materiasComplementarias[index]) {
-                this.tipoMateria = "complementaria"
-            }
-        }
-        //console.log("tipo de materia", this.tipoMateria);
+        }        
+        //console.log("Materia seleccionada", valor);             
         //Activa el boton buscar:
         this.activarBotonBuscar();
     }
