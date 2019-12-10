@@ -935,7 +935,7 @@ class BuscadorPlaneamiento extends Component {
             <React.Fragment>
 
                 <div className="row">
-                    <div className="col-12  text-right alert alert-secondary">
+                    <div className="col-12  text-right alert">
                         <img className="bannerRecursos" src={img + "encabezado_documentos_apoyo.png"} alt="Encabezado de Documentos de apoyo" />
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
                     </div>
