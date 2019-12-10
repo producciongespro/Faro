@@ -1090,7 +1090,6 @@
 
 
 
-
     
 
 
@@ -1135,6 +1134,10 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
         "plantilla" : ""
     }, 
+
+
+
+
     {
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
@@ -1185,6 +1188,9 @@
 
    
 
+
+
+
     
 
 
@@ -1196,6 +1202,46 @@
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
         "materia" : "Italiano",
+        "distribucion": "I",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Italiano",
+        "distribucion": "II",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    
+    
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Italiano",
+        "distribucion": "I",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Italiano",
+        "distribucion": "II",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
@@ -1204,6 +1250,21 @@
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    
+    
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Italiano",
+        "distribucion": "I",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
@@ -1212,14 +1273,64 @@
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Italiano",
+        "distribucion": "II",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
     },  
     {
         "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },  
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Italiano",
+        "distribucion": "I",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Italiano",
+        "distribucion": "II",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+
+
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Italiano",
+        "distribucion": "I",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
@@ -1228,7 +1339,30 @@
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Italiano",
+        "distribucion": "II",
         "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" : "Lengua Italiana",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Italiano",
+        "distribucion": "I",
+        "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
     }, 
@@ -1236,14 +1370,62 @@
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
         "materia" : "Italiano",
+        "distribucion": "II",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
-    }, 
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },
+
+
+
+
+
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Italiano",
+        "distribucion": "I",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Italiano",
+        "distribucion": "II",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    
+    
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Italiano",
+        "distribucion": "I",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
@@ -1252,6 +1434,30 @@
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Italiano",
+        "distribucion": "II",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },  
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Italiano",
+        "distribucion": "I",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
@@ -1260,18 +1466,52 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Italiano",
+        "distribucion": "II",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
-    },  
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+
+
+
+
+
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Italiano",
+        "distribucion": "I",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
         "plantilla" : ""
-    }  
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Italiano",
+        "distribucion": "II",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Italiano",
+        "distribucion": "III",
+        "tipoPlan" :  "Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
+        "plantilla" : ""
+    }     
 
 
 
