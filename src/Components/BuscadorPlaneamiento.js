@@ -16,6 +16,7 @@ import dataPedagogiaHospitalaria from '../data/planeamiento/docs_plan_pedagogia_
 import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
 import listasPlan from '../data/planeamiento/select_general.json';
 import selectEspanolPrimaria from '../data/planeamiento/select_espanol_primaria.json';
+import distribucionPrimaria from '../data/planeamiento/ditribucion_materias_primaria.json';
 
 import assets from '../data/config/config.json';
 
@@ -23,8 +24,7 @@ const img = assets.img.apoyosPlan;
 const imgGenerales = assets.img.general;
 const serv = assets.servidor;
 
-
-
+console.log("distribucionPrimaria", distribucionPrimaria );
 //console.log("III ciclo", listasPlan["Secundaria III Ciclo"] );
 //console.log("Secundaria IV Ciclo", listasPlan["Secundaria IV Ciclo"] );
 
@@ -62,7 +62,9 @@ class BuscadorPlaneamiento extends Component {
             indiceDesempeno: 0,
             //Preecolar o español primaria: 
             contenido: "",
-            desempeno: ""
+            desempeno: "",
+            //Distribución de plan para las materias: mensual, trimestral, anual
+            distribucionPlan: ""
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
@@ -154,6 +156,9 @@ class BuscadorPlaneamiento extends Component {
             case "Pedagogía Hospitalaria":
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
+                    if (this.state.materia !== "") {
+                        console.log("Distribución ", distribucionPrimaria[this.state.materia].distribucion);    
+                    }                 
                 });
                 break;
             case "Unidocentes":
