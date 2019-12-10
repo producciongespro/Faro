@@ -249,109 +249,182 @@
 
 
 
+
+
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
     {
         "nivel" : "Primaria",
         "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
     },
     {
         "nivel" : "Primaria",
         "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
-    },   
+    },
     {
         "nivel" : "Primaria",
         "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
-    },   
+    },
+
+
+
+
     {
         "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
+        "anno" : "Tercero",
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
-    },  
-     {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
-        "plantilla" : " "
-    },   
+    },
     {
         "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
+        "anno" : "Tercero",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
-    },   
+    },
     {
         "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
+        "anno" : "Tercero",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
-    },   
+    },
+
+
+
     {
         "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
-        "plantilla" : " "
-    },   
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
-        "plantilla" : " "
-    },   
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
+        "anno" : "Cuarto",
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
     },
     {
         "nivel" : "Primaria",
         "anno" : "Cuarto",
-        "materia" : "Matemática",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
     },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
 
     {
         "nivel" : "Primaria",
         "anno" : "Quinto",
-        "materia" : "Matemática",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
     },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
 
     {
         "nivel" : "Primaria",
         "anno" : "Sexto",
-        "materia" : "Matemática",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
     },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
 
 
 
@@ -645,59 +718,12 @@
         "materia" : "Estudios Sociales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    
-    
-    
-    {
-        "nivel" : "Primaria",
-        "anno" : "Primero",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Tercero",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Quinto",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Sexto",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     }
 
+    
+    
+    
+    
 
 
 
