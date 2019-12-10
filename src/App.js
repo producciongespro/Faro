@@ -432,14 +432,30 @@ class App extends Component {
     console.log("Boton-", id);
 
     if (id === "programas") {
+      switch (this.plataforma) {
+      case "movil":
+      this.setState({
+        currentPage: <DocsOficialesMovil infoCategory={descripciones[5].general} onMouseOut={this.handlerShowInfoGeneral} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} onMouseOver={this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage} />
+      });
+      break;
+    case "escritorio":
+      this.setState({
+        currentPage: <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={this.handlerShowInfoGeneral} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} onMouseOver={this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage} />
+      });
+      break;
+
+    default:
       this.setState({
         currentPage: <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={this.handlerShowInfoGeneral} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} onMouseOver={this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage} />
       })
+      break;
+    }
     }
     if (id === "plantilla") {
       this.setState({
         currentPage: <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} />
       })
+      
     }
   }
 
