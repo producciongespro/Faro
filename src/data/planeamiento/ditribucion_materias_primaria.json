@@ -1,0 +1,14 @@
+{
+    "Artes Industriales": {
+        "distribucion": "Anual"
+    },
+    "Artes Plásticas": {
+        "distribucion": "Trimestral"
+    },
+    "Ciencias": {
+        "distribucion": "Mensual"
+    },
+    "Educación Física": {
+        "distribucion": "Trimestral"
+    }
+}
