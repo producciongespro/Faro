@@ -22,7 +22,7 @@ const DesarrolloProfMovil = (props) => {
         </div>
         <div  className="col-5   ">
             <figure>
-                <img className="img-fluid hvr-pop" id="" src={img + "img_cursos.png" } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0}   onClick={props.handlerOpenCatalog}  alt="Cursos" />
+                <img className="img-fluid hvr-pop cursos" id="cursos" src={img + "img_cursos.png" } data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0}   onClick={props.handlerOpenCatalog}  alt="Cursos" />
             </figure>
         </div>
         <div className="col-5  ">
@@ -39,7 +39,7 @@ const DesarrolloProfMovil = (props) => {
         </div>
         <div  className="col-5 ">
             <figure>
-              <img className="img-fluid hvr-pop" id="" src={img + "img_videoteca.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0}   onClick={props.handlerOpenCatalog}  alt="Videoteca" />
+              <img className="img-fluid hvr-pop" id="videoteca" src={img + "img_videoteca.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0}   onClick={props.handlerOpenCatalog}  alt="Videoteca" />
             </figure>
         </div>
         <div className="col-5">
@@ -56,7 +56,7 @@ const DesarrolloProfMovil = (props) => {
         </div>
         <div  className="col-5 ">
             <figure>
-              <img className="img-fluid hvr-pop" id="" src={img + "img_otras.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0}   onClick={props.handlerOpenCatalog}  alt="Otras ofertas" />
+              <img className="img-fluid hvr-pop" id="ficha" src={img + "img_otras.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0}   onClick={props.handlerOpenCatalog}  alt="Otras ofertas" />
             </figure>
         </div>
         <div  className="col-3">

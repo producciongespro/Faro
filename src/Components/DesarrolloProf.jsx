@@ -52,7 +52,7 @@ const DesarrolloProf = (props) => {
       <div  className="row" id="botones-desarrollo">
             <div  className="col-4  hover11 ">
               <figure>
-                <img className="botones-portada  img-fluid" id="cursos" src={img+"img_cursos.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalog}  alt="Cursos" />
+                <img className="botones-portada  img-fluid cursos-e" id="cursos" src={img+"img_cursos.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalog}  alt="Cursos" />
               </figure>
               </div>
               <div className="col-4  ">
