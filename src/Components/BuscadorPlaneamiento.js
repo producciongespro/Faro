@@ -17,6 +17,7 @@ import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
 import listasPlan from '../data/planeamiento/select_general.json';
 import selectEspanolPrimaria from '../data/planeamiento/select_espanol_primaria.json';
 import distribucionPrimaria from '../data/planeamiento/ditribucion_materias_primaria.json';
+import distribucionSecundaria from '../data/planeamiento/ditribucion_materias_secundaria.json';
 
 import assets from '../data/config/config.json';
 
