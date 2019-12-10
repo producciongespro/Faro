@@ -433,9 +433,6 @@
 
 
 
-
-
-
     {
         "nivel" : "Primaria",
         "anno" : "Primero",
@@ -483,6 +480,7 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
         "plantilla" : " "
     },
+
 
 
 
@@ -603,6 +601,116 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/26_lin_educacion_religiosa_primaria.pdf",
         "plantilla" : " "
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Estudios Sociales",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Estudios Sociales",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Primero",
+        "materia" : "Estudios Sociales",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Estudios Sociales",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Estudios Sociales",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Estudios Sociales",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
+    
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+    },
+
+
+
+
+
+
+
+
 
 
 
@@ -659,66 +767,17 @@
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_sexto_orientacion.docx"
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Primero",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Tercero",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Quinto",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Sexto",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     }
+
+
+
+
+
+
+
+
+
+
 
     
     
