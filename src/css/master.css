@@ -18,6 +18,10 @@ body {
   margin-left: 200%;
   }
 
+  .txt-con-salto{
+    white-space: normal;
+  }
+
   .txt-ajustable{
     white-space: normal;
     font-size: 1rem;

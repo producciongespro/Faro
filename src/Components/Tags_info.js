@@ -163,32 +163,32 @@ class Tags_info extends Component {
     switch (opc) {
       case "btnMedia":   
       tmpBotonera  = (
-           materiasMedia.map( ( item, i ) => (  <span className="animated color-bs badge badge-success spn-materias"  id={item.id}  key={ i }  data-categoria = "mediaPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
+           materiasMedia.map( ( item, i ) => (  <span className="animated color-bs badge badge-success spn-materias txt-con-salto"  id={item.id}  key={ i }  data-categoria = "mediaPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
            )   
       break;
       case "btnPrimaria":
         tmpBotonera  = (
-            materiasPrima.map( ( item, i ) => (  <span className="animated color-bs badge badge-info spn-materias"  id={item.id}  key={ i }  data-categoria = "primaPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
+            materiasPrima.map( ( item, i ) => (  <span className="animated color-bs badge badge-info spn-materias txt-con-salto"  id={item.id}  key={ i }  data-categoria = "primaPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnApoyo":
         tmpBotonera  = (
-            materiasApoyo.map( ( item, i ) => (  <span className="animated color-bs badge badge-dark spn-materias"  id={item.id}  key={ i }  data-categoria = "apoyoPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
+            materiasApoyo.map( ( item, i ) => (  <span className="animated color-bs badge badge-dark spn-materias txt-con-salto"  id={item.id}  key={ i }  data-categoria = "apoyoPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnIntercultural":
         tmpBotonera  = (
-          materiasIntercultural.map( ( item, i ) => (  <span className="animated color-bs badge badge-danger spn-materias"  id={item.id}  key={ i }  data-categoria = "intercultPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
+          materiasIntercultural.map( ( item, i ) => (  <span className="animated color-bs badge badge-danger spn-materias txt-con-salto"  id={item.id}  key={ i }  data-categoria = "intercultPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnAdultos":
         tmpBotonera  = (
-          materiasAdultos.map( ( item, i ) => (  <span className="animated color-bs badge badge-warning spn-materias"  id={item.id}  key={ i }  data-categoria = "adultosPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
+          materiasAdultos.map( ( item, i ) => (  <span className="animated color-bs badge badge-warning spn-materias txt-con-salto"  id={item.id}  key={ i }  data-categoria = "adultosPDF" onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnPreescolar":
         tmpBotonera  = (
-          materiasPreescolar.map( ( item, i ) => (  <span className="animated color-bs badge badge-primary spn-materias"  id={item.id}  key={ i } data-categoria = "preescolarPDF"   onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
+          materiasPreescolar.map( ( item, i ) => (  <span className="animated color-bs badge badge-primary spn-materias txt-con-salto"  id={item.id}  key={ i } data-categoria = "preescolarPDF"   onClick={this.cargarUrlProgrmasPDF}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       
@@ -214,22 +214,22 @@ class Tags_info extends Component {
     switch (opc) {
       case "btnMedia":   
       tmpBotonera  = (
-        plantillasMedia.map( ( item, i ) => (  <span className="animated badge badge-success spn-materias"  data-categoria="comboMedia"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
+        plantillasMedia.map( ( item, i ) => (  <span className="animated badge badge-success spn-materias txt-con-salto"  data-categoria="comboMedia"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
            )   
       break;
       case "btnPrimaria":
         tmpBotonera  = (
-            plantillasPrimaria.map( ( item, i ) => (  <span className="badge badge-info spn-materias animated"  data-categoria="comboPrimaria"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
+            plantillasPrimaria.map( ( item, i ) => (  <span className="badge badge-info spn-materias animated txt-con-salto"  data-categoria="comboPrimaria"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnPreescolar":
         tmpBotonera  = (
-          plantillasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias animated"   data-categoria="comboPreescolar"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
+          plantillasPreescolar.map( ( item, i ) => (  <span className="badge badge-primary spn-materias animated txt-con-salto"   data-categoria="comboPreescolar"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       case "btnGeneral":
         tmpBotonera  = (
-          plantillasGenerales.map( ( item, i ) => (  <span className="badge badge-primary spn-materias animated" data-categoria="comboGenerales"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
+          plantillasGenerales.map( ( item, i ) => (  <span className="badge badge-primary spn-materias animated txt-con-salto" data-categoria="comboGenerales"   id={item.id}  key={ i }  onClick={this.cargarComboPlantilla}  >  {item.label}   </span>         ) ) 
             ) 
       break;
       
