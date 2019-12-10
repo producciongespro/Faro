@@ -14,7 +14,7 @@ const DocumentosEvaluacion = (props) => {
         <div className="container">
 
             <div className="row">
-                <div className="col-12  text-right alert alert-secondary">
+                <div className="col-12  text-right alert">
                     <img className="bannerRecursos" src={img + "encabezado_documentos.png"} alt="Encabezado de Documentos de apoyo" />
                     <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={props.handlerCerrarDocumentosEvaluacion} src={imgGeneral + "btn_volver.png"} alt="Volver" />
                 </div>

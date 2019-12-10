@@ -3,60 +3,131 @@
    "nivel" : "Secundaria",
    "materia" : "Español",
    "anno" : "Sétimo", 
-   "mes" : "Enero",
-    "lineamientos" : "https://www.nacion.com/",
-    "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-    "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-    "novela" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-    "transversal" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-    "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
+   "mes" : "Febrero",
+    "lineamientos" : " ",
+    "lectura" : " ",
+    "monografia" : " ",
+    "novela" : " ",
+    "transversal" : " ",
+    "mensual" : " "
    },
+
    {
    "nivel" : "Secundaria",
    "materia" : "Español",
    "anno" : "Sétimo", 
-   "mes" : "Febrero",
-    "lineamientos" : "https://www.nacion.com/",
-    "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-    "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-    "novela" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-    "transversal" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-    "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
+   "mes" : "Marzo",
+    "lineamientos" : " ",
+    "lectura" : " ",
+    "monografia" : " ",
+    "novela" : " ",
+    "transversal" : " ",
+    "mensual" : " "
    },
+
+
    {
       "nivel" : "Secundaria",
       "materia" : "Español",
       "anno" : "Octavo", 
-      "mes" : "Enero",
-       "lineamientos" : "https://www.nacion.com/",
-       "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "novela" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "transversal" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
-   },
+      "mes" : "Abril",
+      "lineamientos" : " ",
+      "lectura" : " ",
+      "monografia" : " ",
+      "novela" : " ",
+      "transversal" : " ",
+      "mensual" : " "
+     },
+
+
    {
       "nivel" : "Secundaria",
       "materia" : "Español",
       "anno" : "Noveno", 
-      "mes" : "Enero",
-       "lineamientos" : "https://www.nacion.com/",
-       "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "novela" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "transversal" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
+      "mes" : "Mayo",
+      "lineamientos" : " ",
+       "lectura" : " ",
+       "monografia" : " ",
+       "novela" : " ",
+      "transversal" : " ",
+       "mensual" : " "
    },
+
    {
       "nivel" : "Secundaria",
       "materia" : "Español",
       "anno" : "Noveno", 
-      "mes" : "Marzo",
-       "lineamientos" : "https://www.nacion.com/",
-       "lectura" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "monografia" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "novela" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "transversal" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico",
-       "mensual" : "https://cuentosparadormir.com/infantiles/cuento/el-arbol-magico"
+      "mes" : "Junio",
+       "lineamientos" : " ",
+      "lectura" : " ",
+      "monografia" : " ",
+      "novela" : " ",
+      "transversal" : " ",
+      "mensual" : " "
+   },
+
+   {
+      "nivel" : "Secundaria",
+      "materia" : "Español",
+      "anno" : "Noveno", 
+      "mes" : "Julio",
+       "lineamientos" : " ",
+      "lectura" : " ",
+      "monografia" : " ",
+      "novela" : " ",
+      "transversal" : " ",
+      "mensual" : " "
+   },
+
+   {
+      "nivel" : "Secundaria",
+      "materia" : "Español",
+      "anno" : "Noveno", 
+      "mes" : "Agosto",
+       "lineamientos" : " ",
+      "lectura" : " ",
+      "monografia" : " ",
+      "novela" : " ",
+      "transversal" : " ",
+      "mensual" : " "
+   },
+
+   {
+      "nivel" : "Secundaria",
+      "materia" : "Español",
+      "anno" : "Noveno", 
+      "mes" : "Septiembre",
+       "lineamientos" : " ",
+      "lectura" : " ",
+      "monografia" : " ",
+      "novela" : " ",
+      "transversal" : " ",
+      "mensual" : " "
+   },
+
+   {
+      "nivel" : "Secundaria",
+      "materia" : "Español",
+      "anno" : "Noveno", 
+      "mes" : "Octubre",
+       "lineamientos" : " ",
+      "lectura" : " ",
+      "monografia" : " ",
+      "novela" : " ",
+      "transversal" : " ",
+      "mensual" : " "
+   },
+
+   {
+      "nivel" : "Secundaria",
+      "materia" : "Español",
+      "anno" : "Noveno", 
+      "mes" : "Noviembre",
+       "lineamientos" : " ",
+      "lectura" : " ",
+      "monografia" : " ",
+      "novela" : " ",
+      "transversal" : " ",
+      "mensual" : " "
    }
 ]

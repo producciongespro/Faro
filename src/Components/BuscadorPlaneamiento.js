@@ -355,6 +355,7 @@ class BuscadorPlaneamiento extends Component {
             case "Matemática":
             case "Español":
             case "Estudios Sociales":
+                    console.log("Materia BASICA");                
                 for (let index = 0; index < array.length; index++) {
                     //if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura) {
                     if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].mes === mes) {
@@ -365,6 +366,7 @@ class BuscadorPlaneamiento extends Component {
             case "Educación Física":
             case "Artes Plásticas":
             case "Educación para el Hogar":
+                console.log("***********Materia complementaria");                
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].periodo === periodo) {
                         tmpArray.push(array[index]);
@@ -570,84 +572,136 @@ class BuscadorPlaneamiento extends Component {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <React.Fragment>
                             {
-                                //Materias báscias:
-                                (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales" ) &&
+                                //Encabezado Materias báscias:
+                                (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
                                 (
                                     <div className="card-header">
-                                    <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                        Nivel:  {array[index].nivel}
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Correlacionado: {array[index].correlacionado}
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Asignatura: {array[index].asignatura}
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Mes: {array[index].mes}
-                                    </span>
-                                </div>
+                                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                            Nivel:  {array[index].nivel}
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Correlacionado: {array[index].correlacionado}
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Asignatura: {array[index].asignatura}
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Mes: {array[index].mes}
+                                        </span>
+                                    </div>
                                 )
                             }
                             {
-                                (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar" ) &&
+                                //encabezado materias complementarias:
+                                (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar") &&
                                 (
                                     <div className="card-header">
-                                    <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                        Nivel:  {array[index].nivel}
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Correlacionado: {array[index].correlacionado}
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Asignatura: {array[index].asignatura}
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Periodo: {array[index].periodo}
-                                    </span>
-                                </div>
+                                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                            Nivel:  {array[index].nivel}
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Correlacionado: {array[index].correlacionado}
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Asignatura: {array[index].asignatura}
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Periodo: {array[index].periodo}
+                                        </span>
+                                    </div>
                                 )
                             }
-                                    {
+                            {
+                                //Encabezados inglés
+                                (this.state.asignatura === "Inglés") &&
+                                (
+                                    <div className="card-header">
+                                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                            Nivel:  {array[index].nivel}
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Correlacionado: {array[index].correlacionado}
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Asignatura: {array[index].asignatura}
+                                        </span>
+                                    </div>
+                                )
+                            }
+
+                            {
+                                //Cuerpo de tarjetas depende de la asigntura escogida:
+                                //1 - En el caso de materias básicas:
+                                (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
+                                (
+                                    <div className="card-body mr-2">
+                                        <div className="row">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                    </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla
+                                    </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Círculo de la armonía
+                                    </a>
+                                        </div>
+                                        <div className="row">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].circuloCreatividad} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Círculo de la creatividad
+                                    </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].actividadCierre} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Actividad de cierre
+                                    </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> No correlacionado
+                                    </a>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                            {
+                                //Cuerpo de tarjetas depende de la asigntura escogida:
+                                //2 - En el caso de materias complementarias:
+                                (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar") &&
+                                (
+                                    <div className="card-body mr-2">
+                                        <div className="row">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                    </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Correlacionado
+                                    </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> No correlacionado
+                                    </a>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                            {
+                                //Cuerpo de tarjetas depende de la asigntura escogida:
+                                //3 - En el caso de inglés:
                                 (this.state.asignatura === "Inglés" ) &&
                                 (
-                                    <div className="card-header">
-                                    <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                        Nivel:  {array[index].nivel}
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Correlacionado: {array[index].correlacionado}
-                                    </span>
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Asignatura: {array[index].asignatura}
-                                    </span>                                   
-                                </div>
+                                    <div className="card-body mr-2">
+                                        <div className="row">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                    </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla
+                                    </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].recurso} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Recursos
+                                    </a>
+                                        </div>
+                                    </div>
                                 )
                             }
-                            <div className="card-body mr-2">
-                                <div className="row">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Lineamiento
-                                </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Plantilla
-                                </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Círculo de la armonía
-                                </a>
-                                </div>
-                                <div className="row">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].circuloCreatividad} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Círculo de la creatividad
-                                </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].actividadCierre} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Actividad de cierre
-                                </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> No correlacionado
-                                </a>
-                                </div>
-                            </div>
+
+
                         </React.Fragment>
                     }
                 </div>
@@ -913,7 +967,7 @@ class BuscadorPlaneamiento extends Component {
                 <div className="container">
                     <div className="row">
                         {/*******Coluimna 1   NIVEL *********/}
-                        <div className="col-3">
+                        <div className="col-sm-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
@@ -927,7 +981,7 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                         </div>
                         {/*******Columna 2******** AÑO*/}
-                        <div className="col-3  ">
+                        <div className="col-sm-3  ">
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
@@ -1028,7 +1082,7 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                         </div>
                         {/*******Columna 3  ASIGNATURA (MATERIA) *********/}
-                        <div className="col-3">
+                        <div className="col-sm-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
@@ -1155,7 +1209,7 @@ class BuscadorPlaneamiento extends Component {
 
 
                         {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) - mes en Unidocentes */}
-                        <div className="col-3">
+                        <div className="col-sm-3">
                             {//CASO 1: Secundaria-Español
                                 (this.state.materia === "Español" && this.state.nivel === "Secundaria") &&
                                 (

@@ -73,8 +73,7 @@ class EvaluacionCategorias extends Component {
         return (
             <div className="container">
 
-                <div className="jumbotron">
-
+              
                 <div className="row">
                     <div className="col-12 text-right">
                         <h1>
@@ -94,7 +93,7 @@ class EvaluacionCategorias extends Component {
                         <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarCategoriasEvaluacion} src={imgGeneral + "btn_volver.png"} alt="Volver" />
                     </div>
                     </div>
-                </div>
+                
                 <br /><br />
                 <div className="row">
                     <div className="col-5">
