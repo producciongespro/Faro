@@ -491,26 +491,26 @@ padding-top:5%;
     text-align: right;
   }
 
-  #politica{
+  .politica{
     margin-top: 23%;
     z-index: 12;
     margin-left: 73%;
   }
 
-  #politica2{
+  .politica2{
     position: absolute;
      margin-top: 30%; 
     z-index: 12;
     margin-left: -43%;
   }
 
-  #estudiante{
+  .estudiante{
     margin-top: -28%;
     z-index: 3;
     margin-left: -40%;
 }
 
-#estudiante2{
+.estudiante2{
   position: absolute;
   margin-top: 181%;
   z-index: 3;
@@ -518,7 +518,7 @@ padding-top:5%;
 }
 
 
-  #perfil{
+  .perfil{
     margin-top: -29%;
     z-index: 3;
     margin-left: -40%;
@@ -526,22 +526,22 @@ padding-top:5%;
 
   
 
-  #programas{
+  .programas{
     margin-top: 18%;
     margin-left: -41%;
   }
 
-  #programas2{
+  .programas2{
     position: absolute;
     margin-top: 18%;
     margin-left: -32%;
   }
 
-  #transformacion{
+  .transformacion{
     margin-top: -39%;
   }
 
-  #transformacion2{
+  .transformacion2{
     position: absolute;
     margin-top: 55%;
     margin-left: -55%;
@@ -549,38 +549,38 @@ padding-top:5%;
     width: 170%;
   }
 
-  #faro{
+  .faro{
     margin-top: -9%;
     z-index: 3;
     margin-left: 18%;
   }
 
-  #faro2{
+  .faro2{
     position: absolute;
     margin-top: 226%;
     z-index: 3;
     margin-left: -35%;
   }
 
-  #fundamentos{
+  .fundamentos{
     margin-top: -2%;
     z-index: 3; 
     margin-left: 16%;
   }
 
-  #fundamentos2{
+  .fundamentos2{
     position: absolute;
     margin-top: -20%;
     z-index: 3; 
     margin-left: -39%;
   }
 
-  #reglamento{
+  .reglamento{
     margin-left: -11%;
     margin-top: -15%;
   }
 
-  #reglamento2{
+  .reglamento2{
     position: absolute;
     margin-left: 14%;
     margin-top: 93%;
