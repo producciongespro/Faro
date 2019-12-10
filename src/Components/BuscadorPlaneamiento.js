@@ -183,7 +183,7 @@ class BuscadorPlaneamiento extends Component {
                 this.tipoMateria = "complementaria"
             }
         }
-        console.log("tipo de materia", this.tipoMateria);
+        //console.log("tipo de materia", this.tipoMateria);
         //Activa el boton buscar:
         this.activarBotonBuscar();
     }
@@ -354,8 +354,7 @@ class BuscadorPlaneamiento extends Component {
             case "Ciencias":
             case "Matemática":
             case "Español":
-            case "Estudios Sociales":
-                    console.log("Materia BASICA");                
+            case "Estudios Sociales":                    
                 for (let index = 0; index < array.length; index++) {
                     //if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura) {
                     if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].mes === mes) {
@@ -365,8 +364,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
             case "Educación Física":
             case "Artes Plásticas":
-            case "Educación para el Hogar":
-                console.log("***********Materia complementaria");                
+            case "Educación para el Hogar":                
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].periodo === periodo) {
                         tmpArray.push(array[index]);
@@ -457,13 +455,13 @@ class BuscadorPlaneamiento extends Component {
                 console.log("Nvel fuera de rango");
                 break;
         }
-        console.log("Resultado", this.arrayResultado);
+        //console.log("Resultado", this.arrayResultado);
     }
 
     /* TARJETAS PARA RENDERIZA*/
     tarjetasBasico = (array) => {
         // Primaria, secudnaria e intercultural
-        console.log("array recibido en tarjetas:", array);
+        //console.log("array recibido en tarjetas:", array);
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {
@@ -562,7 +560,7 @@ class BuscadorPlaneamiento extends Component {
 
     tarjetasUnidocente = (array) => {
         // Primaria, secudnaria e intercultural
-        console.log("array recibido:", array);
+        //console.log("array recibido:", array);
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {
@@ -718,7 +716,7 @@ class BuscadorPlaneamiento extends Component {
 
     tarjetasJovenesAdultos = (array) => {
         // Primaria, secudnaria e intercultural
-        console.log("array recibido:", array);
+        //console.log("array recibido:", array);
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {
@@ -764,7 +762,7 @@ class BuscadorPlaneamiento extends Component {
 
     tarjetasPedagogiaHosp = (array) => {
         // Primaria, secudnaria e intercultural
-        console.log("array recibido:", array);
+        //console.log("array recibido:", array);
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {
@@ -887,10 +885,9 @@ class BuscadorPlaneamiento extends Component {
         }
     }
 
-
     tarjetasPreescolar = (array) => {
         // Primaria, secudnaria e intercultural
-        console.log("array recibido:", array);
+        //console.log("array recibido:", array);
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {
@@ -936,11 +933,6 @@ class BuscadorPlaneamiento extends Component {
             this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
-
-
-
-
-
 
     render() {
         /*
