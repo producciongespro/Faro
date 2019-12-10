@@ -75,6 +75,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
@@ -134,9 +155,6 @@
 
 
 
-
-
-
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
@@ -161,7 +179,6 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
         "plantilla" : " "
     },
-
 
 
 
@@ -217,6 +234,18 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
         "plantilla" : " "
     },
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -243,6 +272,24 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/07_lin_biologia_secundaria.pdf",
         "plantilla" : " "
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -283,6 +330,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
     {
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
@@ -310,6 +367,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
@@ -334,7 +403,6 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
         "plantilla" : " "
     },
-
 
 
 
@@ -391,7 +459,6 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
         "plantilla" : " "
     },
-
 
 
     
@@ -428,6 +495,390 @@
 
 
 
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Física",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Física",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Física",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Musical",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Musical",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Musical",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Musical",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Musical",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Musical",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Musical",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Musical",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Musical",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Musical",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Musical",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Musical",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Musical",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Musical",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Musical",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación para la Vida Cotidiana",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación para la Vida Cotidiana",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación para la Vida Cotidiana",
+        "planEstudio":"Aspectos Culturales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Educación Religiosa",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
+    
 
 
 
@@ -554,21 +1005,7 @@
 
 
 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
+   
 
 
 
@@ -647,41 +1084,7 @@
 
 
 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Sétimo",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
+    
 
 
 
@@ -694,42 +1097,7 @@
 
 
 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Sétimo",
-        "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
+    
 
 
 
@@ -747,42 +1115,7 @@
 
 
 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Sétimo",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
+    
 
 
 
@@ -837,7 +1170,7 @@
         "planEstudio":"Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
+    }
 
 
 
@@ -847,28 +1180,5 @@
 
     
 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Sétimo",
-        "materia" : "Educación para la Vida Cotidiana",
-        "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Educación para la Vida Cotidiana",
-        "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Educación para la Vida Cotidiana",
-        "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    }
+    
 ]
