@@ -4,130 +4,835 @@
    "materia" : "Español",
    "anno" : "Sétimo", 
    "mes" : "Febrero",
-    "lineamientos" : " ",
+    "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+    "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
     "lectura" : " ",
     "monografia" : " ",
     "novela" : " ",
     "transversal" : " ",
     "mensual" : " "
    },
+
 
    {
    "nivel" : "Secundaria",
    "materia" : "Español",
    "anno" : "Sétimo", 
    "mes" : "Marzo",
-    "lineamientos" : " ",
-    "lectura" : " ",
-    "monografia" : " ",
-    "novela" : " ",
-    "transversal" : " ",
-    "mensual" : " "
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+   "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+  "lectura" : " ",
+   "monografia" : " ",
+   "novela" : " ",
+   "transversal" : " ",
+   "mensual" : " "
+   }, 
+
+    {
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Abril",
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+   "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+  "lectura" : " ",
+   "monografia" : " ",
+   "novela" : " ",
+   "transversal" : " ",
+   "mensual" : " "
+   }, 
+   
+   
+   {
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Mayo",
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+   "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+  "lectura" : " ",
+   "monografia" : " ",
+   "novela" : " ",
+   "transversal" : " ",
+   "mensual" : " "
+   }, 
+   
+
+   {
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Junio",
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+   "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+  "lectura" : " ",
+   "monografia" : " ",
+   "novela" : " ",
+   "transversal" : " ",
+   "mensual" : " "
+   },
+   
+
+   {
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Julio",
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+   "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+  "lectura" : " ",
+   "monografia" : " ",
+   "novela" : " ",
+   "transversal" : " ",
+   "mensual" : " "
    },
 
 
    {
-      "nivel" : "Secundaria",
-      "materia" : "Español",
-      "anno" : "Octavo", 
-      "mes" : "Abril",
-      "lineamientos" : " ",
-      "lectura" : " ",
-      "monografia" : " ",
-      "novela" : " ",
-      "transversal" : " ",
-      "mensual" : " "
-     },
-
-
-   {
-      "nivel" : "Secundaria",
-      "materia" : "Español",
-      "anno" : "Noveno", 
-      "mes" : "Mayo",
-      "lineamientos" : " ",
-       "lectura" : " ",
-       "monografia" : " ",
-       "novela" : " ",
-      "transversal" : " ",
-       "mensual" : " "
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Agosto",
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+   "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+  "lectura" : " ",
+   "monografia" : " ",
+   "novela" : " ",
+   "transversal" : " ",
+   "mensual" : " "
    },
 
+      
    {
-      "nivel" : "Secundaria",
-      "materia" : "Español",
-      "anno" : "Noveno", 
-      "mes" : "Junio",
-       "lineamientos" : " ",
-      "lectura" : " ",
-      "monografia" : " ",
-      "novela" : " ",
-      "transversal" : " ",
-      "mensual" : " "
-   },
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Septiembre",
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+   "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+  "lectura" : " ",
+   "monografia" : " ",
+   "novela" : " ",
+   "transversal" : " ",
+   "mensual" : " "
+   },   
+ 
 
    {
-      "nivel" : "Secundaria",
-      "materia" : "Español",
-      "anno" : "Noveno", 
-      "mes" : "Julio",
-       "lineamientos" : " ",
-      "lectura" : " ",
-      "monografia" : " ",
-      "novela" : " ",
-      "transversal" : " ",
-      "mensual" : " "
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Octubre",
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+   "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+  "lectura" : " ",
+   "monografia" : " ",
+   "novela" : " ",
+   "transversal" : " ",
+   "mensual" : " "
    },
+   
+   
+   {
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Sétimo", 
+   "mes" : "Noviembre",
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+   "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+  "lectura" : " ",
+   "monografia" : " ",
+   "novela" : " ",
+   "transversal" : " ",
+   "mensual" : " "
+   },     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    {
-      "nivel" : "Secundaria",
-      "materia" : "Español",
-      "anno" : "Noveno", 
-      "mes" : "Agosto",
-       "lineamientos" : " ",
-      "lectura" : " ",
-      "monografia" : " ",
-      "novela" : " ",
-      "transversal" : " ",
-      "mensual" : " "
-   },
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Febrero",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Marzo",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
 
    {
-      "nivel" : "Secundaria",
-      "materia" : "Español",
-      "anno" : "Noveno", 
-      "mes" : "Septiembre",
-       "lineamientos" : " ",
-      "lectura" : " ",
-      "monografia" : " ",
-      "novela" : " ",
-      "transversal" : " ",
-      "mensual" : " "
-   },
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Abril",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Mayo",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Junio",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Julio",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Agosto",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+   
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Septiembre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},   
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Octubre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Octavo", 
+"mes" : "Noviembre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Febrero",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Marzo",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
 
    {
-      "nivel" : "Secundaria",
-      "materia" : "Español",
-      "anno" : "Noveno", 
-      "mes" : "Octubre",
-       "lineamientos" : " ",
-      "lectura" : " ",
-      "monografia" : " ",
-      "novela" : " ",
-      "transversal" : " ",
-      "mensual" : " "
-   },
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Abril",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Mayo",
+"lineamientos" : " ",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Junio",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Julio",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Agosto",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+   
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Septiembre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},   
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Octubre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Noveno", 
+"mes" : "Noviembre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Febrero",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Marzo",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
 
    {
-      "nivel" : "Secundaria",
-      "materia" : "Español",
-      "anno" : "Noveno", 
-      "mes" : "Noviembre",
-       "lineamientos" : " ",
-      "lectura" : " ",
-      "monografia" : " ",
-      "novela" : " ",
-      "transversal" : " ",
-      "mensual" : " "
-   }
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Abril",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Mayo",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Junio",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Julio",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Agosto",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+   
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Septiembre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},   
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Octubre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Décimo", 
+"mes" : "Noviembre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Febrero",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Marzo",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
+
+   {
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Abril",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Mayo",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+}, 
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Junio",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Julio",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Agosto",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+   
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Septiembre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},   
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Octubre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+},
+
+
+{
+"nivel" : "Secundaria",
+"materia" : "Español",
+"anno" : "Undécimo", 
+"mes" : "Noviembre",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
+"lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
+"lectura" : " ",
+"monografia" : " ",
+"novela" : " ",
+"transversal" : " ",
+"mensual" : " "
+} 
+
+
 ]
