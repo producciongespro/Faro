@@ -742,7 +742,358 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },     {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+     
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+     
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" : "Francés como Lengua Extranjera",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    }, 
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Francés",
+        "distribucion": "I",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+  {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Francés",
+        "distribucion": "II",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Francés",
+        "distribucion": "III",
+        "tipoPlan" :  "Secciones de Francés avanzado",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
+        "plantilla" : ""
+    },  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
+
+
 
     {
         "nivel" : "Secundaria",
@@ -832,86 +1183,7 @@
 
 
 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Sétimo",
-        "materia" : "Francés",
-        "tipoPlan" : "Francés como Lengua Extranjera",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    },  
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Francés",
-        "tipoPlan" : "Francés como Lengua Extranjera",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    },  
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Francés",
-        "tipoPlan" : "Francés como Lengua Extranjera",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    },  
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Francés",
-        "tipoPlan" : "Francés como Lengua Extranjera",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    }, 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Francés",
-        "tipoPlan" : "Francés como Lengua Extranjera",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    }, 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Sétimo",
-        "materia" : "Francés",
-        "tipoPlan" :  "Secciones de Francés avanzado",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    }, 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Francés",
-        "tipoPlan" :  "Secciones de Francés avanzado",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    },  
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Francés",
-        "tipoPlan" :  "Secciones de Francés avanzado",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    },  
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Francés",
-        "tipoPlan" :  "Secciones de Francés avanzado",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    },  
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Francés",
-        "tipoPlan" :  "Secciones de Francés avanzado",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
-    },  
+   
 
     
 

@@ -525,9 +525,6 @@
         "plantilla" : " "
     },
 
-
-
-
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
@@ -801,7 +798,7 @@
     {
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
-        "materia" : "Educación para la Vida Cotidiana",
+        "materia" : "Educación para el Hogar",
         "planEstudio":"Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
         "plantilla" : " "
@@ -809,7 +806,7 @@
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
-        "materia" : "Educación para la Vida Cotidiana",
+        "materia" : "Educación para el Hogar",
         "planEstudio":"Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
         "plantilla" : " "
@@ -817,7 +814,7 @@
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
-        "materia" : "Educación para la Vida Cotidiana",
+        "materia" : "Educación para el Hogar",
         "planEstudio":"Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
         "plantilla" : " "
@@ -876,9 +873,135 @@
 
 
 
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Sétimo",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Octavo",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Noveno",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Estudios Sociales",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Filosofía",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/14_lin_filosofia_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Física",
+        "distribucion": "I",
+        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Física",
+        "distribucion": "II",
+        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Décimo",
+        "materia" : "Física",
+        "distribucion": "III",
+        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
 
 
     
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Física",
+        "distribucion": "I",
+        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Física",
+        "distribucion": "II",
+        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Física",
+        "distribucion": "III",
+        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1013,42 +1136,7 @@
 
 
 
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Sétimo",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-
+    
 
     
 
@@ -1069,13 +1157,7 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/13_lin_psicologia_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/psico/ppd_psicologia.docx"
     },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Filosofía",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/14_lin_filosofia_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
+   
    
 
 
