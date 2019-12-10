@@ -86,22 +86,22 @@ class Tags_info extends Component {
       this.colorFondo="col-2  color-morado";
       this.botonesNav = (
             <React.Fragment>
-                <div className="col-2">
+                <div className="col-sm-2">
                   <button  id="btnPreescolar" className="btn btn-outline-primary btn-block"   onClick={this.cargaBotonesProgramas } > Educ. Preescolar </button>      
                 </div>
-                <div className="col-2">
+                <div className="col-sm-2">
                   <button id="btnPrimaria" className="btn btn-outline-info btn-block"   onClick={this.cargaBotonesProgramas} > Educ. Primaria </button>      
                 </div>
-                <div className="col-2">
+                <div className="col-sm-2">
                   <button  id="btnMedia" className="btn btn-outline-success btn-block"  onClick={this.cargaBotonesProgramas} > Educ. Media </button>      
                 </div>
-                <div className="col-2">
+                <div className="col-sm-2">
                   <button id="btnIntercultural" className="btn btn-outline-danger btn-block"  onClick={this.cargaBotonesProgramas} > Educ. Intercultural </button>      
                 </div>
-                <div className="col-2">
+                <div className="col-sm-2">
                   <button id="btnAdultos"  className="btn btn-outline-warning btn-block"  onClick={this.cargaBotonesProgramas} > Educ. Jóvenes y Adultos </button>      
                 </div>
-                <div className="col-2">
+                <div className="col-sm-2">
                   <button id="btnApoyo" className="btn btn-outline-dark btn-block"  onClick={this.cargaBotonesProgramas} > Apoyos Educativos </button>      
                 </div>
                
