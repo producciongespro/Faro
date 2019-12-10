@@ -60,7 +60,7 @@ const DocsOficiales = ( props ) => {
             </div>
             <div className="col-4  ladoIzq">
             <figure>
-              <img className="botones-portada hvr-pop img-fluid transformacion" id="transformacion" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "reglamento.png"} data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />            
+              <img className="botones-portada hvr-pop img-fluid reglamento" id="reglamento" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "reglamento.png"} data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />            
             </figure>
             </div>
         </div>
@@ -72,13 +72,13 @@ const DocsOficiales = ( props ) => {
           </div>
           <div className="col-4 ">
               <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="faro" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {img + "faro.png"}  data-content= {pdfs.Faro }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
+              <img className="botones-portada hvr-pop img-fluid faro" id="faro" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {img + "faro.png"}  data-content= {pdfs.Faro }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
               
             </figure>
           </div>
           <div className="col-4  ladoIzq">
               <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="estudiante" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "perfil_estudiantil.png"}  data-content= {pdfs.Docs_Oficiales_Perfil_Est }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
+              <img className="botones-portada hvr-pop img-fluid estudiante" id="estudiante" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "perfil_estudiantil.png"}  data-content= {pdfs.Docs_Oficiales_Perfil_Est }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
             
             </figure>
           </div>
