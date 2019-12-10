@@ -10,5 +10,37 @@
     },
     "Educación Física": {
         "distribucion": "Trimestral"
+    },
+
+    "Educación Musical": {
+        "distribucion": "Anual"
+    },
+    "Educación para el Hogar": {
+        "distribucion": "Anual"
+    },
+    "Educación Religiosa": {
+        "distribucion": "Anual"
+    },
+    "Español": {
+        "distribucion": "Contenido"
+    },
+
+    "Estudios Sociales": {
+        "distribucion": "Trimestral"
+    },
+    "Francés": {
+        "distribucion": "Trimestral"
+    },
+    "Inglés": {
+        "distribucion": "Anual"
+    },
+    "Italiano": {
+        "distribucion": "Trimestral"
+    },
+    "Matemática": {
+        "distribucion": "Mensual"
+    },
+    "Orientación": {
+        "distribucion": "Anual"
     }
-}
+ }
