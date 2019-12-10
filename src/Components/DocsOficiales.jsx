@@ -39,28 +39,28 @@ const DocsOficiales = ( props ) => {
         <div className="row">
             <div className="col-4  ladoIzq">
               <figure>
-                <img className="botones-portada hvr-pop img-fluid" id="politica" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "politica_educativa.png"}  data-content= {pdfs.Politica_educativa }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
+                <img className="botones-portada hvr-pop img-fluid politica" id="politica" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "politica_educativa.png"}  data-content= {pdfs.Politica_educativa }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
               </figure>
               </div>
             <div className="col-4 ">
                 <figure>
-                <img className="botones-portada hvr-pop img-fluid" id="fundamentos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "fundamentos_curriculo.png"} data-content= {pdfs.Transformacion_curricular }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
+                <img className="botones-portada hvr-pop img-fluid fundamentos" id="fundamentos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "fundamentos_curriculo.png"} data-content= {pdfs.Transformacion_curricular }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
               </figure>
             </div>
             <div className="col-4  ladoIzq">
                 <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="programas" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {img + "programas_estudio.png"} data-content= {pdfs.Tacaco }  data-typecontent ="programasEstudio"  onClick={props.handlerOpenProgramasEducativos}  alt="Programas de estudio de estudio" />
+              <img className="botones-portada hvr-pop img-fluid programas" id="programas" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {img + "programas_estudio.png"} data-content= {pdfs.Tacaco }  data-typecontent ="programasEstudio"  onClick={props.handlerOpenProgramasEducativos}  alt="Programas de estudio de estudio" />
               </figure>
             </div>
         </div>
         <div className="row">
             <div className="col-4"></div>
             <div className="col-4 fondo" >   
-              <img id="transformacion" className="img-fluid" data-infosource={5} src= {img + "transformacion_curricular.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  alt="Transformación curricular" />
+              <img id="transformacion" className="img-fluid transformacion" data-infosource={5} src= {img + "transformacion_curricular.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  alt="Transformación curricular" />
             </div>
             <div className="col-4  ladoIzq">
             <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="reglamento" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "reglamento.png"} data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />            
+              <img className="botones-portada hvr-pop img-fluid transformacion" id="transformacion" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "reglamento.png"} data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />            
             </figure>
             </div>
         </div>

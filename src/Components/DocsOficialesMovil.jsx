@@ -21,29 +21,29 @@ const DocsOficialesMovil =( props ) => {
         <div className="row">
             <div className="col-4  ladoIzq">
               <figure>
-                <img className="botones-portada hvr-pop img-fluid" id="politica2" data-infosource={5}   src={img + "politica_educativa.png" } data-content= {pdfs.Politica_educativa }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
+                <img className="botones-portada hvr-pop img-fluid politica2" id="politica" data-infosource={5}   src={img + "politica_educativa.png" } data-content= {pdfs.Politica_educativa }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
               </figure>
               </div>
             <div className="col-4 ">
                 <figure>
-                <img className="botones-portada hvr-pop img-fluid" id="fundamentos2" data-infosource={5}   src= {img + "fundamentos_curriculo.png" }  data-content= {pdfs.Transformacion_curricular }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
+                <img className="botones-portada hvr-pop img-fluid fundamentos2" id="fundamentos" data-infosource={5}   src= {img + "fundamentos_curriculo.png" }  data-content= {pdfs.Transformacion_curricular }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
               
               </figure>
             </div>
             <div className="col-4  ladoIzq">
                 <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="programas2" data-infosource={5}  src= {img + "programas_estudio.png"} data-content= {pdfs.Tacaco }  data-typecontent ="programasEstudio"  onClick={props.handlerOpenProgramasEducativos}  alt="Programas de estudio de estudio"  />
+              <img className="botones-portada hvr-pop img-fluid programas2" id="programas" data-infosource={5}  src= {img + "programas_estudio.png"} data-content= {pdfs.Tacaco }  data-typecontent ="programasEstudio"  onClick={props.handlerOpenProgramasEducativos}  alt="Programas de estudio de estudio"  />
               </figure>
             </div>
         </div>
         <div className="row">
             <div className="col-4"></div>
             <div className="col-4 fondo" >   
-              <img id="transformacion2" className="" data-infosource={5} src= {img + "transformacion_curricular.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  alt="Transformación curricular" />
+              <img id="transformacion" className="transformacion2" data-infosource={5} src= {img + "transformacion_curricular.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  alt="Transformación curricular" />
             </div>
             <div className="col-4  ladoIzq">
             <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="reglamento2" data-infosource={5} src={img + "reglamento.png" } data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />            
+              <img className="botones-portada hvr-pop img-fluid reglamento2" id="reglamento" data-infosource={5} src={img + "reglamento.png" } data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />            
             </figure>
             </div>
         </div>
@@ -55,13 +55,13 @@ const DocsOficialesMovil =( props ) => {
           </div>
           <div className="col-4 ">
               <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="faro2" data-infosource={5}   src=  {img + "faro.png"} data-content= {pdfs.Faro }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
+              <img className="botones-portada hvr-pop img-fluid faro2" id="faro" data-infosource={5}   src=  {img + "faro.png"} data-content= {pdfs.Faro }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
               
             </figure>
           </div>
           <div className="col-4  ladoIzq">
               <figure>
-              <img className="botones-portada hvr-pop img-fluid" id="estudiante2" data-infosource={5}  src={img + "perfil_estudiantil.png" }  data-content= {pdfs.Docs_Oficiales_Perfil_Est }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
+              <img className="botones-portada hvr-pop img-fluid estudiante2" id="estudiante" data-infosource={5}  src={img + "perfil_estudiantil.png" }  data-content= {pdfs.Docs_Oficiales_Perfil_Est }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
             
             </figure>
           </div>
