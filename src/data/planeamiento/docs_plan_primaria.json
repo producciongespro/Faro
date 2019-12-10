@@ -670,38 +670,119 @@
     },
 
 
-    
+
 
     {
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Estudios Sociales",
+        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "plantilla" : ""
     },
+    
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Estudios Sociales",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : ""
+    },
+    
+    {
+        "nivel" : "Primaria",
+        "anno" : "Tercero",
+        "materia" : "Estudios Sociales",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : ""
+    },
+
+
+
+
+
 
     {
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Estudios Sociales",
+        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "plantilla" : " "
     },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Estudios Sociales",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Estudios Sociales",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
 
     {
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Estudios Sociales",
+        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "plantilla" : " "
     },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Estudios Sociales",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Quinto",
+        "materia" : "Estudios Sociales",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+
+
+
 
     {
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Estudios Sociales",
+        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Estudios Sociales",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Primaria",
+        "anno" : "Sexto",
+        "materia" : "Estudios Sociales",
+        "distribucion": "III",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "plantilla" : " "
     },
 
 
