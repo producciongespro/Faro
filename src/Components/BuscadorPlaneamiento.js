@@ -17,6 +17,7 @@ import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
 import listasPlan from '../data/planeamiento/select_general.json';
 import selectEspanolPrimaria from '../data/planeamiento/select_espanol_primaria.json';
 import distribucionPrimaria from '../data/planeamiento/ditribucion_materias_primaria.json';
+import distribucionSecundaria from '../data/planeamiento/ditribucion_materias_secundaria.json';
 
 import assets from '../data/config/config.json';
 
@@ -935,7 +936,7 @@ class BuscadorPlaneamiento extends Component {
             <React.Fragment>
 
                 <div className="row">
-                    <div className="col-12  text-right alert alert-secondary">
+                    <div className="col-12  text-right alert">
                         <img className="bannerRecursos" src={img + "encabezado_documentos_apoyo.png"} alt="Encabezado de Documentos de apoyo" />
                         <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
                     </div>
