@@ -767,7 +767,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Francés",
         "distribucion": "I",
         "tipoPlan" : "Francés como Lengua Extranjera",
@@ -776,7 +776,7 @@
     },  
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Francés",
         "distribucion": "II",
         "tipoPlan" : "Francés como Lengua Extranjera",
@@ -785,7 +785,7 @@
     }, 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Francés",
         "distribucion": "III",
         "tipoPlan" : "Francés como Lengua Extranjera",
@@ -923,7 +923,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Francés",
         "distribucion": "I",
         "tipoPlan" :  "Secciones de Francés avanzado",
@@ -932,7 +932,7 @@
     }, 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Francés",
         "distribucion": "II",
         "tipoPlan" :  "Secciones de Francés avanzado",
@@ -941,7 +941,7 @@
     }, 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Francés",
         "distribucion": "III",
         "tipoPlan" :  "Secciones de Francés avanzado",
@@ -1096,7 +1096,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
@@ -1140,7 +1140,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Inglés",
         "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
@@ -1200,7 +1200,7 @@
     
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Italiano",
         "distribucion": "I",
         "tipoPlan" : "Lengua Italiana",  
@@ -1209,7 +1209,7 @@
     },
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Italiano",
         "distribucion": "II",
         "tipoPlan" : "Lengua Italiana",  
@@ -1218,7 +1218,7 @@
     },  
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Italiano",
         "distribucion": "III",
         "tipoPlan" : "Lengua Italiana",  
@@ -1359,7 +1359,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Italiano",
         "distribucion": "I",
         "tipoPlan" :  "Aspectos Culturales",
@@ -1368,7 +1368,7 @@
     }, 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Italiano",
         "distribucion": "II",
         "tipoPlan" :  "Aspectos Culturales",
@@ -1377,7 +1377,7 @@
     },
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Italiano",
         "distribucion": "III",
         "tipoPlan" :  "Aspectos Culturales",

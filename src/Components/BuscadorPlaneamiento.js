@@ -84,7 +84,7 @@ class BuscadorPlaneamiento extends Component {
         //Datos de json para preescolar        
         this.accion = "";
         //Array filtrado con los criterios establecidos por el usuario
-        this.arrayResultado = null;            
+        this.arrayResultado = null;
         //Para las materias que presentan plan por trimestre:
         this.periodo = "";
 
@@ -160,17 +160,17 @@ class BuscadorPlaneamiento extends Component {
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                     //Distribución Materias Primaria
-                    if (this.state.materia !== "" && this.state.nivel === "Primaria"  ) {
-                        this.setState({ distribucionPlan : distribucionPrimaria[this.state.materia].distribucion }, ()=> {
-                            console.log("Distribución primaria:", this.state.distribucionPlan);                            
-                        });                        
-                    }                 
+                    if (this.state.materia !== "" && this.state.nivel === "Primaria") {
+                        this.setState({ distribucionPlan: distribucionPrimaria[this.state.materia].distribucion }, () => {
+                            console.log("Distribución primaria:", this.state.distribucionPlan);
+                        });
+                    }
                     //Distribución Materias Secundaria
-                    if (this.state.materia !== "" && this.state.nivel === "Secundaria"  ) {
-                        this.setState({ distribucionPlan :  distribucionSecundaria[this.state.materia].distribucion  }, ()=> {
-                            console.log("Distribución Secundaria:", this.state.distribucionPlan);    
-                        });                        
-                    }                 
+                    if (this.state.materia !== "" && this.state.nivel === "Secundaria") {
+                        this.setState({ distribucionPlan: distribucionSecundaria[this.state.materia].distribucion }, () => {
+                            console.log("Distribución Secundaria:", this.state.distribucionPlan);
+                        });
+                    }
                 });
                 break;
             case "Unidocentes":
@@ -186,7 +186,7 @@ class BuscadorPlaneamiento extends Component {
             default:
                 console.log("Opcion en select materia fuera de rango");
                 break;
-        }        
+        }
         //console.log("Materia seleccionada", valor);             
         //Activa el boton buscar:
         this.activarBotonBuscar();
@@ -358,7 +358,7 @@ class BuscadorPlaneamiento extends Component {
             case "Ciencias":
             case "Matemática":
             case "Español":
-            case "Estudios Sociales":                    
+            case "Estudios Sociales":
                 for (let index = 0; index < array.length; index++) {
                     //if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura) {
                     if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].mes === mes) {
@@ -368,7 +368,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
             case "Educación Física":
             case "Artes Plásticas":
-            case "Educación para el Hogar":                
+            case "Educación para el Hogar":
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].correlacionado === correlacionado && array[index].asignatura === asignatura && array[index].periodo === periodo) {
                         tmpArray.push(array[index]);
@@ -685,7 +685,7 @@ class BuscadorPlaneamiento extends Component {
                             {
                                 //Cuerpo de tarjetas depende de la asigntura escogida:
                                 //3 - En el caso de inglés:
-                                (this.state.asignatura === "Inglés" ) &&
+                                (this.state.asignatura === "Inglés") &&
                                 (
                                     <div className="card-body mr-2">
                                         <div className="row">
@@ -1083,24 +1083,41 @@ class BuscadorPlaneamiento extends Component {
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
                                         {
-                                            this.state.nivel === "Preescolar" ?
-                                                (
-                                                    <span>Niveles de desempeño</span>
-                                                )
-                                                :
-                                                (
-                                                    (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II"  || this.state.modalidad === "IPEC CINDEA Nivel III") ?
-                                                        (
-                                                            <span>Módulos</span>
-                                                        ) :
-                                                        (
-                                                            <span>Asignatura</span>
-                                                        )
-                                                )
-
-
-
+                                            this.state.nivel === "Preescolar" &&
+                                            (
+                                                <span>Niveles de desempeño</span>
+                                            )
                                         }
+                                        {
+                                            (
+                                                this.state.nivel === "Primaria"
+                                                || this.state.nivel === "Secundaria"
+                                                || this.state.nivel === "Pedagogía Hospitalaria"
+                                                || this.state.nivel === "Unidocentes"
+                                                || this.state.nivel === "Interculturalidad Primaria"
+                                                || this.state.nivel === "Interculturalidad Secundaria"
+                                            ) &&
+                                            (
+                                                <span>Asignatura</span>
+                                            )
+                                        }
+
+                                        {
+                                            this.state.nivel === "Jóvenes y Adultos" &&
+                                            (
+                                                (this.state.modalidad === "IPEC CINDEA Nivel I"
+                                                    || this.state.modalidad === "IPEC CINDEA Nivel II"
+                                                    || this.state.modalidad === "IPEC CINDEA Nivel III"
+                                                ) ?
+                                                    (
+                                                        <span>Módulos</span>
+                                                    ) :
+                                                    (
+                                                        <span>Asignatura</span>
+                                                    )
+                                            )
+                                        }
+
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria}  >
@@ -1148,13 +1165,13 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "Colegios Académicos Nocturnos (CAN)" &&
+                                        (this.state.modalidad === "Colegios Académicos Nocturnos (CAN)" && this.state.nivel === "Jóvenes y Adultos") &&
                                         listasPlan["Colegios Académicos Nocturnos (CAN)"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)" &&
+                                        (this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)" && this.state.nivel === "Jóvenes y Adultos") &&
                                         listasPlan["Colegio Nacional de Educación a Distancia (CONED)"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
@@ -1166,22 +1183,24 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "IPEC CINDEA Nivel I" &&
+                                        (this.state.modalidad === "IPEC CINDEA Nivel I" && this.state.nivel === "Jóvenes y Adultos") &&
                                         listasPlan["IPEC CINDEA Nivel I"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "IPEC CINDEA Nivel II" &&
+                                        (this.state.modalidad === "IPEC CINDEA Nivel II" && this.state.nivel === "Jóvenes y Adultos") &&
                                         listasPlan["IPEC CINDEA Nivel II"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "IPEC CINDEA Nivel III" &&
+
+                                        (this.state.modalidad === "IPEC CINDEA Nivel III" && this.state.nivel === "Jóvenes y Adultos") &&
                                         listasPlan["IPEC CINDEA Nivel III"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
+
                                     }
                                     {
                                         this.state.nivel === "Unidocentes" && (
@@ -1228,7 +1247,7 @@ class BuscadorPlaneamiento extends Component {
                                 //Fin caso 1 por mes **************************
                             }
 
-                        {//CASO 1-1: Para las materias con distribución TRIMESTRAL
+                            {//CASO 1-1: Para las materias con distribución TRIMESTRAL
                                 (this.state.distribucionPlan === "Trimestral") &&
                                 (
                                     <div className="input-group mb-3">
