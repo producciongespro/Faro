@@ -1148,13 +1148,13 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "Colegios Académicos Nocturnos (CAN)" &&
+                                        (this.state.modalidad === "Colegios Académicos Nocturnos (CAN)"  && this.state.nivel === "Jóvenes y Adultos") &&
                                         listasPlan["Colegios Académicos Nocturnos (CAN)"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)" &&
+                                        (this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)"   && this.state.nivel === "Jóvenes y Adultos" ) &&
                                         listasPlan["Colegio Nacional de Educación a Distancia (CONED)"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
@@ -1166,13 +1166,13 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "IPEC CINDEA Nivel I" &&
+                                        (this.state.modalidad === "IPEC CINDEA Nivel I"  && this.state.nivel === "Jóvenes y Adultos") &&
                                         listasPlan["IPEC CINDEA Nivel I"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "IPEC CINDEA Nivel II" &&
+                                        (this.state.modalidad === "IPEC CINDEA Nivel II"  && this.state.nivel === "Jóvenes y Adultos" ) &&
                                         listasPlan["IPEC CINDEA Nivel II"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
