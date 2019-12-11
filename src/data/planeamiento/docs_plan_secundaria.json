@@ -263,14 +263,14 @@
         "anno" : "Décimo",
         "materia" : "Biología",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/07_lin_biologia_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/biol/ppd_biologia_decim_undec.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Biología",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/07_lin_biologia_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/biol/ppd_biologia_decim_undec.docx "
     },
 
 
@@ -305,21 +305,21 @@
         "anno" : "Sétimo",
         "materia" : "Ciencias",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_septimo_ano.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Ciencias",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_octavo_ano.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Ciencias",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_noveno_ano.docx "
     },
   
 
@@ -504,137 +504,38 @@
         "nivel" : "Secundaria",
         "anno" : "Sétimo",
         "materia" : "Educación Física",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Sétimo",
-        "materia" : "Educación Física",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Sétimo",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Educación Física",
-        "distribucion": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_septimo.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Educación Física",
-        "distribucion": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Educación Física",
-        "distribucion": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_octavo.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Educación Física",
-        "distribucion": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Educación Física",
-        "distribucion": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_noveno.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Educación Física",
-        "distribucion": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Educación Física",
-        "distribucion": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_decimo.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Educación Física",
-        "distribucion": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_undecimo.docx "
     },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-
+   
 
 
 
@@ -944,53 +845,21 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Física",
-        "distribucion": "I",
-        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
-        "plantilla" : " "
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fisi/ppd_fisica_decimo.docx "
     },
     {
         "nivel" : "Secundaria",
-        "anno" : "Décimo",
+        "anno" : "Undécimo",
         "materia" : "Física",
-        "distribucion": "II",
-        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
-        "plantilla" : " "
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fisi/ppd_fisica_undecimo.docx "
     },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Física",
-        "distribucion": "III",
-        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
+ 
 
 
     
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Física",
-        "distribucion": "I",
-        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Física",
-        "distribucion": "II",
-        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Física",
-        "distribucion": "III",
-        "lineamiento" : "/faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
-        "plantilla" : " "
-    },
+   
 
 
 
@@ -1058,26 +927,10 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Psicología",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/13_lin_psicologia_secundaria.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/psico/ppd_psicologia_1.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/psic/ppd_psicologia.docx"
     },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Psicología",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/13_lin_psicologia_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Psicología",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/13_lin_psicologia_secundaria.pdf",
-        "plantilla" : " "
-    },
+    
    
 
 
