@@ -25,7 +25,9 @@ const img = assets.img.apoyosPlan;
 const imgGenerales = assets.img.general;
 const serv = assets.servidor;
 
-console.log("distribucionPrimaria", distribucionPrimaria );
+//console.log("distribucionPrimaria", distribucionPrimaria );
+//console.log("distribucionSecundaria", distribucionSecundaria);
+
 //console.log("III ciclo", listasPlan["Secundaria III Ciclo"] );
 //console.log("Secundaria IV Ciclo", listasPlan["Secundaria IV Ciclo"] );
 
@@ -157,8 +159,17 @@ class BuscadorPlaneamiento extends Component {
             case "Pedagogía Hospitalaria":
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
-                    if (this.state.materia !== "") {
-                        console.log("Distribución ", distribucionPrimaria[this.state.materia].distribucion);    
+                    //Distribución Materias Primaria
+                    if (this.state.materia !== "" && this.state.nivel === "Primaria"  ) {
+                        this.setState({ distribucionPlan : distribucionPrimaria[this.state.materia].distribucion }, ()=> {
+                            console.log("Distribución primaria:", this.state.distribucionPlan);                            
+                        });                        
+                    }                 
+                    //Distribución Materias Secundaria
+                    if (this.state.materia !== "" && this.state.nivel === "Secundaria"  ) {
+                        this.setState({ distribucionPlan :  distribucionSecundaria[this.state.materia].distribucion  }, ()=> {
+                            console.log("Distribución Secundaria:", this.state.distribucionPlan);    
+                        });                        
                     }                 
                 });
                 break;
@@ -1195,8 +1206,8 @@ class BuscadorPlaneamiento extends Component {
 
                         {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) - mes en Unidocentes */}
                         <div className="col-sm-3">
-                            {//CASO 1: Secundaria-Español
-                                (this.state.materia === "Español" && this.state.nivel === "Secundaria") &&
+                            {//CASO 1:Para las materias con distribución mensual
+                                (this.state.distribucionPlan === "Mensual") &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
@@ -1214,8 +1225,31 @@ class BuscadorPlaneamiento extends Component {
                                         </select>
                                     </div>
                                 )
-                                //Fin caso 1 **************************
+                                //Fin caso 1 por mes **************************
                             }
+
+                        {//CASO 1-1: Para las materias con distribución TRIMESTRAL
+                                (this.state.distribucionPlan === "Trimestral") &&
+                                (
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                Periodo
+                                        </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                            <option defaultValue value="" >Seleccione:</option>
+                                            {
+                                                listasPlan["Periodos"].map((item, index) => (
+                                                    <option key={"Periodo" + index} value={item}> {item} </option>
+                                                ))
+                                            }
+                                        </select>
+                                    </div>
+                                )
+                                //Fin caso 1 por TRIMESTRE **************************
+                            }
+
                             {//CASO 2: Frances - Ingles
                                 (this.state.materia === "Francés" || this.state.materia === "Inglés") &&
                                 (
