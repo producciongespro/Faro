@@ -1089,7 +1089,7 @@ class BuscadorPlaneamiento extends Component {
                                                 )
                                                 :
                                                 (
-                                                    this.state.nivel === "Jóvenes y Adultos" ?
+                                                    (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II"  || this.state.modalidad === "IPEC CINDEA Nivel III") ?
                                                         (
                                                             <span>Módulos</span>
                                                         ) :
