@@ -26,7 +26,7 @@ const cambiarEtiquetas = (dato) => {
             salida = "Sexto"
         break;
         case "7":
-            salida = "Sétimo"
+            salida = "Séptimo"
         break;
         case "8":
             salida = "Octavo"

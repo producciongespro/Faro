@@ -17,7 +17,7 @@ var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Espa
 var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación", "Química"]
 var anoSecundaria = [
     {
-        "label": "Sétimo",
+        "label": "Séptimo",
         "id": "7"
     },
     {

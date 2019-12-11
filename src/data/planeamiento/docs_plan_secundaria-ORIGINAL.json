@@ -1,7 +1,7 @@
 [
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Matemática",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -41,7 +41,7 @@
     
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/40_lin_orientacion_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/7_septimo_orientacion.docx"
@@ -83,7 +83,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Ciencias",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_septimo_ano.docx"
@@ -180,7 +180,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Estudios Sociales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -215,7 +215,7 @@
     },
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Educación Cívica",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -299,7 +299,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Educación Física",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -340,7 +340,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Artes Plásticas",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -381,7 +381,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -426,7 +426,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Artes Industriales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/23_lin_artes_indusctriales_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -452,7 +452,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Educación Religiosa",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -498,7 +498,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -546,7 +546,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Francés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
         "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
@@ -593,7 +593,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Italiano",
         "planEstudio":"Lengua Italiana",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
@@ -643,7 +643,7 @@
     },
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Italiano",
         "planEstudio":"Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
@@ -692,7 +692,7 @@
 
     {
         "nivel" : "Secundaria",
-        "anno" : "Sétimo",
+        "anno" : "Séptimo",
         "materia" : "Educación para la Vida Cotidiana",
         "planEstudio":"Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
