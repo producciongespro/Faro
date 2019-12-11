@@ -15,12 +15,12 @@ const HomeMovil = (props) => {
             <div className="col-1 text-center">
                 </div>
                 <div className="col-4 text-center">
-                    <img className="iconosMovil hvr-pop" data-tar="ApoyoClimaAula" src={ img + "climaAula2.png" } onClick={props.changePage} alt="" /> 
+                    <img className="iconosMovil hvr-pop" data-tar="ApoyoClimaAula" src={ img + "climaAula.png" } onClick={props.changePage} alt="" /> 
                 </div>
                 <div className="col-1 text-center">
                 </div>
                 <div className="col-4 text-center">
-                    <img className="iconosMovil hvr-pop" data-tar="DocsOficiales" src={ img + "documentos2.png"} onClick={props.changePage} alt=""/> 
+                    <img className="iconosMovil hvr-pop" data-tar="DocsOficiales" src={ img + "documentos.png"} onClick={props.changePage} alt=""/> 
                 </div>
                 <div className="col-1 text-center">
                 </div>
@@ -30,13 +30,13 @@ const HomeMovil = (props) => {
             <div className="col-1 text-center">
                 </div>
                 <div className="col-4 text-center">
-                    <img className="iconosMovil hvr-pop" data-tar="ApoyosEvaluacion" src={ img + "evaluacion2.png" } onClick={props.changePage} alt=""/>
+                    <img className="iconosMovil hvr-pop" data-tar="ApoyosEvaluacion" src={ img + "evaluacion.png" } onClick={props.changePage} alt=""/>
 
                 </div>               
                 <div className="col-1 text-center">
                 </div>   
             <div className="col-4 text-center">
-                    <img className="iconosMovil hvr-pop" data-tar="DesarrolloProf" src={ img + "desarrollo2.png" } onClick={props.changePage} alt=""/>
+                    <img className="iconosMovil hvr-pop" data-tar="DesarrolloProf" src={ img + "desarrollo.png" } onClick={props.changePage} alt=""/>
                 </div>
                 <div className="col-1 text-center">
                 </div>
@@ -46,12 +46,12 @@ const HomeMovil = (props) => {
             <div className="col-1 text-center">
                 </div>
                 <div className="col-4 text-center">
-                    <img className="iconosMovil hvr-pop" data-tar="RecursosDidacticos" src={ img + "recursos2.png" } onClick={props.changePage} alt=""/>
+                    <img className="iconosMovil hvr-pop" data-tar="RecursosDidacticos" src={ img + "recursos.png" } onClick={props.changePage} alt=""/>
                 </div>                
                 <div className="col-1 text-center">
                 </div>   
             <div className="col-4 text-center">
-                    <img className="iconosMovil hvr-pop" data-tar="ApoyosPlan" src={ img + "planeamiento2.png" }  onClick={props.changePage} alt=""/>
+                    <img className="iconosMovil hvr-pop" data-tar="ApoyosPlan" src={ img + "planeamiento.png" }  onClick={props.changePage} alt=""/>
 
                 </div>
                 <div className="col-1 text-center">
@@ -62,7 +62,7 @@ const HomeMovil = (props) => {
             <div className=" text-center">
                 <img className="btn img-fluid hvr-pop botonesNavegarMovil" id="indicaciones" src={ img + "btn_indicaciones.png" } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> 
                 <img className="btn img-fluid hvr-pop botonesNavegarMovil" id="home"  src={ img + "volver_portada.png" } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
-                <img className="img-fluid botones-portada hvr-pop" id="uso2" src={img + "btn_usocaja2.png"} onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/> <br/>
+                <img className="img-fluid botones-portada hvr-pop" id="uso2" src={img + "btn_usocaja.png"} onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/> <br/>
             </div>
         </div>
     );
