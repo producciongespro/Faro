@@ -485,9 +485,25 @@ class App extends Component {
 
     if (id === "cursos" || id === "videoteca" || id === "ficha") {
       console.log("ID DIP");
-      this.setState({
-        currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
-      });
+      switch (this.plataforma) {
+        case "movil":
+            this.setState({
+              currentPage: <DesarrolloProfMovil infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+            });
+          break;
+          case "escritorio":
+                this.setState({
+                currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+              });
+            break;
+      
+        default:
+            this.setState({
+              currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+            });
+          break;
+      }
+
     }
   }
 
@@ -506,9 +522,25 @@ class App extends Component {
   handlerCloseCatalogWeb = (e) => {
     e.preventDefault();
     console.log(e.target);
-    this.setState({
-      currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
-    })
+    switch (this.plataforma) {
+      case "movil":
+          this.setState({
+            currentPage: <DesarrolloProfMovil infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+          })
+      break;
+      case "escritorio":
+          this.setState({
+            currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+          })
+      break;
+    
+      default:
+          this.setState({
+            currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+          })
+        break;
+    }
+    
   }
   //Fin Método para abrir catálogo web -----------------------------------------
 
