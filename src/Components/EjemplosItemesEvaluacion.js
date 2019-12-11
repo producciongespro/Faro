@@ -61,45 +61,47 @@ class EjemplosItemesEvaluacion extends Component {
     render() {
         return (
             <div className="container">
+                 <div className="row">
+                 <div className="col-12 text-right">
+                        <h1>
+                            <img className="bannerRecursos" src={img + "encabezado_ejemplos.jpg"} alt="Encabezado" />
+                        </h1>
+                        <img className="botones-portada hvr-pop boton-volver img-fluid derecha" onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                    </div>   
+                  </div>   
+                       
                 <div className="row">
-                    <div className="col-12 text-right">
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
-                    </div>
-                </div>
-
-
-
-                <div className="input-group-prepend">
-                    <label className="input-group-text etiquetas-busquedas" htmlFor="selNiv">
-                        Nivel
-                    </label>
-                </div>
-
-                <div className="row">
-                    <div className="col-2">
-                        <select className="custom-select buscadores-materias" onClick={this.handlerCargarAsignatura}>
-                            <option value="" defaultValue disabled > Seleccione un nivel </option>
-                            <option value="primaria"> Primaria </option>
-                            <option value="secundaria"> Secundaria </option>
-                        </select>
-                    </div>
-
-
-
-
-                    <div className="col-3">
-                        <select onClick={this.handlerSeleccionarAsignatura} >
-                            <option value="" defaultValue disabled> Seleccione una asignatura </option>
-                            {
-                                this.state.asignaturas != null && (
-                                    this.state.asignaturas.map((item, i) => (
-                                        <option key={"asignatura" + i} value={item}> {item}  </option>
-                                    ))
-                                )
-                            }
-                        </select>
-                    </div>
-                    <div className="col-7">
+                    <div className="input-group col-sm-4">    
+                        <div className="input-group-prepend">            
+                            <label className="input-group-text etiquetas-busquedas" htmlFor="selNiv">
+                                Nivel
+                            </label>
+                        
+                            <select id="selNiv" className="custom-select buscadores-materias" onClick={this.handlerCargarAsignatura}>
+                                <option value="" defaultValue disabled > Seleccione un nivel </option>
+                                <option value="primaria"> Primaria </option>
+                                <option value="secundaria"> Secundaria </option>
+                            </select>
+                        
+                    </div> </div>
+                    <div className="input-grou col-sm-4">
+                        <div className="input-group-prepend">     
+                            <label className="input-group-text etiquetas-busquedas" htmlFor="selAsig">
+                                Asignatura
+                            </label>
+                       
+                            <select id="selAsig" className="custom-select buscadores-materias" onClick={this.handlerSeleccionarAsignatura} >
+                                <option value="" defaultValue disabled> Seleccione una asignatura </option>
+                                {
+                                    this.state.asignaturas != null && (
+                                        this.state.asignaturas.map((item, i) => (
+                                            <option key={"asignatura" + i} value={item}> {item}  </option>
+                                        ))
+                                    )
+                                }
+                            </select>
+                    </div> </div>
+                    <div className="col-sm-4">
                         <button onClick={this.handlerCargarItemes} className="btn btn-secondary btn-lg">
                             Buscar
                         </button>
