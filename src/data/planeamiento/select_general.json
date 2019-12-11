@@ -77,7 +77,7 @@
     "Orientación"    
     ],
 
-"Secundaria IV Ciclo" : [      
+"Secundaria Décimo" : [      
         "Afectividad y Sexualidad", 
         "Artes Plásticas",        
         "Biología",                
@@ -87,8 +87,7 @@
         "Educación para el Hogar",
         "Educación Religiosa",        
         "Español",        
-        "Estudios Sociales",
-        "Filosofía",        
+        "Estudios Sociales",        
         "Física",
         "Francés",        
         "Inglés",
@@ -97,6 +96,26 @@
         "Orientación",
         "Psicología",
         "Química"        
+],
+
+"Secundaria Undécimo" : [          
+    "Artes Plásticas",        
+    "Biología",                
+    "Educación Cívica",            
+    "Educación Física",        
+    "Educación Musical",
+    "Educación para el Hogar",
+    "Educación Religiosa",        
+    "Español",        
+    "Estudios Sociales",
+    "Filosofía",        
+    "Física",
+    "Francés",        
+    "Inglés",
+    "Italiano",        
+    "Matemática",
+    "Orientación",    
+    "Química"        
 ],
 
 

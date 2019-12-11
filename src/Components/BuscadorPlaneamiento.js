@@ -1142,18 +1142,28 @@ class BuscadorPlaneamiento extends Component {
                                         //Materias secundaria de III Ciclo
                                         this.state.nivel === "Secundaria" &&
                                         (
-                                            (this.state.anno === "Sétimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
+                                            (this.state.anno === "Séptimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
                                             listasPlan["Secundaria III Ciclo"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
                                             ))
                                         )
                                     }
                                     {
-                                        //Materias de secudaria IV ciclo
+                                        //Materias de secudaria Décimo
                                         this.state.nivel === "Secundaria" &&
                                         (
-                                            (this.state.anno === "Décimo" || this.state.anno === "Undécimo") &&
-                                            listasPlan["Secundaria IV Ciclo"].map((item, i) => (
+                                            (this.state.anno === "Décimo" ) &&
+                                            listasPlan["Secundaria Décimo"].map((item, i) => (
+                                                <option key={"materia" + i} value={item} >  {item}  </option>
+                                            ))
+                                        )
+                                    }
+                                           {
+                                        //Materias de secudaria Undécimo
+                                        this.state.nivel === "Secundaria" &&
+                                        (
+                                            ( this.state.anno === "Undécimo") &&
+                                            listasPlan["Secundaria Undécimo"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
                                             ))
                                         )
