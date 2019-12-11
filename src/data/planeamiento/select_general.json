@@ -131,9 +131,7 @@
 
 "Colegios Académicos Nocturnos (CAN)" : [
     "Biología",
-    "Ciencias",
-    "Desarrollo Humano",
-    "Desarrollo Socio Laboral",            
+    "Ciencias",           
     "Educación Cívica",
     "Educación Religiosa",
     "Español",
@@ -209,7 +207,8 @@
     "Módulo 50",
     "Módulo 51",
     "Módulo 52",
-    "Módulo 53"
+    "Módulo 53",
+    "Orientación"
     ],
 
 
@@ -230,7 +229,8 @@
     "Módulo 73",
     "Módulo 74",
     "Módulo 75",
-    "Módulo 76"
+    "Módulo 76",
+    "Orientación"
     ],
 
 
