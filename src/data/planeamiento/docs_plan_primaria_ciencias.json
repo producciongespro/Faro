@@ -5,7 +5,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/1_ppd_ciencias_febrero_primero.docx "
     },
     {
         "nivel" : "Primaria",
@@ -13,7 +13,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/2_ppd_ciencias_marzo_primero.docx "
     },
     {
         "nivel" : "Primaria",
@@ -21,7 +21,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "   "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/3_ppd_ciencias_abril_primero.docx   "
     },
     {
         "nivel" : "Primaria",
@@ -29,7 +29,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/4_ppd_ciencias_mayo_primero.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -37,7 +37,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "   "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/5_ppd_ciencias_junio_primero.docx   "
     },
     {
         "nivel" : "Primaria",
@@ -45,7 +45,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/6_ppd_ciencias_julio_primero.docx  "
     }, 
     {
         "nivel" : "Primaria",
@@ -53,7 +53,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/7_ppd_ciencias_agosto_primero.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -61,7 +61,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/8_ppd_ciencias_septiembre_primero.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -69,7 +69,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/9_ppd_ciencias_octubre_primero.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -77,7 +77,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/pri/10_ppd_ciencias_noviembre_primero.docx  "
     },
 
 
@@ -97,7 +97,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/1_ppd_ciencias_febrero_segundo.docx "
     },
     {
         "nivel" : "Primaria",
@@ -105,7 +105,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/2_ppd_ciencias_marzo_segundo.docx "
     },   
     {
         "nivel" : "Primaria",
@@ -113,7 +113,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/3_ppd_ciencias_abril_segundo.docx "
     },   
     {
         "nivel" : "Primaria",
@@ -121,7 +121,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/4_ppd_ciencias_mayo_segundo.docx "
     },  
      {
         "nivel" : "Primaria",
@@ -129,7 +129,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/5_ppd_ciencias_junio_segundo.docx "
     },   
     {
         "nivel" : "Primaria",
@@ -137,7 +137,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/6_ppd_ciencias_julio_segundo.docx "
     },   
     {
         "nivel" : "Primaria",
@@ -145,7 +145,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/7_ppd_ciencias_agosto_segundo.docx "
     },   
     {
         "nivel" : "Primaria",
@@ -161,7 +161,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/8_ppd_ciencias_septiembre_segundo.docx "
     },   
     {
         "nivel" : "Primaria",
@@ -169,7 +169,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/10_ppd_ciencias_noviembre_segundo.docx "
     },
 
 
@@ -187,7 +187,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/1_ppd_ciencias_febrero_tercero.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -195,7 +195,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/2_ppd_ciencias_marzo_tercero.docx "
     },
     {
         "nivel" : "Primaria",
@@ -203,7 +203,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/3_ppd_ciencias_abril_tercero.docx "
     },
     {
         "nivel" : "Primaria",
@@ -211,7 +211,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/4_ppd_ciencias_mayo_tercero.docx "
     },
     {
         "nivel" : "Primaria",
@@ -219,7 +219,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/5_ppd_ciencias_junio_tercero.docx"
     },
     {
         "nivel" : "Primaria",
@@ -227,7 +227,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/6_ppd_ciencias_julio_tercero.docx "
     },
     {
         "nivel" : "Primaria",
@@ -235,7 +235,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/7_ppd_ciencias_agosto_tercero.docx "
     },
     {
         "nivel" : "Primaria",
@@ -243,7 +243,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/8_ppd_ciencias_septiembre_tercero.docx "
     },
     {
         "nivel" : "Primaria",
@@ -251,7 +251,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/9_ppd_ciencias_octubre_tercero.docx "
     },
     {
         "nivel" : "Primaria",
@@ -259,7 +259,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/ter/10_ppd_ciencias_noviembre_tercero.docx"   
     },
 
 
@@ -285,7 +285,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/1_ppd_ciencias_febrero_cuarto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -293,7 +293,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/2_ppd_ciencias_marzo_cuarto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -301,7 +301,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Abril ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/3_ppd_ciencias_abril_cuarto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -309,7 +309,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Mayo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/4_ppd_ciencias_mayo_cuarto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -317,7 +317,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Junio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/5_ppd_ciencias_junio_cuarto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -325,7 +325,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Julio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/6_ppd_ciencias_julio_cuarto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -333,7 +333,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Agosto ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/7_ppd_ciencias_agosto_cuarto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -341,7 +341,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Septiembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/8_ppd_ciencias_septiembre_cuarto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -349,7 +349,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Octubre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : " /faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/9_ppd_ciencias_otubre_cuarto.docx"
     },
     {
         "nivel" : "Primaria",
@@ -357,7 +357,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Noviembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/10_ppd_ciencias_noviembre_cuarto.docx "
     },
 
 
@@ -376,7 +376,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Febrero ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : " /faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/1_ppd_ciencias_febrero_quinto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -384,7 +384,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Marzo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/2_ppd_ciencias_marzo_quinto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -392,7 +392,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Abril ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : " /faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/3_ppd_ciencias_abril_quinto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -400,7 +400,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Mayo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/4_ppd_ciencias_mayo_quinto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -408,7 +408,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Junio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/5_ppd_ciencias_junio_quinto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -416,7 +416,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Julio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/6_ppd_ciencias_julio_quinto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -424,7 +424,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Agosto ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : " /faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/7_ppd_ciencias_agosto_quinto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -432,7 +432,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Septiembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/8_ppd_ciencias_septiembre_quinto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -440,7 +440,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Octubre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/9_ppd_ciencias_octubre_quinto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -448,7 +448,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Noviembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/10_ppd_ciencias_noviembre_quinto.docx  "
     },
 
 
@@ -467,7 +467,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Febrero ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/1_ppd_ciencias_febrero_sexto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -475,7 +475,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Marzo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : " /faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/2_ppd_ciencias_marzo_sexto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -483,7 +483,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Abril ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/3_ppd_ciencias_abril_sexto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -491,7 +491,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Mayo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/4_ppd_ciencias_mayo_sexto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -499,7 +499,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Junio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/5_ppd_ciencias_junio_sexto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -507,7 +507,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Julio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : " /faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/6_ppd_ciencias_julio_sexto.docx "
     },
     {
         "nivel" : "Primaria",
@@ -515,7 +515,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Agosto ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/7_ppd_ciencias_agosto_sexto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -523,7 +523,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Septiembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/8_ppd_ciencias_septiembre_sexto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -531,7 +531,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Octubre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/8_ppd_ciencias_octubre_sexto.docx  "
     },
     {
         "nivel" : "Primaria",
@@ -539,7 +539,7 @@
         "materia" : "Ciencias",
         "distribucion" : "Noviembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "  "
+        "plantilla" : "/faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/9_ppd_ciencias_noviembre_sexto.docx  "
     }
 
 
