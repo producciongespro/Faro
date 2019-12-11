@@ -1125,7 +1125,7 @@ class BuscadorPlaneamiento extends Component {
                                         //Materias secundaria de III Ciclo
                                         this.state.nivel === "Secundaria" &&
                                         (
-                                            (this.state.anno === "Sétimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
+                                            (this.state.anno === "Séptimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
                                             listasPlan["Secundaria III Ciclo"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
                                             ))
