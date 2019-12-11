@@ -1088,15 +1088,15 @@ class BuscadorPlaneamiento extends Component {
                                                 <span>Niveles de desempeño</span>
                                             )
                                         }
-                                         {
+                                        {
                                             (
-                                                this.state.nivel === "Primaria" 
-                                                || this.state.nivel === "Secundaria" 
+                                                this.state.nivel === "Primaria"
+                                                || this.state.nivel === "Secundaria"
                                                 || this.state.nivel === "Pedagogía Hospitalaria"
                                                 || this.state.nivel === "Unidocentes"
                                                 || this.state.nivel === "Interculturalidad Primaria"
                                                 || this.state.nivel === "Interculturalidad Secundaria"
-                                                ) &&
+                                            ) &&
                                             (
                                                 <span>Asignatura</span>
                                             )
@@ -1105,9 +1105,9 @@ class BuscadorPlaneamiento extends Component {
                                         {
                                             this.state.nivel === "Jóvenes y Adultos" &&
                                             (
-                                                (this.state.modalidad === "IPEC CINDEA Nivel I" 
-                                                || this.state.modalidad === "IPEC CINDEA Nivel II" 
-                                                || this.state.modalidad === "IPEC CINDEA Nivel III"
+                                                (this.state.modalidad === "IPEC CINDEA Nivel I"
+                                                    || this.state.modalidad === "IPEC CINDEA Nivel II"
+                                                    || this.state.modalidad === "IPEC CINDEA Nivel III"
                                                 ) ?
                                                     (
                                                         <span>Módulos</span>
@@ -1117,7 +1117,7 @@ class BuscadorPlaneamiento extends Component {
                                                     )
                                             )
                                         }
-                                       
+
                                     </label>
                                 </div>
                                 <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria}  >
@@ -1142,7 +1142,7 @@ class BuscadorPlaneamiento extends Component {
                                         //Materias secundaria de III Ciclo
                                         this.state.nivel === "Secundaria" &&
                                         (
-                                            (this.state.anno === "Séptimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
+                                            (this.state.anno === "Sétimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
                                             listasPlan["Secundaria III Ciclo"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
                                             ))
