@@ -1178,10 +1178,12 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
-                                        this.state.modalidad === "IPEC CINDEA Nivel III" &&
+                                        
+                                        (this.state.modalidad === "IPEC CINDEA Nivel III"  && this.state.nivel === "Jóvenes y Adultos" ) &&
                                         listasPlan["IPEC CINDEA Nivel III"].map((item, i) => (
                                             <option key={"materia" + i} value={item} >  {item}  </option>
                                         ))
+                                        
                                     }
                                     {
                                         this.state.nivel === "Unidocentes" && (
