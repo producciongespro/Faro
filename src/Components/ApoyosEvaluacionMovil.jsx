@@ -38,7 +38,8 @@ const ApoyosEvaluacionMovil = (props) => {
                    
                      <div className="col-12  col-sin-padding">
                       <figure>
-                        <img id="documentos" className="img-fluid  btn hvr-pop evaluacion" data-infosource={3}  data-origen="Documentos"   alt="Itemes"  src={img + "documentos.png"} />
+                      <img id="documentos" className="img-fluid  btn hvr-pop evaluacion" data-infosource={3}  data-tar="DocumentosEvaluacion" onClick= {props.changePage}   alt="Itemes"  src={img + "documentos.png" } />
+                        {/* <img id="documentos" className="img-fluid  btn hvr-pop evaluacion" data-infosource={3}  data-origen="Documentos"   alt="Itemes"  src={img + "documentos.png"} /> */}
                       </figure>
                      
                     </div>
