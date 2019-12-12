@@ -4,26 +4,10 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Educación para la Afectividad y la Sexualidad",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/15_lin_afectividad_y_sexualidad_secundaria.pdf",
         "plantilla" : " "
     },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Educación para la Afectividad y la Sexualidad",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/15_lin_afectividad_y_sexualidad_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Educación para la Afectividad y la Sexualidad",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/15_lin_afectividad_y_sexualidad_secundaria.pdf",
-        "plantilla" : " "
-    },
+   
 
 
 
@@ -100,37 +84,6 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Artes Plásticas",
-        "distribucion": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Séptimo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Séptimo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
         "plantilla" : " "
     },
@@ -138,28 +91,6 @@
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Artes Plásticas",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Artes Plásticas",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
         "plantilla" : " "
     },
@@ -167,27 +98,6 @@
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Artes Plásticas",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
         "plantilla" : " "
     },
@@ -195,26 +105,6 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Artes Plásticas",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
         "plantilla" : " "
     },
@@ -222,18 +112,10 @@
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Artes Plásticas",
-        "distribucion": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
         "plantilla" : " "
     },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
-        "plantilla" : " "
-    },
+    
 
 
 
@@ -364,18 +246,6 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
         "plantilla" : " "
     },
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -551,65 +421,13 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Educación Musical",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
         "plantilla" : " "
     },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Séptimo",
-        "materia" : "Educación Musical",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Séptimo",
-        "materia" : "Educación Musical",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-
-    {
+     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Educación Musical",
-        "distribucion": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Educación Musical",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Educación Musical",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Educación Musical",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
         "plantilla" : " "
     },
@@ -617,27 +435,6 @@
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Educación Musical",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Educación Musical",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Educación Musical",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
         "plantilla" : " "
     },
@@ -645,27 +442,6 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Educación Musical",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Educación Musical",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Educación Musical",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
         "plantilla" : " "
     },
@@ -673,18 +449,10 @@
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Educación Musical",
-        "distribucion": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
         "plantilla" : " "
     },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Educación Musical",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
-        "plantilla" : " "
-    },
+    
 
 
 
@@ -824,6 +592,23 @@
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Filosofía",
+        "distribucion": "I",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/14_lin_filosofia_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Filosofía",
+        "distribucion": "II",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/14_lin_filosofia_secundaria.pdf",
+        "plantilla" : " "
+    },
+    {
+        "nivel" : "Secundaria",
+        "anno" : "Undécimo",
+        "materia" : "Filosofía",
+        "distribucion": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/14_lin_filosofia_secundaria.pdf",
         "plantilla" : " "
     },
@@ -947,34 +732,6 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Química",
-        "distribucion": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Química",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Química",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Química",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
         "plantilla" : " "
     },
@@ -982,155 +739,10 @@
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Química",
-        "distribucion": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
         "plantilla" : " "
-    },
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Química",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-   
-   
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-   
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Italiano",
-        "planEstudio":"Lengua Italiana",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Séptimo",
-        "materia" : "Italiano",
-        "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Octavo",
-        "materia" : "Italiano",
-        "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Noveno",
-        "materia" : "Italiano",
-        "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Décimo",
-        "materia" : "Italiano",
-        "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
-    },
-    {
-        "nivel" : "Secundaria",
-        "anno" : "Undécimo",
-        "materia" : "Italiano",
-        "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/35_lin_italiano_aspectos_culturales_secundaria.pdf",
-        "plantilla" : "https://recursos.mep.go.cr/ws_faro/docs_apoyo_planeamiento/404/file-notfound.html"
     }
 
-
-
-
-
-
-
-    
 
     
 ]
