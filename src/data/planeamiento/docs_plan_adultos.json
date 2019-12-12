@@ -285,14 +285,14 @@
 
 
 
-    
+
 
 
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
         "anno" : "Séptimo",    
-        "modulo" : "Francés",      
+        "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
@@ -300,7 +300,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Octavo",    
-        "modulo" : "Francés",      
+        "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
@@ -308,7 +308,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Noveno",    
-        "modulo" : "Francés",      
+        "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
@@ -316,7 +316,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Décimo",    
-        "modulo" : "Francés",      
+        "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
@@ -324,45 +324,16 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Undécimo",    
-        "modulo" : "Francés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
-
-
-
-
-
-
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
-        "modulo" : "Francés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
-        "modulo" : "Matemática",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
-        "modulo" : "Química",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+   
 
+
+
+
+   
 
 
 
@@ -427,50 +398,290 @@
 
 
 
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Química",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Química",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",        
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",  
+        "anno" : "Décimo",    
         "modulo" : "Biología",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",        
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",   
+        "anno" : "Undécimo",    
         "modulo" : "Biología",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
         "plantilla" : ""        
     },
+
+
+
+
+
+
+
+
+
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",        
-        "modulo" : "Español",      
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Séptimo",    
+        "modulo" : "Ciencias",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",        
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Octavo",    
+        "modulo" : "Ciencias",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Noveno",    
+        "modulo" : "Ciencias",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Décimo",    
+        "modulo" : "Ciencias",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Undécimo",    
+        "modulo" : "Ciencias",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Séptimo",    
         "modulo" : "Estudios Sociales",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",        
-        "modulo" : "Matemática",      
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Octavo",    
+        "modulo" : "Estudios Sociales",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",        
-        "modulo" : "Técnico Básico",      
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Noveno",    
+        "modulo" : "Estudios Sociales",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
         "plantilla" : ""        
     },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Décimo",    
+        "modulo" : "Estudios Sociales",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Undécimo",    
+        "modulo" : "Estudios Sociales",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Séptimo",    
+        "modulo" : "Inglés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Octavo",    
+        "modulo" : "Inglés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Noveno",    
+        "modulo" : "Inglés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Décimo",    
+        "modulo" : "Inglés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Undécimo",    
+        "modulo" : "Inglés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -664,6 +875,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
@@ -832,6 +1053,13 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
         "plantilla" : ""        
     },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "IPEC CINDEA Nivel II",        
+        "modulo" : "Módulo 53",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "plantilla" : "Orientación"        
+    },
 
 
 
@@ -960,6 +1188,13 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 76",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "IPEC CINDEA Nivel III",        
+        "modulo" : "Orientación",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
         "plantilla" : ""        
     }
