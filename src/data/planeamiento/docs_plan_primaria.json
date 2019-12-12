@@ -75,34 +75,6 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Artes Plásticas",
-        "distribucion": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Primero",
-        "materia" : "Artes Plásticas",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Primero",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
         "plantilla" : " "
     },
@@ -110,27 +82,6 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Artes Plásticas",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Tercero",
-        "materia" : "Artes Plásticas",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
         "plantilla" : " "
     },
@@ -138,27 +89,6 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Artes Plásticas",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Tercero",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Artes Plásticas",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
         "plantilla" : " "
     },
@@ -166,27 +96,6 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Artes Plásticas",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Quinto",
-        "materia" : "Artes Plásticas",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
         "plantilla" : " "
     },
@@ -194,48 +103,18 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Artes Plásticas",
-        "distribucion": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
         "plantilla" : " "
     },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Quinto",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
     {
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Artes Plásticas",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
         "plantilla" : " "
     },
     
-    {
-        "nivel" : "Primaria",
-        "anno" : "Sexto",
-        "materia" : "Artes Plásticas",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
-    
-    {
-        "nivel" : "Primaria",
-        "anno" : "Sexto",
-        "materia" : "Artes Plásticas",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
-        "plantilla" : " "
-    },
+  
 
 
 
@@ -256,38 +135,6 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Educación Física",
-        "distribucion": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Primero",
-        "materia" : "Educación Física",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Primero",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Educación Física",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
     },
@@ -295,27 +142,6 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Educación Física",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Tercero",
-        "materia" : "Educación Física",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
     },
@@ -323,26 +149,6 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Educación Física",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Tercero",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Educación Física",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
     },
@@ -350,26 +156,6 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Educación Física",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Quinto",
-        "materia" : "Educación Física",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
     },
@@ -377,26 +163,6 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Educación Física",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Quinto",
-        "materia" : "Educación Física",
-        "distribucion": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-
-
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Sexto",
-        "materia" : "Educación Física",
-        "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
     },
@@ -404,15 +170,6 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Educación Física",
-        "distribucion": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
-        "plantilla" : " "
-    },
-    {
-        "nivel" : "Primaria",
-        "anno" : "Sexto",
-        "materia" : "Educación Física",
-        "distribucion": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
         "plantilla" : " "
     },
@@ -496,7 +253,7 @@
     {
         "nivel" : "Primaria",
         "anno" : "Primero",
-        "materia" : "Educación para la vida cotidiana",
+        "materia" : "Educación para el Hogar",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
         "plantilla" : " "
     },
@@ -504,7 +261,7 @@
     {
         "nivel" : "Primaria",
         "anno" : "Segundo",
-        "materia" : "Educación para la vida cotidiana",
+        "materia" : "Educación para el Hogar",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
         "plantilla" : " "
     },
@@ -512,7 +269,7 @@
     {
         "nivel" : "Primaria",
         "anno" : "Tercero",
-        "materia" : "Educación para la vida cotidiana",
+        "materia" : "Educación para el Hogar",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
         "plantilla" : " "
     },
@@ -520,7 +277,7 @@
     {
         "nivel" : "Primaria",
         "anno" : "Cuarto",
-        "materia" : "Educación para la vida cotidiana",
+        "materia" : "Educación para el Hogar",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
         "plantilla" : " "
     },
@@ -528,7 +285,7 @@
     {
         "nivel" : "Primaria",
         "anno" : "Quinto",
-        "materia" : "Educación para la vida cotidiana",
+        "materia" : "Educación para el Hogar",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
         "plantilla" : " "
     },
@@ -536,7 +293,7 @@
     {
         "nivel" : "Primaria",
         "anno" : "Sexto",
-        "materia" : "Educación para la vida cotidiana",
+        "materia" : "Educación para el Hogar",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
         "plantilla" : " "
     },
