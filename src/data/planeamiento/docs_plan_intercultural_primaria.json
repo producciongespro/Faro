@@ -2,55 +2,956 @@
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Primero",
-        "materia" : "Cultura Bribí de Buenos Aires",
+        "materia" : "Cultura Bribrí de Buenos Aires",
         "lineamiento" : " ",
         "plantilla" : " "        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Segundo",
-        "materia" : "Cultura Bribí de Buenos Aires",
+        "materia" : "Cultura Bribrí de Buenos Aires",
         "lineamiento" : " ",
         "plantilla" : " "        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Tercero",
-        "materia" : "Cultura Bribí de Buenos Aires",
+        "materia" : "Cultura Bribrí de Buenos Aires",
         "lineamiento" : " ",
         "plantilla" : " "        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Cuarto",
-        "materia" : "Cultura Bribí de Buenos Aires",
+        "materia" : "Cultura Bribrí de Buenos Aires",
         "lineamiento" : " ",
         "plantilla" : " "        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Quinto",
-        "materia" : "Cultura Bribí de Buenos Aires",
+        "materia" : "Cultura Bribrí de Buenos Aires",
         "lineamiento" : " ",
         "plantilla" : " "        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Sexto",
-        "materia" : "Cultura Bribí de Buenos Aires",
+        "materia" : "Cultura Bribrí de Buenos Aires",
         "lineamiento" : " ",
         "plantilla" : " "        
     }
 
 
 
-  
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    }, 
 
 
 
 
 
 
-   
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    }, 
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Chorotega",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Chorotega",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Chorotega",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Chorotega",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Chorotega",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Chorotega",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Huetar",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Huetar",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Huetar",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Huetar",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Huetar",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Huetar",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Ngäbe",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Ngäbe",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Ngäbe",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Ngäbe",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Ngäbe",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Ngäbe",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Cabécar de Buenos Aires",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Térraba",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Maleku",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Cabécar de Chirripó",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : " ",
+        "plantilla" : " "        
+    }
 
 ]
