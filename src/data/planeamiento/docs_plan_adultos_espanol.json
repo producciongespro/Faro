@@ -4,7 +4,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica",  
+        "modulo" : "Español",  
         "distribucion": "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
@@ -13,7 +13,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica",  
+        "modulo" : "Español",  
         "distribucion": "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
@@ -22,7 +22,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica", 
+        "modulo" : "Español", 
         "distribucion": "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
@@ -31,7 +31,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica",
+        "modulo" : "Español",
         "distribucion": "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
@@ -40,7 +40,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica",
+        "modulo" : "Español",
         "distribucion": "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
@@ -49,7 +49,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica",
+        "modulo" : "Español",
         "distribucion": "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
@@ -58,7 +58,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica",
+        "modulo" : "Español",
         "distribucion": "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
@@ -67,7 +67,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica",
+        "modulo" : "Español",
         "distribucion": "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
@@ -76,7 +76,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica",
+        "modulo" : "Español",
         "distribucion": "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
@@ -85,13 +85,905 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Séptimo",    
-        "modulo" : "Educación Cívica",
+        "modulo" : "Español",
         "distribucion": "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
+    },
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Octavo",    
+        "modulo" : "Español",  
+        "distribucion": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",  
+        "distribucion": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Español", 
+        "distribucion": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Noveno",    
+        "modulo" : "Español",  
+        "distribucion": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",  
+        "distribucion": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Español", 
+        "distribucion": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Décimo",    
+        "modulo" : "Español",  
+        "distribucion": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",  
+        "distribucion": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Español", 
+        "distribucion": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Undécimo",    
+        "modulo" : "Español",  
+        "distribucion": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",  
+        "distribucion": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español", 
+        "distribucion": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Séptimo",    
+        "modulo" : "Español",  
+        "distribucion": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Séptimo",    
+        "modulo" : "Español",  
+        "distribucion": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Séptimo",    
+        "modulo" : "Español", 
+        "distribucion": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Séptimo",    
+        "modulo" : "Español",
+        "distribucion": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Séptimo",    
+        "modulo" : "Español",
+        "distribucion": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Séptimo",    
+        "modulo" : "Español",
+        "distribucion": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Séptimo",    
+        "modulo" : "Español",
+        "distribucion": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Séptimo",    
+        "modulo" : "Español",
+        "distribucion": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Séptimo",    
+        "modulo" : "Español",
+        "distribucion": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Séptimo",    
+        "modulo" : "Español",
+        "distribucion": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Octavo",    
+        "modulo" : "Español",  
+        "distribucion": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",  
+        "distribucion": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Español", 
+        "distribucion": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Español",
+        "distribucion": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Noveno",    
+        "modulo" : "Español",  
+        "distribucion": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",  
+        "distribucion": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Español", 
+        "distribucion": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Español",
+        "distribucion": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Décimo",    
+        "modulo" : "Español",  
+        "distribucion": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",  
+        "distribucion": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Español", 
+        "distribucion": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Español",
+        "distribucion": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Undécimo",    
+        "modulo" : "Español",  
+        "distribucion": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",  
+        "distribucion": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español", 
+        "distribucion": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Español",
+        "distribucion": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "plantilla" : ""        
     }
-
-
-
 ]
 
