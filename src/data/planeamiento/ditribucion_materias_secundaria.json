@@ -8,7 +8,7 @@
     },
 
     "Artes Plásticas": {
-        "distribucion": "Trimestral"
+        "distribucion": "Anual"
     },
 
     "Biología": {
@@ -28,7 +28,7 @@
     },
 
     "Educación Musical": {
-        "distribucion": "Trimestral"
+        "distribucion": "Anual"
     },
 
     "Educación para el Hogar": {
@@ -80,7 +80,7 @@
     },
 
     "Química": {
-    "distribucion": "Trimestral"
+    "distribucion": "Anual"
     }
 
  }
