@@ -2,66 +2,338 @@
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
-        "modulo" : "Biología",      
+        "anno" : "Décimo",    
+        "modulo" : "Biología",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "anno" : "Undécimo",    
+        "modulo" : "Biología",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Séptimo",    
         "modulo" : "Ciencias",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
-        "modulo" : "Desarrollo Humano",      
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Ciencias",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
-        "modulo" : "Desarrollo Socio Laboral",      
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Ciencias",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
+
+
+
+
+
+
+
+
+
+
+
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Séptimo",    
         "modulo" : "Educación Cívica",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Educación Cívica",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Educación Cívica",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Educación Cívica",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Educación Cívica",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Séptimo",    
         "modulo" : "Educación Religiosa",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
-        "modulo" : "Español",      
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Educación Religiosa",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Educación Religiosa",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Educación Religiosa",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Educación Religiosa",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+   
+ 
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Séptimo",    
         "modulo" : "Estudios Sociales",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
     {
         "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Estudios Sociales",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Estudios Sociales",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Estudios Sociales",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Estudios Sociales",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",  
+        "anno" : "Décimo",    
         "modulo" : "Física",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
         "plantilla" : ""        
     },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",  
+        "anno" : "Undécimo",    
+        "modulo" : "Física",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Séptimo",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+    
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Séptimo",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Francés",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
