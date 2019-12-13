@@ -523,7 +523,7 @@ class BuscadorPlaneamiento extends Component {
                                 this.state.distribucionPlan === "Trimestral" &&
                                 (
                                     <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                       {array[index].trimestre}  Periodo
+                                       {array[index].periodo}  Periodo
                                     </span>
                                 )
                             }
@@ -1304,7 +1304,9 @@ class BuscadorPlaneamiento extends Component {
                             }
 
                             {//CASO 1-1: Para las materias con distribución TRIMESTRAL
-                                (this.state.distribucionPlan === "Trimestral") &&
+                            // Se elimina el select trimestre 
+                            /*
+                            (this.state.distribucionPlan === "Trimestral") &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
@@ -1322,7 +1324,8 @@ class BuscadorPlaneamiento extends Component {
                                         </select>
                                     </div>
                                 )
-                                //Fin caso 1 por TRIMESTRE **************************
+                                */
+                                //Fin caso 1.1 por TRIMESTRE **************************
                             }
 
                             {//CASO 2: Frances - Ingles
