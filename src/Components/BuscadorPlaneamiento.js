@@ -1,23 +1,46 @@
 import React, { Component } from 'react';
 
-import dataPreescolar from '../data/planeamiento/docs_plan_preescolar.json';
-import dataPrimaria from '../data/planeamiento/docs_plan_primaria.json';
-import dataSecundaria from '../data/planeamiento/docs_plan_secundaria.json';
-import dataAdultos from '../data/planeamiento/docs_plan_adultos.json';
-import dataSecundariaEspanol from '../data/planeamiento/docs_plan_secundaria_espanol.json';
-import dataPrimariaEspanol from '../data/planeamiento/docs_plan_primaria_espanol';
-import dataIdiomas from '../data/planeamiento/docs_plan_idiomas.json';
-import dataInterculturalPrimaria from '../data/planeamiento/docs_plan_intercultural_primaria.json';
-import dataInterculturalSecundaria from '../data/planeamiento/docs_plan_intercultural_secundaria.json';
-import dataUnidocente from '../data/planeamiento/docs_plan_unidocente.json';
-import dataPedagogiaHospitalaria from '../data/planeamiento/docs_plan_pedagogia_hosp.json'
+//Referencias preescolar
+import categoriasPreescolar from '../data/planeamiento/preescolar/select_preescolar.json';
+import dataPreescolar from '../data/planeamiento/preescolar/docs_plan_preescolar.json';
+
+//Referecnias idiomas
+import dataIdiomas from '../data/planeamiento/idiomas/docs_plan_idiomas.json';
+
+//Referencias de primaria
+import selectEspanolPrimaria from '../data/planeamiento/primaria/select_espanol_primaria.json';
+import distribucionPrimaria from '../data/planeamiento/primaria/ditribucion_materias_primaria.json';
+import dataPrimaria from '../data/planeamiento/primaria/docs_plan_primaria.json';
+import dataPrimariaEspanol from '../data/planeamiento/primaria/docs_plan_primaria_espanol.json';
+import dataPrimariaCiencias from '../data/planeamiento/primaria/docs_plan_primaria_ciencias.json';
+import dataPrimariaMate from '../data/planeamiento/primaria/docs_plan_primaria_matematica.json';
 
 
-import categoriasPreescolar from '../data/planeamiento/select_preescolar.json';
+//Referencias secundaria
+import distribucionSecundaria from '../data/planeamiento/secundaria/ditribucion_materias_secundaria.json';
+import dataSecundaria from '../data/planeamiento/secundaria/docs_plan_secundaria.json';
+import dataSecundariaEspanol from '../data/planeamiento/secundaria/docs_plan_secundaria_espanol.json';
+
+
+// Referencias Jóvenes y adultos
+import dataAdultos from '../data/planeamiento/adultos/docs_plan_adultos.json';
+import dataAdultosEspa from '../data/planeamiento/adultos/docs_plan_adultos_espanol.json';
+import dataAdultosMate from '../data/planeamiento/adultos/docs_plan_adultos_matematica.json';
+
+//Referencias interculturalidad
+import dataInterculturalPrimaria from '../data/planeamiento/intercultural/docs_plan_intercultural_primaria.json';
+import dataInterculturalSecundaria from '../data/planeamiento/intercultural/docs_plan_intercultural_secundaria.json';
+
+//Referencias Unidocentes
+import dataUnidocente from '../data/planeamiento/unidocente/docs_plan_unidocente.json';
+
+//Referencias pedagogía hospitalaria
+import dataPedagogiaHospitalaria from '../data/planeamiento/hospitalaria/docs_plan_pedagogia_hosp.json'
+
+// Select General
 import listasPlan from '../data/planeamiento/select_general.json';
-import selectEspanolPrimaria from '../data/planeamiento/select_espanol_primaria.json';
-import distribucionPrimaria from '../data/planeamiento/ditribucion_materias_primaria.json';
-import distribucionSecundaria from '../data/planeamiento/ditribucion_materias_secundaria.json';
+
+
 
 import assets from '../data/config/config.json';
 
