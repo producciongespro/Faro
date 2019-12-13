@@ -24,7 +24,8 @@ import dataSecundariaMate from '../data/planeamiento/secundaria/docs_plan_secund
 
 
 // Referencias Jóvenes y adultos
-import distribucionAdultos from '../data/planeamiento/adultos/ditribucion_materias_adultos_can.json';
+import distribucionAdultosConed from '../data/planeamiento/adultos/ditribucion_materias_adultos_coned.json';
+import distribucionAdultosCan from '../data/planeamiento/adultos/ditribucion_materias_adultos_can.json';
 import dataAdultos from '../data/planeamiento/adultos/docs_plan_adultos.json';
 import dataAdultosEspa from '../data/planeamiento/adultos/docs_plan_adultos_espanol.json';
 import dataAdultosMate from '../data/planeamiento/adultos/docs_plan_adultos_matematica.json';
@@ -207,6 +208,25 @@ class BuscadorPlaneamiento extends Component {
             case "Jóvenes y Adultos":
                 this.setState({ modulo: valor }, () => {
                     console.log("Módulo seleccionado:", this.state.modulo)
+                    if (this.state.modalidad ===  "Colegios Académicos Nocturnos (CAN)" ) {
+                        //obtiene el tipo de plan para Colegios Acedemicos Nocturnos:
+                        //console.log("distribucionAdultosCan", distribucionAdultosCan[this.state.modulo]);
+                        //Validación de campo no nulo
+                        if (distribucionAdultosCan[this.state.modulo] !== undefined ) {
+                          this.setState({ distribucionPlan: distribucionAdultosCan[this.state.modulo]}, ()=> {
+                              console.log("Distribución del plan en CAN con la materia", this.state.modulo, ": ", this.state.distribucionPlan );                              
+                          });      
+                        }                                            
+                    }
+                    if ( this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)") {
+                        //obtiene el tipo de plan para CONED:
+                        //console.log("distribucionAdultosConed", distribucionAdultosConed[this.state.modulo] );
+                        if (distribucionAdultosConed[this.state.modulo] !== undefined) {
+                           this.setState({ distribucionPlan: distribucionAdultosConed[this.state.modulo] }, ()=> {
+                            console.log("Distribución del plan en CONED con la materia", this.state.modulo, ": ", this.state.distribucionPlan )  
+                           });
+                        }
+                    }                   
                 });
                 break;
             default:
