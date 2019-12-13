@@ -20,6 +20,7 @@ import dataPrimariaMate from '../data/planeamiento/primaria/docs_plan_primaria_m
 import distribucionSecundaria from '../data/planeamiento/secundaria/ditribucion_materias_secundaria.json';
 import dataSecundaria from '../data/planeamiento/secundaria/docs_plan_secundaria.json';
 import dataSecundariaEspanol from '../data/planeamiento/secundaria/docs_plan_secundaria_espanol.json';
+import dataSecundariaMate from '../data/planeamiento/secundaria/docs_plan_secundaria_matematica.json';
 
 
 // Referencias Jóvenes y adultos
@@ -304,16 +305,37 @@ class BuscadorPlaneamiento extends Component {
         }
 
         //Condiciones para  las diferentes modalidades con MES:
-        //Español secundaria:
+
+        //ESPAÑOL SECUNDARIA:
         if (this.state.nivel === "Secundaria" && this.state.materia === "Español") {
             tipoComodin = "mes";
             array = dataSecundariaEspanol;
         }
 
+        //MATE SECUNDARIA:
+        if (this.state.nivel === "Secundaria" && this.state.materia === "Matemática") {
+            tipoComodin = "mes";
+            array = dataSecundariaMate;
+        }
+
+        //ESPAÑOL PRIMARIA
         if (this.state.nivel === "Primaria" && this.state.materia === "Español") {
             console.log("Seleccion: español primaria");
             tipoComodin = "contenido";
             array = dataPrimariaEspanol;
+        }
+        //CIENCIAS PRIMARIA
+        if (this.state.nivel === "Primaria" && this.state.materia === "Ciencias") {
+            console.log("Seleccion: ciencias primaria");
+            tipoComodin = "mes";
+            array = dataPrimariaCiencias;
+        }
+
+        //MATEMATICA PRIMARIA
+        if (this.state.nivel === "Primaria" && this.state.materia === "Matemática") {
+            console.log("Seleccion: mate primaria");
+            tipoComodin = "mes";
+            array = dataPrimariaMate;
         }
 
         //"Pedagogía Hospitalaria"
@@ -489,7 +511,7 @@ class BuscadorPlaneamiento extends Component {
     tarjetasBasico = (array) => {
         // Primaria, secudnaria e intercultural
         //console.log("array recibido en tarjetas:", array);
-        console.log("*********Renderizado Tarjetas básico*************");        
+        console.log("*********Renderizado Tarjetas básico*************");
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {
@@ -507,13 +529,13 @@ class BuscadorPlaneamiento extends Component {
                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                 Asignatura: {array[index].materia}
                             </span>
-                         
+
                             {
                                 //Etiqueta tipo de Distribucción mensual:
                                 this.state.distribucionPlan === "Mensual" &&
                                 (
                                     <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                       Mes: {array[index].mes}
+                                        Mes: {array[index].mes}
                                     </span>
                                 )
                             }
@@ -523,20 +545,20 @@ class BuscadorPlaneamiento extends Component {
                                 this.state.distribucionPlan === "Trimestral" &&
                                 (
                                     <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                       {array[index].periodo}  Periodo
+                                        {array[index].periodo}  Periodo
                                     </span>
                                 )
                             }
-                                                      {
+                            {
                                 //Etiqueta tipo de Distribucción por contenido:
                                 this.state.distribucionPlan === "Contenido" &&
                                 (
                                     <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                       Contenido: {array[index].contenido}
+                                        Contenido: {array[index].contenido}
                                     </span>
                                 )
                             }
-                       
+
                             {
                                 //Plan de estudio en caso de frances e inglés
                                 (this.state.materia === "Francés" || this.state.materia === "Inglés") &&
@@ -1198,17 +1220,17 @@ class BuscadorPlaneamiento extends Component {
                                         //Materias de secudaria Décimo
                                         this.state.nivel === "Secundaria" &&
                                         (
-                                            (this.state.anno === "Décimo" ) &&
+                                            (this.state.anno === "Décimo") &&
                                             listasPlan["Secundaria Décimo"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
                                             ))
                                         )
                                     }
-                                           {
+                                    {
                                         //Materias de secudaria Undécimo
                                         this.state.nivel === "Secundaria" &&
                                         (
-                                            ( this.state.anno === "Undécimo") &&
+                                            (this.state.anno === "Undécimo") &&
                                             listasPlan["Secundaria Undécimo"].map((item, i) => (
                                                 <option key={"materia" + i} value={item} >  {item}  </option>
                                             ))
@@ -1304,27 +1326,27 @@ class BuscadorPlaneamiento extends Component {
                             }
 
                             {//CASO 1-1: Para las materias con distribución TRIMESTRAL
-                            // Se elimina el select trimestre 
-                            /*
-                            (this.state.distribucionPlan === "Trimestral") &&
-                                (
-                                    <div className="input-group mb-3">
-                                        <div className="input-group-prepend">
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
-                                                Periodo
-                                        </label>
+                                // Se elimina el select trimestre 
+                                /*
+                                (this.state.distribucionPlan === "Trimestral") &&
+                                    (
+                                        <div className="input-group mb-3">
+                                            <div className="input-group-prepend">
+                                                <label className="input-group-text etiquetas-busquedas" htmlFor="selMes">
+                                                    Periodo
+                                            </label>
+                                            </div>
+                                            <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                                <option defaultValue value="" >Seleccione:</option>
+                                                {
+                                                    listasPlan["Periodos"].map((item, index) => (
+                                                        <option key={"Periodo" + index} value={item}> {item} </option>
+                                                    ))
+                                                }
+                                            </select>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
-                                            <option defaultValue value="" >Seleccione:</option>
-                                            {
-                                                listasPlan["Periodos"].map((item, index) => (
-                                                    <option key={"Periodo" + index} value={item}> {item} </option>
-                                                ))
-                                            }
-                                        </select>
-                                    </div>
-                                )
-                                */
+                                    )
+                                    */
                                 //Fin caso 1.1 por TRIMESTRE **************************
                             }
 
