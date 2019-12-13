@@ -24,6 +24,7 @@ import dataSecundariaMate from '../data/planeamiento/secundaria/docs_plan_secund
 
 
 // Referencias Jóvenes y adultos
+import distribucionAdultos from '../data/planeamiento/adultos/ditribucion_materias_adultos_can.json';
 import dataAdultos from '../data/planeamiento/adultos/docs_plan_adultos.json';
 import dataAdultosEspa from '../data/planeamiento/adultos/docs_plan_adultos_espanol.json';
 import dataAdultosMate from '../data/planeamiento/adultos/docs_plan_adultos_matematica.json';
@@ -177,20 +178,21 @@ class BuscadorPlaneamiento extends Component {
                 });
                 break;
             case "Primaria":
-            case "Secundaria":
-            case "Interculturalidad Primaria":
-            case "Interculturalidad Secundaria":
-            case "Pedagogía Hospitalaria":
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                     //Distribución Materias Primaria
-                    if (this.state.materia !== "" && this.state.nivel === "Primaria") {
+                    if (this.state.materia !== "" ) {
                         this.setState({ distribucionPlan: distribucionPrimaria[this.state.materia].distribucion }, () => {
                             console.log("Distribución primaria:", this.state.distribucionPlan);
                         });
-                    }
+                    }                
+                });
+                break;
+            case "Secundaria":
+                this.setState({ materia: valor }, () => {
+                    console.log("Materia seleccionada", this.state.materia)                
                     //Distribución Materias Secundaria
-                    if (this.state.materia !== "" && this.state.nivel === "Secundaria") {
+                    if (this.state.materia !== "") {
                         this.setState({ distribucionPlan: distribucionSecundaria[this.state.materia].distribucion }, () => {
                             console.log("Distribución Secundaria:", this.state.distribucionPlan);
                         });
