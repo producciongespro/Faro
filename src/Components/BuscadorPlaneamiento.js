@@ -182,16 +182,16 @@ class BuscadorPlaneamiento extends Component {
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                     //Distribución Materias Primaria
-                    if (this.state.materia !== "" ) {
+                    if (this.state.materia !== "") {
                         this.setState({ distribucionPlan: distribucionPrimaria[this.state.materia].distribucion }, () => {
                             console.log("Distribución primaria:", this.state.distribucionPlan);
                         });
-                    }                
+                    }
                 });
                 break;
             case "Secundaria":
                 this.setState({ materia: valor }, () => {
-                    console.log("Materia seleccionada", this.state.materia)                
+                    console.log("Materia seleccionada", this.state.materia)
                     //Distribución Materias Secundaria
                     if (this.state.materia !== "") {
                         this.setState({ distribucionPlan: distribucionSecundaria[this.state.materia].distribucion }, () => {
@@ -207,26 +207,29 @@ class BuscadorPlaneamiento extends Component {
                 break
             case "Jóvenes y Adultos":
                 this.setState({ modulo: valor }, () => {
-                    console.log("Módulo seleccionado:", this.state.modulo)
-                    if (this.state.modalidad ===  "Colegios Académicos Nocturnos (CAN)" ) {
+                    //console.log("Módulo seleccionado:", this.state.modulo)
+                    if (this.state.modalidad === "Colegios Académicos Nocturnos (CAN)") {
                         //obtiene el tipo de plan para Colegios Acedemicos Nocturnos:
                         //console.log("distribucionAdultosCan", distribucionAdultosCan[this.state.modulo]);
                         //Validación de campo no nulo
-                        if (distribucionAdultosCan[this.state.modulo] !== undefined ) {
-                          this.setState({ distribucionPlan: distribucionAdultosCan[this.state.modulo]}, ()=> {
-                              console.log("Distribución del plan en CAN con la materia", this.state.modulo, ": ", this.state.distribucionPlan );                              
-                          });      
-                        }                                            
+                        if (distribucionAdultosCan[this.state.modulo] !== undefined) {
+                            this.setState({ distribucionPlan: distribucionAdultosCan[this.state.modulo].distribucion }, () => {
+                                console.log("Distribución del plan en CAN con la materia", this.state.modulo, ": ", this.state.distribucionPlan);
+                            });
+                        }
                     }
-                    if ( this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)") {
+                    if (this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)") {
                         //obtiene el tipo de plan para CONED:
                         //console.log("distribucionAdultosConed", distribucionAdultosConed[this.state.modulo] );
                         if (distribucionAdultosConed[this.state.modulo] !== undefined) {
-                           this.setState({ distribucionPlan: distribucionAdultosConed[this.state.modulo] }, ()=> {
-                            console.log("Distribución del plan en CONED con la materia", this.state.modulo, ": ", this.state.distribucionPlan )  
-                           });
+                            this.setState({ distribucionPlan: distribucionAdultosConed[this.state.modulo].distribucion }, () => {
+                                console.log("Distribución del plan en CONED con la materia", this.state.modulo, ": ", this.state.distribucionPlan)
+                            });
                         }
-                    }                   
+                    }
+                    if (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II" || this.state.modalidad === "IPEC CINDEA Nivel III")  {
+                        this.setState({ distribucionPlan : "Anual" });
+                    }
                 });
                 break;
             default:
@@ -460,16 +463,33 @@ class BuscadorPlaneamiento extends Component {
         return tmpArray;
     }
 
-    filtrarJovenesAdultos = (nivel, modalidad, modulo) => {
+    filtrarJovenesAdultos = (nivel, modalidad, modulo, mes) => {
         //console.log("modalidad", modalidad);
         let array;
         let tmpArray = [];
-        //Carga del array de unidocentes:
+        //Carga del array de Jóvenes y adultos:
         array = dataAdultos;
+        if (this.state.modulo === "Español") {
+            array = dataAdultosEspa;
+        };
+        if (this.state.modulo === "Matemática") {
+            array = dataAdultosMate;
+        };
 
-        for (let index = 0; index < array.length; index++) {
-            if (array[index].nivel === nivel && array[index].modalidad === modalidad && array[index].modulo === modulo) {
-                tmpArray.push(array[index]);
+
+        //Validación por mes o por año
+
+        if (this.state.distribucionPlan === "Mensual") {
+            for (let index = 0; index < array.length; index++) {
+                if (array[index].nivel === nivel && array[index].modalidad === modalidad && array[index].modulo === modulo && array[index].mes === mes) {
+                    tmpArray.push(array[index]);
+                }
+            }
+        } else {
+            for (let index = 0; index < array.length; index++) {
+                if (array[index].nivel === nivel && array[index].modalidad === modalidad && array[index].modulo === modulo) {
+                    tmpArray.push(array[index]);
+                }
             }
         }
         return tmpArray;
@@ -510,7 +530,7 @@ class BuscadorPlaneamiento extends Component {
                 this.tarjetasUnidocente(this.arrayResultado);
                 break;
             case "Jóvenes y Adultos":
-                this.arrayResultado = this.filtrarJovenesAdultos(this.state.nivel, this.state.modalidad, this.state.modulo);
+                this.arrayResultado = this.filtrarJovenesAdultos(this.state.nivel, this.state.modalidad, this.state.modulo, this.mes);
                 this.tarjetasJovenesAdultos(this.arrayResultado);
                 break;
             case "Preescolar":
@@ -826,9 +846,26 @@ class BuscadorPlaneamiento extends Component {
                                 <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                     Modalidad: {array[index].modalidad}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Módulo: {array[index].modulo}
-                                </span>
+                                {
+                                    (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II" || this.state.modalidad === "IPEC CINDEA Nivel III") ?
+                                        (
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Módulo: {array[index].modulo}
+                                            </span>
+                                        ) :
+                                        (
+                                            <React.Fragment>
+                                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                    Asignatura: {array[index].modulo}
+                                                </span>
+                                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                    Año: {array[index].anno}
+                                                </span>
+                                            </React.Fragment>
+                                        )
+                                }
+
+
                             </div>
                             <div className="card-body mr-2">
                                 <div className="row">
