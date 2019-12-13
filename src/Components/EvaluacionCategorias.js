@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import categoriasEvaluacion from '../data/evaluacion/categorias_evaluacion.json';
 import assets from '../data/config/config.json';
-
+var bannerFunciones;
+var bannerComponentes;
 const serv = assets.servidor;
 
 const img = assets.img.apoyosEvaluacion;
 const imgGeneral = assets.img.general;
+var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
+
+console.log("Plataforma: "+plataformaUsada);
 
 
 class EvaluacionCategorias extends Component {
@@ -22,8 +26,27 @@ class EvaluacionCategorias extends Component {
 
     componentDidMount =()=>{
         this.cambiarClaseBotones();
+        this.elegirBanner();
     }
 
+    elegirBanner = () =>{
+    switch (plataformaUsada) {
+    case "escritorio": 
+            bannerFunciones = "encabezado_funciones.png";
+            bannerComponentes = "encabezado_componentes.png";
+        break;
+        case "movil": 
+            bannerFunciones = "encabezado_funcionesMovil.png";
+            bannerComponentes = "encabezado_componentesMovil.png";
+        break;
+        default:
+            bannerFunciones = "encabezado_funciones.png";
+            bannerComponentes = "encabezado_componentes.png";
+        break;
+    }
+    console.log("Banner: "+ bannerFunciones);
+    
+    }
 
     cambiarClaseBotones = () => {        
         if (this.props.origen === "Funciones de la evaluación") {
@@ -81,20 +104,28 @@ class EvaluacionCategorias extends Component {
                             this.props.origen === "Funciones de la evaluación" ?
 
                                 (
-                                    <img className="bannerRecursos" src={img + "encabezado_funciones.png"} alt="Encabezado" />
+                                    <img className="bannerRecursos" src={img + bannerFunciones} alt="Encabezado" />
                                 )
                                 :
                                 (
-                                    <img className="bannerRecursos" src={img + "encabezado_componentes.png"} alt="Encabezado" />
+                                    <img className="bannerRecursos" src={img + bannerComponentes} alt="Encabezado" />
                                 )
                         }
                     </h1>
-                
-                        <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarCategoriasEvaluacion} src={imgGeneral + "btn_volver.png"} alt="Volver" />
+                        {
+                          plataformaUsada === "movil" ?
+                            ( 
+                                <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCerrarCategoriasEvaluacion} src={imgGeneral + "btn_volver.png"} alt="Volver" />
+                            )
+                            :
+                            (
+                                <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarCategoriasEvaluacion} src={imgGeneral + "btn_volver.png"} alt="Volver" />
+                            )
+                        }
                     </div>
                     </div>
                 
-                <br /><br />
+               
                 <div className="row">
                     <div className="col-5">
                         {

@@ -82,7 +82,20 @@ class Tags_info extends Component {
   componentWillMount ( ) {
     console.log(this.props.idCat);
     if (this.props.idCat === "programas" ) {
-      this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/proramas_titulo.png";
+      var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
+      console.log("Plataforma: "+plataformaUsada);
+      switch (plataformaUsada) {
+        case "escritorio": 
+              this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/proramas_titulo.png";
+          break;
+        case "movil": 
+              this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/proramas_tituloMovil.png";
+    break;
+        default:
+            this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/proramas_titulo.png";
+          break;
+      }
+      // this.urlImgtitulo = "https://recursos.mep.go.cr/ws_faro/p3-documentos-oficiales/proramas_titulo.png";
       this.colorFondo="col-2  color-morado";
       this.botonesNav = (
             <React.Fragment>

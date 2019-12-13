@@ -9,6 +9,8 @@ import assets from '../data/config/config.json';
 //console.log("ejemplosItemesPrimaria",ejemplosItemesPrimaria[0]["Estudios sociales"] );
 const img = assets.img.apoyosEvaluacion;
 const imgGenerales = assets.img.general;
+var bannerEjemplos;
+var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 
 class EjemplosItemesEvaluacion extends Component {
     constructor(props) {
@@ -44,6 +46,23 @@ class EjemplosItemesEvaluacion extends Component {
         }
     }
 
+    elegirBanner = () =>{
+        switch (plataformaUsada) {
+        case "escritorio": 
+                bannerEjemplos = "encabezado_ejemplos.png";
+               
+            break;
+            case "movil": 
+                bannerEjemplos = "encabezado_ejemplosMovil.png";
+            break;
+            default:
+                bannerEjemplos = "encabezado_ejemplos.png";
+            break;
+        }
+        console.log("Banner: "+ bannerEjemplos);
+        
+        }
+
 
 
     handlerSeleccionarAsignatura = (e) => {
@@ -55,6 +74,7 @@ class EjemplosItemesEvaluacion extends Component {
         this.setState({
             itemes: this.ejemplosItemesJson[0][this.valor]
         });
+        this.elegirBanner();
     }
 
 
