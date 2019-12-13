@@ -466,6 +466,7 @@ class BuscadorPlaneamiento extends Component {
     tarjetasBasico = (array) => {
         // Primaria, secudnaria e intercultural
         //console.log("array recibido en tarjetas:", array);
+        console.log("*********Renderizado Tarjetas básico*************");        
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {
@@ -483,14 +484,36 @@ class BuscadorPlaneamiento extends Component {
                             <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                 Asignatura: {array[index].materia}
                             </span>
+                         
                             {
-                                this.state.materia === "Español" && this.state.nivel === "Secundaria" &&
+                                //Etiqueta tipo de Distribucción mensual:
+                                this.state.distribucionPlan === "Mensual" &&
                                 (
                                     <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                        Mes: {array[index].mes}
+                                       Mes: {array[index].mes}
                                     </span>
                                 )
                             }
+
+                            {
+                                //Etiqueta tipo de Distribucción trimestral:
+                                this.state.distribucionPlan === "Trimestral" &&
+                                (
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                       {array[index].trimestre}  Periodo
+                                    </span>
+                                )
+                            }
+                                                      {
+                                //Etiqueta tipo de Distribucción por contenido:
+                                this.state.distribucionPlan === "Contenido" &&
+                                (
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                       Contenido: {array[index].contenido}
+                                    </span>
+                                )
+                            }
+                       
                             {
                                 //Plan de estudio en caso de frances e inglés
                                 (this.state.materia === "Francés" || this.state.materia === "Inglés") &&
