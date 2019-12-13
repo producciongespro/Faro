@@ -5,7 +5,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Febrero",
+        "mes" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -13,7 +13,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Marzo",
+        "mes" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -21,7 +21,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Abril",
+        "mes" : "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "   "
     },
@@ -29,7 +29,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Mayo",
+        "mes" : "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "  "
     },
@@ -37,7 +37,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Junio",
+        "mes" : "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "   "
     },
@@ -45,7 +45,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Julio",
+        "mes" : "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "  "
     }, 
@@ -53,7 +53,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Agosto",
+        "mes" : "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "  "
     },
@@ -61,7 +61,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Septiembre",
+        "mes" : "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "  "
     },
@@ -69,7 +69,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Octubre",
+        "mes" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "  "
     },
@@ -77,7 +77,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Matemática",
-        "distribucion" : "Noviembre",
+        "mes" : "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "  "
     },
@@ -97,7 +97,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Matemática",
-        "distribucion" : "Febrero",
+        "mes" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -105,15 +105,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Matemática",
-        "distribucion" : "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
-        "plantilla" : " "
-    },   
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Matemática",
-        "distribucion" : "Abril",
+        "mes" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },   
@@ -121,7 +113,15 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Matemática",
-        "distribucion" : "Mayo",
+        "mes" : "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
+        "plantilla" : " "
+    },   
+    {
+        "nivel" : "Primaria",
+        "anno" : "Segundo",
+        "materia" : "Matemática",
+        "mes" : "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },  
@@ -129,7 +129,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Matemática",
-        "distribucion" : "Junio",
+        "mes" : "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },   
@@ -137,7 +137,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Matemática",
-        "distribucion" : "Julio",
+        "mes" : "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },   
@@ -145,7 +145,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Matemática",
-        "distribucion" : "Agosto",
+        "mes" : "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },   
@@ -153,7 +153,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Matemática",
-        "distribucion" : "Septiembre",
+        "mes" : "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },   
@@ -161,7 +161,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Matemática",
-        "distribucion" : "Octubre",
+        "mes" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },   
@@ -169,7 +169,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Matemática",
-        "distribucion" : "Noviembre",
+        "mes" : "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -187,7 +187,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Febrero",
+        "mes" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/1_ppd_matematica_febrero_tercero.docx  "
     },
@@ -195,7 +195,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Marzo",
+        "mes" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/2_ppd_matematica_marzo_tercero.docx "
     },
@@ -203,7 +203,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Abril",
+        "mes" : "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/3_ppd_matematica_abril_tercero.docx "
     },
@@ -211,7 +211,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Mayo",
+        "mes" : "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/4_ppd_matematica_mayo_tercero.docx "
     },
@@ -219,7 +219,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Junio",
+        "mes" : "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/5_ppd_matematica_junio_tercero.docx "
     },
@@ -227,7 +227,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Julio",
+        "mes" : "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/6_ppd_matematica_julio_tercero.docx "
     },
@@ -235,7 +235,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Agosto",
+        "mes" : "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/7_ppd_matematica_agosto_tercero.docx "
     },
@@ -243,7 +243,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Septiembre",
+        "mes" : "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/8_ppd_matematica_septiembre_tercero.docx "
     },
@@ -251,7 +251,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Octubre",
+        "mes" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/10_ppd_matematica_octubre_tercero.docx "
     },
@@ -259,7 +259,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Matemática",
-        "distribucion" : "Noviembre",
+        "mes" : "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/ter/9_ppd_matematica_noviembre_tercero.docx "
     },
@@ -285,7 +285,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Febrero",
+        "mes" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -293,7 +293,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Marzo",
+        "mes" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -301,7 +301,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Abril ",
+        "mes" : "Abril ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -309,7 +309,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Mayo ",
+        "mes" : "Mayo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -317,7 +317,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Junio ",
+        "mes" : "Junio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -325,7 +325,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Julio ",
+        "mes" : "Julio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -333,7 +333,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Agosto ",
+        "mes" : "Agosto ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -341,7 +341,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Septiembre ",
+        "mes" : "Septiembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -349,7 +349,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Octubre ",
+        "mes" : "Octubre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -357,7 +357,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Matemática",
-        "distribucion" : "Noviembre ",
+        "mes" : "Noviembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " "
     },
@@ -376,7 +376,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Febrero ",
+        "mes" : "Febrero ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/1_ppd_matematica_febrero_quinto.docx  "
     },
@@ -384,7 +384,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Marzo ",
+        "mes" : "Marzo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/2_ppd_matematica_marzo_quinto.docx  "
     },
@@ -392,7 +392,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Abril ",
+        "mes" : "Abril ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/3_ppd_matematica_abril_quinto.docx  "
     },
@@ -400,7 +400,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Mayo ",
+        "mes" : "Mayo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/4_ppd_matematica_mayo_quinto.docx "
     },
@@ -408,7 +408,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Junio ",
+        "mes" : "Junio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/5_ppd_matematica_junio_quinto.docx "
     },
@@ -416,7 +416,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Julio ",
+        "mes" : "Julio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/6_ppd_matematica_julio_quinto.docx "
     },
@@ -424,7 +424,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Agosto ",
+        "mes" : "Agosto ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/7_ppd_matematica-_agosto_quinto.docx  "
     },
@@ -432,7 +432,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Septiembre ",
+        "mes" : "Septiembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/8_ppd_matematica_septiembre_quinto.docx  "
     },
@@ -440,7 +440,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Octubre ",
+        "mes" : "Octubre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/9_ppd_matematica_octubre_quinto.docx "
     },
@@ -448,7 +448,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Matemática",
-        "distribucion" : "Noviembre ",
+        "mes" : "Noviembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/qui/10_ppd_matematica_noviembre_quinto.docx "
     },
@@ -467,7 +467,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Febrero ",
+        "mes" : "Febrero ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/1_ppd_matematica_febrero_sexto.docx  "
     },
@@ -475,7 +475,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Marzo ",
+        "mes" : "Marzo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/2_ppd_matematica_marzo_sexto.docx "
     },
@@ -483,7 +483,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Abril ",
+        "mes" : "Abril ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/3_ppd_matematica_abril_sexto.docx  "
     },
@@ -491,7 +491,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Mayo ",
+        "mes" : "Mayo ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/4_ppd-matematica_mayo_sexto.docx  "
     },
@@ -499,7 +499,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Junio ",
+        "mes" : "Junio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/5_ppd_matematica_junio_sexto.docx  "
     },
@@ -507,7 +507,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Julio ",
+        "mes" : "Julio ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/6_ppd_matematica_julio_sexto.docx "
     },
@@ -515,7 +515,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Agosto ",
+        "mes" : "Agosto ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/7_ppd_matematica_agosto_sexto.docx  "
     },
@@ -523,7 +523,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Septiembre ",
+        "mes" : "Septiembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/8_ppd_matematica_septiembre_sexto.docx "
     },
@@ -531,7 +531,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Octubre ",
+        "mes" : "Octubre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/9_ppd_matematica_octubre_sexto.docx  "
     },
@@ -539,7 +539,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Matemática",
-        "distribucion" : "Noviembre ",
+        "mes" : "Noviembre ",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/04_lin_matematica_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/mate/sex/10_ppd_matematica_noviembre_sexto.docx  "
     }

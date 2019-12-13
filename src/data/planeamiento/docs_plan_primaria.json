@@ -375,7 +375,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Estudios Sociales",
-        "distribucion": "I",
+        "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -383,7 +383,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Estudios Sociales",
-        "distribucion": "II",
+        "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -391,7 +391,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Estudios Sociales",
-        "distribucion": "III",
+        "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -405,7 +405,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Estudios Sociales",
-        "distribucion": "I",
+        "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -413,7 +413,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Estudios Sociales",
-        "distribucion": "II",
+        "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -421,7 +421,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Estudios Sociales",
-        "distribucion": "III",
+        "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -433,7 +433,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Estudios Sociales",
-        "distribucion": "I",
+        "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : ""
     },
@@ -442,7 +442,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Estudios Sociales",
-        "distribucion": "II",
+        "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : ""
     },
@@ -451,7 +451,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Estudios Sociales",
-        "distribucion": "III",
+        "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : ""
     },
@@ -465,7 +465,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Estudios Sociales",
-        "distribucion": "I",
+        "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -473,7 +473,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Estudios Sociales",
-        "distribucion": "II",
+        "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -481,7 +481,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Estudios Sociales",
-        "distribucion": "III",
+        "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -493,7 +493,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Estudios Sociales",
-        "distribucion": "I",
+        "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -501,7 +501,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Estudios Sociales",
-        "distribucion": "II",
+        "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -509,7 +509,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Estudios Sociales",
-        "distribucion": "III",
+        "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -521,7 +521,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Estudios Sociales",
-        "distribucion": "I",
+        "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -529,7 +529,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Estudios Sociales",
-        "distribucion": "II",
+        "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
@@ -537,7 +537,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Estudios Sociales",
-        "distribucion": "III",
+        "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
         "plantilla" : " "
     },
