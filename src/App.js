@@ -601,7 +601,10 @@ class App extends Component {
   showModal = (e) => {
     const content = e.target.dataset.content;
     const typeContent = e.target.dataset.typecontent;
-    //console.log(content);   
+    //console.log(content);  
+    //Carga el body con la clase modal open de bootstrap
+    let cuerpo =  document.getElementsByTagName("BODY")[0];
+    cuerpo.classList.add("modal-open");   
     this.setState({
       modalActive: true,
       typeContent: typeContent
@@ -615,6 +618,8 @@ class App extends Component {
 
 
   closeModal = () => {
+    let cuerpo =  document.getElementsByTagName("BODY")[0];
+    cuerpo.classList.remove("modal-open");   
     this.setState({
       modalActive: false
     }, () => {
