@@ -1,0 +1,86 @@
+{
+    "Afectividad y Sexualidad": {
+        "distribucion": "Anual"
+    },
+
+    "Artes Industriales": {
+        "distribucion": "Anual"
+    },
+
+    "Artes Plásticas": {
+        "distribucion": "Anual"
+    },
+
+    "Biología": {
+        "distribucion": "Anual"
+    },
+
+    "Ciencias": {
+        "distribucion": "Anual"
+    },
+
+    "Educación Cívica": {
+        "distribucion": "Trimestral"
+    },
+
+    "Educación Física": {
+        "distribucion": "Anual"
+    },
+
+    "Educación Musical": {
+        "distribucion": "Anual"
+    },
+
+    "Educación para el Hogar": {
+        "distribucion": "Anual"
+    },
+
+    "Educación Religiosa": {
+        "distribucion": "Anual"
+    },
+
+    "Español": {
+        "distribucion": "Mensual"
+    },
+
+    "Estudios Sociales": {
+        "distribucion": "Anual"
+    },
+
+    "Filosofía": {
+        "distribucion": "Trimestral"
+    },
+
+    "Física": {
+        "distribucion": "Anual"
+    },
+
+    "Francés": {
+        "distribucion": "Anual"
+    },
+
+    "Inglés": {
+    "distribucion": "Anual"
+    },
+
+    "Italiano": {
+    "distribucion": "Anual"
+    },
+
+    "Matemática": {
+    "distribucion": "Mensual"
+    },
+
+    "Orientación": {
+    "distribucion": "Anual"
+    },
+
+    "Psicología": {
+    "distribucion": "Anual"
+    },
+
+    "Química": {
+    "distribucion": "Anual"
+    }
+
+ }
