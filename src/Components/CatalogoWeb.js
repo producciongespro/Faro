@@ -12,9 +12,9 @@ const CatalogoWeb = (props) => {
     return ( 
         <React.Fragment>
             <div className="row">
-                <div className="col-sm-12">
+                <div id="titulo_recursosWeb" className="col-sm-12">
                     <img className="img-fluid"  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <nav className="navbar navbar-expand-lg navbar-light">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -24,7 +24,7 @@ const CatalogoWeb = (props) => {
                     <li className="nav-item"><a className=" nav-link " href="#web">Herramientas Web</a></li>
                     <li className="nav-item"><a className=" nav-link " href="#apps">Apps Educativas</a></li>
                     <li className="nav-item"><a className=" nav-link " href="#estrategias">Estrategias de aprendizaje</a> </li>          
-                    <li className="nav-item"><a className=" nav-link " href="#tmp"  onClick={props.handlerCloseCatalogWeb }> Volver</a></li>              
+                    <li className="nav-item"><a className=" nav-link " href="#tmp"  onClick={props.handlerCloseCatalogWeb }><span><b>Volver</b></span> </a></li>              
                 </ul>
                 </div>
             </nav>
