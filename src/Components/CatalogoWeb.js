@@ -11,18 +11,26 @@ var img = images[0];
 const CatalogoWeb = (props) => {
     return ( 
         <React.Fragment>
-            
-            <div className="tit_rec_dig row"><img  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/></div>
-            <nav id="inicio" className="nav nav-pills nav-justified  custom-nav">
-            <a className="nav-item nav-link link-custom" href="#educativos">Sitios Educativos</a> <br/><br/><br/>
-            <a className="nav-item nav-link link-custom" href="#web">Herramientas Web</a>
-            <a className="nav-item nav-link link-custom" href="#apps">Apps Educativas</a>            
-            <a className="nav-item nav-link link-custom" href="#estrategias">Estrategias de aprendizaje</a>            
-            <a className="nav-item nav-link link-custom" href="#tmp"  onClick={props.handlerCloseCatalogWeb }> Volver</a>            
+            <div className="row">
+                <div className="col-sm-12">
+                    <img className="img-fluid"  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/>
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item"><a className=" nav-link " href="#educativos">Sitios Educativos</a></li>
+                    <li className="nav-item"><a className=" nav-link " href="#web">Herramientas Web</a></li>
+                    <li className="nav-item"><a className=" nav-link " href="#apps">Apps Educativas</a></li>
+                    <li className="nav-item"><a className=" nav-link " href="#estrategias">Estrategias de aprendizaje</a> </li>          
+                    <li className="nav-item"><a className=" nav-link " href="#tmp"  onClick={props.handlerCloseCatalogWeb }> Volver</a></li>              
+                </ul>
+                </div>
             </nav>
-            <br/>  <br/>
-    
-        
+             </div>
+            </div>
+            
             <div id="educativos">  <a href="#inicio">   <h4 className="tit-catalogo" > Sitios Educativos </h4> <br/> </a>    
                         {
                             sitiosWeb[0].map((item, i) => (

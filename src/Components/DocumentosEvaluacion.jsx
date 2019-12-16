@@ -3,20 +3,41 @@ import assets from '../data/config/config.json';
 import config from '../data/config/config.json';
 
 const serv = config.servidor;
-
-
+var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
+var bannerDocumentos;
 const img = assets.img.apoyosEvaluacion;
 const imgGeneral = assets.img.general;
 
-
-const DocumentosEvaluacion = (props) => {
+ 
+const DocumentosEvaluacion = (props) => { 
+    switch (plataformaUsada) {
+    case "escritorio": 
+            bannerDocumentos = "encabezado_documentos.png";              
+        break;
+        case "movil": 
+            bannerDocumentos = "encabezado_documentosMovil.png";
+        break;
+        default:
+            bannerDocumentos = "encabezado_documentos.png";
+        break;
+    }
+    console.log("Banner: "+ bannerDocumentos);       
     return (
         <div className="container">
 
             <div className="row">
                 <div className="col-12  text-right alert">
-                    <img className="bannerRecursos" src={img + "encabezado_documentos.png"} alt="Encabezado de Documentos de apoyo" />
-                    <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={props.handlerCerrarDocumentosEvaluacion} src={imgGeneral + "btn_volver.png"} alt="Volver" />
+                    <img className="bannerRecursos" src={img + bannerDocumentos} alt="Encabezado de Documentos de apoyo" />
+                    {
+                            plataformaUsada === "movil" ?
+                              ( 
+                                  <img className="hvr-pop boton-volverMovil img-fluid" onClick={props.handlerCerrarDocumentosEvaluacion} src={imgGeneral + "btn_volver.png"} alt="Volver" />
+                              )
+                              :
+                              (
+                                  <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={props.handlerCerrarDocumentosEvaluacion} src={imgGeneral + "btn_volver.png"} alt="Volver" />
+                              )
+                    }
                 </div>
             </div>
 

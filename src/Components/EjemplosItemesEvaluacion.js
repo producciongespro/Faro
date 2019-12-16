@@ -29,6 +29,7 @@ class EjemplosItemesEvaluacion extends Component {
     materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Química"]
 
     handlerCargarAsignatura = (e) => {
+       
         const nivel = e.target.value;
         switch (nivel) {
             case "primaria":
@@ -47,20 +48,20 @@ class EjemplosItemesEvaluacion extends Component {
     }
 
     elegirBanner = () =>{
+        console.log("Plataforma es: "+plataformaUsada);
+        
         switch (plataformaUsada) {
         case "escritorio": 
-                bannerEjemplos = "encabezado_ejemplos.png";
-               
+                bannerEjemplos = "encabezado_ejemplos.jpg";              
             break;
             case "movil": 
-                bannerEjemplos = "encabezado_ejemplosMovil.png";
+                bannerEjemplos = "encabezado_ejemplosMovil.jpg";
             break;
             default:
-                bannerEjemplos = "encabezado_ejemplos.png";
+                bannerEjemplos = "encabezado_ejemplos.jpg";
             break;
         }
-        console.log("Banner: "+ bannerEjemplos);
-        
+        console.log("Banner: "+ bannerEjemplos);       
         }
 
 
@@ -74,19 +75,29 @@ class EjemplosItemesEvaluacion extends Component {
         this.setState({
             itemes: this.ejemplosItemesJson[0][this.valor]
         });
-        this.elegirBanner();
     }
 
 
     render() {
+        this.elegirBanner();
         return (
             <div className="container">
                  <div className="row">
                  <div className="col-12 text-right">
                         <h1>
-                            <img className="bannerRecursos" src={img + "encabezado_ejemplos.jpg"} alt="Encabezado" />
+                            <img className="bannerRecursos" src={img + bannerEjemplos} alt="Encabezado" />
                         </h1>
-                        <img className="botones-portada hvr-pop boton-volver img-fluid derecha" onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                        {
+                            plataformaUsada === "movil" ?
+                              ( 
+                                  <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                              )
+                              :
+                              (
+                                  <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                              )
+                        }
+                        
                     </div>   
                   </div>   
                        
