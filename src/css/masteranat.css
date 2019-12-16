@@ -400,6 +400,13 @@ padding-top:5%;
   width: 100%;
 }
 
+.modal-body {
+  background-image: url("http://localhost/Faro/asset/img/2_home/web/modal_acercade.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 #rubricas {
   margin-top: -37%;
   margin-left: 7%;
@@ -665,7 +672,8 @@ padding-top:5%;
     z-index: 0;
   }
   .modal-alto {
-    height: 600px; 
+    /* height: 600px; */
+    height: 100%;
   }
 
   .botones-inferiores{

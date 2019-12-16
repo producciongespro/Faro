@@ -142,12 +142,12 @@ class Modal extends Component {
                         <img  className="img-fluid"  src= {imgHome + "modal_acercade.png"} alt="fondo indicaciones"/>  
                       </div> 
 
-                      <div className="texto-indicaciones">
+                      <div className="texto-indicaciones">            
 
                           <h2 className="text-center">Acerca de</h2>               
                          
                           <br/>
-                          <div className="container">
+                          <div className="container"> 
                             <div className="row ">
                                 <div className="col-12 text-justify creditos">
                                 <strong>Dirección de Recursos Tecnológicos</strong><br/>
@@ -164,8 +164,8 @@ class Modal extends Component {
                                 Tatiana Navarro Mata<br/>
                                 Nelson Campos Quesada <br/>
                                 Henry Arias Guido <br/>
-                                </div>
-                            </div>
+                                 </div>
+                            </div> 
                           
    
                           <br/>
