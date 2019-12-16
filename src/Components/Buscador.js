@@ -8,7 +8,8 @@ import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import dataPreescolar from '../data/recursos/recursos_preescolar.json';
 
 import assets from '../data/config/config.json';
-
+var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
+var bannerPrescolar, bannerPrimaria, bannerSecundaria, bannerFerias;
 const img = assets.img.recursosDidacticos;
 const imgGenerales = assets.img.general;
 
@@ -101,6 +102,30 @@ class Buscador extends Component {
         //Oculta la materia en caso de preescolar
         this.cargarAmbientePreescolar();
     }
+
+
+    elegirBanner = () =>{
+        switch (plataformaUsada) {
+        case "escritorio": 
+            bannerPrescolar="preescolar_banner.png";
+            bannerPrimaria="primaria_banner.png";
+            bannerSecundaria="secundaria_banner.png";
+            bannerFerias="encabezado_feria_cientifica.png";
+        break;
+        case "movil": 
+            bannerPrescolar="preescolar_bannerMovil.png";
+            bannerPrimaria="primaria_bannerMovil.png";
+            bannerSecundaria="secundaria_bannerMovil.png";
+            bannerFerias="encabezado_feria_cientificaMovil.png";
+        break;
+        default:
+            bannerPrescolar="preescolar_banner.png";
+            bannerPrimaria="primaria_banner.png";
+            bannerSecundaria="secundaria_banner.png";
+            bannerFerias="encabezado_feria_cientifica.png";
+        break;
+        }        
+        }
 
 
     cargarDatasetRecursos = (materia) => {
@@ -349,19 +374,20 @@ class Buscador extends Component {
 
 
     render() {
+        this.elegirBanner();
         return (
             <React.Fragment>
                 <div className="row">
-
+   
                     <div className="col-sm-12  text-right">
                         {
-                            this.props.origen === "preescolar" && <img alt="Preescolar" className="bannerRecursos" src= {img + "preescolar_banner.png"} />
+                            this.props.origen === "preescolar" && <img alt="Preescolar" className="bannerRecursos" src= {img + bannerPrescolar} />
                         }
                         {
-                            this.props.origen === "primaria" && <img alt="Primaria" className="bannerRecursos" src={img + "primaria_banner.png"}/>
+                            this.props.origen === "primaria" && <img alt="Primaria" className="bannerRecursos" src={img + bannerPrimaria}/>
                         }
                         {
-                            this.props.origen === "secundaria" && <img alt="Secundaria" className="bannerRecursos" src= {img + "secundaria_banner.png"} />
+                            this.props.origen === "secundaria" && <img alt="Secundaria" className="bannerRecursos" src= {img + bannerSecundaria} />
                         }
                         {
                             this.props.origen === "intercultural" && <img alt="intercultural" className="bannerRecursos" src= {img + "encabezado_intercultural.png"} />
@@ -370,15 +396,23 @@ class Buscador extends Component {
                             this.props.origen === "jovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src= {img + "encabezado_jovenes_adultos.png"} />
                         }
                         {
-                            this.props.origen === "feriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={img + "encabezado_feria_cientifica.png"} />
+                            this.props.origen === "feriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={img + bannerFerias} />
                         }
                         {
                             this.props.origen === "banderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src= {img + "encabezado_bandera_azul.png"} />
                         }
 
-                        
+{
+                          plataformaUsada === "movil" ?
+                            ( 
+                                <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                            )
+                            :
+                            (
+                                <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                            )
+                        }
 
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCerrarBuscador} src= {imgGenerales + "btn_volver.png"} alt="Volver" />
                     </div><br/><br/>
                 </div>
 

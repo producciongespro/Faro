@@ -12,7 +12,7 @@
         "recursosDidacticos" : "http://recursos.mep.go.cr/Faro/asset/img/5_recursos_did/",
         "docsOficiales" : "http://localhost/Faro/asset/img/6__documen_educ/",
         "desarrolloProfesional" : "http://localhost/Faro/asset/img/7_desarrollo_prof/",
-        "apoyosPlan" : "http://localhost/Faro/asset/img/8_apoyo_planea/"
+        "apoyosPlan" : "http://recursos.mep.go.cr/Faro/asset/img/8_apoyo_planea/"
     },
     "video" : {
         "ministra" : "https://www.youtube.com/embed/bbZntIVMFr4"

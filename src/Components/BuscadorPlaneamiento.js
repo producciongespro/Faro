@@ -50,7 +50,7 @@ import assets from '../data/config/config.json';
 const img = assets.img.apoyosPlan;
 const imgGenerales = assets.img.general;
 const serv = assets.servidor;
-
+var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 //console.log("distribucionPrimaria", distribucionPrimaria );
 //console.log("distribucionSecundaria", distribucionSecundaria);
 
@@ -1075,8 +1075,26 @@ class BuscadorPlaneamiento extends Component {
 
                 <div className="row">
                     <div className="col-12  text-right alert">
-                        <img className="bannerRecursos" src={img + "encabezado_documentos_apoyo.png"} alt="Encabezado de Documentos de apoyo" />
-                        <img className="botones-portada hvr-pop img-fluid derecha  boton-volver" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                    {
+                            plataformaUsada === "movil" ?
+                              ( 
+                                <img className="bannerRecursos" src={img + "encabezado_documentos_apoyoMovil.png"} alt="Encabezado de Documentos de apoyo" />                              )
+                              :
+                              (
+                                <img className="bannerRecursos" src={img + "encabezado_documentos_apoyo.png"} alt="Encabezado de Documentos de apoyo" />
+                              )
+                    }
+                        {
+                            plataformaUsada === "movil" ?
+                              ( 
+                                <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                              )
+                              :
+                              (
+                                <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                              )
+                    }
+                       
                     </div>
                 </div>
 
