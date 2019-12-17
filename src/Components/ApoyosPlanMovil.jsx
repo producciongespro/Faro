@@ -38,7 +38,9 @@ const ApoyosPlanMovil = (props) => {
         </div>
         <div className="">
           <figure>
-              <img className=" derecha img-fluid hvr-pop" id="ejemplos" data-content= {pdfs.EjemplosTecnicas }  data-typecontent ="pdf"  onClick={props.showModal}  data-infosource={2}  alt="Ejemplos planeamiento" src={img + "img_ejemplos.png"  } />
+          <a href={pdfs.EjemplosTecnicas}  rel="noopener noreferrer">
+              <img className=" derecha img-fluid hvr-pop" id="ejemplos" data-content= {pdfs.EjemplosTecnicas }  data-typecontent ="pdf"   data-infosource={2}  alt="Ejemplos planeamiento" src={img + "img_ejemplos.png"  } />
+              </a> 
             </figure>
         </div>
     </div>

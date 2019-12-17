@@ -21,13 +21,16 @@ const DocsOficialesMovil =( props ) => {
         <div className="row">
             <div className="col-4  ladoIzq">
               <figure>
-                <img className="botones-portada hvr-pop img-fluid politica2" id="politica" data-infosource={5}   src={img + "politica_educativa.png" } data-content= {pdfs.Politica_educativa }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
+              <a href={pdfs.Politica_educativa}  rel="noopener noreferrer">
+                <img className="botones-portada hvr-pop img-fluid politica2" id="politica" data-infosource={5}   src={img + "politica_educativa.png" } data-content= {pdfs.Politica_educativa }  data-typecontent ="pdf"  alt="Políticas educativas" />
+                </a>  
               </figure>
               </div>
             <div className="col-4 ">
                 <figure>
-                <img className="botones-portada hvr-pop img-fluid fundamentos2" id="fundamentos" data-infosource={5}   src= {img + "fundamentos_curriculo.png" }  data-content= {pdfs.Transformacion_curricular }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
-              
+                <a href={pdfs.Transformacion_curricular}  rel="noopener noreferrer">
+                <img className="botones-portada hvr-pop img-fluid fundamentos2" id="fundamentos" data-infosource={5}   src= {img + "fundamentos_curriculo.png" }  data-content= {pdfs.Transformacion_curricular }  data-typecontent ="pdf"  alt="Fundamentos Currículo" />
+                </a>  
               </figure>
             </div>
             <div className="col-4  ladoIzq">
@@ -43,7 +46,9 @@ const DocsOficialesMovil =( props ) => {
             </div>
             <div className="col-4  ladoIzq">
             <figure>
-              <img className="botones-portada hvr-pop img-fluid reglamento2" id="reglamento" data-infosource={5} src={img + "reglamento.png" } data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />            
+            <a href={pdfs.Docs_oficiales_REA}  rel="noopener noreferrer">
+              <img className="botones-portada hvr-pop img-fluid reglamento2" id="reglamento" data-infosource={5} src={img + "reglamento.png" } data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"   alt="Reglamento evaluación" />            
+              </a>  
             </figure>
             </div>
         </div>
@@ -55,14 +60,16 @@ const DocsOficialesMovil =( props ) => {
           </div>
           <div className="col-4 ">
               <figure>
-              <img className="botones-portada hvr-pop img-fluid faro2" id="faro" data-infosource={5}   src=  {img + "faro.png"} data-content= {pdfs.Faro }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
-              
+              <a href={pdfs.Faro}  rel="noopener noreferrer">
+              <img className="botones-portada hvr-pop img-fluid faro2" id="faro" data-infosource={5}   src=  {img + "faro.png"} data-content= {pdfs.Faro }  data-typecontent ="pdf" alt="Faro" />
+              </a>  
             </figure>
           </div>
           <div className="col-4  ladoIzq">
               <figure>
-              <img className="botones-portada hvr-pop img-fluid estudiante2" id="estudiante" data-infosource={5}  src={img + "perfil_estudiantil.png" }  data-content= {pdfs.Docs_Oficiales_Perfil_Est }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
-            
+              <a href={pdfs.Docs_Oficiales_Perfil_Est}  rel="noopener noreferrer">
+              <img className="botones-portada hvr-pop img-fluid estudiante2" id="estudiante" data-infosource={5}  src={img + "perfil_estudiantil.png" }  data-content= {pdfs.Docs_Oficiales_Perfil_Est }  data-typecontent ="pdf"    alt="Perfil estudiante" />
+              </a>  
             </figure>
           </div>
          
