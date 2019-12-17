@@ -293,20 +293,30 @@
     ],
 
 "Plan Estudios Francés Primaria" : [
-    "Francés como Lengua Extranjera", 
-    "Secciones Bilingües Español Francés" 
+    "Francés como Lengua Extranjera"    
     ],
+"__Plan Estudios Francés Primaria" : [
+        "Francés como Lengua Extranjera", 
+        "Secciones Bilingües Español Francés" 
+        ],
 
 
 "Plan Estudios Francés Secundaria" : [
-    "Francés como Lengua Extranjera",
-     "Secciones de Francés avanzado"
+    "Francés como Lengua Extranjera"     
     ],
+"__Plan Estudios Francés Secundaria" : [
+        "Francés como Lengua Extranjera",
+         "Secciones de Francés avanzado"
+        ],
 
 "Plan Estudios Inglés Primaria" : [    
-    "Inglés como Lengua Extranjera",
-    "Secciones Bilingües Español-Inglés"
+    "Inglés como Lengua Extranjera"    
     ],
+
+"__Plan Estudios Inglés Primaria" : [    
+        "Inglés como Lengua Extranjera",
+        "Secciones Bilingües Español-Inglés"
+        ],
 
 
 "Plan Estudios Inglés Secundaria" : [
