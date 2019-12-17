@@ -666,7 +666,43 @@ class BuscadorPlaneamiento extends Component {
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Orientaciones
                                         </a>
+                                    {
+                                        this.state.anno === "Décimo" &&
+                                        (
+                                            <React.Fragment>
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Divisón
+                                                </a>
+                                            </React.Fragment>
+                                        )
+                                    }
+                                    {
+                                        this.state.anno === "Undécimo" &&
+                                        (
+
+                                            <div className="row">
+
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Criterios 11 y 12
+                                        </a>
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Divisón
+                                        </a>
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Orientaciones Plan Nuevo
+                                        </a>
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> División
+                                        </a>
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Orientaciones Plan Viejo
+                                        </a>
+                                            </div>
+
+                                        )
+                                    }
                                 </div>
+
                             )
                             : (
                                 // Renderizado para los que no son secudnaria español 
@@ -677,6 +713,14 @@ class BuscadorPlaneamiento extends Component {
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plantilla
                                                 </a>
+                                                {
+                                                    this.state.materia==="Inglés" &&
+                                                    (
+                                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                                        <i className="fas fa-file-word"></i> Ejemplo
+                                                                </a>  
+                                                    )
+                                                }
 
                                 </div>
                             )
@@ -1415,7 +1459,7 @@ class BuscadorPlaneamiento extends Component {
                         {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) - mes en Unidocentes */}
                         <div className="col-sm-3">
                             {//CASO 1:Para las materias con distribución mensual
-                                (this.state.distribucionPlan === "Mensual"  && this.state.nivel!=="Preescolar" ) &&
+                                (this.state.distribucionPlan === "Mensual" && this.state.nivel !== "Preescolar") &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
