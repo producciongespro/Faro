@@ -556,6 +556,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 },
 
@@ -572,6 +573,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 }, 
 
@@ -587,6 +589,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 }, 
 
@@ -603,6 +606,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 }, 
 
@@ -619,6 +623,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 },
 
@@ -635,6 +640,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 },
 
@@ -651,6 +657,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 },
 
@@ -667,6 +674,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 },   
 
@@ -683,6 +691,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 },
 
@@ -699,6 +708,7 @@
 "monografia" : " ",
 "novela" : " ",
 "transversal" : " ",
+"division" : " ",
 "mensual" : " "
 },  
 
@@ -734,11 +744,13 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
 },
 
 
@@ -750,12 +762,14 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
-}, 
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
+},
 
    {
 "nivel" : "Secundaria",
@@ -765,12 +779,14 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
-}, 
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
+},
 
 
 {
@@ -781,12 +797,14 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
-}, 
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
+},
 
 
 {
@@ -797,11 +815,13 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
 },
 
 
@@ -813,11 +833,13 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
 },
 
 
@@ -829,11 +851,13 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
 },
 
    
@@ -845,11 +869,13 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
 },   
 
 
@@ -861,11 +887,13 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
 },
 
 
@@ -877,12 +905,14 @@
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol%20secundaria_p_nuevo.pdf",
 "lineamientos_viejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : " ",
-"orientaciones": " ",
 "monografia" : " ",
-"novela" : " ",
 "transversal" : " ",
-"mensual" : " "
-} 
+"mensual" : " ",
+"criterios11y12" : " ",
+"division" : " ",
+"orientacionesNuevas":"",
+"orientacionesViejas":""
+}
 
 
 ]
