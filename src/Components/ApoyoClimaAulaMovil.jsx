@@ -67,7 +67,9 @@ const ApoyoClimaAulaMovil = (props) => {
             </div>
           <div className="col-6 hvr-pop"><br/>
               <figure>
-                <img className="botones-portada img-fluid" id="interculturalidad" src={img + "interculturalidad.png"} data-content= {pdfs.InclusionEducativa }  data-typecontent ="pdf" data-infosource={1}  onClick={props.showModal} alt="Interculturalidad" />
+              <a href={pdfs.InclusionEducativa}  rel="noopener noreferrer">
+                <img className="botones-portada img-fluid" id="interculturalidad" src={img + "interculturalidad.png"} data-content= {pdfs.InclusionEducativa }  data-typecontent ="pdf" data-infosource={1}  alt="Interculturalidad" />
+                </a>
             </figure>
           </div>
   
