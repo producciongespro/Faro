@@ -189,6 +189,11 @@ class BuscadorPlaneamiento extends Component {
                     }
                 });
                 break;
+            case "Interculturalidad Primaria":
+                this.setState({ materia:valor  }, ()=>{
+                    console.log("Materia seleccionada en intercultural primaria", this.state.materia);                    
+                });
+                break;
             case "Secundaria":
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
@@ -227,8 +232,8 @@ class BuscadorPlaneamiento extends Component {
                             });
                         }
                     }
-                    if (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II" || this.state.modalidad === "IPEC CINDEA Nivel III")  {
-                        this.setState({ distribucionPlan : "Anual" });
+                    if (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II" || this.state.modalidad === "IPEC CINDEA Nivel III") {
+                        this.setState({ distribucionPlan: "Anual" });
                     }
                 });
                 break;
@@ -284,15 +289,15 @@ class BuscadorPlaneamiento extends Component {
     }
 
     filtrarBasico = (nivel, anno, materia, mes, tipoPlan, contenido) => {
-        /*
+        
                 console.log("parametros de filtrarBasico***********************");
                 console.log("nivel", nivel);
                 console.log("anno", anno);
-                console.log("mes", mes);
-                console.log("********tipoPlan", tipoPlan);
-                console.log("tipoPlan", tipoPlan);
+                console.log("materia", materia);                
+                //console.log("mes", mes);                
+                //console.log("tipoPlan", tipoPlan);
                 console.log("*****************************************************");
-        */
+        
 
         let array;
         let tmpArray = [];
@@ -321,9 +326,11 @@ class BuscadorPlaneamiento extends Component {
             }
 
         }
+        //*****INTERCULTURAL
         if (this.state.nivel === "Interculturalidad Primaria") {
             //console.log("Seleccion: Adultos");
-            array = dataInterculturalPrimaria;
+            array = dataInterculturalPrimaria;            
+            //console.log("Array intercultural primaria", array);                      
         }
         if (this.state.nivel === "Interculturalidad Secundaria") {
             array = dataInterculturalSecundaria;
@@ -408,12 +415,8 @@ class BuscadorPlaneamiento extends Component {
                 console.log("tipoComodin seleccionado fuera de rango");
                 break;
         }
-
-
-
         //console.log("Array para buscar", array);
         //console.log("mesActivo", mesActivo);        
-
         return tmpArray;
     }
 
@@ -511,7 +514,7 @@ class BuscadorPlaneamiento extends Component {
     }
 
     //en evento del botón buscar
-    handlerBuscarRegistrosPorNivel = () => {
+handlerBuscarRegistrosPorNivel = () => {
         /*
         console.log("********Contenido", this.state.contenido );
         console.log("***********Desempeño", this.state.desempeno );
@@ -1075,26 +1078,26 @@ class BuscadorPlaneamiento extends Component {
 
                 <div className="row">
                     <div className="col-12  text-right alert">
-                    {
-                            plataformaUsada === "movil" ?
-                              ( 
-                                <img className="bannerRecursos" src={img + "encabezado_documentos_apoyoMovil.png"} alt="Encabezado de Documentos de apoyo" />                              )
-                              :
-                              (
-                                <img className="bannerRecursos" src={img + "encabezado_documentos_apoyo.png"} alt="Encabezado de Documentos de apoyo" />
-                              )
-                    }
                         {
                             plataformaUsada === "movil" ?
-                              ( 
-                                <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
-                              )
-                              :
-                              (
-                                <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
-                              )
-                    }
-                       
+                                (
+                                    <img className="bannerRecursos" src={img + "encabezado_documentos_apoyoMovil.png"} alt="Encabezado de Documentos de apoyo" />)
+                                :
+                                (
+                                    <img className="bannerRecursos" src={img + "encabezado_documentos_apoyo.png"} alt="Encabezado de Documentos de apoyo" />
+                                )
+                        }
+                        {
+                            plataformaUsada === "movil" ?
+                                (
+                                    <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                )
+                                :
+                                (
+                                    <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                )
+                        }
+
                     </div>
                 </div>
 
