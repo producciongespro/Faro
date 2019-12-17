@@ -663,6 +663,9 @@ class BuscadorPlaneamiento extends Component {
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].mensual} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Mensual
                                         </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Orientaciones
+                                        </a>
                                 </div>
                             )
                             : (
@@ -1180,7 +1183,7 @@ class BuscadorPlaneamiento extends Component {
                                 <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                     {
                                         //Se deshabilita esta condición después de los requereimeitnos Reunión 17-12-19
-                                       // this.state.nivel !== "Preescolar" &&
+                                        // this.state.nivel !== "Preescolar" &&
                                         (
                                             <option defaultValue value="" > Seleccione:</option>
                                         )
@@ -1245,164 +1248,164 @@ class BuscadorPlaneamiento extends Component {
                         {/*******Columna 3  ASIGNATURA (MATERIA) *********/}
                         <div className="col-sm-3">
                             {
-                                this.state.nivel!=="Preescolar" &&
+                                this.state.nivel !== "Preescolar" &&
                                 (
                                     <div className={this.claseCSSMaterias}   >
-                                <div className="input-group-prepend">
-                                <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
-                                        {
-                                        /*
-                                            this.state.nivel === "Preescolar" &&
-                                            (
-                                                <span>Niveles de desempeño</span>
-                                            )
-                                        */
-                                        }
-                                        {
-                                            (
-                                                this.state.nivel === "Primaria"
-                                                || this.state.nivel === "Secundaria"
-                                                || this.state.nivel === "Pedagogía Hospitalaria"
-                                                || this.state.nivel === "Unidocentes"
-                                                || this.state.nivel === "Interculturalidad Primaria"
-                                                || this.state.nivel === "Interculturalidad Secundaria"
-                                            ) &&
-                                            (
-                                                <span>Asignatura</span>
-                                            )
-                                        }
-
-                                        {
-                                            this.state.nivel === "Jóvenes y Adultos" &&
-                                            (
-                                                (this.state.modalidad === "IPEC CINDEA Nivel I"
-                                                    || this.state.modalidad === "IPEC CINDEA Nivel II"
-                                                    || this.state.modalidad === "IPEC CINDEA Nivel III"
-                                                ) ?
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">
+                                                {
+                                                    /*
+                                                        this.state.nivel === "Preescolar" &&
+                                                        (
+                                                            <span>Niveles de desempeño</span>
+                                                        )
+                                                    */
+                                                }
+                                                {
                                                     (
-                                                        <span>Módulos</span>
-                                                    ) :
+                                                        this.state.nivel === "Primaria"
+                                                        || this.state.nivel === "Secundaria"
+                                                        || this.state.nivel === "Pedagogía Hospitalaria"
+                                                        || this.state.nivel === "Unidocentes"
+                                                        || this.state.nivel === "Interculturalidad Primaria"
+                                                        || this.state.nivel === "Interculturalidad Secundaria"
+                                                    ) &&
                                                     (
                                                         <span>Asignatura</span>
                                                     )
-                                            )
-                                        }
+                                                }
 
-                                    </label>
-                                </div>
-                                <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria}  >
-                                    {
-                                        this.state.nivel !== "Preescolar" &&
-                                        (       
-                                            <option defaultValue value="" >  Seleccione:  </option>                                         
-                                        )                                        
-                                    }
+                                                {
+                                                    this.state.nivel === "Jóvenes y Adultos" &&
+                                                    (
+                                                        (this.state.modalidad === "IPEC CINDEA Nivel I"
+                                                            || this.state.modalidad === "IPEC CINDEA Nivel II"
+                                                            || this.state.modalidad === "IPEC CINDEA Nivel III"
+                                                        ) ?
+                                                            (
+                                                                <span>Módulos</span>
+                                                            ) :
+                                                            (
+                                                                <span>Asignatura</span>
+                                                            )
+                                                    )
+                                                }
 
-                                    {
-                                        /*
-                                        this.state.nivel === "Preescolar" &&
-                                        categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i) => (
-                                            <option key={"materia" + i} value={item.id} >  {item.id}  </option>
-                                        ))
-                                        */
-                                    }
-                                    {
-                                        this.state.nivel === "Primaria" &&
-                                        listasPlan["Primaria"].map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        //Materias secundaria de III Ciclo
-                                        this.state.nivel === "Secundaria" &&
-                                        (
-                                            (this.state.anno === "Séptimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
-                                            listasPlan["Secundaria III Ciclo"].map((item, i) => (
-                                                <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))
-                                        )
-                                    }
-                                    {
-                                        //Materias de secudaria Décimo
-                                        this.state.nivel === "Secundaria" &&
-                                        (
-                                            (this.state.anno === "Décimo") &&
-                                            listasPlan["Secundaria Décimo"].map((item, i) => (
-                                                <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))
-                                        )
-                                    }
-                                    {
-                                        //Materias de secudaria Undécimo
-                                        this.state.nivel === "Secundaria" &&
-                                        (
-                                            (this.state.anno === "Undécimo") &&
-                                            listasPlan["Secundaria Undécimo"].map((item, i) => (
-                                                <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))
-                                        )
-                                    }
-                                    {
-                                        (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria") &&
-                                        listasPlan.Interculturalidad.map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        (this.state.modalidad === "Colegios Académicos Nocturnos (CAN)" && this.state.nivel === "Jóvenes y Adultos") &&
-                                        listasPlan["Colegios Académicos Nocturnos (CAN)"].map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        (this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)" && this.state.nivel === "Jóvenes y Adultos") &&
-                                        listasPlan["Colegio Nacional de Educación a Distancia (CONED)"].map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        (this.state.modalidad === "Escuelas Nocturnas Nivel I" || this.state.modalidad === "Escuelas Nocturnas Nivel II" || this.state.modalidad === "Escuelas Nocturnas Nivel III" || this.state.modalidad === "Escuelas Nocturnas Nivel IV") &&
-                                        listasPlan["Materias Básicas"].map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        (this.state.modalidad === "IPEC CINDEA Nivel I" && this.state.nivel === "Jóvenes y Adultos") &&
-                                        listasPlan["IPEC CINDEA Nivel I"].map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        (this.state.modalidad === "IPEC CINDEA Nivel II" && this.state.nivel === "Jóvenes y Adultos") &&
-                                        listasPlan["IPEC CINDEA Nivel II"].map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
+                                            </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria}  >
+                                            {
+                                                this.state.nivel !== "Preescolar" &&
+                                                (
+                                                    <option defaultValue value="" >  Seleccione:  </option>
+                                                )
+                                            }
 
-                                        (this.state.modalidad === "IPEC CINDEA Nivel III" && this.state.nivel === "Jóvenes y Adultos") &&
-                                        listasPlan["IPEC CINDEA Nivel III"].map((item, i) => (
-                                            <option key={"materia" + i} value={item} >  {item}  </option>
-                                        ))
+                                            {
+                                                /*
+                                                this.state.nivel === "Preescolar" &&
+                                                categoriasPreescolar[this.state.indiceContenido].niveles.map((item, i) => (
+                                                    <option key={"materia" + i} value={item.id} >  {item.id}  </option>
+                                                ))
+                                                */
+                                            }
+                                            {
+                                                this.state.nivel === "Primaria" &&
+                                                listasPlan["Primaria"].map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                //Materias secundaria de III Ciclo
+                                                this.state.nivel === "Secundaria" &&
+                                                (
+                                                    (this.state.anno === "Séptimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
+                                                    listasPlan["Secundaria III Ciclo"].map((item, i) => (
+                                                        <option key={"materia" + i} value={item} >  {item}  </option>
+                                                    ))
+                                                )
+                                            }
+                                            {
+                                                //Materias de secudaria Décimo
+                                                this.state.nivel === "Secundaria" &&
+                                                (
+                                                    (this.state.anno === "Décimo") &&
+                                                    listasPlan["Secundaria Décimo"].map((item, i) => (
+                                                        <option key={"materia" + i} value={item} >  {item}  </option>
+                                                    ))
+                                                )
+                                            }
+                                            {
+                                                //Materias de secudaria Undécimo
+                                                this.state.nivel === "Secundaria" &&
+                                                (
+                                                    (this.state.anno === "Undécimo") &&
+                                                    listasPlan["Secundaria Undécimo"].map((item, i) => (
+                                                        <option key={"materia" + i} value={item} >  {item}  </option>
+                                                    ))
+                                                )
+                                            }
+                                            {
+                                                (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria") &&
+                                                listasPlan.Interculturalidad.map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                (this.state.modalidad === "Colegios Académicos Nocturnos (CAN)" && this.state.nivel === "Jóvenes y Adultos") &&
+                                                listasPlan["Colegios Académicos Nocturnos (CAN)"].map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                (this.state.modalidad === "Colegio Nacional de Educación a Distancia (CONED)" && this.state.nivel === "Jóvenes y Adultos") &&
+                                                listasPlan["Colegio Nacional de Educación a Distancia (CONED)"].map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                (this.state.modalidad === "Escuelas Nocturnas Nivel I" || this.state.modalidad === "Escuelas Nocturnas Nivel II" || this.state.modalidad === "Escuelas Nocturnas Nivel III" || this.state.modalidad === "Escuelas Nocturnas Nivel IV") &&
+                                                listasPlan["Materias Básicas"].map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                (this.state.modalidad === "IPEC CINDEA Nivel I" && this.state.nivel === "Jóvenes y Adultos") &&
+                                                listasPlan["IPEC CINDEA Nivel I"].map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                (this.state.modalidad === "IPEC CINDEA Nivel II" && this.state.nivel === "Jóvenes y Adultos") &&
+                                                listasPlan["IPEC CINDEA Nivel II"].map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
 
-                                    }
-                                    {
-                                        this.state.nivel === "Unidocentes" && (
-                                            listasPlan["Materias Básicas Unidocentes"].map((item, i) => (
-                                                <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))
-                                        )
-                                    }
-                                    {
-                                        this.state.nivel === "Pedagogía Hospitalaria" && (
-                                            listasPlan["Pedagogía Hospitalaria"].map((item, i) => (
-                                                <option key={"materia" + i} value={item} >  {item}  </option>
-                                            ))
-                                        )
-                                    }
+                                                (this.state.modalidad === "IPEC CINDEA Nivel III" && this.state.nivel === "Jóvenes y Adultos") &&
+                                                listasPlan["IPEC CINDEA Nivel III"].map((item, i) => (
+                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                ))
 
-                                </select>
-                            </div>
+                                            }
+                                            {
+                                                this.state.nivel === "Unidocentes" && (
+                                                    listasPlan["Materias Básicas Unidocentes"].map((item, i) => (
+                                                        <option key={"materia" + i} value={item} >  {item}  </option>
+                                                    ))
+                                                )
+                                            }
+                                            {
+                                                this.state.nivel === "Pedagogía Hospitalaria" && (
+                                                    listasPlan["Pedagogía Hospitalaria"].map((item, i) => (
+                                                        <option key={"materia" + i} value={item} >  {item}  </option>
+                                                    ))
+                                                )
+                                            }
+
+                                        </select>
+                                    </div>
                                 )
                             }
                         </div>
@@ -1412,7 +1415,7 @@ class BuscadorPlaneamiento extends Component {
                         {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) - mes en Unidocentes */}
                         <div className="col-sm-3">
                             {//CASO 1:Para las materias con distribución mensual
-                                (this.state.distribucionPlan === "Mensual") &&
+                                (this.state.distribucionPlan === "Mensual"  && this.state.nivel!=="Preescolar" ) &&
                                 (
                                     <div className="input-group mb-3">
                                         <div className="input-group-prepend">
