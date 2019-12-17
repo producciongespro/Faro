@@ -17,6 +17,7 @@
     "video" : {
         "ministra" : "https://www.youtube.com/embed/bbZntIVMFr4"
     },
-    "audio" : "http://localhost/Faro/asset/audios/"
+    "audio" : "http://localhost/Faro/asset/audios/",
+    "noDisponible" : "http://recursos.mep.go.cr/faro_referencias/10_no_disponible/no_disponible.html"
 }
 
