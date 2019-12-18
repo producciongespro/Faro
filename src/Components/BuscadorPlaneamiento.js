@@ -1136,12 +1136,16 @@ class BuscadorPlaneamiento extends Component {
                                 <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                     Contenido: {array[index].contenido}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Desempeño: {array[index].desempeno}
-                                </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Acción: {array[index].accion}
-                                </span>
+                                {
+                                    /* Se deshabilita estos títulos de acuerdo al requerimiento 17-12-19
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Desempeño: {array[index].desempeno}
+                                    </span>
+                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        Acción: {array[index].accion}
+                                    </span>
+                                    */
+                                }
                             </div>
                             <div className="card-body mr-2">
                                 <div className="row">
