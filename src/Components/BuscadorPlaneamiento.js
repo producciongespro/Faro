@@ -642,89 +642,125 @@ class BuscadorPlaneamiento extends Component {
                     }
                     {
                         //Renderizado del cuerpo de las tarjetas:
-                        this.state.nivel === "Secundaria" && this.state.materia === "Español" ?
-                            (
-                                <div className="card-body mr-2">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Lineamientos
+                        this.state.nivel === "Secundaria" && this.state.materia === "Español" &&
+                        (
+                            <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lineamientos
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].lectura} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Lectura
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lectura
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].monografia} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Monografía
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Monografía
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].novela} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Novela
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Novela
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].transversal} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Trasnversal
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Trasnversal
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].mensual} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Mensual
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Mensual
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Orientaciones
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Orientaciones
                                         </a>
-                                    {
-                                        this.state.anno === "Décimo" &&
-                                        (
-                                            <React.Fragment>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Divisón
+                                {
+                                    this.state.anno === "Décimo" &&
+                                    (
+                                        <React.Fragment>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Divisón
                                                 </a>
-                                            </React.Fragment>
-                                        )
-                                    }
-                                    {
-                                        this.state.anno === "Undécimo" &&
-                                        (
+                                        </React.Fragment>
+                                    )
+                                }
+                                {
+                                    this.state.anno === "Undécimo" &&
+                                    (
 
-                                            <div className="row">
+                                        <div className="row">
 
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Criterios 11 y 12
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Criterios 11 y 12
                                         </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Divisón
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Divisón
                                         </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Orientaciones Plan Nuevo
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Orientaciones Plan Nuevo
                                         </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> División
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> División
                                         </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Orientaciones Plan Viejo
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Orientaciones Plan Viejo
                                         </a>
-                                            </div>
+                                        </div>
 
-                                        )
-                                    }
-                                </div>
+                                    )
+                                }
+                            </div>
 
-                            )
-                            : (
-                                // Renderizado para los que no son secudnaria español 
-                                <div className="card-body mr-2">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Lineamiento
-                                                </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Plantilla
-                                                </a>
-                                                {
-                                                    this.state.materia==="Inglés" &&
-                                                    (
-                                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
-                                                        <i className="fas fa-file-word"></i> Ejemplo
-                                                                </a>  
-                                                    )
-                                                }
+                        )
+                    }
+                    {
+                        this.state.materia !== "Educación para el Hogar" &&
+                        (
+                            // Renderizado para los que no son secudnaria español 
+                            <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lineamiento
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Plantilla
+                                            </a>
+                                {
+                                    this.state.materia === "Inglés" &&
+                                    (
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Ejemplo
+                                                            </a>
+                                    )
+                                }
 
-                                </div>
-                            )
-
+                            </div>
+                        )
+                    }
+                    {
+                        (this.state.materia === "Educación para el Hogar"  && this.state.nivel === "Primaria" ) &&
+                        (
+                            // Renderizado para los que no son secudnaria español 
+                            <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje1} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Eje temático 1
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje2} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Eje temático 2
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje3} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Eje temático 3
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje4} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Eje temático 4
+                                            </a>
+                            </div>
+                        )
+                    }
+                    {
+                        (this.state.materia === "Educación para el Hogar" && this.state.nivel === "Secundaria" ) &&
+                        (
+                            // Renderizado para los que no son secudnaria español 
+                            <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lineamiento
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Plantilla
+                                            </a>                           
+                            </div>
+                        )
                     }
                 </div>
             );
