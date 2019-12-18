@@ -405,7 +405,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_septimo.docx"
     },  
     {
         "nivel" : "Secundaria",
@@ -413,7 +413,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_octavo.docx"
     },  
     {
         "nivel" : "Secundaria",
@@ -421,7 +421,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_noveno.docx"
     },  
     {
         "nivel" : "Secundaria",
@@ -429,7 +429,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_decimo.docx"
     }, 
     {
         "nivel" : "Secundaria",
@@ -437,7 +437,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_undecimo.docx"
     }, 
 
 
@@ -513,7 +513,9 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "ejemplo": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/example_unit_1_level_7th.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_7th_grade.doc"
+       
     },  
     {
         "nivel" : "Secundaria",
@@ -521,7 +523,8 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "ejemplo": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/example_unit_1_level_8th.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_8th_grade.doc"
     },  
     {
         "nivel" : "Secundaria",
@@ -529,7 +532,8 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "ejemplo": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/example_unit_1_level_9th.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_9th_grade.docx"
     },  
     {
         "nivel" : "Secundaria",
@@ -537,7 +541,8 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "ejemplo": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/example_unit_1_level_10th.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_10th_grade.docx"
     }, 
     {
         "nivel" : "Secundaria",
@@ -545,7 +550,8 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "ejemplo": "",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_11th_grade.doc"
     }, 
 
 
