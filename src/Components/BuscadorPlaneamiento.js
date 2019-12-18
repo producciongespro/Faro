@@ -708,20 +708,28 @@ class BuscadorPlaneamiento extends Component {
                     {
                         this.state.materia !== "Educación para el Hogar" &&
                         (
-                            // Renderizado para los que no son secudnaria español 
+                            // Renderizado para los que no son educación para el hogar 
                             <div className="card-body mr-2">
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamiento
-                                            </a>
+                                </a>
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Plantilla
-                                            </a>
+                                </a>
                                 {
                                     this.state.materia === "Inglés" &&
                                     (
                                         <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-word"></i> Ejemplo
-                                                            </a>
+                                        </a>
+                                    )
+                                }
+                                {
+                                    this.state.materia === "Estudios Sociales" &&
+                                    (
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].abordaje} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Ejemplos de abordaje
+                                        </a>
                                     )
                                 }
 
@@ -729,7 +737,7 @@ class BuscadorPlaneamiento extends Component {
                         )
                     }
                     {
-                        (this.state.materia === "Educación para el Hogar"  && this.state.nivel === "Primaria" ) &&
+                        (this.state.materia === "Educación para el Hogar" && this.state.nivel === "Primaria") &&
                         (
                             // Renderizado para los que no son secudnaria español 
                             <div className="card-body mr-2">
@@ -749,7 +757,7 @@ class BuscadorPlaneamiento extends Component {
                         )
                     }
                     {
-                        (this.state.materia === "Educación para el Hogar" && this.state.nivel === "Secundaria" ) &&
+                        (this.state.materia === "Educación para el Hogar" && this.state.nivel === "Secundaria") &&
                         (
                             // Renderizado para los que no son secudnaria español 
                             <div className="card-body mr-2">
@@ -758,7 +766,7 @@ class BuscadorPlaneamiento extends Component {
                                             </a>
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Plantilla
-                                            </a>                           
+                                            </a>
                             </div>
                         )
                     }
