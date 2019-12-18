@@ -5,9 +5,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""       
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/pri/ppd_frances_ciec_primero.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/pri/ppd_frances_mat_primero.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/pri/ppd_frances_primero.docx"       
     },
      {
         "nivel" : "Primaria",
@@ -15,9 +15,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""         
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/seg/ppd_frances_cienc_segundo.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/seg/ppd_frances_matet_segundo.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/seg/ppd_frances_segundo.docx"         
     },
     {
         "nivel" : "Primaria",
@@ -25,9 +25,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""       
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/ter/ppd_frances_ciec_tercero.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/ter/ppd_frances_matem_tercero.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/ter/ppd_frances_tercero.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -35,9 +35,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""        
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/cua/ppd_frances_cien_cuarto.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/cua/ppd_frances_mate_cuarto.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/cua/ppd_frances_cuarto.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -45,9 +45,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""         
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/qui/ppd_frances_cienci_quinto.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/qui/ppd_frances_matem_quinto.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/qui/ppd_frances_quinto.docx"         
     },
     {
         "nivel" : "Primaria",
@@ -55,9 +55,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""        
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/sex/ppd_frances_cienc_sexto.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/sex/ppd_frances_matem_sexto.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/lengu/sex/ppd_frances_sexto.docx"        
     },
    
 
@@ -71,9 +71,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""        
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/pri/ppd_frances_ciencias_primero.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/pri/ppd_frances_matematicas_primero.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/pri/ppd_frances_primero.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -81,9 +81,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""        
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/seg/ppd_frances_ciencias_segundo.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/seg/ppd_frances_matem_segundo.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/seg/ppd_frances_segundo.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -91,9 +91,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""         
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/ter/ppd_frances_cienci_tercero.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/ter/ppd_frances_matemar_tercero.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/ter/ppd_frances_tercero.docx"         
     },
     {
         "nivel" : "Primaria",
@@ -101,9 +101,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""         
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/cua/ppd_frances_cienc_cuarto.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/cua/ppd_frances_matem_cuarto.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/cua/ppd_frances_cuarto.docx"         
     },
     {
         "nivel" : "Primaria",
@@ -121,9 +121,9 @@
         "materia" : "Francés",
         "tipoPlan" : "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/31_lin_frances_primaria.pdf",
-        "planCiecnias" : "",  
-        "planMate" : "", 
-        "planFrances" : ""        
+        "planCiecnias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/qui/ppd_frances_cienc_quinto.docx",  
+        "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/qui/ppd_frances_matem_quinto.docx", 
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/avanz/qui/ppd_frances_quinto.docx"        
     },
     
 
@@ -180,7 +180,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ingl/lengu/ppd_ingles_unit_1_primero.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -188,7 +188,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ingl/lengu/ppd_ingles_unit_1_segundo.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -196,7 +196,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ingl/lengu/ppd_ingles_unit_1_tercero.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -204,7 +204,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ingl/lengu/ppd_ingles_unit_1_cuarto.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -212,7 +212,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ingl/lengu/ppd_ingles_unit_1_quinto.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -220,7 +220,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ingl/lengu/ppd_ingles_unit_1_sexto.docx"        
     },
 
 
