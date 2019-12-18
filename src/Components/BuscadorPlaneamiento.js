@@ -93,7 +93,10 @@ class BuscadorPlaneamiento extends Component {
             contenido: "",
             desempeno: "",
             //Distribución de plan para las materias: mensual, trimestral, anual
-            distribucionPlan: ""
+            distribucionPlan: "",
+             //En el caso de francés y esudios sociales se renderiza otro tipo de tarjetas por lo que se utiliza 
+            //una varibale para validar si es es caso especial (fracnés o estudios) o normal
+            renderTarjetasNormal: true
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
@@ -113,6 +116,8 @@ class BuscadorPlaneamiento extends Component {
         this.arrayResultado = null;
         //Para las materias que presentan plan por trimestre:
         this.periodo = "";
+
+       
 
         //Clase CSS
         this.claseCSSMaterias = "input-group mb-3";
@@ -181,6 +186,14 @@ class BuscadorPlaneamiento extends Component {
                 });
                 break;
             case "Primaria":
+                
+                //Validar casos especiales de renderizados tarjetas
+                if (valor==="Francés" || valor==="Educación para el Hogar") {                    
+                    this.setState({ renderTarjetasNormal:false  });
+                } else {
+                    this.setState({ renderTarjetasNormal:true  });
+                }
+
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                     //Distribución Materias Primaria
@@ -192,11 +205,18 @@ class BuscadorPlaneamiento extends Component {
                 });
                 break;
             case "Interculturalidad Primaria":
+                  //Render de tarjetas normal
+                    this.setState({ renderTarjetasNormal:true  });
+
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada en intercultural primaria", this.state.materia);
                 });
                 break;
             case "Secundaria":
+
+            //Render de tarjetas normal
+            this.setState({ renderTarjetasNormal:true  });
+
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                     //Distribución Materias Secundaria
@@ -212,6 +232,11 @@ class BuscadorPlaneamiento extends Component {
                     console.log("Asignatura seleccionada", this.state.asignatura)
                 });
                 break
+                case "Pedagogía Hospitalaria":
+                    this.setState({ materia: valor }, () => {
+                        console.log("materia seleccionada", this.state.materia)
+                    });
+                    break
             case "Jóvenes y Adultos":
                 this.setState({ modulo: valor }, () => {
                     //console.log("Módulo seleccionado:", this.state.modulo)
@@ -292,13 +317,13 @@ class BuscadorPlaneamiento extends Component {
 
     filtrarBasico = (nivel, anno, materia, mes, tipoPlan, contenido) => {
 
-        console.log("parametros de filtrarBasico***********************");
-        console.log("nivel", nivel);
-        console.log("anno", anno);
-        console.log("materia", materia);
+        //console.log("parametros de filtrarBasico***********************");
+        //console.log("nivel", nivel);
+        //console.log("anno", anno);
+        //console.log("materia", materia);
         //console.log("mes", mes);                
         //console.log("tipoPlan", tipoPlan);
-        console.log("*****************************************************");
+        //console.log("*****************************************************");
 
 
         let array;
@@ -396,7 +421,7 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
             case "plan":
-                console.log("-----Busqueda con PLAN --- ARRAY:", array);
+                //console.log("-----Busqueda con PLAN --- ARRAY:", array);
                 for (let index = 0; index < array.length; index++) {
                     if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia && array[index].tipoPlan === tipoPlan) {
                         tmpArray.push(array[index]);
@@ -704,37 +729,38 @@ class BuscadorPlaneamiento extends Component {
                             </div>
 
                         )
-                    }
+                    }                    
                     {
-                        this.state.materia !== "Educación para el Hogar" &&
-                        (
-                            // Renderizado para los que no son educación para el hogar 
-                            <div className="card-body mr-2">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Lineamiento
-                                </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Plantilla
-                                </a>
-                                {
-                                    this.state.materia === "Inglés" &&
-                                    (
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Ejemplo
-                                        </a>
-                                    )
-                                }
-                                {
-                                    this.state.materia === "Estudios Sociales" &&
-                                    (
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].abordaje} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Ejemplos de abordaje
-                                        </a>
-                                    )
-                                }
-
-                            </div>
-                        )
+                        
+                            (this.state.renderTarjetasNormal )   &&
+                            (
+                                // Renderizado para los que no son educación para el hogar ni fracnes                          
+                                
+                                <div className="card-body mr-2">
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Lineamiento
+                                    </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Plantilla
+                                    </a>
+                                    {
+                                        this.state.materia === "Inglés" &&
+                                        (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Ejemplo
+                                            </a>
+                                        )
+                                    }
+                                    {
+                                        this.state.materia === "Estudios Sociales" &&
+                                        (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].abordaje} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Ejemplos de abordaje
+                                            </a>
+                                        )
+                                    }    
+                                </div>
+                            )                        
                     }
                     {
                         (this.state.materia === "Educación para el Hogar" && this.state.nivel === "Primaria") &&
@@ -768,6 +794,28 @@ class BuscadorPlaneamiento extends Component {
                                     <i className="fas fa-file-word"></i> Plantilla
                                             </a>
                             </div>
+                        )
+                    }              
+                    {
+                        (this.state.materia === "Francés" && this.state.nivel === "Primaria") &&
+                        (
+                            // Renderizado para francés en primaria                           
+                            (
+                                <div className="card-body mr-2">
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Lineamiento
+                                        </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planCiencias} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Plan de Ciencias
+                                        </a>
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planMate} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Plan de Matemáticas
+                                        </a>
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planFrances} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Plan de Francés
+                                        </a>
+                                </div>
+                            )                          
                         )
                     }
                 </div>
