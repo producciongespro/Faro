@@ -232,6 +232,11 @@ class BuscadorPlaneamiento extends Component {
                     console.log("Asignatura seleccionada", this.state.asignatura)
                 });
                 break
+                case "Pedagogía Hospitalaria":
+                    this.setState({ materia: valor }, () => {
+                        console.log("materia seleccionada", this.state.materia)
+                    });
+                    break
             case "Jóvenes y Adultos":
                 this.setState({ modulo: valor }, () => {
                     //console.log("Módulo seleccionado:", this.state.modulo)
