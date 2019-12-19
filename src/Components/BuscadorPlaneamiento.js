@@ -93,10 +93,8 @@ class BuscadorPlaneamiento extends Component {
             contenido: "",
             desempeno: "",
             //Distribución de plan para las materias: mensual, trimestral, anual
-            distribucionPlan: "",
-            //En el caso de francés y esudios sociales se renderiza otro tipo de tarjetas por lo que se utiliza 
-            //una varibale para validar si es es caso especial (fracnés o estudios) o normal
-            renderTarjetasNormal: true
+            distribucionPlan: ""
+
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
@@ -186,14 +184,6 @@ class BuscadorPlaneamiento extends Component {
                 });
                 break;
             case "Primaria":
-
-                //Validar casos especiales de renderizados tarjetas
-                if (valor === "Francés" || valor === "Educación para el Hogar") {
-                    this.setState({ renderTarjetasNormal: false });
-                } else {
-                    this.setState({ renderTarjetasNormal: true });
-                }
-
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                     //Distribución Materias Primaria
@@ -205,18 +195,11 @@ class BuscadorPlaneamiento extends Component {
                 });
                 break;
             case "Interculturalidad Primaria":
-                //Render de tarjetas normal
-                this.setState({ renderTarjetasNormal: true });
-
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada en intercultural primaria", this.state.materia);
                 });
                 break;
             case "Secundaria":
-
-                //Render de tarjetas normal
-                this.setState({ renderTarjetasNormal: true });
-
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
                     //Distribución Materias Secundaria
@@ -571,14 +554,26 @@ class BuscadorPlaneamiento extends Component {
         switch (this.state.nivel) {
             case "Secundaria":
                 this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
-                if (this.state.materia==="Español") {
+                if (this.state.materia === "Español") {
                     this.tarjetasEspanolSecundaria(this.arrayResultado);
                 }
-                if (this.state.materia!=="Español") {
-                    this.tarjetasBasico(this.arrayResultado);    
-                }                
+                if (this.state.materia !== "Español") {
+                    this.tarjetasBasico(this.arrayResultado);
+                }
                 break;
             case "Primaria":
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
+                if (this.state.materia === "Educación para el Hogar") {
+                    this.tarjetasHogarPrimaria(this.arrayResultado);
+                }
+                if (this.state.materia === "Francés") {
+                    this.tarjetasFrancesPrimaria(this.arrayResultado);
+                }
+                if (this.state.materia !== "Educación para el Hogar" && this.state.materia !== "Francés") {
+                    this.tarjetasBasico(this.arrayResultado);
+                }
+
+                break;
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
                 this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
@@ -680,76 +675,10 @@ class BuscadorPlaneamiento extends Component {
                             }
                         </div>
                     }
+
                     {
-                        //Renderizado del cuerpo de las tarjetas:
-                        this.state.nivel === "Secundaria" && this.state.materia === "Español" &&
                         (
-                            <div className="card-body mr-2">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Lineamientos
-                                        </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Lectura
-                                        </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Monografía
-                                        </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Novela
-                                        </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Trasnversal
-                                        </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Mensual
-                                        </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Orientaciones
-                                        </a>
-                                {
-                                    this.state.anno === "Décimo" &&
-                                    (
-                                        <React.Fragment>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Divisón
-                                                </a>
-                                        </React.Fragment>
-                                    )
-                                }
-                                {
-                                    this.state.anno === "Undécimo" &&
-                                    (
-
-                                        <div className="row">
-
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Criterios 11 y 12
-                                        </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Divisón
-                                        </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Orientaciones Plan Nuevo
-                                        </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> División
-                                        </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Orientaciones Plan Viejo
-                                        </a>
-                                        </div>
-
-                                    )
-                                }
-                            </div>
-
-                        )
-                    }
-                    {
-
-                        (this.state.renderTarjetasNormal) &&
-                        (
-                            // Renderizado para los que no son educación para el hogar ni fracnes                          
+                            // Renderizado etiquetas básico                         
 
                             <div className="card-body mr-2">
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
@@ -777,42 +706,44 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                         )
                     }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+    tarjetasFrancesPrimaria = (array) => {
+        console.log("array recibido en tarjetas Fracnés primaria:", array);
+        console.log("*********Renderizado Tarjetas Francés primaria*************");
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
                     {
-                        (this.state.materia === "Educación para el Hogar" && this.state.nivel === "Primaria") &&
-                        (
-                            // Renderizado para los que no son secudnaria español 
-                            <div className="card-body mr-2">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje1} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Eje temático 1
-                                            </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje2} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Eje temático 2
-                                            </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje3} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Eje temático 3
-                                            </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje4} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Eje temático 4
-                                            </a>
-                            </div>
-                        )
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <div className="card-header">
+                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                Nivel:  {array[index].nivel}
+                            </span>
+                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                Año: {array[index].anno}
+                            </span>
+                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                Asignatura: {array[index].materia}
+                            </span>
+                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                Plan: {this.etiquetaPlan}
+                            </span>
+                        </div>
                     }
                     {
-                        (this.state.materia === "Educación para el Hogar" && this.state.nivel === "Secundaria") &&
-                        (
-                            // Renderizado para los que no son secudnaria español 
-                            <div className="card-body mr-2">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Lineamiento
-                                            </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Plantilla
-                                            </a>
-                            </div>
-                        )
-                    }
-                    {
-                        (this.state.materia === "Francés" && this.state.nivel === "Primaria") &&
                         (
                             // Renderizado para francés en primaria                           
                             (
@@ -831,6 +762,61 @@ class BuscadorPlaneamiento extends Component {
                                         </a>
                                 </div>
                             )
+                        )
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+    tarjetasHogarPrimaria = (array) => {
+        console.log("array recibido en tarjetas Hogar primaria:", array);
+        console.log("*********Renderizado Tarjetas Hogar primaria*************");
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <div className="card-header">
+                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                Nivel:  {array[index].nivel}
+                            </span>
+                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                Año: {array[index].anno}
+                            </span>
+                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                Asignatura: {array[index].materia}
+                            </span>
+
+                        </div>
+                    }
+
+                    {
+                        (
+                            // Renderizado cuerpo de tarjetas educación para el hogar primaria
+                            <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje1} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Eje temático 1
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje2} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Eje temático 2
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje3} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Eje temático 3
+                                            </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje4} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Eje temático 4
+                                            </a>
+                            </div>
                         )
                     }
                 </div>
@@ -895,13 +881,16 @@ class BuscadorPlaneamiento extends Component {
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Orientaciones
                                         </a>
+
                                 {
                                     this.state.anno === "Décimo" &&
                                     (
                                         <React.Fragment>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
+                                           <div className="row">
+                                           <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Divisón
                                                 </a>
+                                           </div>
                                         </React.Fragment>
                                     )
                                 }
@@ -928,6 +917,15 @@ class BuscadorPlaneamiento extends Component {
                                         </a>
                                         </div>
 
+                                    )
+                                }
+                                {
+                                    (
+                                        <div className="row">
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Plantilla
+                                            </a>
+                                        </div>
                                     )
                                 }
                             </div>
