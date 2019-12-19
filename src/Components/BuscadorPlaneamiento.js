@@ -1732,7 +1732,7 @@ class BuscadorPlaneamiento extends Component {
                                         </label>
                                         </div>
                                         <select className="custom-select buscadores-materias" id="selPlan" onClick={this.handlerObtenerTipoPlan}  >
-                                            <option defaultValue disabled value="seleccione" >Seleccione:</option>
+                                            <option defaultValue value="seleccione" >Seleccione:</option>
                                             { //Frances primaria
                                                 (this.state.materia === "Francés" && this.state.nivel === "Primaria") &&
                                                 (
