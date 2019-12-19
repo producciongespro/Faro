@@ -395,12 +395,7 @@ class BuscadorPlaneamiento extends Component {
             console.log("Seleccion: mate primaria");
             tipoComodin = "mes";
             array = dataPrimariaMate;
-        }
-
-        //"Pedagogía Hospitalaria"
-        if (this.state.nivel === "Pedagogía Hospitalaria") {
-            array = dataPedagogiaHospitalaria;
-        }
+        }   
 
         //Opciones para la búsqueda
         switch (tipoComodin) {
@@ -493,6 +488,18 @@ class BuscadorPlaneamiento extends Component {
         return tmpArray;
     }
 
+    filtrarPedagogiaHospitalaria = (nivel, anno, materia) => {
+        //console.log("modalidad", modalidad);
+        let array = dataPedagogiaHospitalaria;
+        let tmpArray = [];          
+            for (let index = 0; index < array.length; index++) {
+                if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia ) {
+                    tmpArray.push(array[index]);
+                }
+            }        
+        return tmpArray;
+    }
+
     filtrarJovenesAdultos = (nivel, modalidad, modulo, mes) => {
         //console.log("modalidad", modalidad);
         let array;
@@ -582,7 +589,7 @@ class BuscadorPlaneamiento extends Component {
                 this.tarjetasPreescolar(this.arrayResultado);
                 break;
             case "Pedagogía Hospitalaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
+                this.arrayResultado = this.filtrarPedagogiaHospitalaria(this.state.nivel, this.state.anno, this.state.materia);
                 this.tarjetasPedagogiaHosp(this.arrayResultado);
                 break;
 
@@ -1050,8 +1057,8 @@ class BuscadorPlaneamiento extends Component {
     }
 
     tarjetasPedagogiaHosp = (array) => {
-        // Primaria, secudnaria e intercultural
-        //console.log("array recibido:", array);
+        //Pedagogía hospitalaría:
+        console.log("array recibido en tarjetas pedagogia hospitalaria:", array);
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {

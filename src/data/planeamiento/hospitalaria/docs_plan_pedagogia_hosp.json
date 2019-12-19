@@ -240,11 +240,10 @@
 
 
 
-
     {
         "nivel": "Pedagogía Hospitalaria",
-        "anno": "Segundo",
-        "materia": "Español",
+        "anno": "Primero",
+        "materia": "Matemática",
         "potenciancion": "",
         "contenido1.1": "",
         "contenido2.1": "",
@@ -272,7 +271,22 @@
         "plantilla8": "",
         "plantilla9": "",
         "plantilla10": ""
-    }, 
+    },
+
+    
+
+
+
+
+    
+{
+    "__comentario" : "A partir de aquí cambia el esquema:"
+},
+
+
+
+
+
    {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Segundo",
