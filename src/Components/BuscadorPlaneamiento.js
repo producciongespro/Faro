@@ -857,7 +857,7 @@ class BuscadorPlaneamiento extends Component {
                         </div>
                     }
                     {
-                        //Renderizado del cuerpo de las tarjetas:                       
+                        //Renderizado del cuerpo de las tarjetas Español secundaria:                       
                         (
                             <div className="card-body mr-2">
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
@@ -869,9 +869,14 @@ class BuscadorPlaneamiento extends Component {
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Monografía
                                         </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Novela
+                                {
+                                    (this.state.anno !== "Undécimo") &&
+                                    (
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Novela
                                         </a>
+                                    )
+                                }
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Trasnversal
                                         </a>
@@ -886,11 +891,11 @@ class BuscadorPlaneamiento extends Component {
                                     this.state.anno === "Décimo" &&
                                     (
                                         <React.Fragment>
-                                           <div className="row">
-                                           <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Divisón
+                                            <div className="row">
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Divisón
                                                 </a>
-                                           </div>
+                                            </div>
                                         </React.Fragment>
                                     )
                                 }
