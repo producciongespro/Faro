@@ -94,7 +94,7 @@ class BuscadorPlaneamiento extends Component {
             desempeno: "",
             //Distribución de plan para las materias: mensual, trimestral, anual
             distribucionPlan: "",
-             //En el caso de francés y esudios sociales se renderiza otro tipo de tarjetas por lo que se utiliza 
+            //En el caso de francés y esudios sociales se renderiza otro tipo de tarjetas por lo que se utiliza 
             //una varibale para validar si es es caso especial (fracnés o estudios) o normal
             renderTarjetasNormal: true
         };
@@ -117,7 +117,7 @@ class BuscadorPlaneamiento extends Component {
         //Para las materias que presentan plan por trimestre:
         this.periodo = "";
 
-       
+
 
         //Clase CSS
         this.claseCSSMaterias = "input-group mb-3";
@@ -186,12 +186,12 @@ class BuscadorPlaneamiento extends Component {
                 });
                 break;
             case "Primaria":
-                
+
                 //Validar casos especiales de renderizados tarjetas
-                if (valor==="Francés" || valor==="Educación para el Hogar") {                    
-                    this.setState({ renderTarjetasNormal:false  });
+                if (valor === "Francés" || valor === "Educación para el Hogar") {
+                    this.setState({ renderTarjetasNormal: false });
                 } else {
-                    this.setState({ renderTarjetasNormal:true  });
+                    this.setState({ renderTarjetasNormal: true });
                 }
 
                 this.setState({ materia: valor }, () => {
@@ -205,8 +205,8 @@ class BuscadorPlaneamiento extends Component {
                 });
                 break;
             case "Interculturalidad Primaria":
-                  //Render de tarjetas normal
-                    this.setState({ renderTarjetasNormal:true  });
+                //Render de tarjetas normal
+                this.setState({ renderTarjetasNormal: true });
 
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada en intercultural primaria", this.state.materia);
@@ -214,8 +214,8 @@ class BuscadorPlaneamiento extends Component {
                 break;
             case "Secundaria":
 
-            //Render de tarjetas normal
-            this.setState({ renderTarjetasNormal:true  });
+                //Render de tarjetas normal
+                this.setState({ renderTarjetasNormal: true });
 
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada", this.state.materia)
@@ -232,11 +232,11 @@ class BuscadorPlaneamiento extends Component {
                     console.log("Asignatura seleccionada", this.state.asignatura)
                 });
                 break
-                case "Pedagogía Hospitalaria":
-                    this.setState({ materia: valor }, () => {
-                        console.log("materia seleccionada", this.state.materia)
-                    });
-                    break
+            case "Pedagogía Hospitalaria":
+                this.setState({ materia: valor }, () => {
+                    console.log("materia seleccionada", this.state.materia)
+                });
+                break
             case "Jóvenes y Adultos":
                 this.setState({ modulo: valor }, () => {
                     //console.log("Módulo seleccionado:", this.state.modulo)
@@ -395,7 +395,7 @@ class BuscadorPlaneamiento extends Component {
             console.log("Seleccion: mate primaria");
             tipoComodin = "mes";
             array = dataPrimariaMate;
-        }   
+        }
 
         //Opciones para la búsqueda
         switch (tipoComodin) {
@@ -491,12 +491,12 @@ class BuscadorPlaneamiento extends Component {
     filtrarPedagogiaHospitalaria = (nivel, anno, materia) => {
         //console.log("modalidad", modalidad);
         let array = dataPedagogiaHospitalaria;
-        let tmpArray = [];          
-            for (let index = 0; index < array.length; index++) {
-                if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia ) {
-                    tmpArray.push(array[index]);
-                }
-            }        
+        let tmpArray = [];
+        for (let index = 0; index < array.length; index++) {
+            if (array[index].nivel === nivel && array[index].anno === anno && array[index].materia === materia) {
+                tmpArray.push(array[index]);
+            }
+        }
         return tmpArray;
     }
 
@@ -569,8 +569,16 @@ class BuscadorPlaneamiento extends Component {
         console.log("*********Accion", this.accion);
         */
         switch (this.state.nivel) {
-            case "Primaria":
             case "Secundaria":
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
+                if (this.state.materia==="Español") {
+                    this.tarjetasEspanolSecundaria(this.arrayResultado);
+                }
+                if (this.state.materia!=="Español") {
+                    this.tarjetasBasico(this.arrayResultado);    
+                }                
+                break;
+            case "Primaria":
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
                 this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
@@ -680,7 +688,7 @@ class BuscadorPlaneamiento extends Component {
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
                                         </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv +  array[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lectura
                                         </a>
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
@@ -736,38 +744,38 @@ class BuscadorPlaneamiento extends Component {
                             </div>
 
                         )
-                    }                    
+                    }
                     {
-                        
-                            (this.state.renderTarjetasNormal )   &&
-                            (
-                                // Renderizado para los que no son educación para el hogar ni fracnes                          
-                                
-                                <div className="card-body mr-2">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Lineamiento
+
+                        (this.state.renderTarjetasNormal) &&
+                        (
+                            // Renderizado para los que no son educación para el hogar ni fracnes                          
+
+                            <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lineamiento
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Plantilla
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Plantilla
                                     </a>
-                                    {
-                                        this.state.materia === "Inglés" &&
-                                        (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Ejemplo
+                                {
+                                    this.state.materia === "Inglés" &&
+                                    (
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Ejemplo
                                             </a>
-                                        )
-                                    }
-                                    {
-                                        this.state.materia === "Estudios Sociales" &&
-                                        (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].abordaje} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Ejemplos de abordaje
+                                    )
+                                }
+                                {
+                                    this.state.materia === "Estudios Sociales" &&
+                                    (
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].abordaje} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Ejemplos de abordaje
                                             </a>
-                                        )
-                                    }    
-                                </div>
-                            )                        
+                                    )
+                                }
+                            </div>
+                        )
                     }
                     {
                         (this.state.materia === "Educación para el Hogar" && this.state.nivel === "Primaria") &&
@@ -802,7 +810,7 @@ class BuscadorPlaneamiento extends Component {
                                             </a>
                             </div>
                         )
-                    }              
+                    }
                     {
                         (this.state.materia === "Francés" && this.state.nivel === "Primaria") &&
                         (
@@ -815,14 +823,115 @@ class BuscadorPlaneamiento extends Component {
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planCiencias} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plan de Ciencias
                                         </a>
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planMate} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planMate} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plan de Matemáticas
                                         </a>
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planFrances} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planFrances} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plan de Francés
                                         </a>
                                 </div>
-                            )                          
+                            )
+                        )
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+    tarjetasEspanolSecundaria = (array) => {
+        console.log("Array recibido en tarjetas español secundaria:", array);
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <div className="card-header">
+                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                Nivel:  {array[index].nivel}
+                            </span>
+                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                Año: {array[index].anno}
+                            </span>
+                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                Asignatura: {array[index].materia}
+                            </span>
+                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                Mes: {array[index].mes}
+                            </span>
+
+                        </div>
+                    }
+                    {
+                        //Renderizado del cuerpo de las tarjetas:                       
+                        (
+                            <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lineamientos
+                                        </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lectura
+                                        </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Monografía
+                                        </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Novela
+                                        </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Trasnversal
+                                        </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Mensual
+                                        </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Orientaciones
+                                        </a>
+                                {
+                                    this.state.anno === "Décimo" &&
+                                    (
+                                        <React.Fragment>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Divisón
+                                                </a>
+                                        </React.Fragment>
+                                    )
+                                }
+                                {
+                                    this.state.anno === "Undécimo" &&
+                                    (
+
+                                        <div className="row">
+
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Criterios 11 y 12
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Divisón
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Orientaciones Plan Nuevo
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> División
+                                        </a>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Orientaciones Plan Viejo
+                                        </a>
+                                        </div>
+
+                                    )
+                                }
+                            </div>
+
                         )
                     }
                 </div>
@@ -1086,7 +1195,7 @@ class BuscadorPlaneamiento extends Component {
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Potenciación
                                         </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={ serv + array[index]["contenido1.1"]} target="_blank" rel="noopener noreferrer" >
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido1.1"]} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Contenido 1.1
                                     </a>
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido2.1"]} target="_blank" rel="noopener noreferrer" >
@@ -1148,7 +1257,7 @@ class BuscadorPlaneamiento extends Component {
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla6"]} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Plantilla 6
                                     </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={ serv + array[index]["plantilla7"]} target="_blank" rel="noopener noreferrer" >
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla7"]} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Plantilla 7
                                     </a>
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla8"]} target="_blank" rel="noopener noreferrer" >
