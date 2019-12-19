@@ -274,7 +274,9 @@ class BuscadorPlaneamiento extends Component {
         this.tipoPlan = e.target.value;
         //console.log("tipoPlan",  this.tipoPlan);        
         // * * * * * Obtiene el texto de la opcion seleccionada del select Nota: Esto es SOLO BUENO!!!!!
-        this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;
+        //this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;
+        // La instruccion que obtiene la etiqueta del option en lugar del value no fucniona en firefox
+        this.etiquetaPlan =  this.tipoPlan;
         console.log("Tipo de plan seleccionado:", this.etiquetaPlan);
     }
 
