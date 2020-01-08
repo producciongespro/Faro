@@ -22,6 +22,7 @@ import distribucionSecundaria from '../data/planeamiento/secundaria/ditribucion_
 import dataSecundaria from '../data/planeamiento/secundaria/docs_plan_secundaria.json';
 import dataSecundariaEspanol from '../data/planeamiento/secundaria/docs_plan_secundaria_espanol.json';
 import dataSecundariaMate from '../data/planeamiento/secundaria/docs_plan_secundaria_matematica.json';
+import dataSecundariaReligion from '../data/planeamiento/secundaria/docs_plan_secundaria_religion.json';
 
 
 // Referencias Jóvenes y adultos
@@ -53,7 +54,7 @@ const imgGenerales = assets.img.general;
 const serv = assets.servidor;
 var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 
-console.log("dataPrimariareligion", dataPrimariareligion);
+console.log("dataSecundariaReligion", dataSecundariaReligion);
 
 
 //console.log("distribucionPrimaria", distribucionPrimaria );
@@ -367,6 +368,12 @@ class BuscadorPlaneamiento extends Component {
             array = dataSecundariaMate;
         }
 
+        //RELIGION SECUNDARIA
+        if (this.state.nivel === "Secundaria" && this.state.materia === "Educación Religiosa") {
+            console.log("Seleccion: Educación Religiosa en secundaria");
+            array = dataSecundariaReligion;
+        }
+
         //ESPAÑOL PRIMARIA
         if (this.state.nivel === "Primaria" && this.state.materia === "Español") {
             console.log("Seleccion: español primaria");
@@ -570,7 +577,10 @@ class BuscadorPlaneamiento extends Component {
                 if (this.state.materia === "Español") {
                     this.tarjetasEspanolSecundaria(this.arrayResultado);
                 }
-                if (this.state.materia !== "Español") {
+                if (this.state.materia === "Educación Religiosa") {
+                    this.tarjetasReligion(this.arrayResultado);
+                }
+                if (this.state.materia !== "Español"  && this.state.materia !== "Educación Religiosa") {
                     this.tarjetasBasico(this.arrayResultado);
                 }
                 break;
@@ -1353,14 +1363,14 @@ class BuscadorPlaneamiento extends Component {
                                     </a>
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont6} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 6
-                                    </a>                                                                    
+                                    </a>
                                 </div>
                                 <div className="row">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont7} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 7
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont7} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 7
                                     </a>
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont8} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Contenido 8
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont8} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 8
                                     </a>
                                 </div>
                             </div>
