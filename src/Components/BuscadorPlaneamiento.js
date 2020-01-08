@@ -1453,7 +1453,7 @@ class BuscadorPlaneamiento extends Component {
                                     {
                                         this.state.nivel === "Preescolar" &&
                                         categoriasPreescolar.map((item, i) => (
-                                            <option key={"anno" + i} value={item.etiqueta} >  {item.etiqueta}  </option>
+                                            <option key={"contenido" + i} value={item} >  {item}  </option>
                                         ))
                                     }
 
