@@ -54,9 +54,6 @@ const imgGenerales = assets.img.general;
 const serv = assets.servidor;
 var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 
-console.log("dataSecundariaReligion", dataSecundariaReligion);
-
-
 //console.log("distribucionPrimaria", distribucionPrimaria );
 //console.log("distribucionSecundaria", distribucionSecundaria);
 
@@ -129,7 +126,7 @@ class BuscadorPlaneamiento extends Component {
     handlerObtenerNivel = (e) => {
         //SELECT 1
         this.setState({ nivel: e.target.value }, () => {
-            console.log("nivel seleccionado", this.state.nivel);
+            //console.log("nivel seleccionado", this.state.nivel);
         });
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
@@ -296,7 +293,7 @@ class BuscadorPlaneamiento extends Component {
         //Obtener contenido en caso de primaria Español
         let valor = e.target.value;
         this.setState({ contenido: valor }, () => {
-            console.log("Cotenido en español primaria", this.state.contenido);
+            console.log("Contenido en español primaria", this.state.contenido);
         });
     }
 
@@ -1149,6 +1146,9 @@ class BuscadorPlaneamiento extends Component {
                                 <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                     Modalidad: {array[index].modalidad}
                                 </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Mes: {array[index].mes}
+                                </span>
                                 {
                                     (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II" || this.state.modalidad === "IPEC CINDEA Nivel III") ?
                                         (
@@ -1177,6 +1177,26 @@ class BuscadorPlaneamiento extends Component {
                                 </a>
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plantilla
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Monografía
+                                </a>
+                             {
+                                 this.state.anno !== "Undécimo" &&
+                                 (
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-word"></i> Novela
+                            </a>
+                                 )
+                             }
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Lectura
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Mensual
+                                </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Transversal
                                 </a>
                                 </div>
                             </div>
