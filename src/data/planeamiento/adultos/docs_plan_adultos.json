@@ -5,7 +5,7 @@
         "anno" : "Décimo",    
         "modulo" : "Biología",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/biol/ppd_biologia_can_decimo.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -13,7 +13,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Biología",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/biol/ppd_biologia_can_undecimo.docx"        
     },
 
 
@@ -27,7 +27,8 @@
         "anno" : "Séptimo",    
         "modulo" : "Ciencias",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_septimo_ciencias_can.docx",       
+        "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_septimo_sexualidad_can.docx"     
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -35,7 +36,8 @@
         "anno" : "Octavo",    
         "modulo" : "Ciencias",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_octavo_ciencias_can.docx",       
+        "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_octavo_sexualidadyafectividad_can.docx"       
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -43,7 +45,8 @@
         "anno" : "Noveno",    
         "modulo" : "Ciencias",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_noveno_ciencias_can.docx",       
+        "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_noveno_sexualidadyafectividad_can.docx"        
     },
 
 
@@ -216,7 +219,7 @@
         "anno" : "Décimo",    
         "modulo" : "Física",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/fisi/ppd_fisica_can_decimo.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -224,7 +227,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Física",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/fisi/ppd_fisica_can_undecimo.docx"        
     },
 
 
@@ -396,24 +399,23 @@
 
 
 
-
-
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
-        "anno" : "Undécimo",    
-        "modulo" : "Química",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Décimo",    
         "modulo" : "Química",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/quim/ppd_quimica_can_decimo.docx"        
     },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Química",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/quim/ppd_quimica_can_undecimo.docx"        
+    },
+ 
 
 
 
