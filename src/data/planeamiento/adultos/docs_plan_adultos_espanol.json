@@ -7,7 +7,12 @@
         "modulo" : "Español",  
         "mes": "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/1_septimo_febrero_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/10_septimo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/11_septimo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/12_septimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/14_septimo_criterios_transversales_septimo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/15_septimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -16,8 +21,14 @@
         "modulo" : "Español",  
         "mes": "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/2_septimo_marzo_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/10_septimo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/11_septimo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/12_septimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/14_septimo_criterios_transversales_septimo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/15_septimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
+
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -25,7 +36,12 @@
         "modulo" : "Español", 
         "mes": "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+       "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/3_septimo_abril_espanol.docx",
+       "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/10_septimo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/11_septimo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/12_septimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/14_septimo_criterios_transversales_septimo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/15_septimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -34,7 +50,12 @@
         "modulo" : "Español",
         "mes": "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/4_septimo_mayo_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/10_septimo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/11_septimo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/12_septimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/14_septimo_criterios_transversales_septimo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/15_septimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -43,7 +64,12 @@
         "modulo" : "Español",
         "mes": "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/5_septimo_junio_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/10_septimo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/11_septimo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/12_septimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/14_septimo_criterios_transversales_septimo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/15_septimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -52,7 +78,12 @@
         "modulo" : "Español",
         "mes": "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/6_septimo_julio_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/10_septimo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/11_septimo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/12_septimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/14_septimo_criterios_transversales_septimo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/15_septimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -61,7 +92,12 @@
         "modulo" : "Español",
         "mes": "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/7_septimo_agosto_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/10_septimo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/11_septimo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/12_septimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/14_septimo_criterios_transversales_septimo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/15_septimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -70,7 +106,12 @@
         "modulo" : "Español",
         "mes": "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/8_septimo_septiembre_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/10_septimo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/11_septimo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/12_septimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/14_septimo_criterios_transversales_septimo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/15_septimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -79,17 +120,21 @@
         "modulo" : "Español",
         "mes": "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/9_septimo_octubre_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/10_septimo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/11_septimo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/12_septimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/14_septimo_criterios_transversales_septimo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/set/15_septimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español",
-        "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+
+
+
+
+
+
+
+
 
 
 
@@ -102,8 +147,14 @@
         "modulo" : "Español",  
         "mes": "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/1_octavo_febrero_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/11_octavo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/10_octavo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/12._octavo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/13_octavo_criterios_transversales_octavo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/14_octavo_criterios_trasversales_todos_niveles_espanol.docx"
+    },        
+    
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -111,7 +162,13 @@
         "modulo" : "Español",  
         "mes": "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/2_octavo_marzo_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/11_octavo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/10_octavo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/12._octavo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/13_octavo_criterios_transversales_octavo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/14_octavo_criterios_trasversales_todos_niveles_espanol.docx"
+
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -120,7 +177,13 @@
         "modulo" : "Español", 
         "mes": "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/3_octavo_abril_espanol.docx",       
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/11_octavo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/10_octavo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/12._octavo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/13_octavo_criterios_transversales_octavo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/14_octavo_criterios_trasversales_todos_niveles_espanol.docx"
+
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -129,7 +192,13 @@
         "modulo" : "Español",
         "mes": "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/4_octavo_mayo_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/11_octavo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/10_octavo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/12._octavo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/13_octavo_criterios_transversales_octavo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/14_octavo_criterios_trasversales_todos_niveles_espanol.docx"
+
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -138,7 +207,13 @@
         "modulo" : "Español",
         "mes": "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/5_octavo_junio_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/11_octavo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/10_octavo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/12._octavo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/13_octavo_criterios_transversales_octavo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/14_octavo_criterios_trasversales_todos_niveles_espanol.docx"
+
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -147,7 +222,13 @@
         "modulo" : "Español",
         "mes": "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/6_octavo_julio_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/11_octavo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/10_octavo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/12._octavo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/13_octavo_criterios_transversales_octavo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/14_octavo_criterios_trasversales_todos_niveles_espanol.docx"
+
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -156,7 +237,13 @@
         "modulo" : "Español",
         "mes": "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/7_octavo_agosto_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/11_octavo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/10_octavo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/12._octavo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/13_octavo_criterios_transversales_octavo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/14_octavo_criterios_trasversales_todos_niveles_espanol.docx"
+
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -165,7 +252,13 @@
         "modulo" : "Español",
         "mes": "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/8_octavo_septiembre_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/11_octavo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/10_octavo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/12._octavo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/13_octavo_criterios_transversales_octavo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/14_octavo_criterios_trasversales_todos_niveles_espanol.docx"
+
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -174,17 +267,17 @@
         "modulo" : "Español",
         "mes": "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/9_octavo_octubre_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/11_octavo_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/10_octavo_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/12._octavo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/13_octavo_criterios_transversales_octavo_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/oct/14_octavo_criterios_trasversales_todos_niveles_espanol.docx"
     },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
-        "anno" : "Octavo",    
-        "modulo" : "Español",
-        "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+    
+
+
+
 
 
 
@@ -198,7 +291,12 @@
         "modulo" : "Español",  
         "mes": "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/1_noveno_febrero_espanol.docx",
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/11_noveno_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/10_noveno_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/12_noveno_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/13_noveno_criterios_transversales_noveno_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/14_noveno_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -207,7 +305,12 @@
         "modulo" : "Español",  
         "mes": "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/2_noveno_marzo_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/11_noveno_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/10_noveno_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/12_noveno_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/13_noveno_criterios_transversales_noveno_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/14_noveno_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -216,7 +319,12 @@
         "modulo" : "Español", 
         "mes": "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/3_noveno_abril_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/11_noveno_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/10_noveno_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/12_noveno_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/13_noveno_criterios_transversales_noveno_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/14_noveno_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -225,7 +333,12 @@
         "modulo" : "Español",
         "mes": "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/4_noveno_mayo_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/11_noveno_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/10_noveno_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/12_noveno_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/13_noveno_criterios_transversales_noveno_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/14_noveno_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -234,7 +347,12 @@
         "modulo" : "Español",
         "mes": "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/5_noveno_junio_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/11_noveno_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/10_noveno_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/12_noveno_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/13_noveno_criterios_transversales_noveno_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/14_noveno_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -243,7 +361,12 @@
         "modulo" : "Español",
         "mes": "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/6_noveno_julio_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/11_noveno_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/10_noveno_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/12_noveno_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/13_noveno_criterios_transversales_noveno_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/14_noveno_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -252,7 +375,12 @@
         "modulo" : "Español",
         "mes": "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/7_noveno_agosto_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/11_noveno_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/10_noveno_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/12_noveno_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/13_noveno_criterios_transversales_noveno_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/14_noveno_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -261,7 +389,12 @@
         "modulo" : "Español",
         "mes": "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/8_noveno_septiembre_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/11_noveno_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/10_noveno_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/12_noveno_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/13_noveno_criterios_transversales_noveno_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/14_noveno_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -270,17 +403,14 @@
         "modulo" : "Español",
         "mes": "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
-        "anno" : "Noveno",    
-        "modulo" : "Español",
-        "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/9_noveno_octubre_espanol.docx",       
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/11_noveno_monografia_espanol.docx",
+        "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/10_noveno_novela_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/12_noveno_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/13_noveno_criterios_transversales_noveno_y_niveles_super_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/nov/14_noveno_criterios_trasversales_todos_niveles_espanol.docx"
+},
+  
 
 
 
@@ -294,7 +424,12 @@
         "modulo" : "Español",  
         "mes": "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/1_decimo_febrero_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/10_decimo_monografia_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/11_decimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/12_decimo_criterio_transversales_decimo_y_demas_niveles_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx"
+
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -303,7 +438,11 @@
         "modulo" : "Español",  
         "mes": "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/2_decimo_marzo_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/10_decimo_monografia_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/11_decimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/12_decimo_criterio_transversales_decimo_y_demas_niveles_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -312,8 +451,12 @@
         "modulo" : "Español", 
         "mes": "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/3_decimo_abril_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/10_decimo_monografia_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/11_decimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/12_decimo_criterio_transversales_decimo_y_demas_niveles_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx"
+},
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -321,7 +464,11 @@
         "modulo" : "Español",
         "mes": "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/4_decimo_mayo_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/10_decimo_monografia_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/11_decimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/12_decimo_criterio_transversales_decimo_y_demas_niveles_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -330,7 +477,11 @@
         "modulo" : "Español",
         "mes": "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/5_decimo_junio_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/10_decimo_monografia_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/11_decimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/12_decimo_criterio_transversales_decimo_y_demas_niveles_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -339,7 +490,11 @@
         "modulo" : "Español",
         "mes": "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/6_decimo_julio_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/10_decimo_monografia_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/11_decimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/12_decimo_criterio_transversales_decimo_y_demas_niveles_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -348,7 +503,11 @@
         "modulo" : "Español",
         "mes": "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/7_decimo_agosto_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/10_decimo_monografia_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/11_decimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/12_decimo_criterio_transversales_decimo_y_demas_niveles_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -357,7 +516,11 @@
         "modulo" : "Español",
         "mes": "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/8_decimo_septiembre_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/10_decimo_monografia_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/11_decimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/12_decimo_criterio_transversales_decimo_y_demas_niveles_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -366,17 +529,14 @@
         "modulo" : "Español",
         "mes": "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/9_decimo_octubre_espanol.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/10_decimo_monografia_espanol.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/11_decimo_lectura_diaria_espanol.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/dec/13_decimo_criterios_trasversales_todos_niveles_espanol.docx"
     },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
-        "anno" : "Décimo",    
-        "modulo" : "Español",
-        "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+
+
 
 
 
@@ -386,11 +546,16 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
         "anno" : "Undécimo",    
-        "modulo" : "Español",  
+        "modulo" : "Español", 
         "mes": "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/1_undecimo_febrero_espanol_programa_2009.docx",        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/1_undecimo_febrero_espanol_programa_2017.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/10_undecimo_monografia_espanol_programa_2017.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/11_undecimo_lectura_diaria_espanol_programa_2017.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/12_undecimo_criterios_transversales_undecimo_espanol_programa%202017.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/13_undecimo_criterios_trasversales_todos_niveles_espanol_programa_2017.docx"
+},
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -398,8 +563,13 @@
         "modulo" : "Español",  
         "mes": "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/2_undecimo_marzo_espanol_programa_2009.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/2_undecimo_marzo_espanol_programa_2017.docx",        
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/10_undecimo_monografia_espanol_programa_2017.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/11_undecimo_lectura_diaria_espanol_programa_2017.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/12_undecimo_criterios_transversales_undecimo_espanol_programa%202017.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/13_undecimo_criterios_trasversales_todos_niveles_espanol_programa_2017.docx"
+},
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -407,8 +577,13 @@
         "modulo" : "Español", 
         "mes": "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/3_undecimo_abril_espanol_programa_2009.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/3_undecimo_abril_espanol_programa_2017.docx",            
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/10_undecimo_monografia_espanol_programa_2017.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/11_undecimo_lectura_diaria_espanol_programa_2017.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/12_undecimo_criterios_transversales_undecimo_espanol_programa%202017.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/13_undecimo_criterios_trasversales_todos_niveles_espanol_programa_2017.docx"
+},
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -416,8 +591,13 @@
         "modulo" : "Español",
         "mes": "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/4_undecimo_mayo_espanol_programa_2009.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/4_undecimo_mayo_espanol_programa_2017.docx",            
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/10_undecimo_monografia_espanol_programa_2017.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/11_undecimo_lectura_diaria_espanol_programa_2017.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/12_undecimo_criterios_transversales_undecimo_espanol_programa%202017.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/13_undecimo_criterios_trasversales_todos_niveles_espanol_programa_2017.docx"
+},
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -425,8 +605,13 @@
         "modulo" : "Español",
         "mes": "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/5_undecimo_junio_espanol_programa_2009.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/5_undecimo_junio_espanol_programa_2017.docx",            
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/10_undecimo_monografia_espanol_programa_2017.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/11_undecimo_lectura_diaria_espanol_programa_2017.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/12_undecimo_criterios_transversales_undecimo_espanol_programa%202017.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/13_undecimo_criterios_trasversales_todos_niveles_espanol_programa_2017.docx"
+},
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -434,8 +619,13 @@
         "modulo" : "Español",
         "mes": "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/6_undecimo_julio_espanol_programa_2009.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/6_undecimo_julio_espanol_programa_2017.docx",            
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/10_undecimo_monografia_espanol_programa_2017.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/11_undecimo_lectura_diaria_espanol_programa_2017.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/12_undecimo_criterios_transversales_undecimo_espanol_programa%202017.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/13_undecimo_criterios_trasversales_todos_niveles_espanol_programa_2017.docx"
+},
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -443,8 +633,13 @@
         "modulo" : "Español",
         "mes": "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/7_undecimo_agosto_espanol_programa_2009.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/7_undecimo_agosto_espanol_programa_2017.docx",            
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/10_undecimo_monografia_espanol_programa_2017.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/11_undecimo_lectura_diaria_espanol_programa_2017.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/12_undecimo_criterios_transversales_undecimo_espanol_programa%202017.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/13_undecimo_criterios_trasversales_todos_niveles_espanol_programa_2017.docx"
+},
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -452,8 +647,13 @@
         "modulo" : "Español",
         "mes": "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/8_undecimo_septiembre_espanol_programa_2009.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/8_undecimo_septiembre_espanol_programa_2017.docx",            
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/10_undecimo_monografia_espanol_programa_2017.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/11_undecimo_lectura_diaria_espanol_programa_2017.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/12_undecimo_criterios_transversales_undecimo_espanol_programa%202017.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/13_undecimo_criterios_trasversales_todos_niveles_espanol_programa_2017.docx"
+},
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -461,8 +661,14 @@
         "modulo" : "Español",
         "mes": "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
-    },
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/9_undecimo_octubre_espanol_programa_2009.docx",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/9_undecimo_octubre_espa%c3%b1ol_programa_2017.docx",           
+        "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/10_undecimo_monografia_espanol_programa_2017.docx",
+        "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/11_undecimo_lectura_diaria_espanol_programa_2017.docx",
+        "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/12_undecimo_criterios_transversales_undecimo_espanol_programa%202017.docx",
+        "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_nuev/13_undecimo_criterios_trasversales_todos_niveles_espanol_programa_2017.docx"
+},
+
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
@@ -470,8 +676,9 @@
         "modulo" : "Español",
         "mes": "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
-        "plantilla" : ""        
+        "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/10_undecimo_noviembre_espanol_programa_2009.docx"
     },
+  
 
 
 
