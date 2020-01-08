@@ -329,53 +329,7 @@
 
 
 
-    {
-        "nivel" : "Primaria",
-        "anno" : "Primero",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/26_lin_educacion_religiosa_primaria.pdf",
-        "plantilla" : ""
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Segundo",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/26_lin_educacion_religiosa_primaria.pdf",
-        "plantilla" : "  "
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Tercero",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/26_lin_educacion_religiosa_primaria.pdf",
-        "plantilla" : ""
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/26_lin_educacion_religiosa_primaria.pdf",
-        "plantilla" : ""
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Quinto",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/26_lin_educacion_religiosa_primaria.pdf",
-        "plantilla" : "  "
-    },
-
-    {
-        "nivel" : "Primaria",
-        "anno" : "Sexto",
-        "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/26_lin_educacion_religiosa_primaria.pdf",
-        "plantilla" : ""
-    },
+    
 
 
 
