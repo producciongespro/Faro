@@ -14,6 +14,7 @@ import dataPrimaria from '../data/planeamiento/primaria/docs_plan_primaria.json'
 import dataPrimariaEspanol from '../data/planeamiento/primaria/docs_plan_primaria_espanol.json';
 import dataPrimariaCiencias from '../data/planeamiento/primaria/docs_plan_primaria_ciencias.json';
 import dataPrimariaMate from '../data/planeamiento/primaria/docs_plan_primaria_matematica.json';
+import dataPrimariareligion from '../data/planeamiento/primaria/docs_plan_primaria_religion.json';
 
 
 //Referencias secundaria
@@ -51,6 +52,10 @@ const img = assets.img.apoyosPlan;
 const imgGenerales = assets.img.general;
 const serv = assets.servidor;
 var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
+
+console.log("dataPrimariareligion", dataPrimariareligion);
+
+
 //console.log("distribucionPrimaria", distribucionPrimaria );
 //console.log("distribucionSecundaria", distribucionSecundaria);
 
@@ -276,7 +281,7 @@ class BuscadorPlaneamiento extends Component {
         // * * * * * Obtiene el texto de la opcion seleccionada del select Nota: Esto es SOLO BUENO!!!!!
         //this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;
         // La instruccion que obtiene la etiqueta del option en lugar del value no fucniona en firefox
-        this.etiquetaPlan =  this.tipoPlan;
+        this.etiquetaPlan = this.tipoPlan;
         console.log("Tipo de plan seleccionado:", this.etiquetaPlan);
     }
 
@@ -380,6 +385,12 @@ class BuscadorPlaneamiento extends Component {
             console.log("Seleccion: mate primaria");
             tipoComodin = "mes";
             array = dataPrimariaMate;
+        }
+
+        //RELIGION PRIMARIA
+        if (this.state.nivel === "Primaria" && this.state.materia === "Educación Religiosa") {
+            console.log("Seleccion: Educación Religiosa en primaria");
+            array = dataPrimariareligion;
         }
 
         //Opciones para la búsqueda
@@ -532,7 +543,7 @@ class BuscadorPlaneamiento extends Component {
         return tmpArray;
     }
 
-    /*TODO: Queda en comentario este método con el objetivo de preveer un nuevo requerimiento
+    /*NOTA: Queda en comentario este método con el objetivo de preveer un nuevo requerimiento
     filtrarPreescolar1 = (nivel, contenido, desempeno, accion) => {        
         let array;
         let tmpArray = [];        
@@ -571,7 +582,10 @@ class BuscadorPlaneamiento extends Component {
                 if (this.state.materia === "Francés") {
                     this.tarjetasFrancesPrimaria(this.arrayResultado);
                 }
-                if (this.state.materia !== "Educación para el Hogar" && this.state.materia !== "Francés") {
+                if (this.state.materia === "Educación Religiosa") {
+                    this.tarjetasReligion(this.arrayResultado);
+                }
+                if (this.state.materia !== "Educación para el Hogar" && this.state.materia !== "Francés" && this.state.materia !== "Educación Religiosa") {
                     this.tarjetasBasico(this.arrayResultado);
                 }
 
@@ -1281,6 +1295,75 @@ class BuscadorPlaneamiento extends Component {
                             }
 
 
+                        </React.Fragment>
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+    tarjetasReligion = (array) => {
+        // Primaria, secudnaria e intercultural
+        //console.log("array recibido:", array);
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <React.Fragment>
+                            <div className="card-header">
+                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                    Nivel:  {array[index].nivel}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Año: {array[index].anno}
+                                </span>
+                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    Asignatura: {array[index].materia}
+                                </span>
+                            </div>
+                            <div className="card-body mr-2">
+                                <div className="row">
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Lineamiento
+                                </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont1} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 1
+                                    </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont2} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 2
+                                    </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont3} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 3
+                                    </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont4} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 4
+                                    </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont5} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 5
+                                    </a>
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont6} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Contenido 6
+                                    </a>                                                                    
+                                </div>
+                                <div className="row">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont7} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Contenido 7
+                                    </a>
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont8} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Contenido 8
+                                    </a>
+                                </div>
+                            </div>
                         </React.Fragment>
                     }
                 </div>
