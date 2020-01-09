@@ -569,18 +569,18 @@ class BuscadorPlaneamiento extends Component {
         console.log("*********Accion", this.accion);
         */
 
-        console.log("Modulo",this.state.modulo);
+        console.log("Modulo", this.state.modulo);
         console.log("Nivel", this.state.nivel);
-        console.log("Materia", this.state.materia );
+        console.log("Materia", this.state.materia);
         console.log("Contenido", this.state.contenido);
         console.log("Año", this.state.anno);
         console.log("Modalidad", this.state.modalidad);
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         switch (this.state.nivel) {
             case "Secundaria":
                 this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
@@ -840,6 +840,9 @@ class BuscadorPlaneamiento extends Component {
                         (
                             // Renderizado cuerpo de tarjetas educación para el hogar primaria
                             <div className="card-body mr-2">
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lineamientos
+                                            </a>
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje1} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Eje temático 1
                                             </a>
@@ -1197,49 +1200,49 @@ class BuscadorPlaneamiento extends Component {
                                         (this.state.modulo === "Español") &&
                                         <React.Fragment>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Monografía
+                                                <i className="fas fa-file-word"></i> Monografía
                                         </a>
-                                        {
-                                           array[index].anno === "Undécimo" && 
-                                           (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Plantilla plan viejo
+                                            {
+                                                array[index].anno === "Undécimo" &&
+                                                (
+                                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
+                                                        <i className="fas fa-file-word"></i> Plantilla plan viejo
                                             </a>
-                                           ) 
-                                        }
-										
-                                           {
-                                               array[index].anno !== "Undécimo" &&
-                                               (
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Novela
+                                                )
+                                            }
+
+                                            {
+                                                array[index].anno !== "Undécimo" &&
+                                                (
+                                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                                        <i className="fas fa-file-word"></i> Novela
                                                 </a>
-                                               )
-                                           }
+                                                )
+                                            }
 
 
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Lectura
                                             </a>
-											
+
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Mensual
                                             </a>
-											
+
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Transversal
                                             </a>
                                         </React.Fragment>
-                                           
+
                                     }
 
                                     {
                                         //Renderizado de plan viejo en módulo 60
-                                        (this.state.modulo  === "Módulo 60")  &&
+                                        (this.state.modulo === "Módulo 60") &&
                                         (
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla plan viejo
-                                            </a>  
+                                            </a>
                                         )
 
                                     }
@@ -1247,12 +1250,12 @@ class BuscadorPlaneamiento extends Component {
                                     {
                                         //Afectividad en ciencias para los CAN
                                         (this.state.modalidad === "Colegios Académicos Nocturnos (CAN)") &&
-                                                this.state.modulo === "Ciencias" && 
-                                                (
-                                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla sexualidad
+                                        this.state.modulo === "Ciencias" &&
+                                        (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla sexualidad
                                                     </a>
-                                                )
+                                        )
 
                                     }
                                 </div>
