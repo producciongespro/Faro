@@ -732,12 +732,16 @@ class BuscadorPlaneamiento extends Component {
                                     )
                                 }
                                 {
-                                    this.state.materia === "Estudios Sociales" &&
-                                    (
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].abordaje} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-word"></i> Ejemplos de abordaje
-                                            </a>
-                                    )
+                                    (this.state.materia === "Estudios Sociales") &&
+                                        (
+                                            (this.state.anno === "Primero" || this.state.anno === "Tercero" || this.state.anno === "Quinto") &&
+                                            (
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].abordaje} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Ejemplos de abordaje
+                                                </a>
+                                            )
+                                        )                                  
+                                                                            
                                 }
                             </div>
                         )
