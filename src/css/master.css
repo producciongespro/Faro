@@ -131,6 +131,18 @@ a {
     display: block;
 }
 
+.card {
+  margin-bottom: 1em;
+}
+
+.card-header {
+  background-color:rgb(206, 212, 218);
+}
+
+.card-body {
+  background-color: rgba(206, 212, 218, 0.2);
+}
+
 .card-custom {
   width: 75% !important;
   float: right !important;
