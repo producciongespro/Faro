@@ -545,7 +545,7 @@
         "anno" : "Primero",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_primero_orientacion.docx"
     },
 
     {
@@ -553,7 +553,7 @@
         "anno" : "Segundo",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_segundo_orientacion.docx"
     },
 
     {
@@ -561,7 +561,7 @@
         "anno" : "Tercero",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_tercero_orientacion.docx"
     },
 
     {
@@ -569,7 +569,7 @@
         "anno" : "Cuarto",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_cuarto_orientacion.docx"
     },
 
     {
@@ -577,7 +577,7 @@
         "anno" : "Quinto",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_quinto_orientacion.docx"
     },
 
     {
@@ -585,7 +585,7 @@
         "anno" : "Sexto",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_sexto_orientacion.docx"
     }
 
 
