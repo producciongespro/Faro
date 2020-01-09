@@ -1189,6 +1189,7 @@ class BuscadorPlaneamiento extends Component {
                                 </a>
 
                                     {
+                                        //Renderizado de etiquetas para español (CONED y CAN)
                                         (this.state.modulo === "Español") &&
                                         <React.Fragment>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
@@ -1198,7 +1199,7 @@ class BuscadorPlaneamiento extends Component {
                                            array[index].anno === "Undécimo" && 
                                            (
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Plan viejo
+                                                <i className="fas fa-file-word"></i> Plantilla Plan viejo
                                             </a>
                                            ) 
                                         }
@@ -1226,6 +1227,17 @@ class BuscadorPlaneamiento extends Component {
                                             </a>
                                         </React.Fragment>
                                            
+                                    }
+
+                                    {
+                                        //Renderizado de plan viejo en módulo 60
+                                        (this.state.modulo  === "Módulo 60")  &&
+                                        (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla Plan viejo
+                                            </a>  
+                                        )
+
                                     }
                                 </div>
                             </div>
