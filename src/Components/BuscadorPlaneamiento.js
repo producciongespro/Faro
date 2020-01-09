@@ -724,12 +724,14 @@ class BuscadorPlaneamiento extends Component {
                                     <i className="fas fa-file-word"></i> Plantilla
                                     </a>
                                 {
+                                    /*Nota: se deshabilita esta etiqueta según requerimientos 7 - 1 -2020
                                     this.state.materia === "Inglés" &&
                                     (
                                         <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-word"></i> Ejemplo
                                             </a>
                                     )
+                                    */
                                 }
                                 {
                                     (this.state.materia === "Estudios Sociales") &&
