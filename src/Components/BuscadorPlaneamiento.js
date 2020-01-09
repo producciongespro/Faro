@@ -573,6 +573,10 @@ class BuscadorPlaneamiento extends Component {
         console.log("Nivel", this.state.nivel);
         console.log("Materia", this.state.materia );
         console.log("Contenido", this.state.contenido);
+        console.log("Año", this.state.anno);
+        console.log("Modalidad", this.state.modalidad);
+        
+        
         
         
         
@@ -1199,7 +1203,7 @@ class BuscadorPlaneamiento extends Component {
                                            array[index].anno === "Undécimo" && 
                                            (
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Plantilla Plan viejo
+                                                <i className="fas fa-file-word"></i> Plantilla plan viejo
                                             </a>
                                            ) 
                                         }
@@ -1234,9 +1238,21 @@ class BuscadorPlaneamiento extends Component {
                                         (this.state.modulo  === "Módulo 60")  &&
                                         (
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Plantilla Plan viejo
+                                                <i className="fas fa-file-word"></i> Plantilla plan viejo
                                             </a>  
                                         )
+
+                                    }
+
+                                    {
+                                        //Afectividad en ciencias para los CAN
+                                        (this.state.modalidad === "Colegios Académicos Nocturnos (CAN)") &&
+                                                this.state.modulo === "Ciencias" && 
+                                                (
+                                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla sexualidad
+                                                    </a>
+                                                )
 
                                     }
                                 </div>
