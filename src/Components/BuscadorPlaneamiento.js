@@ -568,6 +568,15 @@ class BuscadorPlaneamiento extends Component {
         console.log("***********Desempeño", this.state.desempeno );
         console.log("*********Accion", this.accion);
         */
+
+        console.log("Modulo",this.state.modulo);
+        console.log("Nivel", this.state.nivel);
+        console.log("Materia", this.state.materia );
+        console.log("Contenido", this.state.contenido);
+        
+        
+        
+        
         switch (this.state.nivel) {
             case "Secundaria":
                 this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.mes, this.tipoPlan, this.state.contenido);
@@ -577,7 +586,7 @@ class BuscadorPlaneamiento extends Component {
                 if (this.state.materia === "Educación Religiosa") {
                     this.tarjetasReligion(this.arrayResultado);
                 }
-                if (this.state.materia !== "Español"  && this.state.materia !== "Educación Religiosa") {
+                if (this.state.materia !== "Español" && this.state.materia !== "Educación Religiosa") {
                     this.tarjetasBasico(this.arrayResultado);
                 }
                 break;
@@ -1178,26 +1187,38 @@ class BuscadorPlaneamiento extends Component {
                                     <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plantilla
                                 </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Monografía
-                                </a>
-                             {
-                                 this.state.anno !== "Undécimo" &&
-                                 (
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Novela
-                            </a>
-                                 )
-                             }
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Lectura
-                                </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Mensual
-                                </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Transversal
-                                </a>
+
+                                    {
+                                        (this.state.modulo === "Español") &&
+                                        <React.Fragment>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Monografía
+                                        </a>
+										
+                                           {
+                                               array[index].anno !== "Undécimo" &&
+                                               (
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Novela
+                                                </a>
+                                               )
+                                           }
+
+
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Lectura
+                                            </a>
+											
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Mensual
+                                            </a>
+											
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Transversal
+                                            </a>
+                                        </React.Fragment>
+                                           
+                                    }
                                 </div>
                             </div>
                         </React.Fragment>
