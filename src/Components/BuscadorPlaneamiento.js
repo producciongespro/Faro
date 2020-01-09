@@ -1194,6 +1194,14 @@ class BuscadorPlaneamiento extends Component {
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-word"></i> Monografía
                                         </a>
+                                        {
+                                           array[index].anno === "Undécimo" && 
+                                           (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plan viejo
+                                            </a>
+                                           ) 
+                                        }
 										
                                            {
                                                array[index].anno !== "Undécimo" &&
