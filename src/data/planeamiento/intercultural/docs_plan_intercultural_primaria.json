@@ -47,48 +47,7 @@
 
 
 
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Primero",
-        "materia" : "Lengua Bribri de Buenos Aires",
-        "lineamiento" : "" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_primero_lengua_bribri_b_aires.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Segundo",
-        "materia" : "Lengua Bribri de Buenos Aires",
-        "lineamiento" : "" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_segundo_lengua_bribri_b_aires.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Tercero",
-        "materia" : "Lengua Bribri de Buenos Aires",
-        "lineamiento" : "" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_tercero_lengua_bribri_b_aires.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Lengua Bribri de Buenos Aires",
-        "lineamiento" : "" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_cuarto_lengua_bribri_b_aires.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Quinto",
-        "materia" : "Lengua Bribri de Buenos Aires",
-        "lineamiento" : "" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_quinto_lengua_bribri_b_aires.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Sexto",
-        "materia" : "Lengua Bribri de Buenos Aires",
-        "lineamiento" : "" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_sexto_lengua_bribri_b_aires.docx"        
-    },
+    
 
 
 
@@ -105,14 +64,14 @@
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Primero",
         "materia" : "Cultura Bribrí de Buenos Aires",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf" ,
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf",
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Segundo",
         "materia" : "Cultura Bribrí de Buenos Aires",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf" ,
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf",
         "plantilla" : ""        
     },
     {
@@ -126,21 +85,21 @@
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Cuarto",
         "materia" : "Cultura Bribrí de Buenos Aires",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf" ,
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf",
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Quinto",
         "materia" : "Cultura Bribrí de Buenos Aires",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf" ,
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf",
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Sexto",
         "materia" : "Cultura Bribrí de Buenos Aires",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf" ,
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-bribri_b_aires_primaria.pdf",
         "plantilla" : ""        
     },
 
@@ -493,92 +452,6 @@
 
     
 
-
-
-
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Primero",
-        "materia" : "Cultura Térraba",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Segundo",
-        "materia" : "Cultura Térraba",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Tercero",
-        "materia" : "Cultura Térraba",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Cultura Térraba",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Quinto",
-        "materia" : "Cultura Térraba",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Sexto",
-        "materia" : "Cultura Térraba",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
-        "plantilla" : ""        
-    },
-
-
-
-
-
-
-   
-
-
-
-
-
-   
-
-
-
-
-    
-
-
-
-
-    
-
-
-
-
-
-
-   
-
-
-
-
-    
-
-
-
-
-
-
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Primero",
@@ -622,6 +495,272 @@
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/cult_ngb/ppd_sexto_cultura_ngabe.docx"        
     },
 
+
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Cultura Térraba",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_cultura-terraba_primaria.pdf" ,
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Idioma Ngäbere",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_primero_lengua_boruca.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_segundo_lengua_boruca.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_tercero_lengua_boruca.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_cuarto_lengua_boruca.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_quinto_lengua_boruca.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Boruca",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_sexto_lengua_boruca.docx"        
+    },
+
+
+    
+
+
+   
+
+
+
+
+
+   
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : "" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_primero_lengua_bribri_b_aires.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : "" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_segundo_lengua_bribri_b_aires.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : "" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_tercero_lengua_bribri_b_aires.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : "" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_cuarto_lengua_bribri_b_aires.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : "" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_quinto_lengua_bribri_b_aires.docx"        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Bribri de Buenos Aires",
+        "lineamiento" : "" ,
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_brib_bu/ppd_sexto_lengua_bribri_b_aires.docx"        
+    },
+
+
+
+    
+
+
+
+
+    
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Bribri de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+
+
+
+
+
+    
 
 
 
@@ -679,45 +818,101 @@
 
 
 
+    
+
+
+
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Primero",
-        "materia" : "Lengua Térraba",
+        "materia" : "Lengua Cabécar de Chirripó",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Segundo",
-        "materia" : "Lengua Térraba",
+        "materia" : "Lengua Cabécar de Chirripó",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Tercero",
-        "materia" : "Lengua Térraba",
+        "materia" : "Lengua Cabécar de Chirripó",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Cuarto",
-        "materia" : "Lengua Térraba",
+        "materia" : "Lengua Cabécar de Chirripó",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Quinto",
-        "materia" : "Lengua Térraba",
+        "materia" : "Lengua Cabécar de Chirripó",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Sexto",
-        "materia" : "Lengua Térraba",
+        "materia" : "Lengua Cabécar de Chirripó",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Primero",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Segundo",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Tercero",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Cuarto",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Quinto",
+        "materia" : "Lengua Cabécar de Sulá",
+        "lineamiento" : "" ,
+        "plantilla" : ""        
+    },
+    {
+        "nivel" : "Interculturalidad Primaria",
+        "anno" : "Sexto",
+        "materia" : "Lengua Cabécar de Sulá",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
@@ -774,48 +969,6 @@
 
 
 
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Primero",
-        "materia" : "Lengua Cabécar de Sulá",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Segundo",
-        "materia" : "Lengua Cabécar de Sulá",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Tercero",
-        "materia" : "Lengua Cabécar de Sulá",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Lengua Cabécar de Sulá",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Quinto",
-        "materia" : "Lengua Cabécar de Sulá",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Sexto",
-        "materia" : "Lengua Cabécar de Sulá",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
 
 
 
@@ -824,188 +977,53 @@
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Primero",
-        "materia" : "Lengua Bribri de Sulá",
+        "materia" : "Lengua Térraba",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Segundo",
-        "materia" : "Lengua Bribri de Sulá",
+        "materia" : "Lengua Térraba",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Tercero",
-        "materia" : "Lengua Bribri de Sulá",
+        "materia" : "Lengua Térraba",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Cuarto",
-        "materia" : "Lengua Bribri de Sulá",
+        "materia" : "Lengua Térraba",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Quinto",
-        "materia" : "Lengua Bribri de Sulá",
+        "materia" : "Lengua Térraba",
         "lineamiento" : "" ,
         "plantilla" : ""        
     },
     {
         "nivel" : "Interculturalidad Primaria",
         "anno" : "Sexto",
-        "materia" : "Lengua Bribri de Sulá",
+        "materia" : "Lengua Térraba",
         "lineamiento" : "" ,
         "plantilla" : ""        
-    },
-
-
-
-
-
-
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Primero",
-        "materia" : "Lengua Cabécar de Chirripó",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Segundo",
-        "materia" : "Lengua Cabécar de Chirripó",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Tercero",
-        "materia" : "Lengua Cabécar de Chirripó",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Lengua Cabécar de Chirripó",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Quinto",
-        "materia" : "Lengua Cabécar de Chirripó",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Sexto",
-        "materia" : "Lengua Cabécar de Chirripó",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-
-
-
-
-
-
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Primero",
-        "materia" : "Idioma Ngäbere",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Segundo",
-        "materia" : "Idioma Ngäbere",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Tercero",
-        "materia" : "Idioma Ngäbere",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Idioma Ngäbere",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Quinto",
-        "materia" : "Idioma Ngäbere",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Sexto",
-        "materia" : "Idioma Ngäbere",
-        "lineamiento" : "" ,
-        "plantilla" : ""        
-    },
-
-
-
-
-
-
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Primero",
-        "materia" : "Lengua Boruca",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_primero_lengua_boruca.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Segundo",
-        "materia" : "Lengua Boruca",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_segundo_lengua_boruca.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Tercero",
-        "materia" : "Lengua Boruca",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_tercero_lengua_boruca.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Cuarto",
-        "materia" : "Lengua Boruca",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_cuarto_lengua_boruca.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Quinto",
-        "materia" : "Lengua Boruca",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_quinto_lengua_boruca.docx"        
-    },
-    {
-        "nivel" : "Interculturalidad Primaria",
-        "anno" : "Sexto",
-        "materia" : "Lengua Boruca",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/lineam/lin_lengua-boruca_primaria.pdf" ,
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/inter_prim/planea/leng_boru/ppd_sexto_lengua_boruca.docx"        
     }
+
+    
+
+
+
+
+
+
+    
 
 ]
