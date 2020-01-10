@@ -232,7 +232,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
@@ -240,7 +240,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
@@ -248,7 +248,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
@@ -256,7 +256,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
@@ -264,7 +264,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
@@ -272,7 +272,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/29 _lin_ingles_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
 
 
@@ -322,14 +322,14 @@
         "anno" : "Primero",
         "materia" : "Italiano",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Italiano",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
@@ -337,7 +337,7 @@
         "materia" : "Italiano",
         "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
@@ -345,21 +345,21 @@
         "materia" : "Italiano",
         "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Italiano",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
     {
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Italiano",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : ""        
+        "plantilla" : "nulo"        
     },
 
 
@@ -448,7 +448,7 @@
         "materia" : "Francés",
         "tipoPlan" :  "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     }, 
     {
         "nivel" : "Secundaria",
@@ -456,7 +456,7 @@
         "materia" : "Francés",
         "tipoPlan" :  "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     {
         "nivel" : "Secundaria",
@@ -464,7 +464,7 @@
         "materia" : "Francés",
         "tipoPlan" :  "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     {
         "nivel" : "Secundaria",
@@ -472,7 +472,7 @@
         "materia" : "Francés",
         "tipoPlan" :  "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     {
         "nivel" : "Secundaria",
@@ -480,7 +480,7 @@
         "materia" : "Francés",
         "tipoPlan" :  "Secciones de Francés avanzado",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/32_lin_frances_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     
 
@@ -562,7 +562,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     }, 
     {
         "nivel" : "Secundaria",
@@ -570,7 +570,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     {
         "nivel" : "Secundaria",
@@ -578,7 +578,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     {
         "nivel" : "Secundaria",
@@ -586,7 +586,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     {
         "nivel" : "Secundaria",
@@ -594,7 +594,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/30 _lin_ingles_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },   
 
 
@@ -622,7 +622,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -630,7 +630,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -638,7 +638,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     {
         "nivel" : "Secundaria",
@@ -646,7 +646,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     }, 
     {
         "nivel" : "Secundaria",
@@ -654,7 +654,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     }, 
 
 
@@ -667,7 +667,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     }, 
     {
         "nivel" : "Secundaria",
@@ -675,7 +675,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -683,7 +683,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     {
         "nivel" : "Secundaria",
@@ -691,7 +691,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },  
     {
         "nivel" : "Secundaria",
@@ -699,7 +699,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/34_lin_italiano_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     }
 
 
