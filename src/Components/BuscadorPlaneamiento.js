@@ -717,24 +717,35 @@ class BuscadorPlaneamiento extends Component {
                             // Renderizado etiquetas básico                         
 
                             <div className="card-body mr-2">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Lineamiento
-                                    </a>
                                 {
-                                    //comprobación de plantilla nulo:
+                                    //Comprobación de Lineamiento nulo
+                                    array[index].lineamiento === "nulo" ?
+                                        (
+                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <i className="fas fa-ban"></i> Lineamiento no disponible
+                                          </span>
+                                        ) :
+                                        (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                    </a>
+                                        )
+                                }
+                                {
+                                    //************comprobación de plantilla nulo:
                                     array[index].plantilla === "nulo" ?
                                         (
-                                          <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                              <i className="fas fa-ban"></i> Plantilla no disponible
-                                          </span>  
+                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <i className="fas fa-ban"></i> Plantilla no disponible
+                                          </span>
                                         ) :
                                         (
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla
                                             </a>
                                         )
-                                
-                              }
+                                    //******************************/                                
+                                }
                                 {
                                     /*Nota: se deshabilita esta etiqueta según requerimientos 7 - 1 -2020
                                     this.state.materia === "Inglés" &&
