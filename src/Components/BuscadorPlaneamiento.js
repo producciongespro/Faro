@@ -639,7 +639,7 @@ class BuscadorPlaneamiento extends Component {
         //console.log("Resultado", this.arrayResultado);
     }
 
-    /* TARJETAS PARA RENDERIZA*/
+    /* TARJETAS PARA RENDERIZAR*/
     tarjetasBasico = (array) => {
         // Primaria, secudnaria e intercultural
         //console.log("array recibido en tarjetas:", array);
@@ -720,9 +720,21 @@ class BuscadorPlaneamiento extends Component {
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamiento
                                     </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-word"></i> Plantilla
-                                    </a>
+                                {
+                                    //comprobación de plantilla nulo:
+                                    array[index].plantilla === "nulo" ?
+                                        (
+                                          <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                              <i className="fas fa-ban"></i> Plantilla no disponible
+                                          </span>  
+                                        ) :
+                                        (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla
+                                            </a>
+                                        )
+                                
+                              }
                                 {
                                     /*Nota: se deshabilita esta etiqueta según requerimientos 7 - 1 -2020
                                     this.state.materia === "Inglés" &&
@@ -735,15 +747,15 @@ class BuscadorPlaneamiento extends Component {
                                 }
                                 {
                                     (this.state.materia === "Estudios Sociales") &&
+                                    (
+                                        (this.state.anno === "Primero" || this.state.anno === "Tercero" || this.state.anno === "Quinto") &&
                                         (
-                                            (this.state.anno === "Primero" || this.state.anno === "Tercero" || this.state.anno === "Quinto") &&
-                                            (
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].abordaje} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Ejemplos de abordaje
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].abordaje} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Ejemplos de abordaje
                                                 </a>
-                                            )
-                                        )                                  
-                                                                            
+                                        )
+                                    )
+
                                 }
                             </div>
                         )
