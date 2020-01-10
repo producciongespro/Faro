@@ -1254,12 +1254,36 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                             <div className="card-body mr-2">
                                 <div className="row">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Lineamiento
-                                </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Plantilla
-                                </a>
+                                {
+                                    //***************Comprobación de Lineamiento nulo
+                                    array[index].lineamiento === "nulo" ?
+                                        (
+                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <i className="fas fa-ban"></i> Lineamiento no disponible
+                                          </span>
+                                        ) :
+                                        (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                            </a>
+                                        )
+                                        //********************** */
+                                }
+                                {
+                                    //************comprobación de plantilla nulo:
+                                    array[index].plantilla === "nulo" ?
+                                        (
+                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <i className="fas fa-ban"></i> Plantilla no disponible
+                                          </span>
+                                        ) :
+                                        (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla
+                                            </a>
+                                        )
+                                    //******************************/                                
+                                }
 
                                     {
                                         //Renderizado de etiquetas para español (CONED y CAN)
