@@ -774,7 +774,7 @@ class BuscadorPlaneamiento extends Component {
                                 }
                                 {
                                     //Ejemplos en secudnaria de inglés
-                                    (this.state.nivel==="Secundaria" && this.tipoPlan === "Inglés como Lengua Extranjera" ) && 
+                                    (this.state.nivel==="Secundaria" && this.state.materia === "Inglés"  && this.tipoPlan === "Inglés como Lengua Extranjera" ) && 
                                     (
                                         <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Ejemplo
