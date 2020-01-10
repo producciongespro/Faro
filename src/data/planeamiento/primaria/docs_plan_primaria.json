@@ -195,7 +195,7 @@
         "anno" : "Primero",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
     {
@@ -203,7 +203,7 @@
         "anno" : "Segundo",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
     {
@@ -211,7 +211,7 @@
         "anno" : "Tercero",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
     {
@@ -219,7 +219,7 @@
         "anno" : "Cuarto",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
     {
@@ -227,7 +227,7 @@
         "anno" : "Quinto",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
     {
@@ -235,7 +235,7 @@
         "anno" : "Sexto",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
 
