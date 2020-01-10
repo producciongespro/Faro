@@ -575,6 +575,8 @@ class BuscadorPlaneamiento extends Component {
         console.log("Contenido", this.state.contenido);
         console.log("Año", this.state.anno);
         console.log("Modalidad", this.state.modalidad);
+        console.log("Tipo de Plan", this.tipoPlan );
+        
 
 
 
@@ -758,6 +760,7 @@ class BuscadorPlaneamiento extends Component {
                                     */
                                 }
                                 {
+                                    //Estudios sociales 
                                     (this.state.materia === "Estudios Sociales") &&
                                     (
                                         (this.state.anno === "Primero" || this.state.anno === "Tercero" || this.state.anno === "Quinto") &&
@@ -768,6 +771,15 @@ class BuscadorPlaneamiento extends Component {
                                         )
                                     )
 
+                                }
+                                {
+                                    //Ejemplos en secudnaria de inglés
+                                    (this.state.nivel==="Secundaria" && this.tipoPlan === "Inglés como Lengua Extranjera" ) && 
+                                    (
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Ejemplo
+                                        </a> 
+                                    )
                                 }
                             </div>
                         )
