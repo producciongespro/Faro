@@ -5,7 +5,7 @@
         "desempeno" : "I",
         "accion" : "Plan de febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
         
     },
     {
@@ -14,7 +14,7 @@
         "desempeno" : "II",
         "accion" : "Plan de febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : " "
+        "plantilla" : "nulo" 
         
     },
     {
@@ -23,7 +23,7 @@
         "desempeno" : "III",
         "accion" : "Plan de febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : " "
+        "plantilla" : "nulo" 
         
     },
     {
@@ -32,7 +32,7 @@
         "desempeno" : "I",
         "accion" : "Plan de marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : " "
+        "plantilla" : "nulo" 
         
     },
     {
@@ -41,7 +41,7 @@
         "desempeno" : "II",
         "accion" : "Plan de marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : " "
+        "plantilla" : "nulo" 
         
     },
     {
@@ -50,7 +50,7 @@
         "desempeno" : "III",
         "accion" : "Plan de marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : " "
+        "plantilla" : "nulo" 
         
     },
 
@@ -69,7 +69,7 @@
         "desempeno" : "I",
         "accion" : "Discriminación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -77,7 +77,7 @@
         "desempeno" : "II",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -85,7 +85,7 @@
         "desempeno" : "III",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -93,7 +93,7 @@
         "desempeno" : "III",
         "accion" : "Desarrollo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -113,7 +113,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -121,7 +121,7 @@
         "desempeno" : "II",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -129,7 +129,7 @@
         "desempeno" : "III",
         "accion" : "Demostración",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -147,7 +147,7 @@
         "desempeno" : "I",
         "accion" : "Descripción",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -155,7 +155,7 @@
         "desempeno" : "II",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -163,7 +163,7 @@
         "desempeno" : "III",
         "accion" : "Comprensión",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -180,7 +180,7 @@
         "desempeno" : "I",
         "accion" : "Ejecución",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -188,7 +188,7 @@
         "desempeno" : "II",
         "accion" : "Ejecución",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -196,7 +196,7 @@
         "desempeno" : "III",
         "accion" : "Ejecución",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -212,7 +212,7 @@
         "desempeno" : "I",
         "accion" : "Desarrollo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -220,7 +220,7 @@
         "desempeno" : "II",
         "accion" : "Potenciación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -228,7 +228,7 @@
         "desempeno" : "III",
         "accion" : "Coordinación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -248,7 +248,7 @@
         "desempeno" : "I",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -256,7 +256,7 @@
         "desempeno" : "II",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -264,7 +264,7 @@
         "desempeno" : "III",
         "accion" : "Utilización",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -282,7 +282,7 @@
         "desempeno" : "I",
         "accion" : "Manifestación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -290,7 +290,7 @@
         "desempeno" : "I",
         "accion" : "Práctica",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -298,7 +298,7 @@
         "desempeno" : "II",
         "accion" : "Práctica",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -306,7 +306,7 @@
         "desempeno" : "III",
         "accion" : "Realización",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -323,7 +323,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
  
     {
@@ -332,7 +332,7 @@
         "desempeno" : "II",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -340,7 +340,7 @@
         "desempeno" : "III",
         "accion" : "Comprensión",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -348,7 +348,7 @@
         "desempeno" : "III",
         "accion" : "Ejecución",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -364,7 +364,7 @@
         "desempeno" : "I",
         "accion" : "Adquisición",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -372,7 +372,7 @@
         "desempeno" : "II",
         "accion" : "Comprensión",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -380,7 +380,7 @@
         "desempeno" : "III",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
    
 
@@ -395,7 +395,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -403,7 +403,7 @@
         "desempeno" : "II",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -411,7 +411,7 @@
         "desempeno" : "II",
         "accion" : "Desarrollo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -419,7 +419,7 @@
         "desempeno" : "III",
         "accion" : "Demostración",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -433,7 +433,7 @@
         "desempeno" : "I",
         "accion" : "Conocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -441,7 +441,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -449,7 +449,7 @@
         "desempeno" : "II",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -457,7 +457,7 @@
         "desempeno" : "III",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -465,7 +465,7 @@
         "desempeno" : "III",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -478,7 +478,7 @@
         "desempeno" : "I",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -486,7 +486,7 @@
         "desempeno" : "II",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -494,7 +494,7 @@
         "desempeno" : "III",
         "accion" : "Experimentación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -509,7 +509,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -517,7 +517,7 @@
         "desempeno" : "II",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -525,7 +525,7 @@
         "desempeno" : "II",
         "accion" : "Aplicación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -533,7 +533,7 @@
         "desempeno" : "III",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -548,7 +548,7 @@
         "desempeno" : "I",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -556,7 +556,7 @@
         "desempeno" : "II",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -564,7 +564,7 @@
         "desempeno" : "III",
         "accion" : "Demostración",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -579,7 +579,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -587,7 +587,7 @@
         "desempeno" : "II",
         "accion" : "Demostración",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -595,7 +595,7 @@
         "desempeno" : "III",
         "accion" : "Práctica",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -613,7 +613,7 @@
         "desempeno" : "I",
         "accion" : "Discriminación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -621,7 +621,7 @@
         "desempeno" : "II",
         "accion" : "Clasificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -629,7 +629,7 @@
         "desempeno" : "III",
         "accion" : "Utilización",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -645,7 +645,7 @@
         "desempeno" : "I",
         "accion" : "Conocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -653,7 +653,7 @@
         "desempeno" : "II",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -661,7 +661,7 @@
         "desempeno" : "III",
         "accion" : "Aplicación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -677,7 +677,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -685,7 +685,7 @@
         "desempeno" : "II",
         "accion" : "Comprensión",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -693,7 +693,7 @@
         "desempeno" : "III",
         "accion" : "Aplicación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -707,7 +707,7 @@
         "desempeno" : "I",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -715,7 +715,7 @@
         "desempeno" : "II",
         "accion" : "Construcción",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -723,7 +723,7 @@
         "desempeno" : "III",
         "accion" : "Adquisición",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -740,7 +740,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -748,7 +748,7 @@
         "desempeno" : "II",
         "accion" : "Categorización",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -756,7 +756,7 @@
         "desempeno" : "III",
         "accion" : "Aplicación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -771,7 +771,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -779,7 +779,7 @@
         "desempeno" : "II",
         "accion" : "Construcción",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -787,7 +787,7 @@
         "desempeno" : "III",
         "accion" : "Aplicación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -802,7 +802,7 @@
         "desempeno" : "I",
         "accion" : "Observación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -810,7 +810,7 @@
         "desempeno" : "II",
         "accion" : "Agrupación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -818,7 +818,7 @@
         "desempeno" : "III",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -833,7 +833,7 @@
         "desempeno" : "I",
         "accion" : "Identificación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -841,7 +841,7 @@
         "desempeno" : "II",
         "accion" : "Comprensión",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -849,7 +849,7 @@
         "desempeno" : "III",
         "accion" : "Utilización",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -863,7 +863,7 @@
         "desempeno" : "I",
         "accion" : "Reconocimiento",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -871,7 +871,7 @@
         "desempeno" : "II",
         "accion" : "Demostración",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -879,7 +879,7 @@
         "desempeno" : "III",
         "accion" : "Construcción",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     
     
@@ -899,7 +899,7 @@
         "desempeno" : "I",
         "accion" : "Manifestación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -907,7 +907,7 @@
         "desempeno" : "II",
         "accion" : "Apreciación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -915,7 +915,7 @@
         "desempeno" : "III",
         "accion" : "Interpretación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -933,7 +933,7 @@
         "desempeno" : "I",
         "accion" : "Concientización",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -941,7 +941,7 @@
         "desempeno" : "II",
         "accion" : "Representación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -949,7 +949,7 @@
         "desempeno" : "III",
         "accion" : "Producción",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
 
 
@@ -965,7 +965,7 @@
         "desempeno" : "I",
         "accion" : "Utilización",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -973,7 +973,7 @@
         "desempeno" : "I",
         "accion" : "Concientización",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -981,7 +981,7 @@
         "desempeno" : "II",
         "accion" : "Reconoce silábas",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -989,7 +989,7 @@
         "desempeno" : "II",
         "accion" : "Reconoce sonidos",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
     {
         "nivel" : "Preescolar",
@@ -997,7 +997,7 @@
         "desempeno" : "II",
         "accion" : "Reconoce rimas",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     },
      {
         "nivel" : "Preescolar",
@@ -1005,7 +1005,7 @@
         "desempeno" : "III",
         "accion" : "Experimentación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/28_lin_preescolar.pdf",
-        "plantilla" : "  "
+       "plantilla" : "nulo" 
     }
   
 
