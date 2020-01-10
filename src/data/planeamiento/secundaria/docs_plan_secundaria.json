@@ -228,7 +228,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -236,7 +236,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -244,7 +244,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
 
@@ -255,7 +255,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -263,7 +263,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -271,7 +271,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
 
@@ -283,7 +283,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -291,7 +291,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -299,7 +299,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
 
@@ -311,7 +311,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -319,7 +319,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -327,7 +327,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
 
@@ -339,7 +339,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -347,7 +347,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
@@ -355,7 +355,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
 
@@ -505,35 +505,35 @@
         "anno" : "Séptimo",
         "materia" : "Educación Religiosa",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Educación Religiosa",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Educación Religiosa",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Educación Religiosa",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Educación Religiosa",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
-        "plantilla" : ""
+        "plantilla" : "nulo" 
     },
 
 
