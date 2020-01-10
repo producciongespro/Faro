@@ -730,7 +730,7 @@ class BuscadorPlaneamiento extends Component {
                                                 <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                         )
-                                        //********************** */
+                                    //********************** */
                                 }
                                 {
                                     //************comprobación de plantilla nulo:
@@ -929,14 +929,32 @@ class BuscadorPlaneamiento extends Component {
                         //Renderizado del cuerpo de las tarjetas Español secundaria:                       
                         (
                             <div className="card-body mr-2">
+                                
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
+                                        </a>                                
+                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Plantilla
+                                            </a>                                
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientosViejo} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Lineamientos viejos
                                         </a>
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lectura
                                         </a>
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Monografía
+                                        </a>
+
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Trasnversal
+                                        </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Mensual
+                                        </a>
+                             <hr/>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Orientaciones
                                         </a>
                                 {
                                     (this.state.anno !== "Undécimo") &&
@@ -946,34 +964,20 @@ class BuscadorPlaneamiento extends Component {
                                         </a>
                                     )
                                 }
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Trasnversal
-                                        </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Mensual
-                                        </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Orientaciones
-                                        </a>
-
-                                {
+                                   {
                                     this.state.anno === "Décimo" &&
-                                    (
-                                        <React.Fragment>
-                                            <div className="row">
+                                    (    
                                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Divisón
-                                                </a>
-                                            </div>
-                                        </React.Fragment>
+                                                </a>                                                                                    
                                     )
                                 }
+                                
+                             
                                 {
                                     this.state.anno === "Undécimo" &&
                                     (
-
-                                        <div className="row">
-
+                                       <React.Fragment>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Criterios 11 y 12
                                         </a>
@@ -982,26 +986,14 @@ class BuscadorPlaneamiento extends Component {
                                         </a>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Orientaciones Plan Nuevo
-                                        </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> División
-                                        </a>
+                                        </a>                                            
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Orientaciones Plan Viejo
                                         </a>
-                                        </div>
+                                        </React.Fragment>
+                                    )
+                                } 
 
-                                    )
-                                }
-                                {
-                                    (
-                                        <div className="row">
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Plantilla
-                                            </a>
-                                        </div>
-                                    )
-                                }
                             </div>
 
                         )
@@ -1093,37 +1085,37 @@ class BuscadorPlaneamiento extends Component {
                                 (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
                                 (
                                     <div className="card-body mr-2">
-                                    <div className="row">
-                                    {
-                                    //***************Comprobación de Lineamiento nulo
-                                    array[index].lineamiento === "nulo" ?
-                                        (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                <i className="fas fa-ban"></i> Lineamiento no disponible
+                                        <div className="row">
+                                            {
+                                                //***************Comprobación de Lineamiento nulo
+                                                array[index].lineamiento === "nulo" ?
+                                                    (
+                                                        <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                            <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
-                                        ) :
-                                        (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                                    ) :
+                                                    (
+                                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                            <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
-                                        )
-                                        //********************** */
-                                    }
-                                         {
-                                    //************comprobación de plantilla nulo:
-                                    array[index].plantilla === "nulo" ?
-                                        (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                <i className="fas fa-ban"></i> Plantilla no disponible
+                                                    )
+                                                //********************** */
+                                            }
+                                            {
+                                                //************comprobación de plantilla nulo:
+                                                array[index].plantilla === "nulo" ?
+                                                    (
+                                                        <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                            <i className="fas fa-ban"></i> Plantilla no disponible
                                           </span>
-                                        ) :
-                                        (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Plantilla
+                                                    ) :
+                                                    (
+                                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                            <i className="fas fa-file-word"></i> Plantilla
                                             </a>
-                                        )
-                                    //******************************/                                
-                                }
+                                                    )
+                                                //******************************/                                
+                                            }
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Círculo de la armonía
                                     </a>
@@ -1149,21 +1141,21 @@ class BuscadorPlaneamiento extends Component {
                                 (
                                     <div className="card-body mr-2">
                                         <div className="row">
-                                        {
-                                    //***************Comprobación de Lineamiento nulo
-                                    array[index].lineamiento === "nulo" ?
-                                        (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                <i className="fas fa-ban"></i> Lineamiento no disponible
+                                            {
+                                                //***************Comprobación de Lineamiento nulo
+                                                array[index].lineamiento === "nulo" ?
+                                                    (
+                                                        <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                            <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
-                                        ) :
-                                        (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                                    ) :
+                                                    (
+                                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                            <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
-                                        )
-                                        //********************** */
-                                }
+                                                    )
+                                                //********************** */
+                                            }
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Correlacionado
                                     </a>
@@ -1254,36 +1246,36 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                             <div className="card-body mr-2">
                                 <div className="row">
-                                {
-                                    //***************Comprobación de Lineamiento nulo
-                                    array[index].lineamiento === "nulo" ?
-                                        (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                <i className="fas fa-ban"></i> Lineamiento no disponible
+                                    {
+                                        //***************Comprobación de Lineamiento nulo
+                                        array[index].lineamiento === "nulo" ?
+                                            (
+                                                <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                    <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
-                                        ) :
-                                        (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                            ) :
+                                            (
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
-                                        )
+                                            )
                                         //********************** */
-                                }
-                                {
-                                    //************comprobación de plantilla nulo:
-                                    array[index].plantilla === "nulo" ?
-                                        (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                <i className="fas fa-ban"></i> Plantilla no disponible
+                                    }
+                                    {
+                                        //************comprobación de plantilla nulo:
+                                        array[index].plantilla === "nulo" ?
+                                            (
+                                                <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                    <i className="fas fa-ban"></i> Plantilla no disponible
                                           </span>
-                                        ) :
-                                        (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Plantilla
+                                            ) :
+                                            (
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla
                                             </a>
-                                        )
-                                    //******************************/                                
-                                }
+                                            )
+                                        //******************************/                                
+                                    }
 
                                     {
                                         //Renderizado de etiquetas para español (CONED y CAN)
@@ -1590,36 +1582,36 @@ class BuscadorPlaneamiento extends Component {
                             <div className="card-body mr-2">
                                 <div className="row">
 
-                                {
-                                    //***************Comprobación de Lineamiento nulo
-                                    array[index].lineamiento === "nulo" ?
-                                        (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                <i className="fas fa-ban"></i> Lineamiento no disponible
+                                    {
+                                        //***************Comprobación de Lineamiento nulo
+                                        array[index].lineamiento === "nulo" ?
+                                            (
+                                                <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                    <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
-                                        ) :
-                                        (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                            ) :
+                                            (
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
-                                        )
+                                            )
                                         //********************** */
-                                }
-                                {
-                                    //************comprobación de plantilla nulo:
-                                    array[index].plantilla === "nulo" ?
-                                        (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                <i className="fas fa-ban"></i> Plantilla no disponible
+                                    }
+                                    {
+                                        //************comprobación de plantilla nulo:
+                                        array[index].plantilla === "nulo" ?
+                                            (
+                                                <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                    <i className="fas fa-ban"></i> Plantilla no disponible
                                           </span>
-                                        ) :
-                                        (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Plantilla
+                                            ) :
+                                            (
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Plantilla
                                             </a>
-                                        )
-                                    //******************************/                                
-                                }
+                                            )
+                                        //******************************/                                
+                                    }
 
                                 </div>
                             </div>
