@@ -1232,9 +1232,14 @@ class BuscadorPlaneamiento extends Component {
                                 <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                     Modalidad: {array[index].modalidad}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Mes: {array[index].mes}
-                                </span>
+                                {
+                                    (array[index].mes !== undefined) &&
+                                        (
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Mes: {array[index].mes}
+                                            </span>
+                                        )
+                                }                             
                                 {
                                     (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II" || this.state.modalidad === "IPEC CINDEA Nivel III") ?
                                         (
