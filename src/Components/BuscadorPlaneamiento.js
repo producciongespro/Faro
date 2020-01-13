@@ -575,8 +575,8 @@ class BuscadorPlaneamiento extends Component {
         console.log("Contenido", this.state.contenido);
         console.log("Año", this.state.anno);
         console.log("Modalidad", this.state.modalidad);
-        console.log("Tipo de Plan", this.tipoPlan );
-        
+        console.log("Tipo de Plan", this.tipoPlan);
+
 
 
 
@@ -774,11 +774,11 @@ class BuscadorPlaneamiento extends Component {
                                 }
                                 {
                                     //Ejemplos en secudnaria de inglés
-                                    (this.state.nivel==="Secundaria" && this.state.materia === "Inglés"  && this.tipoPlan === "Inglés como Lengua Extranjera" ) && 
+                                    (this.state.nivel === "Secundaria" && this.state.materia === "Inglés" && this.tipoPlan === "Inglés como Lengua Extranjera") &&
                                     (
                                         <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Ejemplo
-                                        </a> 
+                                            <i className="fas fa-file-word"></i> Ejemplo
+                                        </a>
                                     )
                                 }
                             </div>
@@ -941,13 +941,13 @@ class BuscadorPlaneamiento extends Component {
                         //Renderizado del cuerpo de las tarjetas Español secundaria:                       
                         (
                             <div className="card-body mr-2">
-                                
+
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
-                                        </a>                                
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Plantilla
-                                            </a>                                
+                                        </a>
+                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Plantilla
+                                            </a>
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientosViejo} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos viejos
                                         </a>
@@ -964,7 +964,7 @@ class BuscadorPlaneamiento extends Component {
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Mensual
                                         </a>
-                             <hr/>
+                                <hr />
                                 <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Orientaciones
                                         </a>
@@ -976,20 +976,20 @@ class BuscadorPlaneamiento extends Component {
                                         </a>
                                     )
                                 }
-                                   {
+                                {
                                     this.state.anno === "Décimo" &&
-                                    (    
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Divisón
-                                                </a>                                                                                    
+                                    (
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Divisón
+                                                </a>
                                     )
                                 }
-                                
-                             
+
+
                                 {
                                     this.state.anno === "Undécimo" &&
                                     (
-                                       <React.Fragment>
+                                        <React.Fragment>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Criterios 11 y 12
                                         </a>
@@ -998,13 +998,13 @@ class BuscadorPlaneamiento extends Component {
                                         </a>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Orientaciones Plan Nuevo
-                                        </a>                                            
+                                        </a>
                                             <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Orientaciones Plan Viejo
                                         </a>
                                         </React.Fragment>
                                     )
-                                } 
+                                }
 
                             </div>
 
@@ -1232,9 +1232,14 @@ class BuscadorPlaneamiento extends Component {
                                 <span className="mx-2 badge badge-secondary  px-3 py-2 ">
                                     Modalidad: {array[index].modalidad}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                    Mes: {array[index].mes}
-                                </span>
+                                {
+                                    (array[index].mes !== undefined) &&
+                                        (
+                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                Mes: {array[index].mes}
+                                            </span>
+                                        )
+                                }                             
                                 {
                                     (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II" || this.state.modalidad === "IPEC CINDEA Nivel III") ?
                                         (
@@ -1391,92 +1396,24 @@ class BuscadorPlaneamiento extends Component {
                                 </span>
                             </div>
                             {
-                                this.state.materia === "Español" ?
+                                (array[index].potenciancion !== "nulo") ?
                                     (
                                         <div className="card-body mr-2">
-                                            <div className="row">
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Potenciación
-                                        </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido1.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 1.1
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido2.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 2.1
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido3.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 3.1
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido4.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 3.1
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido5.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 5.1
-                                    </a>
-                                            </div>
-                                            <div className="row">
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido6.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 6.1
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido7.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 7.1
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido8.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 8.1
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido9.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 9.1
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["contenido10.1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Contenido 10.1
-                                    </a>
-                                            </div>
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Potenciación
+                                            </a>
                                         </div>
-                                    ) :
+                                    ):
                                     (
                                         <div className="card-body mr-2">
-                                            <div className="row">
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Potenciación
-                                        </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla1"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 1
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla2"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 2
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla3"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 3
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla4"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 4
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla5"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 5
-                                    </a>
-
-                                            </div>
-                                            <div className="row">
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla6"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 6
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla7"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 7
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla8"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 8
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla9"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 9
-                                    </a>
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index]["plantilla10"]} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla 10
-                                    </a>
-
-                                            </div>
-                                        </div>
+                                           <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                    <i className="fas fa-ban"></i> Potenciación no disponible
+                                          </span>
+                                    </div>  
                                     )
                             }
+
+
 
 
                         </React.Fragment>
