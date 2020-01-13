@@ -326,15 +326,16 @@
     ],
 
 "Materias Básicas Unidocentes" : [    
-        "Ciencias",
-        "Español",
-        "Estudios Sociales",
-        "Matemática",
-        "Educación Física",
-        "Artes Plásticas",
-        "Educación para el Hogar",
-        "Inglés"
+    "Artes Plásticas",    
+    "Ciencias",
+    "Educación Física",
+    "Educación para el Hogar",
+    "Español",
+    "Estudios Sociales",
+    "Inglés",   
+    "Matemática"
     ],
+    
 "Correlacionado Unidocentes" : [
     "I Ciclo",
     "II Ciclo"
