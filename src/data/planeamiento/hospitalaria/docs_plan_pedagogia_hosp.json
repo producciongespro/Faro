@@ -4,96 +4,6 @@
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Primero",
-        "materia": "Español",
-        "potenciancion": "nulo"
-    },
-    {
-        "nivel": "Pedagogía Hospitalaria",
-        "anno": "Segundo",
-        "materia": "Español",
-        "potenciancion": "nulo"
-    },
-    {
-        "nivel": "Pedagogía Hospitalaria",
-        "anno": "Tercero",
-        "materia": "Español",
-        "potenciancion": "nulo"
-    },
-    {
-        "nivel": "Pedagogía Hospitalaria",
-        "anno": "Cuarto",
-        "materia": "Español",
-        "potenciancion": "nulo"
-    },
-    {
-        "nivel": "Pedagogía Hospitalaria",
-        "anno": "Quinto",
-        "materia": "Español",
-        "potenciancion": "nulo"
-    },
-    {
-        "nivel": "Pedagogía Hospitalaria",
-        "anno": "Sexto",
-        "materia": "Español",
-        "potenciancion": "nulo"
-    },
-
-
-
-
-
-
-    
-
-    {
-        "nivel": "Pedagogía Hospitalaria",
-        "anno": "Primero",
-        "materia": "Matemática",
-        "potenciancion": "nulo"
-    },
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Segundo",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
-    {
-        "nivel": "Pedagogía Hospitalaria",
-        "anno": "Tercero",
-        "materia": "Matemática",
-        "potenciancion": "nulo"
-    },
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Cuarto",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Quinto",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Sexto",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
-
-
-
-
-
-
-
-
-
-
-    {
-        "nivel": "Pedagogía Hospitalaria",
-        "anno": "Primero",
         "materia": "Ciencias",
         "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/pri/potenciacion_ciencias_1.docx"
     },
@@ -137,43 +47,90 @@
 
 
 
+
+
+
+    
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Primero",
+        "materia": "Español",
+        "potenciancion": "nulo"
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Segundo",
+        "materia": "Español",
+        "potenciancion": "nulo"
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Tercero",
+        "materia": "Español",
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/ter/potenciacion_espanol_3.docx"
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Cuarto",
+        "materia": "Español",
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/cua/potenciacion_espanol_4.docx"
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Quinto",
+        "materia": "Español",
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/qui/potenciacion_espanol_5.docx"
+    },
+    {
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Sexto",
+        "materia": "Español",
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/sex/potenciacion_espanol_6.docx"
+    },
+
+
+
+
+
+
+
+
     
 
-
     {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Primero",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Primero",
+        "materia": "Educación Física",
+        "potenciancion": "nulo"
     },
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Segundo",
-    "materia": "Matemática",
+    "materia": "Educación Física",
     "potenciancion": "nulo"
     },
     {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Tercero",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
+        "nivel": "Pedagogía Hospitalaria",
+        "anno": "Tercero",
+        "materia": "Educación Física",
+        "potenciancion": "nulo"
     },
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Cuarto",
-    "materia": "Matemática",
+    "materia": "Educación Física",
     "potenciancion": "nulo"
     },
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Quinto",
-    "materia": "Matemática",
+    "materia": "Educación Física",
     "potenciancion": "nulo"
     },
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Sexto",
-    "materia": "Matemática",
+    "materia": "Educación Física",
     "potenciancion": "nulo"
     },
 
@@ -181,50 +138,6 @@
 
 
 
-
-
-
-
-
-
-
-
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Primero",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Segundo",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Tercero",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Cuarto",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Quinto",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
-    {
-    "nivel": "Pedagogía Hospitalaria",
-    "anno": "Sexto",
-    "materia": "Matemática",
-    "potenciancion": "nulo"
-    },
 
 
 
@@ -240,38 +153,135 @@
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Primero",
-    "materia": "Matemática",
+    "materia": "Educación Musical",
     "potenciancion": "nulo"
     },
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Segundo",
-    "materia": "Matemática",
+    "materia": "Educación Musical",
     "potenciancion": "nulo"
     },
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Tercero",
-    "materia": "Matemática",
+    "materia": "Educación Musical",
     "potenciancion": "nulo"
     },
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Cuarto",
-    "materia": "Matemática",
+    "materia": "Educación Musical",
     "potenciancion": "nulo"
     },
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Quinto",
-    "materia": "Matemática",
+    "materia": "Educación Musical",
     "potenciancion": "nulo"
     },
     {
     "nivel": "Pedagogía Hospitalaria",
     "anno": "Sexto",
-    "materia": "Matemática",
+    "materia": "Educación Musical",
     "potenciancion": "nulo"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Primero",
+    "materia": "Estudios Sociales",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/estu_soci/pri/potenciacion_estudios_sociales_1.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Segundo",
+    "materia": "Estudios Sociales",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/estu_soci/seg/potenciacion_estudios_sociales_2.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Tercero",
+    "materia": "Estudios Sociales",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/estu_soci/ter/potenciacion_estudios_sociales_3.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Cuarto",
+    "materia": "Estudios Sociales",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/estu_soci/cua/potenciacion_estudios_sociales_4.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Quinto",
+    "materia": "Estudios Sociales",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/estu_soci/qui/potenciacion_estudios_sociales_5.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Sexto",
+    "materia": "Estudios Sociales",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/estu_soci/sex/potenciacion_estuidos_sociales_6.docx"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Primero",
+    "materia": "Matemática",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/mate/pri/potenciacion_matematica_1.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Segundo",
+    "materia": "Matemática",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/mate/seg/potenciacion_matematica_2.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Tercero",
+    "materia": "Matemática",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/mate/ter/potenciacion_matematica_3.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Cuarto",
+    "materia": "Matemática",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/mate/cua/potenciacion_matematica_4.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Quinto",
+    "materia": "Matemática",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/mate/qui/potenciacion_matematica_5.docx"
+    },
+    {
+    "nivel": "Pedagogía Hospitalaria",
+    "anno": "Sexto",
+    "materia": "Matemática",
+    "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/mate/sex/potenciacion_matematica_6.docx"
     }
 
 
