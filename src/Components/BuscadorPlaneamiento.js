@@ -1784,7 +1784,7 @@ class BuscadorPlaneamiento extends Component {
 
                                             </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selMateria" onClick={this.handlerObtenerMateria}  >
+                                        <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria}  >
                                             {
                                                 this.state.nivel !== "Preescolar" &&
                                                 (
