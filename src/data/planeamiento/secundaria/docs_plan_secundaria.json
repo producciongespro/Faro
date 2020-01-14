@@ -228,7 +228,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/1.ppd_educ_civica_I_unidad_1_periodo_septimo.docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -236,7 +236,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/2.ppd_educ_civica_II_unidad_2_periodo_septimo.docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -244,7 +244,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/3.ppd_educ_civica_III_unidad_3_periodo_septimo.docx" 
     },
 
 
@@ -255,7 +255,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/1.ppd_educ_civica_I_unidad_1_periodo_octavo..docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -263,7 +263,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/2.ppd_educ_civica_I_unidad_2_periodo_octavo..docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -271,7 +271,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/3.ppd_educ_civica_III_unidad_3_periodo_octavo..docx" 
     },
 
 
@@ -283,7 +283,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/1.ppd_educ_civica_I_unidad_1_periodo_noveno.docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -291,7 +291,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/2.ppd_educ_civica_II_unidad_2_periodo_noveno..docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -299,7 +299,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/3.ppd_educ_civica_III_unidad_3_periodo_noveno..docx" 
     },
 
 
@@ -311,7 +311,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/1.ppd_educ_civica_I_unidad_1_periodo_decimo.docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -319,7 +319,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/2.ppd_educ_civica_II_unidad_2_periodo_decimo..docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -327,7 +327,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/3.ppd_educ_civica_III_uniidad_3_periodo-decimo..docx" 
     },
 
 
@@ -339,7 +339,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/1.ppd_educ_civica_I_unidad_1_periodo_undecimo..docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -347,7 +347,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/2.ppd_educ_civica_II_unidad_2_periodo_undecimo.docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -355,7 +355,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/3.ppd_educ_civica_III_unidad_3_periodo_undecimo.docx" 
     },
 
 
