@@ -93,7 +93,7 @@ class BuscadorPlaneamiento extends Component {
             indiceContenido: 0,
             indiceDesempeno: 0,
             //Preecolar o español primaria: 
-            contenidoEspanol: "",
+            contenidoEsp: "",
             desempeno: "",
             //Distribución de plan para las materias: mensual, trimestral, anual
             distribucionPlan: "",
@@ -144,11 +144,11 @@ class BuscadorPlaneamiento extends Component {
                 //Por cargar solamente dos select el btn buscar se activa en el segundo select    
                 this.activarBotonBuscar();
                 this.setState({ indiceContenido: e.target.selectedIndex });
-                /*
-                this.setState({ contenido: e.target.value }, () => {
-                    console.log("Contenido seleccionado:", this.state.contenido);
+                
+                this.setState({ contenidoEsp: e.target.value }, () => {
+                    console.log("Contenido seleccionado:", this.state.contenidoEsp);
                 });
-                 */
+                
                 break;
             case "Primaria":
             case "Secundaria":
@@ -297,8 +297,8 @@ class BuscadorPlaneamiento extends Component {
     handlerObtenerContenido = (e) => {
         //Obtener contenido en caso de primaria Español
         let valor = e.target.value;
-        this.setState({ contenidoEspanol: valor }, () => {
-            console.log("CCCContenido en español primaria", this.state.contenidoEspanol);
+        this.setState({ contenidoEsp: valor }, () => {
+            console.log("CCCContenido en español primaria", this.state.contenidoEsp);
         });
     }
 
@@ -577,14 +577,14 @@ class BuscadorPlaneamiento extends Component {
         console.log("Modulo", this.state.modulo);
         console.log("Nivel", this.state.nivel);
         console.log("Materia", this.state.materia);
-        console.log("Contenido", this.state.contenidoEspanol);
+        console.log("Contenido", this.state.contenidoEsp);
         console.log("Año", this.state.anno);
         console.log("Modalidad", this.state.modalidad);
         console.log("Tipo de Plan", this.state.tipoPlan);
 
         switch (this.state.nivel) {
             case "Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEspanol);
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
                 if (this.state.materia === "Español") {
                     this.tarjetasEspanolSecundaria(this.arrayResultado);
                 }
@@ -596,8 +596,8 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
             case "Primaria":                
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEspanol);
-                console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
+                //console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                
 
                 if (this.state.materia === "Educación para el Hogar") {
                     this.tarjetasHogarPrimaria(this.arrayResultado);
@@ -615,7 +615,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenido);
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
@@ -627,7 +627,7 @@ class BuscadorPlaneamiento extends Component {
                 this.tarjetasJovenesAdultos(this.arrayResultado);
                 break;
             case "Preescolar":
-                this.arrayResultado = this.filtrarPreescolar(this.state.nivel, this.state.contenido);
+                this.arrayResultado = this.filtrarPreescolar(this.state.nivel, this.state.contenidoEsp);
                 this.tarjetasPreescolar(this.arrayResultado);
                 break;
             case "Pedagogía Hospitalaria":
