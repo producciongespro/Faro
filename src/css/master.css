@@ -131,17 +131,58 @@ a {
     display: block;
 }
 
-.card {
-  margin-bottom: 1em;
+/* agregados para solventar problema responsividad del modal*/
+.modal-header {
+  border-bottom: none!important;
 }
 
-.card-header {
-  background-color:rgb(206, 212, 218);
+.modal-body {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-position-x: 6%;
+  background-position-y: -2%;
+  margin: 10px;
 }
 
-.card-body {
-  background-color: rgba(206, 212, 218, 0.2);
+.borde-modal {
+  border-top: 3px solid gray !important;
+  border-left: 3px solid gray !important;
+  border-right: 3px solid gray !important;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+  border-radius: 5px;
+
 }
+.borde-video {
+  border: 5px solid #edeaea !important;
+  box-shadow: 5px 6px 11px 1px  rgba(157, 156, 156, 0.75);
+  -webkit-box-shadow: 5px 6px 11px 1px rgba(157, 156, 156, 0.75);
+  -moz-box-shadow: 5px 6px 11px 1px rgba(157, 156, 156, 0.75);
+  box-shadow: 5px 6px 11px 1px rgba(157, 156, 156, 0.75);
+}
+
+.borde-bottom-turquesa {
+  border-bottom: 10px solid #00a2cd !important; 
+}
+
+.borde-bottom-amarillo {
+  border-bottom: 10px solid #ffc009 !important; 
+}
+.borde-bottom-azul {
+  border-bottom: 10px solid #0073F4 !important; 
+}
+
+.borde-bottom-celeste {
+  border-bottom: 10px solid #00CBD0 !important; 
+}
+.modal-img-titulo {
+  position: relative;
+  top: -37px;
+}
+
+
+/* fin de clases agregadas */
 
 .card-custom {
   width: 75% !important;
@@ -180,11 +221,8 @@ a {
 
 
 .img-ico-audio {
-  position: absolute;
-  top: 4.5%;
-  left: 70%;
-  width: 5%;
-  height: auto;
+  left: 50%;
+  width: 7%;
   cursor: pointer
 }
 
@@ -1169,3 +1207,13 @@ border-color: #BE5FAC;
 .tg td{font-family:Arial, sans-serif;font-size:12px;padding:3px 18px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#444;background-color:#EBF5FF;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:3px 18px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#fff;background-color:#409cff;}
 .tg .tg-gvcd{background-color:#ffffff;color:#000000;border-color:#000000;text-align:left;vertical-align:top}
+
+
+/* QUERIES */
+
+@media (max-width: 649.98px) { 
+  .img-ico-audio {
+     left: 18%;
+    width: 7%; 
+  }
+}
