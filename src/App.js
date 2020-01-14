@@ -638,6 +638,7 @@ class App extends Component {
     //console.log("infoSource",infoSource);  
     //console.log(opcion);  
     document.getElementById("textoDescripcion").innerHTML = "<h2 class='desc'>Descripción:</h2>" + descripciones[infoSource][opcion];
+    document.getElementById("imgFondoDescripcion").src= imgGenerales + "caja_descripcion_sin_parlante.png"
 
 
   }
@@ -650,6 +651,7 @@ class App extends Component {
     let infoSource = e.target.dataset.infosource;
     //console.log("Mouse out", infoSource ); 
     document.getElementById("textoDescripcion").innerHTML = "<h2 class='desc'>Descripción:</h2>" + descripciones[infoSource].general;
+    document.getElementById("imgFondoDescripcion").src= imgGenerales + "caja_descripcion.png"
   }
 
 
