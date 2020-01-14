@@ -312,16 +312,16 @@
         "nivel": "Secundaria",
         "anno": "Décimo",
         "materia": "Matemática",
-        "mes": "Abril ",
+        "mes": "Abril",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/3.ppd_geometria_abril_decimo.docx",
-        "plantilla2" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/3.ppd_relaciones_y_algebra_abril_decimo.docx"
+        "plantillaDos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/3.ppd_relaciones_y_algebra_abril_decimo.docx"
     },
     {
         "nivel": "Secundaria",
         "anno": "Décimo",
         "materia": "Matemática",
-        "mes": "Mayo ",
+        "mes": "Mayo",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/4.ppd_relaciones_y_algebra_mayo_decimo.docx" 
     },
@@ -329,7 +329,7 @@
         "nivel": "Secundaria",
         "anno": "Décimo",
         "materia": "Matemática",
-        "mes": "Junio ",
+        "mes": "Junio",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/5.ppd_relaciones_y_algebra_junio_decimo.docx" 
     },
@@ -337,7 +337,7 @@
         "nivel": "Secundaria",
         "anno": "Décimo",
         "materia": "Matemática",
-        "mes": "Julio ",
+        "mes": "Julio",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/6.ppd_relaciones_y_algebra_julio_decimo.docx" 
     },
@@ -345,7 +345,7 @@
         "nivel": "Secundaria",
         "anno": "Décimo",
         "materia": "Matemática",
-        "mes": "Agosto ",
+        "mes": "Agosto",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/7.ppd_estadistica_y_probabilidades_agosto_decimo.docx" 
     },
@@ -353,7 +353,7 @@
         "nivel": "Secundaria",
         "anno": "Décimo",
         "materia": "Matemática",
-        "mes": "Septiembre ",
+        "mes": "Septiembre",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/8.ppd_estadistica_y_probabilidad_septiembre_decimo.docx" 
     },
@@ -361,7 +361,7 @@
         "nivel": "Secundaria",
         "anno": "Décimo",
         "materia": "Matemática",
-        "mes": "Octubre ",
+        "mes": "Octubre",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/9.ppd_estadistica_y_probabilidad_octubre_decimo.docx" 
     },
@@ -369,7 +369,7 @@
         "nivel": "Secundaria",
         "anno": "Décimo",
         "materia": "Matemática",
-        "mes": "Noviembre ",
+        "mes": "Noviembre",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/10.ppd_estadistica_y_probabilidad_noviembre_decimo.docx" 
     },
@@ -396,7 +396,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Febrero ",
+        "mes": "Febrero",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/1.ppd_relaciones_y_algebra_febrero_undecimo.docx" 
     },
@@ -404,7 +404,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Marzo ",
+        "mes": "Marzo",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/2.ppd_relaciones_y_algebra_marzo_undecimo.docx" 
     },
@@ -412,7 +412,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Abril ",
+        "mes": "Abril",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/3.ppd_relaciones_y_algebra_abril_undecimo.docx" 
     },
@@ -420,7 +420,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Mayo ",
+        "mes": "Mayo",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/4.ppd_relac_y_algebra_estadistica_probabilidad_mayo_undecimo.docx" 
     },
@@ -428,7 +428,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Junio ",
+        "mes": "Junio",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/5.ppd_estadistica_probabilidad_junio_undecimo.docx" 
     },
@@ -436,7 +436,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Julio ",
+        "mes": "Julio",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/6.ppd_estadistica_y_probabilidad_julio_undecimo.docx" 
     },
@@ -444,7 +444,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Agosto ",
+        "mes": "Agosto",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/7.ppd_geometria_agosto_undecimo.docx" 
     },
@@ -452,7 +452,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Septiembre ",
+        "mes": "Septiembre",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/8.ppd_geometria_septiembre_undecimo.docx" 
     },
@@ -460,7 +460,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Octubre ",
+        "mes": "Octubre",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/9.ppd_geometria_octubre_undecimo.docx" 
     },
@@ -468,7 +468,7 @@
         "nivel": "Secundaria",
         "anno": "Undécimo",
         "materia": "Matemática",
-        "mes": "Noviembre ",
+        "mes": "Noviembre",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/10.ppd_geometria_noviembre_undecimo.docx" 
     }
