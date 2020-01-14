@@ -97,17 +97,17 @@ class BuscadorPlaneamiento extends Component {
             desempeno: "",
             //Distribución de plan para las materias: mensual, trimestral, anual
             distribucionPlan: "",
-             //Mes se usa en caso de español, materias con plan mensual o unidocentes
-            mes : "",
-             //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
-            tipoPlan : ""
+            //Mes se usa en caso de español, materias con plan mensual o unidocentes
+            mes: "",
+            //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
+            tipoPlan: ""
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
                 educaicón para adultos.  Esta propiedad debe camibar materia
         */
-       
-       
+
+
         this.etiquetaPlan = "";
         this.poblacion = "";
         this.apoyos = "";
@@ -132,7 +132,7 @@ class BuscadorPlaneamiento extends Component {
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
         this.setState({ anno: "" });
-        this.setState({ mes: "" });        
+        this.setState({ mes: "" });
     }
 
     handlerObtenerAnno = (e) => {
@@ -144,11 +144,11 @@ class BuscadorPlaneamiento extends Component {
                 //Por cargar solamente dos select el btn buscar se activa en el segundo select    
                 this.activarBotonBuscar();
                 this.setState({ indiceContenido: e.target.selectedIndex });
-                
+
                 this.setState({ contenidoEsp: e.target.value }, () => {
                     console.log("Contenido seleccionado:", this.state.contenidoEsp);
                 });
-                
+
                 break;
             case "Primaria":
             case "Secundaria":
@@ -493,13 +493,13 @@ class BuscadorPlaneamiento extends Component {
         return tmpArray;
     }
 
-    filtrarUnidocente = (nivel, asignatura) => {        
+    filtrarUnidocente = (nivel, asignatura) => {
         let array;
         let tmpArray = [];
         //Carga del array de unidocentes:
         array = dataUnidocente;
-        for (let index = 0; index < array.length; index++) {            
-            if (array[index].nivel === nivel && array[index].asignatura === asignatura ) {
+        for (let index = 0; index < array.length; index++) {
+            if (array[index].nivel === nivel && array[index].asignatura === asignatura) {
                 tmpArray.push(array[index]);
             }
         }
@@ -609,7 +609,7 @@ class BuscadorPlaneamiento extends Component {
                     this.tarjetasBasico(this.arrayResultado);
                 }
                 break;
-            case "Primaria":                
+            case "Primaria":
                 this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
                 //console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                
 
@@ -1037,7 +1037,7 @@ class BuscadorPlaneamiento extends Component {
         }
     }
 
-    tarjetasUnidocente = (array) => {
+    tarjetasUnidocente_VIEJO = (array) => {
         // Primaria, secudnaria e intercultural
         //console.log("array recibido:", array);
         var arrayHtml;
@@ -1229,6 +1229,98 @@ class BuscadorPlaneamiento extends Component {
         }
     }
 
+    tarjetasUnidocente = (array) => {
+        // Primaria, secudnaria e intercultural
+        //console.log("array recibido:", array);
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <React.Fragment>
+                            {
+                                //Encabezado Tarjeta:                                
+                                (
+                                    <div className="card-header">
+                                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                            Nivel:  {array[index].nivel}
+                                        </span>
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Asignatura: {array[index].asignatura}
+                                        </span>
+                                    </div>
+                                )
+                            }
+
+
+                            {
+
+                                (
+                                    <div className="card-body mr-2">
+
+                                        {
+                                            //***************Comprobación de Lineamiento nulo
+                                            array[index].lineamiento === "nulo" ?
+                                                (
+                                                    <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                        <i className="fas fa-ban"></i> Lineamiento no disponible
+                                          </span>
+                                                ) :
+                                                (
+                                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                        <i className="fas fa-file-pdf"></i> Lineamiento
+                                            </a>
+                                                )
+                                            //********************** */
+                                        }
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Correlacionado
+                                             </a>
+
+                                        {
+                                            (   this.state.asignatura === "Ciencias" 
+                                            || this.state.asignatura === "Educación Física" 
+                                            || this.state.asignatura === "Español"
+                                            || this.state.asignatura === "Estudios Sociales"  
+                                             ) &&
+                                            (
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> No correlacionado
+                                                 </a>
+                                            )
+                                        }
+
+                                        {
+                                            this.state.asignatura !== "Artes Industriales" &&
+                                            (
+                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].alcance} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Alcance
+                                            </a>
+                                            )
+                                        }
+                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].circulo} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Círculo
+                                            </a>
+                                    </div>
+                                )
+                            }
+
+                        </React.Fragment>
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
     tarjetasJovenesAdultos = (array) => {
         // Primaria, secudnaria e intercultural
         //console.log("array recibido:", array);
@@ -1249,12 +1341,12 @@ class BuscadorPlaneamiento extends Component {
                                 </span>
                                 {
                                     (array[index].mes !== undefined) &&
-                                        (
-                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Mes: {array[index].mes}
-                                            </span>
-                                        )
-                                }                             
+                                    (
+                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            Mes: {array[index].mes}
+                                        </span>
+                                    )
+                                }
                                 {
                                     (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II" || this.state.modalidad === "IPEC CINDEA Nivel III") ?
                                         (
@@ -1418,13 +1510,13 @@ class BuscadorPlaneamiento extends Component {
                                                 <i className="fas fa-file-pdf"></i> Potenciación
                                             </a>
                                         </div>
-                                    ):
+                                    ) :
                                     (
                                         <div className="card-body mr-2">
-                                           <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                    <i className="fas fa-ban"></i> Potenciación no disponible
+                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <i className="fas fa-ban"></i> Potenciación no disponible
                                           </span>
-                                    </div>  
+                                        </div>
                                     )
                             }
 
@@ -1600,17 +1692,10 @@ class BuscadorPlaneamiento extends Component {
         */
         return (
             <React.Fragment>
-              
+
 
                 <div className="row">
                     <div className="col-12  text-right alert">
-
-                    <span>
-                        Tipo plan: {
-                            this.state.tipoPlan
-                        }
-                    </span>
-
                         {
                             plataformaUsada === "movil" ?
                                 (
@@ -1658,117 +1743,117 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                         </div>
                         {/*******Columna 2******** AÑO*/}
-                       {
-                           this.state.nivel !== "Unidocentes" &&
-                           (
-                            <div className="col-sm-3  ">
-                            <div className="input-group mb-3">
-                                <div className="input-group-prepend">
-                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
-                                        {
-                                            // Si es "educación para adultos" se cambia a modalidad.  Para lo demás es "año"
-                                            this.state.nivel === "Jóvenes y Adultos" &&
-                                            (
-                                                <span> Modalidad </span>
-                                            )
-                                        }
-                                        {
-                                            // Si es preescolar cambia año por contenido
-                                            this.state.nivel === "Preescolar" &&
-                                            (
-                                                <span> Contenido </span>
-                                            )
+                        {
+                            this.state.nivel !== "Unidocentes" &&
+                            (
+                                <div className="col-sm-3  ">
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
+                                                {
+                                                    // Si es "educación para adultos" se cambia a modalidad.  Para lo demás es "año"
+                                                    this.state.nivel === "Jóvenes y Adultos" &&
+                                                    (
+                                                        <span> Modalidad </span>
+                                                    )
+                                                }
+                                                {
+                                                    // Si es preescolar cambia año por contenido
+                                                    this.state.nivel === "Preescolar" &&
+                                                    (
+                                                        <span> Contenido </span>
+                                                    )
 
-                                        }
-                                        {
-                                            // Si es unidocentes cambia año por Correlacionado
-                                            /*
-                                            this.state.nivel === "Unidocentes" &&
-                                            (
-                                                <span> Correlacionado </span>
-                                            )
-                                            */
-                                        }
-                                        {
-                                            //año para todos los demás
-                                            (this.state.nivel === "Primaria" || this.state.nivel === "Secundaria" || this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria" || this.state.nivel === "Pedagogía Hospitalaria") &&
-                                            (
-                                                <span> Año </span>
-                                            )
+                                                }
+                                                {
+                                                    // Si es unidocentes cambia año por Correlacionado
+                                                    /*
+                                                    this.state.nivel === "Unidocentes" &&
+                                                    (
+                                                        <span> Correlacionado </span>
+                                                    )
+                                                    */
+                                                }
+                                                {
+                                                    //año para todos los demás
+                                                    (this.state.nivel === "Primaria" || this.state.nivel === "Secundaria" || this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria" || this.state.nivel === "Pedagogía Hospitalaria") &&
+                                                    (
+                                                        <span> Año </span>
+                                                    )
 
-                                        }
-                                    </label>
+                                                }
+                                            </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
+                                            {
+                                                //Se deshabilita esta condición después de los requereimeitnos Reunión 17-12-19
+                                                // this.state.nivel !== "Preescolar" &&
+                                                (
+                                                    <option defaultValue value="" > Seleccione:</option>
+                                                )
+                                            }
+
+                                            {
+                                                this.state.nivel === "Preescolar" &&
+                                                categoriasPreescolar.map((item, i) => (
+                                                    <option key={"contenido" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+
+
+                                            {
+                                                this.state.nivel === "Primaria" &&
+                                                listasPlan["Años Primaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                this.state.nivel === "Secundaria" &&
+                                                listasPlan["Años Secundaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+
+                                            }
+
+                                            {
+                                                this.state.nivel === "Jóvenes y Adultos" &&
+                                                listasPlan["Jóvenes y Adultos"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+
+                                            }
+                                            {
+                                                this.state.nivel === "Interculturalidad Primaria" &&
+                                                listasPlan["Años Primaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                this.state.nivel === "Interculturalidad Secundaria" &&
+                                                listasPlan["Años Secundaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                /*
+                                                Se elimina el segundo select de acuerdo a cambios 5-2020
+                                                this.state.nivel === "Unidocentes" &&
+                                                listasPlan["Correlacionado Unidocentes"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                                */
+                                            }
+                                            {
+                                                this.state.nivel === "Pedagogía Hospitalaria" &&
+                                                listasPlan["Años Primaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                        </select>
+                                    </div>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
-                                    {
-                                        //Se deshabilita esta condición después de los requereimeitnos Reunión 17-12-19
-                                        // this.state.nivel !== "Preescolar" &&
-                                        (
-                                            <option defaultValue value="" > Seleccione:</option>
-                                        )
-                                    }
-
-                                    {
-                                        this.state.nivel === "Preescolar" &&
-                                        categoriasPreescolar.map((item, i) => (
-                                            <option key={"contenido" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-
-
-                                    {
-                                        this.state.nivel === "Primaria" &&
-                                        listasPlan["Años Primaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.state.nivel === "Secundaria" &&
-                                        listasPlan["Años Secundaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-
-                                    }
-
-                                    {
-                                        this.state.nivel === "Jóvenes y Adultos" &&
-                                        listasPlan["Jóvenes y Adultos"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-
-                                    }
-                                    {
-                                        this.state.nivel === "Interculturalidad Primaria" &&
-                                        listasPlan["Años Primaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.state.nivel === "Interculturalidad Secundaria" &&
-                                        listasPlan["Años Secundaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        /*
-                                        Se elimina el segundo select de acuerdo a cambios 5-2020
-                                        this.state.nivel === "Unidocentes" &&
-                                        listasPlan["Correlacionado Unidocentes"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                        */
-                                    }
-                                    {
-                                        this.state.nivel === "Pedagogía Hospitalaria" &&
-                                        listasPlan["Años Primaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                </select>
-                            </div>
-                        </div>
-                           )
-                       }
+                            )
+                        }
                         {/*******Columna 3  ASIGNATURA (MATERIA) *********/}
                         <div className="col-sm-3">
                             {
