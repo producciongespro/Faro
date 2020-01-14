@@ -1644,7 +1644,10 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                         </div>
                         {/*******Columna 2******** AÑO*/}
-                        <div className="col-sm-3  ">
+                       {
+                           this.state.nivel !== "Unidocentes" &&
+                           (
+                            <div className="col-sm-3  ">
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
@@ -1665,10 +1668,12 @@ class BuscadorPlaneamiento extends Component {
                                         }
                                         {
                                             // Si es unidocentes cambia año por Correlacionado
+                                            /*
                                             this.state.nivel === "Unidocentes" &&
                                             (
                                                 <span> Correlacionado </span>
                                             )
+                                            */
                                         }
                                         {
                                             //año para todos los demás
@@ -1731,10 +1736,13 @@ class BuscadorPlaneamiento extends Component {
                                         ))
                                     }
                                     {
+                                        /*
+                                        Se elimina el segundo select de acuerdo a cambios 5-2020
                                         this.state.nivel === "Unidocentes" &&
                                         listasPlan["Correlacionado Unidocentes"].map((item, i) => (
                                             <option key={"anno" + i} value={item} >  {item}  </option>
                                         ))
+                                        */
                                     }
                                     {
                                         this.state.nivel === "Pedagogía Hospitalaria" &&
@@ -1745,6 +1753,8 @@ class BuscadorPlaneamiento extends Component {
                                 </select>
                             </div>
                         </div>
+                           )
+                       }
                         {/*******Columna 3  ASIGNATURA (MATERIA) *********/}
                         <div className="col-sm-3">
                             {
@@ -1912,7 +1922,7 @@ class BuscadorPlaneamiento extends Component {
 
 
 
-                        {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) - mes en Unidocentes */}
+                        {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) */}
                         <div className="col-sm-3">
                             {//CASO 1:Para las materias con distribución mensual
                                 (this.state.distribucionPlan === "Mensual" && this.state.nivel !== "Preescolar") &&
@@ -2111,6 +2121,7 @@ class BuscadorPlaneamiento extends Component {
                             {
 
                                 // Caso 5 Meses de unidocentes para materias básicas
+                                /*
                                 (this.state.nivel === "Unidocentes") &&
                                 (
                                     (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
@@ -2132,9 +2143,11 @@ class BuscadorPlaneamiento extends Component {
                                         </div>
                                     )
                                 )
+                                */
                             }
                             {
                                 // Caso 6 Meses de unidocentes para materias complementarias
+                                /*
                                 (this.state.nivel === "Unidocentes") &&
                                 (
                                     (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar") &&
@@ -2156,6 +2169,7 @@ class BuscadorPlaneamiento extends Component {
                                         </div>
                                     )
                                 )
+                                */
                             }
                         </div>
                     </div>
