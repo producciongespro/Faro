@@ -204,19 +204,13 @@ class Modal extends Component {
 
       case "refUtiles":
         this.modalAncho = this.modalAncho + " modal-lg";
-        // this.classModalBody = this.classModalBody + " modal-alto";
         this.classModalBody = this.classModalBody +" borde-modal borde-bottom-celeste";
         tmpContent = (<React.Fragment>
           <div>
             <img className="img-fluid modal-img-titulo" src={img + "btn_referencias.png"} alt="fondo indicaciones" />
           </div>
 
-          {/* <div className="texto-indicaciones">
-            <div className="container"> */}
               <h2 className="text-center">Útiles para la docencia</h2>
-              {/* <br />
-
-              <div className="col-12"> */}
                 <p>
                   <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2017.pdf" target="_blank" rel="noopener noreferrer"> <strong> Lectura 2017</strong> </a>  y
                         <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2018.pdf" target="_blank" rel="noopener noreferrer"><strong> Lectura 2018: </strong>  </a>
@@ -231,9 +225,6 @@ class Modal extends Component {
                 <p>
                   <a href="https://multimedia.uned.ac.cr/pem/aprendizaje_moviles/pag/conceptos.html" target="_blank" rel="noopener noreferrer"><strong>Aprendizajes Móviles:</strong> </a> Este recurso publicado por la UNED de Costa Rica presenta las principales características de los dispositivos móviles, por un lado, la ubicuidad, en la que se aprende desde cualquier momento y lugar, por otro lado, la adaptabilidad o flexibilidad de estos dispositivos gracias a la conexión e ideas de cómo aprovecharlas en el área educativa.
                       </p>
-              {/* </div>
-            </div>
-          </div> */}
         </React.Fragment>
         )
         break;
