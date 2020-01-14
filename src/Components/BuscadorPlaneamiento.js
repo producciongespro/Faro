@@ -447,7 +447,7 @@ class BuscadorPlaneamiento extends Component {
         return tmpArray;
     }
 
-    filtrarUnidocente = (nivel, correlacionado, asignatura, mes, periodo) => {
+    filtrarUnidocente_VIEJO = (nivel, correlacionado, asignatura, mes, periodo) => {
         console.log("correlacionado", correlacionado);
         let array;
         let tmpArray = [];
@@ -492,6 +492,20 @@ class BuscadorPlaneamiento extends Component {
 
         return tmpArray;
     }
+
+    filtrarUnidocente = (nivel, asignatura) => {        
+        let array;
+        let tmpArray = [];
+        //Carga del array de unidocentes:
+        array = dataUnidocente;
+        for (let index = 0; index < array.length; index++) {            
+            if (array[index].nivel === nivel && array[index].asignatura === asignatura ) {
+                tmpArray.push(array[index]);
+            }
+        }
+        return tmpArray;
+    }
+
 
     filtrarPedagogiaHospitalaria = (nivel, anno, materia) => {
         //console.log("modalidad", modalidad);
@@ -619,7 +633,7 @@ class BuscadorPlaneamiento extends Component {
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
-                this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.correlacionado, this.state.asignatura, this.sate.mes, this.periodo);
+                this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.asignatura);
                 this.tarjetasUnidocente(this.arrayResultado);
                 break;
             case "Jóvenes y Adultos":
