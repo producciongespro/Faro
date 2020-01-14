@@ -98,18 +98,18 @@ class BuscadorPlaneamiento extends Component {
             //Distribución de plan para las materias: mensual, trimestral, anual
             distribucionPlan: "",
              //Mes se usa en caso de español, materias con plan mensual o unidocentes
-            mes : ""
+            mes : "",
+             //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
+            tipoPlan : ""
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
                 educaicón para adultos.  Esta propiedad debe camibar materia
         */
        
-        //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
-        this.tipoPlan = "";
+       
         this.etiquetaPlan = "";
         this.poblacion = "";
-
         this.apoyos = "";
         this.mensaje = "";
         //Datos de json para preescolar        
@@ -278,12 +278,13 @@ class BuscadorPlaneamiento extends Component {
 
     handlerObtenerTipoPlan = (e) => {
         //En el caso de idiomas
-        this.tipoPlan = e.target.value;
+        const tipoPlan = e.target.value;
+        this.setState({ tipoPlan: tipoPlan });
         //console.log("tipoPlan",  this.tipoPlan);        
         // * * * * * Obtiene el texto de la opcion seleccionada del select Nota: Esto es SOLO BUENO!!!!!
         //this.etiquetaPlan = e.target.options[e.target.selectedIndex].text;
         // La instruccion que obtiene la etiqueta del option en lugar del value no fucniona en firefox
-        this.etiquetaPlan = this.tipoPlan;
+        this.etiquetaPlan = tipoPlan;
         console.log("Tipo de plan seleccionado:", this.etiquetaPlan);
     }
 
@@ -579,11 +580,11 @@ class BuscadorPlaneamiento extends Component {
         console.log("Contenido", this.state.contenidoEspanol);
         console.log("Año", this.state.anno);
         console.log("Modalidad", this.state.modalidad);
-        console.log("Tipo de Plan", this.tipoPlan);
+        console.log("Tipo de Plan", this.state.tipoPlan);
 
         switch (this.state.nivel) {
             case "Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.tipoPlan, this.state.contenidoEspanol);
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEspanol);
                 if (this.state.materia === "Español") {
                     this.tarjetasEspanolSecundaria(this.arrayResultado);
                 }
@@ -595,7 +596,7 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
             case "Primaria":                
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.tipoPlan, this.state.contenidoEspanol);
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEspanol);
                 console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                
 
                 if (this.state.materia === "Educación para el Hogar") {
@@ -614,7 +615,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
             case "Interculturalidad Primaria":
             case "Interculturalidad Secundaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.tipoPlan, this.state.contenido);
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenido);
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
@@ -774,7 +775,7 @@ class BuscadorPlaneamiento extends Component {
                                 }
                                 {
                                     //Ejemplos en secudnaria de inglés
-                                    (this.state.nivel === "Secundaria" && this.state.materia === "Inglés" && this.tipoPlan === "Inglés como Lengua Extranjera") &&
+                                    (this.state.nivel === "Secundaria" && this.state.materia === "Inglés" && this.state.tipoPlan === "Inglés como Lengua Extranjera") &&
                                     (
                                         <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].ejemplo} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-word"></i> Ejemplo
@@ -1591,8 +1592,8 @@ class BuscadorPlaneamiento extends Component {
                     <div className="col-12  text-right alert">
 
                     <span>
-                        Contenido: {
-                            this.state.contenidoEspanol
+                        Tipo plan: {
+                            this.state.tipoPlan
                         }
                     </span>
 
@@ -1969,7 +1970,7 @@ class BuscadorPlaneamiento extends Component {
                                                 Plan de estudios
                                         </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selPlan" onClick={this.handlerObtenerTipoPlan}  >
+                                        <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
                                             <option defaultValue value="seleccione" >Seleccione:</option>
                                             { //Frances primaria
                                                 (this.state.materia === "Francés" && this.state.nivel === "Primaria") &&
