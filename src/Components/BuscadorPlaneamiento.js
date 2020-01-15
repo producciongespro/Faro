@@ -52,7 +52,7 @@ import assets from '../data/config/config.json';
 const img = assets.img.apoyosPlan;
 const imgGenerales = assets.img.general;
 const serv = assets.servidor;
-var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
+
 
 //console.log("distribucionPrimaria", distribucionPrimaria );
 //console.log("distribucionSecundaria", distribucionSecundaria);
@@ -97,17 +97,17 @@ class BuscadorPlaneamiento extends Component {
             desempeno: "",
             //Distribución de plan para las materias: mensual, trimestral, anual
             distribucionPlan: "",
-             //Mes se usa en caso de español, materias con plan mensual o unidocentes
-            mes : "",
-             //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
-            tipoPlan : ""
+            //Mes se usa en caso de español, materias con plan mensual o unidocentes
+            mes: "",
+            //Tipo plan se utiliza en caso de lengua extranjera. Ej estados: biblingue, lengua extranejra
+            tipoPlan: ""
         };
         /*
                 La propiedad anno se pasa a estado ya que se convierte en modalidad en caso de 
                 educaicón para adultos.  Esta propiedad debe camibar materia
         */
-       
-       
+
+
         this.etiquetaPlan = "";
         this.poblacion = "";
         this.apoyos = "";
@@ -118,7 +118,7 @@ class BuscadorPlaneamiento extends Component {
         this.arrayResultado = null;
         //Para las materias que presentan plan por trimestre:
         this.periodo = "";
-
+        this.plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 
 
         //Clase CSS
@@ -132,7 +132,7 @@ class BuscadorPlaneamiento extends Component {
         //Limpia los estados para las siguientes búsquedas
         this.setState({ materia: "" });
         this.setState({ anno: "" });
-        this.setState({ mes: "" });        
+        this.setState({ mes: "" });
     }
 
     handlerObtenerAnno = (e) => {
@@ -144,11 +144,11 @@ class BuscadorPlaneamiento extends Component {
                 //Por cargar solamente dos select el btn buscar se activa en el segundo select    
                 this.activarBotonBuscar();
                 this.setState({ indiceContenido: e.target.selectedIndex });
-                
+
                 this.setState({ contenidoEsp: e.target.value }, () => {
                     console.log("Contenido seleccionado:", this.state.contenidoEsp);
                 });
-                
+
                 break;
             case "Primaria":
             case "Secundaria":
@@ -447,7 +447,7 @@ class BuscadorPlaneamiento extends Component {
         return tmpArray;
     }
 
-    filtrarUnidocente = (nivel, correlacionado, asignatura, mes, periodo) => {
+    filtrarUnidocente_VIEJO = (nivel, correlacionado, asignatura, mes, periodo) => {
         console.log("correlacionado", correlacionado);
         let array;
         let tmpArray = [];
@@ -492,6 +492,20 @@ class BuscadorPlaneamiento extends Component {
 
         return tmpArray;
     }
+
+    filtrarUnidocente = (nivel, asignatura) => {
+        let array;
+        let tmpArray = [];
+        //Carga del array de unidocentes:
+        array = dataUnidocente;
+        for (let index = 0; index < array.length; index++) {
+            if (array[index].nivel === nivel && array[index].asignatura === asignatura) {
+                tmpArray.push(array[index]);
+            }
+        }
+        return tmpArray;
+    }
+
 
     filtrarPedagogiaHospitalaria = (nivel, anno, materia) => {
         //console.log("modalidad", modalidad);
@@ -595,7 +609,7 @@ class BuscadorPlaneamiento extends Component {
                     this.tarjetasBasico(this.arrayResultado);
                 }
                 break;
-            case "Primaria":                
+            case "Primaria":
                 this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
                 //console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                
 
@@ -619,7 +633,7 @@ class BuscadorPlaneamiento extends Component {
                 this.tarjetasBasico(this.arrayResultado);
                 break;
             case "Unidocentes":
-                this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.correlacionado, this.state.asignatura, this.sate.mes, this.periodo);
+                this.arrayResultado = this.filtrarUnidocente(this.state.nivel, this.state.asignatura);
                 this.tarjetasUnidocente(this.arrayResultado);
                 break;
             case "Jóvenes y Adultos":
@@ -655,13 +669,13 @@ class BuscadorPlaneamiento extends Component {
                     {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <div className="card-header">
-                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                            <span className="mx-2 badge etiquetas badge-secondary px-3 py-2 ">
                                 Nivel:  {array[index].nivel}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 badge etiquetas badge-secondary  px-3 py-2 ">
                                 Año: {array[index].anno}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 badge etiquetas badge-secondary  px-3 py-2 ">
                                 Asignatura: {array[index].materia}
                             </span>
 
@@ -669,7 +683,7 @@ class BuscadorPlaneamiento extends Component {
                                 //Etiqueta tipo de Distribucción mensual:
                                 this.state.distribucionPlan === "Mensual" &&
                                 (
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    <span className="mx-2 badge etiquetas badge-secondary  px-3 py-2 ">
                                         Mes: {array[index].mes}
                                     </span>
                                 )
@@ -679,7 +693,7 @@ class BuscadorPlaneamiento extends Component {
                                 //Etiqueta tipo de Distribucción trimestral:
                                 this.state.distribucionPlan === "Trimestral" &&
                                 (
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    <span className="mx-2 badge etiquetas badge-secondary  px-3 py-2 ">
                                         {array[index].periodo}  Periodo
                                     </span>
                                 )
@@ -688,7 +702,7 @@ class BuscadorPlaneamiento extends Component {
                                 //Etiqueta tipo de Distribucción por contenido:
                                 this.state.distribucionPlan === "Contenido" &&
                                 (
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    <span className="mx-2 badge etiquetas badge-secondary  px-3 py-2 ">
                                         Contenido: {array[index].contenido}
                                     </span>
                                 )
@@ -698,7 +712,7 @@ class BuscadorPlaneamiento extends Component {
                                 //Plan de estudio en caso de frances e inglés
                                 (this.state.materia === "Francés" || this.state.materia === "Inglés") &&
                                 (
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    <span className="mx-2 badge etiquetas badge-secondary  px-3 py-2 ">
                                         Plan: {this.etiquetaPlan}
                                     </span>
                                 )
@@ -707,7 +721,7 @@ class BuscadorPlaneamiento extends Component {
                                 //Plan de estudio en caso de italiano en secundaria
                                 (this.state.materia === "Italiano" && this.state.nivel === "Secundaria") &&
                                 (
-                                    <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                    <span className="mx-2 badge etiquetas badge-secondary  px-3 py-2 ">
                                         Plan: {this.etiquetaPlan}
                                     </span>
                                 )
@@ -724,12 +738,12 @@ class BuscadorPlaneamiento extends Component {
                                     //***************Comprobación de Lineamiento nulo
                                     array[index].lineamiento === "nulo" ?
                                         (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                            <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                 <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
                                         ) :
                                         (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                         )
@@ -808,16 +822,16 @@ class BuscadorPlaneamiento extends Component {
                     {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <div className="card-header">
-                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
                                 Nivel:  {array[index].nivel}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                 Año: {array[index].anno}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                 Asignatura: {array[index].materia}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                 Plan: {this.etiquetaPlan}
                             </span>
                         </div>
@@ -827,16 +841,16 @@ class BuscadorPlaneamiento extends Component {
                             // Renderizado para francés en primaria                           
                             (
                                 <div className="card-body mr-2">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Lineamiento
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planCiencias} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].planCiencias} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plan de Ciencias
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planMate} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].planMate} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plan de Matemáticas
                                         </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].planFrances} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].planFrances} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Plan de Francés
                                         </a>
                                 </div>
@@ -866,13 +880,13 @@ class BuscadorPlaneamiento extends Component {
                     {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <div className="card-header">
-                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
                                 Nivel:  {array[index].nivel}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                 Año: {array[index].anno}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                 Asignatura: {array[index].materia}
                             </span>
 
@@ -883,19 +897,19 @@ class BuscadorPlaneamiento extends Component {
                         (
                             // Renderizado cuerpo de tarjetas educación para el hogar primaria
                             <div className="card-body mr-2">
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
                                             </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje1} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje1} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Eje temático 1
                                             </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje2} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje2} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Eje temático 2
                                             </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje3} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje3} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Eje temático 3
                                             </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje4} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje4} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Eje temático 4
                                             </a>
                             </div>
@@ -923,16 +937,16 @@ class BuscadorPlaneamiento extends Component {
                     {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <div className="card-header">
-                            <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
                                 Nivel:  {array[index].nivel}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                 Año: {array[index].anno}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                 Asignatura: {array[index].materia}
                             </span>
-                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                 Mes: {array[index].mes}
                             </span>
 
@@ -943,36 +957,36 @@ class BuscadorPlaneamiento extends Component {
                         (
                             <div className="card-body mr-2">
 
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
                                         </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Plantilla
                                             </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientosViejo} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientosViejo} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos viejos
                                         </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lectura
                                         </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Monografía
                                         </a>
 
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Trasnversal
                                         </a>
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Mensual
                                         </a>
                                 <hr />
-                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Orientaciones
                                         </a>
                                 {
                                     (this.state.anno !== "Undécimo") &&
                                     (
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-pdf"></i> Novela
                                         </a>
                                     )
@@ -980,8 +994,8 @@ class BuscadorPlaneamiento extends Component {
                                 {
                                     this.state.anno === "Décimo" &&
                                     (
-                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Divisón
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> División
                                                 </a>
                                     )
                                 }
@@ -991,16 +1005,16 @@ class BuscadorPlaneamiento extends Component {
                                     this.state.anno === "Undécimo" &&
                                     (
                                         <React.Fragment>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Criterios 11 y 12
                                         </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Divisón
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> División
                                         </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Orientaciones Plan Nuevo
                                         </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Orientaciones Plan Viejo
                                         </a>
                                         </React.Fragment>
@@ -1010,6 +1024,198 @@ class BuscadorPlaneamiento extends Component {
                             </div>
 
                         )
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+    tarjetasUnidocente_VIEJO = (array) => {
+        // Primaria, secudnaria e intercultural
+        //console.log("array recibido:", array);
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <React.Fragment>
+                            {
+                                //Encabezado Materias báscias:
+                                (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
+                                (
+                                    <div className="card-header">
+                                        <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
+                                            Nivel:  {array[index].nivel}
+                                        </span>
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                            Correlacionado: {array[index].correlacionado}
+                                        </span>
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                            Asignatura: {array[index].asignatura}
+                                        </span>
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                            Mes: {array[index].mes}
+                                        </span>
+                                    </div>
+                                )
+                            }
+                            {
+                                //encabezado materias complementarias:
+                                (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar") &&
+                                (
+                                    <div className="card-header">
+                                        <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
+                                            Nivel:  {array[index].nivel}
+                                        </span>
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                            Correlacionado: {array[index].correlacionado}
+                                        </span>
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                            Asignatura: {array[index].asignatura}
+                                        </span>
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                            Periodo: {array[index].periodo}
+                                        </span>
+                                    </div>
+                                )
+                            }
+                            {
+                                //Encabezados inglés
+                                (this.state.asignatura === "Inglés") &&
+                                (
+                                    <div className="card-header">
+                                        <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
+                                            Nivel:  {array[index].nivel}
+                                        </span>
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                            Correlacionado: {array[index].correlacionado}
+                                        </span>
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                            Asignatura: {array[index].asignatura}
+                                        </span>
+                                    </div>
+                                )
+                            }
+
+                            {
+                                //Cuerpo de tarjetas depende de la asigntura escogida:
+                                //1 - En el caso de materias básicas:
+                                (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
+                                (
+                                    <div className="card-body mr-2">
+                                        <div className="row">
+                                            {
+                                                //***************Comprobación de Lineamiento nulo
+                                                array[index].lineamiento === "nulo" ?
+                                                    (
+                                                        <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                            <i className="fas fa-ban"></i> Lineamiento no disponible
+                                          </span>
+                                                    ) :
+                                                    (
+                                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                            <i className="fas fa-file-pdf"></i> Lineamiento
+                                            </a>
+                                                    )
+                                                //********************** */
+                                            }
+                                            {
+                                                //************comprobación de plantilla nulo:
+                                                array[index].plantilla === "nulo" ?
+                                                    (
+                                                        <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                            <i className="fas fa-ban"></i> Plantilla no disponible
+                                          </span>
+                                                    ) :
+                                                    (
+                                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                            <i className="fas fa-file-word"></i> Plantilla
+                                            </a>
+                                                    )
+                                                //******************************/                                
+                                            }
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Círculo de la armonía
+                                    </a>
+                                        </div>
+                                        <div className="row">
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].circuloCreatividad} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Círculo de la creatividad
+                                    </a>
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].actividadCierre} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Actividad de cierre
+                                    </a>
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> No correlacionado
+                                    </a>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                            {
+                                //Cuerpo de tarjetas depende de la asigntura escogida:
+                                //2 - En el caso de materias complementarias:
+                                (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar") &&
+                                (
+                                    <div className="card-body mr-2">
+                                        <div className="row">
+                                            {
+                                                //***************Comprobación de Lineamiento nulo
+                                                array[index].lineamiento === "nulo" ?
+                                                    (
+                                                        <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                            <i className="fas fa-ban"></i> Lineamiento no disponible
+                                          </span>
+                                                    ) :
+                                                    (
+                                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                            <i className="fas fa-file-pdf"></i> Lineamiento
+                                            </a>
+                                                    )
+                                                //********************** */
+                                            }
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Correlacionado
+                                    </a>
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> No correlacionado
+                                    </a>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                            {
+                                //Cuerpo de tarjetas depende de la asigntura escogida:
+                                //3 - En el caso de inglés:
+                                (this.state.asignatura === "Inglés") &&
+                                (
+                                    <div className="card-body mr-2">
+                                        <div className="row">
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Lineamiento
+                                    </a>
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla
+                                    </a>
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].recurso} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Recursos
+                                    </a>
+                                        </div>
+                                    </div>
+                                )
+                            }
+
+
+                        </React.Fragment>
                     }
                 </div>
             );
@@ -1035,171 +1241,71 @@ class BuscadorPlaneamiento extends Component {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <React.Fragment>
                             {
-                                //Encabezado Materias báscias:
-                                (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
+                                //Encabezado Tarjeta:                                
                                 (
                                     <div className="card-header">
-                                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                        <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
                                             Nivel:  {array[index].nivel}
                                         </span>
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Correlacionado: {array[index].correlacionado}
-                                        </span>
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Asignatura: {array[index].asignatura}
-                                        </span>
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Mes: {array[index].mes}
-                                        </span>
-                                    </div>
-                                )
-                            }
-                            {
-                                //encabezado materias complementarias:
-                                (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar") &&
-                                (
-                                    <div className="card-header">
-                                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                            Nivel:  {array[index].nivel}
-                                        </span>
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Correlacionado: {array[index].correlacionado}
-                                        </span>
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Asignatura: {array[index].asignatura}
-                                        </span>
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Periodo: {array[index].periodo}
-                                        </span>
-                                    </div>
-                                )
-                            }
-                            {
-                                //Encabezados inglés
-                                (this.state.asignatura === "Inglés") &&
-                                (
-                                    <div className="card-header">
-                                        <span className="mx-2 badge badge-secondary px-3 py-2 ">
-                                            Nivel:  {array[index].nivel}
-                                        </span>
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                            Correlacionado: {array[index].correlacionado}
-                                        </span>
-                                        <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                             Asignatura: {array[index].asignatura}
                                         </span>
                                     </div>
                                 )
                             }
 
-                            {
-                                //Cuerpo de tarjetas depende de la asigntura escogida:
-                                //1 - En el caso de materias básicas:
-                                (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
-                                (
-                                    <div className="card-body mr-2">
-                                        <div className="row">
-                                            {
-                                                //***************Comprobación de Lineamiento nulo
-                                                array[index].lineamiento === "nulo" ?
-                                                    (
-                                                        <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                            <i className="fas fa-ban"></i> Lineamiento no disponible
-                                          </span>
-                                                    ) :
-                                                    (
-                                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                                            <i className="fas fa-file-pdf"></i> Lineamiento
-                                            </a>
-                                                    )
-                                                //********************** */
-                                            }
-                                            {
-                                                //************comprobación de plantilla nulo:
-                                                array[index].plantilla === "nulo" ?
-                                                    (
-                                                        <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                            <i className="fas fa-ban"></i> Plantilla no disponible
-                                          </span>
-                                                    ) :
-                                                    (
-                                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                                            <i className="fas fa-file-word"></i> Plantilla
-                                            </a>
-                                                    )
-                                                //******************************/                                
-                                            }
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Círculo de la armonía
-                                    </a>
-                                        </div>
-                                        <div className="row">
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].circuloCreatividad} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Círculo de la creatividad
-                                    </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].actividadCierre} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Actividad de cierre
-                                    </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> No correlacionado
-                                    </a>
-                                        </div>
-                                    </div>
-                                )
-                            }
-                            {
-                                //Cuerpo de tarjetas depende de la asigntura escogida:
-                                //2 - En el caso de materias complementarias:
-                                (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar") &&
-                                (
-                                    <div className="card-body mr-2">
-                                        <div className="row">
-                                            {
-                                                //***************Comprobación de Lineamiento nulo
-                                                array[index].lineamiento === "nulo" ?
-                                                    (
-                                                        <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                            <i className="fas fa-ban"></i> Lineamiento no disponible
-                                          </span>
-                                                    ) :
-                                                    (
-                                                        <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                                            <i className="fas fa-file-pdf"></i> Lineamiento
-                                            </a>
-                                                    )
-                                                //********************** */
-                                            }
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Correlacionado
-                                    </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> No correlacionado
-                                    </a>
-                                        </div>
-                                    </div>
-                                )
-                            }
-                            {
-                                //Cuerpo de tarjetas depende de la asigntura escogida:
-                                //3 - En el caso de inglés:
-                                (this.state.asignatura === "Inglés") &&
-                                (
-                                    <div className="card-body mr-2">
-                                        <div className="row">
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Lineamiento
-                                    </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Plantilla
-                                    </a>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].recurso} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Recursos
-                                    </a>
-                                        </div>
-                                    </div>
-                                )
-                            }
 
+                            {
+
+                                (
+                                    <div className="card-body mr-2">
+
+                                        {
+                                            //***************Comprobación de Lineamiento nulo
+                                            array[index].lineamiento === "nulo" ?
+                                                (
+                                                    <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                        <i className="fas fa-ban"></i> Lineamiento no disponible
+                                          </span>
+                                                ) :
+                                                (
+                                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                        <i className="fas fa-file-pdf"></i> Lineamiento
+                                            </a>
+                                                )
+                                            //********************** */
+                                        }
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Correlacionado
+                                             </a>
+
+                                        {
+                                            (   this.state.asignatura === "Ciencias" 
+                                            || this.state.asignatura === "Educación Física" 
+                                            || this.state.asignatura === "Español"
+                                            || this.state.asignatura === "Estudios Sociales"  
+                                             ) &&
+                                            (
+                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> No correlacionado
+                                                 </a>
+                                            )
+                                        }
+
+                                        {
+                                            this.state.asignatura !== "Artes Industriales" &&
+                                            (
+                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].alcance} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="fas fa-file-word"></i> Alcance
+                                            </a>
+                                            )
+                                        }
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].circulo} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Círculo
+                                            </a>
+                                    </div>
+                                )
+                            }
 
                         </React.Fragment>
                     }
@@ -1227,33 +1333,33 @@ class BuscadorPlaneamiento extends Component {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <React.Fragment>
                             <div className="card-header">
-                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
                                     Nivel:  {array[index].nivel}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                     Modalidad: {array[index].modalidad}
                                 </span>
                                 {
                                     (array[index].mes !== undefined) &&
-                                        (
-                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
-                                                Mes: {array[index].mes}
-                                            </span>
-                                        )
-                                }                             
+                                    (
+                                        <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                            Mes: {array[index].mes}
+                                        </span>
+                                    )
+                                }
                                 {
                                     (this.state.modalidad === "IPEC CINDEA Nivel I" || this.state.modalidad === "IPEC CINDEA Nivel II" || this.state.modalidad === "IPEC CINDEA Nivel III") ?
                                         (
-                                            <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                                 Módulo: {array[index].modulo}
                                             </span>
                                         ) :
                                         (
                                             <React.Fragment>
-                                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                                     Asignatura: {array[index].modulo}
                                                 </span>
-                                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                                     Año: {array[index].anno}
                                                 </span>
                                             </React.Fragment>
@@ -1268,12 +1374,12 @@ class BuscadorPlaneamiento extends Component {
                                         //***************Comprobación de Lineamiento nulo
                                         array[index].lineamiento === "nulo" ?
                                             (
-                                                <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                     <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
                                             ) :
                                             (
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                             )
@@ -1283,12 +1389,12 @@ class BuscadorPlaneamiento extends Component {
                                         //************comprobación de plantilla nulo:
                                         array[index].plantilla === "nulo" ?
                                             (
-                                                <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                     <i className="fas fa-ban"></i> Plantilla no disponible
                                           </span>
                                             ) :
                                             (
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Plantilla
                                             </a>
                                             )
@@ -1299,13 +1405,13 @@ class BuscadorPlaneamiento extends Component {
                                         //Renderizado de etiquetas para español (CONED y CAN)
                                         (this.state.modulo === "Español") &&
                                         <React.Fragment>
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Monografía
                                         </a>
                                             {
                                                 array[index].anno === "Undécimo" &&
                                                 (
-                                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
+                                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
                                                         <i className="fas fa-file-word"></i> Plantilla plan viejo
                                             </a>
                                                 )
@@ -1314,22 +1420,22 @@ class BuscadorPlaneamiento extends Component {
                                             {
                                                 array[index].anno !== "Undécimo" &&
                                                 (
-                                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
                                                         <i className="fas fa-file-word"></i> Novela
                                                 </a>
                                                 )
                                             }
 
 
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Lectura
                                             </a>
 
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Mensual
                                             </a>
 
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Transversal
                                             </a>
                                         </React.Fragment>
@@ -1340,7 +1446,7 @@ class BuscadorPlaneamiento extends Component {
                                         //Renderizado de plan viejo en módulo 60
                                         (this.state.modulo === "Módulo 60") &&
                                         (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla plan viejo
                                             </a>
                                         )
@@ -1352,7 +1458,7 @@ class BuscadorPlaneamiento extends Component {
                                         (this.state.modalidad === "Colegios Académicos Nocturnos (CAN)") &&
                                         this.state.modulo === "Ciencias" &&
                                         (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla sexualidad
                                                     </a>
                                         )
@@ -1386,13 +1492,13 @@ class BuscadorPlaneamiento extends Component {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <React.Fragment>
                             <div className="card-header">
-                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
                                     Nivel:  {array[index].nivel}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                     Año: {array[index].anno}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                     Asignatura: {array[index].materia}
                                 </span>
                             </div>
@@ -1400,17 +1506,17 @@ class BuscadorPlaneamiento extends Component {
                                 (array[index].potenciancion !== "nulo") ?
                                     (
                                         <div className="card-body mr-2">
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Potenciación
                                             </a>
                                         </div>
-                                    ):
+                                    ) :
                                     (
                                         <div className="card-body mr-2">
-                                           <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
-                                                    <i className="fas fa-ban"></i> Potenciación no disponible
+                                            <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                <i className="fas fa-ban"></i> Potenciación no disponible
                                           </span>
-                                    </div>  
+                                        </div>
                                     )
                             }
 
@@ -1443,45 +1549,45 @@ class BuscadorPlaneamiento extends Component {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <React.Fragment>
                             <div className="card-header">
-                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
                                     Nivel:  {array[index].nivel}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                     Año: {array[index].anno}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                     Asignatura: {array[index].materia}
                                 </span>
                             </div>
                             <div className="card-body mr-2">
                                 <div className="row">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Lineamiento
                                 </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont1} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont1} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 1
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont2} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont2} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 2
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont3} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont3} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 3
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont4} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont4} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 4
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont5} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont5} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 5
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont6} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont6} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 6
                                     </a>
                                 </div>
                                 <div className="row">
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont7} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont7} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 7
                                     </a>
-                                    <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont8} target="_blank" rel="noopener noreferrer" >
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont8} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Contenido 8
                                     </a>
                                 </div>
@@ -1512,10 +1618,10 @@ class BuscadorPlaneamiento extends Component {
                         //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
                         <React.Fragment>
                             <div className="card-header">
-                                <span className="mx-2 badge badge-secondary px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
                                     Nivel:  {array[index].nivel}
                                 </span>
-                                <span className="mx-2 badge badge-secondary  px-3 py-2 ">
+                                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                     Contenido: {array[index].contenido}
                                 </span>
                                 {
@@ -1536,12 +1642,12 @@ class BuscadorPlaneamiento extends Component {
                                         //***************Comprobación de Lineamiento nulo
                                         array[index].lineamiento === "nulo" ?
                                             (
-                                                <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                     <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
                                             ) :
                                             (
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                             )
@@ -1551,12 +1657,12 @@ class BuscadorPlaneamiento extends Component {
                                         //************comprobación de plantilla nulo:
                                         array[index].plantilla === "nulo" ?
                                             (
-                                                <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                     <i className="fas fa-ban"></i> Plantilla no disponible
                                           </span>
                                             ) :
                                             (
-                                                <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Plantilla
                                             </a>
                                             )
@@ -1586,19 +1692,12 @@ class BuscadorPlaneamiento extends Component {
         */
         return (
             <React.Fragment>
-              
+
 
                 <div className="row">
                     <div className="col-12  text-right alert">
-
-                    <span>
-                        Tipo plan: {
-                            this.state.tipoPlan
-                        }
-                    </span>
-
                         {
-                            plataformaUsada === "movil" ?
+                            this.plataformaUsada === "movil" ?
                                 (
                                     <img className="bannerRecursos" src={img + "encabezado_documentos_apoyoMovil.png"} alt="Encabezado de Documentos de apoyo" />)
                                 :
@@ -1607,7 +1706,7 @@ class BuscadorPlaneamiento extends Component {
                                 )
                         }
                         {
-                            plataformaUsada === "movil" ?
+                            this.plataformaUsada === "movil" ?
                                 (
                                     <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
                                 )
@@ -1623,7 +1722,10 @@ class BuscadorPlaneamiento extends Component {
                 <div className="row">
                     <div className="col-10 font-italic">
                         Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
-                            Por último, presiones el botón "buscar" para encontrar el resultado deseado.
+                            Por último, presione el botón "buscar" para encontrar el resultado deseado.
+                    </div>
+                    <div className="col-2" id="divBotonBuscar">
+
                     </div>
                 </div> <hr />
 
@@ -1644,107 +1746,117 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                         </div>
                         {/*******Columna 2******** AÑO*/}
-                        <div className="col-sm-3  ">
-                            <div className="input-group mb-3">
-                                <div className="input-group-prepend">
-                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
-                                        {
-                                            // Si es "educación para adultos" se cambia a modalidad.  Para lo demás es "año"
-                                            this.state.nivel === "Jóvenes y Adultos" &&
-                                            (
-                                                <span> Modalidad </span>
-                                            )
-                                        }
-                                        {
-                                            // Si es preescolar cambia año por contenido
-                                            this.state.nivel === "Preescolar" &&
-                                            (
-                                                <span> Contenido </span>
-                                            )
+                        {
+                            this.state.nivel !== "Unidocentes" &&
+                            (
+                                <div className="col-sm-3  ">
+                                    <div className="input-group mb-3">
+                                        <div className="input-group-prepend">
+                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">
+                                                {
+                                                    // Si es "educación para adultos" se cambia a modalidad.  Para lo demás es "año"
+                                                    this.state.nivel === "Jóvenes y Adultos" &&
+                                                    (
+                                                        <span> Modalidad </span>
+                                                    )
+                                                }
+                                                {
+                                                    // Si es preescolar cambia año por contenido
+                                                    this.state.nivel === "Preescolar" &&
+                                                    (
+                                                        <span> Contenido </span>
+                                                    )
 
-                                        }
-                                        {
-                                            // Si es unidocentes cambia año por Correlacionado
-                                            this.state.nivel === "Unidocentes" &&
-                                            (
-                                                <span> Correlacionado </span>
-                                            )
-                                        }
-                                        {
-                                            //año para todos los demás
-                                            (this.state.nivel === "Primaria" || this.state.nivel === "Secundaria" || this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria" || this.state.nivel === "Pedagogía Hospitalaria") &&
-                                            (
-                                                <span> Año </span>
-                                            )
+                                                }
+                                                {
+                                                    // Si es unidocentes cambia año por Correlacionado
+                                                    /*
+                                                    this.state.nivel === "Unidocentes" &&
+                                                    (
+                                                        <span> Correlacionado </span>
+                                                    )
+                                                    */
+                                                }
+                                                {
+                                                    //año para todos los demás
+                                                    (this.state.nivel === "Primaria" || this.state.nivel === "Secundaria" || this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria" || this.state.nivel === "Pedagogía Hospitalaria") &&
+                                                    (
+                                                        <span> Año </span>
+                                                    )
 
-                                        }
-                                    </label>
+                                                }
+                                            </label>
+                                        </div>
+                                        <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
+                                            {
+                                                //Se deshabilita esta condición después de los requereimeitnos Reunión 17-12-19
+                                                // this.state.nivel !== "Preescolar" &&
+                                                (
+                                                    <option defaultValue value="" > Seleccione:</option>
+                                                )
+                                            }
+
+                                            {
+                                                this.state.nivel === "Preescolar" &&
+                                                categoriasPreescolar.map((item, i) => (
+                                                    <option key={"contenido" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+
+
+                                            {
+                                                this.state.nivel === "Primaria" &&
+                                                listasPlan["Años Primaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                this.state.nivel === "Secundaria" &&
+                                                listasPlan["Años Secundaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+
+                                            }
+
+                                            {
+                                                this.state.nivel === "Jóvenes y Adultos" &&
+                                                listasPlan["Jóvenes y Adultos"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+
+                                            }
+                                            {
+                                                this.state.nivel === "Interculturalidad Primaria" &&
+                                                listasPlan["Años Primaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                this.state.nivel === "Interculturalidad Secundaria" &&
+                                                listasPlan["Años Secundaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                            {
+                                                /*
+                                                Se elimina el segundo select de acuerdo a cambios 5-2020
+                                                this.state.nivel === "Unidocentes" &&
+                                                listasPlan["Correlacionado Unidocentes"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                                */
+                                            }
+                                            {
+                                                this.state.nivel === "Pedagogía Hospitalaria" &&
+                                                listasPlan["Años Primaria"].map((item, i) => (
+                                                    <option key={"anno" + i} value={item} >  {item}  </option>
+                                                ))
+                                            }
+                                        </select>
+                                    </div>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
-                                    {
-                                        //Se deshabilita esta condición después de los requereimeitnos Reunión 17-12-19
-                                        // this.state.nivel !== "Preescolar" &&
-                                        (
-                                            <option defaultValue value="" > Seleccione:</option>
-                                        )
-                                    }
-
-                                    {
-                                        this.state.nivel === "Preescolar" &&
-                                        categoriasPreescolar.map((item, i) => (
-                                            <option key={"contenido" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-
-
-                                    {
-                                        this.state.nivel === "Primaria" &&
-                                        listasPlan["Años Primaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.state.nivel === "Secundaria" &&
-                                        listasPlan["Años Secundaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-
-                                    }
-
-                                    {
-                                        this.state.nivel === "Jóvenes y Adultos" &&
-                                        listasPlan["Jóvenes y Adultos"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-
-                                    }
-                                    {
-                                        this.state.nivel === "Interculturalidad Primaria" &&
-                                        listasPlan["Años Primaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.state.nivel === "Interculturalidad Secundaria" &&
-                                        listasPlan["Años Secundaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.state.nivel === "Unidocentes" &&
-                                        listasPlan["Correlacionado Unidocentes"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                    {
-                                        this.state.nivel === "Pedagogía Hospitalaria" &&
-                                        listasPlan["Años Primaria"].map((item, i) => (
-                                            <option key={"anno" + i} value={item} >  {item}  </option>
-                                        ))
-                                    }
-                                </select>
-                            </div>
-                        </div>
+                            )
+                        }
                         {/*******Columna 3  ASIGNATURA (MATERIA) *********/}
                         <div className="col-sm-3">
                             {
@@ -1912,7 +2024,7 @@ class BuscadorPlaneamiento extends Component {
 
 
 
-                        {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) - mes en Unidocentes */}
+                        {/* Columna 4 COMODIN: MES-PLAN DE ESTUDIOS- preescolar (acciones) */}
                         <div className="col-sm-3">
                             {//CASO 1:Para las materias con distribución mensual
                                 (this.state.distribucionPlan === "Mensual" && this.state.nivel !== "Preescolar") &&
@@ -2111,6 +2223,7 @@ class BuscadorPlaneamiento extends Component {
                             {
 
                                 // Caso 5 Meses de unidocentes para materias básicas
+                                /*
                                 (this.state.nivel === "Unidocentes") &&
                                 (
                                     (this.state.asignatura === "Ciencias" || this.state.asignatura === "Matemática" || this.state.asignatura === "Español" || this.state.asignatura === "Estudios Sociales") &&
@@ -2132,9 +2245,11 @@ class BuscadorPlaneamiento extends Component {
                                         </div>
                                     )
                                 )
+                                */
                             }
                             {
                                 // Caso 6 Meses de unidocentes para materias complementarias
+                                /*
                                 (this.state.nivel === "Unidocentes") &&
                                 (
                                     (this.state.asignatura === "Educación Física" || this.state.asignatura === "Artes Plásticas" || this.state.asignatura === "Educación para el Hogar") &&
@@ -2156,18 +2271,19 @@ class BuscadorPlaneamiento extends Component {
                                         </div>
                                     )
                                 )
+                                */
                             }
                         </div>
                     </div>
-                    <br />
-
-                    <div className="row">
-                        <div className="col-12">
-                            <h6>
-                                {this.mensaje}
-                            </h6>
-                        </div>
-                    </div>
+                   {
+                        this.plataformaUsada === "movil" &&
+                        (
+                           <React.Fragment>
+                                <br /> <br /><br />
+                           </React.Fragment>
+                        )
+                    }
+              
 
                     <div className="row">
                         <div className="col-12 text-right">
@@ -2180,7 +2296,13 @@ class BuscadorPlaneamiento extends Component {
                         </div>
                     </div>
 
-
+                    <div className="row">
+                        <div className="col-12">
+                            <h6>
+                                {this.mensaje}
+                            </h6>
+                        </div>
+                    </div>
                     <div className="row">
                         <div className="col-12">
                             {

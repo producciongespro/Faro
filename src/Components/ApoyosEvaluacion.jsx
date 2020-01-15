@@ -29,7 +29,7 @@ const ApoyosEvaluacion = (props) => {
                         <img alt="Apoyos para la evaluación" className="img-fluid titulos" src={img + "evaluacion_titulo.png" } />
                         </div>
                       </div>
-                      <img  onClick={reproducirSonido}  className="descripciones3 img-fluid" src={imgGeneral + "caja_descripcion.png" } alt="Descripción" />
+                      <img  id="imgFondoDescripcion" onClick={reproducirSonido}  className="descripciones3 img-fluid" src={imgGeneral + "caja_descripcion.png" } alt="Descripción" />
                      <div  onClick={ reproducirSonido  }  id="textoDescripcion" className="texto_descripciones text-justify pr-3">
                      <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
                      </div>
