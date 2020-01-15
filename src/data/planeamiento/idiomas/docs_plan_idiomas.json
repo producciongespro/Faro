@@ -323,14 +323,14 @@
         "anno" : "Primero",
         "materia" : "Italiano",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ital/1.ppd_italiano_lengua_extranjera_I_periodo_primero.docx"        
     },
     {
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Italiano",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ital/2.ppd_italiano_lengua_extranjera_I_periodo_segundo.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -338,7 +338,7 @@
         "materia" : "Italiano",
         "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ital/3.ppd_italiano_lengua_extranjera_I_periodo_tercero.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -346,7 +346,7 @@
         "materia" : "Italiano",
         "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/33_lin_italiano_primaria.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ital/4.ppd_italiano_lengua_extranjer_I_periodo_cuarto.docx"        
     },
     {
         "nivel" : "Primaria",
