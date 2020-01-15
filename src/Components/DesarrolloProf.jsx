@@ -29,7 +29,7 @@ const DesarrolloProf = (props) => {
 <div className="row">
       <div className="col-5 col-derecha">
             <img className="titulos img-fluid" src={img+"titulo_desarrollo.png"} alt="Documentos educativos oficiales" />
-               <img  onClick={reproducirSonido} className="descripciones4 img-fluid" src={imgGeneral+"caja_descripcion.png"  } alt="Descripción" />
+               <img  id="imgFondoDescripcion" onClick={reproducirSonido} className="descripciones4 img-fluid" src={imgGeneral+"caja_descripcion.png"  } alt="Descripción" />
               <div  onClick={ reproducirSonido  } id="textoDescripcion" className="texto_descripciones text-justify pr-3" >
               <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
