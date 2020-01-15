@@ -210,11 +210,14 @@ a {
   text-align: left;
 }
 
-#acercade {
+#acercadeMovil {
+  margin-top: 1rem;
+}
+
+.acercade{
   position: absolute;
   margin-top: 26%;
   margin-left: 3%;
-  
 }
 
 .img_apoy{
