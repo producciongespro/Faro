@@ -352,6 +352,37 @@
                 "nombre" : "Resolución de ejercicios",
                 "url" : "nulo"
             }
+        ],
+
+        "Matemática" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejemp_i_selec_contex_quim_sec.pdf"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejem_i_resp_corta_quimica_sec.pdf"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejem_i_resol_proble_quimi_sec.pdf"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
         ]
 
          
