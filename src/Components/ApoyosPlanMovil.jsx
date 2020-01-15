@@ -51,14 +51,13 @@ const ApoyosPlanMovil = (props) => {
 
 <br/>
 <div class="row ">
-    <div className="col-1">   
-    </div>
-    <div className="col-4 text-center">          
+   
+    <div className="col-5 text-center">          
         <div className="">
                 <img id="planDidactico"  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={img + "planeamiento_didactico.png" } alt="Planeamiento Didáctico"/>
         </div> 
     </div>
-    <div className="col-4 text-center">        
+    <div className="col-5 text-center">        
             <div className="">
                 <img id="correlacionado" onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada hvr-pop"   src={img + "planeamiento_correlacionado.png" } alt="Planeamiento Correlacionado"/>
             </div>
