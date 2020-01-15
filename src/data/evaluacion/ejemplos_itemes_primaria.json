@@ -2,81 +2,188 @@
     {
         "Ciencias" : [
                 {
-                    "nombre" : "Selección Simple",
-                    "url" : "https://www.mep.go.cr/educatico"
+                    "nombre" : "Selección de contexto",
+                    "url" : "nulo"
                 },
                 {
-                    "nombre" : "Selección de Contexto",
-                    "url" : "https://www.mep.go.cr/educatico"
+                    "nombre" : " Respuesta corta",
+                    "url" : "nulo"
                 },
                 {
-                    "nombre" : "Respuesta Corta",
-                    "url" : "https://www.mep.go.cr/educatico"
+                    "nombre" : "Respuesta restringida",
+                    "url" : "nulo"
                 },
                 {
-                    "nombre" : "Respuesta Restringida",
-                    "url" : "https://www.mep.go.cr/educatico"
+                    "nombre" : "Selección simple",
+                    "url" : "nulo"
+                },
+                {
+                    "nombre" : "Producción",
+                    "url" : "nulo"
+                },
+                {
+                    "nombre" : "Resolución de problemas",
+                    "url" : "nulo"
+                },
+                {
+                    "nombre" : "Resolución de ejercicios",
+                    "url" : "nulo"
                 }
         ],
 
         "Francés" : [
             {
-                "nombre" : "Selección Simple",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Respuesta Corta",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
             },
             {
                 "nombre" : "Producción",
-                "url" : "https://www.mep.go.cr/educatico"
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
             }
         ],
 
 
         "Italiano" : [
             {
-                "nombre" : "Selección Simple",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Respuesta Corta",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
             },
             {
                 "nombre" : "Producción",
-                "url" : "https://www.mep.go.cr/educatico"
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
             }
         ],
 
         "Inglés" : [
             {
-                "nombre" : "Selección de Contexto",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Respuesta Corta",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
             },
             {
                 "nombre" : "Producción",
-                "url" : "https://www.mep.go.cr/educatico"
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
             }
         ],
 
         "Matemática" : [
             {
-                "nombre" : "Selección de Contexto",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Resolución de Problemas",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Repuesta Corta",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
+        ],
+
+        "Español" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
             }
         ]
 
