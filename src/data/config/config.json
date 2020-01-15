@@ -1,23 +1,22 @@
 {
     "version" : "1.1.2",
     "nombre" : "Caja de Herramientas",
-    "servidor" : "https://recursos.mep.go.cr/",
+    "servidor" : "http://localhost/",
     "img" : {
-        "general" : "https://recursos.mep.go.cr/Faro/asset/img/9_generales/",
-        "portada" : "https://recursos.mep.go.cr/Faro/asset/img/1_portada/",
-        "home" : "https://recursos.mep.go.cr/Faro/asset/img/2_home/web/",
-        "homeM" : "https://recursos.mep.go.cr/Faro/asset/img/2_home/movil/",
-        "apoyosClimaAula" : "https://recursos.mep.go.cr/Faro/asset/img/3_apoyos_aula/",
-        "apoyosEvaluacion" : "https://recursos.mep.go.cr/Faro/asset/img/4_apoyos_eval/",
+        "general" : "http://localhost/Faro/asset/img/9_generales/",
+        "portada" : "http://localhost/Faro/asset/img/1_portada/",
+        "home" : "http://localhost/Faro/asset/img/2_home/web/",
+        "homeM" : "http://localhost/Faro/asset/img/2_home/movil/",
+        "apoyosClimaAula" : "http://localhost/Faro/asset/img/3_apoyos_aula/",
+        "apoyosEvaluacion" : "http://localhost/Faro/asset/img/4_apoyos_eval/",
         "recursosDidacticos" : "http://recursos.mep.go.cr/Faro/asset/img/5_recursos_did/",
-        "docsOficiales" : "https://recursos.mep.go.cr/Faro/asset/img/6__documen_educ/",
-        "desarrolloProfesional" : "https://recursos.mep.go.cr/Faro/asset/img/7_desarrollo_prof/",
-        "apoyosPlan" : "https://recursos.mep.go.cr/Faro/asset/img/8_apoyo_planea/"
+        "docsOficiales" : "http://localhost/Faro/asset/img/6__documen_educ/",
+        "desarrolloProfesional" : "http://localhost/Faro/asset/img/7_desarrollo_prof/",
+        "apoyosPlan" : "http://localhost/Faro/asset/img/8_apoyo_planea/"
     },
     "video" : {
         "ministra" : "https://www.youtube.com/embed/bbZntIVMFr4"
     },
-    "audio" : "https://recursos.mep.go.cr/Faro/asset/audios/",
-    "noDisponible" : "http://recursos.mep.go.cr/faro_referencias/10_no_disponible/no_disponible.html"
+    "audio" : "http://localhost/Faro/asset/audios/"
 }
 
