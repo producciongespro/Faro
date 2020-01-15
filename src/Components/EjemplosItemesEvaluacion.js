@@ -25,7 +25,7 @@ class EjemplosItemesEvaluacion extends Component {
     valor = "";
     //CArga su valor en tiempo de ejecución dependiendo del nivel seleccionado
     ejemplosItemesJson = "";
-    materiasPrimaria = ["Ciencias", "Francés", "Italiano", "Inglés", "Matemática"];
+    materiasPrimaria = ["Ciencias", "Francés", "Italiano", "Inglés", "Matemática" ];
     materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Química"]
 
     handlerCargarAsignatura = (e) => {
@@ -109,7 +109,7 @@ class EjemplosItemesEvaluacion extends Component {
                             </label>
                         
                             <select id="selNiv" className="custom-select buscadores-materias" onClick={this.handlerCargarAsignatura}>
-                                <option value="" defaultValue disabled > Seleccione un nivel </option>
+                                <option value="" defaultValue  > Seleccione un nivel </option>
                                 <option value="primaria"> Primaria </option>
                                 <option value="secundaria"> Secundaria </option>
                             </select>
