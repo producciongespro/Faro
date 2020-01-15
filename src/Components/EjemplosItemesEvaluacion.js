@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 
 import ejemplosItemesPrimaria from '../data/evaluacion/ejemplos_itemes_primaria.json';
-import ejemplosItemesSecundaria from '../data/evaluacion/ejemplos_itemes_secundaria.json';
+//import ejemplosItemesSecundaria from '../data/evaluacion/ejemplos_itemes_secundaria.json';
 import assets from '../data/config/config.json';
 
 
-console.log("ejemplosItemesPrimaria", ejemplosItemesPrimaria[0] );
+//console.log("ejemplosItemesPrimaria", ejemplosItemesPrimaria );
 const img = assets.img.apoyosEvaluacion;
 const imgGenerales = assets.img.general;
 var bannerEjemplos;
@@ -25,22 +25,36 @@ class EjemplosItemesEvaluacion extends Component {
     }   
    
     //CArga su valor en tiempo de ejecución dependiendo del nivel seleccionado
-    ejemplosItemesJson = "";
-    materiasPrimaria = ["Ciencias", "Francés", "Italiano", "Inglés", "Matemática" ];
+    ejemplosItemesJson = "";    
+    asignaturasPrimaria = [];
     materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Química"]
 
-    handlerCargarAsignatura = (e) => {
-       
+    componentDidMount () {     
+        this.cargarAsignaturaPrimaria();
+    }
+
+    cargarAsignaturaPrimaria () {
+        for (let index = 0; index < ejemplosItemesPrimaria.length; index++) {
+            this.asignaturasPrimaria.push( ejemplosItemesPrimaria[index].asignatura );            
+        }
+        console.log("asignaturasPrimaria:",this.asignaturasPrimaria);        
+    }
+
+
+
+    handlerCargarAsignatura = (e) => {       
         const nivel = e.target.value;
         switch (nivel) {
             case "primaria":
-                this.setState({ asignaturas: this.materiasPrimaria });
-                this.ejemplosItemesJson = ejemplosItemesPrimaria;
-                break;
-            case "secundaria":
+                this.setState({ asignaturas: this.asignaturasPrimaria });
+                this.ejemplosItemesJson = ejemplosItemesPrimaria;                
+            break;
+            /*
+                case "secundaria":
                 this.setState({ asignaturas: this.materiasSecundaria });
                 this.ejemplosItemesJson = ejemplosItemesSecundaria;
                 break;
+            */
 
             default:
                 console.log("Opcion fuera de rango");
@@ -69,16 +83,21 @@ class EjemplosItemesEvaluacion extends Component {
 
     handlerSeleccionarAsignatura = (e) => {
         this.setState({ asignaturaSeleccionada: e.target.value }, ()=>{
-            console.log("Valor asignatura seleccionada", this.state.asignaturaSeleccionada)            
+            console.log("Valor asignatura seleccionada", this.state.asignaturaSeleccionada);
+            for (let index = 0; index < this.ejemplosItemesJson.length; index++) {
+                if (this.ejemplosItemesJson[index].asignatura === this.state.asignaturaSeleccionada ) {
+                    console.log(this.ejemplosItemesJson[index].itemes);
+                    this.setState({ itemes:this.ejemplosItemesJson[index].itemes }); 
+                }              
+                
+              
+             
+                
+            }            
         });
     }
 
-    handlerCargarItemes = () => {
-        this.setState({
-            itemes: this.ejemplosItemesJson[0][ this.state.asignaturaSeleccionada ]
-        });
-    }
-
+    
 
     render() {
         this.elegirBanner();
@@ -136,12 +155,14 @@ class EjemplosItemesEvaluacion extends Component {
                     </div> </div>
                     <div className="col-sm-4">
                         {
+                            /*
                             (this.state.asignaturaSeleccionada !== "vacio") &&
                             (
                                 <button onClick={this.handlerCargarItemes} className="btn btn-secondary btn-lg">
                                 Buscar
                                 </button>
                             )
+                            */
                         }
                     </div>
 

@@ -1,68 +1,41 @@
 [
-    {
-        "Artes Industriales" : [
-            {
-                "nombre" : "Selección de contexto",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : " Respuesta corta",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejem_item_repuesta_corta_italiano_primaria.pdf"
-            },
-            {
-                "nombre" : "Respuesta restringida",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Selección simple",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejem_item_seleccion_simple_italiano_primaria.pdf"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejemplo_i_produccion_italiano.pri.pdf"
-            },
-            {
-                "nombre" : "Resolución de problemas",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de ejercicios",
-                "url" : "nulo"
-            }
-        ],
-        
-        "Ciencias" : [
-                {
-                    "nombre" : "Selección de contexto",
-                    "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_seleccion_contexto_ciencias.pdf"
-                },
-                {
-                    "nombre" : " Respuesta corta",
-                    "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_respuesta_corta_ciencias.pdf"
-                },
-                {
-                    "nombre" : "Respuesta restringida",
-                    "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemp_item_respuesta_restringida_ciencias_primaria.pdf"
-                },
-                {
-                    "nombre" : "Selección simple",
-                    "url" : "nulo"
-                },
-                {
-                    "nombre" : "Producción",
-                    "url" : "nulo"
-                },
-                {
-                    "nombre" : "Resolución de problemas",
-                    "url" : "nulo"
-                },
-                {
-                    "nombre" : "Resolución de ejercicios",
-                    "url" : "nulo"
-                }
-        ],
 
-        "Estudios Sociales" : [
+    {
+        "asignatura" : "Artes Industriales",
+        "itemes" : [
+                        {                
+                            "nombre" : "Selección de contexto",
+                            "url" : "nulo"
+                        },
+                        {
+                            "nombre" : " Respuesta corta",
+                            "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejem_item_repuesta_corta_italiano_primaria.pdf"
+                        },
+                        {
+                            "nombre" : "Respuesta restringida",
+                            "url" : "nulo"
+                        },
+                        {
+                            "nombre" : "Selección simple",
+                            "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejem_item_seleccion_simple_italiano_primaria.pdf"
+                        },
+                        {
+                            "nombre" : "Producción",
+                            "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejemplo_i_produccion_italiano.pri.pdf"
+                        },
+                        {
+                            "nombre" : "Resolución de problemas",
+                            "url" : "nulo"
+                        },
+                        {
+                            "nombre" : "Resolución de ejercicios",
+                            "url" : "nulo"
+                        }
+                ] 
+    },
+    {
+        "asignatura" : "Ciencias",
+        "itemes" : [
             {
                 "nombre" : "Selección de contexto",
                 "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_seleccion_contexto_ciencias.pdf"
@@ -91,177 +64,22 @@
                 "nombre" : "Resolución de ejercicios",
                 "url" : "nulo"
             }
-    ],
-
-
-    "Educación para el hogar" : [
-        {
-            "nombre" : "Selección de contexto",
-            "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_seleccion_contexto_ciencias.pdf"
-        },
-        {
-            "nombre" : " Respuesta corta",
-            "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_respuesta_corta_ciencias.pdf"
-        },
-        {
-            "nombre" : "Respuesta restringida",
-            "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemp_item_respuesta_restringida_ciencias_primaria.pdf"
-        },
-        {
-            "nombre" : "Selección simple",
-            "url" : "nulo"
-        },
-        {
-            "nombre" : "Producción",
-            "url" : "nulo"
-        },
-        {
-            "nombre" : "Resolución de problemas",
-            "url" : "nulo"
-        },
-        {
-            "nombre" : "Resolución de ejercicios",
-            "url" : "nulo"
-        }
-],
-
-        "Francés" : [
+        ]
+    },
+    {
+        "asignatura" : "Estudios Sociales",
+        "itemes" :[
             {
                 "nombre" : "Selección de contexto",
-                "url" : "nulo"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_seleccion_contexto_ciencias.pdf"
             },
             {
                 "nombre" : " Respuesta corta",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/fra/ejem_item_respuesta_corta_frances_primaria.pdf"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_respuesta_corta_ciencias.pdf"
             },
             {
                 "nombre" : "Respuesta restringida",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Selección simple",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/fra/ejem_item_seleccion_simple_frances_primaria.pdf"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/fra/ejemplo_i_produccion_frances_pri.pdf"
-            },
-            {
-                "nombre" : "Resolución de problemas",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de ejercicios",
-                "url" : "nulo"
-            }
-        ],
-
-
-        "Italiano" : [
-            {
-                "nombre" : "Selección de contexto",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : " Respuesta corta",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejem_item_repuesta_corta_italiano_primaria.pdf"
-            },
-            {
-                "nombre" : "Respuesta restringida",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Selección simple",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejem_item_seleccion_simple_italiano_primaria.pdf"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejemplo_i_produccion_italiano.pri.pdf"
-            },
-            {
-                "nombre" : "Resolución de problemas",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de ejercicios",
-                "url" : "nulo"
-            }
-        ],
-
-        "Inglés" : [
-            {
-                "nombre" : "Selección de contexto",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : " Respuesta corta",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Respuesta restringida",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Selección simple",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de problemas",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de ejercicios",
-                "url" : "nulo"
-            }
-        ],
-
-        "Matemática" : [
-            {
-                "nombre" : "Selección de contexto",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : " Respuesta corta",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/mat/ejemplo_i_respuesta_corta_mate_pri.pdf"
-            },
-            {
-                "nombre" : "Respuesta restringida",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Selección simple",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de problemas",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de ejercicios",
-                "url" : "nulo"
-            }
-        ],
-
-        "Español" : [
-            {
-                "nombre" : "Selección de contexto",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : " Respuesta corta",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Respuesta restringida",
-                "url" : "nulo"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemp_item_respuesta_restringida_ciencias_primaria.pdf"
             },
             {
                 "nombre" : "Selección simple",
@@ -280,9 +98,50 @@
                 "url" : "nulo"
             }
         ]
+    },
+    {
+        "asignatura":"Educación para el hogar",
+        "itemes":[
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_seleccion_contexto_ciencias.pdf"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_respuesta_corta_ciencias.pdf"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemp_item_respuesta_restringida_ciencias_primaria.pdf"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            } 
+        ]
+    }
+
+    
+         
+            
+   
+        
+       
 
 
  
 
-    }
+    
 ]
