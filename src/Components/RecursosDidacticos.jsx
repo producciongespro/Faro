@@ -26,8 +26,13 @@ const RecursosDidacticos = (props) => {
               </div>
               
               <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
-                  <img id="material_adicional" className="img-fluid btn hvr-wobble-bottom" src={img + "coleccion_gespro.png"} alt="Referenciar COLECCION GESPRO" />
+                  <img id="material_adicional" className="img-fluid btn hvr-wobble-bottom" src={img + "coleccion_gespro.png"} data-tar="Construccion"  onClick={props.changePage} alt="Referenciar COLECCION GESPRO" />
               </a>
+
+
+    
+
+
       </div>
                
       <div  className="col-8">
@@ -65,12 +70,13 @@ const RecursosDidacticos = (props) => {
         </div>
 
         <div  className="row">
+
           <div className="col-3 hover12 ladoDer">
           <figure>
           <img className="btn img-fluid jovenesAdultos" id="jovenesAdultos" src= {img+"jovenes_adultos.png"} data-tar="Construccion"  onClick={props.changePage}    alt="Jovenes y Adultos" />
           </figure>
-                  
           </div>
+
           <div className="col-3 hover12 centro">
           <figure>
           <img className="btn img-fluid feriaCientifica" id="feriaCientifica" src= {img+"feria_cientifica.png"} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Feria Científica" />
