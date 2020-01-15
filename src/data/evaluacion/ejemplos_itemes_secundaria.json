@@ -98,6 +98,37 @@
             }
         ],
 
+        "Educación Cívica" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
+        ],
+
         
 
         "Cívica" : [
@@ -130,6 +161,38 @@
                 "url" : "nulo"
             }
         ],
+
+
+        "Física" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/fra/ejemplo_i_resp_corta_fran_sec.pdf"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/fra/ejempl_i_produc_frances_sec.pdf"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
+        ], 
 
         "Francés" : [
             {
@@ -289,39 +352,10 @@
                 "nombre" : "Resolución de ejercicios",
                 "url" : "nulo"
             }
-        ],
+        ]
 
          
-        "Física" : [
-            {
-                "nombre" : "Selección de contexto",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/fis/ejem_i_sele_context_fisica_sec.pdf"
-            },
-            {
-                "nombre" : " Respuesta corta",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Respuesta restringida",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Selección simple",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de problemas",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/fis/ejem_item_resolucio_problema_fisic_sec.pdf"
-            },
-            {
-                "nombre" : "Resolución de ejercicios",
-                "url" : "nulo"
-            }
-        ]
+        
 
     }
 ]
