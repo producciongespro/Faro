@@ -63,7 +63,15 @@ const HomeMovil = (props) => {
                 <img className="btn img-fluid hvr-pop botonesNavegarMovil" id="indicaciones" src={ img + "btn_indicaciones.png" } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> 
                 <img className="btn img-fluid hvr-pop botonesNavegarMovil" id="home"  src={ img + "volver_portada.png" } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
                 <img className="img-fluid botones-portada hvr-pop" id="uso2" src={img + "btn_usocaja.png"} onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/> <br/>
-                <img className="img-fluid botones-portada hvr-pop" id="acercadeMovil" src={ img + "acercade2.png" } onClick = {props.showModal }  data-typecontent ="acercaDe" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> 
+            <div className="row">
+                <div className="col-3">
+                </div>
+                <div className="col-6">
+                    <img className="img-fluid botones-portada hvr-pop" id="acercadeMovil" src={ img + "acercade2.png" } onClick = {props.showModal }  data-typecontent ="acercaDe" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> 
+                </div>
+                <div className="col-3">
+                </div>
+            </div>
             </div>
         </div>
     );
