@@ -18,11 +18,12 @@ class EjemplosItemesEvaluacion extends Component {
         this.state = {
             asignaturas: null,
             asignatura: null,
-            itemes: null
+            itemes: null,
+            asignaturaSeleccionada : false            
         }
     }
     //Valor de la asignatura seleccionada para guiar la carga de los itemes 
-    valor = "";
+    valor = "-1";
     //CArga su valor en tiempo de ejecución dependiendo del nivel seleccionado
     ejemplosItemesJson = "";
     materiasPrimaria = ["Ciencias", "Francés", "Italiano", "Inglés", "Matemática" ];
@@ -48,7 +49,7 @@ class EjemplosItemesEvaluacion extends Component {
     }
 
     elegirBanner = () =>{
-        console.log("Plataforma es: "+plataformaUsada);
+        //console.log("Plataforma es:",plataformaUsada);
         
         switch (plataformaUsada) {
         case "escritorio": 
@@ -61,14 +62,20 @@ class EjemplosItemesEvaluacion extends Component {
                 bannerEjemplos = "encabezado_ejemplos.jpg";
             break;
         }
-        console.log("Banner: "+ bannerEjemplos);       
+       // console.log("Banner:",bannerEjemplos);       
         }
 
 
 
     handlerSeleccionarAsignatura = (e) => {
         this.valor = e.target.value;
-        //console.log("valor", this.valor);             
+        console.log("***Valor", this.valor);
+        if (parseInt(this.valor) !== -1) {
+            this.setState({ asignaturaSeleccionada: true });  
+        } else {
+            this.setState({ asignaturaSeleccionada: false });  
+        }
+                 
     }
 
     handlerCargarItemes = () => {
@@ -122,7 +129,7 @@ class EjemplosItemesEvaluacion extends Component {
                             </label>
                        
                             <select id="selAsig" className="custom-select buscadores-materias" onClick={this.handlerSeleccionarAsignatura} >
-                                <option value="" defaultValue disabled> Seleccione una asignatura </option>
+                                <option value= {-1} defaultValue > Seleccione una asignatura </option>
                                 {
                                     this.state.asignaturas != null && (
                                         this.state.asignaturas.map((item, i) => (
@@ -133,9 +140,14 @@ class EjemplosItemesEvaluacion extends Component {
                             </select>
                     </div> </div>
                     <div className="col-sm-4">
-                        <button onClick={this.handlerCargarItemes} className="btn btn-secondary btn-lg">
-                            Buscar
-                        </button>
+                        {
+                            this.state.asignaturaSeleccionada &&
+                            (
+                                <button onClick={this.handlerCargarItemes} className="btn btn-secondary btn-lg">
+                                Buscar
+                                </button>
+                            )
+                        }
                     </div>
 
                 </div>
