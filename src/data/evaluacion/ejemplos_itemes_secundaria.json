@@ -1,168 +1,325 @@
 [
     {
 
+
         "Biología" : [
             {
-                "nombre" : "Selección de Contexto",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/bio/ejemp_i_sel_context_biolo_sec.pdf"
             },
             {
-                "nombre" : "Resolución de Problemas",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
             },
             {
                 "nombre" : "Producción",
-                "url" : "https://www.mep.go.cr/educatico"
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/bio/ejemplo_resol_proble_biolo_sec.pdf"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/bio/item_de%20_resol_eje_biolo_sec.pdf"
             }
         ],
 
 
+
         "Ciencias" : [
-                {
-                    "nombre" : "Selección Simple",
-                    "url" : "https://www.mep.go.cr/educatico"
-                },
-                {
-                    "nombre" : "Selección de Contexto",
-                    "url" : "https://www.mep.go.cr/educatico"
-                },
-                {
-                    "nombre" : "Respuesta Corta",
-                    "url" : "https://www.mep.go.cr/educatico"
-                },
-                {
-                    "nombre" : "Respuesta Restringida",
-                    "url" : "https://www.mep.go.cr/educatico"
-                },
-                {
-                    "nombre" : "Resolución de Casos",
-                    "url" : "https://www.mep.go.cr/educatico"
-                },
-                {
-                    "nombre" : "Producción",
-                    "url" : "https://www.mep.go.cr/educatico"
-                }
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/cie/ejem_item_seleccion_contexto_ciencias_secundaria.pdf"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/cie/ejemplo_i_respuesta_cort_cienci_secund.pdf"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/cie/ejemplo_i_resp_restring_ciencia_secun.pdf"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/cie/ejem_i_resolucion_prob_ciencias_secundaria.pdf"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
+        ],
+
+
+        "Estudios Sociales" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
         ],
 
         
 
         "Cívica" : [
             {
-                "nombre" : "Selección de Contexto",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/civ/ejemplo_i_respuesta_corta_civi_sec.pdf"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
             },
             {
                 "nombre" : "Producción",
-                "url" : "https://www.mep.go.cr/educatico"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/civ/ejemplo_i_produccion_civica_sec.pdf"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
             }
         ],
-
-        "Español" : [
-            {
-                "nombre" : "Selección Simple",
-                "url" : "https://www.mep.go.cr/educatico"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "https://www.mep.go.cr/educatico"
-            }
-        ], 
-
-
-        "Estudios Sociales" : [
-            {
-                "nombre" : "Selección Simple",
-                "url" : "https://www.mep.go.cr/educatico"
-            },
-            {
-                "nombre" : "Respuesta Restringida",
-                "url" : "https://www.mep.go.cr/educatico"
-            },
-            {
-                "nombre" : "Resolución de Casos",
-                "url" : "https://www.mep.go.cr/educatico"
-            }
-        ], 
-
-        
-        "Física" : [
-            {
-                "nombre" : "Selección de Contexto",
-                "url" : "https://www.mep.go.cr/educatico"
-            },
-            {
-                "nombre" : "Respuesta Corta",
-                "url" : "https://www.mep.go.cr/educatico"
-            },
-            {
-                "nombre" : "Resolución de Problemas",
-                "url" : "https://www.mep.go.cr/educatico"
-            }
-        ], 
 
         "Francés" : [
             {
-                "nombre" : "Selección de Contexto",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Respuesta Corta",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : " Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/fra/ejemplo_i_resp_corta_fran_sec.pdf"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
             },
             {
                 "nombre" : "Producción",
-                "url" : "https://www.mep.go.cr/educatico"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/fra/ejempl_i_produc_frances_sec.pdf"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
             }
         ], 
 
+
         "Inglés" : [
             {
-                "nombre" : "Selección de Contexto",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Respuesta Corta",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/ing/ejemp_i_sele_simp_ingl_sec.pdf"
             },
             {
                 "nombre" : "Producción",
-                "url" : "https://www.mep.go.cr/educatico"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/ing/ejem_i_producc_ingles_sec.pdf"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
             }
-        ],
+        ], 
 
         
         "Italiano" : [
             {
-                "nombre" : "Selección de Contexto",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Respuesta Corta",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : " Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/ita/ejem_item_respuesta_corta_italiano_secundaria.pdf"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
             },
             {
                 "nombre" : "Producción",
-                "url" : "https://www.mep.go.cr/educatico"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/ita/ejem_item_produccion_italiano_secundaria.pdf"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
+        ], 
+
+    
+
+        "Español" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/esp/ejemplo_item_seleccion_contexto_espanol_secund.pdf"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/esp/ejem_i_resp_restri_esp_sec.pdf"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
+        ],
+
+        
+        "Química" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejemp_i_selec_contex_quim_sec.pdf"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejem_i_resp_corta_quimica_sec.pdf"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejem_i_resol_proble_quimi_sec.pdf"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
             }
         ],
 
          
-        "Química" : [
+        "Física" : [
             {
-                "nombre" : "Selección Simple",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección de contexto",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/fis/ejem_i_sele_context_fisica_sec.pdf"
             },
             {
-                "nombre" : "Respuesta de Contexto",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Respuesta Corta",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
             },
             {
-                "nombre" : "Resolución de Problemas",
-                "url" : "https://www.mep.go.cr/educatico"
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/fis/ejem_item_resolucio_problema_fisic_sec.pdf"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
             }
         ]
 
