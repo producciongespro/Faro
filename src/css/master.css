@@ -767,6 +767,10 @@ padding-top:5%;
   font-weight: bold;
 }
 
+.etiquetas{
+  margin-bottom: .1rem;  
+}
+
 .buscadores-materias{
   background-color: #b3ae9b;
   color: white;
