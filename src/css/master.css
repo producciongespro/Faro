@@ -4,6 +4,18 @@ body {
     background-color: #ffff;
 }
 
+.card-body {
+  background-color: rgba(206,212,218,.2);
+}
+
+.card-header {
+  background-color: #ced4da;
+}
+
+.card {
+  margin-bottom: 1em;
+}
+
 #botones-planeamiento{
   margin-top: 14%;
 }
