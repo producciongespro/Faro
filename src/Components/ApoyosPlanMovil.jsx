@@ -33,13 +33,13 @@ const ApoyosPlanMovil = (props) => {
         </div>
         <div className="">
             <figure>
-                <img className=" derecha img-fluid  hvr-pop" id="plantilla" src={img + "img_plantilla.png" }  data-typecontent ="plantillaPlan"  onClick={props.handlerOpenBuscadorPlaneamiento}  data-infosource={2}    alt="Apoyos para el planeamiento"  />
+                <img className="  img-fluid  hvr-pop" id="plantilla" src={img + "img_plantilla.png" }  data-typecontent ="plantillaPlan"  onClick={props.handlerOpenBuscadorPlaneamiento}  data-infosource={2}    alt="Apoyos para el planeamiento"  />
             </figure>
         </div>
         <div className="">
           <figure>
           <a href={pdfs.EjemplosTecnicas}  rel="noopener noreferrer">
-              <img className=" derecha img-fluid hvr-pop" id="ejemplos" data-content= {pdfs.EjemplosTecnicas }  data-typecontent ="pdf"   data-infosource={2}  alt="Ejemplos planeamiento" src={img + "img_ejemplos.png"  } />
+              <img className="  img-fluid hvr-pop" id="ejemplos" data-content= {pdfs.EjemplosTecnicas }  data-typecontent ="pdf"   data-infosource={2}  alt="Ejemplos planeamiento" src={img + "img_ejemplos.png"  } />
               </a> 
             </figure>
         </div>
