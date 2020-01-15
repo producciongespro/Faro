@@ -1,42 +1,6 @@
 [
 
     {
-        "asignatura" : "Español",
-        "itemes" : [
-            {
-                "nombre" : "Selección de contexto",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/esp/ejemplo_item_seleccion_contexto_espanol_secund.pdf"
-            },
-            {
-                "nombre" : " Respuesta corta",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Respuesta restringida",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/esp/ejem_i_resp_restri_esp_sec.pdf"
-            },
-            {
-                "nombre" : "Selección simple",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de problemas",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de ejercicios",
-                "url" : "nulo"
-            }
-                ] 
-    },
-
-
-   
-    {
         "asignatura" : "Biología",
         "itemes" : [
             {
@@ -71,6 +35,9 @@
     },
 
 
+
+
+    
     {
         "asignatura" : "Ciencias",
         "itemes" : [
@@ -108,6 +75,84 @@
 
 
     {
+        "asignatura" : "Educación Cívica",
+        "itemes" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
+                ] 
+    },
+
+
+
+    {
+        "asignatura" : "Español",
+        "itemes" : [
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/esp/ejemplo_item_seleccion_contexto_espanol_secund.pdf"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/esp/ejem_i_resp_restri_esp_sec.pdf"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
+                ] 
+    },
+
+
+   
+  
+
+
+
+
+
+    {
         "asignatura":"Estudios Sociales",
         "itemes":[ 
             {
@@ -141,39 +186,7 @@
         ]
     },
 
-    {
-        "asignatura" : "Educación Cívica",
-        "itemes" : [
-            {
-                "nombre" : "Selección de contexto",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : " Respuesta corta",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Respuesta restringida",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Selección simple",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de problemas",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de ejercicios",
-                "url" : "nulo"
-            }
-                ] 
-    },
+  
 
 
 
@@ -216,9 +229,8 @@
     },
  
 
-    
-         
-            
+
+
     {
         "asignatura" : "Francés",
         "itemes" :[
@@ -252,11 +264,10 @@
             }
         ]
     },
-        
-       
+    
 
 
-
+    
     {
         "asignatura" : "Inglés",
         "itemes" :[
@@ -291,6 +302,15 @@
         ]
     },
  
+
+         
+            
+
+        
+       
+
+
+
 
 
 
@@ -331,42 +351,7 @@
     },
 
 
-    {
-        "asignatura" : "Química",
-        "itemes" :[
-            {
-                "nombre" : "Selección de contexto",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejemp_i_selec_contex_quim_sec.pdf"
-            },
-            {
-                "nombre" : " Respuesta corta",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejem_i_resp_corta_quimica_sec.pdf"
-            },
-            {
-                "nombre" : "Respuesta restringida",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Selección simple",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Producción",
-                "url" : "nulo"
-            },
-            {
-                "nombre" : "Resolución de problemas",
-                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejem_i_resol_proble_quimi_sec.pdf"
-            },
-            {
-                "nombre" : "Resolución de ejercicios",
-                "url" : "nulo"
-            }
-        ]
-    },
-
-
-
+    
     {
         "asignatura" : "Matemática",
         "itemes" :[
@@ -399,6 +384,47 @@
                 "url" : "nulo"
             }
         ]
+    },
+
+
+    
+
+
+    {
+        "asignatura" : "Química",
+        "itemes" :[
+            {
+                "nombre" : "Selección de contexto",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejemp_i_selec_contex_quim_sec.pdf"
+            },
+            {
+                "nombre" : " Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejem_i_resp_corta_quimica_sec.pdf"
+            },
+            {
+                "nombre" : "Respuesta restringida",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Selección simple",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Producción",
+                "url" : "nulo"
+            },
+            {
+                "nombre" : "Resolución de problemas",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/qui/ejem_i_resol_proble_quimi_sec.pdf"
+            },
+            {
+                "nombre" : "Resolución de ejercicios",
+                "url" : "nulo"
+            }
+        ]
     }
+
+
+
     
 ]
