@@ -738,12 +738,12 @@ class BuscadorPlaneamiento extends Component {
                                     //***************Comprobación de Lineamiento nulo
                                     array[index].lineamiento === "nulo" ?
                                         (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                            <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                 <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
                                         ) :
                                         (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                         )
