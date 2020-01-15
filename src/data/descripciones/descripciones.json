@@ -26,28 +26,28 @@
         "categoria" : "2-planeamiento",
         "general": "Esta página conlleva  una serie de documentos  que permite fortalecer la labor del personal docente durante su proceso de planeamiento, para el desarrollo de las habilidades en la mediación pedagógica.\r\n",
         "definicionHabilidades": "Aquí se encuentra el concepto de “Habilidades” acogido por el Ministerio de Educación Pública, y posicionado en su política educativa.",
-        "plantilla": "En este botón se visualiza la plantilla general, para que el personal docente elabore su planeamiento.  Asimismo,  se  presentan algunos ejemplos de planeamientos didácticos.",
+        "plantilla": "En este botón se visualiza la plantilla general, para que el personal docente elabore su planeamiento. Asimismo,  se  presentan algunos ejemplos de planeamientos didácticos.",
         "orientaciones": "En este apartado,  aparecen  las orientaciones para la mediación pedagógica por habilidades, que le permite a la persona docente guiar la elaboración del planeamiento didáctico.",
         "ejemplos": "En este apartado, se detallan algunos ejemplos de actividades de mediación pedagógica, para desarrollar  la  dimensión: Maneras de pensar."
         
       },
       {
         "categoria" : "3-apoyosEvaluacion",
-        "general": "Es un espacio diseñado para docentes, cuyo fin es promover y apoyar el proceso de implementación de la evaluación para el aprendizaje, desde un enfoque de uso pedagógico y didáctico,  que posibilite la mediación transformadora.  Este apartado, presenta ejemplos claros sobre técnicas e instrumentos, además de documentación orientadora de evaluación para el aprendizaje.\r\n",
-        "tecnicas": "Las técnicas de evaluación  son los procedimientos utilizados por el personal docente para obtener información acerca del aprendizaje del estudiantado. Cada técnica de evaluación se acompaña de instrumentos. <ul><li>Mapas conceptuales (se deriva un ejemplo)</li><li>Portafolios</li><li>Diario de trabajo</li><li>Diario reflexivo</li><li>Interrogatorio</li></ul>",
+        "general": "Es un espacio diseñado para docentes, cuyo fin es promover y apoyar el proceso de implementación de la evaluación para el aprendizaje, desde un enfoque de uso pedagógico y didáctico, que posibilite la mediación transformadora.  Este apartado, presenta ejemplos claros sobre técnicas e instrumentos, además de documentación orientadora de evaluación para el aprendizaje.\r\n",
+        "tecnicas": "Las técnicas de evaluación son los procedimientos utilizados por el personal docente para obtener información acerca del aprendizaje del estudiantado. Cada técnica de evaluación se acompaña de instrumentos. <ul><li>Mapas conceptuales (se deriva un ejemplo)</li><li>Portafolios</li><li>Diario de trabajo</li><li>Diario reflexivo</li><li>Interrogatorio</li></ul>",
         "instrumentos": "Los instrumentos para la evaluación de los aprendizajes se utilizan para recopilar información que sirva de insumo para la toma de decisiones realizadas por el personal docente y el estudiantado. <ul><li>Escalas de calificación: numérica, descriptiva y desempeño (se deriva un ejemplo)</li><li>Lista de cotejo</li><li>Registro anecdótico</li><li>Rúbricas</li><li>Escala de desempeño</li></ul>",
-        "documentos": "En este espacio, se encuentran dos recursos infográficos relacionados con el proceso de evaluación del aprendizaje. <br>Ellos son: <ol><li>Componentes de la calificación,  en el que aparecen orientaciones para:</li><ul><li>Trabajo cotidiano</li><li>Tareas</li><li>Pruebas</li></ul><li>Evaluación formativa para el aprendizaje</li></ol>"
+        "documentos": "En este espacio, se encuentran dos recursos infográficos relacionados con el proceso de evaluación del aprendizaje. <br>Ellos son: <ol><li>Componentes de la calificación, en el que aparecen orientaciones para:</li><ul><li>Trabajo cotidiano</li><li>Tareas</li><li>Pruebas</li></ul><li>Evaluación formativa para el aprendizaje</li></ol>"
       },
       {
         "categoria" : "4-recursosDidacticos",
         "general": "Este espacio contiene recursos didácticos, en sus diferentes formatos:  documentos, videos, enlaces, que permitirá al personal docente enriquecer su labor diaria con el estudiantado.\r\n",
-        "preescolar": "En este espacio, se encontrarán algunos  sitios web en los que se pueden localizar documentos y recursos didácticos para  apoyar la inclusión de  tecnología  en el nivel de Educación Preescolar.",
-        "primaria": "En este apartado, se encuentran insumos para   las asignaturas que se implementan en la educación primaria.  El material incluye recursos didácticos, que facilitan a la persona docente,  la elaboración del planeamiento didáctico y los procesos de mediación pedagógica.",
-        "secundaria": "En este apartado, se encuentran insumos para  cada una de las asignaturas que se implementan en la educación media.  El material y los enlaces incluidos,  son  recursos didácticos, tecnológicos y simbólicos, que facilitan al docente  la elaboración del planeamiento didáctico, y los procesos de mediación pedagógica.",
+        "preescolar": "En este espacio, se encontrarán algunos sitios web en los que se pueden localizar documentos y recursos didácticos para  apoyar la inclusión de  tecnología  en el nivel de Educación Preescolar.",
+        "primaria": "En este apartado, se encuentran insumos para las asignaturas que se implementan en la educación primaria.  El material incluye recursos didácticos, que facilitan a la persona docente, la elaboración del planeamiento didáctico y los procesos de mediación pedagógica.",
+        "secundaria": "En este apartado, se encuentran insumos para cada una de las asignaturas que se implementan en la educación media.  El material y los enlaces incluidos,  son  recursos didácticos, tecnológicos y simbólicos, que facilitan al docente  la elaboración del planeamiento didáctico, y los procesos de mediación pedagógica.",
         "jovenesAdultos" : "En este apartado se encuentran insumos para cada una de las modalidades de Educación de Personas Jóvenes y Adultas (EPJA). Los recursos incluidos, orientan tanto la mediación pedagógica para personas jóvenes y adultas, como la elaboración del planeamiento didáctico para cada modalidad.",
-        "feriaCientifica" : "Solicitar INFO.",
+        "feriaCientifica" : "Esta sección se encuentra en construcción.",
         "intercultural" : "En esta sección, se halla una serie de recursos para el desarrollo de las clases de lengua y cultura indígena dentro y fuera de los territorios, así como, lineamientos y recursos para la contextualización y pertinencia cultural desde el enfoque de educación intercultural oportunos para todas las ofertas educativas.",
-        "banderaAzul" : "Solicitar INFO.",
+        "banderaAzul" : "Esta sección se encuentra en construcción.",
         "educatico" : "En este espacio podrá visitar la coleccion de recursos educativos elaborados y gestionados por el MEP con la intensión de promover y acompañar los procesos de enseñanza y aprendizaje."
         },
       {
@@ -55,7 +55,7 @@
         "general": "Documentos que orientan los procesos para formular, planificar, construir e implementar los aspectos relacionados con el quehacer ministerial, de conformidad con los acuerdos tomados por el Consejo Superior de Educación (CSE).",
         "politica" : "Instrumento que orienta las acciones estratégicas ministeriales y establece los marcos de referencia que permitan vislumbrar el futuro promisorio de un país, que desde la educación, se propone avanzar hacia el cumplimiento de sus metas de mediano y largo plazo.",
         "perfil": "Descripción del apartado de perfil",
-        "programas": "Sección que organiza los programas de estudio vigentes, por nivel, ciclo, año y materia.  ",
+        "programas": "Sección que organiza los programas de estudio vigentes, por nivel, ciclo, año y materia.",
         "estudiante": "Conjunto de habilidades que se pretende consolidar en la población estudiantil, según lo establecido en la Política Curricular bajo la Visión de Educar para una Nueva Ciudadanía.  Esos perfiles guían la formación de habilidades cada vez más enriquecidas en su complejidad, conforme avanzan el estudiantado en su proceso educativo.",
         "faro": "Documento que presenta la fundamentación teórico-conceptual de las pruebas nacionales FARO, así como las orientaciones generales para su implementación.",
         "transformacion" : "transformación",
