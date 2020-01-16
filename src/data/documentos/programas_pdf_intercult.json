@@ -1,8 +1,10 @@
 [ 
     {
         "interBoru" : {
-            "nombre" : "Lengua Boruca I y II ciclos",            
-            "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/lengua_boruca_1y2ciclos.pdf"  
+        "nombre" : "Lengua Boruca I y II ciclos",            
+        "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/lengua_boruca_1y2ciclos.pdf"  
         }
+
     }
+
 ]

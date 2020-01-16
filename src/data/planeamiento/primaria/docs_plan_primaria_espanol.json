@@ -3,236 +3,51 @@
       "nivel": "Primaria",
       "materia": "Español",
       "anno": "Primero",
-      "contenido": "1.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/1.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
+      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "contenido":"nulo",
+      "articulacion":"nulo",
+      "comprension":"nulo"
    },
    {
       "nivel": "Primaria",
       "materia": "Español",
-      "anno": "Primero",
-      "contenido": "2.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/2.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
+      "anno": "Segundo",
+      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "contenido":"nulo",
+      "articulacion":"nulo",
+      "comprension":"nulo"
    },
    {
       "nivel": "Primaria",
       "materia": "Español",
-      "anno": "Primero",
-      "contenido": "3.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/3.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
+      "anno": "Tercero",
+      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "contenido":"nulo",
+      "articulacion":"nulo",
+      "comprension":"nulo"
    },
    {
       "nivel": "Primaria",
       "materia": "Español",
-      "anno": "Primero",
-      "contenido": "4.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/4.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
+      "anno": "Cuarto",
+      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "contenido":"nulo"
    },
    {
       "nivel": "Primaria",
       "materia": "Español",
-      "anno": "Primero",
-      "contenido": "4.2 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/4.2_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
+      "anno": "Quinto",
+      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "contenido":"nulo"
    },
    {
       "nivel": "Primaria",
       "materia": "Español",
-      "anno": "Primero",
-      "contenido": "5.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/5.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
+      "anno": "Sexto",
+      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "contenido":"nulo"
    },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "5.2 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/5.2_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "6.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/6.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "7.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/7.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "7.2 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/7.2_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "8.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/8.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "9.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/9.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "10.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/10.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "11.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/11.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "12.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/12.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "13.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/13.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "14.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/14.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "15.1 Contenido",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/15.1_contenido.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "1.1 Contenido Articulado",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/1.1_contenido_articulado.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "2.1 Contenido Articulado",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/2.1_contenido_articulado.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "2.2 Contenido Articulado",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/2.2_contenido_articulado.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "3.1 Contenido Articulado",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/3.1_contenido_articulado.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "4.1 Contenido Articulado",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/4.1_contenido_articulado.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "5.1 Contenido Articulado",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/5.1_contenido_articulado.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "6.1 Contenido Articulado",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/6.1_contenido_articulado.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "1. Comprensión y Expresión oral",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/1_comprension_expresion_oral.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "2. Comprensión y Expresión oral",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/2_comprension_expresion_oral",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "3. Comprensión y Expresión oral",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/3_comprension_expresion_oral.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-   {
-      "nivel": "Primaria",
-      "materia": "Español",
-      "anno": "Primero",
-      "contenido": "4. Comprensión y Expresión oral",
-      "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/prim/4_comprension_expresion_oral.docx",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf"
-   },
-
-
+   
 
 
 
