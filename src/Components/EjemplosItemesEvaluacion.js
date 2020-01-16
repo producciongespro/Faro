@@ -18,135 +18,135 @@ class EjemplosItemesEvaluacion extends Component {
         this.state = {
             asignaturas: null,
             asignatura: null,
-            itemes: null,            
+            itemes: null,
             //Valor de la asignatura seleccionada para guiar la carga de los itemes 
-            asignaturaSeleccionada : "vacio"            
+            asignaturaSeleccionada: "vacio"
         }
-    }   
-   
+    }
+
     //CArga su valor en tiempo de ejecución dependiendo del nivel seleccionado
-    ejemplosItemesJson = "";    
+    ejemplosItemesJson = "";
     asignaturasPrimaria = [];
     asignaturasSecundaria = [];
 
-    componentDidMount () {     
+    componentDidMount() {
         this.cargarAsignaturaPrimaria();
         this.cargarAsignaturaSecundaria();
     }
 
-    cargarAsignaturaPrimaria () {
+    cargarAsignaturaPrimaria() {
         for (let index = 0; index < ejemplosItemesPrimaria.length; index++) {
-            this.asignaturasPrimaria.push( ejemplosItemesPrimaria[index].asignatura );            
+            this.asignaturasPrimaria.push(ejemplosItemesPrimaria[index].asignatura);
         }
         //console.log("asignaturasPrimaria:",this.asignaturasPrimaria);        
     }
 
-    cargarAsignaturaSecundaria () {
+    cargarAsignaturaSecundaria() {
         for (let index = 0; index < ejemplosItemesSecundaria.length; index++) {
-            this.asignaturasSecundaria.push( ejemplosItemesSecundaria[index].asignatura );            
+            this.asignaturasSecundaria.push(ejemplosItemesSecundaria[index].asignatura);
         }
         //console.log("asignaturasSecundaria:",this.asignaturasSecundaria);        
     }
 
 
 
-    handlerCargarAsignatura = (e) => {       
+    handlerCargarAsignatura = (e) => {
         const nivel = e.target.value;
         switch (nivel) {
             case "Primaria":
                 this.setState({ asignaturas: this.asignaturasPrimaria });
-                this.ejemplosItemesJson = ejemplosItemesPrimaria;                
-            break;            
-                case "Secundaria":
+                this.ejemplosItemesJson = ejemplosItemesPrimaria;
+                break;
+            case "Secundaria":
                 this.setState({ asignaturas: this.asignaturasSecundaria });
                 this.ejemplosItemesJson = ejemplosItemesSecundaria;
-                break; 
+                break;
             default:
                 console.log("Opcion fuera de rango");
                 break;
         }
     }
 
-    elegirBanner = () =>{
+    elegirBanner = () => {
         //console.log("Plataforma es:",plataformaUsada);
-        
+
         switch (plataformaUsada) {
-        case "escritorio": 
-                bannerEjemplos = "encabezado_ejemplos.jpg";              
-            break;
-            case "movil": 
+            case "escritorio":
+                bannerEjemplos = "encabezado_ejemplos.jpg";
+                break;
+            case "movil":
                 bannerEjemplos = "encabezado_ejemplosMovil.jpg";
-            break;
+                break;
             default:
                 bannerEjemplos = "encabezado_ejemplos.jpg";
-            break;
+                break;
         }
-       // console.log("Banner:",bannerEjemplos);       
-        }
+        // console.log("Banner:",bannerEjemplos);       
+    }
 
 
 
     handlerSeleccionarAsignatura = (e) => {
-        this.setState({ asignaturaSeleccionada: e.target.value }, ()=>{
+        this.setState({ asignaturaSeleccionada: e.target.value }, () => {
             //console.log("Valor asignatura seleccionada", this.state.asignaturaSeleccionada);
             for (let index = 0; index < this.ejemplosItemesJson.length; index++) {
-                if (this.ejemplosItemesJson[index].asignatura === this.state.asignaturaSeleccionada ) {
+                if (this.ejemplosItemesJson[index].asignatura === this.state.asignaturaSeleccionada) {
                     //console.log(this.ejemplosItemesJson[index].itemes);
-                    this.setState({ itemes:this.ejemplosItemesJson[index].itemes }); 
-                }              
-                
-              
-             
-                
-            }            
+                    this.setState({ itemes: this.ejemplosItemesJson[index].itemes });
+                }
+
+
+
+
+            }
         });
     }
 
-    
+
 
     render() {
         this.elegirBanner();
         return (
             <div className="container">
-                 <div className="row">
-                 <div className="col-12 text-right">
+                <div className="row">
+                    <div className="col-12 text-right">
                         <h1>
                             <img className="bannerRecursos" src={img + bannerEjemplos} alt="Encabezado" />
                         </h1>
                         {
                             plataformaUsada === "movil" ?
-                              ( 
-                                  <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
-                              )
-                              :
-                              (
-                                  <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
-                              )
+                                (
+                                    <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                )
+                                :
+                                (
+                                    <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarEjemplosItemes} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                )
                         }
-                        
-                    </div>   
-                  </div>   
-                       
+
+                    </div>
+                </div>
+
                 <div className="row">
-                    <div className="input-group col-sm-4">    
-                        <div className="input-group-prepend">            
+                    <div className="input-group col-sm-4">
+                        <div className="input-group-prepend">
                             <label className="input-group-text etiquetas-busquedas" htmlFor="selNiv">
                                 Nivel
                             </label>
-                        
+
                             <select id="selNiv" className="custom-select buscadores-materias" onChange={this.handlerCargarAsignatura}>
                                 <option value="" defaultValue  > Seleccione un nivel </option>
                                 <option value="Primaria"> Primaria </option>
                                 <option value="Secundaria"> Secundaria </option>
                             </select>
-                        
-                    </div> </div>
+
+                        </div> </div>
                     <div className="input-grou col-sm-4">
-                        <div className="input-group-prepend">     
+                        <div className="input-group-prepend">
                             <label className="input-group-text etiquetas-busquedas" htmlFor="selAsig">
                                 Asignatura
                             </label>
-                       
+
                             <select id="selAsig" className="custom-select buscadores-materias" onChange={this.handlerSeleccionarAsignatura} >
                                 <option value="vacio" defaultValue > Seleccione una asignatura </option>
                                 {
@@ -157,7 +157,7 @@ class EjemplosItemesEvaluacion extends Component {
                                     )
                                 }
                             </select>
-                    </div> </div>
+                        </div> </div>
                     <div className="col-sm-4">
                         {
                             /*
@@ -187,9 +187,17 @@ class EjemplosItemesEvaluacion extends Component {
                             this.state.itemes != null &&
                             (
                                 this.state.itemes.map((item, i) => (
-                                    <a key={"item" + i} href={item.url} className="badge badge-info etiquetas-1" target="_blank" rel="noopener noreferrer">
-                                        {item.nombre}
-                                    </a>
+                                    item.url === "nulo" ?
+                                        (
+                                            <span key={"item" + i} className="not-allowed badge badge-danger etiquetas-1">
+                                                 <i className="fas fa-ban"></i> {item.nombre}
+                                            </span>
+                                        ) :
+                                        (
+                                            <a key={"item" + i} href={item.url} className="badge badge-info etiquetas-1" target="_blank" rel="noopener noreferrer">
+                                                {item.nombre}
+                                            </a>
+                                        )
                                 ))
                             )
                         }

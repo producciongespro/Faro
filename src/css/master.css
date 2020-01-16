@@ -124,6 +124,11 @@ background-color: #FCC82B;
   margin-right: -5%;
 }
 
+.not-allowed {
+  cursor: not-allowed;
+}
+
+
 .visor {
     box-sizing: border-box;
     background-color: #fff;
