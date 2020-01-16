@@ -124,20 +124,24 @@ class Modal extends Component {
           </div>
                   <strong>Dirección de Recursos Tecnológicos</strong><br />
                   <strong>Departamento de Gestión y Producción</strong><br />
+                  <strong>Programadores</strong><br />
                   Luis Angel Chacón Campos <br />
                   Patricia Hernández Conejo<br />
                   Óscar Pérez Ramírez <br />
                   Ana Teresa Araya Salazar <br />
-                  Karla Guevara Murillo <br />
-                  <br /><br />
+                  <strong> Diseño gráfico </strong><br />
+                  Karla Guevara Murillo <br /><br /><br />
 
                   <strong>Dirección de Desarrollo Curricular</strong> <br />
+                  Asesores curricules de las asignaturas<br /><br /><br />
+
+                  <strong>Coordinación</strong> <br />
                   <strong> Viceministerio Académico</strong><br />
                   Tatiana Navarro Mata<br />
                   Nelson Campos Quesada <br />
                   Henry Arias Guido <br />
               <br />
-              <strong>Fuente</strong> <cite> :   MEP.CR  </cite>
+              <strong>Fuente</strong> <cite> :   MEP.Costa Rica - Enero 2020  </cite>
             {/* </div> */}
           {/* </div> */}
         </React.Fragment>
