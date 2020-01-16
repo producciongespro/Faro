@@ -16,14 +16,14 @@ class EjemplosItemesEvaluacion extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            asignaturas: null,
-            asignatura: null,
+            asignaturas: null,            
             itemes: null,
             //Valor de la asignatura seleccionada para guiar la carga de los itemes 
             asignaturaSeleccionada: "vacio"
         }
     }
-
+    // Nivel seleccionado (Primaria - Secundaria)
+    nivelSeleccionado=null;
     //CArga su valor en tiempo de ejecución dependiendo del nivel seleccionado
     ejemplosItemesJson = "";
     asignaturasPrimaria = [];
@@ -51,8 +51,8 @@ class EjemplosItemesEvaluacion extends Component {
 
 
     handlerCargarAsignatura = (e) => {
-        const nivel = e.target.value;
-        switch (nivel) {
+        this.nivelSeleccionado = e.target.value;
+        switch (this.nivelSeleccionado) {
             case "Primaria":
                 this.setState({ asignaturas: this.asignaturasPrimaria });
                 this.ejemplosItemesJson = ejemplosItemesPrimaria;
@@ -176,7 +176,10 @@ class EjemplosItemesEvaluacion extends Component {
                     <div className="col-12">
                         {
                             this.state.itemes != null && (
-                                <span> <strong> {this.state.itemes.length} </strong>  Itemes encontrados  </span>
+                                <span>
+                                    <strong> {this.state.itemes.length} </strong>  
+                                    Itemes encontrados en {this.state.asignaturaSeleccionada} de {this.nivelSeleccionado}
+                                </span>
                             )
                         }
                     </div>
