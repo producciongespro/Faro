@@ -377,7 +377,7 @@ class BuscadorPlaneamiento extends Component {
         }
 
         //ESPAÑOL PRIMARIA
-        if (this.state.nivel === "Primaria" && this.state.materia === "Español") {            
+        if (this.state.nivel === "Primaria" && this.state.materia === "Español") {
             tipoComodin = "nulo";
             console.log("Seleccion: español primaria - tipo comodin", tipoComodin);
             array = dataPrimariaEspanol;
@@ -609,9 +609,9 @@ class BuscadorPlaneamiento extends Component {
                     this.tarjetasBasico(this.arrayResultado);
                 }
                 break;
-            case "Primaria":               
-                    this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
-                    //console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                               
+            case "Primaria":
+                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
+                //console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                               
                 if (this.state.materia === "Español") {
                     this.tarjetasEspanolPrimaria(this.arrayResultado);
                 }
@@ -624,7 +624,7 @@ class BuscadorPlaneamiento extends Component {
                 if (this.state.materia === "Educación Religiosa") {
                     this.tarjetasReligion(this.arrayResultado);
                 }
-                if (this.state.materia !== "Educación para el Hogar" && this.state.materia !== "Francés" && this.state.materia !== "Educación Religiosa"  && this.state.materia !== "Español") {
+                if (this.state.materia !== "Educación para el Hogar" && this.state.materia !== "Francés" && this.state.materia !== "Educación Religiosa" && this.state.materia !== "Español") {
                     this.tarjetasBasico(this.arrayResultado);
                 }
 
@@ -813,8 +813,8 @@ class BuscadorPlaneamiento extends Component {
         }
     }
 
-tarjetasEspanolPrimaria = (array) => {
-        console.log("XXXX--- array recibido en tarjetas Español primaria:", array);        
+    tarjetasEspanolPrimaria = (array) => {
+        console.log("XXXX--- array recibido en tarjetas Español primaria:", array);
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < array.length; index++) {
@@ -831,7 +831,7 @@ tarjetasEspanolPrimaria = (array) => {
                             </span>
                             <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
                                 Asignatura: {array[index].materia}
-                            </span>                           
+                            </span>
                         </div>
                     }
                     {
@@ -841,7 +841,23 @@ tarjetasEspanolPrimaria = (array) => {
                                 <div className="card-body mr-2">
                                     <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Lineamiento
-                                    </a>                                    
+                                    </a>
+                                    <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].contenido} target="_blank" rel="noopener noreferrer" >
+                                        <i className="far fa-file-archive"></i> Contenido
+                                    </a>
+                                    {
+                                        (this.state.anno === "Primero" || this.state.anno === "Segundo") &&
+                                        (
+                                            <React.Fragment>
+                                                <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].articulacion} target="_blank" rel="noopener noreferrer" >
+                                                <i className="far fa-file-archive"></i> Articulación
+                                            </a>
+                                              <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].comprension} target="_blank" rel="noopener noreferrer" >
+                                                <i className="far fa-file-archive"></i> Comprensión
+                                            </a>
+                                            </React.Fragment>
+                                        )
+                                    }
                                 </div>
                             )
                         )
@@ -1327,11 +1343,11 @@ tarjetasEspanolPrimaria = (array) => {
                                              </a>
 
                                         {
-                                            (   this.state.asignatura === "Ciencias" 
-                                            || this.state.asignatura === "Educación Física" 
-                                            || this.state.asignatura === "Español"
-                                            || this.state.asignatura === "Estudios Sociales"  
-                                             ) &&
+                                            (this.state.asignatura === "Ciencias"
+                                                || this.state.asignatura === "Educación Física"
+                                                || this.state.asignatura === "Español"
+                                                || this.state.asignatura === "Estudios Sociales"
+                                            ) &&
                                             (
                                                 <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> No correlacionado
@@ -2321,15 +2337,15 @@ tarjetasEspanolPrimaria = (array) => {
                             }
                         </div>
                     </div>
-                   {
+                    {
                         this.plataformaUsada === "movil" &&
                         (
-                           <React.Fragment>
+                            <React.Fragment>
                                 <br /> <br /><br />
-                           </React.Fragment>
+                            </React.Fragment>
                         )
                     }
-              
+
 
                     <div className="row">
                         <div className="col-12 text-right">
