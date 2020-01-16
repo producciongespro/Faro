@@ -1,26 +1,10 @@
 [
-    {
-        "id" : "Cultura Bribri Buenos Aires",
-        "label" : "Lengua Boruca"
-    }, 
+   
 
     {
-        "id" : "Cultura Cabécar Buenos Aires",
+        "id" : "interBoru",
         "label" : "Lengua Boruca"
-    }, 
+    }
 
-    {
-        "id" : "Lengua Borúca",
-        "label" : "Lengua Boruca"
-    }, 
-
-    {
-        "id" : "Lengua Cabécar Buenos Aires",
-        "label" : "Lengua Boruca"
-    }, 
-
-    {
-        "id" : "Cultura Térraba",
-        "label" : "Lengua Boruca"
-    } 
+    
 ]
