@@ -63,7 +63,7 @@ const RecursosDidacticos = (props) => {
             </div>
             <div className="col-3 hover12 ladoIzq">
                 <figure>
-              <img className="btn img-fluid intercultural" id="intercultural" src= {img+"intercultural.png"} data-tar="Construccion"  onClick={props.changePage}  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}     alt="Intercultural" />
+              <img className="btn img-fluid intercultural" id="intercultural" src= {img+"intercultural.png"} data-tar="Construccion"  onClick={props.changePage}      alt="Intercultural" />
               </figure>
 
             </div>          
@@ -73,19 +73,19 @@ const RecursosDidacticos = (props) => {
 
           <div className="col-3 hover12 ladoDer">
           <figure>
-          <img className="btn img-fluid jovenesAdultos" id="jovenesAdultos" src= {img+"jovenes_adultos.png"} data-tar="Construccion"  onClick={props.changePage}  data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}   alt="Jovenes y Adultos" />
+          <img className="btn img-fluid jovenesAdultos" id="jovenesAdultos" src= {img+"jovenes_adultos.png"} data-tar="Construccion"  onClick={props.changePage}    alt="Jovenes y Adultos" />
           </figure>
           </div>
 
           <div className="col-3 hover12 centro">
           <figure>
-          <img className="btn img-fluid feriaCientifica" id="feriaCientifica" src= {img+"feria_cientifica.png"} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Feria Científica" />
+          <img className="btn img-fluid feriaCientifica" id="feriaCientifica" src= {img+"feria_cientifica.png"} data-tar="Construccion" onClick={props.changePage} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Feria Científica" />
           </figure>
           </div>
 
           <div className="col-3 hover12 centro">
           <figure>
-          <img className="btn img-fluid banderaAzul" id="banderaAzul" src= {img+"programa_azul.png"} data-tar="Construccion"  onClick={props.changePage}   data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenBuscador}  alt="Bandera Azul" />
+          <img className="btn img-fluid banderaAzul" id="banderaAzul" src= {img+"programa_azul.png"} data-tar="Construccion"  onClick={props.changePage}    alt="Bandera Azul" />
           </figure>
           </div>
 
