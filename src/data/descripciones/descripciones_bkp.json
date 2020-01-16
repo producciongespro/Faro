@@ -1,0 +1,66 @@
+[   
+        {
+          "categoria" : "0-desarrolloProfesional",
+          "general": "El Instituto de Desarrollo Profesional Uladislao Gámez Solano (IDPUGS) del Ministerio de Educación Pública, ofrece al personal en servicio y, en particular al cuerpo docente diversas estrategias orientadas al fortalecimiento del desempeño profesional por medio de la formación permanente, de manera que les permite actualizar y fortalecer sus conocimientos en relación con el quehacer educativo.",
+          "cursos": "En esta sección se encuentra la oferta de cursos virtuales con una interesante diversidad temática. Es posible participar de ellos como curso individual o matricularse en una serie de cursos que están diseñados intencionalmente para que se adquieran o fortalezcan una serie de destrezas y habilidades propias del ámbito de competencia laboral de cada población meta a la cual se dirigen.  Cada curso cuenta con una breve descripción, que permite tener una idea general de lo que se ofrece.",
+          "sitios": "Esta sección concentra un conjunto de posibilidades educativas de la web, diseñadas para funcionar como apoyo a la labor docente:  Sitios web educativos, con diversidad temática que pueden aportar ideas y conocimientos a la planificación de las clases. APPS Educativas, que son aplicaciones que incentivan la interacción docente-estudiantes-contenidos. Estrategias de aprendizaje, son propuestas e ideas dentro de la web que complementan la acción pedagógica en la clase.",
+          "videoteca": "En esta sección se encuentra una colección de videos, donde intervienen múltiples expertos, producto de las sesiones de videoconferencias de los años 2018 y 2019. Para un mejor aprovechamiento, se han catalogado por temáticas y ejes según la política educativa vigente en relación con la transformación curricular. Son recursos web de uso abierto, los cuales pueden dar valor agregado a los procesos de mediación en el aula o bien, fortalecer el campo disciplinar de cada docente.",
+          "pautas": "En esta sección, se encuentran propuestas orientadas hacia la asignatura de la enseñanza del español en primaria, como parte de las iniciativas y del fortalecimiento de esta asignatura en el contexto de la transformación curricular. Además, se ofrece un objeto de aprendizaje sobre el tema del uso de los dispositivos móviles en educación.",
+          "ficha": "En esta sección se lista un conjunto de organizaciones con un reconocido historial académico que ofrecen cursos de capacitación a los docentes, en su mayoría bajo la modalidad en línea. Se pueden encontrar cursos gratuitos o costeados por el participante, bajo modalidades de autocapacitación o procesos de formación mediados por un tutor."
+        },
+
+  {
+ 
+        "categoria" : "1-climaAula",
+        "general": "Este es un espacio para encontrar materiales de apoyo que orientan los procesos de atención educativa del estudiantado desde una visión de la inclusión educativa.\r\n",
+        "interacciones": "Aquí se encuentra una presentación informativa para que el docente conozca e identifique los elementos que influyen en el clima de clase. El clima de clase es el resultado de la interacción de un conjunto de factores que tienen repercusiones cognitivas, emocionales y comportamentales. Es muy importante que el docente fortalezca sus estrategias para atender el clima dentro del aula.\r\n",
+        "inclusion": "En este botón se encuentran materiales de apoyo que orientan los procesos de atención educativa del estudiantado en condición de discapacidad, desde una visión de la inclusión educativa, incluye aspectos sobre el Diseño Universal de los Aprendizajes, líneas de acción en los servicios de apoyo educativo.",
+        "recomendaciones": "La organización del tiempo resulta fundamental para conseguir un aprendizaje eficaz y lograr los objetivos propuestos. En este apartado se encuentran estrategias para aprovechar más el tiempo en el aula. ",
+        "pautas": "Aquí se encuentra una presentación informativa para que el docente conozca e identifique los elementos que influyen en el clima de clase. El clima de clase es el resultado de la interacción de un conjunto de factores que tienen repercusiones cognitivas, emocionales y comportamentales. Es muy importante que el docente fortalezca sus estrategias para atender el clima dentro del aula.",
+        "ficha": "Descripción del apartado de fichas",
+        "emociones": "En este apartado se visualizan documentos relacionados con la motivación y las emociones, y esboza recomendaciones dirigidas al personal docente para el manejo de esta temática.",
+        "interculturalidad": "Se integran en este apartado, documentos para el apoyo del  docente que atiende población en territorio indígena, afrodescendiente y migrante.",
+        "climaEscolar" : "Aquí se encuentra una presentación informativa para que el docente conozca e identifique los elementos que influyen en el clima escolar. Es importante poder valorar el clima escolar para establecer planes de acción encaminados a su mejora, que debe considerar la percepción de los padres y la comunidad.\r\n"
+      },
+      {
+        "categoria" : "2-planeamiento",
+        "general": "Esta página conlleva  una serie de documentos  que permite fortalecer la labor del personal docente durante su proceso de planeamiento, para el desarrollo de las habilidades en la mediación pedagógica.\r\n",
+        "definicionHabilidades": "Aquí se encuentra el concepto de “Habilidades” acogido por el Ministerio de Educación Pública, y posicionado en su política educativa.",
+        "plantilla": "En este botón se visualiza la plantilla general, para que el personal docente elabore su planeamiento. Asimismo,  se  presentan algunos ejemplos de planeamientos didácticos.",
+        "orientaciones": "En este apartado,  aparecen  las orientaciones para la mediación pedagógica por habilidades, que le permite a la persona docente guiar la elaboración del planeamiento didáctico.",
+        "ejemplos": "En este apartado, se detallan algunos ejemplos de actividades de mediación pedagógica, para desarrollar  la  dimensión: Maneras de pensar."
+        
+      },
+      {
+        "categoria" : "3-apoyosEvaluacion",
+        "general": "Es un espacio diseñado para docentes, cuyo fin es promover y apoyar el proceso de implementación de la evaluación para el aprendizaje, desde un enfoque de uso pedagógico y didáctico, que posibilite la mediación transformadora.  Este apartado, presenta ejemplos claros sobre técnicas e instrumentos, además de documentación orientadora de evaluación para el aprendizaje.\r\n",
+        "tecnicas": "Las técnicas de evaluación son los procedimientos utilizados por el personal docente para obtener información acerca del aprendizaje del estudiantado. Cada técnica de evaluación se acompaña de instrumentos. <ul><li>Mapas conceptuales (se deriva un ejemplo)</li><li>Portafolios</li><li>Diario de trabajo</li><li>Diario reflexivo</li><li>Interrogatorio</li></ul>",
+        "instrumentos": "Los instrumentos para la evaluación de los aprendizajes se utilizan para recopilar información que sirva de insumo para la toma de decisiones realizadas por el personal docente y el estudiantado. <ul><li>Escalas de calificación: numérica, descriptiva y desempeño (se deriva un ejemplo)</li><li>Lista de cotejo</li><li>Registro anecdótico</li><li>Rúbricas</li><li>Escala de desempeño</li></ul>",
+        "documentos": "En este espacio, se encuentran dos recursos infográficos relacionados con el proceso de evaluación del aprendizaje. <br>Ellos son: <ol><li>Componentes de la calificación, en el que aparecen orientaciones para:</li><ul><li>Trabajo cotidiano</li><li>Tareas</li><li>Pruebas</li></ul><li>Evaluación formativa para el aprendizaje</li></ol>"
+      },
+      {
+        "categoria" : "4-recursosDidacticos",
+        "general": "Este espacio contiene recursos didácticos, en sus diferentes formatos:  documentos, videos, enlaces, que permitirá al personal docente enriquecer su labor diaria con el estudiantado.\r\n",
+        "preescolar": "En este espacio, se encontrarán algunos sitios web en los que se pueden localizar documentos y recursos didácticos para  apoyar la inclusión de  tecnología  en el nivel de Educación Preescolar.",
+        "primaria": "En este apartado, se encuentran insumos para las asignaturas que se implementan en la educación primaria.  El material incluye recursos didácticos, que facilitan a la persona docente, la elaboración del planeamiento didáctico y los procesos de mediación pedagógica.",
+        "secundaria": "En este apartado, se encuentran insumos para cada una de las asignaturas que se implementan en la educación media.  El material y los enlaces incluidos,  son  recursos didácticos, tecnológicos y simbólicos, que facilitan al docente  la elaboración del planeamiento didáctico, y los procesos de mediación pedagógica.",
+        "jovenesAdultos" : "En este apartado se encuentran insumos para cada una de las modalidades de Educación de Personas Jóvenes y Adultas (EPJA). Los recursos incluidos, orientan tanto la mediación pedagógica para personas jóvenes y adultas, como la elaboración del planeamiento didáctico para cada modalidad.",
+        "feriaCientifica" : "Esta sección se encuentra en construcción.",
+        "intercultural" : "En esta sección, se halla una serie de recursos para el desarrollo de las clases de lengua y cultura indígena dentro y fuera de los territorios, así como, lineamientos y recursos para la contextualización y pertinencia cultural desde el enfoque de educación intercultural oportunos para todas las ofertas educativas.",
+        "banderaAzul" : "Esta sección se encuentra en construcción.",
+        "educatico" : "En este espacio podrá visitar la coleccion de recursos educativos elaborados y gestionados por el MEP con la intensión de promover y acompañar los procesos de enseñanza y aprendizaje."
+        },
+      {
+        "categoria" : "5-documentosOficiales",
+        "general": "Documentos que orientan los procesos para formular, planificar, construir e implementar los aspectos relacionados con el quehacer ministerial, de conformidad con los acuerdos tomados por el Consejo Superior de Educación (CSE).",
+        "politica" : "Instrumento que orienta las acciones estratégicas ministeriales y establece los marcos de referencia que permitan vislumbrar el futuro promisorio de un país, que desde la educación, se propone avanzar hacia el cumplimiento de sus metas de mediano y largo plazo.",
+        "perfil": "Descripción del apartado de perfil",
+        "programas": "Sección que organiza los programas de estudio vigentes, por nivel, ciclo, año y materia.",
+        "estudiante": "Conjunto de habilidades que se pretende consolidar en la población estudiantil, según lo establecido en la Política Curricular bajo la Visión de Educar para una Nueva Ciudadanía.  Esos perfiles guían la formación de habilidades cada vez más enriquecidas en su complejidad, conforme avanzan el estudiantado en su proceso educativo.",
+        "faro": "Documento que presenta la fundamentación teórico-conceptual de las pruebas nacionales FARO, así como las orientaciones generales para su implementación.",
+        "transformacion" : "transformación",
+        "fundamentos" : "Orientación que establece la base teórica que sustenta los programas y proyectos curriculares que se diseñan y ejecutan en el Ministerio de Educación Pública.",
+        "reglamento" : "Conjunto de disposiciones normativas que regulan el proceso de evaluación de los aprendizajes y la implementación del sistema de convivencia estudiantil en el sistema educativo costarricense, sin perjuicio de la normativa que regula el acceso a la educación de la persona estudiante que requiere apoyos educativos."
+      }  
+
+]
