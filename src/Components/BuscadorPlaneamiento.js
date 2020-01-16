@@ -8,7 +8,7 @@ import dataPreescolar from '../data/planeamiento/preescolar/docs_plan_preescolar
 import dataIdiomas from '../data/planeamiento/idiomas/docs_plan_idiomas.json';
 
 //Referencias de primaria
-import selectEspanolPrimaria from '../data/planeamiento/primaria/select_espanol_primaria.json';
+//import selectEspanolPrimaria from '../data/planeamiento/primaria/select_espanol_primaria.json';
 import distribucionPrimaria from '../data/planeamiento/primaria/ditribucion_materias_primaria.json';
 import dataPrimaria from '../data/planeamiento/primaria/docs_plan_primaria.json';
 import dataPrimariaEspanol from '../data/planeamiento/primaria/docs_plan_primaria_espanol.json';
@@ -377,9 +377,9 @@ class BuscadorPlaneamiento extends Component {
         }
 
         //ESPAÑOL PRIMARIA
-        if (this.state.nivel === "Primaria" && this.state.materia === "Español") {
-            console.log("Seleccion: español primaria");
-            tipoComodin = "contenido";
+        if (this.state.nivel === "Primaria" && this.state.materia === "Español") {            
+            tipoComodin = "nulo";
+            console.log("Seleccion: español primaria - tipo comodin", tipoComodin);
             array = dataPrimariaEspanol;
         }
         //CIENCIAS PRIMARIA
@@ -609,10 +609,12 @@ class BuscadorPlaneamiento extends Component {
                     this.tarjetasBasico(this.arrayResultado);
                 }
                 break;
-            case "Primaria":
-                this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
-                //console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                
-
+            case "Primaria":               
+                    this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
+                    //console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                               
+                if (this.state.materia === "Español") {
+                    this.tarjetasEspanolPrimaria(this.arrayResultado);
+                }
                 if (this.state.materia === "Educación para el Hogar") {
                     this.tarjetasHogarPrimaria(this.arrayResultado);
                 }
@@ -622,7 +624,7 @@ class BuscadorPlaneamiento extends Component {
                 if (this.state.materia === "Educación Religiosa") {
                     this.tarjetasReligion(this.arrayResultado);
                 }
-                if (this.state.materia !== "Educación para el Hogar" && this.state.materia !== "Francés" && this.state.materia !== "Educación Religiosa") {
+                if (this.state.materia !== "Educación para el Hogar" && this.state.materia !== "Francés" && this.state.materia !== "Educación Religiosa"  && this.state.materia !== "Español") {
                     this.tarjetasBasico(this.arrayResultado);
                 }
 
@@ -797,6 +799,51 @@ class BuscadorPlaneamiento extends Component {
                                     )
                                 }
                             </div>
+                        )
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+tarjetasEspanolPrimaria = (array) => {
+        console.log("XXXX--- array recibido en tarjetas Español primaria:", array);        
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <div className="card-header">
+                            <span className="mx-2 etiquetas badge badge-secondary px-3 py-2 ">
+                                Nivel:  {array[index].nivel}
+                            </span>
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                Año: {array[index].anno}
+                            </span>
+                            <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                                Asignatura: {array[index].materia}
+                            </span>                           
+                        </div>
+                    }
+                    {
+                        (
+                            // Renderizado cuerpo de tarjeta                           
+                            (
+                                <div className="card-body mr-2">
+                                    <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Lineamiento
+                                    </a>                                    
+                                </div>
+                            )
                         )
                     }
                 </div>
@@ -2193,6 +2240,7 @@ class BuscadorPlaneamiento extends Component {
                             }
                             {
                                 // Caso 4 contenidos de español primaria
+                                /*
                                 (this.state.nivel === "Primaria" && this.state.materia === "Español") &&
                                 (
                                     <div className="input-group mb-3">
@@ -2210,10 +2258,8 @@ class BuscadorPlaneamiento extends Component {
                                             }
                                         </select>
                                     </div>
-
-
-
                                 )
+                            */
                             }
                             {
                                 console.log("nivel", this.state.nivel)
