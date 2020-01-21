@@ -37,9 +37,11 @@ const Portada = (props) => {
         </div> <br/> <br/>  
 
         <div className="col-12 text-center">
-                
-                <img id="img-licencia" src={imgGeneral + "licencia.png"  } className="img-fluid" alt="Licencia Creative"/> 
-            </div>
+        <img id="img-licencia" src={imgGeneral + "licencia.png"  } className="img-fluid" alt="Licencia Creative"/> <br/> <br/>
+        <p className="creative">Caja de Herramientas by Costa Rica.  Ministerio de Educación Pública. is licensed under a Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License. <br/>
+        Creado a partir de la obra en https://www.mep.go.cr/educatico/caja. <br/>  Puede hallar permisos más allá de los concedidos con esta licencia en www.cajadeherramientas.mep.go.cr
+        </p>
+        </div>
        
         </div>
         </React.Fragment>

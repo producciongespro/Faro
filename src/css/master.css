@@ -20,6 +20,13 @@ body {
   margin-top: 14%;
 }
 
+
+.creative {
+  font: oblique bold 59% cursive;
+  line-height: 12px;
+  color: #7D7F7D;
+}
+
 #img-portada{
   max-width: 70%;
   margin-top: -3%;
