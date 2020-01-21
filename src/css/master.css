@@ -25,6 +25,11 @@ body {
   margin-top: -3%;
 }
 
+#img-licencia{
+  max-width: 70%;
+  margin-top: 1%;
+}
+
 .btn_volv{
   margin-top: 5%;
   margin-left: 200%;

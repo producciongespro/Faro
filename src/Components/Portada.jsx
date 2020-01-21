@@ -3,6 +3,7 @@ import textosJson from "../data/textos.json";
 import assets from '../data/config/config.json';
 const textos = textosJson[0];
 const img = assets.img.portada;
+const imgGeneral = assets.img.general;
 
 const Portada = (props) => {
     return ( 
@@ -33,7 +34,12 @@ const Portada = (props) => {
         <br/>
     
         DIRECCIÓN DE DESARROLLO CURRICULAR - DIRECCIÓN DE RECURSOS TECNOLÓGICOS EN EDUCACIÓN - INSTITUTO DE DESARROLLO PROFESIONAL ULADISLAO GÁMEZ SOLANO
-        </div>
+        </div> <br/> <br/>  
+
+        <div className="col-12 text-center">
+                
+                <img id="img-licencia" src={imgGeneral + "licencia.png"  } className="img-fluid" alt="Licencia Creative"/> 
+            </div>
        
         </div>
         </React.Fragment>
