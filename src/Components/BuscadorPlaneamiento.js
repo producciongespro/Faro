@@ -1626,32 +1626,36 @@ class BuscadorPlaneamiento extends Component {
                                 <div className="row">
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Lineamiento
-                                </a>
+                                    </a>
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plan} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Planeamiento ER
+                                    </a>
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont1} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Contenido 1
+                                        <i className="fas fa-file-word"></i> Objetivo 1
                                     </a>
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont2} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Contenido 2
+                                        <i className="fas fa-file-word"></i> Objetivo 2
                                     </a>
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont3} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Contenido 3
+                                        <i className="fas fa-file-word"></i> Objetivo 3
                                     </a>
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont4} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Contenido 4
+                                        <i className="fas fa-file-word"></i> Objetivo 4
                                     </a>
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont5} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Contenido 5
-                                    </a>
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont6} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Contenido 6
+                                        <i className="fas fa-file-word"></i> Objetivo 5
                                     </a>
                                 </div>
+                                
                                 <div className="row">
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont6} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Objetivo 6
+                                    </a>
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont7} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Contenido 7
+                                        <i className="fas fa-file-word"></i> Objetivo 7
                                     </a>
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont8} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Contenido 8
+                                        <i className="fas fa-file-word"></i> Objetivo 8
                                     </a>
                                 </div>
                             </div>
