@@ -187,21 +187,26 @@
         "anno" : "Séptimo",
         "materia" : "Ciencias",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_septimo_ano.docx "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_septimo_ano.docx ",
+        "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_afectividad_sexualidad_septimo.docx"
+
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Ciencias",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_octavo_ano.docx "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_octavo_ano.docx ",
+        "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_afectividad_sexualidad_octavo.docx"
+
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Ciencias",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_noveno_ano.docx "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_noveno_ano.docx ",
+        "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_afectividad_sexualidad_noveno.docx"
     },
   
 

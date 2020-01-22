@@ -798,6 +798,18 @@ class BuscadorPlaneamiento extends Component {
                                         </a>
                                     )
                                 }
+                                                              {
+                                        //Ciencias 
+                                        (this.state.nivel === "Secundaria") &&
+                                        this.state.materia === "Ciencias" &&
+                                        (this.state.anno === "Séptimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
+                                        (
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-word"></i> Plantilla sexualidad
+                                                    </a>
+                                        )
+
+                                    }
                             </div>
                         )
                     }
@@ -1646,7 +1658,7 @@ class BuscadorPlaneamiento extends Component {
                                         <i className="fas fa-file-word"></i> Objetivo 5
                                     </a>
                                 </div>
-                                
+
                                 <div className="row">
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont6} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 6
