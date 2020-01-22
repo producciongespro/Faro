@@ -122,6 +122,12 @@ background-color: #FCC82B;
   margin-top: 9%;
 }
 
+.ddc 
+{
+  max-width: 113%;
+  margin-left: -1%;
+}
+
 .creditos {
   line-height : 19px;
 }

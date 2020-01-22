@@ -67,7 +67,7 @@ const HomeMovil = (props) => {
                 <div className="col-3">
                 </div>
                 <div className="col-6">
-                    <img className="img-fluid botones-portada hvr-pop" id="acercadeMovil" src={ img + "acercade2.png" } onClick = {props.showModal }  data-typecontent ="acercaDe" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> 
+                    <img className="img-fluid botones-portada hvr-pop" id="acercadeMovil" src={ img + "creditosMovil.png" } onClick = {props.showModal }  data-typecontent ="acercaDe" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> 
                 </div>
                 <div className="col-3">
                 </div>

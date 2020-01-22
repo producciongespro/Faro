@@ -1799,9 +1799,13 @@ class BuscadorPlaneamiento extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="col-10 font-italic">
+                        <div className="col-2">
+                            <a href="http://www.ddc.mep.go.cr/" target="_blank" > <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
+                         </div>
+
+                    <div className="col-8 font-italic">
                         Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
-                            Por último, presione el botón "buscar" para encontrar el resultado deseado.
+                        Por último, presione el botón "buscar" para encontrar el resultado deseado.
                     </div>
                     <div className="col-2" id="divBotonBuscar">
 

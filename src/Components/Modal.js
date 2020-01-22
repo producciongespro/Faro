@@ -120,7 +120,7 @@ class Modal extends Component {
         this.classModalBody = this.classModalBody +" borde-modal borde-bottom-turquesa";
         tmpContent = (<React.Fragment>
           <div>
-            <img className="img-fluid modal-img-titulo" src={imgHome + "acercade.png"} alt="fondo indicaciones" />
+            <img className="img-fluid modal-img-titulo" src={imgHome + "creditos.png"} alt="fondo indicaciones" />
           </div>
                   <strong>Dirección de Recursos Tecnológicos</strong><br />
                   <strong>Departamento de Gestión y Producción</strong><br />
