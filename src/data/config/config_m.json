@@ -2,19 +2,19 @@
     "version" : "1.1.2",
     "nombre" : "Caja de Herramientas",
     "img" : {
-        "general" : "http://recursos.mep.go.cr/Faro/asset/img/9_generales/",
-        "portada" : "http://recursos.mep.go.cr/Faro/asset/img/1_portada/",
-        "home" : "http://localhost/Faro/asset/img/2_home/web/",
-        "homeM" : "http://recursos.mep.go.cr/Faro/asset/img/2_home/movil/",
-        "apoyosClimaAula" : "http://recursos.mep.go.cr/Faro/asset/img/3_apoyos_aula/",
-        "apoyosEvaluacion" : "http://recursos.mep.go.cr/Faro/asset/img/4_apoyos_eval/",
-        "recursosDidacticos" : "http://recursos.mep.go.cr/Faro/asset/img/5_recursos_did/",
-        "docsOficiales" : "http://recursos.mep.go.cr/Faro/asset/img/6__documen_educ/",
-        "desarrolloProfesional" : "http://recursos.mep.go.cr/Faro/asset/img/7_desarrollo_prof/",
-        "apoyosPlan" : "http://recursos.mep.go.cr/Faro/asset/img/8_apoyo_planea/"
+        "general" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/9_generales/",
+        "portada" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/1_portada/",
+        "home" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/2_home/web/",
+        "homeM" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/2_home/movil/",
+        "apoyosClimaAula" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/3_apoyos_aula/",
+        "apoyosEvaluacion" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/4_apoyos_eval/",
+        "recursosDidacticos" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/5_recursos_did/",
+        "docsOficiales" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/6__documen_educ/",
+        "desarrolloProfesional" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/7_desarrollo_prof/",
+        "apoyosPlan" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/8_apoyo_planea/"
     },
     "video" : {
-        "ministra" : "https://www.youtube.com/embed/KdWgysitPgU"
+        "ministra" : "https://www.youtube.com/embed/yOjV8yEIrMs"
     },
-    "audio" : "http://recursos.mep.go.cr/Faro/asset/audios/"
+    "audio" : "https://pruebacajav2.mep.go.cr/Faro/asset/audios/"
 }
