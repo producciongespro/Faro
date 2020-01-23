@@ -793,7 +793,9 @@ padding-top:5%;
   right: 5%;
 }
 
-
+#texto_planes{
+  margin-top: -30px;;
+}
 
 #div-evaluacion{
   padding-left: 7%;

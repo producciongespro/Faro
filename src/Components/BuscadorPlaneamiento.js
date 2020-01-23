@@ -798,18 +798,18 @@ class BuscadorPlaneamiento extends Component {
                                         </a>
                                     )
                                 }
-                                                              {
-                                        //Ciencias 
-                                        (this.state.nivel === "Secundaria") &&
-                                        this.state.materia === "Ciencias" &&
-                                        (this.state.anno === "Séptimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
-                                        (
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-word"></i> Plantilla sexualidad
+                                {
+                                    //Ciencias 
+                                    (this.state.nivel === "Secundaria") &&
+                                    this.state.materia === "Ciencias" &&
+                                    (this.state.anno === "Séptimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
+                                    (
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-word"></i> Plantilla sexualidad
                                                     </a>
-                                        )
+                                    )
 
-                                    }
+                                }
                             </div>
                         )
                     }
@@ -862,10 +862,10 @@ class BuscadorPlaneamiento extends Component {
                                         (
                                             <React.Fragment>
                                                 <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].articulacion} target="_blank" rel="noopener noreferrer" >
-                                                <i className="far fa-file-archive"></i> Articulación
+                                                    <i className="far fa-file-archive"></i> Articulación
                                             </a>
-                                              <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].comprension} target="_blank" rel="noopener noreferrer" >
-                                                <i className="far fa-file-archive"></i> Comprensión
+                                                <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].comprension} target="_blank" rel="noopener noreferrer" >
+                                                    <i className="far fa-file-archive"></i> Comprensión
                                             </a>
                                             </React.Fragment>
                                         )
@@ -1799,17 +1799,36 @@ class BuscadorPlaneamiento extends Component {
                 </div>
 
                 <div className="row">
-                        <div className="col-2">
-                            <a href="http://www.ddc.mep.go.cr/" target="_blank" > <img className="hvr-pop ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
-                         </div>
 
-                    <div className="col-8 font-italic">
-                        Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
-                        Por último, presione el botón "buscar" para encontrar el resultado deseado.
-                    </div>
-                    <div className="col-2" id="divBotonBuscar">
+                    {
+                        this.plataformaUsada === "escritorio" ?
+                            (
+                                <React.Fragment>
+                                    <div className="col-2">
+                                        <a href="http://www.ddc.mep.go.cr/" target="_blank" > <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
+                                    </div>
 
-                    </div>
+                                    <div className="col-8 font-italic">
+                                        Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
+                                        Por último, presione el botón "buscar" para encontrar el resultado deseado.
+                                    </div>
+                                    <div className="col-2" id="divBotonBuscar">
+
+                                    </div>
+                                </React.Fragment>
+                            ) :
+                            (
+                                <React.Fragment>
+                                    <div id="texto_planes" className="col-12 font-italic text-center">
+                                        Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
+                                        Por último, presione el botón "buscar" para encontrar el resultado deseado.
+                                    </div> <br/>
+                                    <div className="col-12 text-center">
+                                        <a href="http://www.ddc.mep.go.cr/" target="_blank" > <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
+                                    </div>
+                                </React.Fragment>
+                            )
+                }
                 </div> <hr />
 
                 <div className="container">
