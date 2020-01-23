@@ -1800,7 +1800,7 @@ class BuscadorPlaneamiento extends Component {
 
                 <div className="row">
                         <div className="col-2">
-                            <a href="http://www.ddc.mep.go.cr/" target="_blank" > <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
+                            <a href="http://www.ddc.mep.go.cr/" target="_blank" > <img className="hvr-pop ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
                          </div>
 
                     <div className="col-8 font-italic">

@@ -1,27 +1,16 @@
 [
     {
         "id" : "maternoGuia",
-        "label" : "Guía niñas y niños de 0 - 4 años (Interactivo I)"
+        "label" : "Guía pedagógica para niños y niñas del nacimiento hasta los 4 años de edad"
     },
-    {
-        "id" : "InteractivoIIGuiaDocente",
-        "label" : "Guía del docente programa de estudio (Interactivo II)"
-    },
+   
     {
         "id" : "InteractivoIIProgramaEstudio",
-        "label" : "Programa de estudio de educación preescolar (Interactivo II)"
+        "label" : "Programa de Estudio de Educación Preescolar. Ciclo Materno Infantil (Grupo Interactivo II) Ciclo Transición"
     },
-    {
-        "id" : "transicionGuiaDocente",
-        "label" : "Guía docente del programa de estudio de educación preescolar (Transición)"
-    },
-    {
-        "id" : "transicionProgramaEstudio",
-        "label" : "Programa de estudio de educación preescolar (Transición)"
-    },
-    {
+      {
         "id" : "transicionIngles",
-        "label" : "Programa de estudios Inglés en preescolar (Transición)"
+        "label" : "Programa de Estudio Inglés-Preescolar"
     }
    
 ]
