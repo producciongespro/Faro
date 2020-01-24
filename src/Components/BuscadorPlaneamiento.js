@@ -1038,39 +1038,19 @@ class BuscadorPlaneamiento extends Component {
                                 <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Plantilla
                                             </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientosViejo} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Lineamientos viejos
-                                        </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Lectura
-                                        </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Monografía
-                                        </a>
 
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Trasnversal
-                                        </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Mensual
-                                        </a>
-                                <hr />
                                 <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Orientaciones
                                         </a>
-                                {
-                                    (this.state.anno !== "Undécimo") &&
-                                    (
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Novela
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].anual} target="_blank" rel="noopener noreferrer" >
+                                    <i className="fas fa-file-pdf"></i> Plantillas anuales
                                         </a>
-                                    )
-                                }
+                                
                                 {
                                     this.state.anno === "Décimo" &&
                                     (
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> División
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].decimoTecnico} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Décimo Técnico
                                                 </a>
                                     )
                                 }
@@ -1080,17 +1060,14 @@ class BuscadorPlaneamiento extends Component {
                                     this.state.anno === "Undécimo" &&
                                     (
                                         <React.Fragment>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].criterios11y12} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Criterios 11 y 12
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].undecimoAcademico} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Undécimo académico programa 2009
                                         </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].division} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> División
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].undecimoTecnico} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Undécimo modalidad técnica programa 2009
                                         </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesNuevas} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Orientaciones Plan Nuevo
-                                        </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientacionesviejas} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Orientaciones Plan Viejo
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].duodecimo} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Duodécimo modalidad técnica programa 2009
                                         </a>
                                         </React.Fragment>
                                     )

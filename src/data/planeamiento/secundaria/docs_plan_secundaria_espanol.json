@@ -5,13 +5,8 @@
    "anno" : "Séptimo", 
    "mes" : "Febrero",
     "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-    "lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
     "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/1_orientaciones_plan_didactico.docx",
-    "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_lectura_diaria_septimo.docx",
-    "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_monografia_septimo.docx",
-    "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_novela_septimo.docx",
-    "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/2_crit_trans_todos_niveles.docx",
-    "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/3_criterios_trans_7_niveles_superiores.docx",
+    "anual": "nulo",
     "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_febrero_septimo.docx"
    },
 
@@ -22,13 +17,8 @@
    "anno" : "Séptimo", 
    "mes" : "Marzo",
    "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-   "lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
    "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/1_orientaciones_plan_didactico.docx",
-   "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_lectura_diaria_septimo.docx",
-   "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_monografia_septimo.docx",
-   "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_novela_septimo.docx",
-   "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/2_crit_trans_todos_niveles.docx",
-   "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/3_criterios_trans_7_niveles_superiores.docx",
+   "anual": "nulo",
    "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_marzo_septimo.docx"
   },
 
@@ -38,13 +28,8 @@
    "anno" : "Séptimo", 
    "mes" : "Abril",
    "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-    "lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
     "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/1_orientaciones_plan_didactico.docx",
-    "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_lectura_diaria_septimo.docx",
-    "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_monografia_septimo.docx",
-    "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_novela_septimo.docx",
-    "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/2_crit_trans_todos_niveles.docx",
-    "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/3_criterios_trans_7_niveles_superiores.docx",
+    "anual": "nulo",
     "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_abril_septimo.docx"
    }, 
    
@@ -55,13 +40,8 @@
    "anno" : "Séptimo", 
    "mes" : "Mayo",
    "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-   "lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
    "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/1_orientaciones_plan_didactico.docx",
-   "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_lectura_diaria_septimo.docx",
-   "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_monografia_septimo.docx",
-   "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_novela_septimo.docx",
-   "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/2_crit_trans_todos_niveles.docx",
-   "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/3_criterios_trans_7_niveles_superiores.docx",
+   "anual": "nulo",
    "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_mayo_septimo.docx"
   }, 
    
@@ -72,13 +52,8 @@
    "anno" : "Séptimo", 
    "mes" : "Junio",
    "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-    "lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
     "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/1_orientaciones_plan_didactico.docx",
-    "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_lectura_diaria_septimo.docx",
-    "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_monografia_septimo.docx",
-    "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_novela_septimo.docx",
-    "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/2_crit_trans_todos_niveles.docx",
-    "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/3_criterios_trans_7_niveles_superiores.docx",
+    "anual": "nulo",
     "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_junio_septimo.docx"
    },
    
@@ -89,13 +64,8 @@
    "anno" : "Séptimo", 
    "mes" : "Julio",
    "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-   "lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
    "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/1_orientaciones_plan_didactico.docx",
-   "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_lectura_diaria_septimo.docx",
-   "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_monografia_septimo.docx",
-   "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_novela_septimo.docx",
-   "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/2_crit_trans_todos_niveles.docx",
-   "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/3_criterios_trans_7_niveles_superiores.docx",
+   "anual": "nulo",
    "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_julio_septimo.docx"
   },
 
@@ -106,13 +76,8 @@
    "anno" : "Séptimo", 
    "mes" : "Agosto",
    "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-   "lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
    "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/1_orientaciones_plan_didactico.docx",
-   "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_lectura_diaria_septimo.docx",
-   "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_monografia_septimo.docx",
-   "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_novela_septimo.docx",
-   "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/2_crit_trans_todos_niveles.docx",
-   "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/3_criterios_trans_7_niveles_superiores.docx",
+   "anual": "nulo",
    "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_agosto_septimo.docx"
   },
   
@@ -124,13 +89,8 @@
    "anno" : "Séptimo", 
    "mes" : "Septiembre",
    "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-   "lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
    "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/1_orientaciones_plan_didactico.docx",
-   "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_lectura_diaria_septimo.docx",
-   "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_monografia_septimo.docx",
-   "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_novela_septimo.docx",
-   "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/2_crit_trans_todos_niveles.docx",
-   "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/3_criterios_trans_7_niveles_superiores.docx",
+   "anual": "nulo",
    "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_septiembre_septimo.docx"
   },  
  
@@ -141,13 +101,8 @@
    "anno" : "Séptimo", 
    "mes" : "Octubre",
    "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-   "lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
    "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/1_orientaciones_plan_didactico.docx",
-   "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_lectura_diaria_septimo.docx",
-   "monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_monografia_septimo.docx",
-   "novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_novela_septimo.docx",
-   "transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/2_crit_trans_todos_niveles.docx",
-   "mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/3_criterios_trans_7_niveles_superiores.docx",
+   "anual": "nulo",
    "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/set/ppd_octubre_septimo.docx"
   },
    
@@ -176,13 +131,8 @@
 "anno" : "Octavo", 
 "mes" : "Febrero",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/1_orientaciones_planeamiento_octavo.docx",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_lectura_diaria_octavo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_monografia_octavo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_novela_octavo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/3_criterios_trans_8_niveles_sup.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_febrero_octavo.docx"
 },
 
@@ -193,13 +143,8 @@
 "anno" : "Octavo", 
 "mes" : "Marzo",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/1_orientaciones_planeamiento_octavo.docx",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_lectura_diaria_octavo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_monografia_octavo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_novela_octavo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/3_criterios_trans_8_niveles_sup.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_marzo_octavo.docx"
 }, 
 
@@ -209,13 +154,8 @@
 "anno" : "Octavo", 
 "mes" : "Abril",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/1_orientaciones_planeamiento_octavo.docx",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_lectura_diaria_octavo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_monografia_octavo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_novela_octavo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/3_criterios_trans_8_niveles_sup.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_abril_octavo.docx"
 }, 
 
@@ -226,13 +166,8 @@
 "anno" : "Octavo", 
 "mes" : "Mayo",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/1_orientaciones_planeamiento_octavo.docx",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_lectura_diaria_octavo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_monografia_octavo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_novela_octavo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/3_criterios_trans_8_niveles_sup.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_mayo_octavo.docx"
 }, 
 
@@ -243,13 +178,8 @@
 "anno" : "Octavo", 
 "mes" : "Junio",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/1_orientaciones_planeamiento_octavo.docx",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_lectura_diaria_octavo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_monografia_octavo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_novela_octavo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/3_criterios_trans_8_niveles_sup.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_junio_octavo.docx"
 },
 
@@ -260,13 +190,8 @@
 "anno" : "Octavo", 
 "mes" : "Julio",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/1_orientaciones_planeamiento_octavo.docx",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_lectura_diaria_octavo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_monografia_octavo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_novela_octavo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/3_criterios_trans_8_niveles_sup.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_julio_octavo.docx"
 },
 
@@ -277,13 +202,8 @@
 "anno" : "Octavo", 
 "mes" : "Agosto",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/1_orientaciones_planeamiento_octavo.docx",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_lectura_diaria_octavo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_monografia_octavo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_novela_octavo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/3_criterios_trans_8_niveles_sup.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_agosto_octavo.docx"
 },
 
@@ -294,13 +214,8 @@
 "anno" : "Octavo", 
 "mes" : "Septiembre",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/1_orientaciones_planeamiento_octavo.docx",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_lectura_diaria_octavo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_monografia_octavo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_novela_octavo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/3_criterios_trans_8_niveles_sup.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_septiembre_octavo.docx"
 },   
 
@@ -311,13 +226,8 @@
 "anno" : "Octavo", 
 "mes" : "Octubre",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/1_orientaciones_planeamiento_octavo.docx",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_lectura_diaria_octavo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_monografia_octavo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_novela_octavo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/3_criterios_trans_8_niveles_sup.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/oct/ppd_octubre_octavo.docx"
 },
 
@@ -357,13 +267,8 @@
 "anno" : "Noveno", 
 "mes" : "Febrero",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_lectura_diaria_noveno.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/1_orientaciones_planeamiento_noveno.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_monograf%c3%ada_noveno.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_novela_noveno.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/3_criterios_trans_9_y_niveles_superiores.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_febrero_noveno.docx"
 },
 
@@ -374,13 +279,8 @@
 "anno" : "Noveno", 
 "mes" : "Marzo",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_lectura_diaria_noveno.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/1_orientaciones_planeamiento_noveno.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_monograf%c3%ada_noveno.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_novela_noveno.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/3_criterios_trans_9_y_niveles_superiores.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_marzo_noveno.docx"
 },
 
@@ -390,13 +290,8 @@
 "anno" : "Noveno", 
 "mes" : "Abril",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_lectura_diaria_noveno.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/1_orientaciones_planeamiento_noveno.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_monograf%c3%ada_noveno.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_novela_noveno.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/3_criterios_trans_9_y_niveles_superiores.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_abril_noveno.docx"
 },
 
@@ -407,13 +302,8 @@
 "anno" : "Noveno", 
 "mes" : "Mayo",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_lectura_diaria_noveno.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/1_orientaciones_planeamiento_noveno.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_monograf%c3%ada_noveno.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_novela_noveno.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/3_criterios_trans_9_y_niveles_superiores.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_mayo_noveno.docx"
 },
 
@@ -424,13 +314,8 @@
 "anno" : "Noveno", 
 "mes" : "Junio",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_lectura_diaria_noveno.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/1_orientaciones_planeamiento_noveno.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_monograf%c3%ada_noveno.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_novela_noveno.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/3_criterios_trans_9_y_niveles_superiores.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_junio_noveno.docx"
 },
 
@@ -441,13 +326,8 @@
 "anno" : "Noveno", 
 "mes" : "Julio",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_lectura_diaria_noveno.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/1_orientaciones_planeamiento_noveno.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_monograf%c3%ada_noveno.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_novela_noveno.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/3_criterios_trans_9_y_niveles_superiores.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_julio_noveno.docx"
 },
 
@@ -458,13 +338,8 @@
 "anno" : "Noveno", 
 "mes" : "Agosto",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_lectura_diaria_noveno.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/1_orientaciones_planeamiento_noveno.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_monograf%c3%ada_noveno.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_novela_noveno.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/3_criterios_trans_9_y_niveles_superiores.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_agosto_noveno.docx"
 },
 
@@ -475,13 +350,8 @@
 "anno" : "Noveno", 
 "mes" : "Septiembre",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_lectura_diaria_noveno.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/1_orientaciones_planeamiento_noveno.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_monograf%c3%ada_noveno.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_novela_noveno.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/3_criterios_trans_9_y_niveles_superiores.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_septiembre_noveno.docx"
 },   
 
@@ -492,13 +362,9 @@
 "anno" : "Noveno", 
 "mes" : "Octubre",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
 "lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_lectura_diaria_noveno.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/1_orientaciones_planeamiento_noveno.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_monograf%c3%ada_noveno.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_novela_noveno.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/3_criterios_trans_9_y_niveles_superiores.docx",
+"anual": "nulo",
 "plantilla" :"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/nov/ppd_octubre_noveno.docx"
 },
 
@@ -538,14 +404,9 @@
 "anno" : "Décimo", 
 "mes" : "Febrero",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/1_orientaciones_decimo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_monografia_decimo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/2_crit_trans_todos_niveles.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/0_division_por_meses.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/3_criterios_trans_10_y_demas_niveles.docx",
+"anual": "nulo",
+"decimoTecnico": "nulo",
 "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_febrero_decimo.docx"
 },
 
@@ -556,14 +417,9 @@
 "anno" : "Décimo", 
 "mes" : "Marzo",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/1_orientaciones_decimo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_monografia_decimo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/2_crit_trans_todos_niveles.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/0_division_por_meses.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/3_criterios_trans_10_y_demas_niveles.docx",
+"anual": "nulo",
+"decimoTecnico": "nulo",
 "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_marzo_decimo.docx"
 },
 
@@ -573,14 +429,9 @@
 "anno" : "Décimo", 
 "mes" : "Abril",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/1_orientaciones_decimo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_monografia_decimo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/2_crit_trans_todos_niveles.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/0_division_por_meses.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/3_criterios_trans_10_y_demas_niveles.docx",
+"anual": "nulo",
+"decimoTecnico": "nulo",
 "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_abril_decimo.docx"
 }, 
 
@@ -591,14 +442,9 @@
 "anno" : "Décimo", 
 "mes" : "Mayo",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/1_orientaciones_decimo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_monografia_decimo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/2_crit_trans_todos_niveles.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/0_division_por_meses.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/3_criterios_trans_10_y_demas_niveles.docx",
+"anual": "nulo",
+"decimoTecnico": "nulo",
 "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_mayo_decimo.docx"
 },
 
@@ -609,14 +455,9 @@
 "anno" : "Décimo", 
 "mes" : "Junio",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/1_orientaciones_decimo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_monografia_decimo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/2_crit_trans_todos_niveles.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/0_division_por_meses.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/3_criterios_trans_10_y_demas_niveles.docx",
+"anual": "nulo",
+"decimoTecnico": "nulo",
 "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_junio_decimo.docx"
 },
 
@@ -627,14 +468,9 @@
 "anno" : "Décimo", 
 "mes" : "Julio",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/1_orientaciones_decimo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_monografia_decimo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/2_crit_trans_todos_niveles.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/0_division_por_meses.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/3_criterios_trans_10_y_demas_niveles.docx",
+"anual": "nulo",
+"decimoTecnico": "nulo",
 "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_julio_decimo.docx"
 },
 
@@ -645,14 +481,9 @@
 "anno" : "Décimo", 
 "mes" : "Agosto",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/1_orientaciones_decimo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_monografia_decimo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/2_crit_trans_todos_niveles.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/0_division_por_meses.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/3_criterios_trans_10_y_demas_niveles.docx",
+"anual": "nulo",
+"decimoTecnico": "nulo",
 "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_agosto_decimo.docx"
 },
 
@@ -663,14 +494,9 @@
 "anno" : "Décimo", 
 "mes" : "Septiembre",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/1_orientaciones_decimo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_monografia_decimo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/2_crit_trans_todos_niveles.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/0_division_por_meses.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/3_criterios_trans_10_y_demas_niveles.docx",
+"anual": "nulo",
+"decimoTecnico": "nulo",
 "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_septiembre_decimo.docx"
 },  
 
@@ -681,14 +507,9 @@
 "anno" : "Décimo", 
 "mes" : "Octubre",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
 "orientaciones": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/1_orientaciones_decimo.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_monografia_decimo.docx",
-"novela" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_anual_lectura_diaria_decimo.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/2_crit_trans_todos_niveles.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/0_division_por_meses.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/3_criterios_trans_10_y_demas_niveles.docx",
+"anual": "nulo",
+"decimoTecnico": "nulo",
 "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/dec/ppd_octubre_decimo.docx"
 },
 
@@ -725,15 +546,11 @@
 "anno" : "Undécimo", 
 "mes" : "Febrero",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesNuevas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_febrero_undecimo_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_febrero_undecimo_pv.docx"
+"orientaciones" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_febrero_undecimo_pn.docx",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 },
 
 
@@ -743,15 +560,11 @@
 "anno" : "Undécimo", 
 "mes" : "Marzo",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesNuevas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_marzo_undecimo_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_marzo_undecimo_pv.docx"
+"orientaciones" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_marzo_undecimo_pn.docx",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 },
 
 
@@ -761,15 +574,11 @@
 "anno" : "Undécimo", 
 "mes" : "Abril",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesNuevas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_abril_undecimo_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_abril_undecimo_pv.docx"
+"orientaciones" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_abril_undecimo_pn.docx",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 },
 
 
@@ -779,15 +588,11 @@
 "anno" : "Undécimo", 
 "mes" : "Mayo",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesNuevas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_mayo_undecimo_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_mayo_undecimo_pv.docx"
+"orientaciones" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_mayo_undecimo_pn.docx",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 },
 
 
@@ -797,15 +602,11 @@
 "anno" : "Undécimo", 
 "mes" : "Junio",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesNuevas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_junio_undecimo_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_junio_undecimo_pv.docx"
+"orientaciones" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_junio_undecimo_pn.docx",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 },
 
 
@@ -815,15 +616,11 @@
 "anno" : "Undécimo", 
 "mes" : "Julio",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesNuevas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_julio_undecimo_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_julio_undecimo_pv.docx"
+"plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_julio_undecimo_pn.docx",
+"orientaciones" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 },
 
 
@@ -833,15 +630,11 @@
 "anno" : "Undécimo", 
 "mes" : "Agosto",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesNuevas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_agosto_undecimo_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_agosto_undecimo_pv.docx"
+"plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_agosto_undecimo_pn.docx",
+"orientaciones" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 },
 
    
@@ -851,15 +644,11 @@
 "anno" : "Undécimo", 
 "mes" : "Septiembre",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesNuevas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_septiembre_undecimo_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_septiembre_undecimo_pv.docx"
+"plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_septiembre_undecimo_pn.docx",
+"orientaciones" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 },   
 
 
@@ -869,15 +658,11 @@
 "anno" : "Undécimo", 
 "mes" : "Octubre",
 "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesNuevas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_octubre_undecimo_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_octubre_undecimo_pv.docx"
+"plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_octubre_undecimo_pn.docx",
+"orientaciones" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 },
 
 
@@ -886,15 +671,12 @@
 "materia" : "Español",
 "anno" : "Undécimo", 
 "mes" : "Noviembre",
-"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientosViejo" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/03_lin_espanol_secundaria_p_viejo.pdf",
-"lectura" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_lectura_diaria_11_pn.docx",
-"monografia" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_anual_monografia_11_pn.docx",
-"transversal" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/2_crit_trans_todos_niveles.docx",
-"mensual" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"criterios11y12" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/3_criterios_trans_11_y_12.docx",
-"division" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/0_division_por_meses_pn.docx",
-"orientacionesViejas":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/ppd_noviembre_undecimo_pv.docx"
+"plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
+"orientaciones":"nulo",
+"undecimoAcademico" : "nulo",
+"undecimoTecnico" : "nulo",
+"duodecimo":"nulo"
 }
 
 
