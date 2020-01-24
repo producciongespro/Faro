@@ -119,7 +119,7 @@
         "materia": "Matemática",
         "mes": "Abril",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/abril_geo_alge_matema_sec.zip" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/oct/3.ppd_geometria_abril_octavo.docx" 
     },
     {
         "nivel": "Secundaria",
@@ -314,9 +314,9 @@
         "materia": "Matemática",
         "mes": "Abril",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/3.ppd_geometria_abril_decimo.docx",
-        "plantillaDos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/3.ppd_relaciones_y_algebra_abril_decimo.docx"
-    },
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/dec/abril_geo_alge_matema_sec.zip"
+
+   },
     {
         "nivel": "Secundaria",
         "anno": "Décimo",
