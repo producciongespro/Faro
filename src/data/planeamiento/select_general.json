@@ -115,6 +115,11 @@
     "Química"        
 ],
 
+"Secundaria Duodécimo" : [
+    "Matemática",
+    "Español"
+],
+
 
 
 "Años Primaria" : [        
@@ -132,7 +137,8 @@
     "Octavo",
     "Noveno",
     "Décimo",
-    "Undécimo"
+    "Undécimo",
+    "Duodécimo"
     ],
 
 
