@@ -2041,6 +2041,18 @@ class BuscadorPlaneamiento extends Component {
                                                     ))
                                                 )
                                             }
+
+{
+                                                //Materias de secudaria duodécimo
+                                                this.state.nivel === "Secundaria" &&
+                                                (
+                                                    (this.state.anno === "Duodécimo") &&
+                                                    listasPlan["Secundaria Duodécimo"].map((item, i) => (
+                                                        <option key={"materia" + i} value={item} >  {item}  </option>
+                                                    ))
+                                                )
+                                            }
+
                                             {
                                                 (this.state.nivel === "Lenguas y Culturas Indígenas Primaria" || this.state.nivel === "Interculturalidad Secundaria") &&
                                                 listasPlan.Interculturalidad.map((item, i) => (
