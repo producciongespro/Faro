@@ -1035,9 +1035,14 @@ class BuscadorPlaneamiento extends Component {
                                 <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
                                         </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Plantilla
-                                            </a>
+                               {
+                                array[index].plantilla !== "nulo" &&
+                                   (
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Plantilla
+                                    </a>
+                                   )
+                               }
 
                                 <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Orientaciones
