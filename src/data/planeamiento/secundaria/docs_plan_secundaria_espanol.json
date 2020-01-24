@@ -671,9 +671,9 @@
 "materia" : "Español",
 "anno" : "Undécimo", 
 "mes" : "Noviembre",
-"plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
-"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
-"orientaciones":"nulo",
+"plantilla" : "nulo",
+"lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
+"orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
 "undecimoAcademico" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/undecimo_academico.zip",
 "undecimoTecnico" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/undecimo_tecnico.zip",
 "duodecimo":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/duodecimo_tecnico.zip"
