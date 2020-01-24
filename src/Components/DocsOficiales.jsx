@@ -60,7 +60,7 @@ const DocsOficiales = ( props ) => {
             </div>
             <div className="col-4  ladoIzq">
             <figure>
-              <img className="botones-portada hvr-pop img-fluid reglamento" id="reglamento" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "reglamento.png"} data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Reglamento evaluación" />            
+              <img className="botones-portada hvr-pop img-fluid reglamento" id="reglamento" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "reglamento.png"} data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="evaluacion"  onClick={props.showModal}  alt="Reglamento evaluación" />            
             </figure>
             </div>
         </div>

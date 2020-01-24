@@ -49,9 +49,9 @@ class Modal extends Component {
       case "video":
         //console.log("Video");       
         this.modalAncho = this.modalAncho + " modal-lg";
-        
-       tmpContent = (
-            <iframe className="borde-video" title="video ministra" width="100%" height="500" src={video.ministra} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+        tmpContent = (
+          <iframe className="borde-video" title="video ministra" width="100%" height="500" src={video.ministra} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         )
 
         break;
@@ -80,69 +80,89 @@ class Modal extends Component {
               <img className="img-ico-audio modal-img-titulo" src={imgGeneral + "audio.png"} onClick={this.playAudio} alt="Icono activar audio" />
               <audio src={audio + "intro.mp3"} id="audioIntro" ></audio>
             </div>
-              <p>
-                Los recursos de esta caja de herramientas están organizados en seis categorías con el propósito de que usted pueda dirigirse a la sección más atinente a su necesidad de información.  Estas categorías son:
+            <p>
+              Los recursos de esta caja de herramientas están organizados en seis categorías con el propósito de que usted pueda dirigirse a la sección más atinente a su necesidad de información.  Estas categorías son:
               </p>
-              <ul>
-                <li>Apoyos para el clima del aula</li>
-                <li>Apoyos para la evaluación</li>
-                <li>Recursos didácticos</li>
-                <li>Documentos oficiales</li>
-                <li>Desarrollo profesional</li>
-                <li>Apoyos para el planeamiento</li>
-              </ul>
-              <p>
-                Para disponer de los distintos recursos, dé un clic a los diferentes accesorios que acompañan a la imagen de la educadora.  Cada uno de estos objetos representa una de las categorías.  <br />
-                Dentro de cada categoría encontrará una descripción de la sección, así como una serie de accesos a documentos, enlaces, plantillas, y otros materiales de utilidad para su quehacer docente.
+            <ul>
+              <li>Apoyos para el clima del aula</li>
+              <li>Apoyos para la evaluación</li>
+              <li>Recursos didácticos</li>
+              <li>Documentos oficiales</li>
+              <li>Desarrollo profesional</li>
+              <li>Apoyos para el planeamiento</li>
+            </ul>
+            <p>
+              Para disponer de los distintos recursos, dé un clic a los diferentes accesorios que acompañan a la imagen de la educadora.  Cada uno de estos objetos representa una de las categorías.  <br />
+              Dentro de cada categoría encontrará una descripción de la sección, así como una serie de accesos a documentos, enlaces, plantillas, y otros materiales de utilidad para su quehacer docente.
                           Al colocar el puntero del mouse sobre cada acceso, podrá leer la descripción del recurso específico que se le está proveyendo. <br />
-                En las diferentes pantallas que acceda, dispondrá de botones que le permitirá retornar a la pantalla anterior o volver al menú principal.
+              En las diferentes pantallas que acceda, dispondrá de botones que le permitirá retornar a la pantalla anterior o volver al menú principal.
               </p>
-            
+
           </React.Fragment>
         break;
       case "defHabilidades":
         this.modalAncho = this.modalAncho + " modal-lg";
-        this.classModalBody = this.classModalBody +" borde-modal borde-bottom-azul";
+        this.classModalBody = this.classModalBody + " borde-modal borde-bottom-azul";
         tmpContent = (<React.Fragment>
           <div>
             <img className="img-fluid  modal-img-titulo" src={imgApoyoPlan + "btn_habilidad.png"} alt="fondo indicaciones" />
           </div>
-            <h2 className="text-center">Definición</h2>
-            <br />Las habilidades son capacidades aprendidas por la población estudiantil,  que utiliza para enfrentar situaciones problemáticas de la vida diaria.  Estas se adquieren mediante el aprendizaje de la experiencia directa, a través del modelado o la imitación, por lo que trasciende la simple transmisión del conocimiento, lo cual promueve la visión y  formación integral  de las personas, de cómo apropiarse del conocimiento sistematizado para crear su propio aprendizaje.
+          <h2 className="text-center">Definición</h2>
+          <br />Las habilidades son capacidades aprendidas por la población estudiantil,  que utiliza para enfrentar situaciones problemáticas de la vida diaria.  Estas se adquieren mediante el aprendizaje de la experiencia directa, a través del modelado o la imitación, por lo que trasciende la simple transmisión del conocimiento, lo cual promueve la visión y  formación integral  de las personas, de cómo apropiarse del conocimiento sistematizado para crear su propio aprendizaje.
               <br /><br /><br /><br />
-              <strong>Fuente</strong> <cite> :   Alfaro et al. Por qué un currículo por habilidades en la reforma curricular de Costa Rica.  Ministerio de Educación Pública, Dirección de Desarrollo Curricular.  </cite>
+          <strong>Fuente</strong> <cite> :   Alfaro et al. Por qué un currículo por habilidades en la reforma curricular de Costa Rica.  Ministerio de Educación Pública, Dirección de Desarrollo Curricular.  </cite>
         </React.Fragment>
+        )
+        break;
+
+      case "evaluacion":
+        this.modalAncho = this.modalAncho + " modal-lg";
+        this.classModalBody = this.classModalBody + " borde-modal borde-bottom-azul";
+        tmpContent = (        
+          <div className="row">
+            <div className="col-sm-12">
+              <a target="_blank" rel="noopener noreferrer"
+                href="http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_norma.aspx?param1=NRM&nValor1=1&nValor2=85815&nValor3=111107&strTipM=FN">
+                <i className="fas fa-link"></i> Enlace a la ficha del Decreto Ejecutivo 40862 (REA) (enlace que no varía con el tiempo)
+              </a>
+              <br/>
+              <a target="_blank" rel="noopener noreferrer"
+                href="http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=85815">
+                <i className="fas fa-link"></i> Enlace al texto vigente del Decreto Ejecutivo 40862 (REA)
+            </a>
+            </div>
+          </div>
         )
         break;
 
       case "acercaDe":
         this.modalAncho = this.modalAncho + " modal-lg";
-        this.classModalBody = this.classModalBody +" borde-modal borde-bottom-turquesa";
+        this.classModalBody = this.classModalBody + " borde-modal borde-bottom-turquesa";
         tmpContent = (<React.Fragment>
           <div>
             <img className="img-fluid modal-img-titulo" src={imgHome + "creditos.png"} alt="fondo indicaciones" />
           </div>
-                  <strong>Dirección de Recursos Tecnológicos</strong><br />
-                  <strong>Departamento de Gestión y Producción</strong><br />
-                  <strong>Programadores</strong><br />
-                  Luis Angel Chacón Campos <br />
-                  Patricia Hernández Conejo<br />
-                  Óscar Pérez Ramírez <br />
-                  Ana Teresa Araya Salazar <br />
-                  <strong> Diseño gráfico </strong><br />
-                  Karla Guevara Murillo <br /><br /><br />
+          <strong>Dirección de Recursos Tecnológicos</strong><br />
+          <strong>Departamento de Gestión y Producción</strong><br />
+          <strong>Programadores</strong><br />
+          Luis Chacón Campos <br />
+          Patricia Hernández Conejo<br />
+          Óscar Pérez Ramírez <br />
+          Ana Teresa Araya Salazar <br />
+          <strong> Diseño gráfico </strong><br />
+          Karla Guevara Murillo <br /><br /><br />
 
-                  <strong>Dirección de Desarrollo Curricular</strong> <br />
-                  Asesores curricules de las asignaturas<br /><br /><br />
+          <strong>Dirección de Desarrollo Curricular</strong> <br />
+          Asesores curricules de las asignaturas<br /><br /><br />
 
-                  <strong>Coordinación</strong> <br />
-                  <strong> Viceministerio Académico</strong><br />
-                  Tatiana Navarro Mata<br />
-                  Nelson Campos Quesada <br />
-                  Henry Arias Guido <br />
-              <br />
-              <strong>Fuente</strong> <cite> :   MEP.Costa Rica - Enero 2020  </cite>
-            {/* </div> */}
+          <strong>Coordinación</strong> <br />
+          <strong> Viceministerio Académico</strong><br />
+          Tatiana Navarro Mata<br />
+          Nelson Campos Quesada <br />
+          Henry Arias Guido <br />
+          <br />
+          <strong>Fuente</strong> <cite> :   MEP.Costa Rica - Enero 2020  </cite>
+          {/* </div> */}
           {/* </div> */}
         </React.Fragment>
         )
@@ -208,26 +228,26 @@ class Modal extends Component {
 
       case "refUtiles":
         this.modalAncho = this.modalAncho + " modal-lg";
-        this.classModalBody = this.classModalBody +" borde-modal borde-bottom-celeste";
+        this.classModalBody = this.classModalBody + " borde-modal borde-bottom-celeste";
         tmpContent = (<React.Fragment>
           <div>
             <img className="img-fluid modal-img-titulo" src={img + "btn_referencias.png"} alt="fondo indicaciones" />
           </div>
 
-              <h2 className="text-center">Útiles para la docencia</h2>
-                <p>
-                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2017.pdf" target="_blank" rel="noopener noreferrer"> <strong> Lectura 2017</strong> </a>  y
+          <h2 className="text-center">Útiles para la docencia</h2>
+          <p>
+            <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2017.pdf" target="_blank" rel="noopener noreferrer"> <strong> Lectura 2017</strong> </a>  y
                         <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2018.pdf" target="_blank" rel="noopener noreferrer"><strong> Lectura 2018: </strong>  </a>
-                  Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, por medio de las cuales se fortalece la comprensión lectora, respondiendo a los momentos de antes, durante y después de la lectura.
+            Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, por medio de las cuales se fortalece la comprensión lectora, respondiendo a los momentos de antes, durante y después de la lectura.
                       </p>
-                <p>
-                  <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/escritura2017.pdf" target="_blank" rel="noopener noreferrer"><strong>Escritura 2017:</strong>  </a>
-                  Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, que fomentan la escritura en el estudiantado, en concordancia con el programa de estudio.
+          <p>
+            <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/escritura2017.pdf" target="_blank" rel="noopener noreferrer"><strong>Escritura 2017:</strong>  </a>
+            Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, que fomentan la escritura en el estudiantado, en concordancia con el programa de estudio.
                       </p>
-                <hr />
-                <h5 className="tit_ref2"><strong>Dispositivos Móviles para la Educación:</strong> </h5>
-                <p>
-                  <a href="https://multimedia.uned.ac.cr/pem/aprendizaje_moviles/pag/conceptos.html" target="_blank" rel="noopener noreferrer"><strong>Aprendizajes Móviles:</strong> </a> Este recurso publicado por la UNED de Costa Rica presenta las principales características de los dispositivos móviles, por un lado, la ubicuidad, en la que se aprende desde cualquier momento y lugar, por otro lado, la adaptabilidad o flexibilidad de estos dispositivos gracias a la conexión e ideas de cómo aprovecharlas en el área educativa.
+          <hr />
+          <h5 className="tit_ref2"><strong>Dispositivos Móviles para la Educación:</strong> </h5>
+          <p>
+            <a href="https://multimedia.uned.ac.cr/pem/aprendizaje_moviles/pag/conceptos.html" target="_blank" rel="noopener noreferrer"><strong>Aprendizajes Móviles:</strong> </a> Este recurso publicado por la UNED de Costa Rica presenta las principales características de los dispositivos móviles, por un lado, la ubicuidad, en la que se aprende desde cualquier momento y lugar, por otro lado, la adaptabilidad o flexibilidad de estos dispositivos gracias a la conexión e ideas de cómo aprovecharlas en el área educativa.
                       </p>
         </React.Fragment>
         )
@@ -263,18 +283,18 @@ class Modal extends Component {
         <div className="modal fade show  element-top" id="modalScreen"   >
           <div className={this.modalAncho} role="document">
             {/* <div className="modal-content text-center"> */}
-              {/* <div className="col-12 text-right"> */}
-              <div className="modal-content">
+            {/* <div className="col-12 text-right"> */}
+            <div className="modal-content">
               <div className="modal-header">
                 <button onClick={this.props.closeModal} type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
 
-              <div  className={this.classModalBody} >
+              <div className={this.classModalBody} >
                 {
-                  console.log("classModalBody:", this.classModalBody )
-                  
+                  console.log("classModalBody:", this.classModalBody)
+
                 }
                 {this.state.htmlContent}
               </div>
