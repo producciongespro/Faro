@@ -153,7 +153,7 @@
         "materia" : "Ciencias",
         "mes" : "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : " "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/8_ppd_ciencias_septiembre_segundo.docx"
     },   
     {
         "nivel" : "Primaria",
@@ -161,7 +161,7 @@
         "materia" : "Ciencias",
         "mes" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/8_ppd_ciencias_septiembre_segundo.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/seg/9_ppd_ciencias_octubre_segundo.docx"
     },   
     {
         "nivel" : "Primaria",
@@ -299,7 +299,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Ciencias",
-        "mes" : "Abril ",
+        "mes" : "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/3_ppd_ciencias_abril_cuarto.docx"
     },
@@ -307,7 +307,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Ciencias",
-        "mes" : "Mayo ",
+        "mes" : "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/4_ppd_ciencias_mayo_cuarto.docx"
     },
@@ -315,7 +315,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Ciencias",
-        "mes" : "Junio ",
+        "mes" : "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/5_ppd_ciencias_junio_cuarto.docx"
     },
@@ -323,7 +323,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Ciencias",
-        "mes" : "Julio ",
+        "mes" : "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/6_ppd_ciencias_julio_cuarto.docx"
     },
@@ -331,7 +331,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Ciencias",
-        "mes" : "Agosto ",
+        "mes" : "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/7_ppd_ciencias_agosto_cuarto.docx"
     },
@@ -339,7 +339,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Ciencias",
-        "mes" : "Septiembre ",
+        "mes" : "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/8_ppd_ciencias_septiembre_cuarto.docx"
     },
@@ -347,7 +347,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Ciencias",
-        "mes" : "Octubre ",
+        "mes" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/9_ppd_ciencias_otubre_cuarto.docx"
     },
@@ -355,7 +355,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Ciencias",
-        "mes" : "Noviembre ",
+        "mes" : "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/cua/10_ppd_ciencias_noviembre_cuarto.docx"
     },
@@ -374,7 +374,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Febrero ",
+        "mes" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/1_ppd_ciencias_febrero_quinto.docx"
     },
@@ -382,7 +382,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Marzo ",
+        "mes" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/2_ppd_ciencias_marzo_quinto.docx"
     },
@@ -390,7 +390,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Abril ",
+        "mes" : "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/3_ppd_ciencias_abril_quinto.docx"
     },
@@ -398,7 +398,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Mayo ",
+        "mes" : "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/4_ppd_ciencias_mayo_quinto.docx"
     },
@@ -406,7 +406,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Junio ",
+        "mes" : "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/5_ppd_ciencias_junio_quinto.docx"
     },
@@ -414,7 +414,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Julio ",
+        "mes" : "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/6_ppd_ciencias_julio_quinto.docx"
     },
@@ -422,7 +422,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Agosto ",
+        "mes" : "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/7_ppd_ciencias_agosto_quinto.docx"
     },
@@ -430,7 +430,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Septiembre ",
+        "mes" : "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/8_ppd_ciencias_septiembre_quinto.docx"
     },
@@ -438,7 +438,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Octubre ",
+        "mes" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/9_ppd_ciencias_octubre_quinto.docx"
     },
@@ -446,7 +446,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Ciencias",
-        "mes" : "Noviembre ",
+        "mes" : "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/qui/10_ppd_ciencias_noviembre_quinto.docx"
     },
@@ -465,7 +465,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Febrero ",
+        "mes" : "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/1_ppd_ciencias_febrero_sexto.docx"
     },
@@ -473,7 +473,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Marzo ",
+        "mes" : "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/2_ppd_ciencias_marzo_sexto.docx"
     },
@@ -481,7 +481,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Abril ",
+        "mes" : "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/3_ppd_ciencias_abril_sexto.docx"
     },
@@ -489,7 +489,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Mayo ",
+        "mes" : "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/4_ppd_ciencias_mayo_sexto.docx"
     },
@@ -497,7 +497,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Junio ",
+        "mes" : "Junio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/5_ppd_ciencias_junio_sexto.docx"
     },
@@ -505,7 +505,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Julio ",
+        "mes" : "Julio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : " faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/6_ppd_ciencias_julio_sexto.docx"
     },
@@ -513,7 +513,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Agosto ",
+        "mes" : "Agosto",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/7_ppd_ciencias_agosto_sexto.docx"
     },
@@ -521,7 +521,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Septiembre ",
+        "mes" : "Septiembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/8_ppd_ciencias_septiembre_sexto.docx"
     },
@@ -529,7 +529,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Octubre ",
+        "mes" : "Octubre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/8_ppd_ciencias_octubre_sexto.docx"
     },
@@ -537,7 +537,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Ciencias",
-        "mes" : "Noviembre ",
+        "mes" : "Noviembre",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/05_lin_ciencias_primaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/cien/sex/9_ppd_ciencias_noviembre_sexto.docx"
     }

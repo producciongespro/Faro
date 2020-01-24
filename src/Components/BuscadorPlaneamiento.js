@@ -152,7 +152,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
             case "Primaria":
             case "Secundaria":
-            case "Interculturalidad Primaria":
+            case "Lenguas y Culturas Indígenas Primaria":
             case "Interculturalidad Secundaria":
             case "Pedagogía Hospitalaria":
                 this.setState({ anno: e.target.value }, () => {
@@ -200,7 +200,7 @@ class BuscadorPlaneamiento extends Component {
                     }
                 });
                 break;
-            case "Interculturalidad Primaria":
+            case "Lenguas y Culturas Indígenas Primaria":
                 this.setState({ materia: valor }, () => {
                     console.log("Materia seleccionada en intercultural primaria", this.state.materia);
                 });
@@ -347,7 +347,7 @@ class BuscadorPlaneamiento extends Component {
 
         }
         //*****INTERCULTURAL
-        if (this.state.nivel === "Interculturalidad Primaria") {
+        if (this.state.nivel === "Lenguas y Culturas Indígenas Primaria") {
             //console.log("Seleccion: Adultos");
             array = dataInterculturalPrimaria;
             //console.log("Array intercultural primaria", array);                      
@@ -629,7 +629,7 @@ class BuscadorPlaneamiento extends Component {
                 }
 
                 break;
-            case "Interculturalidad Primaria":
+            case "Lenguas y Culturas Indígenas Primaria":
             case "Interculturalidad Secundaria":
                 this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
                 this.tarjetasBasico(this.arrayResultado);
@@ -1858,7 +1858,7 @@ class BuscadorPlaneamiento extends Component {
                                                 }
                                                 {
                                                     //año para todos los demás
-                                                    (this.state.nivel === "Primaria" || this.state.nivel === "Secundaria" || this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria" || this.state.nivel === "Pedagogía Hospitalaria") &&
+                                                    (this.state.nivel === "Primaria" || this.state.nivel === "Secundaria" || this.state.nivel === "Lenguas y Culturas Indígenas Primaria" || this.state.nivel === "Interculturalidad Secundaria" || this.state.nivel === "Pedagogía Hospitalaria") &&
                                                     (
                                                         <span> Año </span>
                                                     )
@@ -1905,7 +1905,7 @@ class BuscadorPlaneamiento extends Component {
 
                                             }
                                             {
-                                                this.state.nivel === "Interculturalidad Primaria" &&
+                                                this.state.nivel === "Lenguas y Culturas Indígenas Primaria" &&
                                                 listasPlan["Años Primaria"].map((item, i) => (
                                                     <option key={"anno" + i} value={item} >  {item}  </option>
                                                 ))
@@ -1958,7 +1958,7 @@ class BuscadorPlaneamiento extends Component {
                                                         || this.state.nivel === "Secundaria"
                                                         || this.state.nivel === "Pedagogía Hospitalaria"
                                                         || this.state.nivel === "Unidocentes"
-                                                        || this.state.nivel === "Interculturalidad Primaria"
+                                                        || this.state.nivel === "Lenguas y Culturas Indígenas Primaria"
                                                         || this.state.nivel === "Interculturalidad Secundaria"
                                                     ) &&
                                                     (
@@ -2037,7 +2037,7 @@ class BuscadorPlaneamiento extends Component {
                                                 )
                                             }
                                             {
-                                                (this.state.nivel === "Interculturalidad Primaria" || this.state.nivel === "Interculturalidad Secundaria") &&
+                                                (this.state.nivel === "Lenguas y Culturas Indígenas Primaria" || this.state.nivel === "Interculturalidad Secundaria") &&
                                                 listasPlan.Interculturalidad.map((item, i) => (
                                                     <option key={"materia" + i} value={item} >  {item}  </option>
                                                 ))
