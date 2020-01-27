@@ -1457,20 +1457,24 @@ class BuscadorPlaneamiento extends Component {
                                             )
                                         //******************************/                                
                                     }
-                                       {
-                                        //************comprobación de plantilla nulo:
-                                        array[index].orientaciones === "nulo" ?
-                                            (
-                                                <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
-                                                    <i className="fas fa-ban"></i> Orientaciones no disponible
-                                          </span>
-                                            ) :
-                                            (
-                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Orientaciones
-                                            </a>
-                                            )
-                                        //******************************/                                
+                                    {
+                                        //*** Renderizado de etiquetas Orientaciones para IPEC I, II, III*/
+                                            (this.state.modalidad === "IPEC CINDEA Nivel I" 
+                                            ||  this.state.modalidad === "IPEC CINDEA Nivel II" 
+                                            || this.state.modalidad === "IPEC CINDEA Nivel III") &&
+
+                                       //************comprobación de orientaciones nulo:
+                                      
+                                       (
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-word"></i> Orientaciones
+                                </a>
+                                           
+                                       )
+                                   //******************************/      
+                                          
+
+                                                                     
                                     }
 
                                     {
