@@ -1802,7 +1802,7 @@ class BuscadorPlaneamiento extends Component {
                             (
                                 <React.Fragment>
                                     <div className="col-2">
-                                        <a href="http://www.ddc.mep.go.cr/" target="_blank" > <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
+                                        <a href="http://www.ddc.mep.go.cr/" target="_blank" rel="noopener noreferrer"> <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
                                     </div>
 
                                     <div className="col-8 font-italic">
@@ -1821,7 +1821,7 @@ class BuscadorPlaneamiento extends Component {
                                         Por último, presione el botón "buscar" para encontrar el resultado deseado.
                                     </div> <br/>
                                     <div className="col-12 text-center">
-                                        <a href="http://www.ddc.mep.go.cr/" target="_blank" > <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
+                                        <a href="http://www.ddc.mep.go.cr/" target="_blank" rel="noopener noreferrer"> <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
                                     </div>
                                 </React.Fragment>
                             )
