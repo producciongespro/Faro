@@ -1045,13 +1045,23 @@ class BuscadorPlaneamiento extends Component {
                                     </a>
                                     )
                                 }
+                                
+                                {                              
+                                 
+                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
+                                        <i className="fas fa-file-pdf"></i> Orientaciones
+                                    </a>                                                                        
+                                }
 
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Orientaciones
-                                        </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].anual} target="_blank" rel="noopener noreferrer" >
-                                    <i className="fas fa-file-pdf"></i> Plantillas anuales
-                                        </a>
+                                {
+                                    //En el caso de undécimo no se renderiza plantilla anuales
+                                       (array[index].anno !== "Undécimo" ) && 
+                                       (
+                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].anual} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-file-pdf"></i> Plantillas anuales
+                                            </a>
+                                       )
+                                }
 
                                 {
                                     this.state.anno === "Décimo" &&
