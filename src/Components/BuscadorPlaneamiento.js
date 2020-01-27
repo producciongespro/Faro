@@ -790,7 +790,7 @@ class BuscadorPlaneamiento extends Component {
 
                                 }
 
-                               {
+                                {
                                     //Ejemplos en secudnaria de inglés
                                     (this.state.nivel === "Secundaria" && this.state.materia === "Inglés" && this.state.tipoPlan === "Inglés como Lengua Extranjera") &&
                                     (
@@ -1037,22 +1037,22 @@ class BuscadorPlaneamiento extends Component {
                                 <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
                                         </a>
-                               {
-                                array[index].plantilla !== "nulo" &&
-                                   (
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Plantilla
+                                {
+                                    array[index].plantilla !== "nulo" &&
+                                    (
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Plantilla
                                     </a>
-                                   )
-                               }
+                                    )
+                                }
 
                                 <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Orientaciones
                                         </a>
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].anual} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].anual} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Plantillas anuales
                                         </a>
-                                
+
                                 {
                                     this.state.anno === "Décimo" &&
                                     (
@@ -1076,7 +1076,7 @@ class BuscadorPlaneamiento extends Component {
                                         </React.Fragment>
                                     )
                                 }
-                           </div>
+                            </div>
 
                         )
                     }
@@ -1457,22 +1457,27 @@ class BuscadorPlaneamiento extends Component {
                                     }
                                     {
                                         //*** Renderizado de etiquetas Orientaciones para IPEC I, II, III*/
-                                            (this.state.modalidad === "IPEC CINDEA Nivel I" 
-                                            ||  this.state.modalidad === "IPEC CINDEA Nivel II" 
+                                        (this.state.modalidad === "IPEC CINDEA Nivel I"
+                                            || this.state.modalidad === "IPEC CINDEA Nivel II"
                                             || this.state.modalidad === "IPEC CINDEA Nivel III") &&
+                                        (
+                                            //************comprobación de orientaciones nulo:
+                                            (array[index].orientaciones !== "nulo") ?
+                                                (
+                                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
+                                                        <i className="fas fa-file-word"></i> Orientaciones
+                                                </a>
+                                                ) :
+                                                (
+                                                    <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                        <i className="fas fa-ban"></i> orientaciones no disponible
+                                                    </span>
+                                                )
+                                        )
+                                        //******************************/      
 
-                                       //************comprobación de orientaciones nulo:
-                                      
-                                       (
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-word"></i> Orientaciones
-                                        </a>
-                                           
-                                       )
-                                   //******************************/      
-                                          
 
-                                                                     
+
                                     }
 
                                     {
@@ -1821,13 +1826,13 @@ class BuscadorPlaneamiento extends Component {
                                     <div id="texto_planes" className="col-12 font-italic text-center">
                                         Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
                                         Por último, presione el botón "buscar" para encontrar el resultado deseado.
-                                    </div> <br/>
+                                    </div> <br />
                                     <div className="col-12 text-center">
                                         <a href="http://www.ddc.mep.go.cr/" target="_blank" rel="noopener noreferrer"> <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
                                     </div>
                                 </React.Fragment>
                             )
-                }
+                    }
                 </div> <hr />
 
                 <div className="container">
@@ -2059,7 +2064,7 @@ class BuscadorPlaneamiento extends Component {
                                                 )
                                             }
 
-{
+                                            {
                                                 //Materias de secudaria duodécimo
                                                 this.state.nivel === "Secundaria" &&
                                                 (
