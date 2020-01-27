@@ -46,9 +46,7 @@ const DocsOficialesMovil =( props ) => {
             </div>
             <div className="col-4  ladoIzq">
             <figure>
-            <a href={pdfs.Docs_oficiales_REA}  rel="noopener noreferrer">
-              <img className="botones-portada hvr-pop img-fluid reglamento2" id="reglamento" data-infosource={5} src={img + "reglamento.png" } data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="pdf"   alt="Reglamento evaluación" />            
-              </a>  
+               <img className="botones-portada hvr-pop img-fluid reglamento2" id="reglamento" data-infosource={5} src={img + "reglamento.png"} data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="evaluacion"  onClick={props.showModal}  alt="Reglamento evaluación" />             
             </figure>
             </div>
         </div>
