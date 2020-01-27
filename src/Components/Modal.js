@@ -18,9 +18,9 @@ const imgApoyoPlan = assets.img.apoyosPlan;
 const imgHome = assets.img.home;
 
 class Modal extends Component {
-
   constructor() {
     super();
+    this.imgPdf="";
     this.state = {
       htmlContent: "",
       // ancho_modal : modalScreen
@@ -172,7 +172,19 @@ class Modal extends Component {
       case "opcOrientaciones":
         // this.modalAncho =  this.modalAncho + " modal-lg";
         //this.classModalBody = this.classModalBody + " modal-alto";
-        tmpContent = (<React.Fragment>
+        var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
+        switch (plataformaUsada) {
+          case "escritorio": 
+                this.imgPdf = "ico_pdf.png";
+            break;
+            case "movil": 
+                this.imgPdf = "ico_pdf_peq.png";
+            break;
+            default:
+              this.imgPdf = "ico_pdf.png";
+            break;
+        }
+          tmpContent = (<React.Fragment>
           <div className="container">
 
             <div className="row ">
@@ -181,19 +193,19 @@ class Modal extends Component {
 
 
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
-                  <img src={imgGeneral + "ico_pdf.png"} alt="pdf documento general" />
+                  <img src={imgGeneral + this.imgPdf} alt="pdf documento general" />
                 </a>
               </div>
 
               <div className="col-4 text-center">
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf"} target="_blank" rel="noopener noreferrer">
-                  <img src={imgGeneral + "ico_pdf.png"} alt="pdf jóvenes y adultos" />
+                  <img src={imgGeneral + this.imgPdf} alt="pdf jóvenes y adultos" />
                 </a>
               </div>
 
               <div className="col-4 text-center">
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf"} target="_blank" rel="noopener noreferrer">
-                  <img src={imgGeneral + "ico_pdf.png"} alt="pdf educación preescolar" />
+                  <img src={imgGeneral + this.imgPdf} alt="pdf educación preescolar" />
                 </a>
               </div>
 
