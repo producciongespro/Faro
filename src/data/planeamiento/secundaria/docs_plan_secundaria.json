@@ -687,8 +687,9 @@
         "anno" : "Undécimo",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/40_lin_orientacion_secundaria.pdf",
+        "tecnicoNocturno":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/col_tec_seccion_nocturna.zip",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/11_undecimo_academico.docx"
-    },
+        },
 
 
 

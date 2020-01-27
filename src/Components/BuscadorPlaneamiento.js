@@ -1468,7 +1468,7 @@ class BuscadorPlaneamiento extends Component {
                                        (
                                         <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Orientaciones
-                                </a>
+                                        </a>
                                            
                                        )
                                    //******************************/      
