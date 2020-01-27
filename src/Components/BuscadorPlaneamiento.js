@@ -857,7 +857,7 @@ class BuscadorPlaneamiento extends Component {
                                         <i className="fas fa-file-pdf"></i> Lineamiento
                                     </a>
                                     <a className="font-2 badge etiquetas badge-info mr-2 px-2 py-2" href={serv + array[index].contenido} target="_blank" rel="noopener noreferrer" >
-                                        <i className="far fa-file-archive"></i> Contenido
+                                        <i className="far fa-file-archive"></i> Unidad
                                     </a>
                                     {
                                         (this.state.anno === "Primero" || this.state.anno === "Segundo") &&
@@ -1645,7 +1645,7 @@ class BuscadorPlaneamiento extends Component {
                                         <i className="fas fa-file-pdf"></i> Lineamiento
                                     </a>
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plan} target="_blank" rel="noopener noreferrer" >
-                                        <i className="fas fa-file-pdf"></i> Planeamiento ER
+                                        <i className="fas fa-file-pdf"></i> Planeamiento
                                     </a>
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont1} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 1

@@ -1,7 +1,7 @@
 [ 
     {
         "maternoGuia" : {
-            "nombre" : "Guía del docente, programa de estudio - Interactivo I",                       
+            "nombre" : "Guía pedagógica para niños y niñas del nacimiento hasta los 4 años de edad",                       
             "url" : "https://www.mep.go.cr/sites/default/files/guia-pedagogica.pdf"
         },
         "InteractivoIIProgramaEstudio" : {
@@ -9,7 +9,7 @@
             "url" : " https://www.mep.go.cr/sites/default/files/programadeestudio/programas/educacion_preescolar.pdf"
         },
         "InteractivoIIGuiaDocente" : {
-            "nombre" : "Guía del docente, programa de estudio - Interactivo II",                       
+            "nombre" : "Programa de Estudio de Educación Preescolar Ciclo Materno Infantil (Grupo Interactivo II) Ciclo Transición",                       
             "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/guiadocente.pdf"
         },
        
