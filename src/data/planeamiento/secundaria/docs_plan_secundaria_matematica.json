@@ -472,5 +472,13 @@
         "mes": "Noviembre",
         "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/mate/und/10.ppd_geometria_noviembre_undecimo.docx" 
+    },
+
+    {
+        "nivel": "Secundaria",
+        "anno": "Duodécimo",
+        "materia": "Matemática",
+        "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/04_lin_matematica_secundaria.pdf",
+        "plantilla" : "" 
     }
 ]

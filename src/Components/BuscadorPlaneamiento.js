@@ -789,7 +789,8 @@ class BuscadorPlaneamiento extends Component {
                                     )
 
                                 }
-                                {
+
+                               {
                                     //Ejemplos en secudnaria de inglés
                                     (this.state.nivel === "Secundaria" && this.state.materia === "Inglés" && this.state.tipoPlan === "Inglés como Lengua Extranjera") &&
                                     (
@@ -798,6 +799,7 @@ class BuscadorPlaneamiento extends Component {
                                         </a>
                                     )
                                 }
+
                                 {
                                     //Ciencias 
                                     (this.state.nivel === "Secundaria") &&
@@ -1056,7 +1058,7 @@ class BuscadorPlaneamiento extends Component {
                                     (
                                         <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].decimoTecnico} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-pdf"></i> Décimo Técnico
-                                                </a>
+                                        </a>
                                     )
                                 }
 
@@ -1071,14 +1073,10 @@ class BuscadorPlaneamiento extends Component {
                                             <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].undecimoTecnico} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Undécimo modalidad técnica programa 2009
                                         </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].duodecimo} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Duodécimo modalidad técnica programa 2009
-                                        </a>
                                         </React.Fragment>
                                     )
                                 }
-
-                            </div>
+                           </div>
 
                         )
                     }

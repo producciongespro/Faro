@@ -675,9 +675,15 @@
 "plantilla" : "nulo",
 "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/4_criterios_educ_diver_11_a.docx",
 "undecimoAcademico" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/undecimo_academico.zip",
-"undecimoTecnico" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/undecimo_tecnico.zip",
-"duodecimo":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/duodecimo_tecnico.zip"
-}
+"undecimoTecnico" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/undecimo_tecnico.zip"
+},
 
+{
+   "nivel" : "Secundaria",
+   "materia" : "Español",
+   "anno" : "Duodécimo", 
+   "lineamientos" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/02_lin_espanol_secundaria_p_nuevo.pdf",
+   "duodecimo":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/espa/und/duodecimo_tecnico.zip"
+}
 
 ]
