@@ -783,6 +783,11 @@ padding-top:5%;
   width: 100%;
 }
 
+.botonesInactivos{
+  cursor: not-allowed;
+  filter: opacity(.4);
+}
+
 #bnt-recursos{
   margin-top: 5%;
 }

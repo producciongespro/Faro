@@ -38,7 +38,7 @@ const ApoyosPlan = (props) => {
                   </div>
 
                   <div className="row img_btn_der">
-                  <img onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada hvr-pop"   src={img + "planeamiento_correlacionado.png"} alt="Planeamiento Correlacionado"/>
+                  <img data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada botonesInactivos"   src={img + "planeamiento_correlacionado.png"} alt="Planeamiento Correlacionado"/>
                   </div>
           </div>
 

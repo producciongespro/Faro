@@ -35,11 +35,11 @@ const ApoyosEvaluacion = (props) => {
                      </div>
 
                   <div className="row img_btn_der">
-                  <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPruebaEscrita} className="img-fluid botones-portada hvr-pop"   src={img + "prueba.png" }  alt="Elaboración de Prueba Escrita"/>
+                  <img    data-typecontent ="video" data-content= {textos.VideoPruebaEscrita} className="img-fluid botones-portada botonesInactivos"   src={img + "prueba.png" }  alt="Elaboración de Prueba Escrita"/>
                   </div>
 
                   <div className="row img_btn_der">
-                  <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoTrabajoCotidiano} className="img-fluid botones-portada hvr-pop"   src={img + "cotidiano.png" } alt="Valoración del trabajo cotidiano"/>
+                  <img   data-typecontent ="video" data-content= {textos.VideoTrabajoCotidiano} className="img-fluid botones-portada botonesInactivos"   src={img + "cotidiano.png" } alt="Valoración del trabajo cotidiano"/>
                   </div>
 
 
