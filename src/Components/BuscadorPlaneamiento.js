@@ -1053,14 +1053,7 @@ class BuscadorPlaneamiento extends Component {
                                     <i className="fas fa-file-pdf"></i> Plantillas anuales
                                         </a>
 
-                                {
-                                    this.state.anno === "Décimo" &&
-                                    (
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].decimoTecnico} target="_blank" rel="noopener noreferrer" >
-                                            <i className="fas fa-file-pdf"></i> Décimo Técnico
-                                        </a>
-                                    )
-                                }
+                             
 
 
                                 {
@@ -1070,9 +1063,7 @@ class BuscadorPlaneamiento extends Component {
                                             <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].undecimoAcademico} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Undécimo académico programa 2009
                                         </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].undecimoTecnico} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Undécimo modalidad técnica programa 2009
-                                        </a>
+                                            
                                         </React.Fragment>
                                     )
                                 }
