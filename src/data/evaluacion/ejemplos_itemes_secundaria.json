@@ -79,7 +79,7 @@
         "itemes" : [
             {
                 "nombre" : "Selección de contexto",
-                "url" : "nulo"
+                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/civ/ejemp_selecc_contex_civica_sec.pdf"
             },
             {
                 "nombre" : " Respuesta corta",
@@ -131,7 +131,7 @@
             },
             {
                 "nombre" : "Producción escrita",
-                "url" : "nulo"
+                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/esp/eje_produccio_espan_sec.pdf"
             },
             {
                 "nombre" : "Resolución de problemas",
@@ -157,7 +157,7 @@
         "itemes":[ 
             {
                 "nombre" : "Selección de contexto",
-                "url" : "nulo"
+                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/est_soc/eje_estudios_sec_seleccion_contex.pdf"
             },
             {
                 "nombre" : " Respuesta corta",
@@ -165,7 +165,7 @@
             },
             {
                 "nombre" : "Respuesta restringida",
-                "url" : "nulo"
+                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/est_soc/respu_restringida_estudios_s_sec.pdf"
             },
             {
                 "nombre" : "Selección simple",
@@ -236,7 +236,7 @@
         "itemes" :[
             {
                 "nombre" : "Selección de contexto",
-                "url" : "nulo"
+                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/fra/ejempl_selec_contex_frances_sec.pdf"
             },
             {
                 "nombre" : " Respuesta corta",
@@ -273,11 +273,11 @@
         "itemes" :[
             {
                 "nombre" : "Selección de contexto",
-                "url" : "nulo"
+                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/ing/seleccion_contexto_ingles.pdf"
             },
             {
                 "nombre" : " Respuesta corta",
-                "url" : "nulo"
+                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/secu/ing/eje_ingles_sec_res_corta.pdf"
             },
             {
                 "nombre" : "Respuesta restringida",
