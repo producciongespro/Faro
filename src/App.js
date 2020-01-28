@@ -33,6 +33,7 @@ import PortadaMovil from './Components/PortadaMovil';
 import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
+import analitica from './modulos/analitica';
 
 import assets from './data/config/config.json';
 
@@ -139,7 +140,8 @@ class App extends Component {
   }
 
   cargarClima = () => {
-    //cualquier tontera
+    analitica("clim");
+
     //Realiza la comprobación del tipo de dispositivo para cargar
     // un home para dispotivos moviles
     let tmpClima;
@@ -162,7 +164,7 @@ class App extends Component {
   }
 
   cargarEvaluacion = () => {
-    //cualquier tontera
+    analitica("eval");
     //Realiza la comprobación del tipo de dispositivo para cargar
     // un home para dispotivos moviles
     let tmpEvaluacion;
@@ -185,7 +187,7 @@ class App extends Component {
   }
 
   cargarDocumentos = () => {
-    //cualquier tontera
+    analitica("docu");
     //Realiza la comprobación del tipo de dispositivo para cargar
     // un home para dispotivos moviles
     let tmpDocumentos;
@@ -208,7 +210,7 @@ class App extends Component {
   }
 
   cargarRecursos = () => {
-    //cualquier tontera
+    analitica("recu");
     //Realiza la comprobación del tipo de dispositivo para cargar
     // un home para dispotivos moviles
     let tmpDocumentos;
@@ -231,7 +233,7 @@ class App extends Component {
   }
 
   cargarDesarrollo = () => {
-    //cualquier tontera
+    analitica("prof");
     //Realiza la comprobación del tipo de dispositivo para cargar
     // un home para dispotivos moviles
     let tmpDocumentos;
@@ -255,7 +257,7 @@ class App extends Component {
 
 
   cargarPlaneamiento = () => {
-    //cualquier tontera
+    analitica("plan");
     //Realiza la comprobación del tipo de dispositivo para cargar
     // un home para dispotivos moviles
     let tmpDocumentos;
