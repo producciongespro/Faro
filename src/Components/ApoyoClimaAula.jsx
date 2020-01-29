@@ -50,7 +50,7 @@ const ApoyoClimaAula = (props) => {
         <div id="botones-aula" className="row">
             <div className="col-6 hover11 ">
               <figure>
-              <a href= {serv + "ws_faro/p06-apoyo-clima-aula/clima_clase.pptx"}  rel="noopener noreferrer">
+              <a href= {serv + "faro_referencias/3_ref_apoyos__aula/clima/clima_clase.pptx"}  rel="noopener noreferrer">
                   <img className="botones-portada derecha img-fluid" id="pautas" src={img + "pautas.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  alt="Pautas" />                
                 </a>
              </figure>
