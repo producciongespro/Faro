@@ -63,10 +63,6 @@ const DocumentosEvaluacion = (props) => {
                 <a href={serv + "faro_referencias/4_ref_apoyos_eval/documentos/prueba_oral_lenguas_extranjeras_2018.pdf"} target="_blank"  rel="noopener noreferrer">
                     <button className="Btn btn-lg btn-block text-center btn-documen " onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } data-typecontent ="pdf"  onClick={props.showModal} > Prueba oral de lenguas extranjeras </button> <br/>
                 </a>
-
-                <a href={serv + "faro_referencias/4_ref_apoyos_eval/documentos/decreto_ejecutivo_40862_rea_versin7.pdf"} target="_blank"  rel="noopener noreferrer">
-                    <button className="Btn btn-lg btn-block text-center btn-documen " onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } data-typecontent ="pdf"  onClick={props.showModal} > Reglamento de evaluación de los aprendizajes </button> <br/>
-                </a>
             
             <div className="col-3"> 
             <img className="dado-dec" src={img + "caja2.png"} alt="Imagen decorativa" />

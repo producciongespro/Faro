@@ -9,7 +9,7 @@
                             "url" : "nulo"
                         },
                         {
-                            "nombre" : " Respuesta corta",
+                            "nombre" : "Respuesta corta",
                             "url" : "nulo"
                         },
                         {
@@ -44,7 +44,7 @@
                 "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_seleccion_contexto_ciencias.pdf"
             },
             {
-                "nombre" : " Respuesta corta",
+                "nombre" : "Respuesta corta",
                 "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/cie/ejemplo_i_respuesta_corta_ciencias.pdf"
             },
             {
@@ -80,7 +80,7 @@
                 "url" : "nulo"
             },
             {
-                "nombre" : " Respuesta corta",
+                "nombre" : "Respuesta corta",
                 "url" : "nulo"
             },
             {
@@ -111,10 +111,10 @@
         "itemes" : [
                         {                
                             "nombre" : "Selección de contexto",
-                            "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/esp/ejemplo_espanol_prima_seleccion_context.pdf"
+                            "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/esp/ejemplo_espanol_prima_seleccion_context.pdf"
                         },
                         {
-                            "nombre" : " Respuesta corta",
+                            "nombre" : "Respuesta corta",
                             "url" : "nulo"
                         },
                         {
@@ -154,7 +154,7 @@
                 "url" : "nulo"
             },
             {
-                "nombre" : " Respuesta corta",
+                "nombre" : "Respuesta corta",
                 "url" : "nulo"
             },
             {
@@ -192,7 +192,7 @@
                 "url" : "nulo"
             },
             {
-                "nombre" : " Respuesta corta",
+                "nombre" : "Respuesta corta",
                 "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/fra/ejem_item_respuesta_corta_frances_primaria.pdf"
             },
             {
@@ -227,11 +227,11 @@
         "itemes" :[
             {
                 "nombre" : "Selección de contexto",
-                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ing/ejemp_selecc_contexto_ingles_primaria.pdf"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ing/ejemp_selecc_contexto_ingles_primaria.pdf"
             },
             {
-                "nombre" : " Respuesta corta",
-                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ing/ejemplo_ingles_primaria_resp_corta_.pdf"
+                "nombre" : "Respuesta corta",
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ing/ejemplo_ingles_primaria_resp_corta_.pdf"
             },
             {
                 "nombre" : "Respuesta restringida",
@@ -243,7 +243,7 @@
             },
             {
                 "nombre" : "Producción escrita",
-                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ing/ejemplo_ingles_primaria_produccion.pdf"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ing/ejemplo_ingles_primaria_produccion.pdf"
             },
             {
                 "nombre" : "Resolución de problemas",
@@ -269,7 +269,7 @@
                 "url" : "nulo"
             },
             {
-                "nombre" : " Respuesta corta",
+                "nombre" : "Respuesta corta",
                 "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/ita/ejem_item_repuesta_corta_italiano_primaria.pdf"
             },
             {
@@ -301,7 +301,7 @@
         "itemes" :[
             {
                 "nombre" : "Selección de contexto",
-                "url" : "Faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/mat/ejem_i_selecc_contex_matem_pri.pdf"
+                "url" : "faro_referencias/4_ref_apoyos_eval/componentes/pruebas/eje_item/prim/mat/ejem_i_selecc_contex_matem_pri.pdf"
             },
             {
                 "nombre" : " Respuesta corta",
