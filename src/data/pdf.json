@@ -1,11 +1,11 @@
 [
     {
-        "Tacaco" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",
-        "Politica_educativa" : "https://recursos.mep.go.cr/ws_faro/pdf/documentos_oficiales/politica_educativa.pdf",
+        "Tacaco" : "https://recursos.mep.go.cr/ws_faro/pdf/tacaco.pdf",                                   
+        "Politica_educativa" : "https://pruebacajav2.mep.go.cr/faro_referencias/6_ref_documen_educ/politica_educa/politica_educativa.pdf",
         "Transformacion_curricular" : "https://recursos.mep.go.cr/ws_faro/pdf/documentos_oficiales/transformacion_curricular.pdf",
-        "Faro" : "https://recursos.mep.go.cr/ws_faro/pdf/documentos_oficiales/faro.pdf",
-        "Perfil_docente" : "https://recursos.mep.go.cr/ws_faro/pdf/documentos_oficiales/perfil_docente.pdf",
-        "Docs_Oficiales_Perfil_Est" : "https://recursos.mep.go.cr/ws_faro/pdf/documentos_oficiales/definicion_habilidades.pdf",
+        "Faro" : "https://pruebacajav2.mep.go.cr/faro_referencias/6_ref_documen_educ/faro/faro.pdf",        
+        "Perfil_docente" : "https://pruebacajav2.mep.go.cr/faro_referencias/6_ref_documen_educ/perfil/definicion_habilidades.pdf",
+        "Docs_Oficiales_Perfil_Est" : "https://pruebacajav2.mep.go.cr/faro_referencias/6_ref_documen_educ/perfil/definicion_habilidades.pdf",
         "Docs_oficiales_REA" : "https://recursos.mep.go.cr/ws_faro/pdf/documentos_oficiales/rea.pdf",
         "Apoyos_Plan_Ejemplos_Guia_actividades" : "https://recursos.mep.go.cr/ws_faro/pdf/apoyos_planeamiento/guia_actividades.pdf",
         "InclusionEducativa": "https://recursos.mep.go.cr/ws_faro/pdf/clima_aula/apoyos_educacion_intercultural.pdf",
