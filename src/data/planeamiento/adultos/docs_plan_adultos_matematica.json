@@ -6,7 +6,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/set/1.ppd_septimo_matematica_febrero_can.docx"        
     },
     {
@@ -15,7 +15,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/set/2.ppd_septimo_matematica_marzo_can.docx"        
     },
     {
@@ -24,7 +24,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/set/3.ppd_septimo_matematica_abril_can.docx"        
     },
     {
@@ -33,7 +33,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -42,7 +42,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -51,7 +51,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -60,7 +60,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -69,7 +69,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -78,7 +78,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -87,7 +87,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -101,7 +101,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/oct/1.ppd_octavo_matematica_febrero_can.docx"        
     },
     {
@@ -110,7 +110,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/oct/2.ppd_octavo_matematica_marzo_can.docx"        
     },
     {
@@ -119,7 +119,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/oct/3.ppd_octavo_matematica_abril_can.docx"        
     },
     {
@@ -128,7 +128,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -137,7 +137,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -146,7 +146,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -155,7 +155,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -164,7 +164,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -173,7 +173,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -182,7 +182,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -197,7 +197,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/nov/1.ppd_noveno_matematica_febrero_can.docx"        
     },
     {
@@ -206,7 +206,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/nov/2.ppd_noveno_matematica_marzo_can.docx"        
     },
     {
@@ -215,7 +215,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/nov/3.ppd_noveno_matematica_abril_can.docx"        
     },
     {
@@ -224,7 +224,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -233,7 +233,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -242,7 +242,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -251,7 +251,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -260,7 +260,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -269,7 +269,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -278,7 +278,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -293,7 +293,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/dec/1.ppd_decimo_matematica_febrero_can.docx"        
     },
     {
@@ -302,7 +302,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/dec/2.ppd_decimo_matematica_marzo_can.docx"        
     },
     {
@@ -311,7 +311,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/dec/3.ppd_decimo_matematica_abril_can.docx"        
     },
     {
@@ -320,7 +320,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -329,7 +329,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -338,7 +338,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -347,7 +347,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -356,7 +356,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -365,7 +365,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -374,7 +374,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -388,7 +388,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/und/1.ppd_undecimo_matematica_febrero_can.docx"        
     },
     {
@@ -397,7 +397,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/und/2.ppd_undecimo_matemtatica_marzo_can.docx"        
     },
     {
@@ -406,7 +406,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/und/3.ppd_undecimo_matematica_abril_can.docx"        
     },
     {
@@ -415,7 +415,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -424,7 +424,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -433,7 +433,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -442,7 +442,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -451,7 +451,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -460,7 +460,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -469,7 +469,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -519,7 +519,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -528,7 +528,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -537,7 +537,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -546,7 +546,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -555,7 +555,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -564,7 +564,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -573,7 +573,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -582,7 +582,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -591,7 +591,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -600,7 +600,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -614,7 +614,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -623,7 +623,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -632,7 +632,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -641,7 +641,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -650,7 +650,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -659,7 +659,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -668,7 +668,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -677,7 +677,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -686,7 +686,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -695,7 +695,7 @@
         "anno" : "Octavo",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -710,7 +710,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -719,7 +719,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -728,7 +728,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -737,7 +737,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -746,7 +746,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -755,7 +755,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -764,7 +764,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -773,7 +773,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -782,7 +782,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -791,7 +791,7 @@
         "anno" : "Noveno",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -806,7 +806,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -815,7 +815,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -824,7 +824,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -833,7 +833,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -842,7 +842,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -851,7 +851,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -860,7 +860,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -869,7 +869,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -878,7 +878,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -887,7 +887,7 @@
         "anno" : "Décimo",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -901,7 +901,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",  
         "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -910,7 +910,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",  
         "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -919,7 +919,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática", 
         "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -928,7 +928,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -937,7 +937,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -946,7 +946,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -955,7 +955,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -964,7 +964,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -973,7 +973,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -982,7 +982,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Matemática",
         "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     }
 ]

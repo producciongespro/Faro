@@ -4,7 +4,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
         "anno" : "Décimo",    
         "modulo" : "Biología",  
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/biol/ppd_biologia_can_decimo.docx"        
     },
     {
@@ -12,7 +12,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
         "anno" : "Undécimo",    
         "modulo" : "Biología",  
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/biol/ppd_biologia_can_undecimo.docx"        
     },
 
@@ -26,7 +26,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
         "anno" : "Séptimo",    
         "modulo" : "Ciencias",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_septimo_ciencias_can.docx",       
         "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_septimo_sexualidad_can.docx"     
     },
@@ -35,7 +35,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Octavo",    
         "modulo" : "Ciencias",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_octavo_ciencias_can.docx",       
         "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_octavo_sexualidadyafectividad_can.docx"       
     },
@@ -44,7 +44,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Noveno",    
         "modulo" : "Ciencias",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_noveno_ciencias_can.docx",       
         "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ciec/ppd_noveno_sexualidadyafectividad_can.docx"        
     },
@@ -64,7 +64,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
         "anno" : "Séptimo",    
         "modulo" : "Educación Cívica",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -72,7 +72,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Octavo",    
         "modulo" : "Educación Cívica",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -80,7 +80,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Noveno",    
         "modulo" : "Educación Cívica",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -88,7 +88,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Décimo",    
         "modulo" : "Educación Cívica",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -96,7 +96,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Undécimo",    
         "modulo" : "Educación Cívica",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -117,7 +117,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
         "anno" : "Séptimo",    
         "modulo" : "Educación Religiosa",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -125,7 +125,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Octavo",    
         "modulo" : "Educación Religiosa",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -133,7 +133,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Noveno",    
         "modulo" : "Educación Religiosa",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -141,7 +141,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Décimo",    
         "modulo" : "Educación Religiosa",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -149,7 +149,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Undécimo",    
         "modulo" : "Educación Religiosa",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -165,7 +165,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
         "anno" : "Séptimo",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -173,7 +173,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Octavo",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -181,7 +181,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Noveno",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -189,7 +189,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Décimo",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/estu_soci/1.ppd_decimo_estudios_sociales_can.docx"        
     },
     {
@@ -197,7 +197,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Undécimo",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     
@@ -218,7 +218,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",  
         "anno" : "Décimo",    
         "modulo" : "Física",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/fisi/ppd_fisica_can_decimo.docx"        
     },
     {
@@ -226,7 +226,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",  
         "anno" : "Undécimo",    
         "modulo" : "Física",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/fisi/ppd_fisica_can_undecimo.docx"        
     },
 
@@ -245,7 +245,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
         "anno" : "Séptimo",    
         "modulo" : "Francés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -253,7 +253,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Octavo",    
         "modulo" : "Francés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -261,7 +261,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Noveno",    
         "modulo" : "Francés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -269,7 +269,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Décimo",    
         "modulo" : "Francés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -277,7 +277,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Undécimo",    
         "modulo" : "Francés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -296,7 +296,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
         "anno" : "Séptimo",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -304,7 +304,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Octavo",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -312,7 +312,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Noveno",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -320,7 +320,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Décimo",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -328,7 +328,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Undécimo",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
    
@@ -355,7 +355,7 @@
         "anno": "Séptimo",   
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
         "modulo" : "Orientación", 
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/40_lin_orientacion_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/orie/7_septimo_orientacion_can.docx"        
     },
     {
@@ -363,7 +363,7 @@
         "anno": "Octavo",   
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
         "modulo" : "Orientación", 
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/40_lin_orientacion_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/orie/8_octavo_orientacion_can.docx"        
     },
     {
@@ -371,7 +371,7 @@
         "anno": "Noveno",   
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
         "modulo" : "Orientación", 
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/40_lin_orientacion_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/orie/9_noveno_orientacion_can.docx"        
     },
     {
@@ -379,7 +379,7 @@
         "anno": "Décimo",   
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
         "modulo" : "Orientación", 
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/40_lin_orientacion_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/orie/10_decimo_academico_can.docx"        
     },
     {
@@ -387,7 +387,7 @@
         "anno": "Undécimo",   
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",        
         "modulo" : "Orientación", 
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/orie/11_undecimo_academico_can.docx"        
     },
 
@@ -404,7 +404,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Décimo",    
         "modulo" : "Química",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/quim/ppd_quimica_can_decimo.docx"        
     },
     {
@@ -412,7 +412,7 @@
         "modalidad" : "Colegios Académicos Nocturnos (CAN)",
         "anno" : "Undécimo",    
         "modulo" : "Química",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/36_lin_colegios_academicos_nocturnos.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/quim/ppd_quimica_can_undecimo.docx"        
     },
  
@@ -495,7 +495,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",  
         "anno" : "Décimo",    
         "modulo" : "Biología",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/biol/ppd_biologia_coned_decimo.docx"        
     },
     {
@@ -503,7 +503,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",   
         "anno" : "Undécimo",    
         "modulo" : "Biología",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/biol/ppd_biologia_coned_undecimo.docx"        
     },
 
@@ -520,7 +520,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Séptimo",    
         "modulo" : "Ciencias",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/cien/ppd_septimo_ciencias_coned.docx"        
     },
     {
@@ -528,7 +528,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Octavo",    
         "modulo" : "Ciencias",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/cien/ppd_octavo_ciencias_coned.docx"        
     },
     {
@@ -536,7 +536,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Noveno",    
         "modulo" : "Ciencias",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/cien/ppd_noveno_ciencias_coned.docx"        
     },
    
@@ -559,7 +559,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Séptimo",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -567,7 +567,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Octavo",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -575,7 +575,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Noveno",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -583,7 +583,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Décimo",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -591,7 +591,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Undécimo",    
         "modulo" : "Estudios Sociales",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -616,7 +616,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Séptimo",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -624,7 +624,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Octavo",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -632,7 +632,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Noveno",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -640,7 +640,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Décimo",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
@@ -648,7 +648,7 @@
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Undécimo",    
         "modulo" : "Inglés",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/37_lin_colegio_nacional_educacion_a_distancia.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
 
@@ -679,7 +679,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 1",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "nulo"        
     },
@@ -687,7 +687,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 2",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_2_ipec_cindea_nivel_1.docx"        
     },
@@ -695,7 +695,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 3",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_3_ipec_cindea_nivel_1.docx"        
     },
@@ -703,7 +703,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 4",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_4_ipec_cindea_nivel_1.docx"        
     },
@@ -711,7 +711,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 5",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_5_ipec_cindea_nivel_1.docx"        
     },
@@ -719,7 +719,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 6",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_6_ipec_cindea_nivel_1.docx"        
     },
@@ -727,7 +727,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 7",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_7_ipec_cindea_nivel_1.docx"        
     },
@@ -735,7 +735,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 8",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_8_ipec_cindea_nivel_1.docx"        
     },
@@ -743,14 +743,14 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 9",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_9_ipec_cindea_nivel_1.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 10",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_10_ipec_cindea_nivel_1.docx"        
     },
@@ -758,7 +758,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 11",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_11_ipec_cindea_nivel_1.docx"        
     },
@@ -766,7 +766,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 12",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_12_ipec_cindea_nivel_1.docx"        
     },
@@ -774,7 +774,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 13",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_13_ipec-cindea_nivel_1.docx"        
     },
@@ -782,7 +782,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 14",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "nulo"        
     },
@@ -790,7 +790,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 15",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_15_ipec_cindea_nivel_1.docx"        
     },
@@ -798,7 +798,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 16",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "nulo"        
     },
@@ -806,7 +806,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 17",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_17_ipec_cindea_nivel_1.docx"        
     },
@@ -814,7 +814,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 18",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_18_ipec_cindea_nivel_1.docx"        
     },
@@ -822,7 +822,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 19",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "nulo"        
     },
@@ -830,7 +830,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 20",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_20_ipec_cindea_nivel_1.docx"        
     },
@@ -838,7 +838,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 21",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_21_ipec_cindea_nivel_1.docx"        
     },
@@ -846,7 +846,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 22",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_22_ipec_cindea_nivel_1.docx"        
     },
@@ -854,7 +854,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 23",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "nulo"        
     },
@@ -862,7 +862,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 24",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "nulo"        
     },
@@ -870,7 +870,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel I",        
         "modulo" : "Módulo 25",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"nulo",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_1/modulo_25_ipec_cindea_nivel_1.docx"        
     },
@@ -900,7 +900,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 30",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_30_ipec_cindea_nivel_2.docx"        
     },
@@ -908,7 +908,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 31",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -916,7 +916,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 32",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_32_ipec_cindea_nivel_2.docx"        
     },
@@ -924,7 +924,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 33",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_33_ipec_cindea_nivel_2.docx"        
     },
@@ -932,7 +932,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 34",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -940,7 +940,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 35",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_35_ipec-cindea_nivel_2.docx"        
     },
@@ -948,7 +948,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 36",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_36_ipec_cindea_nivel_2.docx"        
     },
@@ -956,7 +956,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 37",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_37_ipec_cindea_nivel_2.docx"        
     },
@@ -964,7 +964,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 38",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_38_ipec_cindea_nivel_2.docx"        
     },
@@ -972,7 +972,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 39",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_39_ipec_cindea_nivel_2.docx"        
     },
@@ -980,7 +980,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 40",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_40_ipec_cindea_nivel_2.docx"        
     },
@@ -988,7 +988,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 41",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_41_ipec_cindea_nivel_2.docx"        
     },
@@ -996,7 +996,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 42",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -1004,7 +1004,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 43",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_43_ipec_cindea_nivel_2.docx"        
     },
@@ -1012,7 +1012,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 44",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_44_ipec_cindea_nivel_2.docx"        
     },
@@ -1020,7 +1020,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 45",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_45_ipec_cindea-nivel_2.docx"        
     },
@@ -1028,7 +1028,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 46",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -1036,7 +1036,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 47",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -1044,7 +1044,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 48",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -1052,7 +1052,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 49",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_49_ipec_cindea_nivel_2.docx"        
     },
@@ -1060,7 +1060,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 50",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -1068,7 +1068,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 51",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_51_ipec_cindea_nivel_2.docx"        
     },
@@ -1076,7 +1076,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 52",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_52_ipec_cindea_nivel_2.docx"        
     },
@@ -1084,7 +1084,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 53",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_53_ipec_cindea_nivel_2.docx"        
     },
@@ -1092,7 +1092,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 53",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -1112,7 +1112,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 60",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_60_ipec_cindea_nivel_3_prog_2009.docx",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_60_ipec_cindea_nivel_3_prog_2017.docx"        
@@ -1122,7 +1122,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 61",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_61_ipec_cindea_nivel_3.docx"        
     },
@@ -1130,7 +1130,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 62",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_62_ipec_cindea_nivel_3.docx"        
     },
@@ -1138,7 +1138,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 63",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_63_ipec_cindea_nivel_3.docx"        
     },
@@ -1146,7 +1146,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 64",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_64_ipec_cindea_nivel_3.docx"        
     },
@@ -1154,7 +1154,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 65",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_65_ipec_cindea_nivel_3.docx"        
     },
@@ -1162,7 +1162,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 66",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -1170,7 +1170,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 67",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -1178,7 +1178,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 68",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_68_ipec_cindea_nivel_3_quimica.docx"        
     },
@@ -1186,7 +1186,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 69",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_69_ipec_cindea_nivel_3.docx"        
     },
@@ -1194,7 +1194,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 70",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_70_ipec_cindea_nivel_3.docx"        
     },
@@ -1202,14 +1202,14 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 71",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo"        
     },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 72",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_72_ipec_cindea_nivel-3.docx"        
     },
@@ -1217,7 +1217,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 73",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_73_ipec_cindea_nivel_3.docx"        
     },
@@ -1225,7 +1225,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 74",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_74_ipec_cindea_nivel_3.docx"        
     },
@@ -1233,7 +1233,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 75",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_75_ipec_cindea_nivel_3.docx"        
     },
@@ -1241,7 +1241,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 76",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
@@ -1249,7 +1249,7 @@
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Orientación",      
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/lineam/38_lin_ipec_cindea.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     }
