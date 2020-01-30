@@ -784,6 +784,10 @@ padding-top:5%;
    cursor: pointer;    
   }
 
+  #incidenciasMovil{
+    width: 50%;
+  }
+
 #textoDescripcion2{
     
     margin-left: 17%;
