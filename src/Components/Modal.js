@@ -145,7 +145,7 @@ class Modal extends Component {
 
 
           <strong> Ministra de Educación</strong><br />
-          Guiselle Cruz Maduro<br /><br /> 
+          Giselle Cruz Maduro<br /><br /> 
 
 
           <strong> Viceministerio Académico</strong><br />
