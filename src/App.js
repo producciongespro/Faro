@@ -603,7 +603,7 @@ class App extends Component {
   showModal = (e) => {
     const content = e.target.dataset.content;
     const typeContent = e.target.dataset.typecontent;
-    //console.log(content);  
+    console.log( "---contendio recibido:", content);  
     //Carga el body con la clase modal open de bootstrap
     let cuerpo =  document.getElementsByTagName("BODY")[0];
     cuerpo.classList.add("modal-open");   

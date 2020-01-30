@@ -44,6 +44,8 @@ class Modal extends Component {
 
   selectTypeContent() {
 
+console.log("selectTypeContent en ejecución");
+
     var tmpContent;
     switch (this.props.typeContent) {
       case "video":
@@ -134,6 +136,31 @@ class Modal extends Component {
           </div>
         )
         break;
+
+        case "linksVideosPlan":
+          this.modalAncho = this.modalAncho + " modal-lg";
+          this.classModalBody = this.classModalBody + " borde-modal borde-bottom-azul";
+          tmpContent = (        
+            <div className="row">
+              <div className="col-sm-12">
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://youtu.be/bbzdlLlr478">
+                  <i className="fas fa-link"></i> Transformación curricular
+                </a>
+                <br/>
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://youtu.be/RHfP979UENg">
+                  <i className="fas fa-link"></i> Pensamiento Sistémico
+              </a>
+              <br/>
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://youtu.be/VvWvyqaeWgY">
+                  <i className="fas fa-link"></i> Resolución de Problemas
+              </a>
+              </div>
+            </div>
+          )
+          break;
 
       case "acercaDe":
         this.modalAncho = this.modalAncho + " modal-lg";
