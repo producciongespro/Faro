@@ -12,6 +12,7 @@ const Home = (props) => {
     <img className="btn img-fluid hvr-pop" id="indicaciones" src={ img + "caja.png" } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> <br/>
     <img className="btn img-fluid hvr-pop" id="home"  src={ img + "volver_portada.png" } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
     <img className="img-fluid botones-portada hvr-pop" id="uso" src={ img + "btn_usocaja.png" } onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/> <br/>
+    <a href="mailto:cajadeherramientas@mep.go.cr">    <img className="btn img-fluid hvr-pop incidencias" id="acercade" src={ img + "incidencias.png" }   alt="correo de incidencias: cajadeherramientas@mep.go.cr" /></a> <br/>
     <img className="btn img-fluid hvr-pop acercade" id="acercade" src={ img + "creditos.png" } onClick = {props.showModal }  data-typecontent ="acercaDe" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> <br/>
 
    

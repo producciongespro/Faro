@@ -240,7 +240,13 @@ a {
 .acercade{
   position: absolute;
   margin-top: 26%;
-  margin-left: 3%;
+  margin-left: 4%;
+}
+
+.incidencias{
+  position: absolute;
+  margin-top: 24%;
+  margin-left: 1%;
 }
 
 .img_apoy{
