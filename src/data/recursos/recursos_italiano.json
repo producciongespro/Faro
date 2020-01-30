@@ -4,7 +4,7 @@
         "desc": "italiano primaria",
         "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/proyecto_ecologia.pdf",
         "nivel" : "primaria",
-        "materia" : "Italiano",
+        "materia" : "",
         "anno" : "1,2,3",
         "ciclo" : "1",
         "poblacion" : "",
@@ -16,23 +16,23 @@
         "desc": "italiano secundaria",
         "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/proyecto_ecologia.pdf",
         "nivel" : "secundaria",
-        "materia" : "Italiano",
+        "materia" : "",
         "anno" : "8",
         "ciclo" : "3",
         "poblacion" : "",
         "apoyos" : "",
-        "plan" : "Lengua Italiana"
+        "plan" : ""
       },
       {
         "nombre": "Recurso Italiano",
         "desc": "Cultura italiana",
         "url": "https://recursos.mep.go.cr/ws_faro/pdf/recursos/primaria/proyecto_ecologia.pdf",
         "nivel" : "secundaria",
-        "materia" : "Italiano",
+        "materia" : "",
         "anno" : "7,8,9,10,11,12",
         "ciclo" : "3,4",
         "poblacion" : "",
         "apoyos" : "",
-        "plan" : "Aspectos Culturales"
+        "plan" : ""
       }
 ]
