@@ -748,8 +748,16 @@ padding-top:5%;
   
   #material_adicional{
     margin-top: 6%;
+    margin-left: 30%;
+  }
+
+  
+  #material_adicional_fqt{
+    margin-top: 6%;
     margin-left: 0%;
   }
+
+
   .pie{
   text-align: right;
   }

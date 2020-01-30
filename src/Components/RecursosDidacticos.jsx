@@ -29,10 +29,12 @@ const RecursosDidacticos = (props) => {
                   <img id="material_adicional" className="img-fluid btn hvr-wobble-bottom" src={img + "coleccion_gespro.png"} data-tar="Construccion"  onClick={props.changePage} alt="Referenciar COLECCION GESPRO" />
               </a>
 
-
-    
-
-
+          <div>
+          <a href={links.FQT} target="_blank" rel="noopener noreferrer"  >
+            <img id="material_adicional_fqt" className="img-fluid btn hvr-wobble-bottom" src={img + "fqt.gif"}  data-infosource={4}   onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } alt="Enlace a FQT" />
+          </a>
+          </div>
+             
       </div>
                
       <div  className="col-8">
@@ -97,9 +99,7 @@ const RecursosDidacticos = (props) => {
           </a>
           </figure>
           </div>
-
-
-        
+    
            
 
         </div>

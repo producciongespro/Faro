@@ -2,6 +2,7 @@
     {
         "ProgramasEstudio" : "https://www.mep.go.cr/programa-estudio",
         "Educatico" : "https://www.mep.go.cr/educatico",
-        "IDP" : "http://www.idp.mep.go.cr/"       
+        "IDP" : "http://www.idp.mep.go.cr/", 
+        "FQT": "http://www.fundacionqt.org/proyecto-conectandonos/"     
     }
 ]
