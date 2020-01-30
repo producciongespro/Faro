@@ -1034,7 +1034,7 @@ class BuscadorPlaneamiento extends Component {
                         (
                             <div className="card-body mr-2">
 
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamientos} target="_blank" rel="noopener noreferrer" >
+                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
                                         </a>
                                 {
