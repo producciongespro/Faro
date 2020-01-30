@@ -2,14 +2,14 @@
     {
         "nivel" : "Unidocentes",
         "asignatura" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/lineam/lin_generales_unidocentes.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/arte_indu/correlacionados.zip",
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip"
     },  
     {
         "nivel" : "Unidocentes",
         "asignatura" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/lineam/lin_generales_unidocentes.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/arte_plas/correlacionado.zip",
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip",
         "alcance" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/arte_plas/artes_plasticas_cartel_alcance_y_secuencia.docx"
@@ -17,7 +17,7 @@
     {
         "nivel" : "Unidocentes",
         "asignatura" : "Ciencias",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/lineam/lin_generales_unidocentes.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/cien/correlacionado.zip",
         "noCorrelacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/cien/no_correlacionado.zip",
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip",
@@ -26,7 +26,7 @@
     {
         "nivel" : "Unidocentes",
         "asignatura" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/lineam/lin_generales_unidocentes.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/educ_fisi/correlacionado.zip",
         "noCorrelacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/educ_fisi/no_correlacionado.zip", 
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip",
@@ -36,7 +36,7 @@
     {
         "nivel" : "Unidocentes",
         "asignatura" : "Educación para el Hogar",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/lineam/lin_generales_unidocentes.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/educ_hoga/correlacionado.zip",
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip",
         "alcance" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/educ_hoga/educacion_hogar_cartel_alcance_y_secuencia.docx"
@@ -44,7 +44,7 @@
     {
         "nivel" : "Unidocentes",
         "asignatura" : "Español",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/lineam/lin_generales_unidocentes.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/espa/correlacionado.zip",
         "noCorrelacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/espa/no_correlacionado.zip", 
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip",
@@ -53,7 +53,7 @@
     {
         "nivel" : "Unidocentes",
         "asignatura" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/lineam/lin_generales_unidocentes.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/estu_soci/correlacionado.zip",
         "noCorrelacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/estu_soci/no_correlacionado.zip", 
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip",
@@ -62,7 +62,7 @@
     {
         "nivel" : "Unidocentes",
         "asignatura" : "Inglés",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/lineam/lin_generales_unidocentes.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/ingl/correlacionado.zip",
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip",
         "alcance" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/ingl/organizacion_escenarios_y_competencias_ling_unid.docx"
@@ -70,7 +70,7 @@
     {
         "nivel" : "Unidocentes",
         "asignatura" : "Matemática",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/lineam/lin_generales_unidocentes.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/mate/correlacionado.zip",
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip",
         "alcance" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/mate/matematica_cartel_alcance_y_secuencia.docx"

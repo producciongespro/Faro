@@ -3,7 +3,7 @@
       "nivel": "Primaria",
       "materia": "Español",
       "anno": "Primero",
-      "lineamiento":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
       "contenido":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/pri/pri_contenido.zip",
       "articulacion":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/pri/pri_articulado.zip",
       "comprension":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/pri/pri_comprension.zip"
@@ -12,7 +12,7 @@
       "nivel": "Primaria",
       "materia": "Español",
       "anno": "Segundo",
-      "lineamiento":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
       "contenido":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/seg/seg_contenido.zip",
       "articulacion":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/seg/seg_articulado.zip",
       "comprension":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/seg/seg_comprension.zip"
@@ -21,28 +21,28 @@
       "nivel": "Primaria",
       "materia": "Español",
       "anno": "Tercero",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
       "contenido":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/ter/terc_contenido.zip"
    },
    {
       "nivel": "Primaria",
       "materia": "Español",
       "anno": "Cuarto",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
       "contenido":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/cua/cua_contenido.zip"
    },
    {
       "nivel": "Primaria",
       "materia": "Español",
       "anno": "Quinto",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
       "contenido":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/qui/quin_contenido.zip"
    },
    {
       "nivel": "Primaria",
       "materia": "Español",
       "anno": "Sexto",
-      "lineamiento": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/01_lin_espanol_primaria.pdf",
+      "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
       "contenido":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/espa/sex/sex_contenido.zip"
    }
    
