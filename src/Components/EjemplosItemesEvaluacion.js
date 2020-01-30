@@ -6,11 +6,16 @@ import ejemplosItemesSecundaria from '../data/evaluacion/ejemplos_itemes_secunda
 import assets from '../data/config/config.json';
 
 
+
 //console.log("ejemplosItemesSecundaria", ejemplosItemesSecundaria );
 const img = assets.img.apoyosEvaluacion;
 const imgGenerales = assets.img.general;
+const serv = assets.servidor;
 var bannerEjemplos;
 var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
+
+console.log("Servidor", serv);
+
 
 class EjemplosItemesEvaluacion extends Component {
     constructor(props) {
@@ -197,7 +202,7 @@ class EjemplosItemesEvaluacion extends Component {
                                             </span>
                                         ) :
                                         (
-                                            <a key={"item" + i} href={item.url} className="badge badge-info etiquetas-1" target="_blank" rel="noopener noreferrer">
+                                            <a key={"item" + i} href={serv +  item.url} className="badge badge-info etiquetas-1" target="_blank" rel="noopener noreferrer">
                                                 {item.nombre}
                                             </a>
                                         )
