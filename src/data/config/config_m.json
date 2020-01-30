@@ -1,6 +1,7 @@
 {
     "version" : "1.1.2",
     "nombre" : "Caja de Herramientas",
+    "servidor" : "https://pruebacajav2.mep.go.cr/",
     "img" : {
         "general" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/9_generales/",
         "portada" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/1_portada/",
