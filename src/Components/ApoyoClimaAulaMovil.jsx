@@ -3,14 +3,14 @@ import assets from '../data/config/config_m.json';
 //import textos from "../data/textos.json";
 import dsPdfs from "../data/pdf.json";
 //import dsLinks from "../data/links.json";
-import dsZip from "../data/comprimidos.json"
+
 
 const img = assets.img.apoyosClimaAula;
 const img2 = assets.img.general;
 const serv =  assets.servidor;
 var pdfs = dsPdfs[0];
 //var links = dsLinks[0];
-var zipDocs = dsZip[0];
+
 
 const ApoyoClimaAulaMovil = (props) => {
   return ( 

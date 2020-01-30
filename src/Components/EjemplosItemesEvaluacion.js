@@ -14,9 +14,6 @@ const serv = assets.servidor;
 var bannerEjemplos;
 var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 
-console.log("Servidor", serv);
-
-
 class EjemplosItemesEvaluacion extends Component {
     constructor(props) {
         super(props);

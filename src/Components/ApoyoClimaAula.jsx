@@ -12,10 +12,6 @@ const img = assets.img.apoyosClimaAula;
 const imgGenerales = assets.img.general;
 const serv =  assets.servidor;
 
-console.log("Sevidor", serv);
-
-
-
 const  reproducirSonido = () => {
   console.log("Audio");
   
