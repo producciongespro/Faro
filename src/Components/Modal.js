@@ -57,6 +57,15 @@ console.log("selectTypeContent en ejecución");
         )
 
         break;
+        case "videoPlan":
+          //console.log("Video");       
+          this.modalAncho = this.modalAncho + " modal-lg";
+  
+          tmpContent = (
+            <iframe className="borde-video" title="video Planeamiento" width="100%" height="500" src={video.planeamiento} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          )
+  
+          break;
       case "html":
         //console.log("html");        
         tmpContent = this.props.content

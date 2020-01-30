@@ -34,7 +34,7 @@ const ApoyosPlan = (props) => {
                   </div>
 
                   <div className="row img_btn_der">
-                  <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={img+ "planeamiento_didactico.png"} alt="Planeamiento Didáctico"/>
+                  <img  onClick = {props.showModal }  data-typecontent ="videoPlan" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={img+ "planeamiento_didactico.png"} alt="Planeamiento Didáctico"/>
                   </div>
 
                   <div className="row img_btn_der">
