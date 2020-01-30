@@ -3,7 +3,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_indu/1_ppd_artes_indusctriales_primero.docx "
     },
 
@@ -11,7 +11,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_indu/2_ppd_artes_industriales_segundo.docx "
     },
 
@@ -19,7 +19,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_indu/3_ppd_artes_industriales_tercero.docx "
     },
 
@@ -27,7 +27,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_indu/4_ppd_artes_industriales_cuarto.docx "
     },
 
@@ -35,7 +35,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_indu/5_ppd_artes_industriales_quinto.docx "
     },
 
@@ -43,7 +43,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/22_lin_artes_industriales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_indu/6_ppd_artes_industriales_sexto.docx "
     },
 
@@ -75,42 +75,42 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_plas/ppd_artes_plasticas_primero.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_plas/ppd_artes_plasticas_segundo.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_plas/ppd_artes_plasticas_tercero.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_plas/ppd_artes_plasticas_cuarto.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_plas/ppd_artes_plasticas_quinto.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/18_lin_artes_plasticas_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/arte_plas/ppd_artes_plasticas_sexto.docx"
     },
     
@@ -135,42 +135,42 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_fisi/ppd_educacion_fisica_primero.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_fisi/ppd_educacion_fisica_segundo.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_fisi/ppd_educacion_fisica_tercero.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_fisi/ppd_educacion_fisica_cuarto.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_fisi/ppd_educacion_fisica_quinto.docx"
     },
     {
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/16_lin_educacion_fisica_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_fisi/ppd_educacion_fisica_sexto.docx"
     },
 
@@ -194,7 +194,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
 
@@ -202,7 +202,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
 
@@ -210,7 +210,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
 
@@ -218,7 +218,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
 
@@ -226,7 +226,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
 
@@ -234,7 +234,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/20_lin_educacion_musical_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
 
@@ -254,7 +254,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Educación para el Hogar",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "eje1":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/pri/ppd_educacion_hogar_eje_1_primero.docx",
         "eje2":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/pri/ppd_educacion_hogar_eje_2_primero.docx",
         "eje3":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/pri/ppd_educacion_hogar_eje_3_primero.docx",
@@ -265,7 +265,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Educación para el Hogar",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "eje1":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/seg/ppd_educacion_hogar_eje_1_segundo.docx",
         "eje2":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/seg/ppd_educacion_hogar_eje_2_segundo.docx",
         "eje3":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/seg/ppd_educacion_hogar_eje_3_segundo.docx",
@@ -276,7 +276,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Educación para el Hogar",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "eje1":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/ter/ppd_educacion_hogar_eje_1_tercero.docx",
         "eje2":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/ter/ppd_educacion_hogar_eje_2_tercero.docx",
         "eje3":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/ter/ppd_educacion_hogar_eje_3_tercero.docx",
@@ -287,7 +287,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Educación para el Hogar",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "eje1":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/cua/ppd_educacion_hogar_eje_1_cuarto.docx",
         "eje2":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/cua/ppd_educacion_hogar_eje_2_cuarto.docx",
         "eje3":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/cua/ppd_educacion_hogar_eje_3_cuarto.docx",
@@ -298,7 +298,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Educación para el Hogar",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "eje1":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/qui/ppd_educacion_hogar_eje_1_quinto.docx",
         "eje2":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/qui/ppd_educacion_hogar_eje_2_quinto.docx",
         "eje3":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/qui/ppd_educacion_hogar_eje_3_quinto.docx",
@@ -309,7 +309,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Educación para el Hogar",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/24_lin_educacion_para_la_vida_cotidiana_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "eje1":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/sex/ppd_educacion_hogar_eje_1_sexto.docx",
         "eje2":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/sex/ppd_educacion_hogar_eje_2_sexto.docx",
         "eje3":"faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/educ_hoga/sex/ppd_educacion_hogar_eje_3_sexto.docx",
@@ -348,7 +348,7 @@
         "anno" : "Primero",
         "materia" : "Estudios Sociales",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/pri/sugerencias_abordaje_I_unidad_est_soc_y_civica_primero_febrero.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/pri/ppd_est_soc_y_civica_I_periodo_primero.docx"
     },
@@ -357,7 +357,7 @@
         "anno" : "Primero",
         "materia" : "Estudios Sociales",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/pri/sugerencias_abordaje_I_unidad_est_soc_y_civica_primero_febrero.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/pri/ppd_est_soc_y_civica_II_periodo_primero.docx"
     },
@@ -366,7 +366,7 @@
         "anno" : "Primero",
         "materia" : "Estudios Sociales",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje": "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/pri/sugerencias_abordaje_I_unidad_est_soc_y_civica_primero_febrero.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/pri/ppd_est_soc_y_civica_III_periodo_primero.docx"
     },
@@ -381,7 +381,7 @@
         "anno" : "Segundo",
         "materia" : "Estudios Sociales",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/seg/ppd_est_soc_y_civica_I_periodo_segundo.docx"
     },
     {
@@ -389,7 +389,7 @@
         "anno" : "Segundo",
         "materia" : "Estudios Sociales",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/seg/ppd_est_soc_y_civica_II_periodo_segundo.docx"
     },
     {
@@ -397,7 +397,7 @@
         "anno" : "Segundo",
         "materia" : "Estudios Sociales",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/seg/ppd_est_soc_y_civica_III_periodo_segundo.docx"
     },
 
@@ -409,7 +409,7 @@
         "anno" : "Tercero",
         "materia" : "Estudios Sociales",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/ter/material_trabajo_mes_febrero_I_periodo_tercero.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/ter/ppd_est_soc_y_civica_I_periodo_tercero.docx"
     },
@@ -419,7 +419,7 @@
         "anno" : "Tercero",
         "materia" : "Estudios Sociales",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/ter/material_trabajo_mes_febrero_I_periodo_tercero.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/ter/ppd_est_soc_y_civica_II_periodo_tercero.docx"
     },
@@ -429,7 +429,7 @@
         "anno" : "Tercero",
         "materia" : "Estudios Sociales",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/ter/material_trabajo_mes_febrero_I_periodo_tercero.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/ter/ppd_est_soc_y_civica_III_periodo_tercero.doc"
     },
@@ -444,7 +444,7 @@
         "anno" : "Cuarto",
         "materia" : "Estudios Sociales",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/cua/ppd_est_soc_y_civica_I_periodo_cuarto.docx"
     },
     {
@@ -452,7 +452,7 @@
         "anno" : "Cuarto",
         "materia" : "Estudios Sociales",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/cua/ppd_est_soc_y_civica_II_periodo_cuarto.doc"
     },
     {
@@ -460,7 +460,7 @@
         "anno" : "Cuarto",
         "materia" : "Estudios Sociales",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/cua/ppd_est_soc_y_civica_III_periodo_cuarto.docx"
     },
 
@@ -472,7 +472,7 @@
         "anno" : "Quinto",
         "materia" : "Estudios Sociales",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/qui/contenidos_para_desarrollar_I_unidad_quinto.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/qui/ppd_est_soc_y_civica_I_periodo_quinto.doc"
     },
@@ -481,7 +481,7 @@
         "anno" : "Quinto",
         "materia" : "Estudios Sociales",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/qui/contenidos_para_desarrollar_I_unidad_quinto.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/qui/ppd_est_soc_y_civica_II_periodo_quinto.doc"
     },
@@ -490,7 +490,7 @@
         "anno" : "Quinto",
         "materia" : "Estudios Sociales",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/qui/contenidos_para_desarrollar_I_unidad_quinto.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/qui/ppd_est_soc_y_civica_III_periodo_quinto.doc"
     },
@@ -503,7 +503,7 @@
         "anno" : "Sexto",
         "materia" : "Estudios Sociales",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/sex/ppd_est_soc_y_civica_I_periodo_sexto.doc"
     },
     {
@@ -511,7 +511,7 @@
         "anno" : "Sexto",
         "materia" : "Estudios Sociales",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/sex/ppd_est_soc_y_civica_II_periodo_sexto.doc"
     },
     {
@@ -519,7 +519,7 @@
         "anno" : "Sexto",
         "materia" : "Estudios Sociales",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/10_lin_estudios_sociales_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/estu_soci/sex/ppd_est_soc_y_civica_III_periodo_sexto.doc"
     },
 
@@ -544,7 +544,7 @@
         "nivel" : "Primaria",
         "anno" : "Primero",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_primero_orientacion.docx"
     },
 
@@ -552,7 +552,7 @@
         "nivel" : "Primaria",
         "anno" : "Segundo",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_segundo_orientacion.docx"
     },
 
@@ -560,7 +560,7 @@
         "nivel" : "Primaria",
         "anno" : "Tercero",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_tercero_orientacion.docx"
     },
 
@@ -568,7 +568,7 @@
         "nivel" : "Primaria",
         "anno" : "Cuarto",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_cuarto_orientacion.docx"
     },
 
@@ -576,7 +576,7 @@
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_quinto_orientacion.docx"
     },
 
@@ -584,7 +584,7 @@
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/lineam/39_lin_orientacion_primaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/orie/ppd_sexto_orientacion.docx"
     }
 
