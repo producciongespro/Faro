@@ -6,7 +6,9 @@ import pdfJson from "../data/pdf.json";
 const audio = assets.audio;
 const img = assets.img.docsOficiales;
 const imgGenerales = assets.img.general;
+const serv = assets.servidor;
 
+console.log("serv", serv);
 
 
 const  pdfs = pdfJson[0];
@@ -39,12 +41,12 @@ const DocsOficiales = ( props ) => {
         <div className="row">
             <div className="col-4  ladoIzq">
               <figure>
-                <img className="botones-portada hvr-pop img-fluid politica" id="politica" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "politica_educativa.png"}  data-content= {pdfs.Politica_educativa }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
+                <img className="botones-portada hvr-pop img-fluid politica" id="politica" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "politica_educativa.png"}  data-content= { serv + pdfs.Politica_educativa }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
               </figure>
               </div>
             <div className="col-4 ">
                 <figure>
-                <img className="botones-portada hvr-pop img-fluid fundamentos" id="fundamentos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "fundamentos_curriculo.png"} data-content= {pdfs.Transformacion_curricular }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
+                <img className="botones-portada hvr-pop img-fluid fundamentos" id="fundamentos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "fundamentos_curriculo.png"} data-content= {serv + pdfs.Transformacion_curricular }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
               </figure>
             </div>
             <div className="col-4  ladoIzq">
@@ -72,13 +74,13 @@ const DocsOficiales = ( props ) => {
           </div>
           <div className="col-4 ">
               <figure>
-              <img className="botones-portada hvr-pop img-fluid faro" id="faro" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {img + "faro.png"}  data-content= {pdfs.Faro }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
+              <img className="botones-portada hvr-pop img-fluid faro" id="faro" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {img + "faro.png"}  data-content= {serv + pdfs.Faro }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
               
             </figure>
           </div>
           <div className="col-4  ladoIzq">
               <figure>
-              <img className="botones-portada hvr-pop img-fluid estudiante" id="estudiante" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "perfil_estudiantil.png"}  data-content= {pdfs.Docs_Oficiales_Perfil_Est }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
+              <img className="botones-portada hvr-pop img-fluid estudiante" id="estudiante" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "perfil_estudiantil.png"}  data-content= {serv + pdfs.Docs_Oficiales_Perfil_Est }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
             
             </figure>
           </div>
