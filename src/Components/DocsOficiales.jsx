@@ -8,9 +8,6 @@ const img = assets.img.docsOficiales;
 const imgGenerales = assets.img.general;
 const serv = assets.servidor;
 
-console.log("serv", serv);
-
-
 const  pdfs = pdfJson[0];
 const  reproducirSonido = () => {
   console.log("Audio");

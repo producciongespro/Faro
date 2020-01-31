@@ -15,7 +15,14 @@
         "apoyosPlan" : "http://cajadeherramientasdos.mep.go.cr//Faro/asset/img/8_apoyo_planea/"
     },
     "video" : {
-        "ministra" : "https://www.youtube.com/embed/yOjV8yEIrMs"
+        "ministra" : "https://www.youtube.com/embed/yOjV8yEIrMs",
+        "planeamiento" : "https://www.youtube.com/embed/9XodZVGBOuo",
+        "transformacion" : "https://www.youtube.com/embed/bbzdlLlr478",
+        "pensamientoSistemico" : "https://www.youtube.com/embed/RHfP979UENg",
+        "resolucionProblemas" : "https://www.youtube.com/embed/VvWvyqaeWgY"
+
     },
-    "audio" : "http://cajadeherramientasdos.mep.go.cr/Faro/asset/audios/"
+    "audio" : "http://cajadeherramientasdos.mep.go.cr//Faro/asset/audios/",
+    "noDisponible" : "http://cajadeherramientasdos.mep.go.cr//faro_referencias/10_no_disponible/no_disponible.html"
 }
+

@@ -1,0 +1,28 @@
+{
+    "version" : "1.1.2",
+    "nombre" : "Caja de Herramientas",
+    "servidor" : "https://pruebacajav2.mep.go.cr/",
+    "img" : {
+        "general" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/9_generales/",
+        "portada" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/1_portada/",
+        "home" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/2_home/web/",
+        "homeM" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/2_home/movil/",
+        "apoyosClimaAula" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/3_apoyos_aula/",
+        "apoyosEvaluacion" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/4_apoyos_eval/",
+        "recursosDidacticos" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/5_recursos_did/",
+        "docsOficiales" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/6__documen_educ/",
+        "desarrolloProfesional" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/7_desarrollo_prof/",
+        "apoyosPlan" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/8_apoyo_planea/"
+    },
+    "video" : {
+        "ministra" : "https://www.youtube.com/embed/yOjV8yEIrMs",
+        "planeamiento" : "https://www.youtube.com/embed/9XodZVGBOuo",
+        "transformacion" : "https://www.youtube.com/embed/bbzdlLlr478",
+        "pensamientoSistemico" : "https://www.youtube.com/embed/RHfP979UENg",
+        "resolucionProblemas" : "https://www.youtube.com/embed/VvWvyqaeWgY"
+
+    },
+    "audio" : "https://pruebacajav2.mep.go.cr/Faro/asset/audios/",
+    "noDisponible" : "https://pruebacajav2.mep.go.cr/faro_referencias/10_no_disponible/no_disponible.html"
+}
+

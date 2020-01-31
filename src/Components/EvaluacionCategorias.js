@@ -9,7 +9,7 @@ const img = assets.img.apoyosEvaluacion;
 const imgGeneral = assets.img.general;
 var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 
-console.log("Plataforma: "+plataformaUsada);
+//console.log("Plataforma: "+plataformaUsada);
 
 
 class EvaluacionCategorias extends Component {
@@ -65,7 +65,7 @@ class EvaluacionCategorias extends Component {
             });
                //******Estilos par boton 2 */
                this.setState({claseBotones2 : "btn btn-lg txt-ajustable btn-block text-center btn-component2" },()=>{
-                console.log("clase",this.state.claseBotones);                
+                //console.log("clase",this.state.claseBotones);                
             });
         }
     }
@@ -77,7 +77,7 @@ class EvaluacionCategorias extends Component {
                 this.subcategorias = categoriasEvaluacion[index].subcategorias;
             }
         }
-        console.log("this.subcategorias", this.subcategorias);        
+       // console.log("this.subcategorias", this.subcategorias);        
     }
 
 
