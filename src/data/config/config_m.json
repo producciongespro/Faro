@@ -1,7 +1,7 @@
 {
     "version" : "1.1.2",
     "nombre" : "Caja de Herramientas",
-    "servidor" : "https://pruebacajav2.mep.go.cr/",
+    "servidor" : "https://recursos.mep.go.cr/",
     "img" : {
         "general" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/9_generales/",
         "portada" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/1_portada/",
@@ -15,11 +15,7 @@
         "apoyosPlan" : "https://pruebacajav2.mep.go.cr/Faro/asset/img/8_apoyo_planea/"
     },
     "video" : {
-        "ministra" : "https://www.youtube.com/embed/yOjV8yEIrMs",
-        "planeamiento" : "https://www.youtube.com/embed/9XodZVGBOuo",
-        "transformacion" : "https://www.youtube.com/embed/bbzdlLlr478",
-        "pensamientoSistemico" : "https://www.youtube.com/embed/RHfP979UENg",
-        "resolucionProblemas" : "https://www.youtube.com/embed/VvWvyqaeWgY"
+        "ministra" : "https://www.youtube.com/embed/yOjV8yEIrMs"
     },
     "audio" : "https://pruebacajav2.mep.go.cr/Faro/asset/audios/"
 }
