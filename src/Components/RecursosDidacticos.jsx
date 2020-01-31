@@ -31,7 +31,7 @@ const RecursosDidacticos = (props) => {
 
           <div>
           <a href={links.FQT} target="_blank" rel="noopener noreferrer"  >
-            <img id="material_adicional_fqt" className="img-fluid btn hvr-wobble-bottom" src={img + "fqt.gif"}  data-infosource={4}   onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut } alt="Enlace a FQT" />
+            <img id="material_adicional_fqt" className="img-fluid btn hvr-wobble-bottom" src={img + "fqt.gif"}  data-infosource={4}       alt="Enlace a FQT" />
           </a>
           </div>
              
