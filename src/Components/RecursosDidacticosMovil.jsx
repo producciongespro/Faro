@@ -102,8 +102,8 @@ const RecursosDidacticosMovil = (props) => {
     <div class="row text-center">
     <div className="col-3 "> </div>
             <div className="col-6 ">
-    <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
-                  <img id="material_adicional" className="img-fluid btn hvr-wobble-bottom" src={img + "coleccion_gespro.png"} data-tar="Construccion"  onClick={props.changePage} alt="Referenciar COLECCION GESPRO" />
+                <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
+                <img id="material_adicional" className="img-fluid btn hvr-wobble-bottom" src={img + "coleccion_gespro.png"} data-tar="Construccion"  onClick={props.changePage} alt="Referenciar COLECCION GESPRO" />
               </a>
               </div>
               <div className="col-3 "> </div>
