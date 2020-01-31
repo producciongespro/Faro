@@ -191,7 +191,7 @@ console.log("selectTypeContent en ejecución");
 
 
           <strong>Dirección de Recursos Tecnológicos</strong><br />
-          Gabriela Castro Fuentes, jefatura<br />
+          Gabriela Castro Fuentes, directora<br />
           <strong>Departamento de Gestión y Producción</strong><br />
           <strong>Programadores</strong><br />
           Chacón Campos Luis, asesor nacional de informática  <br />
