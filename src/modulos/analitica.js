@@ -4,7 +4,7 @@ const analitica = (nombreCampo)=> {
     const data = { campo: nombreCampo };
     
 
-fetch('https://pruebacajav2.mep.go.cr/caja/registrar_ingreso.php', {
+fetch('https://cajadeherramientas.mep.go.cr/caja/registrar_ingreso.php', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
