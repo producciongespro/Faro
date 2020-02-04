@@ -176,8 +176,7 @@ class Buscador extends Component {
                 break;
             case "Artes Plásticas":
                 dataGeneral = dataArtesPlasticas;
-                console.log(dataGeneral);
-                
+                console.log(dataGeneral);    
                 break;
 
             default:
