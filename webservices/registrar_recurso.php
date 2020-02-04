@@ -5,9 +5,10 @@ header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 header("Allow: GET, POST, OPTIONS, PUT, DELETE");
 header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
+$dataObject = json_decode($JSONData);  
 require 'conectar.php';
 
-  $nombre = utf8_decode( $dataObject-> nombre) ;
+  $nombre = utf8_decode($dataObject-> nombre) ;
   $descripcion = utf8_decode($dataObject-> descripcion);
   $id_nivel = $dataObject-> id_nivel;
   $anno = utf8_decode($dataObject-> anno);
