@@ -645,8 +645,6 @@ class App extends Component {
 
   }
 
-
-
   handlerShowInfoGeneral(e) {
     /*  Muestra la información general de la categoría. Este método se ejecuta con el evento 
     "mouseOut" de los botones  */

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+import referencias from '../data/config/config.json';
 import dataOtros from '../data/recursos/generales.json';
 import dataIngles from '../data/recursos/recursos_ingles.json';
 import dataFrances from '../data/recursos/recursos_frances.json';
 import dataItaliano from '../data/recursos/recursos_italiano.json';
 import dataMediacion from '../data/recursos/recursos_mediacion.json';
-import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
+// import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import dataPreescolar from '../data/recursos/recursos_preescolar.json';
 
 import assets from '../data/config/config.json';
@@ -12,6 +14,7 @@ var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 var bannerPrescolar, bannerPrimaria, bannerSecundaria, bannerFerias;
 const img = assets.img.recursosDidacticos;
 const imgGenerales = assets.img.general;
+var dataArtesPlasticas;
 
 
 var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación"]
@@ -127,6 +130,26 @@ class Buscador extends Component {
         }        
         }
 
+    componentDidMount() {
+        this.obtenerJson();
+    }
+
+    obtenerJson = () => {
+        // var tablaConsulta = tabla.substring(1);
+       let url= referencias.webservices+"obtener_recursos.php";
+        console.log("URL",url);
+        axios.get(url)
+          .then(res => {     
+            dataArtesPlasticas = res.data;
+            console.log("Recursos",dataArtesPlasticas); 
+          })
+    
+          .catch(function (error) {
+            console.log("error",error)
+          })
+          .finally(function () {
+          });
+      }
 
     cargarDatasetRecursos = (materia) => {
         dataGeneral = "";
@@ -143,6 +166,7 @@ class Buscador extends Component {
                 break;
             case "Francés":
                 dataGeneral = dataFrances;
+                console.log(dataGeneral);
                 break;
             case "Italiano":
                 dataGeneral = dataItaliano;
@@ -152,6 +176,8 @@ class Buscador extends Component {
                 break;
             case "Artes Plásticas":
                 dataGeneral = dataArtesPlasticas;
+                console.log(dataGeneral);
+                
                 break;
 
             default:
@@ -238,7 +264,7 @@ class Buscador extends Component {
             arrayHtml = (
                 <React.Fragment>
                     <h5>    {dataGeneral[index].nombre} </h5>
-                    <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].desc}  </span>
+                    <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].descripcion}  </span>
                     <br />
                     {
                         this.state.materia === "" && (
@@ -317,7 +343,7 @@ class Buscador extends Component {
                 arrayHtml = (
                     <React.Fragment>
                         <h5>    {dataGeneral[index].nombre} </h5>
-                        <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].desc}  </span>
+                        <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].descripcion}  </span>
                         <br />
                         {
                             this.state.materia === "" && (
