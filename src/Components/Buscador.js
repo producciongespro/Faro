@@ -141,8 +141,7 @@ class Buscador extends Component {
         axios.get(url)
           .then(res => {     
             dataArtesPlasticas = res.data;
-            console.log("Recursos",dataArtesPlasticas); 
-          })
+            })
     
           .catch(function (error) {
             console.log("error",error)
@@ -163,10 +162,10 @@ class Buscador extends Component {
             case "Matemáticas":
             case "Cívica":
                 dataGeneral = dataOtros;
+                console.log(dataGeneral);
                 break;
             case "Francés":
                 dataGeneral = dataFrances;
-                console.log(dataGeneral);
                 break;
             case "Italiano":
                 dataGeneral = dataItaliano;
