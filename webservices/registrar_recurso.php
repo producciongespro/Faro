@@ -9,17 +9,14 @@ $JSONData = file_get_contents("php://input");
 $dataObject = json_decode($JSONData);  
 require 'conectar.php';
 
-  $nombre = utf8_decode($dataObject-> nombre) ;
-  $descripcion = utf8_decode($dataObject-> descripcion);
-  $id_nivel = $dataObject-> id_nivel;
-  $anno = utf8_decode($dataObject-> anno);
-  $url = utf8_decode($dataObject-> url);		
-  $ciclo =  utf8_decode($dataObject-> ciclo);
-  $materia =  utf8_decode($dataObject-> materia);
-  $apoyo = $dataObject-> apoyo;
-  $id_poblacion = $dataObject-> id_poblacion;		
-  $plan = utf8_decode($dataObject-> plan);
-  $usuario =  utf8_decode($dataObject-> usuario);
+$id_nivel = $dataObject-> id_nivel;
+$materia =  utf8_decode($dataObject-> materia);  
+$anno = utf8_decode($dataObject-> anno);
+$nombre = utf8_decode( $dataObject-> nombre) ;
+$descripcion = utf8_decode($dataObject-> descripcion); 
+$url = utf8_decode($dataObject-> url);        
+$apoyo = $dataObject-> apoyo;
+$usuario =  utf8_decode($dataObject-> usuario);
 
   $conn = conectarDB();
     
@@ -27,7 +24,7 @@ require 'conectar.php';
       die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = "INSERT INTO `recursos`(`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `ciclo`, `materia`, `apoyos`, `id_poblacion`, `plan`, `id_usuario`) VALUES ('$nombre','$descripcion','$id_nivel','$anno','$url','$ciclo','$materia','$apoyo','$id_poblacion','$plan','$usuario')";
+  $sql = "INSERT INTO `recursos`(`nombre`, `descripcion`, `id_nivel`, `anno`, `url`,  `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion','$id_nivel','$anno','$url','$materia','$apoyo','$usuario')";
 
   if ($conn->query($sql) === TRUE) {
         echo json_encode(array('error'=>'false','msj'=>'ok'));
