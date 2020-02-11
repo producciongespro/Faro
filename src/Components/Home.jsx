@@ -18,7 +18,7 @@ const Home = (props) => {
     
 
 
-   <img className="btn img-fluid hvr-pop incidencias"  id="acercade"   data-typecontent ="opcIncidencias"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Apoyos para el planeamiento" src= {img + "incidencias.png"} /><br/>
+   <img className="btn img-fluid hvr-pop incidencias"  id="btnIncidencias"   data-typecontent ="opcIncidencias"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Inicidencias" src= {img + "incidencias.png"} /><br/>
     <hr/>
 
    
