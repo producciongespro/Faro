@@ -432,6 +432,76 @@ console.log("selectTypeContent en ejecución");
         )
         break;
 
+
+
+
+
+
+
+
+
+
+        case "opcIncidencias":
+          // this.modalAncho =  this.modalAncho + " modal-lg";
+          //this.classModalBody = this.classModalBody + " modal-alto";
+          var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
+          switch (plataformaUsada) {
+            case "escritorio": 
+                  this.imgPdf = "cons_pedagogica.png";
+              break;
+              case "movil": 
+                  this.imgPdf = "ico_pdf_peq.png";
+              break;
+              default:
+                this.imgPdf2 = "cons_tecnica.png";
+              break;
+          }
+            tmpContent = (<React.Fragment>
+            <div className="container">
+
+            <div className="col-12 text-center">
+                <h3>Seleccione el tipo de incidencia</h3>
+                </div><br/><br/>
+
+              <div className="row ">
+                               
+                <div className="col-6 text-center">
+                    <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
+                    <img  src={ imgGeneral + "cons_pedagogica.png" }  alt="pdf documento general" />
+                  </a>
+                </div>
+  
+                <div className="col-6 text-center">
+                <a href="mailto:cajadeherramientas@mep.go.cr"> <img src={ imgGeneral + "cons_tecnica.png" } alt="correo de incidencias: cajadeherramientas@mep.go.cr" /></a> 
+                </div>
+             
+  
+              </div>
+  
+       
+  
+            </div>
+          </React.Fragment>
+          )
+          break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       case "refUtiles":
         this.modalAncho = this.modalAncho + " modal-lg";
         this.classModalBody = this.classModalBody + " borde-modal borde-bottom-celeste";
