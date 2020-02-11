@@ -389,12 +389,16 @@ class BuscadorPlaneamiento extends Component {
             console.log("Seleccion: español primaria - tipo comodin", tipoComodin);
             array = dataPrimariaEspanol;
         }
-        //CIENCIAS PRIMARIA
-        if (this.state.nivel === "Primaria" && this.state.materia === "Ciencias") {
-            console.log("Seleccion: ciencias primaria");
-            tipoComodin = "mes";
-            array = dataPrimariaCiencias;
+
+
+
+         //INFORMATICA PRIMARIA
+         if (this.state.nivel === "Primaria" && this.state.materia === "Informática Educativa") {
+            tipoComodin = "anual";
+            console.log("Seleccion: informática primaria - tipo comodin", tipoComodin);
+            array = dataInformatica;
         }
+
 
         //MATEMATICA PRIMARIA
         if (this.state.nivel === "Primaria" && this.state.materia === "Matemática") {
@@ -819,6 +823,8 @@ class BuscadorPlaneamiento extends Component {
                                     )
 
                                 }
+
+
                             </div>
                         )
                     }
@@ -894,6 +900,20 @@ class BuscadorPlaneamiento extends Component {
             this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
 
     tarjetasFrancesPrimaria = (array) => {
         console.log("array recibido en tarjetas Fracnés primaria:", array);
