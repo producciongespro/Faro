@@ -355,7 +355,7 @@ console.log("selectTypeContent en ejecución");
           Ramírez Campos Ana Maria<br /><br />
 
 
-          <strong>Fuente</strong> <cite> :   MEP.Costa Rica - Enero 2020  </cite>
+          <strong>Fuente</strong> <cite> :   MEP.Costa Rica - Enero  </cite>
           {/* </div> */}
           {/* </div> */}
         </React.Fragment>
@@ -451,7 +451,7 @@ console.log("selectTypeContent en ejecución");
             Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, que fomentan la escritura en el estudiantado, en concordancia con el programa de estudio.
                       </p>
           <hr />
-          <h5 className="tit_ref2"><strong>Dispositivos Móviles para la Educación</strong> </h5>
+          <h5 className="tit_ref2"><strong>Dispositivos Móviles para la Educación:</strong> </h5>
           <p>
             <a href="https://multimedia.uned.ac.cr/pem/aprendizaje_moviles/pag/conceptos.html" target="_blank" rel="noopener noreferrer"><strong>Aprendizajes Móviles:</strong> </a> Este recurso publicado por la UNED de Costa Rica presenta las principales características de los dispositivos móviles, por un lado, la ubicuidad, en la que se aprende desde cualquier momento y lugar, por otro lado, la adaptabilidad o flexibilidad de estos dispositivos gracias a la conexión e ideas de cómo aprovecharlas en el área educativa.
                       </p>
