@@ -14,7 +14,7 @@ $materia =  utf8_decode($dataObject-> materia);
 $anno = utf8_decode($dataObject-> anno);
 $nombre = utf8_decode( $dataObject-> nombre) ;
 $descripcion = utf8_decode($dataObject-> descripcion); 
-$url = utf8_decode($dataObject-> url);   = $dataObject-> apoyo;
+$url = utf8_decode($dataObject-> url);
 if (($dataObject-> apoyo) == true) {
   $apoyo=1;
 } 
