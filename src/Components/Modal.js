@@ -6,8 +6,14 @@ import plantillasGenerales from '../data/documentos/lineamientos_planeamiento_ge
 import plantillasPreescolar from '../data/documentos/lineamientos_planeamiento_prescolar.json';
 import plantillasPrimaria from '../data/documentos/lineamientos_planeamiento_primaria.json';
 import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_secundaria.json';
+import contactos from '../data/contactos.json';
+
 import config from '../data/config/config.json';
+import enviar from '../modulos/enviar';
 const serv = config.servidor;
+
+console.log("contacots", contactos);
+
 
 
 const video = assets.video;
@@ -45,6 +51,16 @@ class Modal extends Component {
 
   handleTipoIncidencia = (e) => {
     this.setState({ tipoIncidencia: e.target.title });
+  }
+
+  handleEnviarIncidencia =()=> {     
+    const data = {
+      "nombre":document.getElementById("nombre").value,
+      "correo":document.getElementById("correo").value,      
+      "detalle":document.getElementById("detalle").value
+    }
+    console.log("data",data);    
+    enviar("http://cajadeherramientas.mep.go.cr/webservices/enviar_reporte.php", data);
   }
 
   selectTypeContent() {
@@ -570,6 +586,17 @@ class Modal extends Component {
                       <div className="col-12">
                         <h4>Lista de contactos</h4>
                       </div>
+                      <div className="row">
+                        <div className="col-12">
+                        <ul className="list-group">
+                          {
+                            contactos.map((item,i)=>(
+                            <li key={"contacto"+i} className="list-group-item">{item.nombre}</li>
+                            ))
+                          }
+                        </ul>
+                        </div>
+                      </div>
                     </div>
                   )
                 }
@@ -595,7 +622,7 @@ class Modal extends Component {
                             placeholder="Dgite su nombre"
                             aria-label="Username"
                             aria-describedby="basic-addon1"
-                            name="nombre"
+                            id="nombre"
                           />
                         </div>
 
@@ -609,7 +636,7 @@ class Modal extends Component {
                             placeholder="Dgite su correo electrónico para birndarle la respuesta."
                             aria-label="Username"
                             aria-describedby="basic-addon1"
-                            name="correo"
+                            id="correo"
                           />
                         </div>
 
@@ -617,8 +644,10 @@ class Modal extends Component {
                             <div className="input-group-prepend">
                               <span className="input-group-text">Detalle:</span>
                             </div>
-                            <textarea className="form-control" name="detalle" aria-label="With textarea" />
+                            <textarea className="form-control" id="detalle" aria-label="With textarea" />
                           </div>
+                          <br/>
+                          <button onClick={this.handleEnviarIncidencia} className="btn btn-outline-info"> Enviar </button>
 
 
 
