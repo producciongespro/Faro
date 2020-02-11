@@ -4,6 +4,9 @@ import React, { Component } from 'react';
 import categoriasPreescolar from '../data/planeamiento/preescolar/select_preescolar.json';
 import dataPreescolar from '../data/planeamiento/preescolar/docs_plan_preescolar.json';
 
+//Referencias informatica
+import dataInformatica from '../data/planeamiento/informatica/docs_plan_informatica.json';
+
 //Referecnias idiomas
 import dataIdiomas from '../data/planeamiento/idiomas/docs_plan_idiomas.json';
 
