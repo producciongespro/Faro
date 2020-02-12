@@ -399,11 +399,11 @@ class BuscadorPlaneamiento extends Component {
 
 
         //INFORMATICA PRIMARIA
-        if (this.state.nivel === "Primaria" && this.state.materia === "Informática Educativa") {
+        if ( this.state.materia === "Informática Educativa") {
             tipoComodin = "informatica";
             console.log("Seleccion: informática primaria - tipo comodin", tipoComodin);
             array = dataInformatica;
-            //console.log("array de informatica educativa", array );
+            console.log("array de informatica educativa", array );
             
         }
 
@@ -633,6 +633,9 @@ class BuscadorPlaneamiento extends Component {
                 }
                 if (this.state.materia !== "Español" && this.state.materia !== "Educación Religiosa") {
                     this.tarjetasBasico(this.arrayResultado);
+                }
+                if (this.state.materia === "Informática Educativa") {
+                    this.tarjetasInformatica(this.arrayResultado);
                 }
                 break;
             case "Primaria":
