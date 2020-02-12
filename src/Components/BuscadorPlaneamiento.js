@@ -400,9 +400,11 @@ class BuscadorPlaneamiento extends Component {
 
         //INFORMATICA PRIMARIA
         if (this.state.nivel === "Primaria" && this.state.materia === "Informática Educativa") {
-            tipoComodin = "anual";
+            tipoComodin = "informatica";
             console.log("Seleccion: informática primaria - tipo comodin", tipoComodin);
             array = dataInformatica;
+            //console.log("array de informatica educativa", array );
+            
         }
 
 
@@ -454,13 +456,20 @@ class BuscadorPlaneamiento extends Component {
                 }
                 break;
 
+                case "informatica":
+                    console.log("tipoComodin: informatica");
+                    tmpArray = array;
+                break;
+
 
             default:
                 console.log("tipoComodin seleccionado fuera de rango");
                 break;
         }
         //console.log("Array para buscar", array);
-        //console.log("mesActivo", mesActivo);        
+        //console.log("mesActivo", mesActivo);  
+        //console.log("TmpArray del filtrado", tmpArray);
+              
         return tmpArray;
     }
 
@@ -628,7 +637,7 @@ class BuscadorPlaneamiento extends Component {
                 break;
             case "Primaria":
                 this.arrayResultado = this.filtrarBasico(this.state.nivel, this.state.anno, this.state.materia, this.state.mes, this.state.tipoPlan, this.state.contenidoEsp);
-                //console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                               
+                console.log("AAAAAAAAAAAAAAAAArray basico en primaria", this.arrayResultado);                               
                 if (this.state.materia === "Español") {
                     this.tarjetasEspanolPrimaria(this.arrayResultado);
                 }
@@ -641,7 +650,10 @@ class BuscadorPlaneamiento extends Component {
                 if (this.state.materia === "Educación Religiosa") {
                     this.tarjetasReligion(this.arrayResultado);
                 }
-                if (this.state.materia !== "Educación para el Hogar" && this.state.materia !== "Francés" && this.state.materia !== "Educación Religiosa" && this.state.materia !== "Español") {
+                if (this.state.materia === "Informática Educativa") {
+                    this.tarjetasInformatica(this.arrayResultado);
+                }
+                if (this.state.materia !== "Educación para el Hogar" && this.state.materia !== "Francés" && this.state.materia !== "Educación Religiosa" && this.state.materia !== "Español"    && this.state.materia !== "Informática Educativa") {
                     this.tarjetasBasico(this.arrayResultado);
                 }
 
@@ -676,6 +688,63 @@ class BuscadorPlaneamiento extends Component {
     }
 
     /* TARJETAS PARA RENDERIZAR*/
+    tarjetasInformatica = (array) => {
+        // Primaria, secudnaria e intercultural
+        //console.log("array recibido en tarjetas:", array);
+        console.log("*********Renderizado Tarjetas info*************");
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < array.length; index++) {
+            arrayHtml = (
+                <div className="card">
+                    {
+                        //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+                        <div className="card-header">
+                            
+                            <span className="mx-2 badge etiquetas badge-secondary  px-3 py-2 ">
+                                Asignatura: {array[index].materia}
+                            </span>                        
+                        </div>
+                    }
+
+                    {
+                        (
+                            // Renderizado etiquetas básico                         
+
+                            <div className="card-body mr-2">
+                             
+                                {
+                                    //************comprobación de plantilla nulo:
+                                    array[index].plantilla === "nulo" ?
+                                        (
+                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                                <i className="fas fa-ban"></i> Plantilla no disponible
+                                          </span>
+                                        ) :
+                                        (
+                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <i className="fas fa-table"></i> Plantilla
+                                            </a>
+                                        )
+                                    //******************************/                                
+                                }                             
+                             
+                            </div>
+                        )
+                    }
+                </div>
+            );
+            arrayTmp.push(arrayHtml);
+        }
+        this.setState({ tarjetas: arrayTmp });
+        if (array.length <= 0) {
+            this.mensaje = "No se han encontrado resultados.";
+        } else {
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+        }
+    }
+
+
     tarjetasBasico = (array) => {
         // Primaria, secudnaria e intercultural
         //console.log("array recibido en tarjetas:", array);
