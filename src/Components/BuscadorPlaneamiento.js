@@ -390,10 +390,16 @@ class BuscadorPlaneamiento extends Component {
             array = dataPrimariaEspanol;
         }
 
+           //CIENCIAS PRIMARIA
+           if (this.state.nivel === "Primaria" && this.state.materia === "Ciencias") {
+            console.log("Seleccion: ciencias primaria");
+            tipoComodin = "mes";
+            array = dataPrimariaCiencias;
+        }
 
 
-         //INFORMATICA PRIMARIA
-         if (this.state.nivel === "Primaria" && this.state.materia === "Informática Educativa") {
+        //INFORMATICA PRIMARIA
+        if (this.state.nivel === "Primaria" && this.state.materia === "Informática Educativa") {
             tipoComodin = "anual";
             console.log("Seleccion: informática primaria - tipo comodin", tipoComodin);
             array = dataInformatica;
@@ -905,7 +911,7 @@ class BuscadorPlaneamiento extends Component {
 
 
 
-   
+
 
 
 
@@ -1072,25 +1078,25 @@ class BuscadorPlaneamiento extends Component {
                                     </a>
                                     )
                                 }
-                                
-                                {                              
-                                 
+
+                                {
+
                                     <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Orientaciones
-                                    </a>                                                                        
+                                    </a>
                                 }
 
                                 {
                                     //En el caso de undécimo no se renderiza plantilla anuales
-                                       (array[index].anno !== "Undécimo" ) && 
-                                       (
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].anual} target="_blank" rel="noopener noreferrer" >
-                                                <i className="fas fa-file-pdf"></i> Plantillas anuales
+                                    (array[index].anno !== "Undécimo") &&
+                                    (
+                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].anual} target="_blank" rel="noopener noreferrer" >
+                                            <i className="fas fa-file-pdf"></i> Plantillas anuales
                                             </a>
-                                       )
+                                    )
                                 }
 
-                             
+
 
 
                                 {
@@ -1100,7 +1106,7 @@ class BuscadorPlaneamiento extends Component {
                                             <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].undecimoAcademico} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Undécimo académico programa 2009
                                         </a>
-                                            
+
                                         </React.Fragment>
                                     )
                                 }
