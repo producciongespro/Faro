@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+//import alertify from 'alertifyjs';
+//import 'alertifyjs/build/css/alertify.min.css';
+//import 'alertifyjs/build/css/themes/default.min.css';
 import assets from '../data/config/config.json';
 
 import plantillasGenerales from '../data/documentos/lineamientos_planeamiento_generales.json';
 import plantillasPreescolar from '../data/documentos/lineamientos_planeamiento_prescolar.json';
 import plantillasPrimaria from '../data/documentos/lineamientos_planeamiento_primaria.json';
 import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_secundaria.json';
-import contactos from '../data/contactos.json';
 
+
+
+import contactos from '../data/contactos.json';
 import config from '../data/config/config.json';
 import enviar from '../modulos/enviar';
+
 const serv = config.servidor;
 
 console.log("contacots", contactos);
@@ -30,7 +36,8 @@ class Modal extends Component {
     this.state = {
       htmlContent: "",
       // ancho_modal : modalScreen
-      tipoIncidencia: null
+      tipoIncidencia: null,           
+      estadoForm:"espera"      
     };
     this.selectTypeContent = this.selectTypeContent.bind(this);
     setTimeout(this.selectTypeContent, 10);
@@ -53,14 +60,30 @@ class Modal extends Component {
     this.setState({ tipoIncidencia: e.target.title });
   }
 
-  handleEnviarIncidencia =()=> {     
+  handleEnviarIncidencia = (e) => {
+    this.setState({ estadoForm: "iniciando" }); 
     const data = {
-      "nombre":document.getElementById("nombre").value,
-      "correo":document.getElementById("correo").value,      
-      "detalle":document.getElementById("detalle").value
+      "nombre": document.getElementById("nombre").value,
+      "correo": document.getElementById("correo").value,
+      "detalle": document.getElementById("detalle").value
     }
-    console.log("data",data);    
-    enviar("http://cajadeherramientas.mep.go.cr/webservices/enviar_reporte.php", data);
+    console.log("data", data);
+
+    if (data.nombre !== "" && data.correo !== "" && data.detalle !== "") {
+      const me = this;
+      enviar("http://cajadeherramientas.mep.go.cr/webservices/enviar_reporte.php", data, 
+          function () {
+            me.setState({ estadoForm:"enviado"  });
+          }, 
+          function () { 
+            me.setState({ estadoForm:"errorEnvio" });
+          }
+          );        
+    
+    } else {
+      this.setState({ estadoForm: "error" });      
+    }
+
   }
 
   selectTypeContent() {
@@ -588,13 +611,13 @@ class Modal extends Component {
                       </div>
                       <div className="row">
                         <div className="col-12">
-                        <ul className="list-group">
-                          {
-                            contactos.map((item,i)=>(
-                            <li key={"contacto"+i} className="list-group-item">{item.nombre}</li>
-                            ))
-                          }
-                        </ul>
+                          <ul className="list-group">
+                            {
+                              contactos.map((item, i) => (
+                                <li key={"contacto" + i} className="list-group-item">{item.nombre}</li>
+                              ))
+                            }
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -603,58 +626,95 @@ class Modal extends Component {
                 {
                   this.state.tipoIncidencia === "técnica" &&
                   (
-                  <React.Fragment>
+                    <React.Fragment>
                       <div className="row">
-                      <div className="col-12">
-                        <h4>formulario incidencia técnica</h4>
+                        <div className="col-12">
+                          <h4>formulario incidencia técnica</h4>
+                        </div>
                       </div>
-                    </div>
 
-                    <div className="row">
-                      <div className="col-12">
+                      <div className="row">
+                        <div className="col-12">
 
-                        <div className="input-group mb-3">
-                          <div className="input-group-prepend">
-                            <span className="input-group-text" id="basic-addon1">Nombre:</span>
+                          <div className="input-group mb-3">
+                            <div className="input-group-prepend">
+                              <span className="input-group-text" id="basic-addon-nombre">*Nombre:</span>
+                            </div>
+                            <input type="text"
+                              className="form-control"
+                              placeholder="Dgite su nombre"
+                              aria-label="Username"
+                              aria-describedby="basic-addon-nombre"
+                              id="nombre"
+                              required={true}
+                              maxLength="32"
+                            />
                           </div>
-                          <input type="text"
-                            className="form-control"
-                            placeholder="Dgite su nombre"
-                            aria-label="Username"
-                            aria-describedby="basic-addon1"
-                            id="nombre"
-                          />
-                        </div>
 
 
-                        <div className="input-group mb-3">
-                          <div className="input-group-prepend">
-                            <span className="input-group-text" id="basic-addon1">Correo:</span>
+                          <div className="input-group mb-3">
+                            <div className="input-group-prepend">
+                              <span className="input-group-text" id="basic-addon-correo">*Correo:</span>
+                            </div>
+                            <input type="email"
+                              className="form-control"
+                              placeholder="Dgite su correo electrónico para birndarle la respuesta."
+                              aria-label="email"
+                              aria-describedby="basic-addon-correo"
+                              id="correo"
+                            />
                           </div>
-                          <input type="email"
-                            className="form-control"
-                            placeholder="Dgite su correo electrónico para birndarle la respuesta."
-                            aria-label="Username"
-                            aria-describedby="basic-addon1"
-                            id="correo"
-                          />
-                        </div>
 
                           <div className="input-group">
                             <div className="input-group-prepend">
-                              <span className="input-group-text">Detalle:</span>
+                              <span className="input-group-text">*Detalle:</span>
                             </div>
-                            <textarea className="form-control" id="detalle" aria-label="With textarea" />
+                            <textarea className="form-control"
+                              id="detalle"
+                              aria-label="With textarea"
+                              maxLength="512"
+                            />
                           </div>
-                          <br/>
-                          <button onClick={this.handleEnviarIncidencia} className="btn btn-outline-info"> Enviar </button>
-
-
-
+                          <div className="row">
+                            <div className="col-12">
+                              {
+                                this.state.estadoForm === "error" &&                                 
+                                  <span className="text-danger" >
+                                    Debe llenear todos los campos
+                                  </span>                                
+                               }
+                            </div>
+                          </div>
+                          <br />
+                               {
+                                 this.state.estadoForm === "iniciando" ?
+                                 (
+                                  <span className="text-primary">Enviando datos, por favor espere...</span>
+                                 ) :
+                                 (
+                                          this.state.estadoForm === "enviado" ? 
+                                          (
+                                            <span className="text-success">
+                                              Gracias por enviar su consulta. En cuanto podamos le estaremos respondiendo.
+                                              De clic en la X para cerrar esta pantalla.
+                                              </span>
+                                          ) :
+                                          (
+                                            <input 
+                                          id="btnEnviar"
+                                          className="btn btn-outline-info" 
+                                          type="button" 
+                                          onClick={this.handleEnviarIncidencia}
+                                          value="Enviar"
+                                          />
+                                          )
+                                 )
+                               }
+                          
+                        </div>
                       </div>
-                    </div>
 
-                  </React.Fragment>
+                    </React.Fragment>
                   )
                 }
               </div>
