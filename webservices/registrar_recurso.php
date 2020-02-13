@@ -8,16 +8,18 @@ $method = $_SERVER['REQUEST_METHOD'];
 $JSONData = file_get_contents("php://input");
 $dataObject = json_decode($JSONData);  
 require 'conectar.php';
-$apoyo=0;
+
 $id_nivel = $dataObject-> id_nivel;
-$materia =  utf8_decode($dataObject-> materia);  
+if (isset ($dataObject-> materia)) {
+  $materia =  utf8_decode($dataObject-> materia); 
+} else {
+  $materia =  "N/A"; 
+}
 $anno = utf8_decode($dataObject-> anno);
 $nombre = utf8_decode( $dataObject-> nombre) ;
 $descripcion = utf8_decode($dataObject-> descripcion); 
 $url = utf8_decode($dataObject-> url);
-if (($dataObject-> apoyo) == true) {
-  $apoyo=1;
-} 
+$apoyo = $dataObject-> apoyo;
 $usuario =  utf8_decode($dataObject-> usuario);
 
   $conn = conectarDB();
