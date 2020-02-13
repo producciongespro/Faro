@@ -47,6 +47,7 @@ const PortadaMovil = (props) => {
         <p className="creative">Caja de Herramientas by Costa Rica.  Ministerio de Educación Pública. is licensed under a Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License. <br/>
         Creado a partir de la obra en https://www.mep.go.cr/educatico/caja. <br/>  Puede hallar permisos más allá de los concedidos con esta licencia en www.cajadeherramientas.mep.go.cr
         </p>
+        <p>ISBN: 978-9977-60-384-1</p>
         </div>
         </div>
         </React.Fragment>
