@@ -678,519 +678,56 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/espa/und/prog_viej/10_undecimo_noviembre_espanol_programa_2009.docx"
     },
-  
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
 
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
         "anno" : "Séptimo",    
         "modulo" : "Español",  
-        "mes": "Febrero",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español",  
-        "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español", 
-        "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español",
-        "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español",
-        "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español",
-        "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español",
-        "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español",
-        "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español",
-        "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Séptimo",    
-        "modulo" : "Español",
-        "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-
-
-
-
-
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
-        "anno" : "Octavo",    
-        "modulo" : "Español",  
-        "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/espa/1.septimo_espanol_coned.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
         "anno" : "Octavo",    
         "modulo" : "Español",  
-        "mes": "Marzo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Octavo",    
-        "modulo" : "Español", 
-        "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Octavo",    
-        "modulo" : "Español",
-        "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Octavo",    
-        "modulo" : "Español",
-        "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Octavo",    
-        "modulo" : "Español",
-        "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Octavo",    
-        "modulo" : "Español",
-        "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Octavo",    
-        "modulo" : "Español",
-        "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Octavo",    
-        "modulo" : "Español",
-        "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Octavo",    
-        "modulo" : "Español",
-        "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-
-
-
-
-
-
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
-        "anno" : "Noveno",    
-        "modulo" : "Español",  
-        "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Noveno",    
-        "modulo" : "Español",  
-        "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
+         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/espa/2.octavo_espanol_coned.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
         "anno" : "Noveno",    
         "modulo" : "Español", 
-        "mes": "Abril",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Noveno",    
-        "modulo" : "Español",
-        "mes": "Mayo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Noveno",    
-        "modulo" : "Español",
-        "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Noveno",    
-        "modulo" : "Español",
-        "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Noveno",    
-        "modulo" : "Español",
-        "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Noveno",    
-        "modulo" : "Español",
-        "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Noveno",    
-        "modulo" : "Español",
-        "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Noveno",    
-        "modulo" : "Español",
-        "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-
-
-
-
-
-
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
-        "anno" : "Décimo",    
-        "modulo" : "Español",  
-        "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Décimo",    
-        "modulo" : "Español",  
-        "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Décimo",    
-        "modulo" : "Español", 
-        "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
+         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/espa/3.noveno_espanol_coned.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
         "anno" : "Décimo",    
         "modulo" : "Español",
-        "mes": "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Décimo",    
-        "modulo" : "Español",
-        "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Décimo",    
-        "modulo" : "Español",
-        "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Décimo",    
-        "modulo" : "Español",
-        "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Décimo",    
-        "modulo" : "Español",
-        "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Décimo",    
-        "modulo" : "Español",
-        "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Décimo",    
-        "modulo" : "Español",
-        "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-
-
-
-
-
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
-        "anno" : "Undécimo",    
-        "modulo" : "Español",  
-        "mes": "Febrero",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Undécimo",    
-        "modulo" : "Español",  
-        "mes": "Marzo",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Undécimo",    
-        "modulo" : "Español", 
-        "mes": "Abril",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
+         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/espa/4.decimo_espanol_coned.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
         "anno" : "Undécimo",    
         "modulo" : "Español",
-        "mes": "Mayo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Undécimo",    
-        "modulo" : "Español",
-        "mes": "Junio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Undécimo",    
-        "modulo" : "Español",
-        "mes": "Julio",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Undécimo",    
-        "modulo" : "Español",
-        "mes": "Agosto",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Undécimo",    
-        "modulo" : "Español",
-        "mes": "Septiembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Undécimo",    
-        "modulo" : "Español",
-        "mes": "Octubre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
-    },
-    {
-        "nivel": "Jóvenes y Adultos",
-        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
-        "anno" : "Undécimo",    
-        "modulo" : "Español",
-        "mes": "Noviembre",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-         "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/espa/5.undecimo_espanol_coned.7z"        
     }
+
+ 
 ]
 
