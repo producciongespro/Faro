@@ -1561,10 +1561,10 @@ class BuscadorPlaneamiento extends Component {
                                             )
                                         //******************************/                                
                                     }
+
                                     {
-                                        //*** Renderizado de etiquetas Orientaciones para IPEC I, II, III*/
-                                        (this.state.modalidad === "IPEC CINDEA Nivel I"
-                                            || this.state.modalidad === "IPEC CINDEA Nivel II"
+                                        //*** Renderizado de etiquetas Orientaciones para IPEC  II, III*/
+                                        (this.state.modalidad === "IPEC CINDEA Nivel II"
                                             || this.state.modalidad === "IPEC CINDEA Nivel III") &&
                                         (
                                             //************comprobación de orientaciones nulo:
@@ -1580,11 +1580,24 @@ class BuscadorPlaneamiento extends Component {
                                                     </span>
                                                 )
                                         )
-                                        //******************************/      
-
-
-
+                                        //******************************/ 
                                     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                     {
                                         //Renderizado de etiquetas para español (CONED y CAN)
@@ -1837,7 +1850,7 @@ class BuscadorPlaneamiento extends Component {
                                             ) :
                                             (
                                                 <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-pdf"></i> Lineamiento
+                                                    <i className="fas fa-file-pdf"></i> Lineamiento y Específicaciones
                                             </a>
                                             )
                                         //********************** */
@@ -1852,7 +1865,7 @@ class BuscadorPlaneamiento extends Component {
                                             ) :
                                             (
                                                 <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
-                                                    <i className="fas fa-file-word"></i> Plantilla
+                                                    <i className="fas fa-file-word"></i> Plantilla 
                                             </a>
                                             )
                                         //******************************/                                
