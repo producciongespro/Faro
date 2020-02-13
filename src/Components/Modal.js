@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+//import alertify from 'alertifyjs';
+//import 'alertifyjs/build/css/alertify.min.css';
+//import 'alertifyjs/build/css/themes/default.min.css';
 import assets from '../data/config/config.json';
 
 import plantillasGenerales from '../data/documentos/lineamientos_planeamiento_generales.json';
 import plantillasPreescolar from '../data/documentos/lineamientos_planeamiento_prescolar.json';
 import plantillasPrimaria from '../data/documentos/lineamientos_planeamiento_primaria.json';
 import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_secundaria.json';
+
+
+
+import contactos from '../data/contactos.json';
 import config from '../data/config/config.json';
+import enviar from '../modulos/enviar';
+
 const serv = config.servidor;
+
+console.log("contacots", contactos);
+
 
 
 const video = assets.video;
@@ -20,10 +32,12 @@ const imgHome = assets.img.home;
 class Modal extends Component {
   constructor() {
     super();
-    this.imgPdf="";
+    this.imgPdf = "";
     this.state = {
       htmlContent: "",
       // ancho_modal : modalScreen
+      tipoIncidencia: null,           
+      estadoForm:"espera"      
     };
     this.selectTypeContent = this.selectTypeContent.bind(this);
     setTimeout(this.selectTypeContent, 10);
@@ -42,9 +56,40 @@ class Modal extends Component {
 
   }
 
-  selectTypeContent() {
+  handleTipoIncidencia = (e) => {
+    this.setState({ tipoIncidencia: e.target.title });
+  }
 
-console.log("selectTypeContent en ejecución");
+  handleEnviarIncidencia = (e) => {
+    this.setState({ estadoForm: "iniciando" }); 
+    const data = {
+      "nombre": document.getElementById("nombre").value,
+      "correo": document.getElementById("correo").value,
+      "detalle": document.getElementById("detalle").value
+    }
+    console.log("data", data);
+
+    if (data.nombre !== "" && data.correo !== "" && data.detalle !== "") {
+      const me = this;
+      enviar("http://cajadeherramientas.mep.go.cr/webservices/enviar_reporte.php", data, 
+          function () {
+            me.setState({ estadoForm:"enviado"  });
+          }, 
+          function () { 
+            me.setState({ estadoForm:"errorEnvio" });
+          }
+          );        
+    
+    } else {
+      this.setState({ estadoForm: "error" });      
+    }
+
+  }
+
+  selectTypeContent() {
+    var tipoPlataforma = null;
+
+    //console.log("selectTypeContent en ejecución");
 
     var tmpContent;
     switch (this.props.typeContent) {
@@ -57,25 +102,25 @@ console.log("selectTypeContent en ejecución");
         )
 
         break;
-        case "videoPlan":
-          //console.log("Video");       
-          this.modalAncho = this.modalAncho + " modal-lg";
-  
-          tmpContent = (
-            <iframe className="borde-video" title="video Planeamiento" width="100%" height="500" src={video.planeamiento} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-          )
-  
-          break;
+      case "videoPlan":
+        //console.log("Video");       
+        this.modalAncho = this.modalAncho + " modal-lg";
 
-          case "usoCaja":
-            //console.log("Video");       
-            this.modalAncho = this.modalAncho + " modal-lg";
-    
-            tmpContent = (
-              <iframe className="borde-video" title="video Uso de la Caja de Herramientas" width="100%" height="500" src={video.usoCajaHerramientas} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            )
-    
-            break;
+        tmpContent = (
+          <iframe className="borde-video" title="video Planeamiento" width="100%" height="500" src={video.planeamiento} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        )
+
+        break;
+
+      case "usoCaja":
+        //console.log("Video");       
+        this.modalAncho = this.modalAncho + " modal-lg";
+
+        tmpContent = (
+          <iframe className="borde-video" title="video Uso de la Caja de Herramientas" width="100%" height="500" src={video.usoCajaHerramientas} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        )
+
+        break;
 
       case "html":
         //console.log("html");        
@@ -140,14 +185,14 @@ console.log("selectTypeContent en ejecución");
       case "evaluacion":
         this.modalAncho = this.modalAncho + " modal-lg";
         this.classModalBody = this.classModalBody + " borde-modal borde-bottom-azul";
-        tmpContent = (        
+        tmpContent = (
           <div className="row">
             <div className="col-sm-12">
               <a target="_blank" rel="noopener noreferrer"
                 href="http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_norma.aspx?param1=NRM&nValor1=1&nValor2=85815&nValor3=111107&strTipM=FN">
                 <i className="fas fa-link"></i> Enlace a la ficha del Decreto Ejecutivo 40862 (REA) (enlace que no varía con el tiempo)
               </a>
-              <br/>
+              <br />
               <a target="_blank" rel="noopener noreferrer"
                 href="http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=85815">
                 <i className="fas fa-link"></i> Enlace al texto vigente del Decreto Ejecutivo 40862 (REA)
@@ -157,30 +202,30 @@ console.log("selectTypeContent en ejecución");
         )
         break;
 
-        case "linksVideosPlan":
-          this.modalAncho = this.modalAncho + " modal-lg";
-          this.classModalBody = this.classModalBody + " borde-modal borde-bottom-azul";
-          tmpContent = (        
-            <div className="row">
-              <div className="col-sm-12">
-                <a target="_blank" rel="noopener noreferrer"
-                  href="https://youtu.be/bbzdlLlr478">
-                  <i className="fas fa-link"></i> Transformación curricular
+      case "linksVideosPlan":
+        this.modalAncho = this.modalAncho + " modal-lg";
+        this.classModalBody = this.classModalBody + " borde-modal borde-bottom-azul";
+        tmpContent = (
+          <div className="row">
+            <div className="col-sm-12">
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://youtu.be/bbzdlLlr478">
+                <i className="fas fa-link"></i> Transformación curricular
                 </a>
-                <br/>
-                <a target="_blank" rel="noopener noreferrer"
-                  href="https://youtu.be/RHfP979UENg">
-                  <i className="fas fa-link"></i> Pensamiento Sistémico
+              <br />
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://youtu.be/RHfP979UENg">
+                <i className="fas fa-link"></i> Pensamiento Sistémico
               </a>
-              <br/>
-                <a target="_blank" rel="noopener noreferrer"
-                  href="https://youtu.be/VvWvyqaeWgY">
-                  <i className="fas fa-link"></i> Resolución de Problemas
+              <br />
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://youtu.be/VvWvyqaeWgY">
+                <i className="fas fa-link"></i> Resolución de Problemas
               </a>
-              </div>
             </div>
-          )
-          break;
+          </div>
+        )
+        break;
 
       case "acercaDe":
         this.modalAncho = this.modalAncho + " modal-lg";
@@ -192,7 +237,7 @@ console.log("selectTypeContent en ejecución");
 
 
           <strong> Ministra de Educación</strong><br />
-          Giselle Cruz Maduro<br /><br /> 
+          Giselle Cruz Maduro<br /><br />
 
 
           <strong> Viceministerio Académico</strong><br />
@@ -225,21 +270,21 @@ console.log("selectTypeContent en ejecución");
           Villalobos Bolaños Heidy, subdirectora <br />
           Campos Quesada Nelson, asesor nacional <br />
           Navarro Mata Tatiana Maria, investigación educativa <br /> <br />
-         
 
-         <strong>Departamento de Educación de la Primera Infancia </strong> <br />
-         Alpizar Elizondo Guisselle, jefatura<br />
-        Chaves León Gloria Rocío, asesoras nacionales <br />
-        Madrigal Rojas  Vera<br />
-        López Castillo Carolina<br />
-        Madrigal López  Elizabeth <br />
-        Díaz Madriz Adriana<br />
-        Gamboa Naranjo Gabriela<br />
-        Montoya García Ofelia<br />
-        Coto Jiménez Johanna<br />
-        Chaves Solís Xinia Patricia <br />
-        Wong Apuy Maritza<br />
-        Guardado García Yamileth<br /><br /> 
+
+          <strong>Departamento de Educación de la Primera Infancia </strong> <br />
+          Alpizar Elizondo Guisselle, jefatura<br />
+          Chaves León Gloria Rocío, asesoras nacionales <br />
+          Madrigal Rojas  Vera<br />
+          López Castillo Carolina<br />
+          Madrigal López  Elizabeth <br />
+          Díaz Madriz Adriana<br />
+          Gamboa Naranjo Gabriela<br />
+          Montoya García Ofelia<br />
+          Coto Jiménez Johanna<br />
+          Chaves Solís Xinia Patricia <br />
+          Wong Apuy Maritza<br />
+          Guardado García Yamileth<br /><br />
 
 
           <strong>Departamento de Educación de Personas Jóvenes y Adultos  </strong> <br />
@@ -366,19 +411,20 @@ console.log("selectTypeContent en ejecución");
       case "opcOrientaciones":
         // this.modalAncho =  this.modalAncho + " modal-lg";
         //this.classModalBody = this.classModalBody + " modal-alto";
-        var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
-        switch (plataformaUsada) {
-          case "escritorio": 
-                this.imgPdf = "ico_pdf.png";
+        tipoPlataforma = sessionStorage.getItem('tipoPlataforma');
+        switch (tipoPlataforma) {
+          case "escritorio":
+            this.imgPdf = "ico_pdf.png";
             break;
-            case "movil": 
-                this.imgPdf = "ico_pdf_peq.png";
+          case "movil":
+            this.imgPdf = "ico_pdf_peq.png";
             break;
-            default:
-              this.imgPdf = "ico_pdf.png";
+          default:
+            this.imgPdf = "ico_pdf.png";
             break;
         }
-          tmpContent = (<React.Fragment>
+
+        tmpContent = (<React.Fragment>
           <div className="container">
 
             <div className="row ">
@@ -441,49 +487,29 @@ console.log("selectTypeContent en ejecución");
 
 
 
-        case "opcIncidencias":
-          // this.modalAncho =  this.modalAncho + " modal-lg";
-          //this.classModalBody = this.classModalBody + " modal-alto";
-          var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
-          switch (plataformaUsada) {
-            case "escritorio": 
-                  this.imgPdf = "cons_pedagogica.png";
-              break;
-              case "movil": 
-                  this.imgPdf = "ico_pdf_peq.png";
-              break;
-              default:
-                this.imgPdf2 = "cons_tecnica.png";
-              break;
-          }
-            tmpContent = (<React.Fragment>
-            <div className="container">
+      case "opcIncidencias":
+        // this.modalAncho =  this.modalAncho + " modal-lg";
+        //this.classModalBody = this.classModalBody + " modal-alto";     
+        tmpContent = (<React.Fragment>
 
-            <div className="col-12 text-center">
-                <h3>Seleccione el tipo de incidencia</h3>
-                </div><br/><br/>
-
-              <div className="row ">
-                               
-                <div className="col-6 text-center">
-                    <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
-                    <img  src={ imgGeneral + "cons_pedagogica.png" }  alt="pdf documento general" />
-                  </a>
-                </div>
-  
-                <div className="col-6 text-center">
-                <a href="mailto:cajadeherramientas@mep.go.cr"> <img src={ imgGeneral + "cons_tecnica.png" } alt="correo de incidencias: cajadeherramientas@mep.go.cr" /></a> 
-                </div>
-             
-  
-              </div>
-  
-       
-  
+          <div className="row ">
+            <div className="col-6 text-center">
+              <img src={imgGeneral + "cons_pedagogica.png"} onClick={this.handleTipoIncidencia} alt="consulta pedagógica" title="pedagógica" role="button" />
             </div>
-          </React.Fragment>
-          )
-          break;
+
+            <div className="col-6 text-center">
+              <img src={imgGeneral + "cons_tecnica.png"} onClick={this.handleTipoIncidencia} alt="Formulario incidencias técnicas" title="técnica" role="button" />
+            </div>
+
+
+          </div>
+
+
+
+
+        </React.Fragment>
+        )
+        break;
 
 
 
@@ -562,17 +588,135 @@ console.log("selectTypeContent en ejecución");
             {/* <div className="col-12 text-right"> */}
             <div className="modal-content">
               <div className="modal-header">
+                {
+                  this.props.typeContent === "opcIncidencias" &&
+                  <h5>Seleccione una incidencia</h5>
+                }
+
+
                 <button onClick={this.props.closeModal} type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
 
               <div className={this.classModalBody} >
-                {
-                  console.log("classModalBody:", this.classModalBody)
-
-                }
                 {this.state.htmlContent}
+                <br />
+                {
+                  this.state.tipoIncidencia === "pedagógica" &&
+                  (
+                    <div className="row">
+                      <div className="col-12">
+                        <h4>Lista de contactos</h4>
+                      </div>
+                      <div className="row">
+                        <div className="col-12">
+                          <ul className="list-group">
+                            {
+                              contactos.map((item, i) => (
+                                <li key={"contacto" + i} className="list-group-item">{item.nombre}</li>
+                              ))
+                            }
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                }
+                {
+                  this.state.tipoIncidencia === "técnica" &&
+                  (
+                    <React.Fragment>
+                      <div className="row">
+                        <div className="col-12">
+                          <h4>formulario incidencia técnica</h4>
+                        </div>
+                      </div>
+
+                      <div className="row">
+                        <div className="col-12">
+
+                          <div className="input-group mb-3">
+                            <div className="input-group-prepend">
+                              <span className="input-group-text" id="basic-addon-nombre">*Nombre:</span>
+                            </div>
+                            <input type="text"
+                              className="form-control"
+                              placeholder="Dgite su nombre"
+                              aria-label="Username"
+                              aria-describedby="basic-addon-nombre"
+                              id="nombre"
+                              required={true}
+                              maxLength="32"
+                            />
+                          </div>
+
+
+                          <div className="input-group mb-3">
+                            <div className="input-group-prepend">
+                              <span className="input-group-text" id="basic-addon-correo">*Correo:</span>
+                            </div>
+                            <input type="email"
+                              className="form-control"
+                              placeholder="Dgite su correo electrónico para birndarle la respuesta."
+                              aria-label="email"
+                              aria-describedby="basic-addon-correo"
+                              id="correo"
+                            />
+                          </div>
+
+                          <div className="input-group">
+                            <div className="input-group-prepend">
+                              <span className="input-group-text">*Detalle:</span>
+                            </div>
+                            <textarea className="form-control"
+                              id="detalle"
+                              aria-label="With textarea"
+                              maxLength="512"
+                            />
+                          </div>
+                          <div className="row">
+                            <div className="col-12">
+                              {
+                                this.state.estadoForm === "error" &&                                 
+                                  <span className="text-danger" >
+                                    Debe llenear todos los campos
+                                  </span>                                
+                               }
+                            </div>
+                          </div>
+                          <br />
+                               {
+                                 this.state.estadoForm === "iniciando" ?
+                                 (
+                                  <span className="text-primary">Enviando datos, por favor espere...</span>
+                                 ) :
+                                 (
+                                          this.state.estadoForm === "enviado" ? 
+                                          (
+                                            <span className="text-success">
+                                              Gracias por enviar su consulta. En cuanto podamos le estaremos respondiendo.
+                                              De clic en la X para cerrar esta pantalla.
+                                              </span>
+                                          ) :
+                                          (
+                                            <input 
+                                          id="btnEnviar"
+                                          className="btn btn-outline-info" 
+                                          type="button" 
+                                          onClick={this.handleEnviarIncidencia}
+                                          value="Enviar"
+                                          />
+                                          )
+                                 )
+                               }
+                          
+                        </div>
+                      </div>
+
+                    </React.Fragment>
+                  )
+                }
               </div>
 
             </div>
