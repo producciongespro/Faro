@@ -10,21 +10,14 @@ $dataObject = json_decode($JSONData);
 require 'conectar.php';
 $conexion = conectarDB();
 $id = $dataObject-> id;
-$id_nivel = $dataObject-> id_nivel;
-$materia =  utf8_decode($dataObject-> materia);  
-$anno = utf8_decode($dataObject-> anno);
-$nombre = utf8_decode( $dataObject-> nombre) ;
-$descripcion = utf8_decode($dataObject-> descripcion); 
-$url = utf8_decode($dataObject-> url);        
-$apoyos = $dataObject-> apoyo;
 $usuario =  utf8_decode($dataObject-> id_usuario);
-   $actualizacion = "UPDATE `recursos` SET `materia`='$materia',`anno`='$anno',`nombre`='$nombre',`id_nivel`='$id_nivel',`descripcion`='$descripcion', `url`='$url',`apoyos`='$apoyos',`id_usuario`='$usuario' WHERE `id`='$id'";
+   $actualizacion = "UPDATE `recursos` SET `borrado`='1', `id_usuario`='$usuario' WHERE `id`='$id'";
 
    $resultadoActualizacion = mysqli_query($conexion, $actualizacion); 
 
    if($resultadoActualizacion)
    {
-    echo json_encode(array('error'=>'false','msj'=>'Datos actualizados correctamente'));
+    echo json_encode(array('error'=>'false','msj'=>'Datos borrados de forma exitosa'));
    }
    else
    {
