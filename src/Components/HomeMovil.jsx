@@ -66,7 +66,7 @@ const HomeMovil = (props) => {
             <div className=" text-center">
                     <img className=" img-fluid hvr-pop botonesNavegarMovil hvr-pop " id="uso2" src={img + "btn_usocaja.png"} onClick = {props.showModal }  data-typecontent ="usoCaja" data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/>
                         <img className="btn img-fluid hvr-pop botonesNavegarMovil hvr-pop " id="acercadeMovil" src={ img + "creditosMovil.png" } onClick = {props.showModal }  data-typecontent ="acercaDe" data-content= {textos.IndicacionesPortada}  alt="Acerca de" /> 
-                        <a href="mailto:cajadeherramientas@mep.go.cr">    <img className="btn img-fluid hvr-pop" id="incidenciasMovil" src={ img + "incidencias.png" }   alt="correo de incidencias: cajadeherramientas@mep.go.cr" /></a>
+                        <img className="btn img-fluid hvr-pop botonesNavegarMovil"  id="btnIncidencias"   data-typecontent ="opcIncidencias"  onClick={props.showModal}  data-infosource={2}  alt="Incidencias" src= {img + "incidencias.png"} />
             </div>
         </div>
     );

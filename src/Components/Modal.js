@@ -93,6 +93,7 @@ class Modal extends Component {
 
     var tmpContent;
     switch (this.props.typeContent) {
+
       case "video":
         //console.log("Video");       
         this.modalAncho = this.modalAncho + " modal-lg";
@@ -488,10 +489,12 @@ class Modal extends Component {
 
 
       case "opcIncidencias":
-        // this.modalAncho =  this.modalAncho + " modal-lg";
-        //this.classModalBody = this.classModalBody + " modal-alto";     
+        this.modalAncho = this.modalAncho + " modal-lg";
+        this.classModalBody = this.classModalBody + " borde-modal borde-bottom-naranja";   
         tmpContent = (<React.Fragment>
-
+           <div>
+            <img className="img-fluid  modal-img-titulo" src={imgHome + "btn_incidentes.png"} alt="fondo indicaciones" />
+           </div>
           <div className="row ">
             <div className="col-6 text-center">
               <img src={imgGeneral + "cons_pedagogica.png"} onClick={this.handleTipoIncidencia} alt="consulta pedagógica" title="pedagógica" role="button" />
@@ -588,12 +591,7 @@ class Modal extends Component {
             {/* <div className="col-12 text-right"> */}
             <div className="modal-content">
               <div className="modal-header">
-                {
-                  this.props.typeContent === "opcIncidencias" &&
-                  <h5>Seleccione una incidencia</h5>
-                }
-
-
+ 
                 <button onClick={this.props.closeModal} type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
