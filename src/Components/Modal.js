@@ -497,11 +497,11 @@ class Modal extends Component {
            </div>
           <div className="row ">
             <div className="col-6 text-center">
-              <img src={imgGeneral + "cons_pedagogica.png"} onClick={this.handleTipoIncidencia} alt="consulta pedagógica" title="pedagógica" role="button" />
+              <img className="botones-portada" src={imgGeneral + "cons_pedagogica.png"} onClick={this.handleTipoIncidencia} alt="consulta pedagógica" title="pedagógica" role="button" />
             </div>
 
             <div className="col-6 text-center">
-              <img src={imgGeneral + "cons_tecnica.png"} onClick={this.handleTipoIncidencia} alt="Formulario incidencias técnicas" title="técnica" role="button" />
+              <img className="botones-portada" src={imgGeneral + "cons_tecnica.png"} onClick={this.handleTipoIncidencia} alt="Formulario incidencias técnicas" title="técnica" role="button" />
             </div>
 
 
