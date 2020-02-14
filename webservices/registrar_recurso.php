@@ -20,7 +20,7 @@ $nombre = utf8_decode( $dataObject-> nombre) ;
 $descripcion = utf8_decode($dataObject-> descripcion); 
 $url = utf8_decode($dataObject-> url);
 $apoyo = $dataObject-> apoyo;
-$usuario =  utf8_decode($dataObject-> usuario);
+$usuario =  utf8_decode($dataObject-> id_usuario);
 
   $conn = conectarDB();
     
