@@ -261,6 +261,7 @@ class Modal extends Component {
 
 
           <strong>Instituto de Desarrollo Profesional</strong> <br />
+          Karla Thomas Powell, directora<br />
           <strong>Dpto de Gestión de Recursos</strong><br />
           Ileana Ruiz Rodríguez, jefatura<br />
           Sigifredo Rojas Vargas, asesor nacional<br /><br />
