@@ -243,13 +243,13 @@ a {
 
 .acercade{
   position: absolute;
-  margin-top: 26%;
+  margin-top: 21%;
   margin-left: 4%;
 }
 
 .incidencias{
   position: absolute;
-  margin-top: 24%;
+  margin-top: 20%;
   margin-left: 1%;
 }
 
@@ -1102,6 +1102,10 @@ padding-top:5%;
   width: 50%;
  }
 
+ #encuesta
+ {
+  margin-left: 15px;
+ }
 
  .derecha{
   float: right;
