@@ -606,17 +606,31 @@ class Modal extends Component {
                   (
                     <div className="row">
                       <div className="col-12">
-                        <h4>Lista de contactos</h4>
+                        <h4>Seleccione el nivel y la materia</h4>
                       </div>
                       <div className="row">
                         <div className="col-12">
-                          <ul className="list-group">
+                          {/* <ul className="list-group">
                             {
                               contactos.map((item, i) => (
                                 <li key={"contacto" + i} className="list-group-item">{item.nombre}</li>
                               ))
                             }
-                          </ul>
+                          </ul> */}
+                          <label for="nivel">Nivel:</label>
+                            <select id="nivel">
+                              <option value="Primaria">Primaria</option>
+                              <option value="Secundaria">Secundaria</option>
+                            </select> 
+                          <label for="materia">Materia:</label>
+                            <select id="materia">
+                              <option value="Matemática">Matemática</option>
+                              <option value="Español">Español</option>
+                              <option value="Ciencias">Ciencias</option>
+                              <option value="Sociales">Estudios Sociales</option>
+                            </select>  
+
+                            <button id="btn_consulta" type="button">Hacer consulta</button>
                         </div>
                       </div>
                     </div>
