@@ -282,6 +282,10 @@ class App extends Component {
   changePage = (e) => {
     e.preventDefault();
     const targetPage = e.target.dataset.tar;
+    const origen = e.target.dataset.origen;   
+    
+    console.log();
+    
     var tmpComponent;
     //console.log("Target", targetPage );
 
@@ -318,7 +322,7 @@ class App extends Component {
         // tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
         break;
       case "Construccion":
-        tmpComponent = <Construccion handlerCerrarEnconstruccion={this.handlerCerrarEnconstruccion} />
+        tmpComponent = <Construccion handlerCerrarEnconstruccion={this.handlerCerrarEnconstruccion}  origen={origen}  />
         break;
       case "DocumentosEvaluacion":
             tmpComponent = <DocumentosEvaluacion  handlerCerrarDocumentosEvaluacion={this.handlerCerrarDocumentosEvaluacion}  />
@@ -345,8 +349,16 @@ class App extends Component {
 
 
 
-  handlerCerrarEnconstruccion = () => {
-    this.setState({ currentPage: this.cargarRecursos() });
+  handlerCerrarEnconstruccion = (e) => {
+    console.log("origen recibido", e.target.dataset.origen );
+    
+    if (e.target.dataset.origen === "DesarrolloProf") {
+      this.setState({ currentPage: this.cargarDesarrollo() });
+    } else {
+      this.setState({ currentPage: this.cargarRecursos() });
+    }
+    
+    
   }
 
   handlerCerrarDocumentosEvaluacion = () => {

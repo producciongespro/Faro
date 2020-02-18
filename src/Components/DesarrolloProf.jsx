@@ -68,7 +68,7 @@ const DesarrolloProf = (props) => {
         <div className="row botones-inferiores">
           <div  className="col-4 hover11 ">
             <figure>
-              <img className="botones-portada derecha img-fluid" id="videoteca" src={img+"img_videoteca.png"}  data-tar="Construccion"  onClick={props.changePage}  data-infosource={0}  onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Videoteca" />
+              <img className="botones-portada derecha img-fluid" id="videoteca" src={img+"img_videoteca.png"}  data-tar="Construccion"  data-origen="DesarrolloProf"  onClick={props.changePage}  data-infosource={0}  onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Videoteca" />
             </figure>
             </div>
 
