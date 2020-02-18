@@ -628,10 +628,9 @@ class Modal extends Component {
                               <option value="Español">Español</option>
                               <option value="Ciencias">Ciencias</option>
                               <option value="Sociales">Estudios Sociales</option>
-                            </select>  
-
-                            <button id="btn_consulta" type="button">Hacer consulta</button>
-                        </div>
+                            </select> 
+                               <a href="mailto:cajadeherramientas@mep.go.cr?subject=Reporte de Matemáticas - Nivel: primaria">Enviar consulta</a> 
+                            </div>
                       </div>
                     </div>
                   )
