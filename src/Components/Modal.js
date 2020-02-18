@@ -606,7 +606,7 @@ class Modal extends Component {
                   (
                     <div className="row">
                       <div className="col-12">
-                        <h4>Seleccione el nivel y la materia</h4>
+                        <h4>Seleccione el nivel y la asignatura</h4>
                       </div>
                       <div className="row">
                         <div className="col-12">
@@ -619,15 +619,38 @@ class Modal extends Component {
                           </ul> */}
                           <label for="nivel">Nivel:</label>
                             <select id="nivel">
-                              <option value="Primaria">Primaria</option>
+                              <option value="Primaria">Preescolar</option>
+                              <option value="Secundaria">Primaria</option>
                               <option value="Secundaria">Secundaria</option>
-                            </select> 
-                          <label for="materia">Materia:</label>
+                              <option value="Secundaria">Unidocente</option>
+                              <option value="Secundaria">Jóvenes y Adultos</option>
+                              <option value="Secundaria">Pedagogía Hospitalaria</option>
+                              <option value="Secundaria">Lenguas y Culturas Indígenas Primarias</option>
+                              </select> 
+                          <label for="materia">Asignatura:</label>
                             <select id="materia">
-                              <option value="Matemática">Matemática</option>
-                              <option value="Español">Español</option>
-                              <option value="Ciencias">Ciencias</option>
-                              <option value="Sociales">Estudios Sociales</option>
+                              <option value="Matemática">Artes Industriales</option>
+                              <option value="Español">Artes Plásticas</option>
+                              <option value="Ciencias">Biología</option>
+                              <option value="Sociales">Ciencias</option>
+                              <option value="Sociales">Educación Cívica</option>
+                              <option value="Sociales">Educación Física</option>
+                              <option value="Sociales">Educación Musical</option>
+                              <option value="Sociales">Educación para el Hogar</option>
+                              <option value="Sociales">Educación para la Afectividad y la Sexualidad Integral</option>
+                              <option value="Sociales">Educación Religiosa</option>
+                              <option value="Sociales">Español</option>
+                              <option value="Sociales">Filosofía</option>
+                              <option value="Sociales">Física</option>
+                              <option value="Sociales">Francés</option>
+                              <option value="Sociales">Inglés</option>
+                              <option value="Sociales">Informática Educativa</option>
+                              <option value="Sociales">Italiano</option>
+                              <option value="Sociales">Matemática</option>
+                              <option value="Sociales">Orientación</option>
+                              <option value="Sociales">Psicología</option>
+                              <option value="Sociales">Química</option>
+
                             </select>  
 
                             <button id="btn_consulta" type="button">Hacer consulta</button>
@@ -642,7 +665,7 @@ class Modal extends Component {
                     <React.Fragment>
                       <div className="row">
                         <div className="col-12">
-                          <h4>formulario incidencia técnica</h4>
+                          <h4>Formulario de incidencias técnicas</h4>
                         </div>
                       </div>
 
@@ -709,7 +732,7 @@ class Modal extends Component {
                                           (
                                             <span className="text-success">
                                               Gracias por enviar su consulta. En cuanto podamos le estaremos respondiendo.
-                                              De clic en la X para cerrar esta pantalla.
+                                              Pulse la "X" para cerrar esta pantalla.
                                               </span>
                                           ) :
                                           (
