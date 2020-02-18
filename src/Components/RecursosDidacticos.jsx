@@ -67,7 +67,6 @@ const RecursosDidacticos = (props) => {
                 <figure>
               <img className="btn img-fluid intercultural" id="intercultural" src= {img+"intercultural.png"} data-tar="Construccion"  onClick={props.changePage} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }      alt="Intercultural" />
               </figure>
-
             </div>          
         </div>
 
