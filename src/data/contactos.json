@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Pepito Vargas",
+        "correo": "pepito@correo.de",
+        "asignatura": "Español"
+    },
+    {
+        "nombre": "Juanita Campos",
+        "correo": "juanita@correo.de",
+        "asignatura": "Matemática"
+    },
+    {
+        "nombre": "Jimena Mora",
+        "correo": "jime@correo.de",
+        "asignatura": "Ciencias"
+    }
+]

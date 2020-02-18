@@ -1,9 +1,10 @@
 import React from 'react';
 import textosJson from "../data/textos.json";
+import dsLinks from "../data/links.json";
 import assets from "../data/config/config_m.json";
 const img  = assets.img.homeM;
 const textos = textosJson[0];
-
+var links = dsLinks[0];
 
 //const img = assets.img.home;
 
@@ -65,8 +66,11 @@ const HomeMovil = (props) => {
             </div>  
             <div className=" text-center">
                     <img className=" img-fluid hvr-pop botonesNavegarMovil hvr-pop " id="uso2" src={img + "btn_usocaja.png"} onClick = {props.showModal }  data-typecontent ="usoCaja" data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/>
-                        <img className="btn img-fluid hvr-pop botonesNavegarMovil hvr-pop " id="acercadeMovil" src={ img + "creditosMovil.png" } onClick = {props.showModal }  data-typecontent ="acercaDe" data-content= {textos.IndicacionesPortada}  alt="Acerca de" /> 
-                        <a href="mailto:cajadeherramientas@mep.go.cr">    <img className="btn img-fluid hvr-pop" id="incidenciasMovil" src={ img + "incidencias.png" }   alt="correo de incidencias: cajadeherramientas@mep.go.cr" /></a>
+                    <a href={links.Encuesta} target="_blank" rel="noopener noreferrer"  >
+                        <img className="btn img-fluid hvr-pop botonesNavegarMovil" id="encuesta" src={ img + "btn_encuesta.png" } alt="Encuesta"/>
+                    </a>
+                    <img className="btn img-fluid hvr-pop botonesNavegarMovil hvr-pop " id="acercadeMovil" src={ img + "creditosMovil.png" } onClick = {props.showModal }  data-typecontent ="acercaDe" data-content= {textos.IndicacionesPortada}  alt="Acerca de" /> 
+                    <img className="btn img-fluid hvr-pop botonesNavegarMovil"  id="btnIncidencias"   data-typecontent ="opcIncidencias"  onClick={props.showModal}  data-infosource={2}  alt="Incidencias" src= {img + "incidencias.png"} />
             </div>
         </div>
     );

@@ -1,9 +1,10 @@
 import React  from 'react';
 import textosJson from "../data/textos.json";
+import dsLinks from "../data/links.json";
 import assets from '../data/config/config.json';
 const textos = textosJson[0];
 const img = assets.img.home;
-
+var links = dsLinks[0];
 const Home = (props) => {
   return ( 
     <React.Fragment>
@@ -11,9 +12,20 @@ const Home = (props) => {
       
     <img className="btn img-fluid hvr-pop" id="indicaciones" src={ img + "caja.png" } onClick = {props.showModal }  data-typecontent ="help" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> <br/>
     <img className="btn img-fluid hvr-pop" id="home"  src={ img + "volver_portada.png" } data-tar="Portada"  onClick={props.changePage} alt="Volver a Portada" /><br/>
-    <img className="img-fluid botones-portada hvr-pop" id="uso" src={ img + "btn_usocaja.png" } data-typecontent ="usoCaja" onClick = {props.showModal } data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/> <br/>
-    <a href="mailto:cajadeherramientas@mep.go.cr">    <img className="btn img-fluid hvr-pop incidencias" id="acercade" src={ img + "incidencias.png" }   alt="correo de incidencias: cajadeherramientas@mep.go.cr" /></a> <br/>
+    <img className="img-fluid botones-portada hvr-pop" id="uso" src={ img + "btn_usocaja.png" } data-typecontent ="usoCaja" onClick = {props.showModal } data-content= {textos.VideoUsoCaja}     alt="Uso de la caja de herramientas"/> <br/> <br/>
+    <a href={links.Encuesta} target="_blank" rel="noopener noreferrer"  >
+        <img className="img-fluid botones-portada hvr-pop" id="encuesta" src={ img + "btn_encuesta.png" } alt="Encuesta"/>
+    </a> 
+    <br/>
+
+    
+    
+
+
+   <img className="btn img-fluid hvr-pop incidencias"  id="btnIncidencias"   data-typecontent ="opcIncidencias"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Inicidencias" src= {img + "incidencias.png"} /><br/>
     <hr/>
+
+   
     <img className="btn img-fluid hvr-pop acercade" id="acercade" src={ img + "creditos.png" } onClick = {props.showModal }  data-typecontent ="acercaDe" data-content= {textos.IndicacionesPortada}  alt="Indicaciones" /> <br/>
 
    
