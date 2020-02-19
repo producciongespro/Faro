@@ -1,18 +1,18 @@
 {
     "version" : "1.1.2",
     "nombre" : "Caja de Herramientas",
-    "servidor" : "https://cajadeherramientas.mep.go.cr/",
+    "servidor" : "https://conectandonoscostarica.com/",
     "img" : {
-        "general" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/9_generales/",
-        "portada" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/",
-        "home" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/2_home/web/",
-        "homeM" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/2_home/movil/",
-        "apoyosClimaAula" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/3_apoyos_aula/",
-        "apoyosEvaluacion" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/4_apoyos_eval/",
-        "recursosDidacticos" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/5_recursos_did/",
-        "docsOficiales" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/",
-        "desarrolloProfesional" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/",
-        "apoyosPlan" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/8_apoyo_planea/"
+        "general" : "https://conectandonoscostarica.com/Faro/asset/img/9_generales/",
+        "portada" : "https://conectandonoscostarica.com/Faro/asset/img/1_portada/",
+        "home" : "https://conectandonoscostarica.com/Faro/asset/img/2_home/web/",
+        "homeM" : "https://conectandonoscostarica.com/Faro/asset/img/2_home/movil/",
+        "apoyosClimaAula" : "https://conectandonoscostarica.com/Faro/asset/img/3_apoyos_aula/",
+        "apoyosEvaluacion" : "https://conectandonoscostarica.com/Faro/asset/img/4_apoyos_eval/",
+        "recursosDidacticos" : "https://conectandonoscostarica.com/Faro/asset/img/5_recursos_did/",
+        "docsOficiales" : "https://conectandonoscostarica.com/Faro/asset/img/6__documen_educ/",
+        "desarrolloProfesional" : "https://conectandonoscostarica.com/Faro/asset/img/7_desarrollo_prof/",
+        "apoyosPlan" : "https://conectandonoscostarica.com/Faro/asset/img/8_apoyo_planea/"
     },
     "video" : {
         "ministra" : "https://www.youtube.com/embed/yOjV8yEIrMs",
@@ -22,5 +22,5 @@
         "resolucionProblemas" : "https://www.youtube.com/embed/VvWvyqaeWgY",
         "usoCajaHerramientas" : "https://www.youtube.com/embed/kv88JHpbeeQ"
     },
-    "audio" : "https://cajadeherramientas.mep.go.cr/Faro/asset/audios/"
+    "audio" : "https://conectandonoscostarica.com/Faro/asset/audios/"
 }
