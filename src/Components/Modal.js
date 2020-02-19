@@ -606,11 +606,13 @@ class Modal extends Component {
                   (
                     <div className="row">                     
                       <div className="container">
-                        <h6>Correo para enviar consultas relacionadas con el área pedagógica.</h6> 
+                        <h4>Correo para enviar consultas relacionadas con el área pedagógica.</h4> <br/> 
                           <p>                          
-                          Por ejemplo: problemas de uso de una plantilla.
-                          <br/>
-                          Es importante que en el correo especifique la <strong>asignatura</strong> y el <strong>nivel</strong>, por ejemplo secundaria, primaria, entre otros.
+                          <strong>Por ejemplo:</strong> Consultas del contenido de las plantillas o sus ejemplos. <br/>
+                          <br/> 
+                          Es importante que en el correo indique la <strong>asignatura</strong> y el <strong>nivel</strong>, por ejemplo secundaria, primaria, entre otros. <br/>
+
+                          <p>Su consulta será remitido al área correspondiente</p>
                           </p>
                           <a href="mailto:cajadeherramientas@mep.go.cr">  cajadeherramientas@mep.go.cr </a>
                       </div>
