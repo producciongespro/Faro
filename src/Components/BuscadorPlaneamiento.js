@@ -72,7 +72,7 @@ const serv = assets.servidor;
 //console.log("dataPrimariaEspanol", dataPrimariaEspanol);
 //console.log("dataPedagogiaHospitalaria", dataPedagogiaHospitalaria);
 
-console.log("dataInformatica", dataInformatica);
+//console.log("dataInformatica", dataInformatica);
 
 
 
