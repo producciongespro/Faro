@@ -603,13 +603,6 @@ class Modal extends Component {
                 <br />
                 {
                   this.state.tipoIncidencia === "pedagógica" &&
-
-
-
-
-
-
-
                   (
                     <div className="row">
                       <div className="col-12">
@@ -624,7 +617,6 @@ class Modal extends Component {
                               ))
                             }
                           </ul> */}
-
                           <label for="nivel">Nivel:</label>
                             <select id="nivel">
                               <option value="Primaria">Preescolar</option>
@@ -635,10 +627,7 @@ class Modal extends Component {
                               <option value="Secundaria">Pedagogía Hospitalaria</option>
                               <option value="Secundaria">Lenguas y Culturas Indígenas Primarias</option>
                               </select> 
-                            </div>
-                          
-                            <div className="col-12">
-                            <label for="materia">Asignatura:</label>
+                          <label for="materia">Asignatura:</label>
                             <select id="materia">
                               <option value="Matemática">Artes Industriales</option>
                               <option value="Español">Artes Plásticas</option>
@@ -661,14 +650,11 @@ class Modal extends Component {
                               <option value="Sociales">Orientación</option>
                               <option value="Sociales">Psicología</option>
                               <option value="Sociales">Química</option>
-                            </select>  
-                            </div>
 
-                            <div className="col-12">
-                              <button id="btn_consulta" type="button">Hacer consulta</button>
-                            </div>
-                            
-                        
+                            </select>  
+
+                            <button id="btn_consulta" type="button">Hacer consulta</button>
+                        </div>
                       </div>
                     </div>
                   )
