@@ -6,9 +6,17 @@ const Construccion = (props) => {
     return ( 
         <React.Fragment>
 
+            <span>origen {props.origen}  </span>
+
          <div className="row" >
                     <div className="col-5 text-left">              
-                    <img alt="Recursos didáctico"  data-tar="RecursosDidacticos"  onClick={props.handlerCerrarEnconstruccion}    className="img-fluid hvr-pop btn_volv"  src={imgGeneral + "btn_volver.png"  }  />
+                    <img 
+                        alt="Recursos didáctico"  
+                        data-tar="RecursosDidacticos"  
+                        onClick={props.handlerCerrarEnconstruccion } 
+                        data-origen={ props.origen }   
+                        className="img-fluid hvr-pop btn_volv"  
+                        src={imgGeneral + "btn_volver.png"  }  />
                     </div>
          </div>
             
@@ -21,5 +29,7 @@ const Construccion = (props) => {
         </React.Fragment>
      );
 }
+
+
  
 export default Construccion;
