@@ -12,13 +12,13 @@ import plantillasSecundaria from '../data/documentos/lineamientos_planeamiento_s
 
 
 
-import contactos from '../data/contactos.json';
+//import contactos from '../data/contactos.json';
 import config from '../data/config/config.json';
 import enviar from '../modulos/enviar';
 
 const serv = config.servidor;
 
-console.log("contacots", contactos);
+//console.log("contactos", contactos);
 
 
 
@@ -604,57 +604,15 @@ class Modal extends Component {
                 {
                   this.state.tipoIncidencia === "pedagógica" &&
                   (
-                    <div className="row">
-                      <div className="col-12">
-                        <h4>Seleccione el nivel y la asignatura</h4>
-                      </div>
-                      <div className="row">
-                        <div className="col-12">
-                          {/* <ul className="list-group">
-                            {
-                              contactos.map((item, i) => (
-                                <li key={"contacto" + i} className="list-group-item">{item.nombre}</li>
-                              ))
-                            }
-                          </ul> */}
-                          <label for="nivel">Nivel:</label>
-                            <select id="nivel">
-                              <option value="Primaria">Preescolar</option>
-                              <option value="Secundaria">Primaria</option>
-                              <option value="Secundaria">Secundaria</option>
-                              <option value="Secundaria">Unidocente</option>
-                              <option value="Secundaria">Jóvenes y Adultos</option>
-                              <option value="Secundaria">Pedagogía Hospitalaria</option>
-                              <option value="Secundaria">Lenguas y Culturas Indígenas Primarias</option>
-                              </select> 
-                          <label for="materia">Asignatura:</label>
-                            <select id="materia">
-                              <option value="Matemática">Artes Industriales</option>
-                              <option value="Español">Artes Plásticas</option>
-                              <option value="Ciencias">Biología</option>
-                              <option value="Sociales">Ciencias</option>
-                              <option value="Sociales">Educación Cívica</option>
-                              <option value="Sociales">Educación Física</option>
-                              <option value="Sociales">Educación Musical</option>
-                              <option value="Sociales">Educación para el Hogar</option>
-                              <option value="Sociales">Educación para la Afectividad y la Sexualidad Integral</option>
-                              <option value="Sociales">Educación Religiosa</option>
-                              <option value="Sociales">Español</option>
-                              <option value="Sociales">Filosofía</option>
-                              <option value="Sociales">Física</option>
-                              <option value="Sociales">Francés</option>
-                              <option value="Sociales">Inglés</option>
-                              <option value="Sociales">Informática Educativa</option>
-                              <option value="Sociales">Italiano</option>
-                              <option value="Sociales">Matemática</option>
-                              <option value="Sociales">Orientación</option>
-                              <option value="Sociales">Psicología</option>
-                              <option value="Sociales">Química</option>
-
-                            </select>  
-
-                            <button id="btn_consulta" type="button">Hacer consulta</button>
-                        </div>
+                    <div className="row">                     
+                      <div className="container">
+                        <h6>Correo para enviar consultas relacionadas con el área pedagógica.</h6> 
+                          <p>                          
+                          Por ejemplo: problemas de uso de una plantilla.
+                          <br/>
+                          Es importante que en el correo especifique la <strong>asignatura</strong> y el <strong>nivel</strong>, por ejemplo secundaria, primaria, entre otros.
+                          </p>
+                          <a href="mailto:cajadeherramientas@mep.go.cr">  cajadeherramientas@mep.go.cr </a>
                       </div>
                     </div>
                   )

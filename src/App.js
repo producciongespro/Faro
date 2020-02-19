@@ -637,7 +637,7 @@ class App extends Component {
     this.setState({
       modalActive: false
     }, () => {
-      console.log("modal activo", this.state.modalActive);
+      //console.log("modal activo", this.state.modalActive);
     });
   }
 
