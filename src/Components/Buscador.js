@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import referencias from '../data/config/config.json';
+/*
 import dataOtros from '../data/recursos/generales.json';
 import dataIngles from '../data/recursos/recursos_ingles.json';
 import dataFrances from '../data/recursos/recursos_frances.json';
 import dataItaliano from '../data/recursos/recursos_italiano.json';
 import dataMediacion from '../data/recursos/recursos_mediacion.json';
-// import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
+import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import dataPreescolar from '../data/recursos/recursos_preescolar.json';
-
+*/
 import assets from '../data/config/config.json';
 var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 var bannerPrescolar, bannerPrimaria, bannerSecundaria, bannerFerias;
 const img = assets.img.recursosDidacticos;
 const imgGenerales = assets.img.general;
-var dataArtesPlasticas;
 
 
-var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación"]
+var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemática", "Mediación"]
 var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación", "Química"]
 var anoSecundaria = [
     {
@@ -72,8 +71,6 @@ var annoPrimaria = [
     }
 ];
 
-const dataGeneral=[];
-//console.log("dataIngles", dataIngles);
 
 
 class Buscador extends Component {
@@ -85,7 +82,7 @@ class Buscador extends Component {
         };
         this.anno = "";
         this.poblacion = "";
-        this.apoyos = "";
+        this.apoyos = "0";
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
@@ -123,33 +120,16 @@ class Buscador extends Component {
     }
 
 
-    filtrarDaraPorMateria = (materia) => {
-        const array = JSON.parse(  localStorage.getItem("arrayRecursos") );
-        console.log("array antes del filtro",array);
-        
-        for (let index = 0; index < array.length; index++) {
-            if (array[index].materia === materia ) {
-               dataGeneral.push(array[index]);
-            }
-            
-        }
-        console.log("dataGeneral", dataGeneral);
+    filtrarDataPorMateria = (materia) => {
+       
         
     }
 
 
     handlerobtenerMateria = (e) => {
-        //Limpia la variable plan en caso de que haya sido utilizada anteriormente:
-        this.planEstudios = "";
-
         const tmpMateria = e.target.value;
-        this.filtrarDaraPorMateria(tmpMateria);
-
-        // this.setState({ materia: valor }, () => {
-        //     this.cargarDatasetRecursos(this.state.materia);
-        //     console.log("materia", this.state.materia);
-        // })
-
+        this.setState({ materia : tmpMateria  });
+        this.filtrarDataPorMateria(tmpMateria);        
     }
 
     handlerObtenerAnno = (e) => {
@@ -157,24 +137,25 @@ class Buscador extends Component {
         console.log(this.anno);
     }
 
-
-  
-
     handlerObtenerApoyos = (e) => {
         let chk = e.target.checked;
         console.log("Valor de apoyos", chk);
         if (chk) {
-            this.apoyos = "si"
+            this.apoyos = "1"
         } else {
-            this.apoyos = ""
+            this.apoyos = "0"
         }
         console.log("Apyos", this.apoyos);
     }
 
  
 
-    handleSeleccionarBusqueda = () => {
-        switch (this.props.origen) {
+    handleBuscar = () => {
+        const origen = this.props.origen;
+        console.log("origen", origen);
+        
+
+        switch (origen) {
             case "preescolar":
                 this.buscarRecursosPreescolar();
                 break;
@@ -185,49 +166,41 @@ class Buscador extends Component {
                 break;
 
             default:
+                console.log("parametro Origen fuera de rango");
+                
                 break;
         }
 
     }
 
     buscarRecursosPreescolar = () => {
-        console.log("dataGeneral", dataGeneral);
+        console.log("Buscador preescolar");        
+        var dataPreescolar=[];
+
+        
+        //CArga del storage
+        let tmpArray = JSON.parse(localStorage.getItem("arrayRecursos"));
+
+        //filtra el arreglo con solo datos de preescolar
+        for (let index = 0; index < tmpArray.length; index++) {
+            if (tmpArray[index].nivel === "Preescolar" ) {
+                dataPreescolar.push(tmpArray[index]);
+            }
+            
+        }
+
+        console.log("dataGeneral", dataPreescolar);
+        
         var arrayHtml;
         var arrayTmp = [];
-        for (let index = 0; index < dataGeneral.length; index++) {
+        for (let index = 0; index < dataPreescolar.length; index++) {
             arrayHtml = (
                 <React.Fragment>
-                    <h5>    {dataGeneral[index].nombre} </h5>
-                    <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].descripcion}  </span>
-                    <br />
-                    {
-                        this.state.materia === "" && (
-                            <React.Fragment>
-                                {
-                                    (this.props.origen === "primaria" || this.props.origen === "secundaria") &&
-                                    (
-                                        <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {dataGeneral[index].materia}     </span>
-                                    )
-                                }
-                                {
-                                    (this.props.origen === "intercultural") &&
-                                    (
-                                        <span> <strong>   <i className="fab fa-diaspora"></i>    Unidad:</strong>  {dataGeneral[index].materia}     </span>
-                                    )
-                                }
-                                <br />
-                            </React.Fragment>
-                        )
-                    }
-                    {
-                        this.anno === "" && (
-                            <React.Fragment>
-                                <span> <strong>  <i className="fab fa-diaspora"></i>  Año:</strong>  {dataGeneral[index].anno}   </span>
-                                <br />
-                            </React.Fragment>
-                        )
-                    }
-                    <a href={dataGeneral[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
+                    <h5>    {dataPreescolar[index].nombre} </h5>
+                    <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataPreescolar[index].descripcion}  </span>
+                    <br />                  
+                  
+                    <a href={dataPreescolar[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
                     <hr />
                 </React.Fragment>
             )
@@ -239,10 +212,24 @@ class Buscador extends Component {
 
     buscarRecursosGenerales = () => {
 
-        //console.log(dataGeneral);
-        //console.log("Materia a buscar", this.materia );
-        //console.log("Año a buscar", this.anno );       
-
+      //TODO: Tratamiento para nivel Upercase o lowercase *******************************   
+        let dataGeneral=[];
+        
+       
+        console.log("Materia recibido", this.state.materia);
+        
+        const arrayRecursos = JSON.parse(  localStorage.getItem("arrayRecursos") );
+        console.log("array antes del filtro",arrayRecursos);
+        
+        for (let index = 0; index < arrayRecursos.length; index++) {
+            if (arrayRecursos[index].materia === this.state.materia ) {
+               dataGeneral.push(arrayRecursos[index]);
+            }
+            
+        }
+        console.log("dataGeneral", dataGeneral);
+        console.log("origen:", this.props.origen);
+        
         var arrayHtml;
         var arrayTmp = [];
 
@@ -255,7 +242,7 @@ class Buscador extends Component {
             let resAnno = pattAnno.test(strAnno);
             
 
-            if (this.props.origen === dataGeneral[index].nivel &&  resAnno) {
+            if (this.props.origen === dataGeneral[index].nivel &&  resAnno  &&  dataGeneral[index].apoyos  === this.apoyos  ) {
 
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
@@ -313,7 +300,7 @@ class Buscador extends Component {
     cargarAmbientePreescolar() {
         if (this.props.origen === "preescolar") {
             //Carga el json de preescolar
-            dataGeneral = dataPreescolar;
+            //dataGeneral = dataPreescolar;
         }
     }
 
@@ -549,7 +536,7 @@ class Buscador extends Component {
 
                     <div className="row">
                         <div className="col-sm-12 text-right">
-                            <button onClick={this.handleSeleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
+                            <button onClick={this.handleBuscar} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>
