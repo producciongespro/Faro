@@ -4,6 +4,53 @@
     {
         "id" : "interBoru",
         "label" : "Lengua Boruca"
+    },
+    {
+        "id" : "CulturaBoruca",
+        "label" : "Cultura Boruca"
+    },
+    {
+        "id" : "CulturaBribri",
+        "label" : "Cultura Bribri"
+    },
+
+    {
+        "id" : "CulturaBribriSula",
+        "label" : "Cultura Bribri Sulá"
+    },
+    {
+        "id" : "CulturaTerraba",
+        "label" : "Cultura Térraba"
+    },
+    {
+        "id" : "LenguaBribri",
+        "label" : "Lengua Bribri"
+    },
+
+    {
+        "id" : "LenguaBribriSula",
+        "label" : "Lengua Bribri Sulá"
+    },
+
+    {
+        "id" : "LenguaCabecarGrandeTrraba",
+        "label" : "Lengua Cabécar Grande de Térraba"
+    },
+    {
+        "id" : "LenguaCabecarSula",
+        "label" : "Lengua Cabécar Sulá"
+    },
+    {
+        "id" : "CulturaCabecarGrande de Térraba",
+        "label" : "Cultura Cabécar Grande de Térraba"
+    },
+    {
+        "id" : "Ngabere",
+        "label" : "Ngäbere"
+    },
+    {
+        "id" : "NgabeBugle",
+        "label" : "Ngäbe – Buglé"
     }
 
     

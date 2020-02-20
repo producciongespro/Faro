@@ -1,10 +1,106 @@
 [ 
     {
-        "interBoru" : {
+        "interBoru" : 
+        {
         "nombre" : "Lengua Boruca I y II ciclos",            
         "url" : "https://www.mep.go.cr/sites/default/files/programadeestudio/programas/lengua_boruca_1y2ciclos.pdf"  
+        },
+
+
+
+        
+        "CulturaBoruca" : 
+        {
+        "nombre" : "Cultura Boruca",            
+        "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/cultura_boruca.pdf"  
+        },
+
+
+
+
+        "CulturaBribri" : 
+        {
+        "nombre" : "Cultura Bribri",            
+        "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/cultura_bribri-gdt.pdf"  
+        },
+
+
+
+
+        "CulturaBribriSula" : 
+        {
+        "nombre" : "Cultura Bribri Sulá",            
+        "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/cultura_bribri-sula.pdf"  
+        },
+
+
+
+
+        "CulturaTerraba" : 
+        {
+        "nombre" : "Cultura Térraba",            
+        "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/cultura_terraba.pdf"  
+        },
+
+
+
+        "LenguaBribri" : 
+        {
+        "nombre" : "Lengua Bribri",            
+        "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/lengua_bribri-gdt.pdf"  
+        },
+
+
+
+
+        "LenguaBribriSula" : 
+        {
+        "nombre" : "Lengua Bribri Sulá",            
+        "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/lengua_bribri-sula.pdf"  
+        },
+
+
+    
+        "LenguaCabecarGrandeTrraba" : 
+        {
+        "nombre" : "Lengua Cabécar Grande de Térraba",            
+        "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/lengua_cabecar-gdt.pdf"  
+        },
+
+
+
+        "LenguaCabecarSula" : 
+        {
+        "nombre" : "Lengua Cabécar Sulá",            
+        "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/lengua_cabecar-sula.pdf"  
+        },
+
+
+
+        "CulturaCabecarGrande de Térraba" : 
+        {
+        "nombre" : "Cultura Cabécar Grande de Térraba",            
+        "url" : "http://www.ddc.mep.go.cr/sites/all/files/ddc_mep_go_cr/archivos/cultura_cabecar-gdt.pdf"  
+        },
+
+
+
+        "Ngabere" : 
+        {
+        "nombre" : "Ngäbere",            
+        "url" : "http://mep.go.cr/sites/default/files/programadeestudio/programas/ngabere-IyIIciclos.pdf"  
+        },
+
+
+
+        "NgabeBugle" : 
+        {
+        "nombre" : "Ngäbe – Buglé",            
+        "url" : "http://mep.go.cr/sites/default/files/programadeestudio/programas/ngabe-bugle-IyIIciclos.pdf"  
         }
+    
+              
 
     }
-
 ]
+
