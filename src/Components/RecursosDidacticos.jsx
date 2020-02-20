@@ -37,8 +37,12 @@ const RecursosDidacticos = (props) => {
              
       </div>
                
-      <div  className="col-8">
-      <p className="aviso">Actualmente se esta trabajando en clasificar <br/> los recursos para esta sección de la caja de herramientas <br/> Próximamente se comunicará </p>
+      <div  className="col-8"><br/>
+      
+        <div className="col-8"><p className="aviso text-center">Actualmente se esta trabajando en clasificar <br/> los recursos para esta sección de la caja de herramientas <br/> Próximamente se comunicará </p></div>
+
+      
+      
       <div className="botones_salir col-12 ">
             <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {imgGenerales + "btn_salir.png" }  alt="Salir" />
       </div>
