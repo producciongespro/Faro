@@ -175,6 +175,18 @@
                     {
                         "nombre": "Lineamientos técnicos",
                         "url": "faro_referencias/4_ref_apoyos_eval/componentes/trabajo_cot/lineamientos_trabajo_cotidiano.pdf"
+                    },
+                    {
+                        "nombre": "Registro de información del proceso",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/trabajo_cot/instrumento_registro_informacion_durante_proceso.xlsx"
+                    },
+                    {
+                        "nombre": "Registro de información lenguas extranjeras francés",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/trabajo_cot/registro_informacion_frances.zip"
+                    },
+                    {
+                        "nombre": "Registro de información lenguas extranjeras inglés",
+                        "url": "faro_referencias/4_ref_apoyos_eval/componentes/trabajo_cot/registro_informacion_ingles.zip"
                     }
                 ]
             }
