@@ -72,19 +72,7 @@ var annoPrimaria = [
     }
 ];
 
-/*
-var tipoPoblacion = [
-    {
-        "label": "Educación para adultos",
-        "id": "adultos"
-    },
-    {
-        "label": "Liceos rurales",
-        "id": "rurales"
-    }
-];
-*/
-var dataGeneral = "";
+const dataGeneral=[];
 //console.log("dataIngles", dataIngles);
 
 
@@ -131,60 +119,22 @@ class Buscador extends Component {
         }
 
     componentDidMount() {
-        this.obtenerJson();
+        
     }
 
-    obtenerJson = () => {
-        // var tablaConsulta = tabla.substring(1);
-       let url= referencias.webservices+"obtener_recursos.php";
-        console.log("URL",url);
-        axios.get(url)
-          .then(res => {     
-            dataArtesPlasticas = res.data;
-            })
-    
-          .catch(function (error) {
-            console.log("error",error)
-          })
-          .finally(function () {
-          });
-      }
 
-    cargarDatasetRecursos = (materia) => {
-        dataGeneral = "";
-        switch (materia) {
-            case "Inglés":
-                dataGeneral = dataIngles;
-                break;
-            case "Ciencias":
-            case "Español":
-            case "Estudios Sociales":
-            case "Matemáticas":
-            case "Cívica":
-                dataGeneral = dataOtros;
-                console.log(dataGeneral);
-                break;
-            case "Francés":
-                dataGeneral = dataFrances;
-                break;
-            case "Italiano":
-                dataGeneral = dataItaliano;
-                break;
-            case "Mediación":
-                dataGeneral = dataMediacion;
-                break;
-            case "Artes Plásticas":
-                dataGeneral = dataArtesPlasticas;
-                console.log(dataGeneral);    
-                break;
-
-            default:
-                dataGeneral = dataOtros;
-                console.log("Opción fuera de rango");
-                break;
+    filtrarDaraPorMateria = (materia) => {
+        const array = JSON.parse(  localStorage.getItem("arrayRecursos") );
+        console.log("array antes del filtro",array);
+        
+        for (let index = 0; index < array.length; index++) {
+            if (array[index].materia === materia ) {
+               dataGeneral.push(array[index]);
+            }
+            
         }
-
-
+        console.log("dataGeneral", dataGeneral);
+        
     }
 
 
@@ -192,12 +142,13 @@ class Buscador extends Component {
         //Limpia la variable plan en caso de que haya sido utilizada anteriormente:
         this.planEstudios = "";
 
-        let valor = e.target.value;
+        const tmpMateria = e.target.value;
+        this.filtrarDaraPorMateria(tmpMateria);
 
-        this.setState({ materia: valor }, () => {
-            this.cargarDatasetRecursos(this.state.materia);
-            console.log("materia", this.state.materia);
-        })
+        // this.setState({ materia: valor }, () => {
+        //     this.cargarDatasetRecursos(this.state.materia);
+        //     console.log("materia", this.state.materia);
+        // })
 
     }
 
@@ -207,18 +158,7 @@ class Buscador extends Component {
     }
 
 
-    handlerObtenerPoblacion = (e) => {
-        let chk = e.target.checked;        
-        console.log(chk);
-        /*
-        if (chk) {
-            this.poblacion = e.target.value;
-        } else {
-            this.poblacion = "";
-        }
-        console.log("Poblacion", this.poblacion);
-        */
-    }
+  
 
     handlerObtenerApoyos = (e) => {
         let chk = e.target.checked;
@@ -231,13 +171,9 @@ class Buscador extends Component {
         console.log("Apyos", this.apoyos);
     }
 
-    handlerObtenerPlanEstudios = (e) => {
-        this.planEstudios = e.target.value
-        console.log("Plan estudios", this.planEstudios);
-    }
+ 
 
-
-    seleccionarBusqueda = () => {
+    handleSeleccionarBusqueda = () => {
         switch (this.props.origen) {
             case "preescolar":
                 this.buscarRecursosPreescolar();
@@ -312,27 +248,14 @@ class Buscador extends Component {
 
         for (let index = 0; index < dataGeneral.length; index++) {
 
-            //Expresión regular para materia
-            let strMateria = dataGeneral[index].materia;
-            let pattMateria = new RegExp(this.state.materia);
-            let resMateria = pattMateria.test(strMateria);
-
+            
             //Expresión regular para año
             let strAnno = dataGeneral[index].anno;
             let pattAnno = new RegExp(this.anno);
             let resAnno = pattAnno.test(strAnno);
+            
 
-
-            // console.log(  "res Materia",  resMateria   );
-            //console.log("res Año", resAnno );          
-            //console.log("this.apoyos=", this.apoyos  );
-            //console.log( "dataGeneral=", dataGeneral[index].apoyos );
-
-
-
-
-
-            if (this.props.origen === dataGeneral[index].nivel && resMateria && resAnno && this.poblacion === dataGeneral[index].poblacion && this.apoyos === dataGeneral[index].apoyos && dataGeneral[index].plan === this.planEstudios) {
+            if (this.props.origen === dataGeneral[index].nivel &&  resAnno) {
 
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
@@ -511,7 +434,7 @@ class Buscador extends Component {
                                                 {
                                                     this.props.origen === "primaria" &&
                                                     annoPrimaria.map((item, i) => (
-                                                        <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                                        <option key={"anno" + i} value={item.label} >  {item.label}  </option>
                                                     ))
                                                 }
                                                 {
@@ -607,25 +530,7 @@ class Buscador extends Component {
 
                         <div className="col-sm-3">
 
-                            {
-                                /*
-                                Se elimina tipo de población
-                                this.props.origen !== "preescolar" &&
-                                (
-                                    <div className={this.claseCSSPoblacion}>
-                                        <input className="form-check-input" type="checkbox" value={
-                                            this.props.origen === "primaria" ? tipoPoblacion[0].id : tipoPoblacion[1].id
-                                        } onClick={this.handlerObtenerPoblacion} id="chkPoblacion" />
-                                        <label className="form-check-label" htmlFor="chkPoblacion">
-                                            {
-                                                this.props.origen === "primaria" ? tipoPoblacion[0].label : tipoPoblacion[1].label
-                                            }
-                                        </label>
-                                    </div>
-                                )
-                                */
-                            }
-
+                           
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" id="chkApyos" onClick={this.handlerObtenerApoyos} />
                                 <label className="form-check-label" htmlFor="chkApyos">
@@ -644,7 +549,7 @@ class Buscador extends Component {
 
                     <div className="row">
                         <div className="col-sm-12 text-right">
-                            <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
+                            <button onClick={this.handleSeleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>
