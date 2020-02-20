@@ -1,4 +1,3 @@
-var identificadores;
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
     realizaProceso();
@@ -10,6 +9,7 @@ $(document).ready(function () {
 
 function guardarTodo() {  
     var revisados=[];
+    var ids=[];
     $('input[type=checkbox]').each(function() {
         if (this.checked) {
             revisados.push(1)
@@ -17,14 +17,19 @@ function guardarTodo() {
         else{
             revisados.push(0)
         }
+        ids.push($(this).attr("id"));
     });
-        // console.log(revisados);
-        const tempRevisados = revisados.toString();
-        console.log(tempRevisados);
+        console.log(ids);
+        // const tempRevisados = revisados.toString();
+        const tempIdentificadores = ids.toInt();
+        // const tempRevisados = JSON.stringify(revisados);
+        // const tempIdentificadores = JSON.stringify(ids);
+        console.log(revisados);
+        // console.log(tempIdentificadores);
         // var datos = new FormData();
         const datos = {
             "atendidos": revisados,
-            "ids" : identificadores
+            "ids" : tempIdentificadores
         }
         
         fetch("../webservices/registrar_cambios.php", {
@@ -46,20 +51,9 @@ var url= '../webservices/obtener_reportes.php';
         return response.json();
     })
     .then(function(myJson) { 
-        obtenerIds(myJson);     
         dibujarTabla (myJson, '#visor');       
     })
   }  
-
-
-  function obtenerIds(myJson) {
-      var ids=[]
-      for (let index = 0; index < myJson.length; index++) {
-          ids.push(myJson[index].id);
-      }
-      console.log("ids:",ids);
-      identificadores = ids;
-  }
 
   function dibujarTabla (array, visor) {
     console.log(array);
@@ -94,9 +88,9 @@ var url= '../webservices/obtener_reportes.php';
                for (let index = 0; index < limite; index++) {
                  let fowNumb = index + 1;
                 if (array[index].atendida==="0") {
-                    atendida =  "<input class='revisados' type='checkbox' name='ids[]' >";
+                    atendida =  "<input class='revisados' type='checkbox' id='"+array[index].id+"' >";
                 } else {
-                    atendida =  "<input class='revisados' type='checkbox' name='ids[]' checked>";
+                    atendida =  "<input class='revisados' type='checkbox' id='"+array[index].id+"' checked>";
                 }
                  
                  row = $(
