@@ -1600,8 +1600,8 @@ class BuscadorPlaneamiento extends Component {
 
 
                                     {
-                                        //Renderizado de etiquetas para español (CONED y CAN)
-                                        (this.state.modulo === "Español") &&
+                                        //Renderizado de etiquetas para español (CAN)
+                                        (this.state.modulo === "Español" && this.state.modalidad === "Colegios Académicos Nocturnos (CAN)" ) &&
                                         <React.Fragment>
                                             <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Monografía
