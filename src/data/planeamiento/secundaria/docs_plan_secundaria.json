@@ -4,7 +4,7 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Educación para la Afectividad y la Sexualidad Integral",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/15_lin_afectividad_y_sexualidad_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/afec_sexu/ppd_afectividad_y_sexualidad_decimo.docx"
     },
    
@@ -28,21 +28,21 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/23_lin_artes_indusctriales_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/arte_indu/ppd_artes_industriales_septimo.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/23_lin_artes_indusctriales_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/arte_indu/ppd_artes_industriales_octavo.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Artes Industriales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/23_lin_artes_indusctriales_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/arte_indu/ppd_artes_industriales%20noveno.docx"
     },
 
@@ -84,35 +84,35 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/arte_plas/ppd_artes_plasticas_septimo.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/arte_plas/ppd_artes_plasticas_octavo.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/arte_plas/ppd_artes_plasticas_noveno.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/arte_plas/ppd_artes_plasticas_decimo.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Artes Plásticas",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/19_lin_artes_plasticas_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/arte_plas/ppd_artes_plasticas_undecimo.docx"
     },
     
@@ -144,14 +144,14 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Biología",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/07_lin_biologia_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/biol/ppd_biologia_decim_undec.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Biología",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/07_lin_biologia_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/biol/ppd_biologia_decim_undec.docx "
     },
 
@@ -186,7 +186,7 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Ciencias",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_septimo_ano.docx ",
         "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_afectividad_sexualidad_septimo.docx"
 
@@ -195,7 +195,7 @@
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Ciencias",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_octavo_ano.docx ",
         "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_afectividad_sexualidad_octavo.docx"
 
@@ -204,7 +204,7 @@
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Ciencias",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/06_lin_ciencias_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_ciencias_noveno_ano.docx ",
         "plantillaSexualidad" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/cienc/ppd_afectividad_sexualidad_noveno.docx"
     },
@@ -232,7 +232,7 @@
         "anno" : "Séptimo",
         "materia" : "Educación Cívica",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/1.ppd_educ_civica_I_unidad_1_periodo_septimo.docx" 
     },
     {
@@ -240,7 +240,7 @@
         "anno" : "Séptimo",
         "materia" : "Educación Cívica",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/2.ppd_educ_civica_II_unidad_2_periodo_septimo.docx" 
     },
     {
@@ -248,7 +248,7 @@
         "anno" : "Séptimo",
         "materia" : "Educación Cívica",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/3.ppd_educ_civica_III_unidad_3_periodo_septimo.docx" 
     },
 
@@ -259,7 +259,7 @@
         "anno" : "Octavo",
         "materia" : "Educación Cívica",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/1.ppd_educ_civica_I_unidad_1_periodo_octavo..docx" 
     },
     {
@@ -267,7 +267,7 @@
         "anno" : "Octavo",
         "materia" : "Educación Cívica",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/2.ppd_educ_civica_I_unidad_2_periodo_octavo..docx" 
     },
     {
@@ -275,7 +275,7 @@
         "anno" : "Octavo",
         "materia" : "Educación Cívica",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/3.ppd_educ_civica_III_unidad_3_periodo_octavo..docx" 
     },
 
@@ -287,7 +287,7 @@
         "anno" : "Noveno",
         "materia" : "Educación Cívica",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/1.ppd_educ_civica_I_unidad_1_periodo_noveno.docx" 
     },
     {
@@ -295,7 +295,7 @@
         "anno" : "Noveno",
         "materia" : "Educación Cívica",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/2.ppd_educ_civica_II_unidad_2_periodo_noveno..docx" 
     },
     {
@@ -303,7 +303,7 @@
         "anno" : "Noveno",
         "materia" : "Educación Cívica",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/3.ppd_educ_civica_III_unidad_3_periodo_noveno..docx" 
     },
 
@@ -315,7 +315,7 @@
         "anno" : "Décimo",
         "materia" : "Educación Cívica",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/1.ppd_educ_civica_I_unidad_1_periodo_decimo.docx" 
     },
     {
@@ -323,7 +323,7 @@
         "anno" : "Décimo",
         "materia" : "Educación Cívica",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/2.ppd_educ_civica_II_unidad_2_periodo_decimo..docx" 
     },
     {
@@ -331,7 +331,7 @@
         "anno" : "Décimo",
         "materia" : "Educación Cívica",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/3.ppd_educ_civica_III_uniidad_3_periodo-decimo..docx" 
     },
 
@@ -343,7 +343,7 @@
         "anno" : "Undécimo",
         "materia" : "Educación Cívica",
         "periodo": "I",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/1.ppd_educ_civica_I_unidad_1_periodo_undecimo..docx" 
     },
     {
@@ -351,7 +351,7 @@
         "anno" : "Undécimo",
         "materia" : "Educación Cívica",
         "periodo": "II",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/2.ppd_educ_civica_II_unidad_2_periodo_undecimo.docx" 
     },
     {
@@ -359,7 +359,7 @@
         "anno" : "Undécimo",
         "materia" : "Educación Cívica",
         "periodo": "III",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/12_lin_civica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/3.ppd_educ_civica_III_unidad_3_periodo_undecimo.docx" 
     },
 
@@ -379,35 +379,35 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_septimo.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_octavo.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_noveno.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_decimo.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Educación Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/17_lin_educacion_fisica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_fisi/ppd_educacion_fisica_undecimo.docx "
     },
    
@@ -426,35 +426,35 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_septimo.docx"
     },
      {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_octavo.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_noveno.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_decimo.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Educación Musical",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/21_lin_educacion_musical_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_undecimo.docx"
     },
     
@@ -474,7 +474,7 @@
         "anno" : "Séptimo",
         "materia" : "Educación para el Hogar",
         "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_hoga/ppd_educacion_hogar_septimo.docx"
     },
     {
@@ -482,7 +482,7 @@
         "anno" : "Octavo",
         "materia" : "Educación para el Hogar",
         "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_hoga/ppd_educacion_hogar_octavo.docx"
     },
     {
@@ -490,7 +490,7 @@
         "anno" : "Noveno",
         "materia" : "Educación para el Hogar",
         "planEstudio":"Aspectos Culturales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/25_lin_educacion_para_la_vida_cotidiana_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_hoga/ppd_educacion_hogar_noveno.docx"
     },
 
@@ -509,35 +509,35 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Educación Religiosa",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/27_lin_educacion_religiosa_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "nulo" 
     },
 
@@ -552,7 +552,7 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/setimo_modelaje_planeamiento_estudios_sociales.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/ppd_estudios_sociales_septimo.docx"
     },
@@ -560,7 +560,7 @@
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/octavo_modelaje_planeamiento_estudios_sociales.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/ppd_estudios_sociales_octavo.docx"
     },
@@ -568,7 +568,7 @@
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/noveno_modelaje_planeamiento_estudios_sociales.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/ppd_estudios_sociales_noveno.docx"
     },
@@ -576,7 +576,7 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/decimo_modelaje_planeamiento_estudios_sociales.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/ppd_estudios_sociales_decimo.docx"
     },
@@ -584,7 +584,7 @@
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Estudios Sociales",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/11_lin_estudios_sociales_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "abordaje": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/undecimo_modelaje_planeamiento_estudios_sociales.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/estu_soci/ppd_estudios_sociales_undecimo.docx"
     },
@@ -602,7 +602,7 @@
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Filosofía",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/14_lin_filosofia_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/filo/ppd_filosofia_undecimo.docx"
     },
     
@@ -624,14 +624,14 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fisi/ppd_fisica_decimo.docx "
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Física",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/09_lin_fisica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fisi/ppd_fisica_undecimo.docx "
     },
  
@@ -658,35 +658,35 @@
         "nivel" : "Secundaria",
         "anno" : "Séptimo",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/40_lin_orientacion_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/7_septimo_orientacion.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/40_lin_orientacion_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/8_octavo_orientacion.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Noveno",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/40_lin_orientacion_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/9_noveno_orientacion.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/40_lin_orientacion_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/10_decimo_academico.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Orientación",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/40_lin_orientacion_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "tecnicoNocturno":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/col_tec_seccion_nocturna.zip",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/11_undecimo_academico.docx"
         },
@@ -707,7 +707,7 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Psicología",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/13_lin_psicologia_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/psic/ppd_psicologia.docx"
     },
     
@@ -727,14 +727,14 @@
         "nivel" : "Secundaria",
         "anno" : "Décimo",
         "materia" : "Química",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/quim/ppd_quimica_decimo.docx"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Química",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/lineam/08_lin_quimica_secundaria.pdf",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/quim/ppd_quimica_undecimo.docx"
     }
 
