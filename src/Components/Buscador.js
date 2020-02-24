@@ -92,41 +92,41 @@ class Buscador extends Component {
     }
 
 
-    elegirBanner = () =>{
+    elegirBanner = () => {
         switch (plataformaUsada) {
-        case "escritorio": 
-            bannerPrescolar="preescolar_banner.png";
-            bannerPrimaria="primaria_banner.png";
-            bannerSecundaria="secundaria_banner.png";
-            bannerFerias="encabezado_feria_cientifica.png";
-        break;
-        case "movil": 
-            bannerPrescolar="preescolar_bannerMovil.png";
-            bannerPrimaria="primaria_bannerMovil.png";
-            bannerSecundaria="secundaria_bannerMovil.png";
-            bannerFerias="encabezado_feria_cientificaMovil.png";
-        break;
-        default:
-            bannerPrescolar="preescolar_banner.png";
-            bannerPrimaria="primaria_banner.png";
-            bannerSecundaria="secundaria_banner.png";
-            bannerFerias="encabezado_feria_cientifica.png";
-        break;
-        }        
+            case "escritorio":
+                bannerPrescolar = "preescolar_banner.png";
+                bannerPrimaria = "primaria_banner.png";
+                bannerSecundaria = "secundaria_banner.png";
+                bannerFerias = "encabezado_feria_cientifica.png";
+                break;
+            case "movil":
+                bannerPrescolar = "preescolar_bannerMovil.png";
+                bannerPrimaria = "primaria_bannerMovil.png";
+                bannerSecundaria = "secundaria_bannerMovil.png";
+                bannerFerias = "encabezado_feria_cientificaMovil.png";
+                break;
+            default:
+                bannerPrescolar = "preescolar_banner.png";
+                bannerPrimaria = "primaria_banner.png";
+                bannerSecundaria = "secundaria_banner.png";
+                bannerFerias = "encabezado_feria_cientifica.png";
+                break;
         }
+    }
 
 
 
     filtrarDataPorMateria = (materia) => {
-       
-        
+
+
     }
 
 
     handlerobtenerMateria = (e) => {
         const tmpMateria = e.target.value;
-        this.setState({ materia : tmpMateria  });
-        this.filtrarDataPorMateria(tmpMateria);        
+        this.setState({ materia: tmpMateria });
+        this.filtrarDataPorMateria(tmpMateria);
     }
 
     handlerObtenerAnno = (e) => {
@@ -145,12 +145,12 @@ class Buscador extends Component {
         console.log("Apyos", this.apoyos);
     }
 
- 
+
 
     handleBuscar = () => {
         const origen = this.props.origen;
         console.log("origen", origen);
-        
+
 
         switch (origen) {
             case "Preescolar":
@@ -164,30 +164,30 @@ class Buscador extends Component {
 
             default:
                 console.log("parametro Origen fuera de rango");
-                
+
                 break;
         }
 
     }
 
     buscarRecursosPreescolar = () => {
-        console.log("Buscador preescolar");        
-        var dataPreescolar=[];
+        console.log("Buscador preescolar");
+        var dataPreescolar = [];
 
-        
+
         //CArga del storage
         let tmpArray = JSON.parse(localStorage.getItem("arrayRecursos"));
 
         //filtra el arreglo con solo datos de preescolar
         for (let index = 0; index < tmpArray.length; index++) {
-            if (tmpArray[index].nivel === "Preescolar" ) {
+            if (tmpArray[index].nivel === "Preescolar") {
                 dataPreescolar.push(tmpArray[index]);
             }
-            
+
         }
 
         console.log("dataGeneral", dataPreescolar);
-        
+
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < dataPreescolar.length; index++) {
@@ -195,8 +195,8 @@ class Buscador extends Component {
                 <React.Fragment>
                     <h5>    {dataPreescolar[index].nombre} </h5>
                     <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataPreescolar[index].descripcion}  </span>
-                    <br />                  
-                  
+                    <br />
+
                     <a href={dataPreescolar[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
                     <hr />
                 </React.Fragment>
@@ -207,56 +207,66 @@ class Buscador extends Component {
     };
 
 
-    buscarRecursosGenerales = () => {      
-        let dataGeneral=[];     
+    buscarRecursosGenerales = () => {
+        let dataGeneral = [];
         console.log("origen:", this.props.origen);
         console.log("Materia recibido", this.state.materia);
-        
-        const arrayRecursos = JSON.parse(  localStorage.getItem("arrayRecursos") );
-        console.log("array antes del filtro",arrayRecursos);        
-        
+
+        const arrayRecursos = JSON.parse(localStorage.getItem("arrayRecursos"));
+        console.log("array antes del filtro", arrayRecursos);
+
         for (let index = 0; index < arrayRecursos.length; index++) {
-            if (arrayRecursos[index].materia === this.state.materia ) {
-               dataGeneral.push(arrayRecursos[index]);
+            if (arrayRecursos[index].materia === this.state.materia) {
+                dataGeneral.push(arrayRecursos[index]);
             }
-            
+
         }
-        console.log("dataGeneral (DAtos filtrados por MATERIA:)", dataGeneral);        
-        
+        console.log("dataGeneral (DAtos filtrados por MATERIA:)", dataGeneral);
+
         var arrayHtml;
         var arrayTmp = [];
 
         for (let index = 0; index < dataGeneral.length; index++) {
 
-            
+
             //Expresión regular para año
             let strAnno = dataGeneral[index].anno;
             let pattAnno = new RegExp(this.anno);
             let resAnno = pattAnno.test(strAnno);
-            
-            console.log("resAnno",resAnno);
-            
-            if (this.props.origen === dataGeneral[index].nivel &&  resAnno  &&  dataGeneral[index].apoyos  === this.apoyos  ) {
+
+            console.log("resAnno", resAnno);
+
+            if (this.props.origen === dataGeneral[index].nivel && resAnno && dataGeneral[index].apoyos === this.apoyos) {
 
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
                 //console.log( "Año:", dataGeneral[index].anno );                
 
-                arrayHtml = (
-                    <React.Fragment>
-                        <h5>    {dataGeneral[index].nombre} </h5>
-                        <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].descripcion}  </span>
-                        <br />
-                        
-                        {                            
-                                <React.Fragment>
-                                    <span> <strong>  <i className="fab fa-diaspora"></i>  Año:</strong>  {dataGeneral[index].anno}   </span>
-                                    <br />
-                                </React.Fragment>                            
-                        }
-                        <a href={dataGeneral[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
-                        <hr />
-                    </React.Fragment>
+                arrayHtml = (                  
+                      <div  key={"tarjeta"+index } className="col-4">
+                      <div className="card">
+                        <img
+                            src={dataGeneral[index].img_educatico}
+                            className="card-img-top"
+                            alt={"imagen previa del recurso " +  dataGeneral[index].nombre }
+                        />
+                        <div className="card-body">
+                            <h5 className="card-title">
+                            {dataGeneral[index].nombre}
+	                        </h5>
+                            <p className="card-text">
+                                {dataGeneral[index].descripcion} 
+	                        </p>
+                        </div>
+                        <div className="card-body">
+                            <a
+                                href= {dataGeneral[index].url}
+                                className="card-link" 
+                            >
+                                Acceder al recurso	                        </a>
+                        </div>
+                    </div>
+                      </div>                  
                 )
                 arrayTmp.push(arrayHtml);
             }
@@ -286,42 +296,42 @@ class Buscador extends Component {
         return (
             <React.Fragment>
                 <div className="row">
-   
+
                     <div className="col-sm-12  text-right">
                         {
-                            this.props.origen === "Preescolar" && <img alt="Preescolar" className="bannerRecursos" src= {img + bannerPrescolar} />
+                            this.props.origen === "Preescolar" && <img alt="Preescolar" className="bannerRecursos" src={img + bannerPrescolar} />
                         }
                         {
-                            this.props.origen === "Primaria" && <img alt="Primaria" className="bannerRecursos" src={img + bannerPrimaria}/>
+                            this.props.origen === "Primaria" && <img alt="Primaria" className="bannerRecursos" src={img + bannerPrimaria} />
                         }
                         {
-                            this.props.origen === "Secundaria" && <img alt="Secundaria" className="bannerRecursos" src= {img + bannerSecundaria} />
+                            this.props.origen === "Secundaria" && <img alt="Secundaria" className="bannerRecursos" src={img + bannerSecundaria} />
                         }
                         {
-                            this.props.origen === "Intercultural" && <img alt="intercultural" className="bannerRecursos" src= {img + "encabezado_intercultural.png"} />
+                            this.props.origen === "Intercultural" && <img alt="intercultural" className="bannerRecursos" src={img + "encabezado_intercultural.png"} />
                         }
                         {
-                            this.props.origen === "JovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src= {img + "encabezado_jovenes_adultos.png"} />
+                            this.props.origen === "JovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src={img + "encabezado_jovenes_adultos.png"} />
                         }
                         {
                             this.props.origen === "FeriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={img + bannerFerias} />
                         }
                         {
-                            this.props.origen === "BanderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src= {img + "encabezado_bandera_azul.png"} />
+                            this.props.origen === "BanderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src={img + "encabezado_bandera_azul.png"} />
                         }
 
-{
-                          plataformaUsada === "movil" ?
-                            ( 
-                                <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
-                            )
-                            :
-                            (
-                                <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
-                            )
+                        {
+                            plataformaUsada === "movil" ?
+                                (
+                                    <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                )
+                                :
+                                (
+                                    <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                )
                         }
 
-                    </div><br/><br/>
+                    </div><br /><br />
                 </div>
 
 
@@ -491,7 +501,7 @@ class Buscador extends Component {
 
                         <div className="col-sm-3">
 
-                           
+
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" id="chkApyos" onClick={this.handlerObtenerApoyos} />
                                 <label className="form-check-label" htmlFor="chkApyos">
@@ -527,14 +537,10 @@ class Buscador extends Component {
                     </div>
 
 
-                    <div className="row">
-                        <div className="col-sm-12">
+                    <div className="row">                       
                             {
-                                this.state.tarjetas.map((item, i) => (
-                                    <div key={"tarjeta" + i} > {item} </div>
-                                ))
+                                this.state.tarjetas
                             }
-                        </div>
                     </div>
 
 

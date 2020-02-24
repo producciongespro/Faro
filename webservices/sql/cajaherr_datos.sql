@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 24-02-2020 a las 15:06:44
+-- Tiempo de generación: 24-02-2020 a las 16:13:41
 -- Versión del servidor: 5.7.21
 -- Versión de PHP: 7.1.16
 
@@ -104,23 +104,25 @@ CREATE TABLE IF NOT EXISTS `recursos` (
   `anno` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
   `url` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `materia` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `img_educatico` varchar(512) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'url de img previo en educatico',
   `apoyos` tinyint(1) NOT NULL,
   `id_usuario` int(128) NOT NULL,
   `fecha_ingreso` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `borrado` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `recursos`
 --
 
-INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `materia`, `apoyos`, `id_usuario`, `fecha_ingreso`, `borrado`) VALUES
-(1, 'El c?rculo crom?tico actualizado desde PHP', 'Video de los colores primarios y secundarios/colores fr?os y c?lidos.', 2, 'Primero, Segundo, Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Artes Plásticas', 0, 2, '2020-02-04 19:17:26', 0),
-(2, 'La identidad desde PHP', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 0, 0, '2020-02-04 19:17:26', 0),
-(3, 'Prueba de español 1', 'español ejemplo 1', 2, 'Primero, Segundo, Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 0, 2, '2020-02-04 19:17:26', 0),
-(4, 'Prueba de español 2', 'español para sexto', 2, 'Sexto', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 0, 2, '2020-02-04 19:17:26', 0),
-(5, 'Prueba de Biologia', 'biología noveno', 3, 'Noveno\r\n', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Biología', 0, 2, '2020-02-04 19:17:26', 0);
+INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `materia`, `img_educatico`, `apoyos`, `id_usuario`, `fecha_ingreso`, `borrado`) VALUES
+(1, 'El círculo cromático actualizado desde PHP', 'Video de los colores primarios y secundarios/colores fr?os y c?lidos.', 2, 'Primero, Segundo, Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 2, '2020-02-04 19:17:26', 0),
+(2, 'La identidad desde PHP', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 0, '2020-02-04 19:17:26', 0),
+(3, 'Prueba de español 1', 'español ejemplo 1', 2, 'Primero, Segundo, Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/orientados.jpg', 0, 2, '2020-02-04 19:17:26', 0),
+(4, 'Prueba de español 2', 'español para sexto', 2, 'Sexto', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/recursos-19.png', 0, 2, '2020-02-04 19:17:26', 0),
+(5, 'Prueba de Biologia', 'biología noveno', 3, 'Noveno\r\n', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Biología', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/weatherwise.jpg', 0, 2, '2020-02-04 19:17:26', 0),
+(6, 'Tercer recurso Plasticas\r\n', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 0, '2020-02-04 19:17:26', 0);
 
 -- --------------------------------------------------------
 
