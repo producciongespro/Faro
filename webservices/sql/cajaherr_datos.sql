@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost:3306
--- Tiempo de generación: 17-02-2020 a las 11:25:16
--- Versión del servidor: 5.6.45
--- Versión de PHP: 7.3.6
+-- Servidor: 127.0.0.1:3306
+-- Tiempo de generación: 24-02-2020 a las 14:12:44
+-- Versión del servidor: 5.7.21
+-- Versión de PHP: 7.1.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -28,7 +28,8 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `estadisticas`
 --
 
-CREATE TABLE `estadisticas` (
+DROP TABLE IF EXISTS `estadisticas`;
+CREATE TABLE IF NOT EXISTS `estadisticas` (
   `clim` int(255) NOT NULL,
   `eval` int(255) NOT NULL,
   `recu` int(255) NOT NULL,
@@ -50,19 +51,21 @@ INSERT INTO `estadisticas` (`clim`, `eval`, `recu`, `docu`, `prof`, `plan`) VALU
 -- Estructura de tabla para la tabla `niveles`
 --
 
-CREATE TABLE `niveles` (
-  `id` int(11) NOT NULL,
-  `nivel` varchar(64) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+DROP TABLE IF EXISTS `niveles`;
+CREATE TABLE IF NOT EXISTS `niveles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nivel` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `niveles`
 --
 
 INSERT INTO `niveles` (`id`, `nivel`) VALUES
-(0, 'prescolar'),
-(1, 'primaria'),
-(2, 'secundaria');
+(1, 'Preescolar'),
+(2, 'Primaria'),
+(3, 'Secundaria');
 
 -- --------------------------------------------------------
 
@@ -70,7 +73,8 @@ INSERT INTO `niveles` (`id`, `nivel`) VALUES
 -- Estructura de tabla para la tabla `poblaciones`
 --
 
-CREATE TABLE `poblaciones` (
+DROP TABLE IF EXISTS `poblaciones`;
+CREATE TABLE IF NOT EXISTS `poblaciones` (
   `id` int(255) NOT NULL,
   `poblacion` varchar(256) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -91,27 +95,29 @@ INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
 -- Estructura de tabla para la tabla `recursos`
 --
 
-CREATE TABLE `recursos` (
-  `id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `recursos`;
+CREATE TABLE IF NOT EXISTS `recursos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `descripcion` varchar(512) COLLATE utf8_unicode_ci NOT NULL,
   `id_nivel` int(11) NOT NULL,
   `anno` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
   `url` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `materia` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
-  `apoyos` int(2) NOT NULL,
+  `apoyos` tinyint(1) NOT NULL,
   `id_usuario` int(128) NOT NULL,
   `fecha_ingreso` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `borrado` tinyint(1) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `borrado` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `recursos`
 --
 
 INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `materia`, `apoyos`, `id_usuario`, `fecha_ingreso`, `borrado`) VALUES
-(1, 'El c?rculo crom?tico actualizado desde PHP', 'Video de los colores primarios y secundarios/colores fr?os y c?lidos.', 1, '0', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Artes Pl?sticas', 0, 2, '2020-02-04 19:17:26', 1),
-(2, 'La identidad desde PHP', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 1, '0', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 0, 0, '2020-02-04 19:17:26', 0);
+(1, 'El c?rculo crom?tico actualizado desde PHP', 'Video de los colores primarios y secundarios/colores fr?os y c?lidos.', 2, 'Primero, Segundo, Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Artes Plásticas', 0, 2, '2020-02-04 19:17:26', 0),
+(2, 'La identidad desde PHP', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 0, 0, '2020-02-04 19:17:26', 0);
 
 -- --------------------------------------------------------
 
@@ -119,14 +125,16 @@ INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`
 -- Estructura de tabla para la tabla `reportes`
 --
 
-CREATE TABLE `reportes` (
-  `id` int(255) NOT NULL,
+DROP TABLE IF EXISTS `reportes`;
+CREATE TABLE IF NOT EXISTS `reportes` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
   `correo` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
   `detalle` varchar(512) COLLATE utf8mb4_unicode_ci NOT NULL,
   `atendida` tinyint(1) NOT NULL,
-  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `reportes`
@@ -152,8 +160,9 @@ INSERT INTO `reportes` (`id`, `nombre`, `correo`, `detalle`, `atendida`, `fecha`
 -- Estructura de tabla para la tabla `usuarios`
 --
 
-CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL COMMENT 'Identificador único para el usuario',
+DROP TABLE IF EXISTS `usuarios`;
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador único para el usuario',
   `usuario` varchar(30) NOT NULL COMMENT 'correo electrónico',
   `clave` varchar(130) NOT NULL,
   `nombre` varchar(100) NOT NULL,
@@ -165,8 +174,9 @@ CREATE TABLE `usuarios` (
   `token_password` varchar(100) DEFAULT NULL,
   `password_request` int(11) DEFAULT '0',
   `tipoUsuario` int(11) DEFAULT NULL,
-  `activo` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `activo` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `usuarios`
@@ -176,50 +186,6 @@ INSERT INTO `usuarios` (`id`, `usuario`, `clave`, `nombre`, `apellido1`, `apelli
 (97, 'oscar@correo.de', '$2y$10$HIfq9JX63uK/igxxsjlJKOMcYL3CZEOtGLDWz7YH8FzGQQSCzsuju', 'Oscar1', 'Pérez1', 'Ramírez1', 'GESPRO1', NULL, '8b6d28e1023747a88925a89213e52662', NULL, 0, 1, 1),
 (99, 'oscar1.perez.ramirez@mep.go.cr', '$2y$10$FRcsor4X9UHLiUjQ3BqSZe0vnWF/lSH79tLM1kqHSfLcHr8CfY27i', 'Oscar', 'Pérez', 'Ramírez', 'GESPRO', NULL, '300b97290992f470ea62e0e7fe3222c8', NULL, 0, 1, 1),
 (106, 'luis@correo.de', '$2y$10$FRcsor4X9UHLiUjQ3BqSZe0vnWF/lSH79tLM1kqHSfLcHr8CfY27i', 'Luis', 'Chacón', 'Campos', 'GESPRO', NULL, '300b97290992f470ea62e0e7fe3222c8', NULL, 0, 1, 1);
-
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `recursos`
---
-ALTER TABLE `recursos`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `reportes`
---
-ALTER TABLE `reportes`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `recursos`
---
-ALTER TABLE `recursos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de la tabla `reportes`
---
-ALTER TABLE `reportes`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- AUTO_INCREMENT de la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador único para el usuario', AUTO_INCREMENT=107;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

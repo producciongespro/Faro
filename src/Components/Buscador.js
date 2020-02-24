@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import referencias from '../data/config/config.json';
+//import referencias from '../data/config/config.json';
 /*
 import dataOtros from '../data/recursos/generales.json';
 import dataIngles from '../data/recursos/recursos_ingles.json';
@@ -115,9 +115,6 @@ class Buscador extends Component {
         }        
         }
 
-    componentDidMount() {
-        
-    }
 
 
     filtrarDataPorMateria = (materia) => {
@@ -156,12 +153,12 @@ class Buscador extends Component {
         
 
         switch (origen) {
-            case "preescolar":
+            case "Preescolar":
                 this.buscarRecursosPreescolar();
                 break;
-            case "primaria":
-            case "secundaria":
-            case "intercultural":
+            case "Primaria":
+            case "Secundaria":
+            case "Intercultural":
                 this.buscarRecursosGenerales();
                 break;
 
@@ -210,16 +207,13 @@ class Buscador extends Component {
     };
 
 
-    buscarRecursosGenerales = () => {
-
-      //TODO: Tratamiento para nivel Upercase o lowercase *******************************   
-        let dataGeneral=[];
-        
-       
+    buscarRecursosGenerales = () => {      
+        let dataGeneral=[];     
+        console.log("origen:", this.props.origen);
         console.log("Materia recibido", this.state.materia);
         
         const arrayRecursos = JSON.parse(  localStorage.getItem("arrayRecursos") );
-        console.log("array antes del filtro",arrayRecursos);
+        console.log("array antes del filtro",arrayRecursos);        
         
         for (let index = 0; index < arrayRecursos.length; index++) {
             if (arrayRecursos[index].materia === this.state.materia ) {
@@ -227,8 +221,7 @@ class Buscador extends Component {
             }
             
         }
-        console.log("dataGeneral", dataGeneral);
-        console.log("origen:", this.props.origen);
+        console.log("dataGeneral (DAtos filtrados por MATERIA:)", dataGeneral);        
         
         var arrayHtml;
         var arrayTmp = [];
@@ -241,7 +234,8 @@ class Buscador extends Component {
             let pattAnno = new RegExp(this.anno);
             let resAnno = pattAnno.test(strAnno);
             
-
+            console.log("resAnno",resAnno);
+            
             if (this.props.origen === dataGeneral[index].nivel &&  resAnno  &&  dataGeneral[index].apoyos  === this.apoyos  ) {
 
 
@@ -315,25 +309,25 @@ class Buscador extends Component {
    
                     <div className="col-sm-12  text-right">
                         {
-                            this.props.origen === "preescolar" && <img alt="Preescolar" className="bannerRecursos" src= {img + bannerPrescolar} />
+                            this.props.origen === "Preescolar" && <img alt="Preescolar" className="bannerRecursos" src= {img + bannerPrescolar} />
                         }
                         {
-                            this.props.origen === "primaria" && <img alt="Primaria" className="bannerRecursos" src={img + bannerPrimaria}/>
+                            this.props.origen === "Primaria" && <img alt="Primaria" className="bannerRecursos" src={img + bannerPrimaria}/>
                         }
                         {
-                            this.props.origen === "secundaria" && <img alt="Secundaria" className="bannerRecursos" src= {img + bannerSecundaria} />
+                            this.props.origen === "Secundaria" && <img alt="Secundaria" className="bannerRecursos" src= {img + bannerSecundaria} />
                         }
                         {
-                            this.props.origen === "intercultural" && <img alt="intercultural" className="bannerRecursos" src= {img + "encabezado_intercultural.png"} />
+                            this.props.origen === "Intercultural" && <img alt="intercultural" className="bannerRecursos" src= {img + "encabezado_intercultural.png"} />
                         }
                         {
-                            this.props.origen === "jovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src= {img + "encabezado_jovenes_adultos.png"} />
+                            this.props.origen === "JovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src= {img + "encabezado_jovenes_adultos.png"} />
                         }
                         {
-                            this.props.origen === "feriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={img + bannerFerias} />
+                            this.props.origen === "FeriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={img + bannerFerias} />
                         }
                         {
-                            this.props.origen === "banderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src= {img + "encabezado_bandera_azul.png"} />
+                            this.props.origen === "BanderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src= {img + "encabezado_bandera_azul.png"} />
                         }
 
 {
@@ -361,37 +355,37 @@ class Buscador extends Component {
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     {
-                                        (this.props.origen === "primaria" || this.props.origen === "secundaria") &&
+                                        (this.props.origen === "Primaria" || this.props.origen === "Secundaria") &&
                                         (
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Asignatura</label>
                                         )
                                     }
                                     {
-                                        this.props.origen === "intercultural" &&
+                                        this.props.origen === "Intercultural" &&
                                         (
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Unidad</label>
                                         )
                                     }
                                 </div>
                                 {
-                                    this.props.origen !== "preescolar" &&
+                                    this.props.origen !== "Preescolar" &&
                                     (
                                         <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
                                             <option defaultValue value="" >Todas</option>
                                             {
-                                                this.props.origen === "primaria" &&
+                                                this.props.origen === "Primaria" &&
                                                 materiasPrimaria.map((item, i) => (
                                                     <option key={"materia" + i} value={item} >  {item}  </option>
                                                 ))
                                             }
                                             {
-                                                this.props.origen === "secundaria" &&
+                                                this.props.origen === "Secundaria" &&
                                                 materiasSecundaria.map((item, i) => (
                                                     <option key={"materia" + i} value={item} >  {item}  </option>
                                                 ))
                                             }
                                             {
-                                                this.props.origen === "intercultural" &&
+                                                this.props.origen === "Intercultural" &&
                                                 (
                                                     <React.Fragment>
                                                         <option value="Educación Indígena" > Educación Indígena  </option>
@@ -419,13 +413,13 @@ class Buscador extends Component {
                                             <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                                 <option defaultValue value="" > Todos </option>
                                                 {
-                                                    this.props.origen === "primaria" &&
+                                                    this.props.origen === "Primaria" &&
                                                     annoPrimaria.map((item, i) => (
                                                         <option key={"anno" + i} value={item.label} >  {item.label}  </option>
                                                     ))
                                                 }
                                                 {
-                                                    this.props.origen === "secundaria" &&
+                                                    this.props.origen === "Secundaria" &&
                                                     anoSecundaria.map((item, i) => (
                                                         <option key={"anno" + i} value={item.id} >  {item.label}  </option>
                                                     ))
