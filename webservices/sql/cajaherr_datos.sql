@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 24-02-2020 a las 14:12:44
+-- Tiempo de generación: 24-02-2020 a las 15:06:44
 -- Versión del servidor: 5.7.21
 -- Versión de PHP: 7.1.16
 
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `recursos` (
   `fecha_ingreso` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `borrado` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `recursos`
@@ -117,7 +117,10 @@ CREATE TABLE IF NOT EXISTS `recursos` (
 
 INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `materia`, `apoyos`, `id_usuario`, `fecha_ingreso`, `borrado`) VALUES
 (1, 'El c?rculo crom?tico actualizado desde PHP', 'Video de los colores primarios y secundarios/colores fr?os y c?lidos.', 2, 'Primero, Segundo, Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Artes Plásticas', 0, 2, '2020-02-04 19:17:26', 0),
-(2, 'La identidad desde PHP', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 0, 0, '2020-02-04 19:17:26', 0);
+(2, 'La identidad desde PHP', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 0, 0, '2020-02-04 19:17:26', 0),
+(3, 'Prueba de español 1', 'español ejemplo 1', 2, 'Primero, Segundo, Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 0, 2, '2020-02-04 19:17:26', 0),
+(4, 'Prueba de español 2', 'español para sexto', 2, 'Sexto', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 0, 2, '2020-02-04 19:17:26', 0),
+(5, 'Prueba de Biologia', 'biología noveno', 3, 'Noveno\r\n', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Biología', 0, 2, '2020-02-04 19:17:26', 0);
 
 -- --------------------------------------------------------
 

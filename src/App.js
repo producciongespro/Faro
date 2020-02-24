@@ -388,7 +388,7 @@ class App extends Component {
 
   handlerOpenBuscador = (e) => {
     let origen = e.target.dataset.origen;
-    console.log(origen);
+    console.log("origen", origen);
     this.setState({
       currentPage: <Buscador origen={origen} handlerCerrarBuscador={this.handlerCerrarBuscador} />
     });

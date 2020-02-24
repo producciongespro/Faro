@@ -247,32 +247,12 @@ class Buscador extends Component {
                         <h5>    {dataGeneral[index].nombre} </h5>
                         <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].descripcion}  </span>
                         <br />
-                        {
-                            this.state.materia === "" && (
-                                <React.Fragment>
-                                    {
-                                        (this.props.origen === "primaria" || this.props.origen === "secundaria") &&
-                                        (
-                                            <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {dataGeneral[index].materia}     </span>
-                                        )
-                                    }
-                                    {
-                                        (this.props.origen === "intercultural") &&
-                                        (
-                                            <span> <strong>   <i className="fab fa-diaspora"></i>    Unidad:</strong>  {dataGeneral[index].materia}     </span>
-                                        )
-                                    }
-                                    <br />
-                                </React.Fragment>
-                            )
-                        }
-                        {
-                            this.anno === "" && (
+                        
+                        {                            
                                 <React.Fragment>
                                     <span> <strong>  <i className="fab fa-diaspora"></i>  Año:</strong>  {dataGeneral[index].anno}   </span>
                                     <br />
-                                </React.Fragment>
-                            )
+                                </React.Fragment>                            
                         }
                         <a href={dataGeneral[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
                         <hr />
@@ -371,7 +351,7 @@ class Buscador extends Component {
                                     this.props.origen !== "Preescolar" &&
                                     (
                                         <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
-                                            <option defaultValue value="" >Todas</option>
+                                            <option defaultValue value="" >Seleccione:</option>
                                             {
                                                 this.props.origen === "Primaria" &&
                                                 materiasPrimaria.map((item, i) => (
@@ -421,7 +401,7 @@ class Buscador extends Component {
                                                 {
                                                     this.props.origen === "Secundaria" &&
                                                     anoSecundaria.map((item, i) => (
-                                                        <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                                        <option key={"anno" + i} value={item.label} >  {item.label}  </option>
                                                     ))
                                                 }
                                             </select>
