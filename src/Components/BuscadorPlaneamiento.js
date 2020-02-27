@@ -1563,7 +1563,8 @@ class BuscadorPlaneamiento extends Component {
                                     }
 
                                     {
-                                        //*** Renderizado de etiquetas Orientaciones para IPEC  II, III*/
+                                    /*
+                                        // Renderizado de etiquetas Orientaciones para IPEC  II, III
                                         (this.state.modalidad === "IPEC CINDEA Nivel II"
                                             || this.state.modalidad === "IPEC CINDEA Nivel III") &&
                                         (
@@ -1579,25 +1580,9 @@ class BuscadorPlaneamiento extends Component {
                                                         <i className="fas fa-ban"></i> orientaciones no disponible
                                                     </span>
                                                 )
-                                        )
-                                        //******************************/ 
+                                        )                                        
+                                        */
                                     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                     {
                                         //Renderizado de etiquetas para español (CAN)
