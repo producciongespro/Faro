@@ -48,7 +48,7 @@ const imgGenerales = assets.img.general;
 
  async function cargarDatos(cb) {
   const arrayRecursos = await obtener("http://localhost/faro/webservices/obtener_recursos.php");
-  //console.log("arrayRecursos", arrayRecursos);
+  console.log("arrayRecursos", arrayRecursos);
   localStorage.setItem("arrayRecursos", JSON.stringify(arrayRecursos));
   //console.log("guardado", localStorage.getItem("arrayRecursos"));  
   cb();  
