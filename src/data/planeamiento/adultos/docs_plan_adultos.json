@@ -89,7 +89,7 @@
         "anno" : "Décimo",    
         "modulo" : "Educación Cívica",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/educ_civi/4.decimo_can_educacion_civica.7z"        
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -97,7 +97,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Educación Cívica",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/educ_civi/5.undecimo_can_educacion_civica.7z"        
     },
 
 
@@ -297,7 +297,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ingl/ppd.ingles_can.docx"     
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -305,7 +305,7 @@
         "anno" : "Octavo",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ingl/ppd.ingles_can.docx"         
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -313,7 +313,7 @@
         "anno" : "Noveno",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ingl/ppd.ingles_can.docx"         
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -321,7 +321,7 @@
         "anno" : "Décimo",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ingl/ppd.ingles_can.docx"         
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -329,7 +329,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/ingl/ppd.ingles_can.docx"         
     },
    
 
@@ -613,7 +613,7 @@
         "anno" : "Séptimo",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/ingl/ppd.ingles_coned.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -621,7 +621,7 @@
         "anno" : "Octavo",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/ingl/ppd.ingles_coned.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -629,7 +629,7 @@
         "anno" : "Noveno",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/ingl/ppd.ingles_coned.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -637,7 +637,7 @@
         "anno" : "Décimo",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/ingl/ppd.ingles_coned.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
@@ -645,7 +645,7 @@
         "anno" : "Undécimo",    
         "modulo" : "Inglés",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/ingl/ppd.ingles_coned.docx"        
     },
 
 
@@ -873,7 +873,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 30",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_30_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -881,7 +880,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 31",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
     {
@@ -889,7 +887,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 32",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_32_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -897,7 +894,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 33",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_33_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -905,7 +901,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 34",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
     {
@@ -913,7 +908,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 35",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_35_ipec-cindea_nivel_2.docx"        
     },
     {
@@ -921,7 +915,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 36",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_36_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -929,7 +922,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 37",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_37_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -937,7 +929,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 38",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_38_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -945,7 +936,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 39",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_39_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -953,7 +943,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 40",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_40_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -961,7 +950,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 41",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_41_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -969,7 +957,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 42",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
     {
@@ -977,7 +964,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 43",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_43_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -985,7 +971,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 44",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_44_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -993,7 +978,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 45",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_45_ipec_cindea-nivel_2.docx"        
     },
     {
@@ -1001,15 +985,13 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 46",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd.modulo_46_ipec_cindea_nivel_2_2018.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 47",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
     {
@@ -1017,7 +999,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 48",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
     {
@@ -1025,7 +1006,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 49",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_49_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -1033,7 +1013,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 50",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
     {
@@ -1041,7 +1020,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 51",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_51_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -1049,7 +1027,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 52",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_52_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -1057,7 +1034,6 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 53",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/modulo_53_ipec_cindea_nivel_2.docx"        
     },
     {
@@ -1065,8 +1041,14 @@
         "modalidad" : "IPEC CINDEA Nivel II",        
         "modulo" : "Módulo 53",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "IPEC CINDEA Nivel II",        
+        "modulo" : "Orientación",      
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_2/ppd_2_nivel_ipec_cindeas_orientacion.docx"
     },
 
 
@@ -1086,7 +1068,6 @@
         "modulo" : "Módulo 60",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "plantillaVieja" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_60_ipec_cindea_nivel_3_prog_2009.docx",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_60_ipec_cindea_nivel_3_prog_2017.docx"        
        
     },
@@ -1095,7 +1076,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 61",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_61_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1103,7 +1083,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 62",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_62_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1111,7 +1090,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 63",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_63_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1119,7 +1097,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 64",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_64_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1127,7 +1104,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 65",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_65_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1135,7 +1111,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 66",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
     {
@@ -1143,7 +1118,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 67",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "nulo"        
     },
     {
@@ -1151,7 +1125,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 68",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_68_ipec_cindea_nivel_3_quimica.docx"        
     },
     {
@@ -1159,7 +1132,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 69",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_69_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1167,7 +1139,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 70",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_70_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1175,14 +1146,13 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 71",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd.modulo_71_ipec_cindea_nivel_3_2017.docx"        
     },
     {
         "nivel": "Jóvenes y Adultos",
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 72",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_72_ipec_cindea_nivel-3.docx"        
     },
     {
@@ -1190,7 +1160,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 73",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_73_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1198,7 +1167,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 74",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_74_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1206,7 +1174,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 75",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_75_ipec_cindea_nivel_3.docx"        
     },
     {
@@ -1214,7 +1181,6 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Módulo 76",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/modulo_76_ipec_cindea_nivel_3_filosofia.docx"        
     },
     {
@@ -1222,9 +1188,9 @@
         "modalidad" : "IPEC CINDEA Nivel III",        
         "modulo" : "Orientación",      
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "orientaciones":"faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/ipec_3/ppd_3_nivel_ipec_cindeas_orientacion.docx"        
     }
+    
     
 
 ]

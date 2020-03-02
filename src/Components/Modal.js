@@ -668,7 +668,6 @@ class Modal extends Component {
                             <textarea className="form-control"
                               id="detalle"
                               aria-label="With textarea"
-                              maxLength="512"
                             />
                           </div>
                           <div className="row">
