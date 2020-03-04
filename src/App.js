@@ -33,26 +33,14 @@ import PortadaMovil from './Components/PortadaMovil';
 import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
-
-//Módulos personalizados
 import analitica from './modulos/analitica';
-import obtener from './modulos/obtener';
 
-
-//Assets
 import assets from './data/config/config.json';
+
 
 //Json
 import descripciones from "./data/descripciones/descripciones.json";
 const imgGenerales = assets.img.general;
-
- async function cargarDatos(cb) {
-  const arrayRecursos = await obtener("http://localhost/faro/webservices/obtener_recursos.php");
-  console.log("arrayRecursos", arrayRecursos);
-  localStorage.setItem("arrayRecursos", JSON.stringify(arrayRecursos));
-  //console.log("guardado", localStorage.getItem("arrayRecursos"));  
-  cb();  
-}
 
 
 class App extends Component {
@@ -70,18 +58,11 @@ class App extends Component {
   }
 
 
- 
-
-
 
   componentDidMount() {
-    // setTimeout(() => {
-    //   this.loadPortada();    
-    // }, 500);
-    const cargarPortada = this.loadPortada;
-    cargarDatos(cargarPortada);
-    
-
+    setTimeout(() => {
+      this.loadPortada();
+    }, 500);
   }
 
 
@@ -387,8 +368,8 @@ class App extends Component {
   //Abrir buscador de recursos
 
   handlerOpenBuscador = (e) => {
-    let origen = e.target.dataset.origen;
-    console.log("origen", origen);
+    let origen = e.target.id;
+    //console.log(origen);
     this.setState({
       currentPage: <Buscador origen={origen} handlerCerrarBuscador={this.handlerCerrarBuscador} />
     });
@@ -704,4 +685,3 @@ class App extends Component {
 }
 
 export default App;
-
