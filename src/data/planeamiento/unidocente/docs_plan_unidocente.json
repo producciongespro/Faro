@@ -18,8 +18,8 @@
         "nivel" : "Unidocentes",
         "asignatura" : "Ciencias",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/cien/correlacionado.zip",
-        "noCorrelacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/cien/no_correlacionado.zip",
+        "correlacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/cien/correlacionado_ciencias.7z",
+        "noCorrelacionado" : "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/cien/no_correlacionado.7z",
         "circulo" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/circulo/circulo.zip",
         "alcance" :  "faro_referencias/8_ref_apoyos_planea/plantillas/unid/planea/cien/ciencias_cartel_alcance_y_secuencia.docx"
     },
