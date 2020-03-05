@@ -264,6 +264,10 @@ class Buscador extends Component {
                                 </p>
                             </div>
                             <div className="card-body">
+                                <span>
+                                    Años <strong>{ dataGeneral[index].anno}</strong>
+                                </span>
+                                <br/>
                                 <a
                                     href={dataGeneral[index].url}
                                     className="card-link"
