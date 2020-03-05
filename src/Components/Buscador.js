@@ -242,31 +242,39 @@ class Buscador extends Component {
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
                 //console.log( "Año:", dataGeneral[index].anno );                
 
-                arrayHtml = (                  
-                      <div  key={"tarjeta"+index } className="col-4">
-                      <div className="card">
-                        <img
-                            src={dataGeneral[index].img_educatico}
-                            className="card-img-top"
-                            alt={"imagen previa del recurso " +  dataGeneral[index].nombre }
-                        />
-                        <div className="card-body">
-                            <h5 className="card-title">
-                            {dataGeneral[index].nombre}
-	                        </h5>
-                            <p className="card-text">
-                                {dataGeneral[index].descripcion} 
-	                        </p>
-                        </div>
-                        <div className="card-body">
-                            <a
-                                href= {dataGeneral[index].url}
-                                className="card-link" 
-                            >
-                                Acceder al recurso	                        </a>
+                arrayHtml = (
+                    <div key={"tarjeta" + index} className="col-4">
+                        <div className="card">
+                            <img
+                                src={dataGeneral[index].img_educatico}
+                                className="card-img-top"
+                                alt={"imagen previa del recurso " + dataGeneral[index].nombre}
+                            />
+                            <div className="card-body">
+                                <a href={dataGeneral[index].url}
+                                 target="_blank"
+                                 rel="noopener"
+                                >
+                                    <h5 className="card-title">
+                                        {dataGeneral[index].nombre}
+                                    </h5>
+                                </a>
+                                <p className="card-text">
+                                    {dataGeneral[index].descripcion}
+                                </p>
+                            </div>
+                            <div className="card-body">
+                                <a
+                                    href={dataGeneral[index].url}
+                                    className="card-link"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    Ver recurso <i className="fas fa-eye" ></i>                                    
+                            </a>
+                            </div>
                         </div>
                     </div>
-                      </div>                  
                 )
                 arrayTmp.push(arrayHtml);
             }
@@ -537,10 +545,10 @@ class Buscador extends Component {
                     </div>
 
 
-                    <div className="row">                       
-                            {
-                                this.state.tarjetas
-                            }
+                    <div className="row">
+                        {
+                            this.state.tarjetas
+                        }
                     </div>
 
 
