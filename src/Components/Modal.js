@@ -431,61 +431,44 @@ class Modal extends Component {
 
             <div className="row ">
 
-              <div className="col-3 text-center">
-
-
+              <div className="col-sm-3 text-center">
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
                   <img src={imgGeneral + this.imgPdf} alt="pdf documento general" />
-                </a>
-              </div>
-
-              <div className="col-3 text-center">
-                <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf"} target="_blank" rel="noopener noreferrer">
-                  <img src={imgGeneral + this.imgPdf} alt="pdf jóvenes y adultos" />
-                </a>
-              </div>
-
-              <div className="col-3 text-center">
-                <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf"} target="_blank" rel="noopener noreferrer">
-                  <img src={imgGeneral + this.imgPdf} alt="pdf educación preescolar" />
-                </a>
-              </div>
-
-              <div className="col-3 text-center">
-                <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/momentos_reflexivos_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
-                  <img src={imgGeneral + this.imgPdf} alt="pdf momentos reflexivos para transformación" />
-                </a>
-              </div>
-
-            </div>
-
-            <div className="row">
-
-              <div className="col-3 text-center">
-                <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
+                </a><br/>
+                  <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
                   Orientaciones para la mediación generales
                 </a>
               </div>
 
-              <div className="col-3 text-center">
+              <div className="col-sm-3 text-center">
+                <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf"} target="_blank" rel="noopener noreferrer">
+                  <img src={imgGeneral + this.imgPdf} alt="pdf jóvenes y adultos" />
+                </a><br/>
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf"} target="_blank" rel="noopener noreferrer">
                   Orientaciones para la mediación jóvenes y adultos
               </a>
               </div>
 
-              <div className="col-3 text-center">
+              <div className="col-sm-3 text-center">
+                <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf"} target="_blank" rel="noopener noreferrer">
+                  <img src={imgGeneral + this.imgPdf} alt="pdf educación preescolar" />
+                </a><br/>
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf"} target="_blank" rel="noopener noreferrer">
                   Orientaciones para la mediación pedagógica por habilidades para la Educación Preescolar
               </a>
               </div>
 
-              <div className="col-3 text-center">
+              <div className="col-sm-3 text-center">
+                <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/momentos_reflexivos_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
+                  <img src={imgGeneral + this.imgPdf} alt="pdf momentos reflexivos para transformación" />
+                </a><br/>
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/momentos_reflexivos_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
                   Orientaciones: Momentos reflexivos para la mediación pedagógica transformadora
               </a>
               </div>
 
             </div>
+    
 
           </div>
         </React.Fragment>
