@@ -5,7 +5,7 @@ header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
 $sql= "SELECT recursos.id, recursos.nombre, recursos.id_nivel, recursos.descripcion,recursos.url, niveles.nivel, recursos.materia,recursos.anno, recursos.img_educatico, recursos.apoyos FROM recursos INNER JOIN niveles ON niveles.id = recursos.id_nivel WHERE recursos.borrado =0";
 include "conectar.php";
-sleep(1);
+//sleep(1);
 function desconectar($conexion){
 
     $close = mysqli_close($conexion);
