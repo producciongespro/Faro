@@ -8,7 +8,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $JSONData = file_get_contents("php://input");
 $dataObject = json_decode($JSONData);  
 require 'conectar.php';
-
+require 'bitacora.php';
 $id_nivel = $dataObject-> id_nivel;
 if (isset ($dataObject-> materia)) {
   $materia =  utf8_decode($dataObject-> materia); 
@@ -35,18 +35,9 @@ $img_educatico = utf8_decode($dataObject-> img_educatico);
     $rs = mysqli_query($conn,"SELECT id from recursos ORDER BY id DESC LIMIT 1");
     if ($row = mysqli_fetch_row($rs)) {
         $id_ultimo = trim($row[0]);
-        registrar_bitacora($conn, $usuario,$id_ultimo);
+        registrar_bitacora($conn, $usuario,$id_ultimo,'Agregar','Recursos');
     }
-        // echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
   } else {
     echo json_encode(array('error'=>'true','msj'=>$conn->error)); 
   }
-
-function registrar_bitacora($conn,$usuario,$id_ultimo){
-  $sql2 = "INSERT INTO `bitacora`(`id_usuario`, `evento`, `id_registro`, `tabla`) VALUES ('$usuario','Agrega recurso','$id_ultimo','Recursos')";
-  if ($conn->query($sql2) === TRUE) { 
-    echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
-  $conn->close();
-}
-}
 ?>
