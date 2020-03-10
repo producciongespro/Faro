@@ -29,14 +29,24 @@ $img_educatico = utf8_decode($dataObject-> img_educatico);
       die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = "INSERT INTO `recursos`(`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, img_educatico, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion','$id_nivel','$anno','$url','$img_educatico','$materia','$apoyo','$usuario')";
+  $sql = "INSERT INTO `recursos`(`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion','$id_nivel','$anno','$url','$img_educatico','$materia','$apoyo','$usuario')";
 
-  if ($conn->query($sql) === TRUE) {
-        echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
+  if ($conn->query($sql) === TRUE) { 
+    $rs = mysqli_query($conn,"SELECT id from recursos ORDER BY id DESC LIMIT 1");
+    if ($row = mysqli_fetch_row($rs)) {
+        $id_ultimo = trim($row[0]);
+        registrar_bitacora($conn, $usuario,$id_ultimo);
+    }
+        // echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
   } else {
     echo json_encode(array('error'=>'true','msj'=>$conn->error)); 
   }
 
+function registrar_bitacora($conn,$usuario,$id_ultimo){
+  $sql2 = "INSERT INTO `bitacora`(`id_usuario`, `evento`, `id_registro`, `tabla`) VALUES ('$usuario','Agrega recurso','$id_ultimo','Recursos')";
+  if ($conn->query($sql2) === TRUE) { 
+    echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
   $conn->close();
-
+}
+}
 ?>
