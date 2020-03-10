@@ -17,6 +17,7 @@ $usuario =  utf8_decode($dataObject-> id_usuario);
 
    if($resultadoActualizacion)
    {
+    registrar_bitacora($conn, $usuario,$id,'Recupera','Recursos');
     echo json_encode(array('error'=>'false','msj'=>'Datos recuperados de forma exitosa'));
    }
    else

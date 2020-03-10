@@ -36,6 +36,7 @@ $img_educatico = utf8_decode($dataObject-> img_educatico);
     if ($row = mysqli_fetch_row($rs)) {
         $id_ultimo = trim($row[0]);
         registrar_bitacora($conn, $usuario,$id_ultimo,'Agregar','Recursos');
+        echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
     }
   } else {
     echo json_encode(array('error'=>'true','msj'=>$conn->error)); 
