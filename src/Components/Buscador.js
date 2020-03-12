@@ -253,7 +253,7 @@ class Buscador extends Component {
                             <div className="card-body">
                                 <a href={dataGeneral[index].url}
                                  target="_blank"
-                                 rel="noopener"
+                                 rel="noopener noreferrer"
                                 >
                                     <h5 className="card-title">
                                         {dataGeneral[index].nombre}
@@ -272,7 +272,7 @@ class Buscador extends Component {
                                     href={dataGeneral[index].url}
                                     className="card-link"
                                     target="_blank"
-                                    rel="noopener"
+                                    rel="noopener noreferrer"
                                 >
                                     Ver recurso <i className="fas fa-eye" ></i>                                    
                             </a>
