@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 05-03-2020 a las 14:59:39
--- Versión del servidor: 5.7.19
--- Versión de PHP: 5.6.31
+-- Tiempo de generación: 12-03-2020 a las 17:47:36
+-- Versión del servidor: 5.7.21
+-- Versión de PHP: 7.1.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `niveles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nivel` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `niveles`
@@ -65,7 +65,11 @@ CREATE TABLE IF NOT EXISTS `niveles` (
 INSERT INTO `niveles` (`id`, `nivel`) VALUES
 (1, 'Preescolar'),
 (2, 'Primaria'),
-(3, 'Secundaria');
+(3, 'Secundaria'),
+(4, 'Educación intercultural'),
+(5, 'Educación Jóvenes y adultos'),
+(6, 'Programa Nacional de Ferias'),
+(7, 'Programa Bandera Azul');
 
 -- --------------------------------------------------------
 
@@ -110,24 +114,32 @@ CREATE TABLE IF NOT EXISTS `recursos` (
   `fecha_ingreso` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `borrado` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `recursos`
 --
 
 INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `materia`, `img_educatico`, `apoyos`, `id_usuario`, `fecha_ingreso`, `borrado`) VALUES
-(1, 'El círculo cromático actualizado desde PHP', 'Video de los colores primarios y secundarios/colores fríos y cálidos.', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-02-04 19:17:26', 0),
-(2, 'La identidad desde PHP', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 106, '2020-02-04 19:17:26', 0),
-(3, 'Prueba de español 1', 'español ejemplo 1', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/orientados.jpg', 0, 106, '2020-02-04 19:17:26', 0),
-(4, 'Prueba de español 2', 'español para sexto', 2, 'Sexto', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/recursos-19.png', 0, 106, '2020-02-04 19:17:26', 0),
-(5, 'Prueba de Biologia', 'biología noveno', 3, 'Noveno\r\n', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Biología', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/weatherwise.jpg', 0, 2, '2020-02-04 19:17:26', 0),
-(9, 'Los pepitos inteligentes', 'Prueba  1 de mate ', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 2, '2020-03-02 20:00:28', 0),
+(1, 'El círculo cromático actualizado desde PHP', 'Video de los colores primarios y secundarios/colores fr?os y c?lidos.', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-02-04 19:17:26', 0),
+(2, 'La identidad desde PHP en I ciclo', 'Video sobre la identidad en el descubrimiento de mis favoritos. I Ciclo', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 106, '2020-02-04 19:17:26', 0),
+(3, 'apoyo Español ', 'español ejemplo 1 editado con apoyo', 2, 'Quinto,Sexto', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/orientados.jpg', 1, 106, '2020-02-04 19:17:26', 0),
+(4, 'Las palabras saltarinas', 'español para primero  segundo 789', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/recursos-19.png', 0, 106, '2020-02-04 19:17:26', 0),
+(5, 'Prueba de Biologia', 'biología noveno', 3, 'Noveno', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Biología', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/weatherwise.jpg', 0, 2, '2020-02-04 19:17:26', 0),
+(9, 'Los pepitos inteligentes', 'Prueba  1 de mate ', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-02 20:00:28', 1),
 (6, 'Tercer recurso Plasticas\r\n', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 106, '2020-02-04 19:17:26', 0),
-(7, 'maqueta', 'prueba de recurso', 2, 'Sexto', 'https://www.mep.go.cr/educatico', 'Ciencias', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 2, '2020-03-02 13:18:23', 0),
+(7, 'maqueta de volcan', 'prueba de recurso', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico', 'Ciencias', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-02 13:18:23', 0),
 (8, 'maqueta 456', 'otra', 2, 'Primero,Segundo', 'https://www.mep.go.cr/educatico/revista-conexiones-edicion-2019', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-02 14:11:34', 0),
-(10, 'Aplets dinámcos', 'Ejercita, con el apoyo de recursos dinámicos creados con el software educativo GeoGebra, algunas de las habilidades matemáticas del plan de estudio de matemática 2012, Costa Rica.', 3, 'Décimo', 'https://www.mep.go.cr/educatico/matematica-decimo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/IIInivel-a.jpg', 0, 2, '2020-03-05 14:25:31', 0),
-(11, ' Sucesiones y Patrones', 'Ven a clases a través de esta caricatura, realiza prácticas y aprende acerca de patrones y sucesiones.', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico/sucesiones-patrones', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/sucesiones-patrones.jpg', 0, 103, '2020-03-05 14:46:47', 0);
+(10, 'Amanda la Exploradora', 'Explorando con Amanda y sus aventuras', 2, 'Primero,Segundo', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Estudios Sociales', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 1, 106, '2020-03-04 20:43:54', 0),
+(11, 'Las tablas', 'Cuentos de Amanda', 2, 'Primero', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-09 19:36:39', 0),
+(12, 'pipito', 'defrgt', 1, 'vacio', 'https://www.mep.go.cr/educatico', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-11 20:41:08', 0),
+(13, 'pipito', 'dsds', 2, 'Primero', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', '-1', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-11 20:48:54', 0),
+(14, 'Los 5 sentidos', 'Prueba 2 de preescolar', 1, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-12 16:29:29', 0),
+(15, 'Recurso intercultural 1', 'Prueba intercultural 1', 4, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:41:56', 0),
+(16, 'Recurso 1 de Bandera azul ', 'Prueba bandera azul 1', 7, 'vacio', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:57:09', 0),
+(17, 'Funciones 123', 'test de años 1', 3, 'Sétimo,Octavo,Noveno', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-12 17:13:32', 0),
+(18, 'prueba mate años', 'prueba 456', 3, 'Décimo,Undécimo,Duodécimo', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/artecontemporaneo.jpg', 0, 106, '2020-03-12 17:26:17', 0),
+(19, 'recurso de noveno mate', 'año noveno ', 3, 'Noveno', 'https://www.mep.go.cr/educatico/curso-interactivo-huertas-escolares', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-12 17:27:39', 0);
 
 -- --------------------------------------------------------
 
