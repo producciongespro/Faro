@@ -186,20 +186,48 @@ class Buscador extends Component {
 
         }
 
-        console.log("dataGeneral", dataPreescolar);
+        console.log("dataPreescolar", dataPreescolar);
 
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < dataPreescolar.length; index++) {
             arrayHtml = (
-                <React.Fragment>
-                    <h5>    {dataPreescolar[index].nombre} </h5>
-                    <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataPreescolar[index].descripcion}  </span>
-                    <br />
 
-                    <a href={dataPreescolar[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
-                    <hr />
-                </React.Fragment>
+
+                <div key={"tarjeta" + index} className="col-4">
+                <div className="card">
+                    <img
+                        src={dataPreescolar[index].img_educatico}
+                        className="card-img-top"
+                        alt={"imagen previa del recurso " + dataPreescolar[index].nombre}
+                    />
+                    <div className="card-body">
+                        <a href={dataPreescolar[index].url}
+                         target="_blank"
+                         rel="noopener noreferrer"
+                        >
+                            <h5 className="card-title">
+                                {dataPreescolar[index].nombre}
+                            </h5>
+                        </a>
+                        <p className="card-text">
+                            {dataPreescolar[index].descripcion}
+                        </p>
+                    </div>
+                    <div className="card-body">                        
+                        <a
+                            href={dataPreescolar[index].url}
+                            className="card-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ver recurso <i className="fas fa-eye" ></i>                                    
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+                
             )
             arrayTmp.push(arrayHtml);
         };
@@ -407,7 +435,7 @@ class Buscador extends Component {
                             {
                                 // SI NIVEL ES DIFERNETE DE INTERCULTURAL SE RENDERIZA EL SELECT AÑO
                                 (this.props.origen !== "intercultural") && (
-                                    (this.props.origen !== "preescolar") ? (
+                                    (this.props.origen !== "Preescolar") ? (
                                         <div className="input-group mb-3">
                                             <div className="input-group-prepend">
                                                 <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>

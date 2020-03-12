@@ -393,7 +393,7 @@ class App extends Component {
       currentPage: <Buscador origen={origen} handlerCerrarBuscador={this.handlerCerrarBuscador} />
     });
   }
-
+  
   handlerCerrarBuscador = () => {
     switch (this.plataforma) {
       case "movil":
