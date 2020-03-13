@@ -1,0 +1,13 @@
+.card-header {
+    background-color: #e23a59;
+    min-height: 5em;
+    color: aliceblue;
+    font-weight: bold;    
+}
+
+
+.img-previas {
+    height: 128px;
+    width: auto;
+    border-radius: 8%;
+}
