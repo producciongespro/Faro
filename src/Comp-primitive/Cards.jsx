@@ -1,6 +1,10 @@
 import React from 'react';
 import images from "../data/images.json";
+import config from '../data/config/config.json';
 import './cards.css';
+
+const asst =  config.img.desarrolloProfesional;
+console.log("*****************ast",asst);
 
 var img = images[0];
 
@@ -13,15 +17,15 @@ const CardsImage = (props) => {
         <div className="col-sm-6">
         <div className="row">
         <div className="card text-center m-2">
-          <div class="card-header">
+          <div className="card-header">
             Dirigido a {props.item.meta}
           </div>
-          <div class="card-body">
-            <img src={props.item.icono} alt="imagen del curso" className="img-thumbnail img-previas" />
-            <h5 class="card-title">
+          <div className="card-body">
+            <img src={ asst +  props.item.icono} alt="imagen del curso" className="img-thumbnail img-previas" />
+            <h5 className="card-title">
                 {props.item.nombre}
             </h5>
-            <p class="card-text">
+            <p className="card-text">
               {props.item.proposito}
             </p>            
           </div>
