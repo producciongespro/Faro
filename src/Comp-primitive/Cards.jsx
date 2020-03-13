@@ -29,7 +29,14 @@ const CardsImage = (props) => {
             </p>            
           </div>
           <div className="card-footer text-muted">
-            Inicio el {props.item.inicio}
+            {
+            //props.item.inicio
+            }
+            <a href="https://www.facebook.com/idpmep/" target="_blnak"  >
+              <i>
+                Clic aquí para más información de los cursos en Facebook.
+              </i>
+            </a>            
           </div>
         </div>
         </div>
