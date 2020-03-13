@@ -2,9 +2,8 @@ import React from 'react';
 import images from "../data/images.json";
 import config from '../data/config/config.json';
 import './cards.css';
-
 const asst =  config.img.desarrolloProfesional;
-console.log("*****************ast",asst);
+
 
 var img = images[0];
 

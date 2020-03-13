@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 
 import Cards from "../Comp-primitive/Cards.jsx";
-import ImagesJson from "../data/images.json";
 
 
 //Json con información:
 import cursos from '../data/desarrollo/cursos.json';
 import videoteca from '../data/desarrollo/videoteca.json';
 import otrasOfertas from '../data/desarrollo/otras_ofertas.json';
+
+import config from '../data/config/config';
+const asst = config.img.desarrolloProfesional;
+const imgGen = config.img.general;
 
 class Catalogo extends Component {
     constructor(props) {
@@ -21,7 +24,6 @@ class Catalogo extends Component {
         this.tmpArray = "";
         this.limiteArray = "0";
         this.imagenEncabezado = "";
-        this.images = ImagesJson[0];
         this.leyendaCursos = "";
         this.colorFondo = "";
     }
@@ -31,8 +33,8 @@ class Catalogo extends Component {
 
 
 
-    componentWillMount() {
-        console.log("Subcategoria:", this.props.idCat);
+    UNSAFE_componentWillMount() {
+ //       console.log("Subcategoria:", this.props.idCat);
         switch (this.props.idCat) {
             case "cursos":
                 this.tmpArray = cursos;
@@ -71,7 +73,7 @@ class Catalogo extends Component {
 
         this.limiteArray = this.tmpArray.length;
 
-        console.log("Longitud del array", this.limiteArray);
+//        console.log("Longitud del array", this.limiteArray);
 
 
     }
@@ -87,7 +89,7 @@ class Catalogo extends Component {
         $("#btnDecrementar").fadeIn("slow");
 
         //Aumenta el indice para cargar los demás objetos del array
-        console.log("INDICE", this.state.indice);
+        //console.log("INDICE", this.state.indice);
 
         //Validaciones particulares de fin de arreglo para evitar que el usuario provoque un desbordamiento.
         //Caso  IDP Otras ofertas educativas         
@@ -98,7 +100,7 @@ class Catalogo extends Component {
         //Caso  IDP cursos y videoteca
         if (this.state.indice === this.tmpArray.length - 4 || this.state.indice === 28) {
             $("#btnIncrementar").fadeOut("slow");
-            console.log("fin superior");
+            //console.log("fin superior");
         } else {
             this.setState({
                 indice: this.state.indice + 4
@@ -122,7 +124,7 @@ class Catalogo extends Component {
         this.setState({
             indice: this.state.indice - 4
         }, () => {
-            console.log("DECREMENTAR", this.state.indice);
+            //console.log("DECREMENTAR", this.state.indice);
             //valida si el estado cambió a 0 desaparece el botón retroceso
             if (this.state.indice <= 0) {
                 $("#btnDecrementar").fadeOut();
@@ -144,9 +146,9 @@ class Catalogo extends Component {
             <React.Fragment>
                 <div className="row">
                     <div id="" className={this.colorFondo}>
-                        <img className="img-fluid" id="imgTitulo" src={this.images[this.imagenEncabezado]} alt="titulo" />
+                        <img className="img-fluid" id="imgTitulo" src={asst + "titulo_cursos_virtuales.png" } alt="titulo" />
 
-                        <img className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver" onClick={this.props.handlerCloseCatalog} src={this.images.BtnVolver} alt="Volver" />
+                        <img className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver" onClick={this.props.handlerCloseCatalog} src={imgGen + "btn_volver.png"} alt="Volver" />
                     </div>
 
                 </div>
@@ -170,13 +172,13 @@ class Catalogo extends Component {
                 </div>
                 <div className="row">
                     <div className="col-11 pie">
-                        <img className="botones-portada hvr-pop img-fluid div-oculta" id="btnDecrementar" onClick={this.decrementarIndice} src={this.images.DesarrolloBtnIzq} alt="decrementar" />
+                        <img className="botones-portada hvr-pop img-fluid div-oculta" id="btnDecrementar" onClick={this.decrementarIndice} src={asst + "img_flechaiz.jpg"} alt="decrementar" />
                     </div>
 
                     <div className="col-1 pie">
                         {
                             //Si las dimensiones del array son menores que cuatro no se van a presentar botones de navegación
-                            this.limiteArray > 4 && <img className="botones-portada hvr-pop img-fluid" id="btnIncrementar" onClick={this.incrementarIndice} src={this.images.DesarrolloBtnDer} alt="incrementar" />
+                            this.limiteArray > 4 && <img className="botones-portada hvr-pop img-fluid" id="btnIncrementar" onClick={this.incrementarIndice} src={asst + "img_flechader.jpg"} alt="incrementar" />
                         }
                     </div>
                 </div>
