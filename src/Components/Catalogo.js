@@ -22,7 +22,7 @@ class Catalogo extends Component {
         }
         //Caraga el array  de acuerdo a la opción seleccionada en "desarrollo profesional"
         this.tmpArray = "";
-        this.limiteArray = "0";
+        this.limiteArray = 0;
         this.imagenEncabezado = "";
         this.leyendaCursos = "";
         this.colorFondo = "";
@@ -171,11 +171,11 @@ class Catalogo extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-11 pie">
+                    <div className="col-6 text-right">
                         <img className="botones-portada hvr-pop img-fluid div-oculta" id="btnDecrementar" onClick={this.decrementarIndice} src={asst + "img_flechaiz.jpg"} alt="decrementar" />
                     </div>
 
-                    <div className="col-1 pie">
+                    <div className="col-6 text-left ">                        
                         {
                             //Si las dimensiones del array son menores que cuatro no se van a presentar botones de navegación
                             this.limiteArray > 4 && <img className="botones-portada hvr-pop img-fluid" id="btnIncrementar" onClick={this.incrementarIndice} src={asst + "img_flechader.jpg"} alt="incrementar" />
