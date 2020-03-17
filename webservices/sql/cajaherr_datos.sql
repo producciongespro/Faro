@@ -2,10 +2,10 @@
 -- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 16-03-2020 a las 21:29:00
--- Versión del servidor: 5.7.21
--- Versión de PHP: 7.1.16
+-- Host: 127.0.0.1:3306
+-- Generation Time: Mar 17, 2020 at 06:04 PM
+-- Server version: 5.7.21
+-- PHP Version: 7.1.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `cajaherr_datos`
+-- Database: `cajaherr_datos`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `asignaturas_primaria`
+-- Table structure for table `asignaturas_primaria`
 --
 
 DROP TABLE IF EXISTS `asignaturas_primaria`;
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `asignaturas_primaria` (
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `asignaturas_primaria`
+-- Dumping data for table `asignaturas_primaria`
 --
 
 INSERT INTO `asignaturas_primaria` (`id`, `nombre`, `observaciones`) VALUES
@@ -51,7 +51,7 @@ INSERT INTO `asignaturas_primaria` (`id`, `nombre`, `observaciones`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `asignaturas_secundaria`
+-- Table structure for table `asignaturas_secundaria`
 --
 
 DROP TABLE IF EXISTS `asignaturas_secundaria`;
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `asignaturas_secundaria` (
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `asignaturas_secundaria`
+-- Dumping data for table `asignaturas_secundaria`
 --
 
 INSERT INTO `asignaturas_secundaria` (`id`, `nombre`, `observaciones`) VALUES
@@ -79,7 +79,7 @@ INSERT INTO `asignaturas_secundaria` (`id`, `nombre`, `observaciones`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `bitacora`
+-- Table structure for table `bitacora`
 --
 
 DROP TABLE IF EXISTS `bitacora`;
@@ -91,47 +91,21 @@ CREATE TABLE IF NOT EXISTS `bitacora` (
   `id_registro` int(11) NOT NULL COMMENT 'Identificador el ingreso modificado',
   `tabla` varchar(256) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Nombre de la tabla a la que pertenece el registro afectado',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Tabla para documentar eventos de los usuarios en el sistema';
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Tabla para documentar eventos de los usuarios en el sistema';
 
 --
--- Volcado de datos para la tabla `bitacora`
+-- Dumping data for table `bitacora`
 --
 
 INSERT INTO `bitacora` (`id`, `id_usuario`, `evento`, `fecha_evento`, `id_registro`, `tabla`) VALUES
-(1, '106', 'Agrega recurso', '2020-03-10 15:34:16', 1, 'recursos');
+(1, '106', 'Agrega recurso', '2020-03-10 15:34:16', 1, 'recursos'),
+(2, '106', 'Agregar', '2020-03-17 13:33:49', 22, 'Recursos'),
+(3, '106', 'Agregar', '2020-03-17 17:39:28', 23, 'Recursos');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `contenidos_ae`
---
-
-DROP TABLE IF EXISTS `contenidos_ae`;
-CREATE TABLE IF NOT EXISTS `contenidos_ae` (
-  `idContenido` int(11) NOT NULL AUTO_INCREMENT,
-  `nombreContenido` varchar(256) CHARACTER SET latin1 NOT NULL,
-  `idPrograma` int(11) NOT NULL,
-  `descriptor` varchar(512) DEFAULT NULL,
-  `link` varchar(512) CHARACTER SET latin1 NOT NULL,
-  PRIMARY KEY (`idContenido`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `contenidos_ae`
---
-
-INSERT INTO `contenidos_ae` (`idContenido`, `nombreContenido`, `idPrograma`, `descriptor`, `link`) VALUES
-(1, 'Guía de implementación del Galardón Centros Educativos', 1, NULL, 'https://www.mep.go.cr/sites/default/files/page/adjuntos/guia-implementacion-centros-educativos-2014_0.pdf'),
-(2, 'Manual para neutralizar la huella de carbono en centros educativos', 1, NULL, 'https://www.mep.go.cr/sites/default/files/page/adjuntos/manualbanderaazul.pdf'),
-(7, 'Video Testimonial Oscar', 5, NULL, 'https://www.youtube.com/watch?v=0JPLxzjRvFw&feature=youtu.be'),
-(5, 'Video informativo', 4, NULL, 'https://www.youtube.com/watch?time_continue=4&v=xfgrViUtigc&feature=emb_logo'),
-(6, 'Calendario SCE 2020', 4, NULL, 'https://www.mep.go.cr/sites/default/files/page/adjuntos/calendario-sce-2020.pdf'),
-(8, 'Video informativo ', 6, NULL, 'https://www.youtube.com/watch?v=DdgKR3pqg7M&feature=emb_logo');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `estadisticas`
+-- Table structure for table `estadisticas`
 --
 
 DROP TABLE IF EXISTS `estadisticas`;
@@ -145,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `estadisticas` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `estadisticas`
+-- Dumping data for table `estadisticas`
 --
 
 INSERT INTO `estadisticas` (`clim`, `eval`, `recu`, `docu`, `prof`, `plan`) VALUES
@@ -154,7 +128,7 @@ INSERT INTO `estadisticas` (`clim`, `eval`, `recu`, `docu`, `prof`, `plan`) VALU
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `niveles`
+-- Table structure for table `niveles`
 --
 
 DROP TABLE IF EXISTS `niveles`;
@@ -165,7 +139,7 @@ CREATE TABLE IF NOT EXISTS `niveles` (
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `niveles`
+-- Dumping data for table `niveles`
 --
 
 INSERT INTO `niveles` (`id`, `nombreNivel`) VALUES
@@ -180,7 +154,7 @@ INSERT INTO `niveles` (`id`, `nombreNivel`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `poblaciones`
+-- Table structure for table `poblaciones`
 --
 
 DROP TABLE IF EXISTS `poblaciones`;
@@ -190,7 +164,7 @@ CREATE TABLE IF NOT EXISTS `poblaciones` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `poblaciones`
+-- Dumping data for table `poblaciones`
 --
 
 INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
@@ -202,7 +176,7 @@ INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `programas_ae`
+-- Table structure for table `programas_ae`
 --
 
 DROP TABLE IF EXISTS `programas_ae`;
@@ -214,7 +188,7 @@ CREATE TABLE IF NOT EXISTS `programas_ae` (
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `programas_ae`
+-- Dumping data for table `programas_ae`
 --
 
 INSERT INTO `programas_ae` (`idPrograma`, `nombrePrograma`, `observacionesAgenda`) VALUES
@@ -232,7 +206,7 @@ INSERT INTO `programas_ae` (`idPrograma`, `nombrePrograma`, `observacionesAgenda
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `recursos`
+-- Table structure for table `recursos`
 --
 
 DROP TABLE IF EXISTS `recursos`;
@@ -250,21 +224,21 @@ CREATE TABLE IF NOT EXISTS `recursos` (
   `fecha_ingreso` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `borrado` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `recursos`
+-- Dumping data for table `recursos`
 --
 
 INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `materia`, `img_educatico`, `apoyos`, `id_usuario`, `fecha_ingreso`, `borrado`) VALUES
 (1, 'El círculo cromático actualizado desde PHP', 'Video de los colores primarios y secundarios/colores fr?os y c?lidos.', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-02-04 19:17:26', 0),
 (2, 'La identidad desde PHP en I ciclo', 'Video sobre la identidad en el descubrimiento de mis favoritos. I Ciclo', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 106, '2020-02-04 19:17:26', 0),
-(3, 'apoyo Español ', 'español ejemplo 1 editado con apoyo', 2, 'Quinto,Sexto', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/orientados.jpg', 1, 106, '2020-02-04 19:17:26', 0),
+(3, 'apoyo Español editado 456', 'español ejemplo 1 editado con apoyo 456', 2, 'Quinto,Sexto', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/orientados.jpg', 1, 106, '2020-02-04 19:17:26', 0),
 (4, 'Las palabras saltarinas', 'español para primero  segundo 789', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/recursos-19.png', 0, 106, '2020-02-04 19:17:26', 0),
 (5, 'Prueba de Biologia', 'biología noveno', 3, 'Décimo', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Biología', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/weatherwise.jpg', 0, 2, '2020-02-04 19:17:26', 0),
 (9, 'Los pepitos inteligentes', 'Prueba  1 de mate ', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 103, '2020-03-02 20:00:28', 0),
 (6, 'Tercer recurso Plasticas\r\n', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 106, '2020-02-04 19:17:26', 0),
-(7, 'maqueta de volcan', 'prueba de recurso', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico', 'Ciencias', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-02 13:18:23', 0),
+(7, 'maqueta de volcan editado', 'prueba de recurso 456', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico', 'Ciencias', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-02 13:18:23', 0),
 (8, 'maqueta 456', 'otra', 2, 'Primero,Segundo', 'https://www.mep.go.cr/educatico/revista-conexiones-edicion-2019', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-02 14:11:34', 0),
 (10, 'Amanda la Exploradora', 'Explorando con Amanda y sus aventuras', 2, 'Primero,Segundo', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Estudios Sociales', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 1, 106, '2020-03-04 20:43:54', 0),
 (11, 'Las tablas', 'Cuentos de Amanda', 2, 'Primero', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-09 19:36:39', 0),
@@ -272,17 +246,18 @@ INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`
 (13, 'pipito', 'dsds', 2, 'Primero', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', '-1', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-11 20:48:54', 0),
 (14, 'Los 5 sentidos', 'Prueba 2 de preescolar', 1, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 103, '2020-03-12 16:29:29', 0),
 (15, 'Recurso intercultural 1', 'Prueba intercultural 1', 4, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:41:56', 0),
-(16, 'Recurso 1 de Bandera azul ', 'Prueba bandera azul 1', 7, 'vacio', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:57:09', 0),
-(17, 'Funciones 123', 'test de años 1', 3, 'Sétimo,Octavo,Noveno', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-12 17:13:32', 0),
+(16, 'bandera azul editada segunda vez', 'editada desde postman 2', 7, 'vacio', 'www.mepg.go.cr', 'Deportivos 456', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:57:09', 0),
+(17, 'Funciones 123 editada 1', 'test de años 1 edicion uno', 3, 'Sétimo,Octavo,Noveno', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-12 17:13:32', 0),
 (18, 'prueba mate años', 'prueba 456', 3, 'Décimo,Undécimo,Duodécimo', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/artecontemporaneo.jpg', 0, 106, '2020-03-12 17:26:17', 0),
 (19, 'recurso de noveno mate', 'año noveno ', 3, 'Noveno', 'https://www.mep.go.cr/educatico/curso-interactivo-huertas-escolares', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-12 17:27:39', 0),
 (20, 'Manual para neutralizar la huella de carbono en centros educativos', 'no disponible', 0, '0', 'https://www.mep.go.cr/sites/default/files/page/adjuntos/manualbanderaazul.pdf', '2', NULL, 0, 2, '2020-03-16 19:31:51', 0),
-(21, 'Manual para neutralizar la huella de carbono en centros educativos', 'no disponible', 0, '0', 'https://www.mep.go.cr/sites/default/files/page/adjuntos/manualbanderaazul.pdf', '2', NULL, 0, 2, '2020-03-16 19:32:07', 0);
+(22, 'Video informativo editado 4', 'prueba 1 AE editada por cuarta vez', 7, 'vacio', 'https://www.youtube.com/watch?time_continue=4&v=xfgrViUtigc&feature=emb_logo', 'Servicio comunal', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/motivacion-maestros.jpg', 0, 106, '2020-03-17 13:33:49', 0),
+(23, 'Juntos en el teatro', 'prueba teatro', 7, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Teatro en el aula', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-17 17:39:28', 0);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `reportes`
+-- Table structure for table `reportes`
 --
 
 DROP TABLE IF EXISTS `reportes`;
@@ -297,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `reportes` (
 ) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `reportes`
+-- Dumping data for table `reportes`
 --
 
 INSERT INTO `reportes` (`id`, `nombre`, `correo`, `detalle`, `atendida`, `fecha`) VALUES
@@ -317,7 +292,7 @@ INSERT INTO `reportes` (`id`, `nombre`, `correo`, `detalle`, `atendida`, `fecha`
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Table structure for table `usuarios`
 --
 
 DROP TABLE IF EXISTS `usuarios`;
@@ -339,7 +314,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 ) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Dumping data for table `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `usuario`, `clave`, `nombre`, `apellido1`, `apellido2`, `departamento`, `ultimoAcceso`, `token`, `token_password`, `password_request`, `tipoUsuario`, `activo`) VALUES
