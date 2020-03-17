@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 12-03-2020 a las 17:50:57
+-- Tiempo de generación: 16-03-2020 a las 21:29:00
 -- Versión del servidor: 5.7.21
 -- Versión de PHP: 7.1.16
 
@@ -21,6 +21,60 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `cajaherr_datos`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `asignaturas_primaria`
+--
+
+DROP TABLE IF EXISTS `asignaturas_primaria`;
+CREATE TABLE IF NOT EXISTS `asignaturas_primaria` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(128) CHARACTER SET utf8 NOT NULL,
+  `observaciones` varchar(128) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `asignaturas_primaria`
+--
+
+INSERT INTO `asignaturas_primaria` (`id`, `nombre`, `observaciones`) VALUES
+(1, 'Matemática', ''),
+(2, 'Ciencias', ''),
+(3, 'Español', ''),
+(4, 'Estudios Sociales', ''),
+(5, 'Artes Plásticas', ''),
+(6, 'Inglés', '');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `asignaturas_secundaria`
+--
+
+DROP TABLE IF EXISTS `asignaturas_secundaria`;
+CREATE TABLE IF NOT EXISTS `asignaturas_secundaria` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(128) NOT NULL,
+  `observaciones` varchar(128) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `asignaturas_secundaria`
+--
+
+INSERT INTO `asignaturas_secundaria` (`id`, `nombre`, `observaciones`) VALUES
+(1, 'Espñaol', NULL),
+(2, 'Matemática', NULL),
+(3, 'Ciencias', NULL),
+(4, 'Estudios Sociales', NULL),
+(5, 'Biología', NULL),
+(6, 'Química', NULL),
+(7, 'Física', NULL),
+(8, 'Orientación', NULL);
 
 -- --------------------------------------------------------
 
@@ -45,6 +99,34 @@ CREATE TABLE IF NOT EXISTS `bitacora` (
 
 INSERT INTO `bitacora` (`id`, `id_usuario`, `evento`, `fecha_evento`, `id_registro`, `tabla`) VALUES
 (1, '106', 'Agrega recurso', '2020-03-10 15:34:16', 1, 'recursos');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `contenidos_ae`
+--
+
+DROP TABLE IF EXISTS `contenidos_ae`;
+CREATE TABLE IF NOT EXISTS `contenidos_ae` (
+  `idContenido` int(11) NOT NULL AUTO_INCREMENT,
+  `nombreContenido` varchar(256) CHARACTER SET latin1 NOT NULL,
+  `idPrograma` int(11) NOT NULL,
+  `descriptor` varchar(512) DEFAULT NULL,
+  `link` varchar(512) CHARACTER SET latin1 NOT NULL,
+  PRIMARY KEY (`idContenido`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `contenidos_ae`
+--
+
+INSERT INTO `contenidos_ae` (`idContenido`, `nombreContenido`, `idPrograma`, `descriptor`, `link`) VALUES
+(1, 'Guía de implementación del Galardón Centros Educativos', 1, NULL, 'https://www.mep.go.cr/sites/default/files/page/adjuntos/guia-implementacion-centros-educativos-2014_0.pdf'),
+(2, 'Manual para neutralizar la huella de carbono en centros educativos', 1, NULL, 'https://www.mep.go.cr/sites/default/files/page/adjuntos/manualbanderaazul.pdf'),
+(7, 'Video Testimonial Oscar', 5, NULL, 'https://www.youtube.com/watch?v=0JPLxzjRvFw&feature=youtu.be'),
+(5, 'Video informativo', 4, NULL, 'https://www.youtube.com/watch?time_continue=4&v=xfgrViUtigc&feature=emb_logo'),
+(6, 'Calendario SCE 2020', 4, NULL, 'https://www.mep.go.cr/sites/default/files/page/adjuntos/calendario-sce-2020.pdf'),
+(8, 'Video informativo ', 6, NULL, 'https://www.youtube.com/watch?v=DdgKR3pqg7M&feature=emb_logo');
 
 -- --------------------------------------------------------
 
@@ -77,8 +159,8 @@ INSERT INTO `estadisticas` (`clim`, `eval`, `recu`, `docu`, `prof`, `plan`) VALU
 
 DROP TABLE IF EXISTS `niveles`;
 CREATE TABLE IF NOT EXISTS `niveles` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nivel` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `id` int(11) NOT NULL,
+  `nombreNivel` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -86,14 +168,14 @@ CREATE TABLE IF NOT EXISTS `niveles` (
 -- Volcado de datos para la tabla `niveles`
 --
 
-INSERT INTO `niveles` (`id`, `nivel`) VALUES
+INSERT INTO `niveles` (`id`, `nombreNivel`) VALUES
 (1, 'Preescolar'),
 (2, 'Primaria'),
 (3, 'Secundaria'),
 (4, 'Educación intercultural'),
-(5, 'Educación Jóvenes y adultos'),
-(6, 'Programa Nacional de Ferias'),
-(7, 'Programa Bandera Azul');
+(5, 'Educación jóvenes y adultos'),
+(6, 'Programa nacional de ferias'),
+(7, 'Agenda estudiantil');
 
 -- --------------------------------------------------------
 
@@ -120,6 +202,36 @@ INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `programas_ae`
+--
+
+DROP TABLE IF EXISTS `programas_ae`;
+CREATE TABLE IF NOT EXISTS `programas_ae` (
+  `idPrograma` int(11) NOT NULL AUTO_INCREMENT,
+  `nombrePrograma` varchar(128) CHARACTER SET latin1 NOT NULL,
+  `observacionesAgenda` varchar(128) CHARACTER SET latin1 DEFAULT NULL,
+  PRIMARY KEY (`idPrograma`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `programas_ae`
+--
+
+INSERT INTO `programas_ae` (`idPrograma`, `nombrePrograma`, `observacionesAgenda`) VALUES
+(1, 'Bandera azul', NULL),
+(2, 'Festival Estudiantil de las Artes', NULL),
+(3, 'Juegos Deportivos estudiantiles', NULL),
+(4, 'Servicio comunal', NULL),
+(5, 'Aulas de escucha', NULL),
+(6, 'Érase una Vez', NULL),
+(7, 'Teatro en el aula', NULL),
+(8, 'Ruta de museo', NULL),
+(9, 'Gobierno estudiantil', NULL),
+(10, 'Programa Convivir', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `recursos`
 --
 
@@ -138,7 +250,7 @@ CREATE TABLE IF NOT EXISTS `recursos` (
   `fecha_ingreso` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `borrado` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `recursos`
@@ -149,8 +261,8 @@ INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`
 (2, 'La identidad desde PHP en I ciclo', 'Video sobre la identidad en el descubrimiento de mis favoritos. I Ciclo', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 106, '2020-02-04 19:17:26', 0),
 (3, 'apoyo Español ', 'español ejemplo 1 editado con apoyo', 2, 'Quinto,Sexto', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/orientados.jpg', 1, 106, '2020-02-04 19:17:26', 0),
 (4, 'Las palabras saltarinas', 'español para primero  segundo 789', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/recursos-19.png', 0, 106, '2020-02-04 19:17:26', 0),
-(5, 'Prueba de Biologia', 'biología noveno', 3, 'Noveno', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Biología', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/weatherwise.jpg', 0, 2, '2020-02-04 19:17:26', 0),
-(9, 'Los pepitos inteligentes', 'Prueba  1 de mate ', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-02 20:00:28', 1),
+(5, 'Prueba de Biologia', 'biología noveno', 3, 'Décimo', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Biología', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/weatherwise.jpg', 0, 2, '2020-02-04 19:17:26', 0),
+(9, 'Los pepitos inteligentes', 'Prueba  1 de mate ', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 103, '2020-03-02 20:00:28', 0),
 (6, 'Tercer recurso Plasticas\r\n', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 106, '2020-02-04 19:17:26', 0),
 (7, 'maqueta de volcan', 'prueba de recurso', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico', 'Ciencias', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-02 13:18:23', 0),
 (8, 'maqueta 456', 'otra', 2, 'Primero,Segundo', 'https://www.mep.go.cr/educatico/revista-conexiones-edicion-2019', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-02 14:11:34', 0),
@@ -158,12 +270,14 @@ INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`
 (11, 'Las tablas', 'Cuentos de Amanda', 2, 'Primero', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-09 19:36:39', 0),
 (12, 'pipito', 'defrgt', 1, 'vacio', 'https://www.mep.go.cr/educatico', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-11 20:41:08', 0),
 (13, 'pipito', 'dsds', 2, 'Primero', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', '-1', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-11 20:48:54', 0),
-(14, 'Los 5 sentidos', 'Prueba 2 de preescolar', 1, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-12 16:29:29', 0),
+(14, 'Los 5 sentidos', 'Prueba 2 de preescolar', 1, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 103, '2020-03-12 16:29:29', 0),
 (15, 'Recurso intercultural 1', 'Prueba intercultural 1', 4, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:41:56', 0),
 (16, 'Recurso 1 de Bandera azul ', 'Prueba bandera azul 1', 7, 'vacio', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:57:09', 0),
 (17, 'Funciones 123', 'test de años 1', 3, 'Sétimo,Octavo,Noveno', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-12 17:13:32', 0),
 (18, 'prueba mate años', 'prueba 456', 3, 'Décimo,Undécimo,Duodécimo', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/artecontemporaneo.jpg', 0, 106, '2020-03-12 17:26:17', 0),
-(19, 'recurso de noveno mate', 'año noveno ', 3, 'Noveno', 'https://www.mep.go.cr/educatico/curso-interactivo-huertas-escolares', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-12 17:27:39', 0);
+(19, 'recurso de noveno mate', 'año noveno ', 3, 'Noveno', 'https://www.mep.go.cr/educatico/curso-interactivo-huertas-escolares', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-12 17:27:39', 0),
+(20, 'Manual para neutralizar la huella de carbono en centros educativos', 'no disponible', 0, '0', 'https://www.mep.go.cr/sites/default/files/page/adjuntos/manualbanderaazul.pdf', '2', NULL, 0, 2, '2020-03-16 19:31:51', 0),
+(21, 'Manual para neutralizar la huella de carbono en centros educativos', 'no disponible', 0, '0', 'https://www.mep.go.cr/sites/default/files/page/adjuntos/manualbanderaazul.pdf', '2', NULL, 0, 2, '2020-03-16 19:32:07', 0);
 
 -- --------------------------------------------------------
 
