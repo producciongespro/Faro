@@ -180,7 +180,7 @@ class Buscador extends Component {
 
         //filtra el arreglo con solo datos de preescolar
         for (let index = 0; index < tmpArray.length; index++) {
-            if (tmpArray[index].nivel === "Preescolar") {
+            if (tmpArray[index].nombreNivel === "Preescolar") {
                 dataPreescolar.push(tmpArray[index]);
             }
 
@@ -264,7 +264,7 @@ class Buscador extends Component {
 
             console.log("resAnno", resAnno);
 
-            if (this.props.origen === dataGeneral[index].nivel && resAnno && dataGeneral[index].apoyos === this.apoyos) {
+            if (this.props.origen === dataGeneral[index].nombreNivel && resAnno && dataGeneral[index].apoyos === this.apoyos) {
 
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
