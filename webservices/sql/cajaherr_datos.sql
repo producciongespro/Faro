@@ -2,10 +2,10 @@
 -- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Mar 17, 2020 at 07:47 PM
--- Server version: 5.7.21
--- PHP Version: 7.1.16
+-- Servidor: 127.0.0.1:3306
+-- Tiempo de generación: 18-03-2020 a las 23:44:57
+-- Versión del servidor: 5.7.21
+-- Versión de PHP: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cajaherr_datos`
+-- Base de datos: `cajaherr_datos`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `asignaturas_primaria`
+-- Estructura de tabla para la tabla `asignaturas_primaria`
 --
 
 DROP TABLE IF EXISTS `asignaturas_primaria`;
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `asignaturas_primaria` (
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `asignaturas_primaria`
+-- Volcado de datos para la tabla `asignaturas_primaria`
 --
 
 INSERT INTO `asignaturas_primaria` (`id`, `nombre`, `observaciones`) VALUES
@@ -51,7 +51,7 @@ INSERT INTO `asignaturas_primaria` (`id`, `nombre`, `observaciones`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `asignaturas_secundaria`
+-- Estructura de tabla para la tabla `asignaturas_secundaria`
 --
 
 DROP TABLE IF EXISTS `asignaturas_secundaria`;
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `asignaturas_secundaria` (
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `asignaturas_secundaria`
+-- Volcado de datos para la tabla `asignaturas_secundaria`
 --
 
 INSERT INTO `asignaturas_secundaria` (`id`, `nombre`, `observaciones`) VALUES
@@ -79,7 +79,7 @@ INSERT INTO `asignaturas_secundaria` (`id`, `nombre`, `observaciones`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bitacora`
+-- Estructura de tabla para la tabla `bitacora`
 --
 
 DROP TABLE IF EXISTS `bitacora`;
@@ -91,21 +91,27 @@ CREATE TABLE IF NOT EXISTS `bitacora` (
   `id_registro` int(11) NOT NULL COMMENT 'Identificador el ingreso modificado',
   `tabla` varchar(256) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Nombre de la tabla a la que pertenece el registro afectado',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Tabla para documentar eventos de los usuarios en el sistema';
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Tabla para documentar eventos de los usuarios en el sistema';
 
 --
--- Dumping data for table `bitacora`
+-- Volcado de datos para la tabla `bitacora`
 --
 
 INSERT INTO `bitacora` (`id`, `id_usuario`, `evento`, `fecha_evento`, `id_registro`, `tabla`) VALUES
-(1, '106', 'Agrega recurso', '2020-03-10 15:34:16', 1, 'recursos'),
+(1, '106', 'Agregar', '2020-03-10 15:34:16', 1, 'recursos'),
 (2, '106', 'Agregar', '2020-03-17 13:33:49', 22, 'Recursos'),
-(3, '106', 'Agregar', '2020-03-17 17:39:28', 23, 'Recursos');
+(3, '106', 'Agregar', '2020-03-17 17:39:28', 23, 'Recursos'),
+(4, '', 'Agregar', '2020-03-18 18:45:51', 24, 'Recursos'),
+(5, '106', 'Agregar', '2020-03-18 18:45:51', 25, 'Recursos'),
+(6, '', 'Edita', '2020-03-18 23:37:50', 0, 'Recursos'),
+(7, '106', 'Edita', '2020-03-18 23:37:50', 18, 'Recursos'),
+(8, '', 'Elimina', '2020-03-18 23:39:51', 0, 'Recursos'),
+(9, '106', 'Elimina', '2020-03-18 23:39:51', 19, 'Recursos');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `estadisticas`
+-- Estructura de tabla para la tabla `estadisticas`
 --
 
 DROP TABLE IF EXISTS `estadisticas`;
@@ -119,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `estadisticas` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `estadisticas`
+-- Volcado de datos para la tabla `estadisticas`
 --
 
 INSERT INTO `estadisticas` (`clim`, `eval`, `recu`, `docu`, `prof`, `plan`) VALUES
@@ -128,7 +134,7 @@ INSERT INTO `estadisticas` (`clim`, `eval`, `recu`, `docu`, `prof`, `plan`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `niveles`
+-- Estructura de tabla para la tabla `niveles`
 --
 
 DROP TABLE IF EXISTS `niveles`;
@@ -139,7 +145,7 @@ CREATE TABLE IF NOT EXISTS `niveles` (
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `niveles`
+-- Volcado de datos para la tabla `niveles`
 --
 
 INSERT INTO `niveles` (`id`, `nombreNivel`) VALUES
@@ -154,7 +160,7 @@ INSERT INTO `niveles` (`id`, `nombreNivel`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `poblaciones`
+-- Estructura de tabla para la tabla `poblaciones`
 --
 
 DROP TABLE IF EXISTS `poblaciones`;
@@ -164,7 +170,7 @@ CREATE TABLE IF NOT EXISTS `poblaciones` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `poblaciones`
+-- Volcado de datos para la tabla `poblaciones`
 --
 
 INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
@@ -176,7 +182,7 @@ INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `programas_ae`
+-- Estructura de tabla para la tabla `programas_ae`
 --
 
 DROP TABLE IF EXISTS `programas_ae`;
@@ -188,7 +194,7 @@ CREATE TABLE IF NOT EXISTS `programas_ae` (
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `programas_ae`
+-- Volcado de datos para la tabla `programas_ae`
 --
 
 INSERT INTO `programas_ae` (`idPrograma`, `nombrePrograma`, `observacionesAgenda`) VALUES
@@ -206,7 +212,7 @@ INSERT INTO `programas_ae` (`idPrograma`, `nombrePrograma`, `observacionesAgenda
 -- --------------------------------------------------------
 
 --
--- Table structure for table `recursos`
+-- Estructura de tabla para la tabla `recursos`
 --
 
 DROP TABLE IF EXISTS `recursos`;
@@ -224,10 +230,10 @@ CREATE TABLE IF NOT EXISTS `recursos` (
   `fecha_ingreso` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `borrado` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `recursos`
+-- Volcado de datos para la tabla `recursos`
 --
 
 INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `materia`, `img_educatico`, `apoyos`, `id_usuario`, `fecha_ingreso`, `borrado`) VALUES
@@ -248,16 +254,18 @@ INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`
 (15, 'Recurso intercultural 1', 'Prueba intercultural 1', 4, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:41:56', 0),
 (16, 'bandera azul editada segunda vez', 'editada desde postman 2', 7, 'vacio', 'www.mepg.go.cr', 'Deportivos 456', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:57:09', 0),
 (17, 'Funciones 123 editada 1', 'test de años 1 edicion uno', 3, 'Sétimo,Octavo,Noveno', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-12 17:13:32', 0),
-(18, 'prueba mate años', 'prueba 456', 3, 'Décimo,Undécimo,Duodécimo', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/artecontemporaneo.jpg', 0, 106, '2020-03-12 17:26:17', 0),
-(19, 'recurso de noveno mate', 'año noveno ', 3, 'Noveno', 'https://www.mep.go.cr/educatico/curso-interactivo-huertas-escolares', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-12 17:27:39', 0),
+(18, 'prueba mate años editada de nuevo', 'prueba 456', 3, 'Décimo,Undécimo,Duodécimo', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/artecontemporaneo.jpg', 0, 106, '2020-03-12 17:26:17', 0),
+(19, 'recurso de noveno mate editado', 'año noveno ', 3, 'Noveno', 'https://www.mep.go.cr/educatico/curso-interactivo-huertas-escolares', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-12 17:27:39', 1),
 (20, 'Manual para neutralizar la huella de carbono en centros educativos', 'no disponible', 0, '0', 'https://www.mep.go.cr/sites/default/files/page/adjuntos/manualbanderaazul.pdf', '2', NULL, 0, 2, '2020-03-16 19:31:51', 0),
 (22, 'Video informativo editado 4', 'prueba 1 AE editada por cuarta vez', 7, 'vacio', 'https://www.youtube.com/watch?time_continue=4&v=xfgrViUtigc&feature=emb_logo', 'Servicio comunal', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/motivacion-maestros.jpg', 0, 106, '2020-03-17 13:33:49', 0),
-(23, 'Juntos en el teatro', 'prueba teatro', 7, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Teatro en el aula', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-17 17:39:28', 0);
+(23, 'Juntos en el teatro', 'prueba teatro', 7, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Teatro en el aula', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-17 17:39:28', 0),
+(24, '', '', 0, '', '', 'N/A', '', 0, 0, '2020-03-18 18:45:51', 0),
+(25, 'Prueba bitácora editada', 'Prueba bitácora', 3, 'Sétimo,Duodécimo', 'https://www.mep.go.cr/educatico/orienta2', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/orientados.jpg', 0, 106, '2020-03-18 18:45:51', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reportes`
+-- Estructura de tabla para la tabla `reportes`
 --
 
 DROP TABLE IF EXISTS `reportes`;
@@ -272,7 +280,7 @@ CREATE TABLE IF NOT EXISTS `reportes` (
 ) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `reportes`
+-- Volcado de datos para la tabla `reportes`
 --
 
 INSERT INTO `reportes` (`id`, `nombre`, `correo`, `detalle`, `atendida`, `fecha`) VALUES
@@ -292,7 +300,7 @@ INSERT INTO `reportes` (`id`, `nombre`, `correo`, `detalle`, `atendida`, `fecha`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuarios`
+-- Estructura de tabla para la tabla `usuarios`
 --
 
 DROP TABLE IF EXISTS `usuarios`;
@@ -314,7 +322,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 ) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `usuarios`
+-- Volcado de datos para la tabla `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `usuario`, `clave`, `nombre`, `apellido1`, `apellido2`, `departamento`, `ultimoAcceso`, `token`, `token_password`, `password_request`, `tipoUsuario`, `activo`) VALUES
