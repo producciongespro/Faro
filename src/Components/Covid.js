@@ -15,19 +15,44 @@ function Covid(props) {
         obtener();
     })
 
-    const tarjeta = (
-        <div className="col-sm-6">
-            <div className="row">
-                <div className="col-sm-10 inform1">
-                    <h6><b>Nombre: </b>Pepe</h6>
-                    <p><b>Descripción: </b>   </p>
-                    <a href={"www.mep.com"} className="link-card enlace-pree" target="_blank" rel="noopener noreferrer" ><strong>VISITAR</strong></a>
-                    <br /><br />
-                </div>
+    const Tarjeta =(props )=> {
+        
+
+        return (
+            <div className="col-4">
+        <div className="card">
+            <img
+                src={props.item.urlImagen}
+                className="card-img-top"
+                alt={"imagen previa del recurso " + props.item.nombre}
+            />
+            <div className="card-body">
+                <a href={props.item.url}
+                 target="_blank"
+                 rel="noopener noreferrer"
+                >
+                    <h5 className="card-title">
+                        {props.item.nombre}
+                    </h5>
+                </a>
+                <p className="card-text">
+                    {props.item.descriptivo}
+                </p>
+            </div>
+            <div className="card-body">                
+                <a
+                    href={props.item.url}
+                    className="card-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ver recurso <i className="fas fa-eye" ></i>                                    
+            </a>
             </div>
         </div>
-    )
-        
+    </div>
+        )
+    }    
     
 
     return (
@@ -49,7 +74,9 @@ function Covid(props) {
                 </div>
                 <div className="row">
                     {
-                    tarjeta
+                        arrayJson.map((item,index)=>(
+                            <Tarjeta item={item} key={"covid"+index} />
+                        ))   
                     }
                 </div>
             </div>
