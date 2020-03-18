@@ -34,6 +34,7 @@ import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
 import analitica from './modulos/analitica';
+import Covid from './Components/Covid';
 
 import assets from './data/config/config.json';
 
@@ -279,6 +280,11 @@ class App extends Component {
 
   }
 
+
+  cargarCovid =()=>{
+    return <Covid />
+  }
+
   changePage = (e) => {
     e.preventDefault();
     const targetPage = e.target.dataset.tar;
@@ -326,7 +332,10 @@ class App extends Component {
         break;
       case "DocumentosEvaluacion":
             tmpComponent = <DocumentosEvaluacion  handlerCerrarDocumentosEvaluacion={this.handlerCerrarDocumentosEvaluacion}  />
-            break;
+      break;
+      case "Covid":
+            tmpComponent = this.cargarCovid();
+      break;
       default:
         console.log("Opción fuera de rango");
         break;

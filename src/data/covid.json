@@ -1,0 +1,24 @@
+[
+    {
+        "nombre": "El matavirus",
+        "descriptivo": "Ayuda a Pepito a matar virus",
+        "url": "www.nacion.com",
+        "urlImagen": "https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/objetos-enigmaticos.jpg"
+
+    },
+    {
+        "nombre": "Descubriendo el corona virus",
+        "descriptivo": "Los diferentres tipos de coronavirus que existen",
+        "url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=en",
+        "urlImagen": "https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/caja-herramientas-docentes.png"
+
+    },
+    {
+        "nombre": "Amanda y su aventura en la caza de COVID-19",
+        "descriptivo": "Los diferentres tipos de coronavirus que existen",
+        "url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=en",
+        "urlImagen": "https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg"
+
+    }   
+
+]

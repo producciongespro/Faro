@@ -16,13 +16,13 @@ const Portada = (props) => {
   
             <div className="row" >
          
-                    <div className="col-5 text-right">                        
-                    <img onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoMinistro } className="img-fluid botones-portada hvr-pop"   src={img + "btn_bienvenida.png"} alt="Bienvenida"/>
+                    <div className="col-4 text-right">                        
+                    <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoMinistro } className="img-fluid botones-portada hvr-pop"   src={img + "btn_bienvenida.png"} alt="Bienvenida"/>
                     </div>
-                    <div className="col-2 ">                     
-                   
+                    <div className="col-4 text-center">                     
+                        <img data-tar="Covid" className="img-fluid botones-portada hvr-pop" onClick={props.changePage} src="http://localhost/Faro/asset/img/1_portada/btn_covid19_principal.png" alt="Botón coronavirus" role="button"/>
                     </div>
-                    <div className="col-5 text-left">                     
+                    <div className="col-4 text-left">                     
                     <img  data-tar="Home"  onClick={props.changePage}  className="img-fluid botones-portada hvr-pop" src={img + "btn_ingresar.png"} alt="Ingresar"/>
                     </div>
       
