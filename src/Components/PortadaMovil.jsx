@@ -25,7 +25,7 @@ const PortadaMovil = (props) => {
                 </div>
                 <div className="col-2 ">                     
                 </div>         
-            </div>  <br/>
+            </div>  
             <div className="row" >
                 <div className="col-2 ">                     
                 </div>
@@ -35,12 +35,19 @@ const PortadaMovil = (props) => {
                 <div className="col-2 ">                     
                 </div>
             </div>
+            <div className="row" >
+                <div className="col-2 ">                     
+                </div>
+                <div className="col-8 ">                     
+                <a  href="http://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> <img id="btn-aprendo" src={img + "aprendo-en-casa.png"  } className="img-fluid botones-portada  hvr-pop" alt="Botón Aprendo en casa"/></a>  
+                </div>
+                <div className="col-2 ">                     
+                </div>
+            </div>
         <div className="row">
-            <div className="col-12 text-center pie-pagina2">
-                
+            <div className="col-12 text-center pie-pagina2">               
             DIRECCIÓN DE DESARROLLO CURRICULAR - DIRECCIÓN DE RECURSOS TECNOLÓGICOS EN EDUCACIÓN - INSTITUTO DE DESARROLLO PROFESIONAL ULADISLAO GÁMEZ SOLANO
             </div>
-    
             <div className="col-12 text-center"><br/>
         <a  href="https://creativecommons.org/licenses/by-nc-sa/3.0/cr/" target="_blank" rel="noopener noreferrer"> <img id="img-licencia" src={imgGeneral + "licencia.png"  } className="img-fluid" alt="Licencia Creative"/></a>
         <br/> 
