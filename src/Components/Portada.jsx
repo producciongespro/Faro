@@ -19,8 +19,8 @@ const Portada = (props) => {
                     <div className="col-4 text-right">                        
                     <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoMinistro } className="img-fluid botones-portada hvr-pop"   src={img + "btn_bienvenida.png"} alt="Bienvenida"/>
                     </div>
-                    <div className="col-4 text-center">                     
-                        <img data-tar="Covid" className="img-fluid botones-portada hvr-pop" onClick={props.changePage} src="http://localhost/Faro/asset/img/1_portada/btn_covid19_principal.png" alt="Botón coronavirus" role="button"/>
+                    <div className="col-4 text-center">   
+                    <a  href="http://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> <img id="btn-aprendo" src={img + "aprendo-en-casa.png"  } className="img-fluid botones-portada  hvr-pop" alt="Botón Aprendo en casa"/></a>                
                     </div>
                     <div className="col-4 text-left">                     
                     <img  data-tar="Home"  onClick={props.changePage}  className="img-fluid botones-portada hvr-pop" src={img + "btn_ingresar.png"} alt="Ingresar"/>
