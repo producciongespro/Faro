@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 25, 2020 at 02:15 PM
+-- Generation Time: Mar 25, 2020 at 09:17 PM
 -- Server version: 5.7.21
 -- PHP Version: 7.1.16
 
@@ -91,18 +91,24 @@ CREATE TABLE IF NOT EXISTS `bitacora` (
   `id_registro` int(11) NOT NULL COMMENT 'Identificador el ingreso modificado',
   `tabla` varchar(256) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Nombre de la tabla a la que pertenece el registro afectado',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Tabla para documentar eventos de los usuarios en el sistema';
+) ENGINE=MyISAM AUTO_INCREMENT=45 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Tabla para documentar eventos de los usuarios en el sistema';
 
 --
 -- Dumping data for table `bitacora`
 --
 
 INSERT INTO `bitacora` (`id`, `id_usuario`, `evento`, `fecha_evento`, `id_registro`, `tabla`) VALUES
-(1, '106', 'Agrega recurso', '2020-03-10 15:34:16', 1, 'recursos'),
-(2, '106', 'Agregar', '2020-03-17 13:33:49', 22, 'Recursos'),
-(3, '106', 'Agregar', '2020-03-17 17:39:28', 23, 'Recursos'),
-(4, '106', 'Agregar', '2020-03-24 13:32:00', 24, 'Recursos'),
-(5, '106', 'Edita', '2020-03-24 13:32:25', 24, 'Recursos');
+(44, '106', 'Agregar', '2020-03-25 20:53:33', 35, 'Recursos'),
+(43, '106', 'Agregar', '2020-03-25 20:50:10', 34, 'Recursos'),
+(42, '106', 'Agregar', '2020-03-25 20:49:12', 33, 'Recursos'),
+(41, '106', 'Agregar', '2020-03-25 20:48:51', 32, 'Recursos'),
+(40, '106', 'Agregar', '2020-03-25 20:47:14', 31, 'Recursos'),
+(39, '106', 'Agregar', '2020-03-25 20:45:44', 30, 'Recursos'),
+(38, '106', 'Agregar', '2020-03-25 20:44:33', 29, 'Recursos'),
+(37, '106', 'Agregar', '2020-03-25 20:37:50', 28, 'Recursos'),
+(36, '106', 'Agregar', '2020-03-25 20:34:01', 27, 'Recursos'),
+(35, '106', 'Agregar', '2020-03-25 20:31:59', 26, 'Recursos'),
+(34, '106', 'Agregar', '2020-03-25 20:30:52', 25, 'Recursos');
 
 -- --------------------------------------------------------
 
@@ -226,36 +232,24 @@ CREATE TABLE IF NOT EXISTS `recursos` (
   `fecha_ingreso` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `borrado` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `recursos`
 --
 
 INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `materia`, `img_educatico`, `apoyos`, `id_usuario`, `fecha_ingreso`, `borrado`) VALUES
-(1, 'El círculo cromático actualizado desde PHP', 'Video de los colores primarios y secundarios/colores fr?os y c?lidos.', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-02-04 19:17:26', 0),
-(2, 'La identidad desde PHP en I ciclo', 'Video sobre la identidad en el descubrimiento de mis favoritos. I Ciclo', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 106, '2020-02-04 19:17:26', 0),
-(3, 'apoyo Español editado 456', 'español ejemplo 1 editado con apoyo 456', 2, 'Quinto,Sexto', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/orientados.jpg', 1, 106, '2020-02-04 19:17:26', 0),
-(4, 'Las palabras saltarinas', 'español para primero  segundo 789', 2, 'Primero,Segundo,Tercero', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Español', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/recursos-19.png', 0, 106, '2020-02-04 19:17:26', 0),
-(5, 'Prueba de Biologia', 'biología noveno', 3, 'Décimo', 'https://www.youtube.com/watch?v=FN9ycBXKHDY', 'Biología', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/weatherwise.jpg', 0, 2, '2020-02-04 19:17:26', 0),
-(9, 'Los pepitos inteligentes', 'Prueba  1 de mate ', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 103, '2020-03-02 20:00:28', 0),
-(6, 'Tercer recurso Plasticas\r\n', 'Video sobre la identidad en el descubrimiento de mis favoritos.', 2, 'Tercero', 'https://www.youtube.com/watch?v=-zMEPVRWvD0', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/Carretica.png', 0, 106, '2020-02-04 19:17:26', 0),
-(7, 'maqueta de volcan editado', 'prueba de recurso 456', 2, 'Cuarto,Quinto,Sexto', 'https://www.mep.go.cr/educatico', 'Ciencias', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-02 13:18:23', 0),
-(8, 'maqueta 456', 'otra', 2, 'Primero,Segundo', 'https://www.mep.go.cr/educatico/revista-conexiones-edicion-2019', 'Artes Plásticas', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-02 14:11:34', 0),
-(10, 'Amanda la Exploradora', 'Explorando con Amanda y sus aventuras', 2, 'Primero,Segundo', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Estudios Sociales', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 1, 106, '2020-03-04 20:43:54', 0),
-(11, 'Las tablas', 'Cuentos de Amanda', 2, 'Primero', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-09 19:36:39', 0),
-(12, 'pipito', 'defrgt', 1, 'vacio', 'https://www.mep.go.cr/educatico', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-11 20:41:08', 0),
-(13, 'pipito', 'dsds', 2, 'Primero', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', '-1', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-11 20:48:54', 0),
-(14, 'Los 5 sentidos', 'Prueba 2 de preescolar', 1, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 103, '2020-03-12 16:29:29', 0),
-(15, 'Recurso intercultural 1', 'Prueba intercultural 1', 4, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:41:56', 0),
-(16, 'bandera azul editada segunda vez', 'editada desde postman 2', 7, 'vacio', 'www.mepg.go.cr', 'Deportivos 456', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-12 16:57:09', 0),
-(17, 'Funciones 123 editada 1', 'test de años 1 edicion uno', 3, 'Sétimo,Octavo,Noveno', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-12 17:13:32', 0),
-(18, 'prueba mate años', 'prueba 456', 3, 'Décimo,Undécimo,Duodécimo', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/artecontemporaneo.jpg', 0, 106, '2020-03-12 17:26:17', 0),
-(19, 'recurso de noveno mate', 'año noveno ', 3, 'Noveno', 'https://www.mep.go.cr/educatico/curso-interactivo-huertas-escolares', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-12 17:27:39', 0),
-(20, 'Manual para neutralizar la huella de carbono en centros educativos', 'no disponible', 0, '0', 'https://www.mep.go.cr/sites/default/files/page/adjuntos/manualbanderaazul.pdf', '2', NULL, 0, 2, '2020-03-16 19:31:51', 0),
-(22, 'Video informativo editado 4', 'prueba 1 AE editada por cuarta vez', 7, 'vacio', 'https://www.youtube.com/watch?time_continue=4&v=xfgrViUtigc&feature=emb_logo', 'Servicio comunal', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/motivacion-maestros.jpg', 0, 106, '2020-03-17 13:33:49', 0),
-(23, 'Juntos en el teatro', 'prueba teatro', 7, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Teatro en el aula', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-17 17:39:28', 0),
-(24, 'los pollitos', 'pollitos que van a a la escuela', 1, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 1, 106, '2020-03-24 13:31:59', 0);
+(35, 'Prometiendo cosas a a la gente', 'Forma e decri siempre la verdad', 7, 'vacio', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Gobierno estudiantil', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 0, 106, '2020-03-25 20:53:33', 0),
+(33, 'La responsabilidad de hacerse grande', 'Jóvenes y adultos 2', 5, 'vacio', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/IIInivel-a.jpg', 1, 106, '2020-03-25 20:49:12', 0),
+(32, 'Lo bello de aprender', 'Jóvenes y adultos 1', 5, 'vacio', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/IIInivel-a.jpg', 0, 106, '2020-03-25 20:48:51', 0),
+(31, 'Nuestras raíces', 'Intercultural 1', 4, 'vacio', 'https://www.mep.go.cr/educatico/curso-interactivo-huertas-escolares', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/artecontemporaneo.jpg', 0, 106, '2020-03-25 20:47:14', 0),
+(30, 'Nuestro planeta se está muriendo', 'Prueba secundaria 2 con AE', 3, 'Noveno', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Ciencias', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/huertasescolares.jpg', 1, 106, '2020-03-25 20:45:44', 0),
+(29, 'Nuestro planeta se transforma', 'Prueba secundaria 1', 3, 'Sétimo', 'https://www.mep.go.cr/educatico/english-mini-books-first-cycle', 'Estudios Sociales', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/huertasescolares.jpg', 0, 106, '2020-03-25 20:44:33', 0),
+(28, 'El volcán explosivo', 'Prueba mate ciencias primaria', 2, 'Sexto', 'https://www.mep.go.cr/educatico/revista-conexiones-edicion-2019', 'Ciencias', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/huertasescolares.jpg', 0, 106, '2020-03-25 20:37:50', 0),
+(27, 'Las tablas saltarinas', 'prueba primaria mate 1 con apoyo educativo', 2, 'Primero,Segundo,Tercero', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg', 1, 106, '2020-03-25 20:34:01', 0),
+(26, 'El elefante que podía volar', 'prueba de preescolar 2', 1, 'vacio', 'https://www.mep.go.cr/educatico', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/conexiones2019-ee.jpg', 0, 106, '2020-03-25 20:31:59', 0),
+(25, 'La hormiguita feliz', 'prueba de preescolar 1', 1, 'vacio', 'https://www.mep.go.cr/educatico/arte-costarricense-contemporaneo', 'N/A', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/novenoanno.png', 0, 106, '2020-03-25 20:30:52', 0),
+(34, 'El deporte, nuestro mayor aliado', 'Agenda estudiantil 1', 7, 'vacio', 'https://www.mep.go.cr/educatico', 'Juegos Deportivos estudiantiles', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/artecontemporaneo.jpg', 0, 106, '2020-03-25 20:50:10', 0);
 
 -- --------------------------------------------------------
 
@@ -344,9 +338,9 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `usuario`, `clave`, `nombre`, `apellido1`, `apellido2`, `departamento`, `ultimoAcceso`, `token`, `token_password`, `password_request`, `idTipoUsuario`, `activo`) VALUES
-(106, 'luis@correo.de', '$2y$10$FRcsor4X9UHLiUjQ3BqSZe0vnWF/lSH79tLM1kqHSfLcHr8CfY27i', 'Luis', 'Chacón', 'Campos', 'GESPRO', NULL, '300b97290992f470ea62e0e7fe3222c8', NULL, 0, 1, 1),
+(106, 'luis@correo.de', '$2y$10$FRcsor4X9UHLiUjQ3BqSZe0vnWF/lSH79tLM1kqHSfLcHr8CfY27i', 'Luis', 'Chacón', 'Campos', 'GESPRO', NULL, '300b97290992f470ea62e0e7fe3222c8', NULL, 0, 3, 1),
 (107, 'oscar@correo.de', '$2y$10$FRcsor4X9UHLiUjQ3BqSZe0vnWF/lSH79tLM1kqHSfLcHr8CfY27i', 'Oscar', 'Perez', 'Ramirez', 'GESPRO', NULL, '300b97290992f470ea62e0e7fe3222c8', NULL, 0, 2, 1),
-(108, 'paty@correo.de', '$2y$10$FRcsor4X9UHLiUjQ3BqSZe0vnWF/lSH79tLM1kqHSfLcHr8CfY27i', 'Patricia', 'Hernandez', 'Conejo', 'GESPRO', NULL, '300b97290992f470ea62e0e7fe3222c8', NULL, 0, 3, 1);
+(108, 'paty@correo.de', '$2y$10$FRcsor4X9UHLiUjQ3BqSZe0vnWF/lSH79tLM1kqHSfLcHr8CfY27i', 'Patricia', 'Hernandez', 'Conejo', 'GESPRO', NULL, '300b97290992f470ea62e0e7fe3222c8', NULL, 0, 1, 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
