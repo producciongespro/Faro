@@ -8,198 +8,191 @@
 
        {
         "nivel" : "Preescolar",
+        "contenido" : "Conciencia corporal",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_conciencia_corporal.docx"  
+       },
+
+       {
+        "nivel" : "Preescolar",
         "contenido" : "Imagen corporal",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_imagen_corporal.docx"  
        },
 
        {
         "nivel" : "Preescolar",
         "contenido" : "Identidad sexual",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_identidad_sexual.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Posibilidades de acción",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_posibilidades_de_accion.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Coordinación visomotora",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_coordinacion_visomotora.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Lateralidad",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_lateralidad.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Autonomía",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_autonomia.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Salud y nutrición",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_salud_nutricion.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Atención",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_atencion.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Sentimientos y emociones",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_sentimientos_emociones.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Familia",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_familia.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Centro educativo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_centro_educativo.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Comunidad",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_comunidad.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Somos diferentes e iguales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_somos_diferentes_e_iguales.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Convivencia",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_convivencia.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Elementos del medio",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_elementos_medio.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Sentido espacial",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_sentido_espacial.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Sentido temporal",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_sentido_temporal.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Conservación de la cantidad",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_conservacion_cantidad.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Correspondencia término a término",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_correspondencia_termino_a_termino.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Seriación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_seriación.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Inclusión de la parte al todo",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_inclusion_parte_al_todo.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Expresión oral",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_expresion_oral.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Comprensión oral",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_comprension_oral.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Lectura",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_lectura.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Escritura",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_escritura.docx"  
        },
 
        {
         "nivel" : "Preescolar",
-        "contenido" : "",
+        "contenido" : "Conciencia fonológica",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
-       },
-
-       {
-        "nivel" : "Preescolar",
-        "contenido" : "",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
-       },
-
-       {
-        "nivel" : "Preescolar",
-        "contenido" : "",
-        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/lineam/lineam-especif-preescolar.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/"  
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/preesc/planeam/ppd_contenido_conciencia_fonologica.docx"  
        }
     
 ]
