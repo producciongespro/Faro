@@ -11,7 +11,7 @@ require 'conectar.php';
 require 'bitacora.php';
 $conexion = conectarDB();
 $id = $dataObject-> id;
-$usuario =  utf8_decode($dataObject-> id_usuario);
+$usuario= $dataObject-> id_usuario;
    $actualizacion = "UPDATE `recursos` SET `borrado`='1', `id_usuario`='$usuario' WHERE `id`='$id'";
 
    $resultadoActualizacion = mysqli_query($conexion, $actualizacion); 
