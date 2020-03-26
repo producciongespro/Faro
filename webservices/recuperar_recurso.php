@@ -8,6 +8,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $JSONData = file_get_contents("php://input");
 $dataObject = json_decode($JSONData);  
 require 'conectar.php';
+require 'bitacora.php';
 $conexion = conectarDB();
 $id = $dataObject-> id;
 $usuario =  utf8_decode($dataObject-> id_usuario);
