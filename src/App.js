@@ -47,7 +47,7 @@ import descripciones from "./data/descripciones/descripciones.json";
 const imgGenerales = assets.img.general;
 
  async function cargarDatos(cb) {
-  const arrayRecursos = await obtener("http://localhost/faro/webservices/obtener_recursos.php");
+  const arrayRecursos = await obtener( assets.servidorAPI + "obtener_recursos.php");
   console.log("arrayRecursos", arrayRecursos);
   localStorage.setItem("arrayRecursos", JSON.stringify(arrayRecursos));
   //console.log("guardado", localStorage.getItem("arrayRecursos"));  
