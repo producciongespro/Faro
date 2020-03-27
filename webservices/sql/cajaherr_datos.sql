@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cajaherr_datos`
+-- Base de datos: `cajaherr_datos`
 --
 
 -- --------------------------------------------------------
@@ -224,7 +224,7 @@ CREATE TABLE `estadisticas` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `estadisticas`
+-- Volcado de datos para la tabla `estadisticas`
 --
 
 INSERT INTO `estadisticas` (`clim`, `eval`, `recu`, `docu`, `prof`, `plan`) VALUES
@@ -255,7 +255,7 @@ INSERT INTO `estadisticasOLD` (`clim`, `eval`, `recu`, `docu`, `prof`, `plan`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `niveles`
+-- Estructura de tabla para la tabla `niveles`
 --
 
 CREATE TABLE `niveles` (
@@ -264,7 +264,7 @@ CREATE TABLE `niveles` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `niveles`
+-- Volcado de datos para la tabla `niveles`
 --
 
 INSERT INTO `niveles` (`id`, `nombreNivel`) VALUES
@@ -279,7 +279,7 @@ INSERT INTO `niveles` (`id`, `nombreNivel`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `poblaciones`
+-- Estructura de tabla para la tabla `poblaciones`
 --
 
 CREATE TABLE `poblaciones` (
@@ -288,7 +288,7 @@ CREATE TABLE `poblaciones` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `poblaciones`
+-- Volcado de datos para la tabla `poblaciones`
 --
 
 INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
@@ -347,7 +347,7 @@ CREATE TABLE `recursos` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `recursos`
+-- Volcado de datos para la tabla `recursos`
 --
 
 INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `materia`, `img_educatico`, `apoyos`, `id_usuario`, `fecha_ingreso`, `borrado`) VALUES
@@ -388,7 +388,7 @@ INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reportes`
+-- Estructura de tabla para la tabla `reportes`
 --
 
 CREATE TABLE `reportes` (
@@ -401,7 +401,7 @@ CREATE TABLE `reportes` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `reportes`
+-- Volcado de datos para la tabla `reportes`
 --
 
 INSERT INTO `reportes` (`id`, `nombre`, `correo`, `detalle`, `atendida`, `fecha`) VALUES
@@ -486,30 +486,7 @@ INSERT INTO `tipo_usuario` (`idTipoUsuario`, `etiquetaTipoUsuario`, `descripcion
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipo_usuario`
---
-
-DROP TABLE IF EXISTS `tipo_usuario`;
-CREATE TABLE IF NOT EXISTS `tipo_usuario` (
-  `idTipoUsuario` int(128) NOT NULL AUTO_INCREMENT,
-  `etiquetaTipoUsuario` varchar(128) NOT NULL,
-  `descripcionTipoUsuario` varchar(256) DEFAULT NULL,
-  PRIMARY KEY (`idTipoUsuario`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tipo_usuario`
---
-
-INSERT INTO `tipo_usuario` (`idTipoUsuario`, `etiquetaTipoUsuario`, `descripcionTipoUsuario`) VALUES
-(1, 'Administrador de recursos', 'Persona que agrga recursos de cualuier nivel'),
-(2, 'Desarrollo profesional', 'Admintra todo lo referente a desarrollo profesional'),
-(3, 'Plantillas planeamiento', 'Admintra todo lo referente a plantillas del planeamiento');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `usuarios`
+-- Estructura de tabla para la tabla `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -529,7 +506,7 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `usuarios`
+-- Volcado de datos para la tabla `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `usuario`, `clave`, `nombre`, `apellido1`, `apellido2`, `departamento`, `ultimoAcceso`, `token`, `token_password`, `password_request`, `idTipoUsuario`, `activo`) VALUES
