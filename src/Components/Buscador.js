@@ -158,7 +158,10 @@ class Buscador extends Component {
             case "Secundaria":
             case "Intercultural":
                 this.buscarRecursosGenerales();
-                break;
+            break;
+            case "jovenesAdultos":
+                this.buscarRecursosJovenesAdultos();
+            break;
 
             default:
                 console.log("parametro Origen fuera de rango");
@@ -167,6 +170,75 @@ class Buscador extends Component {
         }
 
     }
+
+
+    buscarRecursosJovenesAdultos = () => {
+        console.log("Buscador Jovenes adultos");
+        var dataJovenesAdultos = [];
+
+
+        //CArga del storage
+        let tmpArray = JSON.parse(localStorage.getItem("arrayRecursos"));
+
+        console.log("tmpArray",tmpArray);
+        
+
+        //filtra el arreglo con solo datos de preescolar
+        for (let index = 0; index < tmpArray.length; index++) {
+            if (tmpArray[index].id_nivel === "5") {
+                dataJovenesAdultos.push(tmpArray[index]);
+            }
+
+        }
+
+        console.log("dataPreescolar", dataJovenesAdultos);
+
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < dataJovenesAdultos.length; index++) {
+            arrayHtml = (
+
+
+                <div key={"tarjeta" + index} className="col-4">
+                <div className="card">
+                    <img
+                        src={dataJovenesAdultos[index].img_educatico}
+                        className="card-img-top"
+                        alt={"imagen previa del recurso " + dataJovenesAdultos[index].nombre}
+                    />
+                    <div className="card-body">
+                        <a href={dataJovenesAdultos[index].url}
+                         target="_blank"
+                         rel="noopener noreferrer"
+                        >
+                            <h5 className="card-title">
+                                {dataJovenesAdultos[index].nombre}
+                            </h5>
+                        </a>
+                        <p className="card-text">
+                            {dataJovenesAdultos[index].descripcion}
+                        </p>
+                    </div>
+                    <div className="card-body">                        
+                        <a
+                            href={dataJovenesAdultos[index].url}
+                            className="card-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ver recurso <i className="fas fa-eye" ></i>                                    
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+                
+            )
+            arrayTmp.push(arrayHtml);
+        };
+        this.setState({ tarjetas: arrayTmp });
+    };
+
 
     buscarRecursosPreescolar = () => {
         console.log("Buscador preescolar");
@@ -396,7 +468,7 @@ class Buscador extends Component {
                                     }
                                 </div>
                                 {
-                                    this.props.origen !== "Preescolar" &&
+                                    (this.props.origen !== "Preescolar"  &&  this.props.origen !== "jovenesAdultos") &&
                                     (
                                         <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
                                             <option defaultValue value="" >Seleccione:</option>
@@ -433,7 +505,7 @@ class Buscador extends Component {
                             {
                                 // SI NIVEL ES DIFERNETE DE INTERCULTURAL SE RENDERIZA EL SELECT AÑO
                                 (this.props.origen !== "intercultural") && (
-                                    (this.props.origen !== "Preescolar") ? (
+                                    (this.props.origen !== "Preescolar" && this.props.origen !== "jovenesAdultos") ? (
                                         <div className="input-group mb-3">
                                             <div className="input-group-prepend">
                                                 <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
