@@ -21,6 +21,7 @@ $descripcion = utf8_decode($dataObject-> descripcion);
 $url = utf8_decode($dataObject-> url);
 $apoyo = $dataObject-> apoyo;
 $usuario =  utf8_decode($dataObject-> id_usuario);
+$img_educatico = utf8_decode($dataObject-> img_educatico);
 
   $conn = conectarDB();
     
