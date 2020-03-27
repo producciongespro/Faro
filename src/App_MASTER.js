@@ -33,14 +33,12 @@ import PortadaMovil from './Components/PortadaMovil';
 import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
-
-//Módulos personalizados
 import analitica from './modulos/analitica';
-import obtener from './modulos/obtener';
-
+import Covid from './Components/Covid';
 
 //Assets y rutas serivodr API
 import config from './data/config/config.json';
+
 
 //Json
 import descripciones from "./data/descripciones/descripciones.json";
@@ -82,18 +80,11 @@ class App extends Component {
   }
 
 
- 
-
-
 
   componentDidMount() {
-    // setTimeout(() => {
-    //   this.loadPortada();    
-    // }, 500);
-    const cargarPortada = this.loadPortada;
-    cargarDatos(cargarPortada);
-    
-
+    setTimeout(() => {
+      this.loadPortada();
+    }, 500);
   }
 
 
@@ -310,6 +301,11 @@ class App extends Component {
 
   }
 
+
+  cargarCovid =()=>{
+    return <Covid />
+  }
+
   changePage = (e) => {
     e.preventDefault();
     const targetPage = e.target.dataset.tar;
@@ -357,7 +353,10 @@ class App extends Component {
         break;
       case "DocumentosEvaluacion":
             tmpComponent = <DocumentosEvaluacion  handlerCerrarDocumentosEvaluacion={this.handlerCerrarDocumentosEvaluacion}  />
-            break;
+      break;
+      case "Covid":
+            tmpComponent = this.cargarCovid();
+      break;
       default:
         console.log("Opción fuera de rango");
         break;
@@ -399,8 +398,8 @@ class App extends Component {
   //Abrir buscador de recursos
 
   handlerOpenBuscador = (e) => {
-    let origen = e.target.dataset.origen;
-    console.log("origen", origen);
+    let origen = e.target.id;
+    //console.log(origen);
     this.setState({
       currentPage: <Buscador origen={origen} handlerCerrarBuscador={this.handlerCerrarBuscador} />
     });
@@ -716,4 +715,3 @@ class App extends Component {
 }
 
 export default App;
-

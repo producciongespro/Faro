@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import referencias from '../data/config/config.json';
+//import referencias from '../data/config/config.json';
+/*
 import dataOtros from '../data/recursos/generales.json';
 import dataIngles from '../data/recursos/recursos_ingles.json';
 import dataFrances from '../data/recursos/recursos_frances.json';
 import dataItaliano from '../data/recursos/recursos_italiano.json';
 import dataMediacion from '../data/recursos/recursos_mediacion.json';
-// import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
+import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import dataPreescolar from '../data/recursos/recursos_preescolar.json';
 */
 import config from '../data/config/config.json';
@@ -71,20 +71,6 @@ var annoPrimaria = [
     }
 ];
 
-/*
-var tipoPoblacion = [
-    {
-        "label": "Educación para adultos",
-        "id": "adultos"
-    },
-    {
-        "label": "Liceos rurales",
-        "id": "rurales"
-    }
-];
-*/
-var dataGeneral = "";
-//console.log("dataIngles", dataIngles);
 
 
 
@@ -97,7 +83,7 @@ class Buscador extends Component {
         };
         this.anno = "";
         this.poblacion = "";
-        this.apoyos = "";
+        this.apoyos = "0";
         this.mensaje = "";
         this.claseCSSMaterias = "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
@@ -112,82 +98,28 @@ class Buscador extends Component {
     }
 
 
-    elegirBanner = () =>{
+    elegirBanner = () => {
         switch (plataformaUsada) {
-        case "escritorio": 
-            bannerPrescolar="preescolar_banner.png";
-            bannerPrimaria="primaria_banner.png";
-            bannerSecundaria="secundaria_banner.png";
-            bannerFerias="encabezado_feria_cientifica.png";
-        break;
-        case "movil": 
-            bannerPrescolar="preescolar_bannerMovil.png";
-            bannerPrimaria="primaria_bannerMovil.png";
-            bannerSecundaria="secundaria_bannerMovil.png";
-            bannerFerias="encabezado_feria_cientificaMovil.png";
-        break;
-        default:
-            bannerPrescolar="preescolar_banner.png";
-            bannerPrimaria="primaria_banner.png";
-            bannerSecundaria="secundaria_banner.png";
-            bannerFerias="encabezado_feria_cientifica.png";
-        break;
-        }        
-        }
-
-    componentDidMount() {
-        this.obtenerJson();
-    }
-
-    obtenerJson = () => {
-        // var tablaConsulta = tabla.substring(1);
-       let url= referencias.webservices+"obtener_recursos.php";
-        console.log("URL",url);
-        axios.get(url)
-          .then(res => {     
-            dataArtesPlasticas = res.data;
-            })
-    
-          .catch(function (error) {
-            console.log("error",error)
-          })
-          .finally(function () {
-          });
-      }
-
-    cargarDatasetRecursos = (materia) => {
-        dataGeneral = "";
-        switch (materia) {
-            case "Inglés":
-                dataGeneral = dataIngles;
+            case "escritorio":
+                bannerPrescolar = "preescolar_banner.png";
+                bannerPrimaria = "primaria_banner.png";
+                bannerSecundaria = "secundaria_banner.png";
+                bannerFerias = "encabezado_feria_cientifica.png";
                 break;
-            case "Ciencias":
-            case "Español":
-            case "Estudios Sociales":
-            case "Matemáticas":
-            case "Cívica":
-                dataGeneral = dataOtros;
-                console.log(dataGeneral);
+            case "movil":
+                bannerPrescolar = "preescolar_bannerMovil.png";
+                bannerPrimaria = "primaria_bannerMovil.png";
+                bannerSecundaria = "secundaria_bannerMovil.png";
+                bannerFerias = "encabezado_feria_cientificaMovil.png";
                 break;
-            case "Francés":
-                dataGeneral = dataFrances;
-                break;
-            case "Italiano":
-                dataGeneral = dataItaliano;
-                break;
-            case "Mediación":
-                dataGeneral = dataMediacion;
-                break;
-            case "Artes Plásticas":
-                dataGeneral = dataArtesPlasticas;
-                console.log(dataGeneral);    
-                break;
-
             default:
-                dataGeneral = dataOtros;
-                console.log("Opción fuera de rango");
+                bannerPrescolar = "preescolar_banner.png";
+                bannerPrimaria = "primaria_banner.png";
+                bannerSecundaria = "secundaria_banner.png";
+                bannerFerias = "encabezado_feria_cientifica.png";
                 break;
         }
+    }
 
 
     handlerobtenerMateria = (e) => {
@@ -200,45 +132,31 @@ class Buscador extends Component {
         console.log(this.anno);
     }
 
-
-    handlerObtenerPoblacion = (e) => {
-        let chk = e.target.checked;        
-        console.log(chk);
-        /*
-        if (chk) {
-            this.poblacion = e.target.value;
-        } else {
-            this.poblacion = "";
-        }
-        console.log("Poblacion", this.poblacion);
-        */
-    }
-
     handlerObtenerApoyos = (e) => {
         let chk = e.target.checked;
         console.log("Valor de apoyos", chk);
         if (chk) {
-            this.apoyos = "si"
+            this.apoyos = "1"
         } else {
-            this.apoyos = ""
+            this.apoyos = "0"
         }
         console.log("Apyos", this.apoyos);
     }
 
-    handlerObtenerPlanEstudios = (e) => {
-        this.planEstudios = e.target.value
-        console.log("Plan estudios", this.planEstudios);
-    }
 
 
-    seleccionarBusqueda = () => {
-        switch (this.props.origen) {
-            case "preescolar":
+    handleBuscar = () => {
+        const origen = this.props.origen;
+        console.log("origen", origen);
+
+
+        switch (origen) {
+            case "Preescolar":
                 this.buscarRecursosPreescolar();
                 break;
-            case "primaria":
-            case "secundaria":
-            case "intercultural":
+            case "Primaria":
+            case "Secundaria":
+            case "Intercultural":
                 this.buscarRecursosGenerales();
             break;
             case "jovenesAdultos":
@@ -246,6 +164,8 @@ class Buscador extends Component {
             break;
 
             default:
+                console.log("parametro Origen fuera de rango");
+
                 break;
         }
 
@@ -340,7 +260,7 @@ class Buscador extends Component {
 
         var arrayHtml;
         var arrayTmp = [];
-        for (let index = 0; index < dataGeneral.length; index++) {
+        for (let index = 0; index < dataPreescolar.length; index++) {
             arrayHtml = (
 
 
@@ -386,26 +306,33 @@ class Buscador extends Component {
 
 
     buscarRecursosGenerales = () => {
+        let dataGeneral = [];
+        console.log("origen:", this.props.origen);
+        console.log("Materia recibido", this.state.materia);
 
-        //console.log(dataGeneral);
-        //console.log("Materia a buscar", this.materia );
-        //console.log("Año a buscar", this.anno );       
+        const arrayRecursos = JSON.parse(localStorage.getItem("arrayRecursos"));
+        console.log("array antes del filtro", arrayRecursos);
+
+        for (let index = 0; index < arrayRecursos.length; index++) {
+            if (arrayRecursos[index].materia === this.state.materia) {
+                dataGeneral.push(arrayRecursos[index]);
+            }
+
+        }
+        console.log("dataGeneral (DAtos filtrados por MATERIA:)", dataGeneral);
 
         var arrayHtml;
         var arrayTmp = [];
 
         for (let index = 0; index < dataGeneral.length; index++) {
 
-            //Expresión regular para materia
-            let strMateria = dataGeneral[index].materia;
-            let pattMateria = new RegExp(this.state.materia);
-            let resMateria = pattMateria.test(strMateria);
 
             //Expresión regular para año
             let strAnno = dataGeneral[index].anno;
             let pattAnno = new RegExp(this.anno);
             let resAnno = pattAnno.test(strAnno);
 
+            console.log("resAnno", resAnno);
 
             if (this.props.origen === dataGeneral[index].nombreNivel && resAnno && dataGeneral[index].apoyos === this.apoyos) {
 
@@ -467,7 +394,7 @@ class Buscador extends Component {
     cargarAmbientePreescolar() {
         if (this.props.origen === "preescolar") {
             //Carga el json de preescolar
-            dataGeneral = dataPreescolar;
+            //dataGeneral = dataPreescolar;
         }
     }
 
@@ -479,42 +406,42 @@ class Buscador extends Component {
         return (
             <React.Fragment>
                 <div className="row">
-   
+
                     <div className="col-sm-12  text-right">
                         {
-                            this.props.origen === "preescolar" && <img alt="Preescolar" className="bannerRecursos" src= {img + bannerPrescolar} />
+                            this.props.origen === "Preescolar" && <img alt="Preescolar" className="bannerRecursos" src={img + bannerPrescolar} />
                         }
                         {
-                            this.props.origen === "primaria" && <img alt="Primaria" className="bannerRecursos" src={img + bannerPrimaria}/>
+                            this.props.origen === "Primaria" && <img alt="Primaria" className="bannerRecursos" src={img + bannerPrimaria} />
                         }
                         {
-                            this.props.origen === "secundaria" && <img alt="Secundaria" className="bannerRecursos" src= {img + bannerSecundaria} />
+                            this.props.origen === "Secundaria" && <img alt="Secundaria" className="bannerRecursos" src={img + bannerSecundaria} />
                         }
                         {
-                            this.props.origen === "intercultural" && <img alt="intercultural" className="bannerRecursos" src= {img + "encabezado_intercultural.png"} />
+                            this.props.origen === "Intercultural" && <img alt="intercultural" className="bannerRecursos" src={img + "encabezado_intercultural.png"} />
                         }
                         {
-                            this.props.origen === "jovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src= {img + "encabezado_jovenes_adultos.png"} />
+                            this.props.origen === "JovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src={img + "encabezado_jovenes_adultos.png"} />
                         }
                         {
-                            this.props.origen === "feriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={img + bannerFerias} />
+                            this.props.origen === "FeriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={img + bannerFerias} />
                         }
                         {
-                            this.props.origen === "banderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src= {img + "encabezado_bandera_azul.png"} />
+                            this.props.origen === "BanderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src={img + "encabezado_bandera_azul.png"} />
                         }
 
-{
-                          plataformaUsada === "movil" ?
-                            ( 
-                                <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
-                            )
-                            :
-                            (
-                                <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
-                            )
+                        {
+                            plataformaUsada === "movil" ?
+                                (
+                                    <img className="hvr-pop boton-volverMovil img-fluid" onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                )
+                                :
+                                (
+                                    <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                )
                         }
 
-                    </div><br/><br/>
+                    </div><br /><br />
                 </div>
 
 
@@ -528,13 +455,13 @@ class Buscador extends Component {
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
                                     {
-                                        (this.props.origen === "primaria" || this.props.origen === "secundaria") &&
+                                        (this.props.origen === "Primaria" || this.props.origen === "Secundaria") &&
                                         (
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Asignatura</label>
                                         )
                                     }
                                     {
-                                        this.props.origen === "intercultural" &&
+                                        this.props.origen === "Intercultural" &&
                                         (
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Unidad</label>
                                         )
@@ -544,7 +471,7 @@ class Buscador extends Component {
                                     (this.props.origen !== "Preescolar"  &&  this.props.origen !== "jovenesAdultos") &&
                                     (
                                         <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
-                                            <option defaultValue value="" >Todas</option>
+                                            <option defaultValue value="" >Seleccione:</option>
                                             {
                                                 this.props.origen === "Primaria" &&
                                                 this.materiasPrimaria.map((item, i) => (
@@ -558,7 +485,7 @@ class Buscador extends Component {
                                                 ))
                                             }
                                             {
-                                                this.props.origen === "intercultural" &&
+                                                this.props.origen === "Intercultural" &&
                                                 (
                                                     <React.Fragment>
                                                         <option value="Educación Indígena" > Educación Indígena  </option>
@@ -586,15 +513,15 @@ class Buscador extends Component {
                                             <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                                 <option defaultValue value="" > Todos </option>
                                                 {
-                                                    this.props.origen === "primaria" &&
+                                                    this.props.origen === "Primaria" &&
                                                     annoPrimaria.map((item, i) => (
-                                                        <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                                        <option key={"anno" + i} value={item.label} >  {item.label}  </option>
                                                     ))
                                                 }
                                                 {
-                                                    this.props.origen === "secundaria" &&
+                                                    this.props.origen === "Secundaria" &&
                                                     anoSecundaria.map((item, i) => (
-                                                        <option key={"anno" + i} value={item.id} >  {item.label}  </option>
+                                                        <option key={"anno" + i} value={item.label} >  {item.label}  </option>
                                                     ))
                                                 }
                                             </select>
@@ -684,24 +611,6 @@ class Buscador extends Component {
 
                         <div className="col-sm-3">
 
-                            {
-                                /*
-                                Se elimina tipo de población
-                                this.props.origen !== "preescolar" &&
-                                (
-                                    <div className={this.claseCSSPoblacion}>
-                                        <input className="form-check-input" type="checkbox" value={
-                                            this.props.origen === "primaria" ? tipoPoblacion[0].id : tipoPoblacion[1].id
-                                        } onClick={this.handlerObtenerPoblacion} id="chkPoblacion" />
-                                        <label className="form-check-label" htmlFor="chkPoblacion">
-                                            {
-                                                this.props.origen === "primaria" ? tipoPoblacion[0].label : tipoPoblacion[1].label
-                                            }
-                                        </label>
-                                    </div>
-                                )
-                                */
-                            }
 
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" id="chkApyos" onClick={this.handlerObtenerApoyos} />
@@ -721,7 +630,7 @@ class Buscador extends Component {
 
                     <div className="row">
                         <div className="col-sm-12 text-right">
-                            <button onClick={this.seleccionarBusqueda} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
+                            <button onClick={this.handleBuscar} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>
