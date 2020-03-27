@@ -53,7 +53,7 @@ const RecursosDidacticosMovil = (props) => {
                 </div>          
                 <div className="col-4 ">
                 <figure>
-                    <img className="hvr-pop img-fluid" id="jovenesAdultos" src= {img+"jovenes_adultos.png"} data-tar="Construccion"  onClick={props.changePage}    alt="Jovenes y Adultos" />
+                    <img className="hvr-pop img-fluid" id="jovenesAdultos" src= {img+"jovenes_adultos.png"}  onClick={props.handlerOpenBuscador}    alt="Jovenes y Adultos" />
                 </figure>   
                 </div>
                 <div className="col-4  ">
