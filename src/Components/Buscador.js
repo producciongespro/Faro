@@ -9,15 +9,15 @@ import dataMediacion from '../data/recursos/recursos_mediacion.json';
 import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import dataPreescolar from '../data/recursos/recursos_preescolar.json';
 */
-import assets from '../data/config/config.json';
+import config from '../data/config/config.json';
 var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 var bannerPrescolar, bannerPrimaria, bannerSecundaria, bannerFerias;
-const img = assets.img.recursosDidacticos;
-const imgGenerales = assets.img.general;
+const img = config.img.recursosDidacticos;
+const imgGenerales = config.img.general;
 
 
-var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemática", "Mediación"]
-var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Matemática", "Mediación", "Química"]
+//var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemática", "Mediación"]
+//var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Matemática", "Mediación", "Química"]
 var anoSecundaria = [
     {
         "label": "Séptimo",
@@ -73,6 +73,7 @@ var annoPrimaria = [
 
 
 
+
 class Buscador extends Component {
     constructor(props) {
         super(props);
@@ -87,8 +88,13 @@ class Buscador extends Component {
         this.claseCSSMaterias = "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
         this.planEstudios = "";
+        this.materiasPrimaria = JSON.parse (localStorage.getItem("asignaturaPrimaria"));
+        this.materiasSecundaria = JSON.parse(localStorage.getItem("asignaturaSecundaria"));
+        
         //Oculta la materia en caso de preescolar
         this.cargarAmbientePreescolar();
+        
+        
     }
 
 
@@ -116,17 +122,10 @@ class Buscador extends Component {
     }
 
 
-
-    filtrarDataPorMateria = (materia) => {
-
-
-    }
-
-
     handlerobtenerMateria = (e) => {
-        const tmpMateria = e.target.value;
+        const tmpMateria = e.target.value;       
         this.setState({ materia: tmpMateria });
-        this.filtrarDataPorMateria(tmpMateria);
+        //this.filtrarDataPorMateria(tmpMateria);
     }
 
     handlerObtenerAnno = (e) => {
@@ -404,14 +403,14 @@ class Buscador extends Component {
                                             <option defaultValue value="" >Seleccione:</option>
                                             {
                                                 this.props.origen === "Primaria" &&
-                                                materiasPrimaria.map((item, i) => (
-                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                this.materiasPrimaria.map((item, i) => (
+                                                    <option key={"materia" + i} value={item.nombre} >  {item.nombre}  </option>
                                                 ))
                                             }
                                             {
                                                 this.props.origen === "Secundaria" &&
-                                                materiasSecundaria.map((item, i) => (
-                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                this.materiasSecundaria.map((item, i) => (
+                                                    <option key={"materia" + i} value={item.nombre} >  {item.nombre}  </option>
                                                 ))
                                             }
                                             {
