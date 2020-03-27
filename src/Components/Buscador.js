@@ -124,8 +124,7 @@ class Buscador extends Component {
 
     handlerobtenerMateria = (e) => {
         const tmpMateria = e.target.value;       
-        this.setState({ materia: tmpMateria });
-        //this.filtrarDataPorMateria(tmpMateria);
+        this.setState({ materia: tmpMateria });        
     }
 
     handlerObtenerAnno = (e) => {
