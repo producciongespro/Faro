@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
 header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
-$sql= "SELECT recursos.id, recursos.nombre, recursos.id_nivel, recursos.descripcion,recursos.url, niveles.nombreNivel, recursos.materia, recursos.anno, recursos.img_educatico, recursos.apoyos FROM recursos INNER JOIN niveles ON niveles.id = recursos.id_nivel WHERE recursos.borrado =0";
+$sql= "SELECT desarrollo_profesional.id, desarrollo_profesional.nombre, desarrollo_profesional.descripcion, desarrollo_profesional.poblacion, desarrollo_profesional.url, desarrollo_profesional.url_imagen,desarrollo_profesional.id_tipo, tipos_ODP.oferta,desarrollo_profesional.id_sub_categoria, sub_categorias_IDP.sub_categoria  FROM `desarrollo_profesional` LEFT JOIN `sub_categorias_IDP` ON desarrollo_profesional.id_sub_categoria=sub_categorias_IDP.id LEFT JOIN `tipos_ODP` ON tipos_ODP.id=desarrollo_profesional.id_tipo WHERE desarrollo_profesional.borrado = 1 ORDER BY desarrollo_profesional.id";
 include "conectar.php";
 //sleep(1);
 function desconectar($conexion){

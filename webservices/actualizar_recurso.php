@@ -7,7 +7,9 @@ header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
 $JSONData = file_get_contents("php://input");
 $dataObject = json_decode($JSONData);  
+
 require 'conectar.php';
+require 'bitacora.php';
 $conexion = conectarDB();
 $id = $dataObject-> id;
 $id_nivel = $dataObject-> id_nivel;
@@ -24,6 +26,7 @@ $usuario =  utf8_decode($dataObject-> id_usuario);
 
    if($resultadoActualizacion)
    {
+    registrar_bitacora($conexion, $usuario,$id,'Edita','Recursos');
     echo json_encode(array('error'=>'false','msj'=>'Datos actualizados correctamente'));
    }
    else

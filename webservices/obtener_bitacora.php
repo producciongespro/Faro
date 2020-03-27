@@ -3,9 +3,9 @@ header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
 header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
-$sql= "SELECT recursos.id, recursos.nombre, recursos.id_nivel, recursos.descripcion,recursos.url, niveles.nombreNivel, recursos.materia, recursos.anno, recursos.img_educatico, recursos.apoyos FROM recursos INNER JOIN niveles ON niveles.id = recursos.id_nivel WHERE recursos.borrado =0";
+$sql= "SELECT bitacora.id, usuarios.usuario, bitacora.evento,bitacora.tabla, bitacora.fecha_evento, recursos.nombre FROM bitacora INNER JOIN usuarios ON usuarios.id = bitacora.id_usuario INNER JOIN recursos ON recursos.id = bitacora.id_registro";
 include "conectar.php";
-//sleep(1);
+sleep(1);
 function desconectar($conexion){
 
     $close = mysqli_close($conexion);

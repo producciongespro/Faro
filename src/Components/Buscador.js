@@ -8,17 +8,16 @@ import dataItaliano from '../data/recursos/recursos_italiano.json';
 import dataMediacion from '../data/recursos/recursos_mediacion.json';
 // import dataArtesPlasticas from '../data/recursos/recursos_artes_plasticas.json';
 import dataPreescolar from '../data/recursos/recursos_preescolar.json';
-
-import assets from '../data/config/config.json';
+*/
+import config from '../data/config/config.json';
 var plataformaUsada = sessionStorage.getItem('tipoPlataforma');
 var bannerPrescolar, bannerPrimaria, bannerSecundaria, bannerFerias;
-const img = assets.img.recursosDidacticos;
-const imgGenerales = assets.img.general;
-var dataArtesPlasticas;
+const img = config.img.recursosDidacticos;
+const imgGenerales = config.img.general;
 
 
-var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación"]
-var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Matemáticas", "Mediación", "Química"]
+//var materiasPrimaria = ["Artes Plásticas", "Ciencias", "Educación Vial", "Español", "Estudios Sociales", "Francés", "Inglés", "Italiano", "Matemática", "Mediación"]
+//var materiasSecundaria = ["Biología", "Ciencias", "Cívica", "Español", "Estudios Sociales", "Física", "Francés", "Inglés", "Italiano", "Matemática", "Mediación", "Química"]
 var anoSecundaria = [
     {
         "label": "Séptimo",
@@ -88,6 +87,7 @@ var dataGeneral = "";
 //console.log("dataIngles", dataIngles);
 
 
+
 class Buscador extends Component {
     constructor(props) {
         super(props);
@@ -102,8 +102,13 @@ class Buscador extends Component {
         this.claseCSSMaterias = "input-group mb-3";
         this.claseCSSPoblacion = "form-check";
         this.planEstudios = "";
+        this.materiasPrimaria = JSON.parse (localStorage.getItem("asignaturaPrimaria"));
+        this.materiasSecundaria = JSON.parse(localStorage.getItem("asignaturaSecundaria"));
+        
         //Oculta la materia en caso de preescolar
         this.cargarAmbientePreescolar();
+        
+        
     }
 
 
@@ -185,20 +190,9 @@ class Buscador extends Component {
         }
 
 
-    }
-
-
     handlerobtenerMateria = (e) => {
-        //Limpia la variable plan en caso de que haya sido utilizada anteriormente:
-        this.planEstudios = "";
-
-        let valor = e.target.value;
-
-        this.setState({ materia: valor }, () => {
-            this.cargarDatasetRecursos(this.state.materia);
-            console.log("materia", this.state.materia);
-        })
-
+        const tmpMateria = e.target.value;       
+        this.setState({ materia: tmpMateria });        
     }
 
     handlerObtenerAnno = (e) => {
@@ -246,7 +240,10 @@ class Buscador extends Component {
             case "secundaria":
             case "intercultural":
                 this.buscarRecursosGenerales();
-                break;
+            break;
+            case "jovenesAdultos":
+                this.buscarRecursosJovenesAdultos();
+            break;
 
             default:
                 break;
@@ -254,46 +251,133 @@ class Buscador extends Component {
 
     }
 
+
+    buscarRecursosJovenesAdultos = () => {
+        console.log("Buscador Jovenes adultos");
+        var dataJovenesAdultos = [];
+
+
+        //CArga del storage
+        let tmpArray = JSON.parse(localStorage.getItem("arrayRecursos"));
+
+        console.log("tmpArray",tmpArray);
+        
+
+        //filtra el arreglo con solo datos de preescolar
+        for (let index = 0; index < tmpArray.length; index++) {
+            if (tmpArray[index].id_nivel === "5") {
+                dataJovenesAdultos.push(tmpArray[index]);
+            }
+
+        }
+
+        console.log("dataPreescolar", dataJovenesAdultos);
+
+        var arrayHtml;
+        var arrayTmp = [];
+        for (let index = 0; index < dataJovenesAdultos.length; index++) {
+            arrayHtml = (
+
+
+                <div key={"tarjeta" + index} className="col-4">
+                <div className="card">
+                    <img
+                        src={dataJovenesAdultos[index].img_educatico}
+                        className="card-img-top"
+                        alt={"imagen previa del recurso " + dataJovenesAdultos[index].nombre}
+                    />
+                    <div className="card-body">
+                        <a href={dataJovenesAdultos[index].url}
+                         target="_blank"
+                         rel="noopener noreferrer"
+                        >
+                            <h5 className="card-title">
+                                {dataJovenesAdultos[index].nombre}
+                            </h5>
+                        </a>
+                        <p className="card-text">
+                            {dataJovenesAdultos[index].descripcion}
+                        </p>
+                    </div>
+                    <div className="card-body">                        
+                        <a
+                            href={dataJovenesAdultos[index].url}
+                            className="card-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ver recurso <i className="fas fa-eye" ></i>                                    
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+                
+            )
+            arrayTmp.push(arrayHtml);
+        };
+        this.setState({ tarjetas: arrayTmp });
+    };
+
+
     buscarRecursosPreescolar = () => {
-        console.log("dataGeneral", dataGeneral);
+        console.log("Buscador preescolar");
+        var dataPreescolar = [];
+
+
+        //CArga del storage
+        let tmpArray = JSON.parse(localStorage.getItem("arrayRecursos"));
+
+        //filtra el arreglo con solo datos de preescolar
+        for (let index = 0; index < tmpArray.length; index++) {
+            if (tmpArray[index].nombreNivel === "Preescolar") {
+                dataPreescolar.push(tmpArray[index]);
+            }
+
+        }
+
+        console.log("dataPreescolar", dataPreescolar);
+
         var arrayHtml;
         var arrayTmp = [];
         for (let index = 0; index < dataGeneral.length; index++) {
             arrayHtml = (
-                <React.Fragment>
-                    <h5>    {dataGeneral[index].nombre} </h5>
-                    <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].descripcion}  </span>
-                    <br />
-                    {
-                        this.state.materia === "" && (
-                            <React.Fragment>
-                                {
-                                    (this.props.origen === "primaria" || this.props.origen === "secundaria") &&
-                                    (
-                                        <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {dataGeneral[index].materia}     </span>
-                                    )
-                                }
-                                {
-                                    (this.props.origen === "intercultural") &&
-                                    (
-                                        <span> <strong>   <i className="fab fa-diaspora"></i>    Unidad:</strong>  {dataGeneral[index].materia}     </span>
-                                    )
-                                }
-                                <br />
-                            </React.Fragment>
-                        )
-                    }
-                    {
-                        this.anno === "" && (
-                            <React.Fragment>
-                                <span> <strong>  <i className="fab fa-diaspora"></i>  Año:</strong>  {dataGeneral[index].anno}   </span>
-                                <br />
-                            </React.Fragment>
-                        )
-                    }
-                    <a href={dataGeneral[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
-                    <hr />
-                </React.Fragment>
+
+
+                <div key={"tarjeta" + index} className="col-4">
+                <div className="card">
+                    <img
+                        src={dataPreescolar[index].img_educatico}
+                        className="card-img-top"
+                        alt={"imagen previa del recurso " + dataPreescolar[index].nombre}
+                    />
+                    <div className="card-body">
+                        <a href={dataPreescolar[index].url}
+                         target="_blank"
+                         rel="noopener noreferrer"
+                        >
+                            <h5 className="card-title">
+                                {dataPreescolar[index].nombre}
+                            </h5>
+                        </a>
+                        <p className="card-text">
+                            {dataPreescolar[index].descripcion}
+                        </p>
+                    </div>
+                    <div className="card-body">                        
+                        <a
+                            href={dataPreescolar[index].url}
+                            className="card-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ver recurso <i className="fas fa-eye" ></i>                                    
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+                
             )
             arrayTmp.push(arrayHtml);
         };
@@ -323,56 +407,49 @@ class Buscador extends Component {
             let resAnno = pattAnno.test(strAnno);
 
 
-            // console.log(  "res Materia",  resMateria   );
-            //console.log("res Año", resAnno );          
-            //console.log("this.apoyos=", this.apoyos  );
-            //console.log( "dataGeneral=", dataGeneral[index].apoyos );
-
-
-
-
-
-            if (this.props.origen === dataGeneral[index].nivel && resMateria && resAnno && this.poblacion === dataGeneral[index].poblacion && this.apoyos === dataGeneral[index].apoyos && dataGeneral[index].plan === this.planEstudios) {
+            if (this.props.origen === dataGeneral[index].nombreNivel && resAnno && dataGeneral[index].apoyos === this.apoyos) {
 
 
                 //console.log( "Nombre del recurso", dataGeneral[index].nombre );
                 //console.log( "Año:", dataGeneral[index].anno );                
 
                 arrayHtml = (
-                    <React.Fragment>
-                        <h5>    {dataGeneral[index].nombre} </h5>
-                        <span> <strong>  <i className="fab fa-diaspora"></i>  Descripción:</strong>  {dataGeneral[index].descripcion}  </span>
-                        <br />
-                        {
-                            this.state.materia === "" && (
-                                <React.Fragment>
-                                    {
-                                        (this.props.origen === "primaria" || this.props.origen === "secundaria") &&
-                                        (
-                                            <span> <strong>   <i className="fab fa-diaspora"></i>    Materia:</strong>  {dataGeneral[index].materia}     </span>
-                                        )
-                                    }
-                                    {
-                                        (this.props.origen === "intercultural") &&
-                                        (
-                                            <span> <strong>   <i className="fab fa-diaspora"></i>    Unidad:</strong>  {dataGeneral[index].materia}     </span>
-                                        )
-                                    }
-                                    <br />
-                                </React.Fragment>
-                            )
-                        }
-                        {
-                            this.anno === "" && (
-                                <React.Fragment>
-                                    <span> <strong>  <i className="fab fa-diaspora"></i>  Año:</strong>  {dataGeneral[index].anno}   </span>
-                                    <br />
-                                </React.Fragment>
-                            )
-                        }
-                        <a href={dataGeneral[index].url} target="_blank" rel="noopener noreferrer" >  Ver recurso  </a>
-                        <hr />
-                    </React.Fragment>
+                    <div key={"tarjeta" + index} className="col-4">
+                        <div className="card">
+                            <img
+                                src={dataGeneral[index].img_educatico}
+                                className="card-img-top"
+                                alt={"imagen previa del recurso " + dataGeneral[index].nombre}
+                            />
+                            <div className="card-body">
+                                <a href={dataGeneral[index].url}
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                                >
+                                    <h5 className="card-title">
+                                        {dataGeneral[index].nombre}
+                                    </h5>
+                                </a>
+                                <p className="card-text">
+                                    {dataGeneral[index].descripcion}
+                                </p>
+                            </div>
+                            <div className="card-body">
+                                <span>
+                                    Años <strong>{ dataGeneral[index].anno}</strong>
+                                </span>
+                                <br/>
+                                <a
+                                    href={dataGeneral[index].url}
+                                    className="card-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Ver recurso <i className="fas fa-eye" ></i>                                    
+                            </a>
+                            </div>
+                        </div>
+                    </div>
                 )
                 arrayTmp.push(arrayHtml);
             }
@@ -464,20 +541,20 @@ class Buscador extends Component {
                                     }
                                 </div>
                                 {
-                                    this.props.origen !== "preescolar" &&
+                                    (this.props.origen !== "Preescolar"  &&  this.props.origen !== "jovenesAdultos") &&
                                     (
                                         <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
                                             <option defaultValue value="" >Todas</option>
                                             {
-                                                this.props.origen === "primaria" &&
-                                                materiasPrimaria.map((item, i) => (
-                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                this.props.origen === "Primaria" &&
+                                                this.materiasPrimaria.map((item, i) => (
+                                                    <option key={"materia" + i} value={item.nombre} >  {item.nombre}  </option>
                                                 ))
                                             }
                                             {
-                                                this.props.origen === "secundaria" &&
-                                                materiasSecundaria.map((item, i) => (
-                                                    <option key={"materia" + i} value={item} >  {item}  </option>
+                                                this.props.origen === "Secundaria" &&
+                                                this.materiasSecundaria.map((item, i) => (
+                                                    <option key={"materia" + i} value={item.nombre} >  {item.nombre}  </option>
                                                 ))
                                             }
                                             {
@@ -501,7 +578,7 @@ class Buscador extends Component {
                             {
                                 // SI NIVEL ES DIFERNETE DE INTERCULTURAL SE RENDERIZA EL SELECT AÑO
                                 (this.props.origen !== "intercultural") && (
-                                    (this.props.origen !== "preescolar") ? (
+                                    (this.props.origen !== "Preescolar" && this.props.origen !== "jovenesAdultos") ? (
                                         <div className="input-group mb-3">
                                             <div className="input-group-prepend">
                                                 <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
@@ -662,13 +739,9 @@ class Buscador extends Component {
 
 
                     <div className="row">
-                        <div className="col-sm-12">
-                            {
-                                this.state.tarjetas.map((item, i) => (
-                                    <div key={"tarjeta" + i} > {item} </div>
-                                ))
-                            }
-                        </div>
+                        {
+                            this.state.tarjetas
+                        }
                     </div>
 
 

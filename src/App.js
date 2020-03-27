@@ -36,12 +36,33 @@ import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
 import analitica from './modulos/analitica';
 import Covid from './Components/Covid';
 
-import assets from './data/config/config.json';
+//Assets y rutas serivodr API
+import config from './data/config/config.json';
 
 
 //Json
 import descripciones from "./data/descripciones/descripciones.json";
-const imgGenerales = assets.img.general;
+const imgGenerales = config.img.general;
+
+ async function cargarDatos(cb) {
+  //En estos servicios se obtiene insumos para la categoría "Recursos":
+  
+  const asignaturaPrimaria = await obtener(config.servidorAPI + "obtener_tabla.php?tabla=asignaturas_primaria");
+  const asignaturaSecundaria = await obtener(config.servidorAPI + "obtener_tabla.php?tabla=asignaturas_secundaria");
+  const arrayRecursos = await obtener( config.servidorAPI + "obtener_recursos.php");
+  
+  //console.log("asignaturaPrimaria",asignaturaPrimaria);
+  //console.log("asignaturaSecundaria",asignaturaSecundaria);    
+  //console.log("arrayRecursos", arrayRecursos);
+
+  //Local Storage que se va a utilizar en recursos
+  localStorage.setItem("asignaturaPrimaria", JSON.stringify(asignaturaPrimaria));
+  localStorage.setItem("asignaturaSecundaria", JSON.stringify(asignaturaSecundaria));
+  localStorage.setItem("arrayRecursos", JSON.stringify(arrayRecursos));
+
+  //console.log("guardado", localStorage.getItem("arrayRecursos"));  
+  cb();  
+}
 
 
 class App extends Component {
@@ -383,7 +404,7 @@ class App extends Component {
       currentPage: <Buscador origen={origen} handlerCerrarBuscador={this.handlerCerrarBuscador} />
     });
   }
-
+  
   handlerCerrarBuscador = () => {
     switch (this.plataforma) {
       case "movil":

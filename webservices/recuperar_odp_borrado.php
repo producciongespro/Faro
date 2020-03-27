@@ -11,15 +11,15 @@ require 'conectar.php';
 require 'bitacora.php';
 $conexion = conectarDB();
 $id = $dataObject-> id;
-$usuario= $dataObject-> id_usuario;
-   $actualizacion = "UPDATE `recursos` SET `borrado`='1', `id_usuario`='$usuario' WHERE `id`='$id'";
+$usuario =  utf8_decode($dataObject-> id_usuario);
+   $actualizacion = "UPDATE `desarrollo_profesional` SET `borrado`='0', `id_usuario`='$usuario' WHERE `id`='$id'";
 
    $resultadoActualizacion = mysqli_query($conexion, $actualizacion); 
 
    if($resultadoActualizacion)
    {
-      registrar_bitacora($conexion, $usuario,$id,'Elimina','Recursos');
-      echo json_encode(array('error'=>'false','msj'=>'Datos borrados de forma exitosa'));
+    registrar_bitacora($conexion, $usuario,$id,'Recupera','Oferta Desarrollo');
+    echo json_encode(array('error'=>'false','msj'=>'Datos recuperados de forma exitosa'));
    }
    else
    {
