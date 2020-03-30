@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 27-03-2020 a las 11:34:25
+-- Tiempo de generación: 27-03-2020 a las 09:41:14
 -- Versión del servidor: 5.6.45
 -- Versión de PHP: 7.3.6
 
@@ -39,21 +39,13 @@ CREATE TABLE `asignaturas_primaria` (
 --
 
 INSERT INTO `asignaturas_primaria` (`id`, `nombre`, `observaciones`) VALUES
-(1, 'Artes Industriales', ''),
-(2, 'Artes Plásticas', ''),
-(3, 'Ciencias', ''),
-(4, 'Educación Física', ''),
-(5, 'Educación Musical', ''),
-(6, 'Educación para el Hogar', ''),
-(7, 'Educación Religiosa', NULL),
-(9, 'Español', NULL),
-(10, 'Estudios Sociales', NULL),
-(11, 'Francés', NULL),
-(12, 'Inglés', NULL),
-(13, 'Informática Educativa', NULL),
-(14, 'Italiano', NULL),
-(15, 'Matemática', NULL),
-(16, 'Orientación', NULL);
+(1, 'Matemática', ''),
+(2, 'Ciencias', ''),
+(3, 'Español', ''),
+(4, 'Estudios Sociales', ''),
+(5, 'Artes Plásticas', ''),
+(6, 'Inglés', ''),
+(7, 'Francés', NULL);
 
 -- --------------------------------------------------------
 
@@ -72,28 +64,14 @@ CREATE TABLE `asignaturas_secundaria` (
 --
 
 INSERT INTO `asignaturas_secundaria` (`id`, `nombre`, `observaciones`) VALUES
-(1, 'Artes Industriales', NULL),
-(2, 'Artes Plásticas ', NULL),
-(3, 'Biología', NULL),
-(4, 'Ciencias', NULL),
-(5, 'Educación Cívica ', NULL),
-(6, 'Educación Física', NULL),
-(7, 'Educación Musical', NULL),
-(8, 'Educación para el Hogar', NULL),
-(9, 'Educación para la Afectividad y la Sexualidad Integral', NULL),
-(10, 'Educación Religiosa', NULL),
-(11, 'Español', NULL),
-(12, 'Estudios Sociales', NULL),
-(13, 'Filosofía', NULL),
-(14, 'Física', NULL),
-(15, 'Francés', NULL),
-(16, 'Informática Educativa', NULL),
-(17, 'Inglés', NULL),
-(18, 'Italiano', NULL),
-(19, 'Matemática', NULL),
-(20, 'Orientación', NULL),
-(21, 'Psicología', NULL),
-(22, 'Química', NULL);
+(1, 'Español', NULL),
+(2, 'Matemática', NULL),
+(3, 'Ciencias', NULL),
+(4, 'Estudios Sociales', NULL),
+(5, 'Biología', NULL),
+(6, 'Química', NULL),
+(7, 'Física', NULL),
+(8, 'Orientación', NULL);
 
 -- --------------------------------------------------------
 
@@ -166,9 +144,7 @@ INSERT INTO `bitacora` (`id`, `id_usuario`, `evento`, `fecha_evento`, `id_regist
 (82, '108', 'Agregar', '2020-03-26 21:16:21', 54, 'Recursos'),
 (83, '108', 'Agregar', '2020-03-26 21:17:13', 55, 'Recursos'),
 (84, '108', 'Agregar', '2020-03-26 21:18:38', 56, 'Recursos'),
-(85, '108', 'Agregar', '2020-03-26 21:20:01', 57, 'Recursos'),
-(86, '108', 'Elimina', '2020-03-27 15:49:41', 51, 'Recursos'),
-(87, '', 'Agregar', '2020-03-27 17:08:51', 57, 'Oferta Desarrollo');
+(85, '108', 'Agregar', '2020-03-26 21:20:01', 57, 'Recursos');
 
 -- --------------------------------------------------------
 
@@ -184,29 +160,20 @@ CREATE TABLE `desarrollo_profesional` (
   `url` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `id_tipo` int(11) NOT NULL,
   `url_imagen` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `id_sub_categoria` int(11) NOT NULL,
-  `borrado` int(11) NOT NULL DEFAULT '0'
+  `id_sub_categoria` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `desarrollo_profesional`
 --
 
-INSERT INTO `desarrollo_profesional` (`id`, `nombre`, `descripcion`, `poblacion`, `url`, `id_tipo`, `url_imagen`, `id_sub_categoria`, `borrado`) VALUES
-(1, 'Utilización de Word en el ámbito educativo', 'Se pretende fortalecer las habilidades y conocimientos para crear documentos digitales escritos con herramientas de Microsoft Office Word.', 'Dirigido a Personal docente y técnico-docente del sistema educativo nacional.', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/word.png', 0, 0),
-(2, 'Utilización de Excel en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para crear hojas de cálculo que permiten la interacción y colaboración que agregan tratamiento de los datos en el ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/2excel.png', 0, 0),
-(3, 'Utilización de Power Point en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para mejorar las presentaciones de información ofreciendo un dinamismo al ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/3powerpoint.png', 0, 0),
-(4, 'Creación de Edublogs', 'El presente curso permite aplicar habilidades tecnológicas que permitan profundizar en la construcción y edición de un Blog educativo.', 'Dirigido a Personal docente y Asesores pedagógicos del MEP', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/6dublogs.png', 0, 0),
-(5, 'La sazón de la lectoescritura', 'Los participantes de este curso, tendrán la posibilidad de reforzar sus conocimientos en el enfoque curricular que sustenta el Programa de estudio de Español, así como retomar la importancia conceptual de la conciencia fonológica y sus componentes durante la implementación de estrategias de mediación que contribuyan a desarrollarla. Se desarrolla en línea con una duración de 24 horas. Debe tener acceso a Internet de manera estable, el correo institucional (MEP) activo y de uso cotidiano, conocer en un nivel básico la exploración y navegación de un entorno virtual.', 'Dirigido a Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/sazon.png', 0, 0),
-(6, 'Producción de Recurso Educativos Digitales', 'El presente curso está dirigido para docentes en ejercicio del Ministerio de Educación Pública, ofrece actividades y recursos que les permita a los participantes apropiarse de estrategias para la producción de recursos educativos digitales innovadores, mediante el uso de herramientas locales y como web; los cuales pueden favorecer los procesos de mediación en el aula.', 'Dirigido a Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/recursos.png', 0, 0),
-(7, 'AULABLOG', 'Es un blog de edublogs que publica los post o noticias que se publican en los blogs de otros docentes adscriptos al mismo. Además, permite acceder a esos blogs educativos, crear nuevos blogs o suscribirse a canales RSS de noticias educativas. Tiene secciones como una biblioteca de blogs, una wiki sobre los mismos, tutoriales para crear blogs, etc.', '', 'http://www.aulablog.com/', 2, '', 1, 0),
-(8, 'Aula 21', 'En un espacio en la web orientada hacia las actividades de cálculo desde el nivel de preescolar hasta la educación secundaria, abarca el ámbito de la geometría y el álgebra, ofrece gran cantidad de recursos y estrategias didácticas que el docente puede aplicar, tiene un webquest y actividades como la caza de tesoros que a los estudiantes les agradan mucho.', '', 'http://www.aula21.net/', 2, '', 1, 0),
-(9, 'CEDEC Centro Nacional de Desarrollo Curricular en sistemas no propietarios', 'El Centro Nacional de Desarrollo Curricular en Sistemas no Propietarios (CEDEC) es un organismo dependiente del Ministerio de Educación, Cultura y Deporte a través del Instituto Nacional de Tecnologías Educativas y Formación del Profesorado (INTEF) y de la Consejería de Educación y Cultura del Gobierno de Extremadura. Tiene como finalidad el diseño, la promoción y el desarrollo de materiales educativos digitales a través del software libre. Nuestro objetivo es poner a disposición de toda la comunidad educativa materiales y recursos digitales de libre acceso y que permitan profundizar en la implantación de las Tecnologías de la Información y Comunicación en el Ámbito Educativo.', '', 'http://cedec.intef.es/rubricas/', 2, '', 1, 0),
-(10, 'DICTALIA', 'Este sitio le ofrece al docente una gran cantidad de recursos educativos, de diferente naturaleza, crucigramas, sopas de letras, videos, planeamientos, rúbricas y otros. Algunos de los temas son propios delos programas de la comunidad económica europea.', '', 'https://didactalia.net/comunidad/materialeducativo?proyectoID=f22e757b-8116-4496-bec4-ae93a4792c28&comunidad=true', 2, '', 1, 0),
-(11, 'El educador: Punto de encuentro', 'Ofrece un conjunto de artículos, recursos educativos y oros elementos que le sirven de apoyo al docente para sus lecciones. Es necesario hacer un registro dentro del sitio y obtener una cuenta de ingreso para poder descargar los documentos.', '', 'http://www.eleducador.com/', 2, '', 1, 0),
-(12, 'EDUC.AR', 'Es el portal educativo gestionado por el Ministerio de Educación de Argentina. Es muy amplio con numerosas noticias, documentos, debates y recursos educativos. Aunque está pensado para los docentes de dicho país, cualquier profesor encontrará materiales que podrá utilizar en su docencia o en su autoformación.', '', 'http://www.educ.ar/', 2, '', 1, 0),
-(13, 'EDUC@CONTIC', 'Portal web educativo impulsado por el Plan Avanza y Red.es del Gobierno de España destinado a docentes interesados en las aplicaciones de las TIC en las escuelas. Tiene numerosos recursos, blogs, noticias, e informaciones sobre software educativo.', '', 'http://www.educacontic.es/', 2, '', 1, 0),
-(14, '', '', 'N/A', '', 0, 'N/A', 0, 0);
+INSERT INTO `desarrollo_profesional` (`id`, `nombre`, `descripcion`, `poblacion`, `url`, `id_tipo`, `url_imagen`, `id_sub_categoria`) VALUES
+(1, 'Utilización de Word en el ámbito educativo', 'Se pretende fortalecer las habilidades y conocimientos para crear documentos digitales escritos con herramientas de Microsoft Office Word.', 'Dirigido a Personal docente y técnico-docente del sistema educativo nacional.', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/word.png', 0),
+(2, 'Utilización de Excel en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para crear hojas de cálculo que permiten la interacción y colaboración que agregan tratamiento de los datos en el ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/2excel.png', 0),
+(3, 'Utilización de Power Point en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para mejorar las presentaciones de información ofreciendo un dinamismo al ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/3powerpoint.png', 0),
+(4, 'Creación de Edublogs', 'El presente curso permite aplicar habilidades tecnológicas que permitan profundizar en la construcción y edición de un Blog educativo.', 'Dirigido a Personal docente y Asesores pedagógicos del MEP', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/6dublogs.png', 0),
+(5, 'La sazón de la lectoescritura', 'Los participantes de este curso, tendrán la posibilidad de reforzar sus conocimientos en el enfoque curricular que sustenta el Programa de estudio de Español, así como retomar la importancia conceptual de la conciencia fonológica y sus componentes durante la implementación de estrategias de mediación que contribuyan a desarrollarla. Se desarrolla en línea con una duración de 24 horas. Debe tener acceso a Internet de manera estable, el correo institucional (MEP) activo y de uso cotidiano, conocer en un nivel básico la exploración y navegación de un entorno virtual.', 'Dirigido a Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/sazon.png', 0),
+(6, 'Producción de Recurso Educativos Digitales', 'El presente curso está dirigido para docentes en ejercicio del Ministerio de Educación Pública, ofrece actividades y recursos que les permita a los participantes apropiarse de estrategias para la producción de recursos educativos digitales innovadores, mediante el uso de herramientas locales y como web; los cuales pueden favorecer los procesos de mediación en el aula.', 'Dirigido a Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/recursos.png', 0);
 
 -- --------------------------------------------------------
 
@@ -228,7 +195,7 @@ CREATE TABLE `estadisticas` (
 --
 
 INSERT INTO `estadisticas` (`clim`, `eval`, `recu`, `docu`, `prof`, `plan`) VALUES
-(78673, 168018, 150267, 123426, 70434, 350231);
+(78612, 167891, 150129, 123320, 70370, 349969);
 
 -- --------------------------------------------------------
 
@@ -377,7 +344,7 @@ INSERT INTO `recursos` (`id`, `nombre`, `descripcion`, `id_nivel`, `anno`, `url`
 (48, 'El metiche', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/metiche.jpg', 3, 'Sétimo,Octavo,Noveno,Décimo,Undécimo,Duodécimo', 'https://www.mep.go.cr/educatico/metiche', 'Matemática', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/metiche.jpg', 0, 108, '2020-03-26 20:02:51', 0),
 (49, 'Apoyo Curricular en Matemática I y II Ciclo de la Educación General Básica', 'Documento de apoyo para realizar la mediación pedagógica por parte del docente de  I y II Ciclos, en el encontrara orientaciones e ideas para la elaboración de las estrategias de mediación y potenciar de esta manera la acción de aula, a través de la integración de habilidades..', 2, 'Primero,Segundo,Tercero,Cuarto,Quinto,Sexto', 'http://mep.go.cr/educatico/apoyo-curricular-matematica-i-ii-ciclo', 'Matemática', 'http://mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/apoyo-curricular.png', 0, 108, '2020-03-26 20:31:28', 0),
 (50, 'Apoyo Curricular en Matemática I y II Ciclo de la Educación General Básica', 'Documento de apoyo para realizar la mediación pedagógica por parte del docente de  I y II ciclos, en el encontrará orientaciones e ideas para la elaboración de las estrategias de mediación y potenciar de esta manera la acción de aula, a través de la integración de habilidades.', 2, 'Primero,Segundo,Tercero,Cuarto,Quinto,Sexto', 'http://mep.go.cr/educatico/integracion-habilidades-I-II-ciclo', 'Matemática', 'http://mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/integracion_habilidades.jpg', 0, 108, '2020-03-26 20:32:17', 0),
-(51, 'Cuenticos', 'Aprovecha la versatilidad de la tecnología y, haciendo uso de un diseño atractivo y una perspectiva lúdica, impulsa a la población estudiantil a crear narraciones originales. Un valor agregado del recurso es el hecho de que abre la alternativa de que tales textos literarios sean publicados (esto con la previa revisión y aval de la persona docente) y su lectura sea del disfrute de otros estudiantes o internautas nacionales e internacionales.', 2, 'Primero,Segundo,Tercero,Cuarto,Quinto,Sexto', 'http://mep.go.cr/educatico/cuenticos', 'Español', 'http://mep.go.cr/educatico/cuenticos', 0, 108, '2020-03-26 20:39:22', 1),
+(51, 'Cuenticos', 'Aprovecha la versatilidad de la tecnología y, haciendo uso de un diseño atractivo y una perspectiva lúdica, impulsa a la población estudiantil a crear narraciones originales. Un valor agregado del recurso es el hecho de que abre la alternativa de que tales textos literarios sean publicados (esto con la previa revisión y aval de la persona docente) y su lectura sea del disfrute de otros estudiantes o internautas nacionales e internacionales.', 2, 'Primero,Segundo,Tercero,Cuarto,Quinto,Sexto', 'http://mep.go.cr/educatico/cuenticos', 'Español', 'http://mep.go.cr/educatico/cuenticos', 0, 108, '2020-03-26 20:39:22', 0),
 (52, 'Cuenticos', 'Krei, cuyo nombre es tomado del esperanto y tiene origen en el latín crea, ha sido diseñado con el propósito de que el estudiante lo utilice  de la manera más crítica y creativa posible.', 3, 'Sétimo,Octavo,Noveno,Décimo,Undécimo,Duodécimo', 'http://mep.go.cr/educatico/krei', 'Español', 'http://mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/krei.jpg', 0, 108, '2020-03-26 20:48:00', 0),
 (53, 'Objetos enigmáticos', 'l grupo de infografías; Claves del Arte costarricense (Arte premoderno costarricense, Arte moderno costarricense y Arte contemporáneo costarricense), se presenta a la comunidad educativa como un recurso de apoyo para el desarrollo de los contenidos programáticos de undécimo año.', 3, 'Sétimo,Octavo,Noveno,Décimo,Undécimo,Duodécimo', 'http://mep.go.cr/educatico/arte-costarricense-contemporaneo', '-1', 'http://mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/artecontemporaneo.jpg', 0, 108, '2020-03-26 21:14:30', 0),
 (54, 'Biotecnología: sus técnicas y aplicaciones', 'Definición de biotecnología, tipos tradicional, clásica y moderna. Campos de aplicación de la ingeniería genética.  Descripción y ejemplos de técnicas:  mutaciones inducidas, transgénesis, clonación, mantenimiento de germoplasmas o genomas.  Consideraciones sociales y éticas.', 3, 'Sétimo,Octavo,Noveno,Décimo,Undécimo,Duodécimo', 'http://mep.go.cr/educatico/biotecnologia-sus-tecnicas-aplicaciones', 'Biología', 'http://mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/biotecnologia_tecnica.png', 0, 108, '2020-03-26 21:16:21', 0),
@@ -599,25 +566,25 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `asignaturas_primaria`
 --
 ALTER TABLE `asignaturas_primaria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `asignaturas_secundaria`
 --
 ALTER TABLE `asignaturas_secundaria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `bitacora`
 --
 ALTER TABLE `bitacora`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador del evento o acción realizada', AUTO_INCREMENT=88;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador del evento o acción realizada', AUTO_INCREMENT=86;
 
 --
 -- AUTO_INCREMENT de la tabla `desarrollo_profesional`
 --
 ALTER TABLE `desarrollo_profesional`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `programas_ae`
