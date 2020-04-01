@@ -9,6 +9,7 @@ $JSONData = file_get_contents("php://input");
 $dataObject = json_decode($JSONData);  
 require 'conectar.php';
 require 'bitacora.php';
+$usuario = $dataObject-> usuario;
 $nombre = $dataObject-> nombre;
 $descripcion = $dataObject-> descripcion;
 if (isset ($dataObject-> poblacion)) {
@@ -26,7 +27,7 @@ if (isset ($dataObject-> url_imagen)) {
 if (isset ($dataObject-> id_sub_categoria)) {
     $id_sub_categoria =  utf8_decode($dataObject-> id_sub_categoria); 
   } else {
-    $id_sub_categoria =  "N/A"; 
+    $id_sub_categoria =  "-1"; 
   }
   $conn = conectarDB();
     
