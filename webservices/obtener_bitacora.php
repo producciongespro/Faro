@@ -4,7 +4,7 @@ header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Conte
 header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
 $tabla=$_GET['tabla'];
-$sql= "SELECT bitacora.id, usuarios.usuario, bitacora.evento,bitacora.tabla, bitacora.fecha_evento, recursos.nombre FROM bitacora INNER JOIN usuarios ON usuarios.id = bitacora.id_usuario INNER JOIN $tabla ON $tabla.id = bitacora.id_registro";
+$sql= "SELECT bitacora.id, usuarios.usuario, bitacora.evento,bitacora.tabla, bitacora.fecha_evento, $tabla.nombre FROM bitacora INNER JOIN usuarios ON usuarios.id = bitacora.id_usuario INNER JOIN $tabla ON $tabla.id = bitacora.id_registro";
 include "conectar.php";
 sleep(1);
 function desconectar($conexion){
