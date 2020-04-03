@@ -4,9 +4,23 @@ header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Conte
 header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
 $tabla=$_GET['tabla'];
-
-        $sql= "SELECT bitacora.evento, bitacora.fecha_evento, usuarios.usuario, tablas.tabla FROM bitacora INNER JOIN usuarios ON usuarios.id=bitacora.id_usuario INNER JOIN tablas ON bitacora.id_tabla=tablas.id WHERE id_tabla=$tabla";
-
+$TablaNombre="";
+switch ($tabla) {
+    case 1:
+         $TablaNombre="recursos";
+    break;
+    case 2:
+        $TablaNombre="desarrollo_profesional";
+    break;
+    case 3:
+        $TablaNombre="planeamiento";
+    break;
+    default:
+        echo "Valor fuera de rango";
+        break;
+}
+        $sql= "SELECT bitacora.evento,$TablaNombre.nombre, bitacora.fecha_evento, usuarios.usuario, tablas.tabla FROM bitacora INNER JOIN usuarios ON usuarios.id=bitacora.id_usuario INNER JOIN tablas ON bitacora.id_tabla=tablas.id INNER JOIN $TablaNombre ON $TablaNombre.id=bitacora.id_registro WHERE id_tabla=$tabla";
+        // echo "Consulta ".$sql;
 include "conectar.php";
 sleep(1);
 function desconectar($conexion){
