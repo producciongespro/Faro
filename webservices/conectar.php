@@ -4,12 +4,11 @@ header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Conte
 header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
 
-//www\Flautaoke20\webservices\flautaoke20
 function conectarDB(){
 
   $servidor = "localhost";
-  $usuario = "cajaherr_gespro";
-  $password = "Hola123Gespro";
+  $usuario = "root";
+  $password = "";
   $bd = "cajaherr_datos";
 
     $conexion = mysqli_connect($servidor, $usuario, $password,$bd);
