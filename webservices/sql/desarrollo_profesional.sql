@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 03, 2020 at 02:19 PM
+-- Generation Time: Apr 03, 2020 at 04:45 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `desarrollo_profesional` (
   `url` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `id_tipo` int(11) NOT NULL,
   `id_usuario` int(128) DEFAULT NULL,
-  `fecha_ingreso` date NOT NULL DEFAULT current_timestamp(),
+  `fecha_ingreso` date DEFAULT NULL,
   `url_imagen` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `id_sub_categoria` int(11) NOT NULL,
   `borrado` int(11) NOT NULL DEFAULT 0,
@@ -49,10 +49,10 @@ CREATE TABLE IF NOT EXISTS `desarrollo_profesional` (
 --
 
 INSERT INTO `desarrollo_profesional` (`id`, `nombre`, `descripcion`, `poblacion`, `url`, `id_tipo`, `id_usuario`, `fecha_ingreso`, `url_imagen`, `id_sub_categoria`, `borrado`) VALUES
-(1, 'Utilización de Word en el ámbito educativo', 'Se pretende fortalecer las habilidades y conocimientos para crear documentos digitales escritos con herramientas de Microsoft Office Word.', 'Dirigido a Personal docente y técnico-docente del sistema educativo nacional.', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/word.png', 0, 0),
-(2, 'Utilización de Excel en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para crear hojas de cálculo que permiten la interacción y colaboración que agregan tratamiento de los datos en el ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 0, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/2excel.png', 0, 0),
-(3, 'Utilización de Power Point en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para mejorar las presentaciones de información ofreciendo un dinamismo al ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 0, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/3powerpoint.png', 0, 0),
-(4, 'Creación de Edublogs', 'El presente curso permite aplicar habilidades tecnológicas que permitan profundizar en la construcción y edición de un Blog educativo.', 'Dirigido a Personal docente y Asesores pedagógicos del MEP', 'https://www.facebook.com/idpmep/', 1, 0, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/6dublogs.png', 0, 0),
+(1, 'Utilización de Word en el ámbito educativo', 'Se pretende fortalecer las habilidades y conocimientos para crear documentos digitales escritos con herramientas de Microsoft Office Word.', 'Dirigido a Personal docente y técnico-docente del sistema educativo nacional.', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/word.png', 0, 1),
+(2, 'Utilización de Excel en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para crear hojas de cálculo que permiten la interacción y colaboración que agregan tratamiento de los datos en el ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/2excel.png', 0, 1),
+(3, 'Utilización de Power Point en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para mejorar las presentaciones de información ofreciendo un dinamismo al ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/3powerpoint.png', 0, 0),
+(4, 'Creación de Edublogs', 'El presente curso permite aplicar habilidades tecnológicas que permitan profundizar en la construcción y edición de un Blog educativo.', 'Dirigido a Personal docente y Asesores pedagógicos del MEP', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/6dublogs.png', 0, 0),
 (5, 'La sazón de la lectoescritura', 'Los participantes de este curso, tendrán la posibilidad de reforzar sus conocimientos en el enfoque curricular que sustenta el Programa de estudio de Español, así como retomar la importancia conceptual de la conciencia fonológica y sus componentes durante la implementación de estrategias de mediación que contribuyan a desarrollarla. Se desarrolla en línea con una duración de 24 horas. Debe tener acceso a Internet de manera estable, el correo institucional (MEP) activo y de uso cotidiano, conocer en un nivel básico la exploración y navegación de un entorno virtual.', 'Dirigido a Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 0, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/sazon.png', 0, 0),
 (6, 'Producción de Recurso Educativos Digitales', 'El presente curso está dirigido para docentes en ejercicio del Ministerio de Educación Pública, ofrece actividades y recursos que les permita a los participantes apropiarse de estrategias para la producción de recursos educativos digitales innovadores, mediante el uso de herramientas locales y como web; los cuales pueden favorecer los procesos de mediación en el aula.', 'Dirigido a Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 0, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/recursos.png', 0, 0),
 (7, 'AULABLOG', 'Es un blog de edublogs que publica los post o noticias que se publican en los blogs de otros docentes adscriptos al mismo. Además, permite acceder a esos blogs educativos, crear nuevos blogs o suscribirse a canales RSS de noticias educativas. Tiene secciones como una biblioteca de blogs, una wiki sobre los mismos, tutoriales para crear blogs, etc.', '', 'http://www.aulablog.com/', 2, 0, '2020-04-03', '', 1, 0),
