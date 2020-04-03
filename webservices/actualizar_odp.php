@@ -11,9 +11,11 @@ require 'conectar.php';
 require 'bitacora.php';
 $conexion = conectarDB();
 $id = $dataObject-> id;
-$usuario = $dataObject-> usuario;
+$id_usuario = $dataObject-> usuario;
 $nombre = $dataObject-> nombre;
 $descripcion = $dataObject-> descripcion;
+$fecha_ingreso = date("l jS \of F Y h:i:s A");
+
 if (isset ($dataObject-> poblacion)) {
     $poblacion =  utf8_decode($dataObject-> poblacion); 
   } else {
@@ -37,7 +39,7 @@ if (isset ($dataObject-> id_sub_categoria)) {
 
    if($resultadoActualizacion)
    {
-    registrar_bitacora($conexion, $usuario,$id,'Edita',2);
+    registrar_bitacora($conexion, $id_usuario,$id,'Edita',2);
     echo json_encode(array('error'=>'false','msj'=>'Datos actualizados correctamente'));
    }
    else
