@@ -41,7 +41,7 @@ if (isset ($dataObject-> id_sub_categoria)) {
     $rs = mysqli_query($conn,"SELECT id from recursos ORDER BY id DESC LIMIT 1");
     if ($row = mysqli_fetch_row($rs)) {
         $id_ultimo = trim($row[0]);
-        registrar_bitacora($conn, $usuario,$id_ultimo,'Agregar','Oferta Desarrollo');
+        registrar_bitacora($conn, $usuario,$id_ultimo,'Agregar',2);
         echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
     }
   } else {

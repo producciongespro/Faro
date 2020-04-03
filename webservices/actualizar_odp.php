@@ -37,7 +37,7 @@ if (isset ($dataObject-> id_sub_categoria)) {
 
    if($resultadoActualizacion)
    {
-    registrar_bitacora($conexion, $usuario,$id,'Edita','Desarrollo profesional');
+    registrar_bitacora($conexion, $usuario,$id,'Edita',2);
     echo json_encode(array('error'=>'false','msj'=>'Datos actualizados correctamente'));
    }
    else

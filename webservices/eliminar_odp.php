@@ -18,7 +18,7 @@ $usuario= $dataObject-> id_usuario;
 
    if($resultadoActualizacion)
    {
-      registrar_bitacora($conexion, $usuario,$id,'Elimina','desarrollo_profesional');
+      registrar_bitacora($conexion, $usuario,$id,'Elimina',2);
       echo json_encode(array('error'=>'false','msj'=>'Datos borrados de forma exitosa'));
    }
    else
