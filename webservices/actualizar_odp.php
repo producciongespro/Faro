@@ -9,6 +9,8 @@ $JSONData = file_get_contents("php://input");
 $dataObject = json_decode($JSONData);  
 require 'conectar.php';
 require 'bitacora.php';
+$conexion = conectarDB();
+$id = $dataObject-> id;
 $usuario = $dataObject-> usuario;
 $nombre = $dataObject-> nombre;
 $descripcion = $dataObject-> descripcion;
@@ -29,22 +31,17 @@ if (isset ($dataObject-> id_sub_categoria)) {
   } else {
     $id_sub_categoria =  "-1"; 
   }
-  $conn = conectarDB();
-    
-  if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-  }
+   $actualizacion = "UPDATE `desarrollo_profesional` SET `nombre`= '$nombre',`descripcion`='$descripcion',`poblacion`='$poblacion',`url`='$url',`id_tipo`='$id_tipo',`id_usuario`='$id_usuario',`fecha_ingreso`='$fecha_ingreso,'`url_imagen`='$url_imagen',`id_sub_categoria`='$id_sub_categoria' WHERE `id`='$id'";
 
-  $sql = "INSERT INTO `desarrollo_profesional`(`nombre`, `descripcion`, `poblacion`, `url`, `id_tipo`, `url_imagen`, `id_sub_categoria`) VALUES ('$nombre', '$descripcion', '$poblacion', '$url', '$id_tipo', '$url_imagen', '$id_sub_categoria')";
+   $resultadoActualizacion = mysqli_query($conexion, $actualizacion); 
 
-  if ($conn->query($sql) === TRUE) { 
-    $rs = mysqli_query($conn,"SELECT id from recursos ORDER BY id DESC LIMIT 1");
-    if ($row = mysqli_fetch_row($rs)) {
-        $id_ultimo = trim($row[0]);
-        registrar_bitacora($conn, $usuario,$id_ultimo,'Agregar',2);
-        echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
-    }
-  } else {
-    echo json_encode(array('error'=>'true','msj'=>$conn->error)); 
-  }
+   if($resultadoActualizacion)
+   {
+    registrar_bitacora($conexion, $usuario,$id,'Edita',2);
+    echo json_encode(array('error'=>'false','msj'=>'Datos actualizados correctamente'));
+   }
+   else
+   {
+    echo json_encode(array('error'=>'true','msj'=>$conexion->error)); 
+   }
 ?>

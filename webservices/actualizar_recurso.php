@@ -26,7 +26,7 @@ $usuario =  utf8_decode($dataObject-> id_usuario);
 
    if($resultadoActualizacion)
    {
-    registrar_bitacora($conexion, $usuario,$id,'Edita','Recursos');
+    registrar_bitacora($conexion, $usuario,$id,'Edita',1);
     echo json_encode(array('error'=>'false','msj'=>'Datos actualizados correctamente'));
    }
    else
