@@ -41,6 +41,9 @@ $method = $_SERVER['REQUEST_METHOD'];
         }
         $nueva_consulta->close();
       }
+      else{
+        echo json_encode(array('error'=>true, 'error_msg' => 'No se pudo conectar a BD'));
+      }
  // }
 $mysqli->close();
 ?>
