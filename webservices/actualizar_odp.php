@@ -12,9 +12,9 @@ require 'bitacora.php';
 $conexion = conectarDB();
 $id = $dataObject-> id;
 $id_usuario = $dataObject-> usuario;
-$nombre = $dataObject-> nombre;
-$descripcion = $dataObject-> descripcion;
-$fecha_ingreso = date("l jS \of F Y h:i:s A");
+$nombre = utf8_decode($dataObject-> nombre);
+$descripcion = utf8_decode($dataObject-> descripcion);
+// $fecha_ingreso = date("l jS \of F Y h:i:s A");
 
 if (isset ($dataObject-> poblacion)) {
     $poblacion =  utf8_decode($dataObject-> poblacion); 
