@@ -14,7 +14,6 @@ $id = $dataObject-> id;
 $id_usuario = $dataObject-> usuario;
 $nombre = $dataObject-> nombre;
 $descripcion = $dataObject-> descripcion;
-$fecha_ingreso = date("l jS \of F Y h:i:s A");
 
 if (isset ($dataObject-> poblacion)) {
     $poblacion =  utf8_decode($dataObject-> poblacion); 
@@ -33,7 +32,7 @@ if (isset ($dataObject-> id_sub_categoria)) {
   } else {
     $id_sub_categoria =  "-1"; 
   }
-   $actualizacion = "UPDATE `desarrollo_profesional` SET `nombre`= '$nombre',`descripcion`='$descripcion',`poblacion`='$poblacion',`url`='$url',`id_tipo`='$id_tipo',`id_usuario`='$id_usuario',`fecha_ingreso`='$fecha_ingreso',`url_imagen`='$url_imagen',`id_sub_categoria`='$id_sub_categoria' WHERE `id`='$id'";
+   $actualizacion = "UPDATE `desarrollo_profesional` SET `nombre`= '$nombre',`descripcion`='$descripcion',`poblacion`='$poblacion',`url`='$url',`id_tipo`='$id_tipo',`id_usuario`='$id_usuario',`url_imagen`='$url_imagen',`id_sub_categoria`='$id_sub_categoria' WHERE `id`='$id'";
 
    $resultadoActualizacion = mysqli_query($conexion, $actualizacion); 
 
