@@ -28,21 +28,21 @@ $method = $_SERVER['REQUEST_METHOD'];
             if (password_verify($pas, $encriptado_db))
             {
                 $_SESSION['usuario'] = $datos['usuario'];
-                echo json_encode(array('error'=>false,'usuario'=>$datos['usuario'], 'nombre'=>$datos['nombre'],  'apellido1'=>$datos['apellido1'],  'apellido2'=>$datos['apellido2'], 'id'=>$datos['id'], 'idTipoUsuario'=>$datos['idTipoUsuario'], 'etiquetaTipoUsuario'=>$datos['etiquetaTipoUsuario']  ) );
+                echo json_encode(array('conectado'=>false,'usuario'=>$datos['usuario'], 'nombre'=>$datos['nombre'],  'apellido1'=>$datos['apellido1'],  'apellido2'=>$datos['apellido2'], 'id'=>$datos['id'], 'idTipoUsuario'=>$datos['idTipoUsuario'], 'etiquetaTipoUsuario'=>$datos['etiquetaTipoUsuario']  ) );
               }
 
                else {
 
-                 echo json_encode(array('error'=>true, 'error_msg' => 'La clave es incorrecta, vuelva a intentarlo.'));
+                 echo json_encode(array('conectado'=>true, 'error_msg' => 'La clave es incorrecta, vuelva a intentarlo.'));
                     }
         }
         else {
-              echo json_encode(array('error'=>true, 'error_msg' => 'El usuario no existe.'));
+              echo json_encode(array('conectado'=>true, 'error_msg' => 'El usuario no existe.'));
         }
         $nueva_consulta->close();
       }
       else{
-        echo json_encode(array('error'=>true, 'error_msg' => 'No se pudo conectar a BD'));
+        echo json_encode(array('conectado'=>true, 'error_msg' => 'No se pudo conectar a BD'));
       }
  // }
 $mysqli->close();
