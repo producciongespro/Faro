@@ -52,10 +52,13 @@ const imgGenerales = config.img.general;
   const asignaturaPrimaria = await obtener(config.servidorAPI + "obtener_tabla.php?tabla=asignaturas_primaria");
   const asignaturaSecundaria = await obtener(config.servidorAPI + "obtener_tabla.php?tabla=asignaturas_secundaria");
   const arrayRecursos = await obtener( config.servidorAPI + "obtener_recursos.php");
+  const arrayDesarrolloProfesional = await obtener(config.servidorAPI + "obtener_oferta_desarrollo.php");
   
   //console.log("asignaturaPrimaria",asignaturaPrimaria);
   //console.log("asignaturaSecundaria",asignaturaSecundaria);    
   //console.log("arrayRecursos", arrayRecursos);
+  console.log("arrayDesarrolloProfesional",arrayDesarrolloProfesional);
+  
 
   //Local Storage que se va a utilizar en recursos
   localStorage.setItem("asignaturaPrimaria", JSON.stringify(asignaturaPrimaria));
