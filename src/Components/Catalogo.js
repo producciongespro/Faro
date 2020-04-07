@@ -5,9 +5,11 @@ import Cards from "../Comp-primitive/Cards.jsx";
 
 
 //Json con información:
-import cursos from '../data/desarrollo/cursos.json';
+//import cursos from '../data/desarrollo/cursos.json';
+
 import videoteca from '../data/desarrollo/videoteca.json';
 import otrasOfertas from '../data/desarrollo/otras_ofertas.json';
+import filtrar from '../modulos/filtrar';
 
 import config from '../data/config/config';
 const asst = config.img.desarrolloProfesional;
@@ -26,6 +28,7 @@ class Catalogo extends Component {
         this.imagenEncabezado = "";
         this.leyendaCursos = "";
         this.colorFondo = "";
+        this.cursos =   filtrar(JSON.parse( localStorage.getItem("arrayDesarrolloProfesional") ), "id_tipo", "1"  );
     }
 
 
@@ -35,9 +38,11 @@ class Catalogo extends Component {
 
     UNSAFE_componentWillMount() {
  //       console.log("Subcategoria:", this.props.idCat);
+        console.log("this.cursos",this.cursos);
+ 
         switch (this.props.idCat) {
             case "cursos":
-                this.tmpArray = cursos;
+                this.tmpArray = this.cursos;
                 //carga la referencia para la imagen del encabezado:
                 this.imagenEncabezado = "DesarrolloTituloCursosVirt";
                 this.colorFondo = "divRojo col-12";

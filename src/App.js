@@ -54,16 +54,17 @@ const imgGenerales = config.img.general;
   const arrayRecursos = await obtener( config.servidorAPI + "obtener_recursos.php");
   const arrayDesarrolloProfesional = await obtener(config.servidorAPI + "obtener_oferta_desarrollo.php");
   
-  //console.log("asignaturaPrimaria",asignaturaPrimaria);
-  //console.log("asignaturaSecundaria",asignaturaSecundaria);    
-  //console.log("arrayRecursos", arrayRecursos);
+  console.log("asignaturaPrimaria",asignaturaPrimaria);
+  console.log("asignaturaSecundaria",asignaturaSecundaria);    
+  console.log("arrayRecursos", arrayRecursos);
   console.log("arrayDesarrolloProfesional",arrayDesarrolloProfesional);
   
 
   //Local Storage que se va a utilizar en recursos
   localStorage.setItem("asignaturaPrimaria", JSON.stringify(asignaturaPrimaria));
   localStorage.setItem("asignaturaSecundaria", JSON.stringify(asignaturaSecundaria));
-  localStorage.setItem("arrayRecursos", JSON.stringify(arrayRecursos));
+  localStorage.setItem("arrayRecursos", JSON.stringify(arrayRecursos) );
+  localStorage.setItem("arrayDesarrolloProfesional", JSON.stringify(arrayDesarrolloProfesional) );
 
   //console.log("guardado", localStorage.getItem("arrayRecursos"));  
   cb();  

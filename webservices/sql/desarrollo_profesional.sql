@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 03, 2020 at 04:45 PM
--- Server version: 10.4.10-MariaDB
+-- Generation Time: Apr 07, 2020 at 04:30 PM
+-- Server version: 5.7.29
 -- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -36,25 +36,25 @@ CREATE TABLE IF NOT EXISTS `desarrollo_profesional` (
   `poblacion` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `url` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `id_tipo` int(11) NOT NULL,
-  `id_usuario` int(128) DEFAULT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
   `fecha_ingreso` date DEFAULT NULL,
-  `url_imagen` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `url_imagen` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `id_sub_categoria` int(11) NOT NULL,
-  `borrado` int(11) NOT NULL DEFAULT 0,
+  `borrado` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=91 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=92 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `desarrollo_profesional`
 --
 
 INSERT INTO `desarrollo_profesional` (`id`, `nombre`, `descripcion`, `poblacion`, `url`, `id_tipo`, `id_usuario`, `fecha_ingreso`, `url_imagen`, `id_sub_categoria`, `borrado`) VALUES
-(1, 'Utilización de Word en el ámbito educativo', 'Se pretende fortalecer las habilidades y conocimientos para crear documentos digitales escritos con herramientas de Microsoft Office Word.', 'Dirigido a Personal docente y técnico-docente del sistema educativo nacional.', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/word.png', 0, 1),
-(2, 'Utilización de Excel en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para crear hojas de cálculo que permiten la interacción y colaboración que agregan tratamiento de los datos en el ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/2excel.png', 0, 1),
-(3, 'Utilización de Power Point en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para mejorar las presentaciones de información ofreciendo un dinamismo al ámbito educativo.', 'Dirigido a Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/3powerpoint.png', 0, 0),
-(4, 'Creación de Edublogs', 'El presente curso permite aplicar habilidades tecnológicas que permitan profundizar en la construcción y edición de un Blog educativo.', 'Dirigido a Personal docente y Asesores pedagógicos del MEP', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/6dublogs.png', 0, 0),
-(5, 'La sazón de la lectoescritura', 'Los participantes de este curso, tendrán la posibilidad de reforzar sus conocimientos en el enfoque curricular que sustenta el Programa de estudio de Español, así como retomar la importancia conceptual de la conciencia fonológica y sus componentes durante la implementación de estrategias de mediación que contribuyan a desarrollarla. Se desarrolla en línea con una duración de 24 horas. Debe tener acceso a Internet de manera estable, el correo institucional (MEP) activo y de uso cotidiano, conocer en un nivel básico la exploración y navegación de un entorno virtual.', 'Dirigido a Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 0, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/sazon.png', 0, 0),
-(6, 'Producción de Recurso Educativos Digitales', 'El presente curso está dirigido para docentes en ejercicio del Ministerio de Educación Pública, ofrece actividades y recursos que les permita a los participantes apropiarse de estrategias para la producción de recursos educativos digitales innovadores, mediante el uso de herramientas locales y como web; los cuales pueden favorecer los procesos de mediación en el aula.', 'Dirigido a Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 0, '2020-04-03', 'https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/recursos.png', 0, 0),
+(1, 'Utilización de Word en el ámbito educativo', 'Se pretende fortalecer las habilidades y conocimientos para crear documentos digitales escritos con herramientas de Microsoft Office Word.', 'Personal docente y técnico-docente del sistema educativo nacional', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'word.png', 1, 0),
+(2, 'Utilización de Excel en el ámbito', 'El curso requiere fortalecer habilidades y conocimientos para crear hojas de cálculo que permiten la interacción y colaboración que agregan tratamiento de los datos en el ámbito educativo.', 'Personal docente y técnico-docente del sistema educativo nacional', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', '2excel.png', 1, 0),
+(3, 'Utilización de Power Point en el ámbito educativo', 'El curso requiere fortalecer habilidades y conocimientos para mejorar las presentaciones de información ofreciendo un dinamismo al ámbito educativo.', 'Personal docente y administrativo del MEP.', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', 'powerpoint.png', 0, 1),
+(4, 'Creación de Edublogs', 'El presente curso permite aplicar habilidades tecnológicas que permitan profundizar en la construcción y edición de un Blog educativo.', 'Personal docente y Asesores pedagógicos del MEP', 'https://www.facebook.com/idpmep/', 1, 106, '2020-04-03', '6dublogs.png', 0, 0),
+(5, 'La sazón de la lectoescritura', 'Los participantes de este curso, tendrán la posibilidad de reforzar sus conocimientos en el enfoque curricular que sustenta el Programa de estudio de Español, así como retomar la importancia conceptual de la conciencia fonológica y sus componentes durante la implementación de estrategias de mediación que contribuyan a desarrollarla. Se desarrolla en línea con una duración de 24 horas. Debe tener acceso a Internet de manera estable, el correo institucional (MEP) activo y de uso cotidiano, conocer en un nivel básico la exploración y navegación de un entorno virtual.', 'Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 0, '2020-04-03', 'sazon.png', 0, 0),
+(6, 'Producción de Recurso Educativos Digitales', 'El presente curso está dirigido para docentes en ejercicio del Ministerio de Educación Pública, ofrece actividades y recursos que les permita a los participantes apropiarse de estrategias para la producción de recursos educativos digitales innovadores, mediante el uso de herramientas locales y como web; los cuales pueden favorecer los procesos de mediación en el aula.', 'Personal docente del MEP', 'https://www.facebook.com/idpmep/', 1, 0, '2020-04-03', 'recursos.png', 0, 0),
 (7, 'AULABLOG', 'Es un blog de edublogs que publica los post o noticias que se publican en los blogs de otros docentes adscriptos al mismo. Además, permite acceder a esos blogs educativos, crear nuevos blogs o suscribirse a canales RSS de noticias educativas. Tiene secciones como una biblioteca de blogs, una wiki sobre los mismos, tutoriales para crear blogs, etc.', '', 'http://www.aulablog.com/', 2, 0, '2020-04-03', '', 1, 0),
 (8, 'Aula 21', 'En un espacio en la web orientada hacia las actividades de cálculo desde el nivel de preescolar hasta la educación secundaria, abarca el ámbito de la geometría y el álgebra, ofrece gran cantidad de recursos y estrategias didácticas que el docente puede aplicar, tiene un webquest y actividades como la caza de tesoros que a los estudiantes les agradan mucho.', '', 'http://www.aula21.net/', 2, 0, '2020-04-03', '', 1, 0),
 (9, 'CEDEC Centro Nacional de Desarrollo Curricular en sistemas no propietarios', 'El Centro Nacional de Desarrollo Curricular en Sistemas no Propietarios (CEDEC) es un organismo dependiente del Ministerio de Educación, Cultura y Deporte a través del Instituto Nacional de Tecnologías Educativas y Formación del Profesorado (INTEF) y de la Consejería de Educación y Cultura del Gobierno de Extremadura. Tiene como finalidad el diseño, la promoción y el desarrollo de materiales educativos digitales a través del software libre. Nuestro objetivo es poner a disposición de toda la comunidad educativa materiales y recursos digitales de libre acceso y que permitan profundizar en la implantación de las Tecnologías de la Información y Comunicación en el Ámbito Educativo.', '', 'http://cedec.intef.es/rubricas/', 2, 0, '2020-04-03', '', 1, 0),

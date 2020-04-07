@@ -17,15 +17,15 @@ const CardsImage = (props) => {
         <div className="row">
         <div className="card text-center m-2">
           <div className="card-header">
-            Dirigido a {props.item.meta}
+            Dirigido a {props.item.poblacion}
           </div>
           <div className="card-body">
-            <img src={ asst +  props.item.icono} alt="imagen del curso" className="img-thumbnail img-previas" />
+            <img src={ asst + props.item.url_imagen} alt="imagen del curso" className="img-thumbnail img-previas" />
             <h5 className="card-title">
                 {props.item.nombre}
             </h5>
             <p className="card-text">
-              {props.item.proposito}
+              {props.item.descripcion}
             </p>            
           </div>
           <div className="card-footer text-muted">
@@ -51,13 +51,13 @@ const CardsImage = (props) => {
           <div className="row">
 
             <div className="card-body col-6">
-              <img alt="prueba" className="card-img-top card-custom" src={props.item.icono} />
+              <img alt="prueba" className="card-img-top card-custom" src={asst + props.item.url_imagen} />
             </div>
 
             <div className="col-4 inform">
 
-              <p className="card-text"><b>Dirigido a: </b> {props.item.meta}  </p>
-              <p className="card-text"><b>Descripción: </b> {props.item.proposito}  </p>
+              <p className="card-text"><b>Dirigido a: </b> {props.item.poblacion}  </p>
+              <p className="card-text"><b>Descripción: </b> {props.item.descripcion}  </p>
 
             </div>
 
