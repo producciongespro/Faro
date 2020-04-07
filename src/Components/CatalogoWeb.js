@@ -1,14 +1,21 @@
 import React from 'react';
 import sitiosWeb from '../data/desarrollo/sitios.json'
 import images from "../data/images.json";
-//import recursos from '../data/recursos/recursosPreescolar';
+import filtrar from '../modulos/filtrar';
 
 var img = images[0];
 //console.log(sitiosWeb);
+var recursosWeb=null;
 
+const cargarRecursosWeb=()=>{
+    recursosWeb = filtrar(JSON.parse(localStorage.getItem("arrayDesarrolloProfesional")), "id_tipo", "2");
+    //console.log("recursosWeb",recursosWeb);    
+}
 
-
+//Componente que renderiza recursos web para docentes
 const CatalogoWeb = (props) => {
+cargarRecursosWeb();
+
     return ( 
         <React.Fragment>
             <div className="row">
@@ -33,7 +40,7 @@ const CatalogoWeb = (props) => {
             
             <div id="educativos">  <a href="#inicio">   <h4 className="tit-catalogo" > Sitios Educativos </h4> <br/> </a>    
                         {
-                            sitiosWeb[0].map((item, i) => (
+                            recursosWeb.map((item, i) => (
                                 <div className="tarjetas-web"  key={i} >
                                 
                                     <div className="row"> 
@@ -46,7 +53,7 @@ const CatalogoWeb = (props) => {
                                         
                                         <div className="col-11">   
                                         <h6> <b> {item.nombre}</b></h6>
-                                            <p className="text-catalogo">  {item.desc}  </p>
+                                            <p className="text-catalogo">  {item.descripcion}  </p>
                                             <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
                                             <hr/>  <hr/>
                                         </div>

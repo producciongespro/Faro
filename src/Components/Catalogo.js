@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 
 import Cards from "../Comp-primitive/Cards.jsx";
-
-
-//Json con información:
-//import cursos from '../data/desarrollo/cursos.json';
-
 import videoteca from '../data/desarrollo/videoteca.json';
 import otrasOfertas from '../data/desarrollo/otras_ofertas.json';
 import filtrar from '../modulos/filtrar';
@@ -42,6 +37,7 @@ class Catalogo extends Component {
  
         switch (this.props.idCat) {
             case "cursos":
+                console.log("Cursos virtuales");                
                 this.tmpArray = this.cursos;
                 //carga la referencia para la imagen del encabezado:
                 this.imagenEncabezado = "DesarrolloTituloCursosVirt";
@@ -57,15 +53,18 @@ class Catalogo extends Component {
                 )
                 break;
             case "videoteca":
+                console.log("Videoteca");                
                 this.tmpArray = videoteca;
                 this.imagenEncabezado = "DesarrolloTituloVideoteca";
                 this.colorFondo = "divAzul col-12";
                 break;
             case "pautas":
+                console.log("Pautas");                
                 //this.tmpArray = otrasOfertas;
                 this.imagenEncabezado = "DesarrolloTituloReferencias";
                 break;
             case "ficha":
+                console.log("Otras ofertas (ficha)");                
                 this.tmpArray = otrasOfertas;
                 this.imagenEncabezado = "DesarrolloTituloOtrasOfertas";
                 this.colorFondo = "divTurqueza col-12";

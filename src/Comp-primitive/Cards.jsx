@@ -32,9 +32,9 @@ const CardsImage = (props) => {
             {
             //props.item.inicio
             }
-            <a href="https://www.facebook.com/idpmep/" target="_blnak"  >
+            <a href={props.item.url} target="_blnak"  >
               <i>
-                Clic aquí para más información de los cursos en Facebook.
+                Clic aquí para más información de los cursos en el IDP.
               </i>
             </a>            
           </div>
