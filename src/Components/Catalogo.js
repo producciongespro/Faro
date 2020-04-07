@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 import Cards from "../Comp-primitive/Cards.jsx";
 import videoteca from '../data/desarrollo/videoteca.json';
-import otrasOfertas from '../data/desarrollo/otras_ofertas.json';
+//import otrasOfertas from '../data/desarrollo/otras_ofertas.json';
 import filtrar from '../modulos/filtrar';
 
 import config from '../data/config/config';
@@ -24,6 +24,7 @@ class Catalogo extends Component {
         this.leyendaCursos = "";
         this.colorFondo = "";
         this.cursos =   filtrar(JSON.parse( localStorage.getItem("arrayDesarrolloProfesional") ), "id_tipo", "1"  );
+        this.otrasOfertas = filtrar(JSON.parse( localStorage.getItem("arrayDesarrolloProfesional") ), "id_tipo", "5"  );
     }
 
 
@@ -32,8 +33,11 @@ class Catalogo extends Component {
 
 
     UNSAFE_componentWillMount() {
- //       console.log("Subcategoria:", this.props.idCat);
-        console.log("this.cursos",this.cursos);
+        //console.log("Subcategoria:", this.props.idCat);
+        //console.log("this.cursos",this.cursos);
+        console.log("otrasOfertas",this.otrasOfertas);
+        
+
  
         switch (this.props.idCat) {
             case "cursos":
@@ -65,7 +69,7 @@ class Catalogo extends Component {
                 break;
             case "ficha":
                 console.log("Otras ofertas (ficha)");                
-                this.tmpArray = otrasOfertas;
+                this.tmpArray = this.otrasOfertas;
                 this.imagenEncabezado = "DesarrolloTituloOtrasOfertas";
                 this.colorFondo = "divTurqueza col-12";
                 break;
