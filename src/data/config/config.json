@@ -2,7 +2,7 @@
     "version" : "1.1.2",
     "nombre" : "Caja de Herramientas",
     "servidor" : "http://localhost/",
-    "servidorAPI": "http://localhost/faro/webservices/",
+    "servidorAPI": "http://faro/webservices/",
     "img" : {
         "general" : "http://localhost/Faro/asset/img/9_generales/",
         "portada" : "http://localhost/Faro/asset/img/1_portada/",
