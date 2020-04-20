@@ -2,7 +2,7 @@
     "version" : "1.1.2",
     "nombre" : "Caja de Herramientas",
     "servidor" : "https://cajadeherramientas.mep.go.cr/",
-    "servidorAPI": "http://www.cajadeherramientas.mep.go.cr/webservices/",
+    "servidorAPI": "https://www.cajadeherramientas.mep.go.cr/webservices/",
     "img" : {
         "general" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/9_generales/",
         "portada" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/",
