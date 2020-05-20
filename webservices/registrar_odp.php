@@ -10,8 +10,10 @@ $dataObject = json_decode($JSONData);
 require 'conectar.php';
 require 'bitacora.php';
 $usuario = $dataObject-> usuario;
-$nombre = $dataObject-> nombre;
-$descripcion = $dataObject-> descripcion;
+$nombre = utf8_decode($dataObject-> nombre);
+$descripcion = utf8_decode($dataObject-> descripcion);
+
+
 if (isset ($dataObject-> poblacion)) {
     $poblacion =  utf8_decode($dataObject-> poblacion); 
   } else {
