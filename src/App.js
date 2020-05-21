@@ -33,6 +33,7 @@ import PortadaMovil from './Components/PortadaMovil';
 import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
+import AgendaEstudiantil from './Components/AgendaEstudiantil';
 
 //Módulos personalizados
 import analitica from './modulos/analitica';
@@ -46,12 +47,12 @@ import config from './data/config/config.json';
 import descripciones from "./data/descripciones/descripciones.json";
 const imgGenerales = config.img.general;
 
- async function cargarDatos(cb) {
+async function cargarDatos(cb) {
   //En estos servicios se obtiene insumos para la categoría "Recursos":
-  
+
   const asignaturaPrimaria = await obtener(config.servidorAPI + "obtener_tabla.php?tabla=asignaturas_primaria");
   const asignaturaSecundaria = await obtener(config.servidorAPI + "obtener_tabla.php?tabla=asignaturas_secundaria");
-  const arrayRecursos = await obtener( config.servidorAPI + "obtener_recursos.php");
+  const arrayRecursos = await obtener(config.servidorAPI + "obtener_recursos.php");
   const arrayDesarrolloProfesional = await obtener(config.servidorAPI + "obtener_oferta_desarrollo.php");
   /*
   console.log("asignaturaPrimaria",asignaturaPrimaria);
@@ -62,11 +63,11 @@ const imgGenerales = config.img.general;
   //Local Storage que se va a utilizar en recursos
   localStorage.setItem("asignaturaPrimaria", JSON.stringify(asignaturaPrimaria));
   localStorage.setItem("asignaturaSecundaria", JSON.stringify(asignaturaSecundaria));
-  localStorage.setItem("arrayRecursos", JSON.stringify(arrayRecursos) );
-  localStorage.setItem("arrayDesarrolloProfesional", JSON.stringify(arrayDesarrolloProfesional) );
+  localStorage.setItem("arrayRecursos", JSON.stringify(arrayRecursos));
+  localStorage.setItem("arrayDesarrolloProfesional", JSON.stringify(arrayDesarrolloProfesional));
 
   //console.log("guardado", localStorage.getItem("arrayRecursos"));  
-  cb();  
+  cb();
 }
 
 
@@ -85,7 +86,7 @@ class App extends Component {
   }
 
 
- 
+
 
 
 
@@ -95,7 +96,7 @@ class App extends Component {
     // }, 500);
     const cargarPortada = this.loadPortada;
     cargarDatos(cargarPortada);
-    
+
 
   }
 
@@ -106,10 +107,10 @@ class App extends Component {
       case "Linux armv7l":
       case "Linux armv8l":
       case "iPhone":
-      case "iPad":    
+      case "iPad":
         plataforma = "movil";
         break;
-      case "win32":     
+      case "win32":
         plataforma = "escritorio";
         //plataforma = "movil";
         break;
@@ -316,10 +317,10 @@ class App extends Component {
   changePage = (e) => {
     e.preventDefault();
     const targetPage = e.target.dataset.tar;
-    const origen = e.target.dataset.origen;   
-    
+    const origen = e.target.dataset.origen;
+
     console.log();
-    
+
     var tmpComponent;
     //console.log("Target", targetPage );
 
@@ -356,11 +357,14 @@ class App extends Component {
         // tmpComponent = <DesarrolloProf   infoCategory={descripciones[0].general} onMouseOut={ this.handlerShowInfoGeneral}  onMouseOver={ this.handlerShowInfoCategories}  handlerOpenCatalog={this.handlerOpenCatalog}   handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal}   /> 
         break;
       case "Construccion":
-        tmpComponent = <Construccion handlerCerrarEnconstruccion={this.handlerCerrarEnconstruccion}  origen={origen}  />
+        tmpComponent = <Construccion handlerCerrarEnconstruccion={this.handlerCerrarEnconstruccion} origen={origen} />
         break;
       case "DocumentosEvaluacion":
-            tmpComponent = <DocumentosEvaluacion  handlerCerrarDocumentosEvaluacion={this.handlerCerrarDocumentosEvaluacion}  />
-            break;
+        tmpComponent = <DocumentosEvaluacion handlerCerrarDocumentosEvaluacion={this.handlerCerrarDocumentosEvaluacion} />
+        break;
+      case "agendaEstudiantil":
+        tmpComponent = <AgendaEstudiantil />
+        break;
       default:
         console.log("Opción fuera de rango");
         break;
@@ -384,15 +388,15 @@ class App extends Component {
 
 
   handlerCerrarEnconstruccion = (e) => {
-    console.log("origen recibido", e.target.dataset.origen );
-    
+    console.log("origen recibido", e.target.dataset.origen);
+
     if (e.target.dataset.origen === "DesarrolloProf") {
       this.setState({ currentPage: this.cargarDesarrollo() });
     } else {
       this.setState({ currentPage: this.cargarRecursos() });
     }
-    
-    
+
+
   }
 
   handlerCerrarDocumentosEvaluacion = () => {
@@ -408,7 +412,7 @@ class App extends Component {
       currentPage: <Buscador origen={origen} handlerCerrarBuscador={this.handlerCerrarBuscador} />
     });
   }
-  
+
   handlerCerrarBuscador = () => {
     switch (this.plataforma) {
       case "movil":
@@ -481,29 +485,29 @@ class App extends Component {
 
     if (id === "programas") {
       switch (this.plataforma) {
-      case "movil":
-      this.setState({
-        currentPage: <DocsOficialesMovil infoCategory={descripciones[5].general} onMouseOut={this.handlerShowInfoGeneral} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} onMouseOver={this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage} />
-      });
-      break;
-    case "escritorio":
-      this.setState({
-        currentPage: <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={this.handlerShowInfoGeneral} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} onMouseOver={this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage} />
-      });
-      break;
+        case "movil":
+          this.setState({
+            currentPage: <DocsOficialesMovil infoCategory={descripciones[5].general} onMouseOut={this.handlerShowInfoGeneral} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} onMouseOver={this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage} />
+          });
+          break;
+        case "escritorio":
+          this.setState({
+            currentPage: <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={this.handlerShowInfoGeneral} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} onMouseOver={this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage} />
+          });
+          break;
 
-    default:
-      this.setState({
-        currentPage: <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={this.handlerShowInfoGeneral} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} onMouseOver={this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage} />
-      })
-      break;
-    }
+        default:
+          this.setState({
+            currentPage: <DocsOficiales infoCategory={descripciones[5].general} onMouseOut={this.handlerShowInfoGeneral} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} onMouseOver={this.handlerShowInfoCategories} showModal={this.showModal} changePage={this.changePage} />
+          })
+          break;
+      }
     }
     if (id === "plantilla") {
       this.setState({
         currentPage: <ApoyosPlan showModal={this.showModal} infoCategory={descripciones[2].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} changePage={this.changePage} handlerOpenProgramasEducativos={this.handlerOpenProgramasEducativos} />
       })
-      
+
     }
   }
 
@@ -535,20 +539,20 @@ class App extends Component {
       console.log("ID DIP");
       switch (this.plataforma) {
         case "movil":
-            this.setState({
-              currentPage: <DesarrolloProfMovil infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
-            });
+          this.setState({
+            currentPage: <DesarrolloProfMovil infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+          });
           break;
-          case "escritorio":
-                this.setState({
-                currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
-              });
-            break;
-      
+        case "escritorio":
+          this.setState({
+            currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+          });
+          break;
+
         default:
-            this.setState({
-              currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
-            });
+          this.setState({
+            currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+          });
           break;
       }
 
@@ -572,23 +576,23 @@ class App extends Component {
     console.log(e.target);
     switch (this.plataforma) {
       case "movil":
-          this.setState({
-            currentPage: <DesarrolloProfMovil infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
-          })
-      break;
+        this.setState({
+          currentPage: <DesarrolloProfMovil infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+        })
+        break;
       case "escritorio":
-          this.setState({
-            currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
-          })
-      break;
-    
+        this.setState({
+          currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+        })
+        break;
+
       default:
-          this.setState({
-            currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
-          })
+        this.setState({
+          currentPage: <DesarrolloProf infoCategory={descripciones[0].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenCatalog={this.handlerOpenCatalog} handlerOpenCatalogWeb={this.handlerOpenCatalogWeb} changePage={this.changePage} showModal={this.showModal} />
+        })
         break;
     }
-    
+
   }
   //Fin Método para abrir catálogo web -----------------------------------------
 
@@ -649,10 +653,10 @@ class App extends Component {
   showModal = (e) => {
     const content = e.target.dataset.content;
     const typeContent = e.target.dataset.typecontent;
-    console.log( "---contendio recibido:", content);  
+    console.log("---contendio recibido:", content);
     //Carga el body con la clase modal open de bootstrap
-    let cuerpo =  document.getElementsByTagName("BODY")[0];
-    cuerpo.classList.add("modal-open");   
+    let cuerpo = document.getElementsByTagName("BODY")[0];
+    cuerpo.classList.add("modal-open");
     this.setState({
       modalActive: true,
       typeContent: typeContent
@@ -666,8 +670,8 @@ class App extends Component {
 
 
   closeModal = () => {
-    let cuerpo =  document.getElementsByTagName("BODY")[0];
-    cuerpo.classList.remove("modal-open");   
+    let cuerpo = document.getElementsByTagName("BODY")[0];
+    cuerpo.classList.remove("modal-open");
     this.setState({
       modalActive: false
     }, () => {
@@ -686,7 +690,7 @@ class App extends Component {
     //console.log("infoSource",infoSource);  
     //console.log(opcion);  
     document.getElementById("textoDescripcion").innerHTML = "<h2 class='desc'>Descripción:</h2>" + descripciones[infoSource][opcion];
-    document.getElementById("imgFondoDescripcion").src= imgGenerales + "caja_descripcion_sin_parlante.png"
+    document.getElementById("imgFondoDescripcion").src = imgGenerales + "caja_descripcion_sin_parlante.png"
 
 
   }
@@ -697,7 +701,7 @@ class App extends Component {
     let infoSource = e.target.dataset.infosource;
     //console.log("Mouse out", infoSource ); 
     document.getElementById("textoDescripcion").innerHTML = "<h2 class='desc'>Descripción:</h2>" + descripciones[infoSource].general;
-    document.getElementById("imgFondoDescripcion").src= imgGenerales + "caja_descripcion.png"
+    document.getElementById("imgFondoDescripcion").src = imgGenerales + "caja_descripcion.png"
   }
 
 
@@ -706,7 +710,7 @@ class App extends Component {
     return (
       <div className="visor" >
         {
-        //this.plataforma
+          //this.plataforma
         }
 
         {this.state.currentPage}
