@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
 header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
-$sql= "SELECT `id`, `sub_categoria` FROM `sub_categorias_IDP` ORDER BY `id`";
+$sql= "SELECT `id`, `sub_categoria` FROM `sub_categorias_idp` ORDER BY `id`";
 include "conectar.php";
 //sleep(1);
 function desconectar($conexion){
