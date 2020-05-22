@@ -27,7 +27,7 @@ function AgendaEstudiantil(props) {
     }, []);
 
     const handleSeleccionarPrograma =(e)=> {
-        console.log(e.target.value );
+        console.log(e.target);
 
         //let dependencia = e.target.dataset.dependencia;
         //console.log("dependencia",dependencia);
@@ -62,12 +62,12 @@ function AgendaEstudiantil(props) {
                         <select 
                             className="custom-select" 
                             id="selPrograma"
-                            onChange={handleSeleccionarPrograma}
+                            //onChange={handleSeleccionarPrograma}
                             >
                             <option defaultValue>Todos</option>
                             {
                                 programas.map((item,i)=>(
-                                    <option key={"programa"+i} data-dependencia={item.dependencia} value={item.idPrograma}> {item.nombrePrograma} </option>
+                                    <option onClick={handleSeleccionarPrograma} key={"programa"+i} data-dependencia={item.dependencia} value={item.idPrograma}> {item.nombrePrograma} </option>
                                 ))
                             }
                         </select>
