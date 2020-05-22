@@ -4,9 +4,15 @@ header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Conte
 header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
 
-$sql= "SELECT * FROM niveles ORDER BY id";
+$tabla = "programas_ae";
+$sql= "SELECT * FROM $tabla ORDER BY idPrograma";
+
 include "conectar.php";
-//sleep(1);
+sleep(1);
+	
+
+
+
 function desconectar($conexion){
 
     $close = mysqli_close($conexion);
@@ -14,8 +20,7 @@ function desconectar($conexion){
         if($close){
             echo '';
         }else{
-            echo 'Ha sucedido un error inexperado en la desconexion de la base de datos
-';
+            echo 'Ha sucedido un error inexperado en la desconexion de la base de datos';
         }
 
     return $close;
