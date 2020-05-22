@@ -363,7 +363,7 @@ class App extends Component {
         tmpComponent = <DocumentosEvaluacion handlerCerrarDocumentosEvaluacion={this.handlerCerrarDocumentosEvaluacion} />
         break;
       case "agendaEstudiantil":
-        tmpComponent = <AgendaEstudiantil />
+        tmpComponent = <AgendaEstudiantil  handleCerrarAgendaEstudiantil={this.handleCerrarAgendaEstudiantil} />
         break;
       default:
         console.log("Opción fuera de rango");
@@ -401,6 +401,12 @@ class App extends Component {
 
   handlerCerrarDocumentosEvaluacion = () => {
     this.setState({ currentPage: this.cargarEvaluacion() });
+  }
+
+  handleCerrarAgendaEstudiantil =()=> {
+    this.setState({ 
+      currentPage: <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage} />
+     });
   }
 
   //Abrir buscador de recursos
