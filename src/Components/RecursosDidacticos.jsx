@@ -1,11 +1,11 @@
 import React from 'react';
 import dsLinks from "../data/links.json";
-import assets from '../data/config/config.json';
+import config from '../data/config/config.json';
 
 var links = dsLinks[0];
-const audio = assets.audio;
-const img = assets.img.recursosDidacticos;
-const imgGenerales = assets.img.general;
+const audio = config.audio;
+const img = config.img.recursosDidacticos;
+const imgGenerales = config.img.general;
 
 
 const  reproducirSonido = () => {
