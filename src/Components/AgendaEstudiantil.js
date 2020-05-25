@@ -84,7 +84,7 @@ function AgendaEstudiantil(props) {
                                 {
                                     recursosAe &&
                                         recursosAe.map((item,i)=>(
-                                           <div className="col-sm-3" key={"tarjeta"+i}>
+                                           <div className="col-md-3" key={"tarjeta"+i}>
                                                <Tarjeta item={item} />
                                            </div> 
                                         ))
