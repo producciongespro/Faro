@@ -77,7 +77,7 @@ class App extends Component {
     super();
     this.state = {
       nameCurrentPage: "Splash",
-      currentPage: <Splash urlImage={imgGenerales + "splash.jpg"} />,
+      currentPage: <Splash />,
       modalActive: false,
       modalComponent: "",
       typeContent: ""
