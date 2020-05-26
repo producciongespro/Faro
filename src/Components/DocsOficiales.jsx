@@ -54,9 +54,7 @@ const DocsOficiales = ( props ) => {
         </div>
         <div className="row">
             <div className="col-4"></div>
-            <div className="col-4 fondo" >   
-              <img id="transformacion" className="img-fluid transformacion" data-infosource={5} src= {img + "transformacion_curricular.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  alt="Transformación curricular" />
-            </div>
+            
             <div className="col-4  ladoIzq">
             <figure>
               <img className="botones-portada hvr-pop img-fluid reglamento" id="reglamento" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "reglamento.png"} data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="evaluacion"  onClick={props.showModal}  alt="Reglamento evaluación" />            
