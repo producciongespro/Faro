@@ -8,6 +8,7 @@ const img = assets.img.docsOficiales;
 const imgGenerales = assets.img.general;
 const serv = assets.servidor;
 
+
 const  pdfs = pdfJson[0];
 const  reproducirSonido = () => {
   console.log("Audio");
@@ -72,9 +73,11 @@ const DocsOficiales = ( props ) => {
               </figure>
             </div>
             <div className="col-3">
-                <figure>
-                <img className="botones-portada hvr-pop img-fluid politica ladoIzq2" id="protocolos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "protocolos_actuacion2.png"}   onClick={props.handlerOpenBuscador} alt="Protocolos de actuación" />
-              </figure>
+            <figure>
+              <a href="https://www.mep.go.cr/protocolos-de-actuacion" target="_blank" rel="noopener noreferrer"  >
+              <img className="botones-portada hvr-pop img-fluid politica ladoIzq2" id="protocolos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "protocolos_actuacion2.png"}  alt="Protocolos de actuación" />
+              </a>
+            </figure>
             </div>
 
 
