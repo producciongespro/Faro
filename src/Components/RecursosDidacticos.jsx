@@ -86,7 +86,7 @@ const RecursosDidacticos = (props) => {
 
           <div className="col-3 hover12 centro">
           <figure>
-          <img className="btn img-fluid banderaAzul" id="banderaAzul" src= {img+"programa_azul.png"} data-tar="agendaEstudiantil"  onClick={props.changePage} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Bandera Azul" />
+          <img className="btn img-fluid banderaAzul" id="banderaAzul" src= {img+"agenda_estudiantil.png"} data-tar="agendaEstudiantil"  onClick={props.changePage} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Agenda Estudiantil" />
           </figure>
           </div>
 

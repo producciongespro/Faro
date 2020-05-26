@@ -604,11 +604,33 @@ padding-top:5%;
     text-align: right;
   }
 
+  
+
   .politica{
-    margin-top: 23%;
+    margin-top: 53%;
     z-index: 12;
-    margin-left: 73%;
   }
+
+  .ladoDer2 {
+    margin-left: 23%;
+  }
+
+  .ladoDer3 {
+    margin-left: 42%;
+  }
+
+  .ladoIzq2 {
+    margin-right: -30%;
+  }
+
+  .ladoIzq3 {
+    margin-left: -20%;
+  }
+
+
+
+
+
 
   .politica2{
     position: absolute;

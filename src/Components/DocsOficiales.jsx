@@ -33,8 +33,58 @@ const DocsOficiales = ( props ) => {
 
       <div className="botones_salir col-12">
             <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {imgGenerales + "btn_salir.png" }  alt="Salir" />
-          </div>
+      </div>
 
+      <div className="row">
+            <div className="col-3">
+              <figure>
+                <img className="botones-portada hvr-pop img-fluid politica ladoDer3" id="politica" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "politica_educativa2.png"}  data-content= { serv + pdfs.Politica_educativa }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Políticas educativas" />
+              </figure>
+              </div>
+            <div className="col-3">
+                <figure>
+                <img className="botones-portada hvr-pop img-fluid politica ladoDer2" id="fundamentos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "fundamentos_curriculo2.png"} data-content= {serv + pdfs.Transformacion_curricular }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Fundamentos Currículo" />
+              </figure>
+            </div>
+            <div className="col-3">
+                <figure>
+              <img className="botones-portada hvr-pop img-fluid politica ladoIzq2" id="programas" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {img + "programas_estudio2.png"} data-content= {pdfs.Tacaco }  data-typecontent ="programasEstudio"  onClick={props.handlerOpenProgramasEducativos}  alt="Programas de estudio de estudio" />
+              </figure>
+            </div>
+            <div className="col-3">
+                <figure>
+                <img className="botones-portada hvr-pop img-fluid politica ladoIzq3" id="reglamento" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "reglamento2.png"} data-content= {pdfs.Docs_oficiales_REA }  data-typecontent ="evaluacion"  onClick={props.showModal}  alt="Reglamento evaluación" />            
+              </figure>
+            </div>
+        </div>
+
+
+
+        <div className="row">
+            <div className="col-3">
+              <figure>
+              <img className="botones-portada hvr-pop img-fluid politica ladoDer3" id="faro" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src= {img + "faro2.png"}  data-content= {serv + pdfs.Faro }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Faro" />
+              </figure>
+              </div>
+            <div className="col-3">
+                <figure>
+                <img className="botones-portada hvr-pop img-fluid politica ladoDer2" id="estudiante" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "perfil_estudiantil2.png"}  data-content= {serv + pdfs.Docs_Oficiales_Perfil_Est }  data-typecontent ="pdf"  onClick={props.showModal}  alt="Perfil estudiante" />
+              </figure>
+            </div>
+            <div className="col-3">
+                <figure>
+                <img className="botones-portada hvr-pop img-fluid politica ladoIzq2" id="protocolos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "protocolos_actuacion2.png"}   onClick={props.handlerOpenBuscador} alt="Protocolos de actuación" />
+              </figure>
+            </div>
+
+
+            <div className="col-3">
+            </div>
+        </div>
+     
+
+
+{/*  
         <div className="row">
             <div className="col-4  ladoIzq">
               <figure>
@@ -61,6 +111,8 @@ const DocsOficiales = ( props ) => {
             </figure>
             </div>
         </div>
+
+
         <div className="row">
           <div className="col-4  ladoIzq">
               <figure>
@@ -79,8 +131,9 @@ const DocsOficiales = ( props ) => {
             
             </figure>
           </div>
-         
         </div>
+*/}
+
       </div>
       <audio src={audio+"docs_oficales.mp3"} id="oficiales"   preload="true"  ></audio>
 
