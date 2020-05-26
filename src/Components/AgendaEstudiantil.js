@@ -149,7 +149,13 @@ function AgendaEstudiantil(props) {
                         </ React.Fragment>
                     ) :
                     (
-                        <span>Por favor espere un momento...</span>
+                        <div className="row">
+                            <div className="col-sm-12 text-center pt-5">                                
+                                <span>Cargando datos. Por favor espere...</span>
+                                <br/>
+                                <img src={imgGenerales + "ajax_loader.gif"} alt="Cargando datos, por favor espere." />
+                            </div>
+                        </div>
                     )
             }
 

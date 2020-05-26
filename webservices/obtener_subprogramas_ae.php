@@ -8,7 +8,7 @@ $tabla = "subprogramas_ae";
 $sql= "SELECT * FROM $tabla ORDER BY idPrograma";
 
 include "conectar.php";
-sleep(1);
+//sleep(1);
 	
 
 
