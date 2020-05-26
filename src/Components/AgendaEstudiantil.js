@@ -21,8 +21,10 @@ var recursosAe = null;
 function AgendaEstudiantil(props) {
     
 
-    const [isReady, setReady] = useState(false);
-    const [datosFiltrados, setDatosFiltrados] = useState(false);
+    const [isReady, setReady]= useState(false);
+    const [datosFiltrados, setDatosFiltrados]= useState(null);
+    const [idPrograma, setIdPrograma ]= useState(-1);
+
 
 
     async function setup() {
@@ -39,15 +41,13 @@ function AgendaEstudiantil(props) {
         setup();
     }, []);
 
-    const handleSeleccionarPrograma = (e) => {
-        console.log(e.target.value);        
+    const handleSeleccionarPrograma = (e) => {        
         setDatosFiltrados(filtrar(recursosAe, "idPrograma", e.target.value  ));
-        
+        setIdPrograma(e.target.value);        
     }
 
-    const handleSeleccionarSubprograma = (e) => {
-        console.log(e.target.value);                
-        
+    const handleSeleccionarSubprograma = (e) => {       
+        setDatosFiltrados(filtrar(recursosAe, "idSubprograma", e.target.value  ));       
     }
 
     return (
@@ -84,33 +84,36 @@ function AgendaEstudiantil(props) {
                                             <option defaultValue>Todos</option>
                                             {
                                                 programas.map((item, i) => (
-                                                    <option onClick={handleSeleccionarPrograma} key={"programa" + i} data-dependencia={item.dependencia} value={item.idPrograma}> {item.nombrePrograma} </option>
+                                                    <option key={"programa" + i} data-dependencia={item.dependencia} value={item.idPrograma}> {item.nombrePrograma} </option>
                                                 ))
                                             }
                                         </select>
                                     </div>
 
                                 </div>
-                                <div className="col-sm-6">
-                                    <div className="input-group mb-3">
-                                        <div className="input-group-prepend">
-                                            <label className="input-group-text" htmlFor="selSubprograma">Sub Programas</label>
-                                        </div>
-                                        <select
-                                            className="custom-select"
-                                            id="selSubprograma"
-                                        onChange={handleSeleccionarSubprograma}
-                                        >
-                                            <option defaultValue>Todos</option>
                                             {
-                                                subprogramas.map((item, i) => (
-                                                    <option onClick={handleSeleccionarPrograma} key={"subprograma" + i} value={item.idSubprograma}> {item.nombreSubprograma} </option>
-                                                ))
+                                                     idPrograma === "1" && (
+                                                     <div className="col-sm-6">
+                                                         <div className="input-group mb-3">
+                                                             <div className="input-group-prepend">
+                                                                 <label className="input-group-text" htmlFor="selSubprograma">Sub Programas</label>
+                                                             </div>
+                                                             <select
+                                                                 className="custom-select"
+                                                                 id="selSubprograma"
+                                                             onChange={handleSeleccionarSubprograma}
+                                                             >
+                                                                 <option defaultValue>Todos</option>
+                                                                 {
+                                                                     subprogramas.map((item, i) => (
+                                                                         <option key={"subprograma" + i} value={item.idSubprograma}> {item.nombreSubprograma} </option>
+                                                                     ))
+                                                                 }
+                                                             </select>
+                                                         </div>
+                                                     </div>
+                                                    )
                                             }
-                                        </select>
-                                    </div>
-
-                                </div>
                             </div>
                             <div className="row">
                                 {
