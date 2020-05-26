@@ -9,7 +9,7 @@ const Tarjeta = (props) => {
     (
 
 
-      <React.Fragment>
+     <div className="card my-2">
 
         <div className="card-header text-center texto-2 text-info">
 
@@ -33,10 +33,10 @@ const Tarjeta = (props) => {
           </p>
         </div>
         <div className="card-footer text-muted">
-          <i className="fas fa-clock"> {item.nombrePrograma}  </i>
+          <i className="fas fa-arrow-alt-circle-right" /> {item.nombrePrograma}          
         </div>
 
-      </React.Fragment>
+        </div>
 
 
     )
