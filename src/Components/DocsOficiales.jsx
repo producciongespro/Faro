@@ -1,13 +1,13 @@
 import React  from 'react';
 import assets from '../data/config/config.json';
 import pdfJson from "../data/pdf.json";
-//import linksJson from "../data/links.json";
+import dsLinks from "../data/links.json";
 
 const audio = assets.audio;
 const img = assets.img.docsOficiales;
 const imgGenerales = assets.img.general;
 const serv = assets.servidor;
-
+var links = dsLinks[0];
 
 const  pdfs = pdfJson[0];
 const  reproducirSonido = () => {
@@ -74,7 +74,7 @@ const DocsOficiales = ( props ) => {
             </div>
             <div className="col-3">
             <figure>
-              <a href="https://www.mep.go.cr/protocolos-de-actuacion" target="_blank" rel="noopener noreferrer"  >
+              <a href={links.Protocolos} target="_blank" rel="noopener noreferrer"  >
               <img className="botones-portada hvr-pop img-fluid politica ladoIzq2" id="protocolos" data-infosource={5} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  src={img + "protocolos_actuacion2.png"}  alt="Protocolos de actuación" />
               </a>
             </figure>
