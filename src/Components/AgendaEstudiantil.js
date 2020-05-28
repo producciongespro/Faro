@@ -4,6 +4,7 @@ import config from '../data/config/config.json';
 import obtener from '../modulos/obtener';
 import filtrar from '../modulos/filtrar';
 const imgGenerales = config.img.general;
+const img = config.img.recursosDidacticos;
 
 const URI_Programas = config.servidorAPI + "obtener_programas_ae.php";
 const URI_subprogramas = config.servidorAPI + "obtener_subprogramas_ae.php";
@@ -64,16 +65,14 @@ function AgendaEstudiantil(props) {
     return (
         <React.Fragment>
             <div className="row">
-                <div className="col-sm-12">
-                    <div className="botones_salir col-12 ">
-                        <img data-tar="Home" onClick={props.handleCerrarAgendaEstudiantil} className="derecha btn img-fluid hvr-pop" src={imgGenerales + "btn_salir.png"} role="button" alt="Salir" />
-                    </div>
+                <div className="col-sm-12">                 
+                        <img data-tar="Home" onClick={props.handleCerrarAgendaEstudiantil} className="botones-portada hvr-pop boton-volver img-fluid derecha" src={imgGenerales + "btn_volver.png"} role="button" alt="Volver" />               
                 </div>
             </div>
 
             <div className="row">
                 <div className="col-sm-12">
-                    <img src="https://mundologan.xyz/pruebas/baner_agenda.png" alt="Baner de agenda estudiantil" />
+                    <img className="bannerRecursos" src={img + "encabezado_agendaestudiantil.png"} alt="Encabezado de recursos Agenda estudiantil" />
                 </div>
             </div>
 

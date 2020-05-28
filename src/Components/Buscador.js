@@ -437,7 +437,7 @@ class Buscador extends Component {
                                 )
                                 :
                                 (
-                                    <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                    <img className="botones-portada hvr-pop boton-volver img-fluid derecha" onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
                                 )
                         }
 
