@@ -22,14 +22,15 @@ $url = utf8_decode($dataObject-> url);
 $apoyo = $dataObject-> apoyo;
 $usuario =  utf8_decode($dataObject-> id_usuario);
 $img_educatico = utf8_decode($dataObject-> img_educatico);
-
+// $tabla =  utf8_decode($dataObject-> tabla);
+$tabla = "recursos";
   $conn = conectarDB();
     
   if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = "INSERT INTO `recursos`(`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion','$id_nivel','$anno','$url','$img_educatico','$materia','$apoyo','$usuario')";
+  $sql = "INSERT INTO $tabla (`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion','$id_nivel','$anno','$url','$img_educatico','$materia','$apoyo','$usuario')";
 
   if ($conn->query($sql) === TRUE) { 
     $rs = mysqli_query($conn,"SELECT id from recursos ORDER BY id DESC LIMIT 1");
