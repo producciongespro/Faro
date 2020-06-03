@@ -4,6 +4,7 @@ import React from 'react';
 const Tarjeta = (props) => {
 
   const item = props.item;
+  const descripcion = props.item.descripcion.substring(0,128);
 
   return (
     (
@@ -29,7 +30,7 @@ const Tarjeta = (props) => {
           <p className="card-text">
             <strong>Descripción: </strong>
             <br />
-            {item.descripcion}
+            {descripcion}<strong>...</strong>
           </p>
         </div>
         <div className="card-footer text-muted">
