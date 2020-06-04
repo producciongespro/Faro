@@ -33,7 +33,9 @@ $tabla =  utf8_decode($dataObject-> tabla);
   if ($tabla === "recursos_ae") {
     $id= "idRecursoAe";
     $idPrograma = utf8_decode($dataObject-> idPrograma);
-    $idSubprograma = utf8_decode($dataObject-> idSubprograma);
+    if (isset($dataObject-> idSubprograma)) {
+      $idSubprograma = utf8_decode($dataObject-> idSubprograma);
+    }
     $sql = "INSERT INTO $tabla (`idPrograma`, `idSubprograma`, `nombre`, `descripcion`, `url`, `imgEducatico`, `idUsuario`) VALUES ('$idPrograma', '$idSubprograma', '$nombre', '$descripcion', '$url', '$img_educatico', '$usuario')";
     if ($conn->query($sql) === TRUE) { 
       echo json_encode(array('error'=>'false','msj'=>'Recurso AE agregado satisfactoriamente'));
