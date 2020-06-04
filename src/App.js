@@ -404,9 +404,23 @@ class App extends Component {
   }
 
   handleCerrarAgendaEstudiantil =()=> {
+    switch (this.plataforma) {
+      case "movil":
+        this.setState({
+          currentPage: <RecursosDidacticosMovil infoCategory={descripciones[4].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage} />
+        });
+        break;
+      case "escritorio":
     this.setState({ 
       currentPage: <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage} />
      });
+     break;
+     default:
+      this.setState({
+        currentPage: <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage} />
+      });
+      break;
+    }
   }
 
   //Abrir buscador de recursos

@@ -5,42 +5,42 @@
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Primero",
         "materia": "Ciencias",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/pri/potenciacion_ciencias_1.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/pri/potenciacion_ciencias_1.zip"
     },
 
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Segundo",
         "materia": "Ciencias",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/seg/potenciacion_ciencias_2.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/seg/potenciacion_ciencias_2.zip"
     },
 
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Tercero",
         "materia": "Ciencias",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/ter/potenciacion_ciencias_3.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/ter/potenciacion_ciencias_3.zip"
     },
 
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Cuarto",
         "materia": "Ciencias",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/cua/potenciacion_ciencias_4.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/cua/potenciacion_ciencias_4.zip"
     },
 
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Quinto",
         "materia": "Ciencias",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/qui/potenciacion_ciencias_5.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/qui/potenciacion_ciencias_5.zip"
     },
 
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Sexto",
         "materia": "Ciencias",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/sex/potenciacion_ciencias_6.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/sex/potenciacion_ciencias_6.zip"
     },
 
 
@@ -55,37 +55,37 @@
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Primero",
         "materia": "Español",
-        "potenciancion": "nulo"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/pri/potenciacion_espanol_1.zip"
     },
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Segundo",
         "materia": "Español",
-        "potenciancion": "nulo"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/seg/potenciacion_espanol_2.zip"
     },
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Tercero",
         "materia": "Español",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/ter/potenciacion_espanol_3.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/ter/potenciacion_espanol_3.zip"
     },
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Cuarto",
         "materia": "Español",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/cua/potenciacion_espanol_4.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/cua/potenciacion_espanol_4.zip"
     },
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Quinto",
         "materia": "Español",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/qui/potenciacion_espanol_5.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/qui/potenciacion_espanol_5.zip"
     },
     {
         "nivel": "Pedagogía Hospitalaria",
         "anno": "Sexto",
         "materia": "Español",
-        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/sex/potenciacion_espanol_6.docx"
+        "potenciancion": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/espa/sex/potenciacion_espanol_6.zip"
     },
 
 

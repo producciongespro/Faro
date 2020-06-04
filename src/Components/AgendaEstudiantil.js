@@ -65,16 +65,16 @@ function AgendaEstudiantil(props) {
     return (
         <React.Fragment>
             <div className="row">
+                <div className="col-sm-12">
+                    <img className="bannerRecursos" src={img + "encabezado_agendaestudiantil.png"} alt="Encabezado de recursos Agenda estudiantil" />
+                    <img data-tar="Home" onClick={props.handleCerrarAgendaEstudiantil} className="botones-portada hvr-pop boton-volver img-fluid derecha" src={imgGenerales + "btn_volver.png"} role="button" alt="Volver" /> 
+                </div>
+            </div>
+            {/* <div className="row">
                 <div className="col-sm-12">                 
                         <img data-tar="Home" onClick={props.handleCerrarAgendaEstudiantil} className="botones-portada hvr-pop boton-volver img-fluid derecha" src={imgGenerales + "btn_volver.png"} role="button" alt="Volver" />               
                 </div>
-            </div>
-
-            <div className="row">
-                <div className="col-sm-12">
-                    <img className="bannerRecursos" src={img + "encabezado_agendaestudiantil.png"} alt="Encabezado de recursos Agenda estudiantil" />
-                </div>
-            </div>
+            </div> */}
 
             {
                 isReady ?
