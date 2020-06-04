@@ -35,6 +35,8 @@ $tabla =  utf8_decode($dataObject-> tabla);
     $idPrograma = utf8_decode($dataObject-> idPrograma);
     if (isset($dataObject-> idSubprograma)) {
       $idSubprograma = utf8_decode($dataObject-> idSubprograma);
+    } else{
+      $idSubprograma = NULL;
     }
     $sql = "INSERT INTO $tabla (`idPrograma`, `idSubprograma`, `nombre`, `descripcion`, `url`, `imgEducatico`, `idUsuario`) VALUES ('$idPrograma', '$idSubprograma', '$nombre', '$descripcion', '$url', '$img_educatico', '$usuario')";
     if ($conn->query($sql) === TRUE) { 
