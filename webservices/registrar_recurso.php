@@ -11,6 +11,11 @@ require 'conectar.php';
 require 'varios_niveles.php';
 require 'bitacora.php';
 
+$url = 'niveles.json';
+$data = file_get_contents($url); 
+$niveles = json_decode($data); 
+
+
 $nombre = utf8_decode( $dataObject-> nombre);
 $descripcion = utf8_decode($dataObject-> descripcion); 
 $url = utf8_decode($dataObject-> url);
@@ -23,8 +28,7 @@ if (isset ($dataObject-> materia)) {
 }
 $apoyo = $dataObject-> apoyo;
 $tabla =  utf8_decode($dataObject-> tabla);
-//$tabla = "recursos";
-  $conn = conectarDB();
+$conn = conectarDB();
     
   if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
@@ -41,6 +45,15 @@ $tabla =  utf8_decode($dataObject-> tabla);
     $sql = "INSERT INTO $tabla (`idPrograma`, `idSubprograma`, `nombre`, `descripcion`, `url`, `imgEducatico`, `idUsuario`) VALUES ('$idPrograma', '$idSubprograma', '$nombre', '$descripcion', '$url', '$img_educatico', '$usuario')";
     if ($conn->query($sql) === TRUE) { 
       echo json_encode(array('error'=>'false','msj'=>'Recurso AE agregado satisfactoriamente'));
+      $rs = mysqli_query($conn,"SELECT $id from $tabla ORDER BY $id DESC LIMIT 1");
+      if ($row = mysqli_fetch_row($rs)) {
+          $id_ultimo = trim($row[0]);
+          $sql2 = "INSERT INTO `bitacora`(`id_usuario`, `evento`,`id_registro`, `tabla`) VALUES ('$usuario','Agregar','$id_ultimo','$tabla')";
+          // registrar_bitacora($conexion, $usuario,$id_ultimo,'Agregar',1);
+          if ($conn->query($sql2) === TRUE) { 
+            echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente en la bitácora. usuario: '.$usuario.' Tabla: '.$tabla.' con el id: '.$id_ultimo));
+      }
+    }
     }
       else {
     echo json_encode(array('error'=>'true','msj'=>$conn->error)); 
@@ -48,40 +61,18 @@ $tabla =  utf8_decode($dataObject-> tabla);
   }
   else {
     $anno = utf8_decode($dataObject-> anno);
+    
     $id= "id";
     $id_nivel = $dataObject-> id_nivel;
     if ($id_nivel==="0") {
-     if (in_array("1",str_split($anno))) {
-       $grados = ("vacío");
-       $sql = "INSERT INTO $tabla (`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion',1,'$grados','$url','$img_educatico','$materia','$apoyo','$usuario')";
-       registrar($conn,$sql, $usuario, "recursos", $id);
-     }
-       if (in_array("2", str_split($anno))) {
-        $grados = ("Primero, Segundo, Tercero, Cuarto, Quinto, Sexto");
-        $sql = "INSERT INTO $tabla (`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion',2,'$grados','$url','$img_educatico','$materia','$apoyo','$usuario')";
+      $anno = floatval(preg_replace('/[^\d.]/', '',  $anno));
+      $anno = trim($anno,",");
+      $variosNiveles=str_split($anno);
+      for ($k=0; $k < sizeof($variosNiveles) ; $k++) { 
+        $grados = $niveles->$variosNiveles[$k];
+        $sql = "INSERT INTO $tabla (`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion','$variosNiveles[$k]','$grados','$url','$img_educatico','$materia','$apoyo','$usuario')";
         registrar($conn,$sql, $usuario, "recursos", $id);
-       }
-       if (in_array("3", str_split($anno))) {
-        $grados = ("Sétimo, Octavo, Noveno, Décimo, Undécimo");
-        $sql = "INSERT INTO $tabla (`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion',3,'$grados','$url','$img_educatico','$materia','$apoyo','$usuario')";
-        registrar($conn,$sql, $usuario, "recursos", $id);
-       }
-       if (in_array("4", str_split($anno))) {
-        $grados = ("Educación intercultural");
-        $sql = "INSERT INTO $tabla (`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion',4,'$grados','$url','$img_educatico','$materia','$apoyo','$usuario')";
-        registrar($conn,$sql, $usuario, "recursos", $id);
-       }
-       if (in_array("5", str_split($anno))) {
-        $grados = ("Educación jóvenes y adultos");
-        $sql = "INSERT INTO $tabla (`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion',5,'$grados','$url','$img_educatico','$materia','$apoyo','$usuario')";
-        registrar($conn,$sql, $usuario, "recursos", $id);
-       }
-       if (in_array("6", str_split($anno))) {
-        $grados = ("Programa nacional de ferias");
-        $sql = "INSERT INTO $tabla (`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion',6,'$grados','$url','$img_educatico','$materia','$apoyo','$usuario')";
-        registrar($conn,$sql, $usuario, "recursos", $id);
-       }
-      
+      }
     }
 
 else{
@@ -90,10 +81,13 @@ else{
   if ($conn->query($sql) === TRUE) { 
     $rs = mysqli_query($conn,"SELECT $id from $tabla ORDER BY $id DESC LIMIT 1");
     if ($row = mysqli_fetch_row($rs)) {
-        $id_ultimo = trim($row[0]);
-        registrar_bitacora($conn, $usuario,$id_ultimo,'Agregar',1);
-        echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
-    }
+      $id_ultimo = trim($row[0]);
+      $sql2 = "INSERT INTO `bitacora`(`id_usuario`, `evento`,`id_registro`, `tabla`) VALUES ('$usuario','Agregar','$id_ultimo','$tabla')";
+      // registrar_bitacora($conexion, $usuario,$id_ultimo,'Agregar',1);
+      if ($conn->query($sql2) === TRUE) { 
+        echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente en la bitácora. usuario: '.$usuario.' Tabla: '.$tabla.' con el id: '.$id_ultimo));
+  }
+}
   } else {
     echo json_encode(array('error'=>'true','msj'=>$conn->error)); 
   }
