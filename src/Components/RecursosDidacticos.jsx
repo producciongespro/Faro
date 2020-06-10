@@ -80,7 +80,7 @@ const RecursosDidacticos = (props) => {
 
           <div className="col-3 hover12 centro">
           <figure>
-          <img className="btn img-fluid feriaCientifica" id="feriaCientifica" src= {img+"feria_cientifica.png"} data-tar="Construccion" onClick={props.changePage} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Feria Científica" />
+          <img className="btn img-fluid feriaCientifica" id="feriaCientifica" src= {img+"ch_btn_pedagogiahospitalaria.png"} data-tar="pedagoHosp" onClick={props.changePage} data-infosource={4} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Pedagogía Hospitalaria" />
           </figure>
           </div>
 

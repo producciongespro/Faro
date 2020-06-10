@@ -34,6 +34,7 @@ import EvaluacionCategorias from './Components/EvaluacionCategorias';
 import EjemplosItemes from './Components/EjemplosItemesEvaluacion';
 import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
 import AgendaEstudiantil from './Components/AgendaEstudiantil';
+import PedagoHosp from './Components/PedagoHosp';
 
 //Módulos personalizados
 import analitica from './modulos/analitica';
@@ -365,6 +366,11 @@ class App extends Component {
       case "agendaEstudiantil":
         tmpComponent = <AgendaEstudiantil  handleCerrarAgendaEstudiantil={this.handleCerrarAgendaEstudiantil} />
         break;
+        case "pedagoHosp":
+          tmpComponent = <PedagoHosp  handleCerrarPedagoHosp={this.handleCerrarPedagoHosp } />
+          break;
+
+        
       default:
         console.log("Opción fuera de rango");
         break;
@@ -401,6 +407,27 @@ class App extends Component {
 
   handlerCerrarDocumentosEvaluacion = () => {
     this.setState({ currentPage: this.cargarEvaluacion() });
+  }
+
+
+  handleCerrarPedagoHosp =()=> {
+    switch (this.plataforma) {
+      case "movil":
+        this.setState({
+          currentPage: <RecursosDidacticosMovil infoCategory={descripciones[4].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage} />
+        });
+        break;
+      case "escritorio":
+    this.setState({ 
+      currentPage: <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage} />
+     });
+     break;
+     default:
+      this.setState({
+        currentPage: <RecursosDidacticos infoCategory={descripciones[4].general} onMouseOut={this.handlerShowInfoGeneral} onMouseOver={this.handlerShowInfoCategories} handlerOpenBuscador={this.handlerOpenBuscador} changePage={this.changePage} />
+      });
+      break;
+    }
   }
 
   handleCerrarAgendaEstudiantil =()=> {
