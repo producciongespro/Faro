@@ -1,16 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import config from '../data/config/config.json';
 import jsonp from '../TMP_pedago_hosp.json';
 const imgGenerales = config.img.general;
 const img = config.img.recursosDidacticos;
 
 
+
 //console.log(jsonp.asignaturas );
 
 
-function PedagogHosp(props) {
 
-    const [asignatura, setAsignatura] = useState(null);
+
+
+function PedagogHosp(props) {
+    
+    const [arrayFiltrado, setArrayFiltrado ]= useState(null);
+    const [asignatura, setAsignatura]= useState(null);
+
+
+    
+    
+    useEffect (()=>{
+       let recursosDidacticos= JSON.parse(localStorage.getItem("arrayRecursos"));
+       let tmpFiltrados=[];
+        console.log(recursosDidacticos);
+        for (let index = 0; index < recursosDidacticos.length; index++) {
+            if (parseInt(recursosDidacticos[index].id_nivel) === 6 ) {
+                tmpFiltrados.push(recursosDidacticos[index])
+            }                        
+        }
+        console.log("tmpFiltrados", tmpFiltrados);
+        
+    }, [])
 
     return (
         <React.Fragment>
