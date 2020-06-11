@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import TarjetaPH from '../Components/TarjetaPH';
 import config from '../data/config/config.json';
 import jsonp from '../TMP_pedago_hosp.json';
 const imgGenerales = config.img.general;
@@ -30,7 +31,8 @@ function PedagogHosp(props) {
             }                        
         }
         console.log("tmpFiltrados", tmpFiltrados);
-        
+        setArrayFiltrado(tmpFiltrados);
+
     }, [])
 
     return (
@@ -88,6 +90,20 @@ function PedagogHosp(props) {
                     </div>
                 </div>
 
+            </div>
+
+            <div className="row">
+                <div className="col-sm-12">
+                            {
+                                arrayFiltrado && (
+                                    arrayFiltrado.map((item, i)=>(
+                                        <div className="col-md-3" key={"tarjeta" + i}> 
+                                            <TarjetaPH item={item} />
+                                        </div>
+                                    ))
+                                )
+                            }
+                </div>
             </div>
         </React.Fragment>
     );

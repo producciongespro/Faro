@@ -36,6 +36,7 @@ import DocumentosEvaluacion from './Components/DocumentosEvaluacion';
 import AgendaEstudiantil from './Components/AgendaEstudiantil';
 import PedagoHosp from './Components/PedagoHosp';
 
+
 //Módulos personalizados
 import analitica from './modulos/analitica';
 import obtener from './modulos/obtener';
