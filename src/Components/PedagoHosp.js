@@ -133,7 +133,7 @@ function PedagogHosp(props) {
                 <div className="col-sm-6">
                     <div className="input-group mb-3">
                         <div className="input-group-prepend">
-                            <label className="input-group-text" htmlFor="selAsignatura">asignatura</label>
+                            <label className="input-group-text" htmlFor="selAsignatura">Asignatura</label>
                         </div>
                         <select
                             className="custom-select"
@@ -155,7 +155,7 @@ function PedagogHosp(props) {
                 <div className="col-sm-6">
                     <div className="input-group mb-3">
                         <div className="input-group-prepend">
-                            <label className="input-group-text" htmlFor="selAnno">Años</label>
+                            <label className="input-group-text" htmlFor="selAnno">Año</label>
                         </div>
                         <select
                             className="custom-select"
@@ -177,9 +177,22 @@ function PedagogHosp(props) {
             </div>
 
             <div className="row">
-                {
-                    console.log("arrayFiltrado en render", arrayFiltrado)                    
-                }
+                <div className="col-sm-12">                    
+                        { arrayFiltrado &&
+                            (
+                            <p>
+                                <strong>{arrayFiltrado.length}</strong> Recurso(s) enconstrado(s) con 
+                                la asignatura <strong>{asignatura}</strong> para el año <strong>{anno}</strong>.
+                            </p>
+                            )
+                              
+                        }
+                    
+                </div>
+            </div>
+
+
+            <div className="row">               
                 {
                     arrayFiltrado && (
                         arrayFiltrado.map((item, i) => (
