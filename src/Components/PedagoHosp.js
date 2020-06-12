@@ -129,7 +129,12 @@ function PedagogHosp(props) {
             </div>
 
             <div className="row">
+                <div className="col-sm-12">
+                    Seleccione el año y la asignatura que desee. Los recursos se cargan de forma automática.
+                </div>
+            </div>
 
+            <div className="row">
                 <div className="col-sm-6">
                     <div className="input-group mb-3">
                         <div className="input-group-prepend">
