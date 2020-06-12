@@ -34,7 +34,9 @@ const TarjetaPH = (props) => {
           </p>
         </div>
         <div className="card-footer text-muted">
-          <i className="fas fa-arrow-alt-circle-right" /> {item.materia}          
+            <i className="fas fa-arrow-alt-circle-right" /> {item.materia}          
+            <br/>
+            <i className="fas fa-arrow-alt-circle-right" /> {item.anno}          
         </div>
 
         </div>
