@@ -20,21 +20,21 @@ function PedagogHosp(props) {
         let recursosDidacticos = JSON.parse(localStorage.getItem("arrayRecursos"));
         console.log(recursosDidacticos);
         //filtrado por el nivel pedagogía hospitalaria que es es registro 6 en la tabla niveles
+        // se carga el arrayMaster *****************************************************************
         for (let index = 0; index < recursosDidacticos.length; index++) {
             if (parseInt(recursosDidacticos[index].id_nivel) === 6) {
                 arrayMaster.push(recursosDidacticos[index])
             }
         }
-        console.log("INCIO ====== tmpFiltrados", arrayMaster);
-        setArrayFiltrado(arrayMaster);
-
+        //REnderizado de tarjetas ******************        
+        buscarRegistros();
     }, []);
 
     useEffect(() => {
         //Cuando cambia el estado: asignatura o el anno
         console.log("Asignatura:", asignatura);
         console.log("Año:", anno);
-        buscarRegistros();
+       buscarRegistros();
     }, [asignatura, anno])
 
 
@@ -49,17 +49,18 @@ function PedagogHosp(props) {
     }
 
     const buscarRegistros = () => {
-        //Buscar regsitros filtrados por año y por asignatura
+        //--------------Buscar regsitros filtrados por año y por asignatura ------------------------
 
-        let tmpArray = [];
-
+        var tmpArray = [];
+        
+        //Caso 1: Cuando año y asigntarua es TODOS
         if (anno === "Todos" && asignatura === "Todos") {
-            console.log("TODOS", arrayMaster);                        
-            
-            setArrayFiltrado(arrayMaster);
+            console.log("TODOS los REGISTRO", arrayMaster);                      
+            tmpArray = arrayMaster;
+
         } else {
             console.log("NO TODOS");            
-            //Caso 1: Cuando año == Todos            
+            //Caso 2: Cuando año == Todos            
             if (anno === "Todos" && asignatura !== "Todos" ) {
                 console.log("Año = TODOS");            
                 for (let index = 0; index < arrayMaster.length; index++) {
@@ -67,21 +68,30 @@ function PedagogHosp(props) {
                         tmpArray.push(arrayMaster[index])
                     }
                 }
-
+            }
+            // Caso 3 asignatura = Todos
+            if (asignatura === "Todos" && anno !== "Todos") {
+                console.log("Asignatura = TODOS");
+                //Utiliza espresiones regulares debido a que pueden ser varios años                 
+                tmpArray= busquedaAnno(arrayMaster, anno);                
             }
 
-            // Caso 2 asignatura = Todos
-            if (asignatura === "Todos" && anno !== "Todos") {
-                console.log("Asignatura = TODOS");            
+            //Caso 4 cuando ni año ni asignatura son "TODOS"
+            if (asignatura !== "Todos" && anno !== "Todos") {
+                console.log("diferente de TODOS");            
+                
+                //PRIMER PASO: Busca la asignatura y la carga en el arreglo temporal
                 for (let index = 0; index < arrayMaster.length; index++) {
-                    if (anno === arrayMaster[index].anno) {
+                    if (asignatura === arrayMaster[index].materia) {
                         tmpArray.push(arrayMaster[index])
                     }
                 }
+
+                //SEGUNDO PPASO: en el arreglo temporal busca la coincidencia del año
+                //Utiliza espresiones regulares debido a que pueden ser varios años
+                tmpArray =  busquedaAnno(tmpArray, anno)
             }
-
         }
-
         setArrayFiltrado(tmpArray);
     }
 
