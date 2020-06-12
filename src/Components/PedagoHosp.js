@@ -6,8 +6,8 @@ const imgGenerales = config.img.general;
 const img = config.img.recursosDidacticos;
 
 
-
-//console.log(jsonp.asignaturas );
+//Array foiltrado por el nivel 6
+var arrayMaster=[];
 
 
 
@@ -15,25 +15,39 @@ const img = config.img.recursosDidacticos;
 
 function PedagogHosp(props) {
     
-    const [arrayFiltrado, setArrayFiltrado ]= useState(null);
+    const [arrayFiltrado, setArrayFiltrado ]= useState(null);    
     const [asignatura, setAsignatura]= useState(null);
 
 
     
     
     useEffect (()=>{
-       let recursosDidacticos= JSON.parse(localStorage.getItem("arrayRecursos"));
-       let tmpFiltrados=[];
+       let recursosDidacticos= JSON.parse(localStorage.getItem("arrayRecursos"));       
         console.log(recursosDidacticos);
+        //filtrado por el nivel pedagogía hospitalaria que es es registro 6 en la tabla niveles
         for (let index = 0; index < recursosDidacticos.length; index++) {
             if (parseInt(recursosDidacticos[index].id_nivel) === 6 ) {
-                tmpFiltrados.push(recursosDidacticos[index])
+                arrayMaster.push(recursosDidacticos[index])
             }                        
         }
-        console.log("tmpFiltrados", tmpFiltrados);
-        setArrayFiltrado(tmpFiltrados);
+        console.log("tmpFiltrados", arrayMaster);        
+        setArrayFiltrado(arrayMaster);
 
-    }, [])
+    }, []);
+
+    const handleBuscarPorAsignatura=(e)=> {
+        let asignatura = e.target.value;
+        let tmpArray=[];
+        console.log(asignatura);
+        for (let index = 0; index < arrayMaster.length; index++) {
+         if (asignatura === arrayMaster[index].materia) {
+             tmpArray.push(arrayMaster[index])
+         }               
+        }   
+        setArrayFiltrado(tmpArray);    
+    }
+
+
 
     return (
         <React.Fragment>
@@ -54,7 +68,7 @@ function PedagogHosp(props) {
                         <select
                             className="custom-select"
                             id="selAsignatura"
-                        // onChange={handleSeleccionarPrograma}
+                            onChange={handleBuscarPorAsignatura}
                         >
                             <option defaultValue value={0}>Todos</option>
                             {
@@ -92,8 +106,7 @@ function PedagogHosp(props) {
 
             </div>
 
-            <div className="row">
-                <div className="col-sm-12">
+            <div className="row">                
                             {
                                 arrayFiltrado && (
                                     arrayFiltrado.map((item, i)=>(
@@ -102,8 +115,7 @@ function PedagogHosp(props) {
                                         </div>
                                     ))
                                 )
-                            }
-                </div>
+                            }                
             </div>
         </React.Fragment>
     );
