@@ -21,9 +21,32 @@ function Portada  (props)  {
   
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>Aprendo en casa</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Body>
+              {
+                  /* TODO: Revisar esta información y cambiar lo necesario (se pueden agregar iconos) */
+              }
+              <div className="row">
+                  <div className="col-sm-4">
+                      <a href="http://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> 
+                          Guía televisiva
+                      </a>
+                  </div>
+
+                  <div className="col-sm-4">
+                      <a href="https://aulavirtualabierta.mep.go.cr/curso/" target="_blank" rel="noopener noreferrer"> 
+                          Guías de Trabajo Autónomo
+                      </a>
+                  </div>
+
+                  <div className="col-sm-4">
+                      <a href="https://www.mep.go.cr/" target="_blank" rel="noopener noreferrer"> 
+                        Plantillas Guía de Aprendizajes Base 
+                      </a>
+                  </div>
+              </div>
+          </Modal.Body>
           <Modal.Footer>
             
           </Modal.Footer>
