@@ -1,11 +1,39 @@
-import React from 'react';
+import React, {useState}  from 'react';
+import { Modal } from 'react-bootstrap';
 import textosJson from "../data/textos.json";
 import assets from '../data/config/config.json';
 const textos = textosJson[0];
 const img = assets.img.portada;
 const imgGeneral = assets.img.general;
 
-const Portada = (props) => {
+function Portada  (props)  {
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
+
+  const modal =()=> {
+      return (
+        <>
+     
+  
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Footer>
+            
+          </Modal.Footer>
+        </Modal>
+      </>
+      )
+  }
+
+
+
     return ( 
         <React.Fragment>
         <div className="row">
@@ -13,14 +41,20 @@ const Portada = (props) => {
                 <img id="img-portada" src={img + "titulo.png"  } className="img-fluid" alt="Título portada"/>
             </div>
         </div>
-  
+ 
             <div className="row" >
          
                     <div className="col-4 text-right">                        
                     <img  onClick = {props.showModal }  data-typecontent ="video" data-content= {textos.VideoMinistro } className="img-fluid botones-portada hvr-pop"   src={img + "btn_bienvenida.png"} alt="Bienvenida"/>
                     </div>
-                    <div className="col-4 text-center">   
-                    <a  href="http://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> <img id="btn-aprendo" src={img + "aprendo-en-casa.png"  } className="img-fluid botones-portada  hvr-pop" alt="Botón Aprendo en casa"/></a>                
+                    <div className="col-4 text-center">                           
+                        <img 
+                            id="btn-aprendo" 
+                            src={img + "aprendo-en-casa.png"  } 
+                            className="img-fluid botones-portada  hvr-pop" 
+                            alt="Botón Aprendo en casa"
+                            onClick={handleShow}
+                            />
                     </div>
                     <div className="col-4 text-left">                     
                     <img  data-tar="Home"  onClick={props.changePage}  className="img-fluid botones-portada hvr-pop" src={img + "btn_ingresar.png"} alt="Ingresar"/>
@@ -46,7 +80,9 @@ const Portada = (props) => {
         </div>
        
         </div>
+        {modal()}
         </React.Fragment>
+        
      );
 }
  
