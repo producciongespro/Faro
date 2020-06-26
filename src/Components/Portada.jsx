@@ -8,17 +8,13 @@ const imgGeneral = assets.img.general;
 
 function Portada  (props)  {
     const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
 
 
   const modal =()=> {
-      return (
-        <>
-     
-  
+      return (        
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Aprendo en casa</Modal.Title>
@@ -35,13 +31,13 @@ function Portada  (props)  {
                   </div>
 
                   <div className="col-sm-4">
-                      <a href="http://www.ddc.mep.go.cr/estrategias-atencion-covid-19" target="_blank" rel="noopener noreferrer"> 
+                      <a href="https://aulavirtualabierta.mep.go.cr/curso/" target="_blank" rel="noopener noreferrer"> 
                           Guías de Trabajo Autónomo
                       </a>
                   </div>
 
                   <div className="col-sm-4">
-                      <a href="https://www.mep.go.cr/" target="_blank" rel="noopener noreferrer"> 
+                      <a href="http://www.ddc.mep.go.cr/estrategias-atencion-covid-19" target="_blank" rel="noopener noreferrer"> 
                         Plantillas Guía de Aprendizajes Base 
                       </a>
                   </div>
@@ -50,8 +46,7 @@ function Portada  (props)  {
           <Modal.Footer>
             
           </Modal.Footer>
-        </Modal>
-      </>
+        </Modal>      
       )
   }
 

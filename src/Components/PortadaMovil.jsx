@@ -1,14 +1,58 @@
-import React from 'react';
-//json:
-
+import React, {useState}  from 'react';
+import { Modal } from 'react-bootstrap';
 import textosJson from "../data/textos.json";
 import assets from "../data/config/config_m.json";
 const textos = textosJson[0];
 const img  = assets.img.portada;
 const imgGeneral = assets.img.general;
 //Portada en caso de móviles
-const PortadaMovil = (props) => {
-    return ( 
+function  PortadaMovil (props) {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+  const modal =()=> {
+    return (        
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Aprendo en casa</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            {
+                /* TODO: Revisar esta información y cambiar lo necesario (se pueden agregar iconos) */
+            }
+            <div className="row">
+                <div className="col-sm-4">
+                    <a href="http://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> 
+                        Guía televisiva
+                    </a>
+                </div>
+
+                <div className="col-sm-4">
+                    <a href="https://aulavirtualabierta.mep.go.cr/curso/" target="_blank" rel="noopener noreferrer"> 
+                        Guías de Trabajo Autónomo
+                    </a>
+                </div>
+
+                <div className="col-sm-4">
+                    <a href="http://www.ddc.mep.go.cr/estrategias-atencion-covid-19" target="_blank" rel="noopener noreferrer"> 
+                      Plantillas Guía de Aprendizajes Base 
+                    </a>
+                </div>
+            </div>
+        </Modal.Body>
+        <Modal.Footer>
+          
+        </Modal.Footer>
+      </Modal>      
+    )
+}
+
+
+    return (
+        
+        
+        
         <React.Fragment>
             <br/>
             <div className="row">
@@ -39,7 +83,15 @@ const PortadaMovil = (props) => {
                 <div className="col-2 ">                     
                 </div>
                 <div className="col-8 ">                     
-                <a  href="http://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> <img id="btn-aprendo" src={img + "aprendo-en-casa.png"  } className="img-fluid botones-portada  hvr-pop" alt="Botón Aprendo en casa"/></a>  
+                
+                <img 
+                    id="btn-aprendo" 
+                    src={img + "aprendo-en-casa.png"  } 
+                    className="img-fluid botones-portada  hvr-pop" 
+                    alt="Botón Aprendo en casa"
+                    onClick={handleShow}
+                    />
+                
                 </div>
                 <div className="col-2 ">                     
                 </div>
@@ -57,6 +109,10 @@ const PortadaMovil = (props) => {
         <p>ISBN: 978-9977-60-384-1</p>
         </div>
         </div>
+
+        {
+            modal()
+        }
         </React.Fragment>
      );
 }

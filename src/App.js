@@ -133,10 +133,10 @@ class App extends Component {
       case "escritorio":
         this.setState({
           nameCurrentPage: "Portada",
-          currentPage: <Portada changePage={this.changePage} showModal={this.showModal} />
+          currentPage: <Portada changePage={this.changePage} showModal={this.showModal} />          
         });
         break;
-      case "movil":
+      case "movil":      
         this.setState({
           nameCurrentPage: "Portada",
           currentPage: <PortadaMovil changePage={this.changePage} showModal={this.showModal} />
