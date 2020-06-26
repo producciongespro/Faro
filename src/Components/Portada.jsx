@@ -35,7 +35,7 @@ function Portada  (props)  {
                   </div>
 
                   <div className="col-sm-4">
-                      <a href="https://aulavirtualabierta.mep.go.cr/curso/" target="_blank" rel="noopener noreferrer"> 
+                      <a href="http://www.ddc.mep.go.cr/estrategias-atencion-covid-19" target="_blank" rel="noopener noreferrer"> 
                           Guías de Trabajo Autónomo
                       </a>
                   </div>
