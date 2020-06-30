@@ -26,19 +26,19 @@ function Portada  (props)  {
               <div className="row">
                   <div className="col-sm-4">
                       <a href="https://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> 
-                          <img className="img-fluid" src="http://localhost/Faro/asset/img/1_portada/ch_ web_ventana1b.jpg" alt="Guía televisiva"></img>
+                          <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ web_ventana1b.jpg" alt="Guía televisiva"></img>
                       </a>
                   </div>
 
                   <div className="col-sm-4">
                       <a href="https://aulavirtualabierta.mep.go.cr/curso/" target="_blank" rel="noopener noreferrer"> 
-                      <img className="img-fluid" src="http://localhost/Faro/asset/img/1_portada/ch_ web_ventana3b.jpg" alt="Guía de trabajo autónomo"></img>
+                      <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ web_ventana3b.jpg" alt="Guía de trabajo autónomo"></img>
                       </a>
                   </div>
 
                   <div className="col-sm-4">
                       <a href="http://www.ddc.mep.go.cr/estrategia-covid19/guias-aprendizajes-base" target="_blank" rel="noopener noreferrer"> 
-                      <img className="img-fluid" src="http://localhost/Faro/asset/img/1_portada/ch_ web_ventana2b.jpg" alt="Plantillas guía de aprendizaje base"></img>
+                      <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ web_ventana2b.jpg" alt="Plantillas guía de aprendizaje base"></img>
                       </a>
                   </div>
               </div>
