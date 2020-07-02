@@ -15,7 +15,7 @@ function  PortadaMovil (props) {
     return (        
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Aprendo en casa</Modal.Title>
+          <Modal.Title><h5 id="tituloAprendoCasa">Aprendo en casa - Enlaces</h5></Modal.Title>
         </Modal.Header>
         <Modal.Body>
             {
@@ -23,20 +23,20 @@ function  PortadaMovil (props) {
             }
             <div className="row">
                 <div className="col-sm-4">
-                    <a href="http://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> 
-                        Guía televisiva
-                    </a>
+                    <a href="https://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> 
+                    <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ movil_ventana1.jpg" alt="Guía televisiva"></img>
+                    </a><br/><br/>
                 </div>
-
+          
                 <div className="col-sm-4">
                     <a href="https://aulavirtualabierta.mep.go.cr/curso/" target="_blank" rel="noopener noreferrer"> 
-                        Guías de Trabajo Autónomo
-                    </a>
+                    <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ movil_ventana3.jpg" alt="Guía de trabajo autónomo"></img>
+                    </a><br/><br/>
                 </div>
 
                 <div className="col-sm-4">
-                    <a href="http://www.ddc.mep.go.cr/estrategias-atencion-covid-19" target="_blank" rel="noopener noreferrer"> 
-                      Plantillas Guía de Aprendizajes Base 
+                    <a href="http://www.ddc.mep.go.cr/estrategia-covid19/guias-aprendizajes-base" target="_blank" rel="noopener noreferrer"> 
+                    <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ movil_ventana2.jpg" alt="Plantillas guía de aprendizaje base"></img>
                     </a>
                 </div>
             </div>
