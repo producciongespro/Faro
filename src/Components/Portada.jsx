@@ -37,7 +37,7 @@ function Portada  (props)  {
                   </div>
 
                   <div className="col-sm-4">
-                      <a href="http://www.ddc.mep.go.cr/estrategia-covid19/guias-aprendizajes-base" target="_blank" rel="noopener noreferrer"> 
+                      <a href="http://www.ddc.mep.go.cr/estrategia-covid19/plantillas-aprendizajes-base-2020" target="_blank" rel="noopener noreferrer"> 
                       <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ web_ventana2b.jpg" alt="Plantillas guía de aprendizaje base"></img>
                       </a>
                   </div>
