@@ -33,8 +33,11 @@ function PedagogHosp(props) {
     useEffect(() => {
         //Cuando cambia el estado: asignatura o el anno
         console.log("Asignatura:", asignatura);
+        if (asignatura === "Transdisciplinario" || asignatura === "Primera infancia") {
+            setAnno("Todos")
+        }
         console.log("Año:", anno);
-       buscarRegistros();
+        buscarRegistros();    
     }, [asignatura, anno])
 
 
@@ -52,17 +55,17 @@ function PedagogHosp(props) {
         //--------------Buscar regsitros filtrados por año y por asignatura ------------------------
 
         var tmpArray = [];
-        
+
         //Caso 1: Cuando año y asigntarua es TODOS
         if (anno === "Todos" && asignatura === "Todos") {
-            console.log("TODOS los REGISTRO", arrayMaster);                      
+            console.log("TODOS los REGISTRO", arrayMaster);
             tmpArray = arrayMaster;
 
         } else {
-            console.log("NO TODOS");            
+            console.log("NO TODOS");
             //Caso 2: Cuando año == Todos            
-            if (anno === "Todos" && asignatura !== "Todos" ) {
-                console.log("Año = TODOS");            
+            if (anno === "Todos" && asignatura !== "Todos") {
+                console.log("Año = TODOS");
                 for (let index = 0; index < arrayMaster.length; index++) {
                     if (asignatura === arrayMaster[index].materia) {
                         tmpArray.push(arrayMaster[index])
@@ -73,13 +76,13 @@ function PedagogHosp(props) {
             if (asignatura === "Todos" && anno !== "Todos") {
                 console.log("Asignatura = TODOS");
                 //Utiliza espresiones regulares debido a que pueden ser varios años                 
-                tmpArray= busquedaAnno(arrayMaster, anno);                
+                tmpArray = busquedaAnno(arrayMaster, anno);
             }
 
             //Caso 4 cuando ni año ni asignatura son "TODOS"
             if (asignatura !== "Todos" && anno !== "Todos") {
-                console.log("diferente de TODOS");            
-                
+                console.log("diferente de TODOS");
+
                 //PRIMER PASO: Busca la asignatura y la carga en el arreglo temporal
                 for (let index = 0; index < arrayMaster.length; index++) {
                     if (asignatura === arrayMaster[index].materia) {
@@ -89,7 +92,7 @@ function PedagogHosp(props) {
 
                 //SEGUNDO PPASO: en el arreglo temporal busca la coincidencia del año
                 //Utiliza espresiones regulares debido a que pueden ser varios años
-                tmpArray =  busquedaAnno(tmpArray, anno)
+                tmpArray = busquedaAnno(tmpArray, anno)
             }
         }
         setArrayFiltrado(tmpArray);
@@ -157,47 +160,56 @@ function PedagogHosp(props) {
                     </div>
                 </div>
 
-                <div className="col-sm-6">
-                    <div className="input-group mb-3">
-                        <div className="input-group-prepend">
-                            <label className="input-group-text" htmlFor="selAnno">Año</label>
+                {
+                    console.log("asignatura", asignatura)
+                }
+
+                {
+ 
+                    (asignatura !== "Primera infancia" &&  asignatura !== "Transdisciplinario") &&
+
+                    <div className="col-sm-6">
+                        <div className="input-group mb-3">
+                            <div className="input-group-prepend">
+                                <label className="input-group-text" htmlFor="selAnno">Año</label>
+                            </div>
+                            <select
+                                className="custom-select"
+                                id="selAnno"
+                                onChange={handleObtenerAnno}
+                            >
+                                <option defaultValue value="Todos">Todos</option>
+                                {
+
+                                    jsonp.annos.map((item, i) => (
+                                        <option key={"anno" + i} value={item}> {item} </option>
+                                    ))
+
+                                }
+                            </select>
                         </div>
-                        <select
-                            className="custom-select"
-                            id="selAnno"
-                            onChange={handleObtenerAnno}
-                        >
-                            <option defaultValue value="Todos">Todos</option>
-                            {
-
-                                jsonp.annos.map((item, i) => (
-                                    <option key={"anno" + i} value={item}> {item} </option>
-                                ))
-
-                            }
-                        </select>
                     </div>
-                </div>
+                }
 
             </div>
 
             <div className="row">
-                <div className="col-sm-12">                    
-                        { arrayFiltrado &&
-                            (
+                <div className="col-sm-12">
+                    {arrayFiltrado &&
+                        (
                             <p>
-                                <strong>{arrayFiltrado.length}</strong> Recurso(s) enconstrado(s) con 
+                                <strong>{arrayFiltrado.length}</strong> Recurso(s) enconstrado(s) con
                                 la asignatura <strong>{asignatura}</strong> para el año <strong>{anno}</strong>.
                             </p>
-                            )
-                              
-                        }
-                    
+                        )
+
+                    }
+
                 </div>
             </div>
 
 
-            <div className="row">               
+            <div className="row">
                 {
                     arrayFiltrado && (
                         arrayFiltrado.map((item, i) => (
