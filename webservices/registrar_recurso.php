@@ -66,6 +66,7 @@ $conn = conectarDB();
     if ($id_nivel==="0") {
       $anno = floatval(preg_replace('/[^\d.]/', '',  $anno));
       $anno = trim($anno,",");
+      $materia = "Transdisciplinario";
       $variosNiveles=str_split($anno); 
       $k=1;
       foreach($variosNiveles as $value){
