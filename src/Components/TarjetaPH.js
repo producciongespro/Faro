@@ -36,7 +36,16 @@ const TarjetaPH = (props) => {
         <div className="card-footer text-muted">
             <i className="fas fa-arrow-alt-circle-right" /> {item.materia}          
             <br/>
-            <i className="fas fa-arrow-alt-circle-right" /> {item.anno}          
+            { 
+              item.anno &&
+              (
+                <React.Fragment>
+                  <i className="fas fa-arrow-alt-circle-right" /> {item.anno}                  
+                </React.Fragment>
+              )
+              
+            }
+            
         </div>
 
         </div>
