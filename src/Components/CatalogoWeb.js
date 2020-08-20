@@ -9,7 +9,7 @@ var recursosWeb=null;
 
 const cargarRecursosWeb=()=>{
     recursosWeb = filtrar(JSON.parse(localStorage.getItem("arrayDesarrolloProfesional")), "id_tipo", "2");
-    //console.log("recursosWeb",recursosWeb);    
+    console.log("recursosWeb",recursosWeb);    
 }
 
 //Componente que renderiza recursos web para docentes
