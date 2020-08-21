@@ -6,10 +6,13 @@ import filtrar from '../modulos/filtrar';
 var img = images[0];
 //console.log(sitiosWeb);
 var recursosWeb=null;
+var subcategoriasODP=null;
 
 const cargarRecursosWeb=()=>{
     recursosWeb = filtrar(JSON.parse(localStorage.getItem("arrayDesarrolloProfesional")), "id_tipo", "2");
+    subcategoriasODP=  JSON.parse(localStorage.getItem("subcategoriasODP"));
     console.log("recursosWeb",recursosWeb);    
+    console.log("subcategoriasODP",subcategoriasODP);
 }
 
 //Componente que renderiza recursos web para docentes

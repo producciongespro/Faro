@@ -56,6 +56,7 @@ async function cargarDatos(cb) {
   const asignaturaSecundaria = await obtener(config.servidorAPI + "obtener_tabla.php?tabla=asignaturas_secundaria");
   const arrayRecursos = await obtener(config.servidorAPI + "obtener_recursos.php");
   const arrayDesarrolloProfesional = await obtener(config.servidorAPI + "obtener_oferta_desarrollo.php");
+  const subcategoriasODP = await obtener(config.servidorAPI + "obtener_tabla.php?tabla=sub_categorias_idp");
   /*
   console.log("asignaturaPrimaria",asignaturaPrimaria);
   console.log("asignaturaSecundaria",asignaturaSecundaria);    
@@ -67,6 +68,7 @@ async function cargarDatos(cb) {
   localStorage.setItem("asignaturaSecundaria", JSON.stringify(asignaturaSecundaria));
   localStorage.setItem("arrayRecursos", JSON.stringify(arrayRecursos));
   localStorage.setItem("arrayDesarrolloProfesional", JSON.stringify(arrayDesarrolloProfesional));
+  localStorage.setItem("subcategoriasODP", JSON.stringify(subcategoriasODP));
 
   //console.log("guardado", localStorage.getItem("arrayRecursos"));  
   cb();
