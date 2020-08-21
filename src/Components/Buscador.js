@@ -199,7 +199,7 @@ class Buscador extends Component {
             arrayHtml = (
 
 
-                <div key={"tarjeta" + index} className="col-4">
+                <div key={"tarjeta" + index} className="col-sm-4">
                 <div className="card">
                     <img
                         src={dataJovenesAdultos[index].img_educatico}
@@ -264,7 +264,7 @@ class Buscador extends Component {
             arrayHtml = (
 
 
-                <div key={"tarjeta" + index} className="col-4">
+                <div key={"tarjeta" + index} className="col-sm-4">
                 <div className="card">
                     <img
                         src={dataPreescolar[index].img_educatico}
@@ -341,7 +341,7 @@ class Buscador extends Component {
                 //console.log( "Año:", dataGeneral[index].anno );                
 
                 arrayHtml = (
-                    <div key={"tarjeta" + index} className="col-4">
+                    <div key={"tarjeta" + index} className="col-sm-4">
                         <div className="card">
                             <img
                                 src={dataGeneral[index].img_educatico}

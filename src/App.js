@@ -106,8 +106,9 @@ class App extends Component {
 
 
   detectarPlataforma() {
-    //let plataforma = navigator.platform;
-    let plataforma = "Linux armv7l";
+    let plataforma = navigator.platform;
+    //Prueba dispositivo movil
+    //let plataforma = "Linux armv7l";
     switch (plataforma) {
       case "Linux armv7l":
       case "Linux armv8l":
