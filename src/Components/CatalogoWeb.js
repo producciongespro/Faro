@@ -14,8 +14,8 @@ var subCategoria=null;
 const cargarRecursosWeb=()=>{
     recursosWeb = filtrar(JSON.parse(localStorage.getItem("arrayDesarrolloProfesional")), "id_tipo", "2");
     subcategoriasODP=  filtrar(JSON.parse(localStorage.getItem("subcategoriasODP")), "idOferta", "2");
-    console.log("recursosWeb",recursosWeb);    
-    console.log("subcategoriasODP",subcategoriasODP);
+    //console.log("recursosWeb",recursosWeb);    
+    //console.log("subcategoriasODP",subcategoriasODP);
 }
 
 
