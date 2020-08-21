@@ -3,6 +3,9 @@ import sitiosWeb from '../data/desarrollo/sitios.json'
 import images from "../data/images.json";
 import filtrar from '../modulos/filtrar';
 
+import config from '../data/config/config';
+const imgGen = config.img.general;
+
 var img = images[0];
 //console.log(sitiosWeb);
 var recursosWeb=null;
@@ -10,7 +13,7 @@ var subcategoriasODP=null;
 
 const cargarRecursosWeb=()=>{
     recursosWeb = filtrar(JSON.parse(localStorage.getItem("arrayDesarrolloProfesional")), "id_tipo", "2");
-    subcategoriasODP=  JSON.parse(localStorage.getItem("subcategoriasODP"));
+    subcategoriasODP=  filtrar(JSON.parse(localStorage.getItem("subcategoriasODP")), "idOferta", "2");
     console.log("recursosWeb",recursosWeb);    
     console.log("subcategoriasODP",subcategoriasODP);
 }
@@ -23,22 +26,26 @@ cargarRecursosWeb();
         <React.Fragment>
             <div className="row">
                 <div id="titulo_recursosWeb" className="col-sm-12">
-                    <img className="img-fluid"  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/>
-                <nav className="navbar navbar-expand-lg navbar-light">
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
-                    <li className="nav-item"><a className=" nav-link " href="#educativos">Sitios Educativos</a></li>
-                    <li className="nav-item"><a className=" nav-link " href="#web">Herramientas Web</a></li>
-                    <li className="nav-item"><a className=" nav-link " href="#apps">Apps Educativas</a></li>
-                    <li className="nav-item"><a className=" nav-link " href="#estrategias">Estrategias de aprendizaje</a> </li>          
-                    <li className="nav-item"><a className=" nav-link " href="#tmp"  onClick={props.handlerCloseCatalogWeb }><span><b>Volver</b></span> </a></li>              
-                </ul>
-                </div>
-            </nav>
+                    <img className="img-fluid"  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/>                
+                    <img className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver" onClick={props.handlerCloseCatalogWeb } src={imgGen + "btn_volver.png"} alt="Volver" />
              </div>
+            </div>
+
+            
+
+            <div className="row">
+                <div className="col-sm-3">                
+                                <div className="input-group-prepend">
+                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selSubCategoria">Subcategoría</label>
+                                </div>
+                                <select className="custom-select buscadores-materias" id="selSubCategoria"  >
+                                    <option defaultValue value="" >Seleccione:</option>
+                                            {
+                                            subcategoriasODP.map((item, i) => (
+                                                <option key={"niveles" + i} value={item.id}> {item.nombreCategoria } </option>
+                                            ))}
+                                </select>                
+                </div>
             </div>
             
             <div id="educativos">  <a href="#inicio">   <h4 className="tit-catalogo" > Sitios Educativos </h4> <br/> </a>    
