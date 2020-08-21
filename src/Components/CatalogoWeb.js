@@ -36,7 +36,7 @@ const CatalogoWeb = (props) => {
             <div className="row">
                 <div id="titulo_recursosWeb" className="col-sm-12">
                     <img className="img-fluid"  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/>                
-                    <img className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver" onChange={props.handlerCloseCatalogWeb } src={imgGen + "btn_volver.png"} alt="Volver" />
+                    <img className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver" onClick={props.handlerCloseCatalogWeb } src={imgGen + "btn_volver.png"} alt="Volver" />
              </div>
             </div>
 
@@ -47,7 +47,7 @@ const CatalogoWeb = (props) => {
                                     <select 
                                     className="custom-select buscadores-materias" 
                                     id="selSubCategoria"
-                                    onClick={handleObtenerSubcategoriga} >
+                                    onChange={handleObtenerSubcategoriga} >
                                     <option defaultValue value="" >Seleccione:</option>
                                             {
                                             subcategoriasODP.map((item, i) => (

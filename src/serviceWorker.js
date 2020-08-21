@@ -1,5 +1,5 @@
 // This optional code is used to register a service worker.
-register()
+//register()
 
 
 // This lets the app load faster on subsequent visits in production, and gives
