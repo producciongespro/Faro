@@ -1,19 +1,19 @@
 {
     "version" : "1.1.2",
     "nombre" : "Caja de Herramientas",
-    "servidor" : "http://localhost/",
-    "servidorAPI": "http://localhost/Faro/webservices/",
+    "servidor" : "https://cajadeherramientas.mep.go.cr/",
+    "servidorAPI": "https://cajadeherramientas.mep.go.cr/webservices/",
     "img" : {
-        "general" : "http://localhost/Faro/asset/img/9_generales/",
-        "portada" : "http://localhost/Faro/asset/img/1_portada/",
-        "home" : "http://localhost/Faro/asset/img/2_home/web/",
-        "homeM" : "http://localhost/Faro/asset/img/2_home/movil/",
-        "apoyosClimaAula" : "http://localhost/Faro/asset/img/3_apoyos_aula/",
-        "apoyosEvaluacion" : "http://localhost/Faro/asset/img/4_apoyos_eval/",
-        "recursosDidacticos" : "http://localhost/Faro/asset/img/5_recursos_did/",
-        "docsOficiales" : "http://localhost/Faro/asset/img/6__documen_educ/",
-        "desarrolloProfesional" : "http://localhost/Faro/asset/img/7_desarrollo_prof/",
-        "apoyosPlan" : "http://localhost/Faro/asset/img/8_apoyo_planea/"
+        "general" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/9_generales/",
+        "portada" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/",
+        "home" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/2_home/web/",
+        "homeM" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/2_home/movil/",
+        "apoyosClimaAula" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/3_apoyos_aula/",
+        "apoyosEvaluacion" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/4_apoyos_eval/",
+        "recursosDidacticos" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/5_recursos_did/",
+        "docsOficiales" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/",
+        "desarrolloProfesional" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/7_desarrollo_prof/",
+        "apoyosPlan" : "https://cajadeherramientas.mep.go.cr/Faro/asset/img/8_apoyo_planea/"
     },
     "video" : {
         "ministra" : "https://www.youtube.com/embed/yOjV8yEIrMs",
@@ -22,7 +22,9 @@
         "pensamientoSistemico" : "https://www.youtube.com/embed/RHfP979UENg",
         "resolucionProblemas" : "https://www.youtube.com/embed/VvWvyqaeWgY",
         "usoCajaHerramientas" : "https://www.youtube.com/embed/kv88JHpbeeQ"
+
     },
-    "audio" : "http://localhost/Faro/asset/audios/"
+    "audio" : "https://cajadeherramientas.mep.go.cr/Faro/asset/audios/",
+    "noDisponible" : "https://cajadeherramientas.mep.go.cr/faro_referencias/10_no_disponible/no_disponible.html"
 }
 
