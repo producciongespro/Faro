@@ -10,7 +10,7 @@ const img2 = assets.img.general;
 
 const RecursosDidacticosMovil = (props) => {
   return ( 
-<div>
+<React.Fragment>
 <img className="titulos img-fluid" src={img + "titulo.png"} alt="Documentos educativos oficiales" />
     <div className="row">      
         <div className="col-1">
@@ -20,17 +20,38 @@ const RecursosDidacticosMovil = (props) => {
             <div className="row">  
                 <div className="col-4">
                 <figure>
-                 <img className="hvr-pop  img-fluid" id="preescolar" src= {img+"preescolar.png"}   data-infosource={4}  onClick={props.handlerOpenBuscador}   alt="Preescolar" />
+                 <img 
+                    className="hvr-pop  img-fluid" 
+                    id="preescolar" 
+                    src= {img+"preescolar.png"}   
+                    data-infosource={4}  
+                    onClick={props.handlerOpenBuscador} 
+                    data-origen="Preescolar"   
+                    alt="Preescolar" />
                 </figure>
                 </div>
                 <div className="col-4  ">
                 <figure>
-                    <img className="hvr-pop img-fluid" id="primaria" src= {img+"primaria.png"} data-infosource={4}  onClick={props.handlerOpenBuscador}   alt="Primaria" />
+                    <img 
+                        className="hvr-pop img-fluid" 
+                        id="primaria" 
+                        src= {img+"primaria.png"} 
+                        data-infosource={4}  
+                        onClick={props.handlerOpenBuscador}   
+                        data-origen="Primaria"
+                        alt="Primaria" />
                 </figure>
                 </div>
                 <div className="col-4  ">
                 <figure>
-                    <img className="hvr-pop img-fluid" id="secundaria" src= {img+"secundaria.png"} data-infosource={4}   onClick={props.handlerOpenBuscador}  alt="Secundaria" />
+                    <img 
+                        className="hvr-pop img-fluid" 
+                        id="secundaria" 
+                        src= {img+"secundaria.png"} 
+                        data-infosource={4}   
+                        onClick={props.handlerOpenBuscador}  
+                        data-origen="Secundaria"
+                        alt="Secundaria" />
                 </figure>
                 </div>
             </div>
@@ -99,7 +120,7 @@ const RecursosDidacticosMovil = (props) => {
         <div className="col-2">  
         </div> 
     </div> 
-    <div class="row text-center">
+    <div className="row text-center">
     <div className="col-3 "> </div>
             <div className="col-6 ">
                 <a href={links.Educatico} target="_blank" rel="noopener noreferrer"  >
@@ -108,12 +129,12 @@ const RecursosDidacticosMovil = (props) => {
               </div>
               <div className="col-3 "> </div>
         </div>
-        <div class="row text-center">
+        <div className="row text-center">
             <div className="col-12 ">
                  <img  data-tar="Home" onClick={props.changePage}   className="img-fluid hvr-pop"  src= {img2+"btn_salir.png" }  alt="Salir" />
             </div>
         </div>
-</div>
+</React.Fragment>
      );
 }
  
