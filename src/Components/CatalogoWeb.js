@@ -41,11 +41,10 @@ const CatalogoWeb = (props) => {
             </div>
 
             <div className="row">
-                <div className="col-sm-3">                
+                <div className="col-sm-6">                
                                 <div className="input-group-prepend">
-                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selSubCategoria">Subcategoría</label>
-                                </div>
-                                <select 
+                                    <label className="input-group-text  etiquetas-busquedas" htmlFor="selSubCategoria">Subcategoría</label>
+                                    <select 
                                     className="custom-select buscadores-materias" 
                                     id="selSubCategoria"
                                     onClick={handleObtenerSubcategoriga} >
@@ -54,7 +53,9 @@ const CatalogoWeb = (props) => {
                                             subcategoriasODP.map((item, i) => (
                                                 <option key={"niveles" + i} value={item.nombreCategoria}> {item.nombreCategoria } </option>
                                             ))}
-                                </select>                
+                                </select> 
+                                </div>
+                                             
                 </div>
             </div>
             
