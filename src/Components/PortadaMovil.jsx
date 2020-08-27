@@ -22,22 +22,27 @@ function  PortadaMovil (props) {
                 /* TODO: Revisar esta información y cambiar lo necesario (se pueden agregar iconos) */
             }
             <div className="row">
-                <div className="col-sm-4">
+                <div className="col-sm-3">
                     <a href="https://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> 
                     <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ movil_ventana1.jpg" alt="Guía televisiva"></img>
                     </a><br/><br/>
                 </div>
           
-                <div className="col-sm-4">
+                <div className="col-sm-3">
                     <a href="https://aulavirtualabierta.mep.go.cr/curso/" target="_blank" rel="noopener noreferrer"> 
                     <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ movil_ventana3.jpg" alt="Guía de trabajo autónomo"></img>
                     </a><br/><br/>
                 </div>
 
-                <div className="col-sm-4">
+                <div className="col-sm-3">
                     <a href="http://www.ddc.mep.go.cr/estrategia-covid19/guias-aprendizajes-base" target="_blank" rel="noopener noreferrer"> 
                     <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ movil_ventana2.jpg" alt="Plantillas guía de aprendizaje base"></img>
-                    </a>
+                    </a><br/><br/>
+                </div>
+                <div className="col-sm-3">
+                <a href="https://cajadeherramientas.mep.go.cr/faro_referencias/1_ref_portada/GTA_FIESTAS_PATRIAS.zip" target="_blank" rel="noopener noreferrer"> 
+                      <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ movil_ventana5.jpg" alt="Guías fiestas patrias 2020"></img>
+                      </a>
                 </div>
             </div>
         </Modal.Body>
