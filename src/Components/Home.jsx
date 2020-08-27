@@ -5,9 +5,20 @@ import assets from '../data/config/config.json';
 const textos = textosJson[0];
 const img = assets.img.home;
 var links = dsLinks[0];
+
+/** 
+ * @module home
+ * Es la vista de la portada donde aparece la maestra con los gadgets
+ * @author Luis Chacón Campos
+ * @version 2.1
+ */
+
 const Home = (props) => {
   return (
     <React.Fragment>
+{/**
+Seincluye una sección con tabindex -1
+       */}
       <section  tabIndex="-1" title="Área de botones" id="botones">
         <div role="navigation" className="barra-botones">
           <img className="btn img-fluid hvr-pop" id="indicaciones" src={img + "caja.png"} onClick={props.showModal} data-typecontent="help" data-content={textos.IndicacionesPortada} alt="Indicaciones" /> <br />
