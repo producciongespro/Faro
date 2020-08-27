@@ -166,8 +166,6 @@ left: 0px;
   cursor: pointer;
 }
 .cliqueables:hover {opacity: 1.0;}
-
-.cliqueables:focus {opacity: 1.0;}
 /* .cliqueables:hover {filter: opacity(.5);}} */
 .cliqueables2:hover {
   animation: shake 0.5s;

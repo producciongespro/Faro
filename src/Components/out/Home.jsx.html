@@ -44,39 +44,45 @@ var links = dsLinks[0];
 const Home = (props) => {
   return (
     &lt;React.Fragment>
-      &lt;section  tabIndex="-1" title="Área de botones" id="botones">
+      {
+        /** En el area de los botones Se incluye una sección con tabindex 1 
+         se agrega rol button a las imágenes qeu cumplen el rol de botón
+        */
+      }
+      &lt;section tabIndex="-1" title="Área de botones" id="botones">
         &lt;div role="navigation" className="barra-botones">
-          &lt;img className="btn img-fluid hvr-pop" id="indicaciones" src={img + "caja.png"} onClick={props.showModal} data-typecontent="help" data-content={textos.IndicacionesPortada} alt="Indicaciones" /> &lt;br />
-          &lt;img className="btn img-fluid hvr-pop" id="home" src={img + "volver_portada.png"} data-tar="Portada" onClick={props.changePage} alt="Volver a Portada" />&lt;br />
-          &lt;img className="img-fluid botones-portada hvr-pop" id="uso" src={img + "btn_usocaja.png"} data-typecontent="usoCaja" onClick={props.showModal} data-content={textos.VideoUsoCaja} alt="Uso de la caja de herramientas" /> &lt;br /> &lt;br />
-          &lt;a href={links.Encuesta} target="_blank" rel="noopener noreferrer"  >
-            &lt;img className="img-fluid botones-portada hvr-pop" id="encuesta" src={img + "btn_encuesta.png"} alt="Encuesta" />
+          &lt;img tabIndex="1" role="button" title="Indicaciones" className="btn img-fluid hvr-pop" id="indicaciones" src={img + "caja.png"} onClick={props.showModal} onKeyPress={props.showModal} data-typecontent="help" data-content={textos.IndicacionesPortada}  /> &lt;br />
+          &lt;img tabIndex="1" role="button" title="Volver a Portada" className="btn img-fluid hvr-pop" id="home" src={img + "volver_portada.png"} data-tar="Portada" onClick={props.changePage} onKeyPress={props.changePage} />&lt;br />
+          &lt;img tabIndex="1" role="button" title="Uso de la caja de herramientas" className="img-fluid botones-portada hvr-pop" id="uso" src={img + "btn_usocaja.png"} data-typecontent="usoCaja" onClick={props.showModal} onKeyPress={props.showModal} data-content={textos.VideoUsoCaja}  /> &lt;br /> &lt;br />
+          &lt;a tabIndex="1" href={links.Encuesta} target="_blank" rel="noopener noreferrer"  >
+              &lt;img alt="Encuesta" className="img-fluid botones-portada hvr-pop" id="encuesta" src={img + "btn_encuesta.png"}  />
           &lt;/a>
           &lt;br />
-          &lt;img className="btn img-fluid hvr-pop incidencias" id="btnIncidencias" data-typecontent="opcIncidencias" onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={props.onMouseOut} alt="Inicidencias" src={img + "incidencias.png"} />&lt;br />
+          &lt;img tabIndex="1" role="button" title="Inicidencias o reportes de fallas" className="btn img-fluid hvr-pop incidencias" id="btnIncidencias" data-typecontent="opcIncidencias" onClick={props.showModal} onKeyPress={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={props.onMouseOut}  src={img + "incidencias.png"} />&lt;br />
           &lt;hr />
-          &lt;img className="btn img-fluid hvr-pop acercade" id="acercade" src={img + "creditos.png"} onClick={props.showModal} data-typecontent="acercaDe" data-content={textos.IndicacionesPortada} alt="Indicaciones" /> &lt;br />
+          &lt;img tabIndex="1" role="button" title="Información acerca de la caja de herramientas" className="btn img-fluid hvr-pop acercade" id="acercade" src={img + "creditos.png"} onClick={props.showModal} onKeyPress={props.showModal} data-typecontent="acercaDe" data-content={textos.IndicacionesPortada}  /> &lt;br />
         &lt;/div>
       &lt;/section>
-
-      &lt;div className="row">
-        &lt;div className="col-1">
-
-        &lt;/div>
+      {
+        /** En el area de los vínculos a las diferentes categorías se incluye una section con tabindex 2
+         * se agrega rol button a las imágenes qeu cumplen el rol de botón
+        */
+      }
+        &lt;section  tabIndex="-2" title="Área de acceso a recurso de la caja"  id="maestra">
+      &lt;div tabIndex="2" className="row">
+        &lt;div  className="col-1">&lt;/div>        
         &lt;div className="col-10 ">
-          &lt;img alt="maestra" id="principal" src={img + "maestraMenu.png"} />
-          &lt;img alt="Apoyos para el clima del aula" data-tar="ApoyoClimaAula" onClick={props.changePage} id="gafas" className="cliqueables" src={img + "gafas.png"} />
-          &lt;img alt="Documentos oficiales" id="tablet" data-tar="DocsOficiales" onClick={props.changePage} className="cliqueables" src={img + "tabletAnimada.gif"} />
-          &lt;img alt="Apoyos para la evaluación" id="lapicero" data-tar="ApoyosEvaluacion" onClick={props.changePage} className="cliqueables" src={img + "lapicero.png"} />
-          &lt;img alt="Recursos didáctico" id="laptop" data-tar="RecursosDidacticos" onClick={props.changePage} className="cliqueables" src={img + "laptop.gif"} />
-          &lt;img alt="Desarrollo profesional" id="celular" data-tar="DesarrolloProf" onClick={props.changePage} className="cliqueables2" src={img + "celular.png"} />
-          &lt;img alt="Apoyos para el planeamiento" id="bolso" data-tar="ApoyosPlan" onClick={props.changePage} className="cliqueables" src={img + "bolso.png"} />
-        &lt;/div>
-        &lt;div className="col-1">
-
-        &lt;/div>
+          &lt;img tabIndex="-2" alt="imagen de la maestra" id="principal" src={img + "maestraMenu.png"} />
+          &lt;img tabIndex="5" role="button" title="Apoyos para el clima del aula" data-tar="ApoyoClimaAula" onClick={props.changePage} onKeyPress={props.changePage} id="gafas" className="cliqueables" src={img + "gafas.png"} />
+          &lt;img tabIndex="6" role="button" title="Documentos oficiales" id="tablet" data-tar="DocsOficiales" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "tabletAnimada.gif"} />
+          &lt;img tabIndex="7" role="button" title="Apoyos para la evaluación" id="lapicero" data-tar="ApoyosEvaluacion" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "lapicero.png"} />
+          &lt;img tabIndex="8" role="button" title="Recursos didáctico" id="laptop" data-tar="RecursosDidacticos" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "laptop.gif"} />
+          &lt;img tabIndex="9" role="button" title="Desarrollo profesional" id="celular" data-tar="DesarrolloProf" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables2" src={img + "celular.png"} />
+          &lt;img tabIndex="10" role="button" title="Apoyos para el planeamiento" id="bolso" data-tar="ApoyosPlan" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "bolso.png"} />
+        &lt;/div>        
+        &lt;div className="col-1">&lt;/div>
       &lt;/div>
-
+      &lt;/section>
     &lt;/React.Fragment>
   );
 }
@@ -97,7 +103,7 @@ export default Home;</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.5</a> on Thu Aug 27 2020 12:36:29 GMT-0600 (GMT-06:00)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.5</a> on Thu Aug 27 2020 14:55:12 GMT-0600 (GMT-06:00)
 </footer>
 
 <script> prettyPrint(); </script>
