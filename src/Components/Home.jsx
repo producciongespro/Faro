@@ -42,7 +42,7 @@ const Home = (props) => {
         */
       }
         <section  tabIndex="-2" title="Área de acceso a recurso de la caja"  id="maestra">
-      <div tabIndex="2" className="row">
+      <div className="row">
         <div  className="col-1"></div>        
         <div className="col-10 ">
           <img tabIndex="-2" alt="imagen de la maestra" id="principal" src={img + "maestraMenu.png"} />
