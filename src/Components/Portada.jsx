@@ -91,6 +91,7 @@ function Portada  (props)  {
         <div tabIndex="4" className="col-12 text-center pie-pagina">
            <br/>
         <br/>    
+        <span className="sr-only"> Direcciones participantes</span>
         DIRECCIÓN DE DESARROLLO CURRICULAR - DIRECCIÓN DE RECURSOS TECNOLÓGICOS EN EDUCACIÓN - INSTITUTO DE DESARROLLO PROFESIONAL ULADISLAO GÁMEZ SOLANO
         </div> <br/> <br/>  
 

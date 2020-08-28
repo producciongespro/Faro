@@ -21,6 +21,15 @@ body {
   margin-top: 14%;
 }
 
+.sr-only{
+  position:absolute;
+  left: -10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  }
+
 .aviso {
   font-weight: bold;
   font-size: medium;
