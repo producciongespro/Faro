@@ -40,6 +40,12 @@ function ContenidoModal(props) {
                 </div>
             )
             break;
+                case "pdf":               
+                    html = (
+                        <embed src={props.infoModal + "#toolbar=1"} type='application/pdf' width='100%' height='100%'></embed>
+                        )
+               
+                break;
 
         default:
             break;
