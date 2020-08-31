@@ -9,22 +9,29 @@ const imgGeneral = assets.img.general;
 
 function Portada  (props)  {
     const [show, setShow] = useState(false);
+    const [tituloModal, setTituloModal]= useState(false);
     const handleClose = () => setShow(false);    
     const [opcionModal, setOpcionModal ]= useState(null);
 
     const handleShow=(e)=>{
-        console.log(e.target.dataset.typecontent  );
+        console.log(e.target.dataset.typecontent  );        
+        setTituloModal(e.target.title);
         setOpcionModal( e.target.dataset.typecontent )        
         setShow(true)
     }
 
+    
 
 
   const modal =()=> {
       return (        
-        <Modal show={show} onHide={handleClose}>
+        <Modal 
+            show={show} 
+            onHide={handleClose}
+            size="lg"
+            >
           <Modal.Header closeButton>
-            <Modal.Title><h3 id="tituloAprendoCasa">Aprendo en casa - Enlaces</h3></Modal.Title>
+      <Modal.Title><h3 id="tituloAprendoCasa">{tituloModal}</h3></Modal.Title>
           </Modal.Header>
           <Modal.Body>              
              <ContenidoModal opcionModal={opcionModal} />
@@ -71,7 +78,7 @@ function Portada  (props)  {
                             tabIndex="3"
                             role= "button"
                             id="btn-aprendo" 
-                            title="Acceder a las opciones de aprendo en casa"
+                            title="Enlaces de aprendo en casa"
                             src={img + "aprendo-en-casa.png"  } 
                             className="img-fluid botones-portada  hvr-pop"                             
                             onClick={handleShow}
