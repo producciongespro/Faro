@@ -19,10 +19,7 @@ function Portada  (props)  {
           <Modal.Header closeButton>
             <Modal.Title><h3 id="tituloAprendoCasa">Aprendo en casa - Enlaces</h3></Modal.Title>
           </Modal.Header>
-          <Modal.Body>
-              {
-                  /* TODO: Revisar esta información y cambiar lo necesario (se pueden agregar iconos) */
-              }
+          <Modal.Body>              
               <div className="row">
                   <div className="col-sm-3">
                       <a href="https://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer"> 
@@ -65,14 +62,25 @@ function Portada  (props)  {
         <React.Fragment>
         <div className="row">
             <div className="col-12 text-center">
-                <img tabIndex="1" id="img-portada" src={img + "titulo.png"  } className="img-fluid" alt="Título portada CAja de herramientas para docentes"/>
+                <img 
+                    tabIndex="1" 
+                    id="img-portada" src={img + "titulo.png"  } className="img-fluid" alt="Título portada CAja de herramientas para docentes"/>
             </div>
         </div>
  
             <div className="row" >
          
                     <div className="col-4 text-right">                        
-                    <img tabIndex="2" role="button"  title="Bienvenida de la Ministra"   onClick= {props.showModal } onKeyPress= {props.showModal }  data-typecontent ="video" data-content= {textos.VideoMinistro } className="img-fluid botones-portada hvr-pop"   src={img + "btn_bienvenida.png"} />
+                    <img 
+                        tabIndex="2" 
+                        role="button"  
+                        title="Bienvenida de la Ministra"   
+                        onClick={handleShow}
+                        onKeyPress={handleShow}
+                        data-typecontent ="video" 
+                        data-content= {textos.VideoMinistro } 
+                        className="img-fluid botones-portada hvr-pop"   
+                        src={img + "btn_bienvenida.png"} />
                     </div>
                     <div className="col-4 text-center">                           
                         <img 
