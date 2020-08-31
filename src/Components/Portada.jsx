@@ -2,14 +2,20 @@ import React, {useState}  from 'react';
 import { Modal } from 'react-bootstrap';
 import textosJson from "../data/textos.json";
 import assets from '../data/config/config.json';
+import ContenidoModal from './ContenidoModal';
 const textos = textosJson[0];
 const img = assets.img.portada;
 const imgGeneral = assets.img.general;
 
 function Portada  (props)  {
     const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);    
+    const [opcionModal, setOpcionModal ]= useState(null);
+
+    const handleShow=(e)=>{
+        console.log(e.target);
+        setShow(true)
+    }
 
 
 
