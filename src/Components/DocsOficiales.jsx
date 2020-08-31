@@ -31,7 +31,8 @@ const DocsOficiales = (props) => {
     const [infoModal, setInfoModal ]= useState(null);
 
     const handleShow=(e)=>{
-        console.log(e.target.dataset.typecontent  );        
+        console.log("e.target.dataset.typecontent", e.target.dataset.typecontent  );        
+        console.log("e.target.dataset.content", e.target.dataset.content);
         setTituloModal(e.target.title);
         setOpcionModal( e.target.dataset.typecontent );
         /**
@@ -111,10 +112,9 @@ const DocsOficiales = (props) => {
 }
         <div className="row">
           <div className="col-3">
-            <figure>
+            <figure role="button">
               <img
-                tabIndex="2"
-                role="button"
+                tabIndex="2"                
                 title="Documento Políticas Educativas"
                 className="botones-portada hvr-pop img-fluid politica ladoDer3"
                 id="politica"
@@ -125,16 +125,15 @@ const DocsOficiales = (props) => {
                 data-content={serv + pdfs.Politica_educativa}
                 data-typecontent="pdf"
                 onClick={handleShow}
-                onKeyPress={props.showModal}
+                onKeyPress={handleShow}
               />
             </figure>
           </div>
           <div className="col-3">
-            <figure>
-              <img
-                tabIndex="3"
-                role="button"
-                title="ir a política curricular"
+            <figure role="button">
+              <img                
+                tabIndex="3"                
+                title="Política curricular"
                 className="botones-portada hvr-pop img-fluid politica ladoDer2"
                 id="fundamentos"
                 data-infosource={5}
@@ -143,16 +142,15 @@ const DocsOficiales = (props) => {
                 src={img + "fundamentos_curriculo2.png"}
                 data-content={serv + pdfs.Transformacion_curricular}
                 data-typecontent="pdf"
-                onClick={props.showModal}
-                onKeyPress={props.showModal}
+                onClick={handleShow}
+                onKeyPress={handleShow}
               />
             </figure>
           </div>
           <div className="col-3">
-            <figure>
+            <figure role="button">
               <img
-                tabIndex="3"
-                role="button"
+                tabIndex="3"                
                 title="Programas de estudio"
                 className="botones-portada hvr-pop img-fluid politica ladoIzq2"
                 id="programas"
@@ -168,10 +166,9 @@ const DocsOficiales = (props) => {
             </figure>
           </div>
           <div className="col-3">
-            <figure>
+            <figure role="button">
               <img
-                tabIndex="3"
-                role="button"
+                tabIndex="3"                
                 title="Reglamento evaluación"
                 className="botones-portada hvr-pop img-fluid politica ladoIzq3"
                 id="reglamento"
@@ -181,8 +178,8 @@ const DocsOficiales = (props) => {
                 src={img + "reglamento2.png"}
                 data-content={pdfs.Docs_oficiales_REA}
                 data-typecontent="evaluacion"
-                onClick={props.showModal}
-                onKeyPress={props.showModal}
+                onClick={handleShow}
+                onKeyPress={handleShow}
               />
             </figure>
           </div>
@@ -192,11 +189,10 @@ const DocsOficiales = (props) => {
 
         <div className="row">
           <div className="col-3">
-            <figure>
+            <figure role="button" >
               <img
                 tabIndex="4"
-                title="Propuesta Faro"
-                role="button"
+                title="Propuesta Faro"                
                 className="botones-portada hvr-pop img-fluid politica ladoDer3"
                 id="faro"
                 data-infosource={5}
@@ -204,17 +200,17 @@ const DocsOficiales = (props) => {
                 onMouseOut={props.onMouseOut}
                 src={img + "faro2.png"}
                 data-content={serv + pdfs.Faro}
-                ata-typecontent="pdf"
-                onClick={props.showModal}
+                data-typecontent="pdf"
+                onClick={handleShow}
+                onKeyPress={handleShow}
               />
             </figure>
           </div>
           <div className="col-3">
-            <figure>
+            <figure  role="button">
               <img
                 tabIndex="4"
-                title="Perfil estudiante"
-                role="button"
+                title="Perfil de estudiante"               
                 className="botones-portada hvr-pop img-fluid politica ladoDer2"
                 id="estudiante"
                 data-infosource={5}
@@ -223,12 +219,13 @@ const DocsOficiales = (props) => {
                 src={img + "perfil_estudiantil2.png"}
                 data-content={serv + pdfs.Docs_Oficiales_Perfil_Est}
                 data-typecontent="pdf"
-                onClick={props.showModal}
+                onClick={handleShow}
+                onKeyPress={handleShow}
               />
             </figure>
           </div>
           <div className="col-3">
-            <figure>
+            <figure role="button">
               <a href={links.Protocolos} target="_blank" rel="noopener noreferrer"  >
                 <img
                   tabIndex="4"
