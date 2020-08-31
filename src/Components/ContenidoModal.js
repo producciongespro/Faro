@@ -7,12 +7,12 @@ const video = config.video;
 function ContenidoModal(props) {
     var html;
     switch (props.opcionModal) {
-        case "video":
+        case "videoMinistra":
         html= (
-            <iframe className="borde-video" title="video ministra" width="100%" height="500" src={video.ministra} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe className="borde-video" title="video ministra" width="100%" height="200" src={video.ministra} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         )
             break;
-        case "aprendo":
+        case "aprendoEnCasa":
             html = (
                 <div className="row">
                     <div className="col-sm-3">

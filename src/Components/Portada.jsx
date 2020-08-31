@@ -68,7 +68,7 @@ function Portada  (props)  {
                         title="Bienvenida de la Ministra"   
                         onClick={handleShow}
                         onKeyPress={handleShow}
-                        data-typecontent ="video" 
+                        data-typecontent ="videoMinistra" 
                         data-content= {textos.VideoMinistro } 
                         className="img-fluid botones-portada hvr-pop"   
                         src={img + "btn_bienvenida.png"} />
@@ -83,7 +83,7 @@ function Portada  (props)  {
                             className="img-fluid botones-portada  hvr-pop"                             
                             onClick={handleShow}
                             onKeyPress={handleShow}
-                            data-typecontent ="aprendo" 
+                            data-typecontent ="aprendoEnCasa" 
                             />
                     </div>
                     <div className="col-4 text-left">                     
