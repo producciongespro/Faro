@@ -27,12 +27,12 @@ const Home = (props) => {
         <div  className="col-1"></div>        
         <div className="col-10 ">
           <img tabIndex="2" alt="imagen de la maestra" id="principal" src={img + "maestraMenu.png"} />
-          <img tabIndex="3" role="button" title="Apoyos para el clima del aula" data-tar="ApoyoClimaAula" onClick={props.changePage} onKeyPress={props.changePage} id="gafas" className="cliqueables" src={img + "gafas.png"} alt=""/>
-          <img tabIndex="4" role="button" title="Documentos oficiales" id="tablet" data-tar="DocsOficiales" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "tabletAnimada.gif"} alt="" />
-          <img tabIndex="5" role="button" title="Apoyos para la evaluación" id="lapicero" data-tar="ApoyosEvaluacion" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "lapicero.png"} alt="" />
-          <img tabIndex="6" role="button" title="Recursos didáctico" id="laptop" data-tar="RecursosDidacticos" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "laptop.gif"} alt="" />
-          <img tabIndex="7" role="button" title="Desarrollo profesional" id="celular" data-tar="DesarrolloProf" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables2" src={img + "celular.png"} alt="" />
-          <img tabIndex="8" role="button" title="Apoyos para el planeamiento" id="bolso" data-tar="ApoyosPlan" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "bolso.png"} alt="" />
+          <img tabIndex="3" role="button" alt="Apoyos para el clima del aula" data-tar="ApoyoClimaAula" onClick={props.changePage} onKeyPress={props.changePage} id="gafas" className="cliqueables" src={img + "gafas.png"} />
+          <img tabIndex="4" role="button" alt="Documentos oficiales" id="tablet" data-tar="DocsOficiales" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "tabletAnimada.gif"}  />
+          <img tabIndex="5" role="button" alt="Apoyos para la evaluación" id="lapicero" data-tar="ApoyosEvaluacion" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "lapicero.png"}  />
+          <img tabIndex="6" role="button" alt="Recursos didáctico" id="laptop" data-tar="RecursosDidacticos" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "laptop.gif"} />
+          <img tabIndex="7" role="button" alt="Desarrollo profesional" id="celular" data-tar="DesarrolloProf" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables2" src={img + "celular.png"}  />
+          <img tabIndex="8" role="button" alt="Apoyos para el planeamiento" id="bolso" data-tar="ApoyosPlan" onClick={props.changePage} onKeyPress={props.changePage} className="cliqueables" src={img + "bolso.png"}  />
         </div>        
         <div className="col-1"></div>
       </div>
