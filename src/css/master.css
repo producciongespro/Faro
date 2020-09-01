@@ -18,7 +18,12 @@ body {
 }
 
 .modal-content {
-  height: 550px;
+ height: 550px;
+}
+
+.modal-header .close {
+  padding: 2rem 1rem;
+  margin: -1rem -1rem -1rem auto;
 }
 
 #botones-planeamiento{
