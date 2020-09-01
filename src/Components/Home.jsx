@@ -44,16 +44,16 @@ const Home = (props) => {
       }
       <section tabIndex="9" title="Área de botones" id="botones">
         <div role="navigation" className="barra-botones">
-          <img tabIndex="9" role="button" title="Indicaciones" className="btn img-fluid hvr-pop" id="indicaciones" src={img + "caja.png"} onClick={props.showModal} onKeyPress={props.showModal} data-typecontent="help" data-content={textos.IndicacionesPortada} alt="" /> <br />
-          <img tabIndex="9" role="button" title="Volver a Portada" className="btn img-fluid hvr-pop" id="home" src={img + "volver_portada.png"} data-tar="Portada" onClick={props.changePage} onKeyPress={props.changePage} alt="" /><br />
-          <img tabIndex="9" role="button" title="Uso de la caja de herramientas" className="img-fluid botones-portada hvr-pop" id="uso" src={img + "btn_usocaja.png"} data-typecontent="usoCaja" onClick={props.showModal} onKeyPress={props.showModal} data-content={textos.VideoUsoCaja} alt="" /> <br /> <br />
+          <img tabIndex="9" role="button" alt="Indicaciones" className="btn img-fluid hvr-pop" id="indicaciones" src={img + "caja.png"} onClick={props.showModal} onKeyPress={props.showModal} data-typecontent="help" data-content={textos.IndicacionesPortada}  /> <br />
+          <img tabIndex="9" role="button" alt="Volver a Portada" className="btn img-fluid hvr-pop" id="home" src={img + "volver_portada.png"} data-tar="Portada" onClick={props.changePage} onKeyPress={props.changePage}  /><br />
+          <img tabIndex="9" role="button" alt="Uso de la caja de herramientas" className="img-fluid botones-portada hvr-pop" id="uso" src={img + "btn_usocaja.png"} data-typecontent="usoCaja" onClick={props.showModal} onKeyPress={props.showModal} data-content={textos.VideoUsoCaja}  /> <br /> <br />
           <a tabIndex="9" href={links.Encuesta} target="_blank" rel="noopener noreferrer"  >
               <img alt="Encuesta" className="img-fluid botones-portada hvr-pop" id="encuesta" src={img + "btn_encuesta.png"}  />
           </a>
           <br />
-          <img tabIndex="9" role="button" title="Inicidencias o reportes de fallas" className="btn img-fluid hvr-pop incidencias" id="btnIncidencias" data-typecontent="opcIncidencias" onClick={props.showModal} onKeyPress={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={props.onMouseOut}  src={img + "incidencias.png"} alt="" /><br />
+          <img tabIndex="9" role="button" alt="Inicidencias o reportes de fallas" className="btn img-fluid hvr-pop incidencias" id="btnIncidencias" data-typecontent="opcIncidencias" onClick={props.showModal} onKeyPress={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={props.onMouseOut}  src={img + "incidencias.png"}  /><br />
           <hr />
-          <img tabIndex="9" role="button" title="Información acerca de la caja de herramientas" className="btn img-fluid hvr-pop acercade" id="acercade" src={img + "creditos.png"} onClick={props.showModal} onKeyPress={props.showModal} data-typecontent="acercaDe" data-content={textos.IndicacionesPortada} alt="" /> <br />
+          <img tabIndex="9" role="button" alt="Información acerca de la caja de herramientas" className="btn img-fluid hvr-pop acercade" id="acercade" src={img + "creditos.png"} onClick={props.showModal} onKeyPress={props.showModal} data-typecontent="acercaDe" data-content={textos.IndicacionesPortada}  /> <br />
         </div>
       </section>
     

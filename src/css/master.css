@@ -25,6 +25,7 @@ body {
   margin-top: 14%;
 }
 
+/* Clase presente de boostrap
 .sr-only{
   position:absolute;
   left: -10000px;
@@ -33,6 +34,7 @@ body {
   height:1px;
   overflow:hidden;
   }
+*/
 
 .aviso {
   font-weight: bold;

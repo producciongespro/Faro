@@ -32,7 +32,7 @@ function Portada  (props)  {
               size="lg"
               >
             <Modal.Header closeButton>
-        <Modal.Title><h3 id="tituloAprendoCasa">{tituloModal}</h3></Modal.Title>
+        <Modal.Title><h3 className="titulo-modal" >{tituloModal}</h3></Modal.Title>
             </Modal.Header>
             <Modal.Body>              
                <ContenidoModal opcionModal={opcionModal}  infoModal={null} />
@@ -72,14 +72,13 @@ function Portada  (props)  {
                     <img 
                         tabIndex="2" 
                         role="button"  
-                        title="Bienvenida de la Ministra"   
+                        alt="Bienvenida de la Ministra"   
                         onClick={handleAbriModal}
                         onKeyPress={handleAbriModal}
                         data-typecontent ="videoMinistra" 
                         data-content= {textos.VideoMinistro } 
                         className="img-fluid botones-portada hvr-pop"   
-                        src={img + "btn_bienvenida.png"} 
-                        alt=""
+                        src={img + "btn_bienvenida.png"}                         
                         />
                     </div>
                     <div className="col-4 text-center">                           
@@ -87,17 +86,17 @@ function Portada  (props)  {
                             tabIndex="3"
                             role= "button"
                             id="btn-aprendo" 
-                            title="Enlaces de aprendo en casa"
+                            alt="Enlaces de aprendo en casa"
                             src={img + "aprendo-en-casa.png"  } 
                             className="img-fluid botones-portada  hvr-pop"                             
                             onClick={handleAbriModal}
                             onKeyPress={handleAbriModal}
                             data-typecontent ="aprendoEnCasa" 
-                            alt=""
+                            
                             />
                     </div>
                     <div className="col-4 text-left">                     
-                        <img tabIndex="3" role="button" title="Ingresar a la caja de Herramientas"  data-tar="Home"  onClick={props.changePage} onKeyPress={props.changePage}   className="img-fluid botones-portada hvr-pop" src={img + "btn_ingresar.png"} alt="" />
+                        <img tabIndex="3" role="button" alt="Ingresar a la caja de Herramientas"  data-tar="Home"  onClick={props.changePage} onKeyPress={props.changePage}   className="img-fluid botones-portada hvr-pop" src={img + "btn_ingresar.png"}  />
                     </div>
       
             </div>
