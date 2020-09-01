@@ -1,7 +1,8 @@
 import React, {useState}  from 'react';
+import { Modal } from 'react-bootstrap';
+import ContenidoModal from './ContenidoModal';
 import textosJson from "../data/textos.json";
 import assets from '../data/config/config.json';
-import ModalBs from './ModalBs';
 
 const textos = textosJson[0];
 const img = assets.img.portada;
@@ -10,7 +11,9 @@ const imgGeneral = assets.img.general;
 function Portada  (props)  {
     
     const [tituloModal, setTituloModal]= useState(false);    
-    const [opcionModal, setOpcionModal ]= useState(null);        
+    const [opcionModal, setOpcionModal ]= useState(null); 
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);       
     
     
 
@@ -18,10 +21,28 @@ function Portada  (props)  {
         console.log(e.target.dataset.typecontent  );        
         setTituloModal(e.target.title);
         setOpcionModal( e.target.dataset.typecontent );        
-        
+        setShow(true);
     }
 
-    
+    const modal =()=> {
+        return (        
+          <Modal 
+              show={show} 
+              onHide={handleClose}
+              size="lg"
+              >
+            <Modal.Header closeButton>
+        <Modal.Title><h3 id="tituloAprendoCasa">{tituloModal}</h3></Modal.Title>
+            </Modal.Header>
+            <Modal.Body>              
+               <ContenidoModal opcionModal={opcionModal}  infoModal={null} />
+            </Modal.Body>
+            <Modal.Footer>
+              
+            </Modal.Footer>
+          </Modal>      
+        )
+    }
 
 
   
@@ -97,7 +118,7 @@ function Portada  (props)  {
         </div>
        
         </div>
-        <ModalBs tituloModal={tituloModal} opcionModal={opcionModal} valor={valor}  />
+        {modal()}
         </React.Fragment>
         
      );

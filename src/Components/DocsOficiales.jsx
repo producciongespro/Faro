@@ -51,17 +51,17 @@ const DocsOficiales = (props) => {
             size="lg"
             >
           <Modal.Header closeButton>
-      <Modal.Title><h3>{tituloModal}</h3></Modal.Title>
+      <Modal.Title><h3 id="tituloAprendoCasa">{tituloModal}</h3></Modal.Title>
           </Modal.Header>
           <Modal.Body>              
-             <ContenidoModal opcionModal={opcionModal} infoModal={infoModal} />
+             <ContenidoModal opcionModal={opcionModal}  infoModal={infoModal} />
           </Modal.Body>
           <Modal.Footer>
             
           </Modal.Footer>
         </Modal>      
       )
-    }
+  }
 
   return (
     <div className="row">

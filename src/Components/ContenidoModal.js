@@ -5,8 +5,8 @@ const video = config.video;
 
 
 function ContenidoModal(props) {
-    console.log("props.opcionModal", props.opcionModal );
-    console.log("infoModal", props.infoModal);
+    //console.log("props.opcionModal", props.opcionModal );
+    //console.log("infoModal", props.infoModal);
     var html;
     switch (props.opcionModal) {
         case "videoMinistra":
