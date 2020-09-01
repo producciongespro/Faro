@@ -1,47 +1,30 @@
 import React, {useState}  from 'react';
-import { Modal } from 'react-bootstrap';
 import textosJson from "../data/textos.json";
 import assets from '../data/config/config.json';
-import ContenidoModal from './ContenidoModal';
+import ModalBs from './ModalBs';
+
 const textos = textosJson[0];
 const img = assets.img.portada;
 const imgGeneral = assets.img.general;
 
 function Portada  (props)  {
-    const [show, setShow] = useState(false);
-    const [tituloModal, setTituloModal]= useState(false);
-    const handleClose = () => setShow(false);    
-    const [opcionModal, setOpcionModal ]= useState(null);
+    
+    const [tituloModal, setTituloModal]= useState(false);    
+    const [opcionModal, setOpcionModal ]= useState(null);        
+    
+    
 
-    const handleShow=(e)=>{
+    const handleAbriModal=(e)=>{
         console.log(e.target.dataset.typecontent  );        
         setTituloModal(e.target.title);
-        setOpcionModal( e.target.dataset.typecontent )        
-        setShow(true)
+        setOpcionModal( e.target.dataset.typecontent );        
+        
     }
 
     
 
 
-  const modal =()=> {
-      return (        
-        <Modal 
-            show={show} 
-            onHide={handleClose}
-            size="lg"
-            >
-          <Modal.Header closeButton>
-      <Modal.Title><h3 id="tituloAprendoCasa">{tituloModal}</h3></Modal.Title>
-          </Modal.Header>
-          <Modal.Body>              
-             <ContenidoModal opcionModal={opcionModal} />
-          </Modal.Body>
-          <Modal.Footer>
-            
-          </Modal.Footer>
-        </Modal>      
-      )
-  }
+  
 
   
     /**
@@ -69,8 +52,8 @@ function Portada  (props)  {
                         tabIndex="2" 
                         role="button"  
                         title="Bienvenida de la Ministra"   
-                        onClick={handleShow}
-                        onKeyPress={handleShow}
+                        onClick={handleAbriModal}
+                        onKeyPress={handleAbriModal}
                         data-typecontent ="videoMinistra" 
                         data-content= {textos.VideoMinistro } 
                         className="img-fluid botones-portada hvr-pop"   
@@ -84,8 +67,8 @@ function Portada  (props)  {
                             title="Enlaces de aprendo en casa"
                             src={img + "aprendo-en-casa.png"  } 
                             className="img-fluid botones-portada  hvr-pop"                             
-                            onClick={handleShow}
-                            onKeyPress={handleShow}
+                            onClick={handleAbriModal}
+                            onKeyPress={handleAbriModal}
                             data-typecontent ="aprendoEnCasa" 
                             />
                     </div>
@@ -114,7 +97,7 @@ function Portada  (props)  {
         </div>
        
         </div>
-        {modal()}
+        <ModalBs tituloModal={tituloModal} opcionModal={opcionModal} valor={valor}  />
         </React.Fragment>
         
      );

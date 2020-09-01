@@ -1,9 +1,18 @@
-import React  from 'react';
+import React, {useState, useEffect }  from 'react';
 import { Modal } from 'react-bootstrap';
+import ContenidoModal from './ContenidoModal';
 
 
 
-function modal () {
+function ModalBs (props) {
+    const [show, setShow] = useState(props.valor);
+    const handleClose = () => setShow(false);
+
+   useEffect(()=>{
+       console.log("show", show);
+   })
+    
+    
     return (        
       <Modal 
           show={show} 
@@ -11,10 +20,10 @@ function modal () {
           size="lg"
           >
         <Modal.Header closeButton>
-    <Modal.Title><h3 id="tituloAprendoCasa">{tituloModal}</h3></Modal.Title>
+    <Modal.Title><h3 >{props.tituloModal}</h3></Modal.Title>
         </Modal.Header>
         <Modal.Body>              
-           <ContenidoModal opcionModal={opcionModal} />
+           <ContenidoModal opcionModal={props.opcionModal} />
         </Modal.Body>
         <Modal.Footer>
           
