@@ -17,6 +17,10 @@ body {
   margin-bottom: 1em;
 }
 
+.modal-content {
+  height: 550px;
+}
+
 #botones-planeamiento{
   margin-top: 14%;
 }
