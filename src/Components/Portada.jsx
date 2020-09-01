@@ -55,7 +55,10 @@ function Portada  (props)  {
             <div className="col-12 text-center">
                 <img 
                     tabIndex="1" 
-                    id="img-portada" src={img + "titulo.png"  } className="img-fluid" alt="Título portada Caja de herramientas para docentes"/>
+                    id="img-portada" 
+                    src={img + "titulo.png"  } 
+                    className="img-fluid"
+                     alt="Título portada Caja de herramientas para docentes, Ministerio de Educación Pública"/>
             </div>
         </div>
  
