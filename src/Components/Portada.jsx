@@ -78,7 +78,9 @@ function Portada  (props)  {
                         data-typecontent ="videoMinistra" 
                         data-content= {textos.VideoMinistro } 
                         className="img-fluid botones-portada hvr-pop"   
-                        src={img + "btn_bienvenida.png"} />
+                        src={img + "btn_bienvenida.png"} 
+                        alt=""
+                        />
                     </div>
                     <div className="col-4 text-center">                           
                         <img 
@@ -91,10 +93,11 @@ function Portada  (props)  {
                             onClick={handleAbriModal}
                             onKeyPress={handleAbriModal}
                             data-typecontent ="aprendoEnCasa" 
+                            alt=""
                             />
                     </div>
                     <div className="col-4 text-left">                     
-                        <img tabIndex="3" role="button" title="Ingresar a la caja de Herramientas"  data-tar="Home"  onClick={props.changePage} onKeyPress={props.changePage}   className="img-fluid botones-portada hvr-pop" src={img + "btn_ingresar.png"} />
+                        <img tabIndex="3" role="button" title="Ingresar a la caja de Herramientas"  data-tar="Home"  onClick={props.changePage} onKeyPress={props.changePage}   className="img-fluid botones-portada hvr-pop" src={img + "btn_ingresar.png"} alt="" />
                     </div>
       
             </div>

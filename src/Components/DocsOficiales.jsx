@@ -79,7 +79,11 @@ const DocsOficiales = (props) => {
 
         <img
           id="imgFondoDescripcion"
-          onClick={reproducirSonido} onKeyPress={reproducirSonido} className="descripciones img-fluid" src={imgGenerales + "caja_descripcion.png"} alt="Descripción de la sección documentos oficiales" />
+          onClick={reproducirSonido} 
+          onKeyPress={reproducirSonido} 
+          className="descripciones img-fluid" 
+          src={imgGenerales + "caja_descripcion.png"} 
+          alt="Descripción de la sección documentos oficiales" />
 
         <div
           tabIndex="2"
@@ -102,7 +106,9 @@ const DocsOficiales = (props) => {
             onKeyPress={props.changePage} 
             className="derecha btn img-fluid hvr-pop" 
             src={imgGenerales + "btn_salir.png"} 
-            title="regresar a portada" />
+            title="regresar a portada"
+            alt=""
+             />
         </div>
 
 {
@@ -126,6 +132,7 @@ const DocsOficiales = (props) => {
                 data-typecontent="pdf"
                 onClick={handleShow}
                 onKeyPress={handleShow}
+                alt=""
               />
             </figure>
           </div>
@@ -144,6 +151,7 @@ const DocsOficiales = (props) => {
                 data-typecontent="pdf"
                 onClick={handleShow}
                 onKeyPress={handleShow}
+                alt=""
               />
             </figure>
           </div>
@@ -162,6 +170,7 @@ const DocsOficiales = (props) => {
                 data-typecontent="programasEstudio"
                 onClick={props.handlerOpenProgramasEducativos}
                 onKeyPress={props.handlerOpenProgramasEducativos}
+                alt=""
               />
             </figure>
           </div>
@@ -180,6 +189,7 @@ const DocsOficiales = (props) => {
                 data-typecontent="evaluacion"
                 onClick={handleShow}
                 onKeyPress={handleShow}
+                alt=""
               />
             </figure>
           </div>
@@ -203,6 +213,7 @@ const DocsOficiales = (props) => {
                 data-typecontent="pdf"
                 onClick={handleShow}
                 onKeyPress={handleShow}
+                alt=""
               />
             </figure>
           </div>
@@ -221,6 +232,7 @@ const DocsOficiales = (props) => {
                 data-typecontent="pdf"
                 onClick={handleShow}
                 onKeyPress={handleShow}
+                alt=""
               />
             </figure>
           </div>
@@ -237,6 +249,7 @@ const DocsOficiales = (props) => {
                   onMouseOver={props.onMouseOver}
                   onMouseOut={props.onMouseOut}
                   src={img + "protocolos_actuacion2.png"}
+                  alt=""
                    />
               </a>
             </figure>
