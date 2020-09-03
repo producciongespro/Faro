@@ -29,9 +29,9 @@ const ApoyoClimaAula = (props) => {
     <div className="row">
     
       <div className="col-5">
-            <img   className="titulos img-fluid" src={img+"apoyo_clima_aula_titulo.png" } alt="Apoyo clima en el aula" />
-               <img id="imgFondoDescripcion" onClick={ reproducirSonido  }  className="descripciones3 img-fluid" src={imgGenerales + "caja_descripcion.png"}  alt="Descripción" />
-              <div  onClick={ reproducirSonido  }  id="textoDescripcion" className="texto_descripciones text-justify pr-3">
+            <img tabIndex="1" role="banner"  className="titulos img-fluid" src={img+"apoyo_clima_aula_titulo.png" } alt="Banner de Apoyo al clima en el aula" />
+               <img id="imgFondoDescripcion" onClick={ reproducirSonido  }  className="descripciones3 img-fluid" src={imgGenerales + "caja_descripcion.png"}  alt="Descripción de la sección de Apoyo al clima en el aula" />
+              <div   tabIndex="2" onClick={ reproducirSonido  }  id="textoDescripcion" className="texto_descripciones text-justify pr-3">
               <h2 className='desc'>Descripción:</h2> {props.infoCategory}
               </div>              
       </div>
@@ -40,20 +40,20 @@ const ApoyoClimaAula = (props) => {
       <div  className="col-7">
 
       <div className="botones_salir col-12">
-            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {imgGenerales + "btn_salir.png"}  alt="Salir" />
+            <img    tabIndex="5" role="button"  onKeyPress={props.changePage} data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {imgGenerales + "btn_salir.png"}  alt="regresar a portada" />
           </div>
 
         <div id="botones-aula" className="row">
             <div className="col-6 hover11 ">
-              <figure>
+              <figure role="button">
               <a href= {serv + "faro_referencias/3_ref_apoyos__aula/clima/clima_clase.pptx"}  rel="noopener noreferrer">
-                  <img className="botones-portada derecha img-fluid" id="pautas" src={img + "pautas.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  alt="Pautas" />                
+                  <img tabIndex="2" className="botones-portada derecha img-fluid" id="pautas" src={img + "pautas.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut }  alt="Pautas" />                
                 </a>
              </figure>
             </div>
             <div className="col-6 hover11 ">
-              <figure> <a href={serv + "faro_referencias/3_ref_apoyos__aula/clima/clima_escolar.pptx"}  rel="noopener noreferrer">
-                <img className="botones-portada img-fluid" id="climaEscolar"  src={img + "interacciones.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Clima escolar" />
+              <figure role="button"> <a href={serv + "faro_referencias/3_ref_apoyos__aula/clima/clima_escolar.pptx"}  rel="noopener noreferrer">
+                <img tabIndex="2" className="botones-portada img-fluid" id="climaEscolar"  src={img + "interacciones.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Clima escolar" />
               </a>
               </figure>
             </div>
@@ -61,29 +61,29 @@ const ApoyoClimaAula = (props) => {
         </div>
         <div className="row">
           <div className="col-6 hover11 ">
-            <figure>
+            <figure role="button">
             <a href={serv + "faro_referencias/3_ref_apoyos__aula/recomend/uso_tiempo_aula.pptx"} rel="noopener noreferrer">
-              <img className="botones-portada derecha img-fluid" id="recomendaciones" src={img + "recomendaciones.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Recomendaciones" />
+              <img tabIndex="2" className="botones-portada derecha img-fluid" id="recomendaciones" src={img + "recomendaciones.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Recomendaciones" />
               </a>
             </figure>
             </div>
           <div className="col-6 hover11 ">
-              <figure>
+              <figure role="button">
               <a href={serv + "faro_referencias/3_ref_apoyos__aula/inclusion/apoyos_inclusion.zip"}  rel="noopener noreferrer">
-                <img className="botones-portada img-fluid" id="inclusion" src={img + "inclusion.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Inclusión" />
+                <img tabIndex="2" className="botones-portada img-fluid" id="inclusion" src={img + "inclusion.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Inclusión" />
                 </a>
             </figure>
           </div>
           <div className="col-6 hover11 ">
-            <figure>
+            <figure role="button">
             <a href={serv + "faro_referencias/3_ref_apoyos__aula/emociones/emociones_motivacion.zip"}  rel="noopener noreferrer">
-                <img className="botones-portada derecha img-fluid" id="emociones" src={img + "emociones.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Emociones" />  
+                <img tabIndex="2" className="botones-portada derecha img-fluid" id="emociones" src={img + "emociones.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Emociones" />  
             </a>
             </figure>
             </div>
           <div className="col-6 hover11">
-              <figure>
-              <img className="botones-portada img-fluid" id="interculturalidad" src={img + "interculturalidad.png"} data-content= {serv + "faro_referencias/3_ref_apoyos__aula/intercultural/apoyos_educacion_intercultural.pdf" }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Interculturalidad" />
+              <figure role="button">
+              <img tabIndex="2" className="botones-portada img-fluid" id="interculturalidad" src={img + "interculturalidad.png"} data-content= {serv + "faro_referencias/3_ref_apoyos__aula/intercultural/apoyos_educacion_intercultural.pdf" }  data-typecontent ="pdf" data-infosource={1}  onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } onClick={props.showModal} alt="Interculturalidad" />
             </figure>
           </div>
   
