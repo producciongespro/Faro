@@ -27,18 +27,18 @@ const ApoyosPlan = (props) => {
     <div>
     <div  className="row">
           <div className="col-5">
-                <img className="titulos img-fluid" src={img+"titulo.png"  } alt="Documentos educativos oficiales" />
-                  <img id="imgFondoDescripcion" onClick={reproducirSonido}   className="descripciones3 img-fluid" src= {imgGenerales + "caja_descripcion.png"}  alt="Descripción" />
-                  <div onClick={ reproducirSonido  } id="textoDescripcion" className="texto_descripciones text-justify pr-3">          
+                <img tabIndex="1" role="banner" className="titulos img-fluid" src={img+"titulo.png"  } alt="Banner de apoyos para el planeamiento" />
+                  <img id="imgFondoDescripcion" onClick={reproducirSonido}  onKeyPress={reproducirSonido}   className="descripciones3 img-fluid" src= {imgGenerales + "caja_descripcion.png"}  alt="Descripción de la sección de apoyos para el planeamiento" />
+                  <div  tabIndex="2" onKeyPress={reproducirSonido} onClick={ reproducirSonido  } id="textoDescripcion" className="texto_descripciones text-justify pr-3">          
                   <h2 className='desc'>Descripción:</h2>  {  props.infoCategory }            
                   </div>
 
                   <div className="row img_btn_der">
-                  <img  onClick = {props.showModal }  data-typecontent ="videoPlan" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={img+ "planeamiento_didactico.png"} alt="Planeamiento Didáctico"/>
+                  <img tabIndex="2" role="button" onClick = {props.showModal }  data-typecontent ="videoPlan" data-content= {textos.VideoPlaneamientoDidactico} className="img-fluid botones-portada hvr-pop"   src={img+ "planeamiento_didactico.png"} alt="Vídeo acerca del planeamiento didáctico"/>
                   </div>
 
                   <div className="row img_btn_der">
-                  <img data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada botonesInactivos"   src={img + "planeamiento_correlacionado.png"} alt="Planeamiento Correlacionado"/>
+                  <img tabIndex="2" role="button" data-typecontent ="video" data-content= {textos.VideoPlaneamientoCorrelacionado } className="img-fluid botones-portada botonesInactivos"   src={img + "planeamiento_correlacionado.png"} alt="Video acerca del planeamiento correlacionado para unidocentes - Enlace inactivo"/>
                   </div>
           </div>
 
@@ -46,30 +46,30 @@ const ApoyosPlan = (props) => {
   <div  className="col-7">
 
       <div className="botones_salir col-12">
-                <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {imgGenerales + "btn_salir.png"}  alt="Salir" />
+                <img  tabIndex="5"  data-tar="Home" onClick={props.changePage} onKeyPress={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {imgGenerales + "btn_salir.png"}  alt="regresar a portada" />
       </div>
 
 
     <div id="botones-planeamiento" className="row">
     <div className="col-10 hover11 centro">
           <figure>
-              <img className="botones-portada derecha img-fluid img_apoy" id="definicionHabilidades" data-content= {pdfs.Tacaco }  data-typecontent ="defHabilidades"  onClick={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Enofque por habilidaes" src={img + "img_enfoque_habilidades.png"} />
+              <img tabIndex="3" className="botones-portada derecha img-fluid img_apoy" id="definicionHabilidades" data-content= {pdfs.Tacaco }  data-typecontent ="defHabilidades"  onClick={props.showModal} onKeyPress={props.showModal} data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Definición de habilidaes" src={img + "img_enfoque_habilidades.png"} />
         </figure>
       </div>
       <div className="col-10 hover11 ">
         <figure>
-          <img className="botones-portada derecha img-fluid img_apoy" id="orientaciones"   data-typecontent ="opcOrientaciones"  onClick={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Apoyos para el planeamiento" src= {img + "img_guia.png"} />
+          <img tabIndex="3" className="botones-portada derecha img-fluid img_apoy" id="orientaciones"   data-typecontent ="opcOrientaciones"  onClick={props.showModal} onKeyPress={props.showModal}  data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Orientaciones para la mediación pedagógica por habilidades" src= {img + "img_guia.png"} />
         </figure>
         </div>
       <div className="col-10 hover11 ">
         <figure>
-          <img className="botones-portada derecha img-fluid img_apoy" id="plantilla" data-typecontent ="plantillaPlan"  onClick={props.handlerOpenBuscadorPlaneamiento}  data-infosource={2} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }    alt="Apoyos para el planeamiento"  src= {img + "img_plantilla.png"} />
+          <img tabIndex="3"  className="botones-portada derecha img-fluid img_apoy" id="plantilla" data-typecontent ="plantillaPlan"  onClick={props.handlerOpenBuscadorPlaneamiento} onKeyPress={props.handlerOpenBuscadorPlaneamiento}  data-infosource={2} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }    alt="Plantillas de planeamiento"  src= {img + "img_plantilla.png"} />
         </figure>
         </div>
 
      <div className="col-10 hover11 centro">
           <figure>
-              <img className="botones-portada derecha img-fluid img_apoy " id="ejemplos"  onClick={props.showModal}  data-content= {pdfs.EjemplosTecnicas }  data-typecontent ="linksVideosPlan"    data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Ejemplos planeamiento" src= {img + "img_ejemplos.png"} />
+              <img tabIndex="3"  className="botones-portada derecha img-fluid img_apoy " id="ejemplos"  onClick={props.showModal} onKeyPress={props.showModal} data-content= {pdfs.EjemplosTecnicas }  data-typecontent ="linksVideosPlan"    data-infosource={2} onMouseOver={props.onMouseOver} onMouseOut={ props.onMouseOut } alt="Videos con ayuda audiovisual" src= {img + "img_ejemplos.png"} />
         </figure>
       </div>
       <div className="col-2">
