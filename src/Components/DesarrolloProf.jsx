@@ -28,12 +28,12 @@ const DesarrolloProf = (props) => {
 
 <div className="row">
       <div className="col-5 col-derecha">
-            <img className="titulos img-fluid" src={img+"titulo_desarrollo.png"} alt="Documentos educativos oficiales" />
-               <img  id="imgFondoDescripcion" onClick={reproducirSonido} className="descripciones4 img-fluid" src={imgGeneral+"caja_descripcion.png"  } alt="Descripción" />
-              <div  onClick={ reproducirSonido  } id="textoDescripcion" className="texto_descripciones text-justify pr-3" >
+            <img  tabIndex="1" role="banner" className="titulos img-fluid" src={img+"titulo_desarrollo.png"} alt="Banner de Documentos educativos oficiales" />
+               <img   id="imgFondoDescripcion" onClick={reproducirSonido} className="descripciones4 img-fluid" src={imgGeneral+"caja_descripcion.png"  } alt="Descripción de la sección de Desarrollo Profesional"/>
+              <div  tabIndex="2"  onClick={ reproducirSonido  }  onKeyPress={reproducirSonido} id="textoDescripcion" className="texto_descripciones text-justify pr-3" >
               <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
-              <a href={links.IDP} target="_blank" rel="noopener noreferrer"  >
+              <a tabIndex="2" href={links.IDP} target="_blank" rel="noopener noreferrer"  >
                 <img id="material_adicional" className="img-fluid hvr-wobble-bottom" src={img+"enlace_desarrollo.png"} alt="Enlaces desarrollo" />
               </a>             
       </div>
@@ -43,7 +43,7 @@ const DesarrolloProf = (props) => {
       <div  className="col-7">
 
       <div className="botones_salir col-12">
-            <img  data-tar="Home" onClick={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {imgGeneral+"btn_salir.png" }  alt="Salir" />
+            <img tabIndex="3" data-tar="Home" onClick={props.changePage}  onKeyPress={props.changePage}   className="derecha btn img-fluid hvr-pop"  src= {imgGeneral+"btn_salir.png" }  alt="regresar a portada" />
         </div>
 
 
@@ -51,24 +51,24 @@ const DesarrolloProf = (props) => {
       
       <div  className="row" id="botones-desarrollo">
             <div  className="col-4  hover11 ">
-              <figure>
-                <img className="botones-portada  img-fluid cursos-e" id="cursos" src={img+"img_cursos.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalog}  alt="Cursos" />
+              <figure role="button">
+                <img  tabIndex="2" className="botones-portada  img-fluid cursos-e" id="cursos" src={img+"img_cursos.png"} data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalog} onKeyPress={props.handlerOpenCatalog}  alt="Catálogo de Cursos Virtuales" />
               </figure>
               </div>
               <div className="col-4  ">
 
               </div>
             <div className="col-4 hover11 ">
-                <figure>
-              <img className="botones-portada img-fluid" id="sitios" src={img+"img_sitios.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalogWeb }  alt="Sitios" />
+                <figure role="button">
+              <img  tabIndex="2" className="botones-portada img-fluid" id="sitios" src={img+"img_sitios.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }   onClick={props.handlerOpenCatalogWeb } onKeyPress={props.handlerOpenCatalogWeb } alt="Recursos digitales para educadores" />
               </figure>
             </div>
 
         </div>
         <div className="row botones-inferiores">
           <div  className="col-4 hover11 ">
-            <figure>
-              <img className="botones-portada derecha img-fluid" id="videoteca" src={img+"img_videoteca.png"}  data-tar="Construccion"  data-origen="DesarrolloProf"  onClick={props.changePage}  data-infosource={0}  onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Videoteca" />
+            <figure role="button">
+              <img  tabIndex="2" className="botones-portada derecha img-fluid" id="videoteca" src={img+"img_videoteca.png"}  data-tar="Construccion"  data-origen="DesarrolloProf"  onClick={props.changePage} onKeyPress={props.changePage} data-infosource={0}  onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }    alt="Catálogo de vídeos de la Videoteca" />
             </figure>
             </div>
 
@@ -76,13 +76,13 @@ const DesarrolloProf = (props) => {
 
 
           <div className="col-4 centro hover11 ">
-              <figure>
-            <img className="botones-portada img-fluid" id="pautas" src={img+"img_referencias.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="refUtiles" data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }  onClick={props.showModal}  alt="Referencias" />
+              <figure role="button">
+            <img  tabIndex="2" className="botones-portada img-fluid" id="pautas" src={img+"img_referencias.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="refUtiles" data-infosource={0} onMouseOver={props.onMouseOver}  onMouseOut={ props.onMouseOut }  onClick={props.showModal} onKeyPress={props.showModal}   alt="Referencias útiles para la docencia" />
             </figure>
           </div>
           <div className="col-4 hover11 ">
-            <figure>
-              <img className="botones-portada img-fluid" id="ficha" src={img+"img_otras.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog}  alt="Otras ofertas" />
+            <figure role="button">
+              <img  tabIndex="2" className="botones-portada img-fluid" id="ficha" src={img+"img_otras.png"}  data-content= {pdfs.Tacaco }  data-typecontent ="pdf"  data-infosource={0} onMouseOver={props.onMouseOver}   onMouseOut={ props.onMouseOut }  onClick={props.handlerOpenCatalog} onKeyPress={props.handlerOpenCatalog}  alt="Otras ofertas de formación" />
             </figure>
             </div>
         </div>

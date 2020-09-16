@@ -77,7 +77,7 @@ const DocsOficiales = (props) => {
             tabIndex="1" role="banner"
             className="titulos img-fluid"
             src={img + "titulo_docs_oficiales.png"}
-            alt="Baner de documentos educativos oficiales" />
+            alt="Banner de documentos educativos oficiales" />
 
           <img
             id="imgFondoDescripcion"
