@@ -28,13 +28,13 @@ const DesarrolloProf = (props) => {
 
 <div className="row">
       <div className="col-5 col-derecha">
-            <img  tabIndex="1" role="banner" className="titulos img-fluid" src={img+"titulo_desarrollo.png"} alt="Banner de Documentos educativos oficiales" />
+            <img  tabIndex="1" role="banner" className="titulos img-fluid" src={img+"titulo_desarrollo.png"} alt="Banner de Desarrollo Profesional" />
                <img   id="imgFondoDescripcion" onClick={reproducirSonido} className="descripciones4 img-fluid" src={imgGeneral+"caja_descripcion.png"  } alt="Descripción de la sección de Desarrollo Profesional"/>
               <div  tabIndex="2"  onClick={ reproducirSonido  }  onKeyPress={reproducirSonido} id="textoDescripcion" className="texto_descripciones text-justify pr-3" >
               <h2 className='desc'>Descripción:</h2>  {props.infoCategory}
               </div>
               <a tabIndex="2" href={links.IDP} target="_blank" rel="noopener noreferrer"  >
-                <img id="material_adicional" className="img-fluid hvr-wobble-bottom" src={img+"enlace_desarrollo.png"} alt="Enlaces desarrollo" />
+                <img id="material_adicional" className="img-fluid hvr-wobble-bottom" src={img+"enlace_desarrollo.png"} alt="Enlace a página del Instituto de Desarrollo Profesional" />
               </a>             
       </div>
 
