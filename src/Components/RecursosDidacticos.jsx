@@ -19,7 +19,7 @@ const RecursosDidacticos = (props) => {
   return ( 
     <div className="row">      
       <div className="col-4">
-            <img  tabIndex="1" role="banner" className="titulos img-fluid" src={img + "titulo.png"} alt="Banner de Recursos didacticos" />
+            <img  tabIndex="1" role="banner" id="bannerODP" className="titulos img-fluid" src={img + "titulo.png"} alt="Banner de Recursos didacticos" />
                <img tabIndex="2" id="imgFondoDescripcion" onClick={reproducirSonido} onKeyPress={reproducirSonido} className="descripciones3 img-fluid" src={imgGenerales + "caja_descripcion.png"}  alt="Descripción de la sección de Recursos Didácticos" /> 
               <div onClick={reproducirSonido} id="textoDescripcion" className="texto_descripciones text-justify pr-3">
               <h2 className='desc'>Descripción:</h2>  { props.infoCategory }                

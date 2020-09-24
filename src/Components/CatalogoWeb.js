@@ -35,23 +35,23 @@ const CatalogoWeb = (props) => {
         <React.Fragment>
             <div className="row">
                 <div id="titulo_recursosWeb" className="col-sm-12">
-                    <img className="img-fluid"  alt="Recursos Digitales"  src={img.DesarrolloTituloRecursosDigitales}/>                
-                    <img className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver" onClick={props.handlerCloseCatalogWeb } src={imgGen + "btn_volver.png"} alt="Volver" />
+                    <img role="banner" tabIndex="1" alt="Banner de Recuros Digitales" className="img-fluid" src={img.DesarrolloTituloRecursosDigitales}/>                
+                    <img role="button" tabIndex="5"  className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver" onClick={props.handlerCloseCatalogWeb} onKeyPress={props.handlerCloseCatalogWeb} src={imgGen + "btn_volver.png"} alt="Regresar a Oferta de Desarrollo Profesional" />
              </div>
             </div>
 
             <div className="row">
                 <div className="col-sm-6">                
                                 <div className="input-group-prepend">
-                                    <label className="input-group-text  etiquetas-busquedas" htmlFor="selSubCategoria">Subcategoría</label>
-                                    <select 
+                                    <label tabIndex="2" alt="Título de subcategorías" className="input-group-text  etiquetas-busquedas" htmlFor="selSubCategoria">Subcategoría</label>
+                                    <select tabIndex="3" alt="Seleccione un subcategoría"
                                     className="custom-select buscadores-materias" 
                                     id="selSubCategoria"
                                     onChange={handleObtenerSubcategoriga} >
                                     <option defaultValue value="" >Seleccione:</option>
                                             {
                                             subcategoriasODP.map((item, i) => (
-                                                <option key={"niveles" + i} value={item.nombreCategoria}> {item.nombreCategoria } </option>
+                                                <option alt={item.nombreCategoria} key={"niveles" + i} value={item.nombreCategoria}> {item.nombreCategoria } </option>
                                             ))}
                                 </select> 
                                 </div>
@@ -61,7 +61,7 @@ const CatalogoWeb = (props) => {
             
             <div id="educativos">  
                     {subCategoria &&
-                        <h4 className="tit-catalogo" > {subCategoria} </h4> 
+                        <h4 tabIndex="4" alt={subCategoria} className="tit-catalogo" > {subCategoria} </h4> 
                     }                   
                     
                         {
@@ -78,9 +78,9 @@ const CatalogoWeb = (props) => {
                                         </div>
                                         
                                         <div className="col-11">   
-                                        <h6> <b> {item.nombre}</b></h6>
-                                            <p className="text-catalogo">  {item.descripcion}  </p>
-                                            <a href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
+                                        <h6 tabIndex="4" > <b> {item.nombre}</b></h6>
+                                            <p tabIndex="4" className="text-catalogo">  {item.descripcion}  </p>
+                                            <a tabIndex="4" title="Abre en una ventana nueva" href={item.url } className="link-card"  target="_blank" rel="noopener noreferrer" ><b>Visitar</b></a>
                                             <hr/>  <hr/>
                                         </div>
 

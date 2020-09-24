@@ -50,8 +50,8 @@ class Catalogo extends Component {
                 this.leyendaCursos = (
                     <React.Fragment>
                         <strong>
-                            <cite>Para mayor información e inscripción de los cursos, síganos en nuestra página de Facebook:</cite>
-                            <a href="https://www.facebook.com/idpmep/" target="_blank" rel="noopener noreferrer"> IDP-MEP </a>
+                            <cite  tabIndex="2" title="Para mayor información e inscripción de los cursos, síganos en nuestra página de Facebook">Para mayor información e inscripción de los cursos, síganos en nuestra página de Facebook:</cite>
+                            <a tabIndex="2" title="Enlace a la página en Facebook del Instituto de Desarrollo Profesional. Abre en una ventana nueva"  href="https://www.facebook.com/idpmep/" target="_blank" rel="noopener noreferrer"> IDP-MEP </a>
                         </strong>
                     </React.Fragment>
                 )
@@ -93,9 +93,9 @@ class Catalogo extends Component {
     }
 
     incrementarIndice = () => {
-
+        $("#imgTitulo").focus();
         $("#btnDecrementar").fadeIn("slow");
-
+       
         //Aumenta el indice para cargar los demás objetos del array
         //console.log("INDICE", this.state.indice);
 
@@ -154,9 +154,9 @@ class Catalogo extends Component {
             <React.Fragment>
                 <div className="row">
                     <div id="" className={this.colorFondo}>
-                        <img className="img-fluid" id="imgTitulo" src={asst + "titulo_cursos_virtuales.png" } alt="titulo" />
+                        <img tabIndex="1" role="banner" className="img-fluid" id="imgTitulo" src={asst + "titulo_cursos_virtuales.png" } alt="Banner de cursos virtuales" />
 
-                        <img className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver" onClick={this.props.handlerCloseCatalog} src={imgGen + "btn_volver.png"} alt="Volver" />
+                        <img tabIndex="6" role="button" className="botones-portada hvr-pop img-fluid derecha btn-idp" id="btnVolver" onClick={this.props.handlerCloseCatalog} onKeyPress={this.props.handlerCloseCatalog} src={imgGen + "btn_volver.png"} alt="Regresar a la sección de Oferta de Desarrollo Profesional" />
                     </div>
 
                 </div>
@@ -180,13 +180,13 @@ class Catalogo extends Component {
                 </div>
                 <div className="row">
                     <div className="col-6 text-right">
-                        <img className="botones-portada hvr-pop img-fluid div-oculta" id="btnDecrementar" onClick={this.decrementarIndice} src={asst + "img_flechaiz.jpg"} alt="decrementar" />
+                        <img tabIndex="4" title="Botón pantalla anterior" role="button" className="botones-portada hvr-pop img-fluid div-oculta" id="btnDecrementar" onClick={this.decrementarIndice} onKeyPress={this.decrementarIndice} src={asst + "img_flechaiz.jpg"} alt="decrementar" />
                     </div>
 
                     <div className="col-6 text-left ">                        
                         {
                             //Si las dimensiones del array son menores que cuatro no se van a presentar botones de navegación
-                            this.limiteArray > 4 && <img className="botones-portada hvr-pop img-fluid" id="btnIncrementar" onClick={this.incrementarIndice} src={asst + "img_flechader.jpg"} alt="incrementar" />
+                            this.limiteArray > 4 && <img tabIndex="5" title="Botón siguiente pantalla" role="button" className="botones-portada hvr-pop img-fluid" id="btnIncrementar" onClick={this.incrementarIndice} onKeyPress={this.incrementarIndice} src={asst + "img_flechader.jpg"} alt="incrementar" />
                         }
                     </div>
                 </div>

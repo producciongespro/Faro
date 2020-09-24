@@ -532,12 +532,12 @@ class Modal extends Component {
         this.classModalBody = this.classModalBody + " borde-modal borde-bottom-celeste";
         tmpContent = (<React.Fragment>
           <div>
-            <img className="img-fluid modal-img-titulo" src={img + "btn_referencias.png"} alt="fondo indicaciones" />
+            <img  id="banner_referencias" role="banner" className="img-fluid modal-img-titulo" src={img + "btn_referencias.png"} alt="Banner del modal con referencias útiles para la docencia" />
           </div>
-
-          <h2 className="text-center">Útiles para la docencia</h2>
+         
+          <h2 tabIndex="2" className="text-center">Útiles para la docencia</h2>
           <p>
-            <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2017.pdf" target="_blank" rel="noopener noreferrer"> <strong> Lectura 2017</strong> </a>  y
+            <a tabIndex="2" href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2017.pdf" target="_blank" rel="noopener noreferrer"> <strong> Lectura 2017</strong> </a>  y
                         <a href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2018.pdf" target="_blank" rel="noopener noreferrer"><strong> Lectura 2018: </strong>  </a>
             Se presenta una compilación de actividades de mediación pedagógica, propuestas por docentes de educación primaria de doce Direcciones Regionales, por medio de las cuales se fortalece la comprensión lectora, respondiendo a los momentos de antes, durante y después de la lectura.
                       </p>
@@ -550,6 +550,7 @@ class Modal extends Component {
           <p>
             <a href="https://multimedia.uned.ac.cr/pem/aprendizaje_moviles/pag/conceptos.html" target="_blank" rel="noopener noreferrer"><strong>Aprendizajes Móviles:</strong> </a> Este recurso publicado por la UNED de Costa Rica presenta las principales características de los dispositivos móviles, por un lado, la ubicuidad, en la que se aprende desde cualquier momento y lugar, por otro lado, la adaptabilidad o flexibilidad de estos dispositivos gracias a la conexión e ideas de cómo aprovecharlas en el área educativa.
                       </p>
+        
         </React.Fragment>
         )
         break;
@@ -587,7 +588,8 @@ class Modal extends Component {
             {/* <div className="col-12 text-right"> */}
             <div className="modal-content">
               <div className="modal-header">
- 
+              { $("#banner_referencias").focus()}
+
                 <button onClick={this.props.closeModal} type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>

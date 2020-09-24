@@ -21,10 +21,10 @@ const CardsImage = (props) => {
           </div>
           <div className="card-body">
             <img src={ asst + props.item.url_imagen} alt="imagen del curso" className="img-thumbnail img-previas" />
-            <h5 className="card-title">
+            <h5 tabIndex="3" title={"curso diriguido a "+props.item.poblacion} className="card-title">
                 {props.item.nombre}
             </h5>
-            <p className="card-text">
+            <p tabIndex="3" className="card-text">
               {props.item.descripcion}
             </p>            
           </div>
