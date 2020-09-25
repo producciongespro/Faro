@@ -68,7 +68,7 @@ class Catalogo extends Component {
                 this.imagenEncabezado = "DesarrolloTituloReferencias";
                 break;
             case "ficha":
-                console.log("Otras ofertas (ficha)");                
+                console.log("Otras ofertas de desarrollo profesional (ficha)");                
                 this.tmpArray = this.otrasOfertas;
                 this.imagenEncabezado = "DesarrolloTituloOtrasOfertas";
                 this.colorFondo = "divTurqueza col-12";

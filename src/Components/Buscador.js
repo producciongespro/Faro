@@ -266,13 +266,13 @@ class Buscador extends Component {
 
                 <div key={"tarjeta" + index} className="col-sm-4">
                 <div className="card">
-                    <img
+                    <img 
                         src={dataPreescolar[index].img_educatico}
                         className="card-img-top"
                         alt={"imagen previa del recurso " + dataPreescolar[index].nombre}
                     />
                     <div className="card-body">
-                        <a href={dataPreescolar[index].url}
+                        <a  tabIndex="3" title="Abre en una ventana nueva"  href={dataPreescolar[index].url}
                          target="_blank"
                          rel="noopener noreferrer"
                         >
@@ -280,12 +280,14 @@ class Buscador extends Component {
                                 {dataPreescolar[index].nombre}
                             </h5>
                         </a>
-                        <p className="card-text">
+                        <p tabIndex="3" className="card-text">
                             {dataPreescolar[index].descripcion}
                         </p>
                     </div>
                     <div className="card-body">                        
-                        <a
+                        <a 
+                            tabIndex="3"
+                            title="Abre en una ventana nueva" 
                             href={dataPreescolar[index].url}
                             className="card-link"
                             target="_blank"
@@ -409,25 +411,25 @@ class Buscador extends Component {
 
                     <div className="col-sm-12  text-right">
                         {
-                            this.props.origen === "Preescolar" && <img alt="Preescolar" className="bannerRecursos" src={img + bannerPrescolar} />
+                            this.props.origen === "Preescolar" && <img tabIndex="1" role="banner"  alt="Banner del buscador de Preescolar" className="bannerRecursos" src={img + bannerPrescolar} />
                         }
                         {
-                            this.props.origen === "Primaria" && <img alt="Primaria" className="bannerRecursos" src={img + bannerPrimaria} />
+                            this.props.origen === "Primaria" && <img tabIndex="1" role="banner"  alt="Banner del buscador de Primaria" className="bannerRecursos" src={img + bannerPrimaria} />
                         }
                         {
-                            this.props.origen === "Secundaria" && <img alt="Secundaria" className="bannerRecursos" src={img + bannerSecundaria} />
+                            this.props.origen === "Secundaria" && <img tabIndex="1" role="banner"  alt="Banner del buscador de Secundaria" className="bannerRecursos" src={img + bannerSecundaria} />
                         }
                         {
-                            this.props.origen === "Intercultural" && <img alt="intercultural" className="bannerRecursos" src={img + "encabezado_intercultural.png"} />
+                            this.props.origen === "Intercultural" && <img tabIndex="1" role="banner"  alt="Banner del buscador de interculturalidad" className="bannerRecursos" src={img + "encabezado_intercultural.png"} />
                         }
                         {
-                            this.props.origen === "JovenesAdultos" && <img alt="jovenesAdultos" className="bannerRecursos" src={img + "encabezado_jovenes_adultos.png"} />
+                            this.props.origen === "JovenesAdultos" && <img tabIndex="1" role="banner"  alt="Banner del buscador de educación jovenes y adultos" className="bannerRecursos" src={img + "encabezado_jovenes_adultos.png"} />
                         }
                         {
-                            this.props.origen === "FeriaCientifica" && <img alt="feriaCientifica" className="bannerRecursos" src={img + bannerFerias} />
+                            this.props.origen === "FeriaCientifica" && <img tabIndex="1" role="banner"  alt="Banner del buscador de  feria Científica" className="bannerRecursos" src={img + bannerFerias} />
                         }
                         {
-                            this.props.origen === "BanderaAzul" && <img alt="banderaAzul" className="bannerRecursos" src={img + "encabezado_bandera_azul.png"} />
+                            this.props.origen === "BanderaAzul" && <img tabIndex="1" role="banner"  alt="Banner del buscador de bandera Azul" className="bannerRecursos" src={img + "encabezado_bandera_azul.png"} />
                         }
 
                         {
@@ -437,7 +439,7 @@ class Buscador extends Component {
                                 )
                                 :
                                 (
-                                    <img className="botones-portada hvr-pop boton-volver img-fluid derecha" onClick={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                    <img  tabIndex="4"  className="botones-portada hvr-pop boton-volver img-fluid derecha" onClick={this.props.handlerCerrarBuscador}  onKeyPress={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Regresar a Recursos Didácticos" />
                                 )
                         }
 
@@ -457,21 +459,21 @@ class Buscador extends Component {
                                     {
                                         (this.props.origen === "Primaria" || this.props.origen === "Secundaria") &&
                                         (
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Asignatura</label>
+                                            <label tabIndex="2"  className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Asignatura</label>
                                         )
                                     }
                                     {
                                         this.props.origen === "Intercultural" &&
                                         (
-                                            <label className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Unidad</label>
+                                            <label tabIndex="2" className="input-group-text etiquetas-busquedas" htmlFor="selMateria">Unidad</label>
                                         )
                                     }
                                 </div>
                                 {
                                     (this.props.origen !== "Preescolar"  &&  this.props.origen !== "jovenesAdultos") &&
                                     (
-                                        <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
-                                            <option defaultValue value="" >Seleccione:</option>
+                                        <select tabIndex="2" className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerobtenerMateria} >
+                                            <option   defaultValue value="" >Seleccione:</option>
                                             {
                                                 this.props.origen === "Primaria" &&
                                                 this.materiasPrimaria.map((item, i) => (
@@ -529,7 +531,7 @@ class Buscador extends Component {
                                     ) :
                                         (
                                             // mensaje de preescolar                                 
-                                            <span>Oprima el botón buscar para desplegar los recursos.</span>
+                                            <span tabIndex="2">Oprima el botón buscar para desplegar los recursos.</span>
 
                                         )
 
@@ -630,7 +632,7 @@ class Buscador extends Component {
 
                     <div className="row">
                         <div className="col-sm-12 text-right">
-                            <button onClick={this.handleBuscar} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
+                            <button tabIndex="2" onClick={this.handleBuscar} onKeyPress={this.handleBuscar} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>
