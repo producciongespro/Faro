@@ -101,9 +101,9 @@ const CardsImage = (props) => {
             </div>
 
             <div className="col-sm-11 inform1">
-              <h6><b>Nombre: </b>{props.item.nombre}</h6>
-              <p><b>Descripción: </b> {props.item.desc}  </p>
-              <a href={props.item.url} className="link-card" target="_blank" rel="noopener noreferrer">Visitar </a>
+              <h6 tabIndex="2" title={props.item.nombre}><b>Nombre: </b>{props.item.nombre}</h6>
+              <p tabIndex="2" ><b>Descripción: </b> {props.item.desc}  </p>
+              <a tabIndex="2" title={"Enlace a "+ props.item.nombre + "Abre en otra ventana"} href={props.item.url} className="link-card" target="_blank" rel="noopener noreferrer">Visitar </a>
               <br /><br />
             </div>
           </div>

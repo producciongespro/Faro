@@ -124,7 +124,7 @@ class Catalogo extends Component {
         //Aumenta el indice para cargar los demás objetos del array
 
         //Aparece el botón de incrementar
-
+        $("#imgTitulo").focus();
 
 
         $("#btnIncrementar").fadeIn();
