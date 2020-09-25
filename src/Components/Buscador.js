@@ -512,7 +512,7 @@ class Buscador extends Component {
                                             <div className="input-group-prepend">
                                                 <label className="input-group-text etiquetas-busquedas" htmlFor="selAno">Año</label>
                                             </div>
-                                            <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
+                                            <select tabIndex="2" className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                                 <option defaultValue value="" > Todos </option>
                                                 {
                                                     this.props.origen === "Primaria" &&
