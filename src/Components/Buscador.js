@@ -211,16 +211,18 @@ class Buscador extends Component {
                          target="_blank"
                          rel="noopener noreferrer"
                         >
-                            <h5 className="card-title">
+                            <h5 tabIndex="3" title={"Recurso: "+dataJovenesAdultos[index].nombre} className="card-title">
                                 {dataJovenesAdultos[index].nombre}
                             </h5>
                         </a>
-                        <p className="card-text">
+                        <p tabIndex="3" className="card-text">
                             {dataJovenesAdultos[index].descripcion}
                         </p>
                     </div>
                     <div className="card-body">                        
                         <a
+                            tabIndex="3"
+                            title="Abre en una ventana nueva"
                             href={dataJovenesAdultos[index].url}
                             className="card-link"
                             target="_blank"
@@ -276,7 +278,7 @@ class Buscador extends Component {
                          target="_blank"
                          rel="noopener noreferrer"
                         >
-                            <h5 className="card-title">
+                            <h5 tabIndex="3" className="card-title">
                                 {dataPreescolar[index].nombre}
                             </h5>
                         </a>
@@ -355,11 +357,11 @@ class Buscador extends Component {
                                  target="_blank"
                                  rel="noopener noreferrer"
                                 >
-                                    <h5 className="card-title">
+                                    <h5 tabIndex="3" title={"Recurso: "+dataGeneral[index].nombre} className="card-title">
                                         {dataGeneral[index].nombre}
                                     </h5>
                                 </a>
-                                <p className="card-text">
+                                <p tabIndex="3" className="card-text">
                                     {dataGeneral[index].descripcion}
                                 </p>
                             </div>
@@ -369,6 +371,8 @@ class Buscador extends Component {
                                 </span>
                                 <br/>
                                 <a
+                                    tabIndex="3"
+                                    title="Abre en una ventana nueva"
                                     href={dataGeneral[index].url}
                                     className="card-link"
                                     target="_blank"
@@ -387,7 +391,7 @@ class Buscador extends Component {
         if (arrayTmp.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {arrayTmp.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span tabIndex="3" title={"Cantidad de recursos encontrados:"+arrayTmp.length}  className="badge-success px-2 py-1 mx-2" >   {arrayTmp.length}   </span>  </React.Fragment>);
         }
         this.setState({ tarjetas: arrayTmp });
     }
@@ -439,7 +443,7 @@ class Buscador extends Component {
                                 )
                                 :
                                 (
-                                    <img  tabIndex="4"  className="botones-portada hvr-pop boton-volver img-fluid derecha" onClick={this.props.handlerCerrarBuscador}  onKeyPress={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Regresar a Recursos Didácticos" />
+                                    <img  tabIndex="6"  className="botones-portada hvr-pop boton-volver img-fluid derecha" onClick={this.props.handlerCerrarBuscador}  onKeyPress={this.props.handlerCerrarBuscador} src={imgGenerales + "btn_volver.png"} alt="Regresar a Recursos Didácticos" />
                                 )
                         }
 
@@ -553,7 +557,7 @@ class Buscador extends Component {
                                         <div className="input-group-prepend">
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selfrances">Plan de estudio</label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selfrances" onClick={this.handlerObtenerPlanEstudios} >
+                                        <select tabIndex="2" className="custom-select buscadores-materias" id="selfrances" onClick={this.handlerObtenerPlanEstudios} >
                                             <option value="" disabled> Seleccione una opción:</option>
                                             <option value="Francés como Lengua Extranjera">Francés como Lengua Extranjera</option>
                                             <option value="Secciones de Francés avanzado">Secciones de Francés avanzado</option>
@@ -571,7 +575,7 @@ class Buscador extends Component {
                                                 <div className="input-group-prepend">
                                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selIngles">Plan de estudio</label>
                                                 </div>
-                                                <select className="custom-select buscadores-materias" id="selIngles" onClick={this.handlerObtenerPlanEstudios} >
+                                                <select tabIndex="2" className="custom-select buscadores-materias" id="selIngles" onClick={this.handlerObtenerPlanEstudios} >
                                                     <option value="" disabled> Seleccione una opción:</option>
                                                     <option value="Inglés como Lengua Extranjera">Inglés como Lengua Extranjera</option>
                                                     <option value="Secciones Bilingües Español-Inglés">Secciones Bilingües Español-Inglés</option>
@@ -583,7 +587,7 @@ class Buscador extends Component {
                                                 <div className="input-group-prepend">
                                                     <label className="input-group-text etiquetas-busquedas" htmlFor="selIngles">Plan de estudio</label>
                                                 </div>
-                                                <select className="custom-select buscadores-materias" id="selIngles" onClick={this.handlerObtenerPlanEstudios} >
+                                                <select tabIndex="2" className="custom-select buscadores-materias" id="selIngles" onClick={this.handlerObtenerPlanEstudios} >
                                                     <option value="" disabled> Seleccione una opción:</option>
                                                     <option value="Inglés como Lengua Extranjera">Inglés como Lengua Extranjera</option>
                                                     <option value="Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés">Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés</option>
@@ -601,7 +605,7 @@ class Buscador extends Component {
                                         <div className="input-group-prepend">
                                             <label className="input-group-text etiquetas-busquedas" htmlFor="selfrances">Plan de estudio</label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selfrances" onClick={this.handlerObtenerPlanEstudios} >
+                                        <select tabIndex="2" className="custom-select buscadores-materias" id="selfrances" onClick={this.handlerObtenerPlanEstudios} >
                                             <option value="" disabled> Seleccione una opción:</option>
                                             <option value="Lengua Italiana">Lengua Italiana</option>
                                             <option value="Aspectos Culturales">Aspectos Culturales</option>
@@ -632,7 +636,7 @@ class Buscador extends Component {
 
                     <div className="row">
                         <div className="col-sm-12 text-right">
-                            <button tabIndex="2" onClick={this.handleBuscar} onKeyPress={this.handleBuscar} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
+                            <button tabIndex="3" onClick={this.handleBuscar} onKeyPress={this.handleBuscar} type="button" className="btn btn-secondary btn-lg btn_BuscarR2">
                                 <i className="fas fa-search"></i> Buscar
                             </button>
                         </div>
