@@ -743,7 +743,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -829,12 +829,12 @@ class BuscadorPlaneamiento extends Component {
                                     //***************Comprobación de Lineamiento nulo
                                     array[index].lineamiento === "nulo" ?
                                         (
-                                            <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                            <span tabIndex="7" title="Lineamiento no disponible" className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                 <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
                                         ) :
                                         (
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar lineamiento" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                         )
@@ -844,12 +844,12 @@ class BuscadorPlaneamiento extends Component {
                                     //************comprobación de plantilla nulo:
                                     array[index].plantilla === "nulo" ?
                                         (
-                                            <span className="font-2 badge badge-danger  mr-2 px-2 py-2">
+                                            <span tabIndex="7" title="Plantilla no disponible"  className="font-2 badge badge-danger  mr-2 px-2 py-2">
                                                 <i className="fas fa-ban"></i> Plantilla no disponible
                                           </span>
                                         ) :
                                         (
-                                            <a className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar plantilla" className="font-2 badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla
                                             </a>
                                         )
@@ -895,7 +895,7 @@ class BuscadorPlaneamiento extends Component {
                                     this.state.materia === "Ciencias" &&
                                     (this.state.anno === "Séptimo" || this.state.anno === "Octavo" || this.state.anno === "Noveno") &&
                                     (
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
+                                        <a tabIndex="7" title="Descargar plantilla" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-word"></i> Plantilla sexualidad
                                                     </a>
                                     )
@@ -914,7 +914,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>   <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -975,7 +975,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>   <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1047,7 +1047,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1079,19 +1079,19 @@ class BuscadorPlaneamiento extends Component {
                         (
                             // Renderizado cuerpo de tarjetas educación para el hogar primaria
                             <div className="card-body mr-2">
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                <a tabIndex="7" title="Descargar Lineamientos" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
                                             </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje1} target="_blank" rel="noopener noreferrer" >
+                                <a tabIndex="7" title="Descargar eje temático 1" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje1} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Eje temático 1
                                             </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje2} target="_blank" rel="noopener noreferrer" >
+                                <a tabIndex="7" title="Descargar eje temático 2" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje2} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Eje temático 2
                                             </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje3} target="_blank" rel="noopener noreferrer" >
+                                <a tabIndex="7" title="Descargar eje temático 3" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje3} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Eje temático 3
                                             </a>
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje4} target="_blank" rel="noopener noreferrer" >
+                                <a tabIndex="7" title="Descargar eje temático 4" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].eje4} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-word"></i> Eje temático 4
                                             </a>
                             </div>
@@ -1105,7 +1105,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1139,13 +1139,13 @@ class BuscadorPlaneamiento extends Component {
                         (
                             <div className="card-body mr-2">
 
-                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                <a tabIndex="7" title="Descargar lineamientos" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                     <i className="fas fa-file-pdf"></i> Lineamientos
                                         </a>
                                 {
                                     array[index].plantilla !== "nulo" &&
                                     (
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                        <a tabIndex="7" title="Descargar plantilla" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-pdf"></i> Plantilla
                                     </a>
                                     )
@@ -1153,7 +1153,7 @@ class BuscadorPlaneamiento extends Component {
 
                                 {
 
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar orientaciones" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].orientaciones} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Orientaciones
                                     </a>
                                 }
@@ -1162,7 +1162,7 @@ class BuscadorPlaneamiento extends Component {
                                     //En el caso de undécimo no se renderiza plantilla anuales
                                     (array[index].anno !== "Undécimo") &&
                                     (
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].anual} target="_blank" rel="noopener noreferrer" >
+                                        <a tabIndex="7" title="Descargar plantillas anuales" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].anual} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-pdf"></i> Plantillas anuales
                                             </a>
                                     )
@@ -1175,7 +1175,7 @@ class BuscadorPlaneamiento extends Component {
                                     this.state.anno === "Undécimo" &&
                                     (
                                         <React.Fragment>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].undecimoAcademico} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar programa académico Undécimo 2009" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].undecimoAcademico} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Undécimo académico programa 2009
                                         </a>
 
@@ -1194,7 +1194,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1278,12 +1278,12 @@ class BuscadorPlaneamiento extends Component {
                                                 //***************Comprobación de Lineamiento nulo
                                                 array[index].lineamiento === "nulo" ?
                                                     (
-                                                        <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                        <span tabIndex="7" title="Lineamiento no disponible" className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                             <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
                                                     ) :
                                                     (
-                                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                        <a tabIndex="7" title="Descargar lineamiento" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                             <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                                     )
@@ -1293,29 +1293,29 @@ class BuscadorPlaneamiento extends Component {
                                                 //************comprobación de plantilla nulo:
                                                 array[index].plantilla === "nulo" ?
                                                     (
-                                                        <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                        <span tabIndex="7" title="Plantilla no disponible" className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                             <i className="fas fa-ban"></i> Plantilla no disponible
                                           </span>
                                                     ) :
                                                     (
-                                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                        <a tabIndex="7" title="Descargar plantilla" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                             <i className="fas fa-file-word"></i> Plantilla
                                             </a>
                                                     )
                                                 //******************************/                                
                                             }
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar Círculo de la armonía" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].circuloArmonia} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Círculo de la armonía
                                     </a>
                                         </div>
                                         <div className="row">
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].circuloCreatividad} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar círclo de la creatividad" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].circuloCreatividad} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Círculo de la creatividad
                                     </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].actividadCierre} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar Actividad de cierre" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].actividadCierre} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Actividad de cierre
                                     </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar No correlacionado" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> No correlacionado
                                     </a>
                                         </div>
@@ -1338,16 +1338,16 @@ class BuscadorPlaneamiento extends Component {
                                           </span>
                                                     ) :
                                                     (
-                                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                        <a tabIndex="7" title="Descargar lineamiento" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                             <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                                     )
                                                 //********************** */
                                             }
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar Correlacionado" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Correlacionado
                                     </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar No correlacionado" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> No correlacionado
                                     </a>
                                         </div>
@@ -1361,13 +1361,13 @@ class BuscadorPlaneamiento extends Component {
                                 (
                                     <div className="card-body mr-2">
                                         <div className="row">
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar lineamiento" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Lineamiento
                                     </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar plantilla" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla
                                     </a>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].recurso} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar recursos" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].recurso} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Recursos
                                     </a>
                                         </div>
@@ -1386,7 +1386,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1425,18 +1425,18 @@ class BuscadorPlaneamiento extends Component {
                                             //***************Comprobación de Lineamiento nulo
                                             array[index].lineamiento === "nulo" ?
                                                 (
-                                                    <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                    <span tabIndex="7" title="Lineamiento no disponible" className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                         <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
                                                 ) :
                                                 (
-                                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                    <a tabIndex="7" title="Descargar lineamiento" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                         <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                                 )
                                             //********************** */
                                         }
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
+                                        <a tabIndex="7" title="Descargar Correlacionado" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].correlacionado} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-word"></i> Correlacionado
                                              </a>
 
@@ -1447,7 +1447,7 @@ class BuscadorPlaneamiento extends Component {
                                                 || this.state.asignatura === "Estudios Sociales"
                                             ) &&
                                             (
-                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
+                                                <a tabIndex="7" title="Descargar No correlacionado" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].noCorrelacionado} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> No correlacionado
                                                  </a>
                                             )
@@ -1456,12 +1456,12 @@ class BuscadorPlaneamiento extends Component {
                                         {
                                             this.state.asignatura !== "Artes Industriales" &&
                                             (
-                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].alcance} target="_blank" rel="noopener noreferrer" >
+                                                <a tabIndex="7" title="Descargar alcande" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].alcance} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Alcance
                                             </a>
                                             )
                                         }
-                                        <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].circulo} target="_blank" rel="noopener noreferrer" >
+                                        <a tabIndex="7" title="Descargar círculo" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].circulo} target="_blank" rel="noopener noreferrer" >
                                             <i className="fas fa-file-word"></i> Círculo
                                             </a>
                                     </div>
@@ -1478,7 +1478,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>   <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1535,12 +1535,12 @@ class BuscadorPlaneamiento extends Component {
                                         //***************Comprobación de Lineamiento nulo
                                         array[index].lineamiento === "nulo" ?
                                             (
-                                                <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                <span tabIndex="7" title="Lineamiento no disponible" className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                     <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
                                             ) :
                                             (
-                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <a tabIndex="7" title="Descargar lineamiento" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Lineamiento
                                             </a>
                                             )
@@ -1550,12 +1550,12 @@ class BuscadorPlaneamiento extends Component {
                                         //************comprobación de plantilla nulo:
                                         array[index].plantilla === "nulo" ?
                                             (
-                                                <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                <span tabIndex="7" title="Plantilla no disponible" className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                     <i className="fas fa-ban"></i> Plantilla no disponible
                                           </span>
                                             ) :
                                             (
-                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <a tabIndex="7" title="Descargar plantilla" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Plantilla
                                             </a>
                                             )
@@ -1588,13 +1588,13 @@ class BuscadorPlaneamiento extends Component {
                                         //Renderizado de etiquetas para español (CAN)
                                         (this.state.modulo === "Español" && this.state.modalidad === "Colegios Académicos Nocturnos (CAN)" ) &&
                                         <React.Fragment>
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar monografía" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].monografia} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Monografía
                                         </a>
                                             {
                                                 array[index].anno === "Undécimo" &&
                                                 (
-                                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
+                                                    <a tabIndex="7" title="Descargar plan viejo" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
                                                         <i className="fas fa-file-word"></i> Plantilla plan viejo
                                             </a>
                                                 )
@@ -1603,22 +1603,22 @@ class BuscadorPlaneamiento extends Component {
                                             {
                                                 array[index].anno !== "Undécimo" &&
                                                 (
-                                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
+                                                    <a tabIndex="7" title="Descargar novela" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].novela} target="_blank" rel="noopener noreferrer" >
                                                         <i className="fas fa-file-word"></i> Novela
                                                 </a>
                                                 )
                                             }
 
 
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar lectura" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lectura} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Lectura
                                             </a>
 
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar mensual" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].mensual} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Mensual
                                             </a>
 
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar transversal" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].transversal} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Transversal
                                             </a>
                                         </React.Fragment>
@@ -1629,7 +1629,7 @@ class BuscadorPlaneamiento extends Component {
                                         //Renderizado de plan viejo en módulo 60
                                         (this.state.modulo === "Módulo 60") &&
                                         (
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar plantilla plan viejo" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaVieja} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla plan viejo
                                             </a>
                                         )
@@ -1641,7 +1641,7 @@ class BuscadorPlaneamiento extends Component {
                                         (this.state.modalidad === "Colegios Académicos Nocturnos (CAN)") &&
                                         this.state.modulo === "Ciencias" &&
                                         (
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar plantilla sexualidad" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantillaSexualidad} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-word"></i> Plantilla sexualidad
                                                     </a>
                                         )
@@ -1659,7 +1659,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1689,14 +1689,14 @@ class BuscadorPlaneamiento extends Component {
                                 (array[index].potenciancion !== "nulo") ?
                                     (
                                         <div className="card-body mr-2">
-                                            <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
+                                            <a tabIndex="7" title="Descargar potenciación" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].potenciancion} target="_blank" rel="noopener noreferrer" >
                                                 <i className="fas fa-file-pdf"></i> Potenciación
                                             </a>
                                         </div>
                                     ) :
                                     (
                                         <div className="card-body mr-2">
-                                            <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                            <span tabIndex="7" title="Potenciación no disponible" className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                 <i className="fas fa-ban"></i> Potenciación no disponible
                                           </span>
                                         </div>
@@ -1716,7 +1716,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1744,37 +1744,37 @@ class BuscadorPlaneamiento extends Component {
                             </div>
                             <div className="card-body mr-2">
                                 <div className="row">
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar lineamiento" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Lineamiento
                                     </a>
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plan} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar planeamiento" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plan} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-pdf"></i> Planeamiento
                                     </a>
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont1} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar objetivo 1" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont1} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 1
                                     </a>
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont2} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar objetivo 2" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont2} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 2
                                     </a>
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont3} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar objetivo 3" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont3} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 3
                                     </a>
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont4} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar objetivo 4" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont4} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 4
                                     </a>
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont5} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar objetivo 5" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont5} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 5
                                     </a>
                                 </div>
 
                                 <div className="row">
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont6} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar objetivo 6" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont6} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 6
                                     </a>
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont7} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar objetivo 7" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont7} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 7
                                     </a>
-                                    <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont8} target="_blank" rel="noopener noreferrer" >
+                                    <a tabIndex="7" title="Descargar objetivo 8" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].cont8} target="_blank" rel="noopener noreferrer" >
                                         <i className="fas fa-file-word"></i> Objetivo 8
                                     </a>
                                 </div>
@@ -1789,7 +1789,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1829,12 +1829,12 @@ class BuscadorPlaneamiento extends Component {
                                         //***************Comprobación de Lineamiento nulo
                                         array[index].lineamiento === "nulo" ?
                                             (
-                                                <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                <span tabIndex="7" title="Lineamiento no disponible" className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                     <i className="fas fa-ban"></i> Lineamiento no disponible
                                           </span>
                                             ) :
                                             (
-                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
+                                                <a tabIndex="7" title="Descargar lineamiento y especificaciones" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].lineamiento} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-pdf"></i> Lineamiento y Especificaciones
                                             </a>
                                             )
@@ -1844,12 +1844,12 @@ class BuscadorPlaneamiento extends Component {
                                         //************comprobación de plantilla nulo:
                                         array[index].plantilla === "nulo" ?
                                             (
-                                                <span className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
+                                                <span tabIndex="7" title="Plantilla no disponible" className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2">
                                                     <i className="fas fa-ban"></i> Plantilla no disponible
                                           </span>
                                             ) :
                                             (
-                                                <a className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
+                                                <a tabIndex="7" title="Descargar plantilla" className="font-2 etiquetas badge badge-info mr-2 px-2 py-2" href={serv + array[index].plantilla} target="_blank" rel="noopener noreferrer" >
                                                     <i className="fas fa-file-word"></i> Plantilla 
                                             </a>
                                             )
@@ -1868,7 +1868,7 @@ class BuscadorPlaneamiento extends Component {
         if (array.length <= 0) {
             this.mensaje = "No se han encontrado resultados.";
         } else {
-            this.mensaje = (<React.Fragment>Cantidad de resultados encontrados:  <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
+            this.mensaje = (<React.Fragment><span tabIndex="6"  title={"Cantidad de resultados encontrados "+array.length} >Cantidad de resultados encontrados: </span>   <span className="badge-success px-2 py-1 mx-2" >   {array.length}   </span>  </React.Fragment>);
         }
     }
 
@@ -1889,7 +1889,7 @@ class BuscadorPlaneamiento extends Component {
                                     <img className="bannerRecursos" src={img + "encabezado_documentos_apoyoMovil.png"} alt="Encabezado de Documentos de apoyo" />)
                                 :
                                 (
-                                    <img className="bannerRecursos" src={img + "encabezado_documentos_apoyo.png"} alt="Encabezado de Documentos de apoyo" />
+                                    <img rol="banner" tabIndex="1" className="bannerRecursos" src={img + "encabezado_documentos_apoyo.png"} alt="Banner de buscador de plantillas para el planeamiento" />
                                 )
                         }
                         {
@@ -1899,7 +1899,7 @@ class BuscadorPlaneamiento extends Component {
                                 )
                                 :
                                 (
-                                    <img className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Volver" />
+                                    <img role="button" tabIndex="8"  className="botones-portada hvr-pop boton-volver img-fluid derecha  " onClick={this.props.handlerCloseBuscadorPlaneamiento} src={imgGenerales + "btn_volver.png"} alt="Regresar a la sección de Apoyos para el planeaminento" />
                                 )
                         }
 
@@ -1913,12 +1913,12 @@ class BuscadorPlaneamiento extends Component {
                             (
                                 <React.Fragment>
                                     <div className="col-2">
-                                        <a href="http://www.ddc.mep.go.cr/" target="_blank" rel="noopener noreferrer"> <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
+                                        <a tabIndex="2" title="Abre en una ventana nueva" href="http://www.ddc.mep.go.cr/" target="_blank" rel="noopener noreferrer"> <img className="ddc" src={img + "ddc.png"} alt="Sitio DDC" /> </a>
                                     </div>
 
                                     <div className="col-8 font-italic">
-                                        Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
-                                        Por último, presione el botón "buscar" para encontrar el resultado deseado.
+                                       <span tabIndex="3" title="instrucciones: Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones. Por último, presione el botón buscar para encontrar el resultado deseado."> Seleccione primero el nivel que desea, posteriormente el año o modalidad, y demás opciones.
+                                        Por último, presione el botón "buscar" para encontrar el resultado deseado.</span>
                                     </div>
                                     <div className="col-2" id="divBotonBuscar">
 
@@ -1945,9 +1945,9 @@ class BuscadorPlaneamiento extends Component {
                         <div className="col-sm-3">
                             <div className={this.claseCSSMaterias}   >
                                 <div className="input-group-prepend">
-                                    <label className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
+                                    <label tabIndex="4" className="input-group-text etiquetas-busquedas" htmlFor="selNivel">Nivel</label>
                                 </div>
-                                <select className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel}   >
+                                <select tabIndex="4" className="custom-select buscadores-materias" id="selNivel" onChange={this.handlerObtenerNivel}   >
                                     <option defaultValue value="" >Seleccione:</option>
                                     {listasPlan["Niveles Generales"].map((item, i) => (
                                         <option key={"niveles" + i} value={item}> {item} </option>
@@ -1997,7 +1997,7 @@ class BuscadorPlaneamiento extends Component {
                                                 }
                                             </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
+                                        <select tabIndex="4" className="custom-select buscadores-materias" id="selAno" onChange={this.handlerObtenerAnno}  >
                                             {
                                                 //Se deshabilita esta condición después de los requereimeitnos Reunión 17-12-19
                                                 // this.state.nivel !== "Preescolar" &&
@@ -2115,7 +2115,7 @@ class BuscadorPlaneamiento extends Component {
 
                                             </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria}  >
+                                        <select tabIndex="4" className="custom-select buscadores-materias" id="selMateria" onChange={this.handlerObtenerMateria}  >
                                             {
                                                 this.state.nivel !== "Preescolar" &&
                                                 (
@@ -2257,7 +2257,7 @@ class BuscadorPlaneamiento extends Component {
                                                 Mes
                                         </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
+                                        <select tabIndex="4" className="custom-select buscadores-materias" id="selMes" onChange={this.handlerObtenerMes}  >
                                             <option defaultValue value="" >Seleccione:</option>
                                             {
                                                 listasPlan["Meses"].map((item, index) => (
@@ -2304,7 +2304,7 @@ class BuscadorPlaneamiento extends Component {
                                                 Plan de estudios
                                         </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
+                                        <select tabIndex="4" className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
                                             <option defaultValue value="seleccione" >Seleccione:</option>
                                             { //Frances primaria
                                                 (this.state.materia === "Francés" && this.state.nivel === "Primaria") &&
@@ -2352,7 +2352,7 @@ class BuscadorPlaneamiento extends Component {
                                                 Plan de estudios
                                         </label>
                                         </div>
-                                        <select className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
+                                        <select tabIndex="4" className="custom-select buscadores-materias" id="selPlan" onChange={this.handlerObtenerTipoPlan}  >
                                             <option defaultValue disabled value="seleccione" >Seleccione:</option>
                                             {
                                                 (this.state.materia === "Italiano" && this.state.nivel === "Secundaria") &&
@@ -2510,7 +2510,7 @@ class BuscadorPlaneamiento extends Component {
                         <div className="col-12 text-right">
                             {//Activación del botón dependiendo del valor del select nivel en el método "activarBotonBuscar"
                                 this.state.buscarActivo &&
-                                <button id="btnBuscar" onClick={this.handlerBuscarRegistrosPorNivel} type="button" className="btn btn-secondary btn-lg btn_Buscar">
+                                <button tabIndex="5" id="btnBuscar" title="Botón buscar" onClick={this.handlerBuscarRegistrosPorNivel} type="button" className="btn btn-secondary btn-lg btn_Buscar">
                                     <i className="fas fa-search"></i> Buscar
                                     </button>
                             }
