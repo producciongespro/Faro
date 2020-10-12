@@ -41,6 +41,14 @@ body {
   }
 */
 
+.borde-sencillo {
+  border: solid red 1px;  
+}
+
+.borde-sencillo-naranja {
+  border: solid orange 1px;  
+}
+
 .aviso {
   font-weight: bold;
   font-size: medium;

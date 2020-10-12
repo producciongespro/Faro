@@ -1,18 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import config from '../data/config/config.json';
+
 const video = config.video;
+const imgHome = config.img.home;
+const imgGeneral = config.img.general;
 
 
 
 function ContenidoModal(props) {
     //console.log("props.opcionModal", props.opcionModal );
     //console.log("infoModal", props.infoModal);
+
+    const [tipoIncidencia, setTipoIncidencia] = useState(null);
+
+    const handleTipoIncidencia = (e) => {
+        setTipoIncidencia(e.target.title);
+    }
+
     var html;
     switch (props.opcionModal) {
         case "videoMinistra":
-        html= (
-            <iframe className="borde-video" title="video ministra" width="100%" height="400" src={video.ministra} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        )
+            html = (
+                <iframe className="borde-video" title="video ministra" width="100%" height="400" src={video.ministra} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            )
             break;
         case "aprendoEnCasa":
             html = (
@@ -42,41 +52,100 @@ function ContenidoModal(props) {
                 </div>
             )
             break;
-                case "pdf":               
-                    html = (
-                        <embed src={props.infoModal + "#toolbar=1"} type='application/pdf' width='100%' height='100%'></embed>
-                        )
-               
-                break;
+        case "pdf":
+            html = (
+                <embed src={props.infoModal + "#toolbar=1"} type='application/pdf' width='100%' height='100%'></embed>
+            )
+            break;
 
-            case "evaluacion":
-                html = (
-                    <div className="row">
-                      <div className="col-sm-12">
-                        <a  tabIndex="2" target="_blank" rel="noopener noreferrer"
-                          href="http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_norma.aspx?param1=NRM&nValor1=1&nValor2=85815&nValor3=111107&strTipM=FN">
-                          <i className="fas fa-link"></i> Enlace a la ficha del Decreto Ejecutivo 40862 (REA) (enlace que no varía con el tiempo)
+        case "evaluacion":
+            html = (
+                <div className="row">
+                    <div className="col-sm-12">
+                        <a tabIndex="2" target="_blank" rel="noopener noreferrer"
+                            href="http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_norma.aspx?param1=NRM&nValor1=1&nValor2=85815&nValor3=111107&strTipM=FN">
+                            <i className="fas fa-link"></i> Enlace a la ficha del Decreto Ejecutivo 40862 (REA) (enlace que no varía con el tiempo)
                         </a>
                         <br />
-                        <a   tabIndex="3"  target="_blank" rel="noopener noreferrer"
-                          href="http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=85815">
-                          <i className="fas fa-link"></i> Enlace al texto vigente del Decreto Ejecutivo 40862 (REA)
+                        <a tabIndex="3" target="_blank" rel="noopener noreferrer"
+                            href="http://www.pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=85815">
+                            <i className="fas fa-link"></i> Enlace al texto vigente del Decreto Ejecutivo 40862 (REA)
                       </a>
-                      </div>
                     </div>
-                  )
-                break;
+                </div>
+            )
+            break;
 
-                case "indicaciones":               
-                html = (
-                        <div className="row">
-                            <div className="col-12">
-                                <h1>Indicaciones</h1>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, adipisci tempore obcaecati magnam tempora vitae accusantium quos ipsam iste odio cupiditate repudiandae fugiat sit blanditiis error officia doloremque aspernatur consequatur!
-                            </div>
+        case "indicaciones":
+            html = (
+                <div className="container borde-sencillo">
+                    <div className="row">
+                        <dov className="col-12">
+                            <img className="img-fluid  modal-img-titulo" src={imgHome + "caja.png"} alt="fondo indicaciones" />
+                        </dov>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-12">
+                            <p>
+                                Los recursos de esta caja de herramientas están organizados en seis categorías con el propósito de que usted pueda dirigirse a la sección más atinente a su necesidad de información.  Estas categorías son:
+                        </p>
+                            <ul>
+                                <li>Apoyos para el clima del aula</li>
+                                <li>Apoyos para la evaluación</li>
+                                <li>Recursos didácticos</li>
+                                <li>Documentos oficiales</li>
+                                <li>Desarrollo profesional</li>
+                                <li>Apoyos para el planeamiento</li>
+                            </ul>
+                            <p>
+                                Para disponer de los distintos recursos, dé un clic a los diferentes accesorios que acompañan a la imagen de la educadora.  Cada uno de estos objetos representa una de las categorías.  <br />
+              Dentro de cada categoría encontrará una descripción de la sección, así como una serie de accesos a documentos, enlaces, plantillas, y otros materiales de utilidad para su quehacer docente.
+                          Al colocar el puntero del mouse sobre cada acceso, podrá leer la descripción del recurso específico que se le está proveyendo. <br />
+              En las diferentes pantallas que acceda, dispondrá de botones que le permitirá retornar a la pantalla anterior o volver al menú principal.
+              </p>
                         </div>
-                    )
-           
+                    </div>
+                </div>
+            )
+            break;
+
+        case "usoCaja":
+            html = (
+                <iframe className="borde-video" title="video Uso de la Caja de Herramientas" width="100%" height="500" src={video.usoCajaHerramientas} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            )
+            break;
+
+        case "opcIncidencias":
+            html = (
+                <div className="container  borde-sencillo-naranja p-5 ">
+                    <div>
+                        <img className="img-fluid  modal-img-titulo" src={imgHome + "btn_incidentes.png"} alt="fondo indicaciones" />
+                    </div>
+                    <div className="row">
+                        <div className="col-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem praesentium iste expedita culpa! Sed labore hic error alias natus quis et placeat? Nulla voluptates id veniam, tenetur dignissimos aut.
+                        </div>
+                    </div>
+                    <div className="row ">
+                        <div className="col-6 text-center">
+                            <img className="botones-portada"
+                                src={imgGeneral + "cons_pedagogica.png"}
+                                onClick={handleTipoIncidencia}
+                                alt="consulta pedagógica" title="pedagógica" role="button" />
+                        </div>
+
+                        <div className="col-6 text-center">
+                            <img className="botones-portada"
+                                src={imgGeneral + "cons_tecnica.png"}
+                                onClick={handleTipoIncidencia}
+                                alt="Formulario incidencias técnicas" title="técnica" role="button" />
+                        </div>
+
+
+                    </div>
+                </div>
+            )
             break;
 
         default:

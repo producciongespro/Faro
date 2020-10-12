@@ -29,7 +29,7 @@ const Home = (props) => {
 
   const handleAbriModal=(e)=>{
       console.log(e.target.dataset.typecontent  );        
-      setTituloModal(e.target.title);
+      setTituloModal(e.target.alt);
       setOpcionModal( e.target.dataset.typecontent );        
       setShow(true);
   }
@@ -90,7 +90,7 @@ const Home = (props) => {
           <img 
           tabIndex="9" 
           role="button" 
-          alt="Indicaciones" 
+          alt="Indicaciones de uso de la caja de herramientas" 
           className="btn img-fluid hvr-pop" 
           id="indicaciones" 
           src={img + "caja.png"} 
@@ -122,8 +122,8 @@ const Home = (props) => {
           id="uso" 
           src={img + "btn_usocaja.png"} 
           data-typecontent="usoCaja" 
-          onClick={props.showModal} 
-          onKeyPress={props.showModal} 
+          onClick={handleAbriModal} 
+          onKeyPress={handleAbriModal} 
           data-content={textos.VideoUsoCaja}  /> 
           <br /> 
           <br />
@@ -147,9 +147,9 @@ const Home = (props) => {
           alt="Inicidencias o reportes de fallas" 
           className="btn img-fluid hvr-pop incidencias" 
           id="btnIncidencias" 
-          data-typecontent="opcIncidencias" 
-          onClick={props.showModal} 
-          onKeyPress={props.showModal} 
+          data-typecontent="opcIncidencias"           
+          onClick={handleAbriModal} 
+          onKeyPress={handleAbriModal} 
           data-infosource={2} 
           onMouseOver={props.onMouseOver} 
           onMouseOut={props.onMouseOut}  
