@@ -67,6 +67,18 @@ function ContenidoModal(props) {
                   )
                 break;
 
+                case "indicaciones":               
+                html = (
+                        <div className="row">
+                            <div className="col-12">
+                                <h1>Indicaciones</h1>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, adipisci tempore obcaecati magnam tempora vitae accusantium quos ipsam iste odio cupiditate repudiandae fugiat sit blanditiis error officia doloremque aspernatur consequatur!
+                            </div>
+                        </div>
+                    )
+           
+            break;
+
         default:
             break;
     }

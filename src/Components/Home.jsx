@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useState}  from 'react';
+import { Modal } from 'react-bootstrap';
+import ContenidoModal from './ContenidoModal';
 import textosJson from "../data/textos.json";
 import dsLinks from "../data/links.json";
 import assets from '../data/config/config.json';
@@ -15,6 +17,47 @@ var links = dsLinks[0];
  */
 
 const Home = (props) => {
+
+
+
+  const [tituloModal, setTituloModal]= useState(false);    
+  const [opcionModal, setOpcionModal ]= useState(null); 
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);       
+  
+  
+
+  const handleAbriModal=(e)=>{
+      console.log(e.target.dataset.typecontent  );        
+      setTituloModal(e.target.title);
+      setOpcionModal( e.target.dataset.typecontent );        
+      setShow(true);
+  }
+
+  const modal =()=> {
+      return (        
+        <Modal 
+            show={show} 
+            onHide={handleClose}
+            size="lg"
+            >
+          <Modal.Header closeButton>
+      <Modal.Title><h3 className="titulo-modal" >{tituloModal}</h3></Modal.Title>
+          </Modal.Header>
+          <Modal.Body>              
+             <ContenidoModal opcionModal={opcionModal}  infoModal={null} />
+          </Modal.Body>
+          <Modal.Footer>
+            
+          </Modal.Footer>
+        </Modal>      
+      )
+  }
+
+
+
+
+
   return (
     <React.Fragment>
         {
@@ -51,9 +94,11 @@ const Home = (props) => {
           className="btn img-fluid hvr-pop" 
           id="indicaciones" 
           src={img + "caja.png"} 
-          onClick={props.showModal} 
-          onKeyPress={props.showModal} 
-          data-typecontent="help" 
+          //onClick={props.showModal} 
+          //onKeyPress={props.showModal} 
+          onClick={handleAbriModal}
+          onKeyPress={handleAbriModal}
+          data-typecontent="indicaciones" 
           data-content={textos.IndicacionesPortada}  /> 
           <br />
 
@@ -126,6 +171,8 @@ const Home = (props) => {
         </div>
 
       </section>
+
+      {modal()}
     
     </React.Fragment>
   );
