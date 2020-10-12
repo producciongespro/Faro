@@ -59,7 +59,7 @@ const RecursosDidacticos = (props) => {
                   data-tar="Construccion"  
                   onClick={props.changePage} 
                   onKeyPress={props.changePage} 
-                  alt="Enlace a Educatico"/>
+                  alt="Enlace a Educatico. Abre en una ventana nueva"/>
               </a>
 
           <div>
@@ -73,7 +73,7 @@ const RecursosDidacticos = (props) => {
             className="img-fluid btn hvr-wobble-bottom" 
             src={img + "fqt.gif"}  
             data-infosource={4}       
-            alt="Enlace a Fundación Quirós Tanzi" />
+            alt="Enlace a Fundación Quirós Tanzi. Abre en una ventana nueva" />
           </a>
           </div>
              
