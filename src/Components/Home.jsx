@@ -164,9 +164,9 @@ const Home = (props) => {
           className="btn img-fluid hvr-pop acercade" 
           id="acercade" 
           src={img + "creditos.png"} 
-          onClick={props.showModal} 
-          onKeyPress={props.showModal} 
-          data-typecontent="acercaDe" 
+          onClick={handleAbriModal} 
+          onKeyPress={handleAbriModal} 
+          data-typecontent="creditos" 
           data-content={textos.IndicacionesPortada}  /> <br />
         </div>
 

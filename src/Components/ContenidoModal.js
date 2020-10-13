@@ -1,5 +1,6 @@
 import React from 'react';
 import config from '../data/config/config.json';
+import Creditos from './Creditos';
 
 const video = config.video;
 const imgHome = config.img.home;
@@ -126,15 +127,9 @@ function ContenidoModal(props) {
                 </div>
             )
             break;
-        case "acercaDe":
+        case "creditos":
             html = (
-                <div className="container borde-sencillo">
-                    <div className="row">
-                        <div className="col-12">
-                            creditros
-                        </div>
-                    </div>
-                </div>
+                <Creditos />
             )
             break;
         default:
