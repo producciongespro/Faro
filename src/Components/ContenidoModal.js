@@ -1,21 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import config from '../data/config/config.json';
 
 const video = config.video;
 const imgHome = config.img.home;
-const imgGeneral = config.img.general;
-
-
+//const imgGeneral = config.img.general;
 
 function ContenidoModal(props) {
     //console.log("props.opcionModal", props.opcionModal );
     //console.log("infoModal", props.infoModal);
-
-    const [tipoIncidencia, setTipoIncidencia] = useState(null);
-
-    const handleTipoIncidencia = (e) => {
-        setTipoIncidencia(e.target.title);
-    }
 
     var html;
     switch (props.opcionModal) {
@@ -57,7 +49,6 @@ function ContenidoModal(props) {
                 <embed src={props.infoModal + "#toolbar=1"} type='application/pdf' width='100%' height='100%'></embed>
             )
             break;
-
         case "evaluacion":
             html = (
                 <div className="row">
@@ -75,7 +66,6 @@ function ContenidoModal(props) {
                 </div>
             )
             break;
-
         case "indicaciones":
             html = (
                 <div className="container borde-sencillo">
@@ -109,13 +99,11 @@ function ContenidoModal(props) {
                 </div>
             )
             break;
-
         case "usoCaja":
             html = (
                 <iframe className="borde-video" title="video Uso de la Caja de Herramientas" width="100%" height="500" src={video.usoCajaHerramientas} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             )
             break;
-
         case "opcIncidencias":
             html = (
                 <div className="container  borde-sencillo-naranja p-5 ">
@@ -124,30 +112,31 @@ function ContenidoModal(props) {
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem praesentium iste expedita culpa! Sed labore hic error alias natus quis et placeat? Nulla voluptates id veniam, tenetur dignissimos aut.
+                            <p>
+                                En el siguiente correo puede enviar las consultas relcionadas con el uso de la Caja de herramientas. <br />
+                                Es importante que en el correo indique la asignatura y el nivel (por ejemplo secundaria, primaria, entre otros).
+                                </p>
+                            <p>
+                                Su consulta será remitido al área correspondiente
+                                </p>
+                            <a href="mailto:cajadeherramientas@mep.go.cr"> cajadeherramientas@mep.go.cr </a>
                         </div>
                     </div>
-                    <div className="row ">
-                        <div className="col-6 text-center">
-                            <img className="botones-portada"
-                                src={imgGeneral + "cons_pedagogica.png"}
-                                onClick={handleTipoIncidencia}
-                                alt="consulta pedagógica" title="pedagógica" role="button" />
+
+                </div>
+            )
+            break;
+        case "acercaDe":
+            html = (
+                <div className="container borde-sencillo">
+                    <div className="row">
+                        <div className="col-12">
+                            creditros
                         </div>
-
-                        <div className="col-6 text-center">
-                            <img className="botones-portada"
-                                src={imgGeneral + "cons_tecnica.png"}
-                                onClick={handleTipoIncidencia}
-                                alt="Formulario incidencias técnicas" title="técnica" role="button" />
-                        </div>
-
-
                     </div>
                 </div>
             )
             break;
-
         default:
             break;
     }
