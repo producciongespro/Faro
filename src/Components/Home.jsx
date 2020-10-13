@@ -1,4 +1,4 @@
-import React, {useState}  from 'react';
+import React, {useState, useEffect }  from 'react';
 import { Modal } from 'react-bootstrap';
 import ContenidoModal from './ContenidoModal';
 import textosJson from "../data/textos.json";
@@ -22,6 +22,7 @@ const Home = (props) => {
 
   const [tituloModal, setTituloModal]= useState(false);    
   const [opcionModal, setOpcionModal ]= useState(null); 
+  const [isScroll, setIsScroll  ]= useState(0);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);       
   
@@ -30,9 +31,14 @@ const Home = (props) => {
   const handleAbriModal=(e)=>{
       console.log(e.target.dataset.typecontent  );        
       setTituloModal(e.target.alt);
-      setOpcionModal( e.target.dataset.typecontent );        
+      setOpcionModal( e.target.dataset.typecontent );
+      setIsScroll( parseInt(e.target.dataset.scroll)  );        
       setShow(true);
   }
+
+  useEffect(()=>{
+    console.log("isScroll", isScroll);
+  }, [isScroll] )
 
   const modal =()=> {
       return (        
@@ -40,6 +46,7 @@ const Home = (props) => {
             show={show} 
             onHide={handleClose}
             size="lg"
+            scrollable={isScroll}            
             >
           <Modal.Header closeButton>
       <Modal.Title><h3 className="titulo-modal" >{tituloModal}</h3></Modal.Title>
@@ -99,7 +106,9 @@ const Home = (props) => {
           onClick={handleAbriModal}
           onKeyPress={handleAbriModal}
           data-typecontent="indicaciones" 
-          data-content={textos.IndicacionesPortada}  /> 
+          data-content={textos.IndicacionesPortada}  
+          data-scroll={1}
+          /> 
           <br />
 
           <img 
@@ -124,7 +133,9 @@ const Home = (props) => {
           data-typecontent="usoCaja" 
           onClick={handleAbriModal} 
           onKeyPress={handleAbriModal} 
-          data-content={textos.VideoUsoCaja}  /> 
+          data-content={textos.VideoUsoCaja}  
+          data-scroll={0}
+          /> 
           <br /> 
           <br />
 
@@ -152,7 +163,8 @@ const Home = (props) => {
           onKeyPress={handleAbriModal} 
           data-infosource={2} 
           onMouseOver={props.onMouseOver} 
-          onMouseOut={props.onMouseOut}  
+          onMouseOut={props.onMouseOut} 
+          data-scroll={0} 
           src={img + "incidencias.png"}  />
           <br />
           <hr />
@@ -160,13 +172,14 @@ const Home = (props) => {
           <img 
           tabIndex="9" 
           role="button" 
-          alt="Información acerca de la caja de herramientas" 
+          alt="Créditos" 
           className="btn img-fluid hvr-pop acercade" 
           id="acercade" 
           src={img + "creditos.png"} 
           onClick={handleAbriModal} 
           onKeyPress={handleAbriModal} 
           data-typecontent="creditos" 
+          data-scroll={1}
           data-content={textos.IndicacionesPortada}  /> <br />
         </div>
 

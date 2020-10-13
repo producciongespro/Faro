@@ -1,14 +1,11 @@
 import React from 'react';
-import config from '../data/config/config.json';
-const imgHome = config.img.home;
+//import config from '../data/config/config.json';
+//const imgHome = config.img.home;
 
 export default function Creditos () {
     return (
-        <div className="container borde-sencillo-naranja text-center">
-            <div>
-              <img className="img-fluid modal-img-titulo" src={imgHome + "creditos.png"} alt="fondo indicaciones" />
-            </div>
-  
+        <div className="container borde-sencillo-naranja text-center p-2">
+            
   
             <strong> Ministra de Educación</strong><br />
             Giselle Cruz Maduro<br /><br />
