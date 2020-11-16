@@ -19,7 +19,7 @@ function Portada  (props)  {
 
     const handleAbriModal=(e)=>{
         console.log(e.target.dataset.typecontent  );        
-        setTituloModal(e.target.title);
+        setTituloModal(e.target.alt);
         setOpcionModal( e.target.dataset.typecontent );        
         setShow(true);
     }
@@ -71,8 +71,8 @@ function Portada  (props)  {
                     <div className="col-4 text-right">                        
                     <img 
                         tabIndex="2" 
-                        role="button"  
-                        alt="Bienvenida de la Ministra"   
+                        role="button"                          
+                        alt = "Bienvenida de la Ministra"
                         onClick={handleAbriModal}
                         onKeyPress={handleAbriModal}
                         data-typecontent ="videoMinistra" 

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useState, useEffect }  from 'react';
+import { Modal } from 'react-bootstrap';
+import ContenidoModal from './ContenidoModal';
 import textosJson from "../data/textos.json";
 import dsLinks from "../data/links.json";
 import assets from '../data/config/config.json';
@@ -15,6 +17,54 @@ var links = dsLinks[0];
  */
 
 const Home = (props) => {
+
+
+
+  const [tituloModal, setTituloModal]= useState(false);    
+  const [opcionModal, setOpcionModal ]= useState(null); 
+  const [isScroll, setIsScroll  ]= useState(0);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);       
+  
+  
+
+  const handleAbriModal=(e)=>{
+      console.log(e.target.dataset.typecontent  );        
+      setTituloModal(e.target.alt);
+      setOpcionModal( e.target.dataset.typecontent );
+      setIsScroll( parseInt(e.target.dataset.scroll)  );        
+      setShow(true);
+  }
+
+  useEffect(()=>{
+    console.log("isScroll", isScroll);
+  }, [isScroll] )
+
+  const modal =()=> {
+      return (        
+        <Modal 
+            show={show} 
+            onHide={handleClose}
+            size="lg"
+            scrollable={isScroll}            
+            >
+          <Modal.Header closeButton>
+      <Modal.Title><h3 className="titulo-modal" >{tituloModal}</h3></Modal.Title>
+          </Modal.Header>
+          <Modal.Body>              
+             <ContenidoModal opcionModal={opcionModal}  infoModal={null} />
+          </Modal.Body>
+          <Modal.Footer>
+            
+          </Modal.Footer>
+        </Modal>      
+      )
+  }
+
+
+
+
+
   return (
     <React.Fragment>
         {
@@ -47,14 +97,18 @@ const Home = (props) => {
           <img 
           tabIndex="9" 
           role="button" 
-          alt="Indicaciones" 
+          alt="Indicaciones de uso de la caja de herramientas" 
           className="btn img-fluid hvr-pop" 
           id="indicaciones" 
           src={img + "caja.png"} 
-          onClick={props.showModal} 
-          onKeyPress={props.showModal} 
-          data-typecontent="help" 
-          data-content={textos.IndicacionesPortada}  /> 
+          //onClick={props.showModal} 
+          //onKeyPress={props.showModal} 
+          onClick={handleAbriModal}
+          onKeyPress={handleAbriModal}
+          data-typecontent="indicaciones" 
+          data-content={textos.IndicacionesPortada}  
+          data-scroll={1}
+          /> 
           <br />
 
           <img 
@@ -77,9 +131,11 @@ const Home = (props) => {
           id="uso" 
           src={img + "btn_usocaja.png"} 
           data-typecontent="usoCaja" 
-          onClick={props.showModal} 
-          onKeyPress={props.showModal} 
-          data-content={textos.VideoUsoCaja}  /> 
+          onClick={handleAbriModal} 
+          onKeyPress={handleAbriModal} 
+          data-content={textos.VideoUsoCaja}  
+          data-scroll={0}
+          /> 
           <br /> 
           <br />
 
@@ -102,12 +158,13 @@ const Home = (props) => {
           alt="Inicidencias o reportes de fallas" 
           className="btn img-fluid hvr-pop incidencias" 
           id="btnIncidencias" 
-          data-typecontent="opcIncidencias" 
-          onClick={props.showModal} 
-          onKeyPress={props.showModal} 
+          data-typecontent="opcIncidencias"           
+          onClick={handleAbriModal} 
+          onKeyPress={handleAbriModal} 
           data-infosource={2} 
           onMouseOver={props.onMouseOver} 
-          onMouseOut={props.onMouseOut}  
+          onMouseOut={props.onMouseOut} 
+          data-scroll={0} 
           src={img + "incidencias.png"}  />
           <br />
           <hr />
@@ -115,17 +172,20 @@ const Home = (props) => {
           <img 
           tabIndex="9" 
           role="button" 
-          alt="Información acerca de la caja de herramientas" 
+          alt="Créditos" 
           className="btn img-fluid hvr-pop acercade" 
           id="acercade" 
           src={img + "creditos.png"} 
-          onClick={props.showModal} 
-          onKeyPress={props.showModal} 
-          data-typecontent="acercaDe" 
+          onClick={handleAbriModal} 
+          onKeyPress={handleAbriModal} 
+          data-typecontent="creditos" 
+          data-scroll={1}
           data-content={textos.IndicacionesPortada}  /> <br />
         </div>
 
       </section>
+
+      {modal()}
     
     </React.Fragment>
   );
