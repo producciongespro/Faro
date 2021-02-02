@@ -9,8 +9,8 @@ switch ($tabla) {
     case 1:
          $TablaNombre="recursos";
     break;
-    case "2":
-        $TablaNombre="Oferta Desarrollo";
+    case 2:
+        $TablaNombre="desarrollo_profesional";
     break;
     case 3:
         $TablaNombre="planeamiento";
@@ -20,7 +20,9 @@ switch ($tabla) {
         break;
 }
         //$sql= "SELECT * FROM bitacora WHERE tabla=$TablaNombre";
-		$sql= "SELECT * FROM bitacora";
+//	$sql= "SELECT * FROM bitacora";
+
+	$sql= "SELECT bitacora.id, $TablaNombre.nombre, bitacora.id_usuario, bitacora.fecha_evento, bitacora.evento, usuarios.usuario, tablas.tabla, bitacora.id_registro FROM bitacora INNER JOIN usuarios ON usuarios.id=bitacora.id_usuario INNER JOIN tablas ON bitacora.id_tabla=tablas.id INNER JOIN $TablaNombre ON bitacora.id_registro=$TablaNombre.id  WHERE id_tabla=$tabla";
         // echo "Consulta ".$sql;
 include "conectar.php";
 sleep(1);
@@ -46,7 +48,7 @@ function obtenerArreglo($sql){
 
         mysqli_set_charset($conexion, "utf8"); //formato de datos utf8
 
-    if(!$resultado = mysqli_query($conexion, $sql)) die(); //si la conexión cancelar programa
+    if(!$resultado = mysqli_query($conexion, $sql)) die(); //si la conexi贸n cancelar programa
 
     $arreglo = array(); //creamos un array
 

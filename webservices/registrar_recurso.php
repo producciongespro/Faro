@@ -43,16 +43,16 @@ $conn = conectarDB();
     }
     $sql = "INSERT INTO $tabla (`idPrograma`, `idSubprograma`, `nombre`, `descripcion`, `url`, `imgEducatico`, `idUsuario`) VALUES ('$idPrograma', '$idSubprograma', '$nombre', '$descripcion', '$url', '$img_educatico', '$usuario')";
     if ($conn->query($sql) === TRUE) { 
-      echo json_encode(array('error'=>'false','msj'=>'Recurso AE agregado satisfactoriamente'));
-      $rs = mysqli_query($conn,"SELECT $id from $tabla ORDER BY $id DESC LIMIT 1");
+      echo json_encode(array('isOk'=>'true','msj'=>'Recurso AE agregado satisfactoriamente'));
+     /* $rs = mysqli_query($conn,"SELECT $id from $tabla ORDER BY $id DESC LIMIT 1");
       if ($row = mysqli_fetch_row($rs)) {
           $id_ultimo = trim($row[0]);
           $sql2 = "INSERT INTO `bitacora`(`id_usuario`, `evento`,`id_registro`, `tabla`) VALUES ('$usuario','Agregar','$id_ultimo','$tabla')";
           // registrar_bitacora($conexion, $usuario,$id_ultimo,'Agregar',1);
           if ($conn->query($sql2) === TRUE) { 
-            echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente en la bitácora. usuario: '.$usuario.' Tabla: '.$tabla.' con el id: '.$id_ultimo));
+            echo json_encode(array('isOk'=>'true','msj'=>'Recurso agregado satisfactoriamente en la bitácora. usuario: '.$usuario.' Tabla: '.$tabla.' con el id: '.$id_ultimo));
       }
-    }
+    }*/
     }
       else {
     echo json_encode(array('error'=>'true','msj'=>$conn->error)); 
@@ -64,9 +64,9 @@ $conn = conectarDB();
     $id= "id";
     $id_nivel = $dataObject-> id_nivel;
     if ($id_nivel==="0") {
+      $materia = "Transdisciplinario";
       $anno = floatval(preg_replace('/[^\d.]/', '',  $anno));
       $anno = trim($anno,",");
-      $materia = "Transdisciplinario";
       $variosNiveles=str_split($anno); 
       $k=1;
       foreach($variosNiveles as $value){
@@ -77,21 +77,21 @@ $conn = conectarDB();
         // registrar($conn,$sql, $usuario, "recursos", $id);
         if ($conn->query($sql) === TRUE) { 
           if ($k==sizeof($variosNiveles)) {
-             echo json_encode(array('error'=>'false','msj'=>'Recurso para varios niveles agregado satisfactoriamente'));
+             echo json_encode(array('isOk'=>'true','msj'=>'Recurso para varios niveles agregado satisfactoriamente'));
           }
          $k++;
-          $rs = mysqli_query($conn,"SELECT $id from $tabla ORDER BY $id DESC LIMIT 1");
+         /* $rs = mysqli_query($conn,"SELECT $id from $tabla ORDER BY $id DESC LIMIT 1");
           if ($row = mysqli_fetch_row($rs)) {
               $id_ultimo = trim($row[0]);
               $sql2 = "INSERT INTO `bitacora`(`id_usuario`, `evento`,`id_registro`, `tabla`) VALUES ('$usuario','Agregar','$id_ultimo','$tabla')";
               // registrar_bitacora($conexion, $usuario,$id_ultimo,'Agregar',1);
               if ($conn->query($sql2) === TRUE) { 
-                echo json_encode(array('error'=>'false','msj'=>'Recurso  agregado satisfactoriamente en la bitácora. usuario: '.$usuario.' Tabla: '.$tabla.' con el id: '.$id_ultimo));
+                echo json_encode(array('isOk'=>'true','msj'=>'Recurso  agregado satisfactoriamente en la bitácora. usuario: '.$usuario.' Tabla: '.$tabla.' con el id: '.$id_ultimo));
           }
-        }
+        }*/
         }
         else {
-          echo json_encode(array('error'=>'true','msj'=>$conn->error)); 
+          echo json_encode(array('isOk'=>'false','msj'=>$conn->error)); 
           }
       }
     }
@@ -101,19 +101,19 @@ else{
   $sql = "INSERT INTO $tabla (`nombre`, `descripcion`, `id_nivel`, `anno`, `url`, `img_educatico`, `materia`, `apoyos`, `id_usuario`) VALUES ('$nombre','$descripcion','$id_nivel','$anno','$url','$img_educatico','$materia','$apoyo','$usuario')";
   // if ($conn->query($sql) === TRUE) { 
     if ($conn->query($sql) === TRUE) { 
-      echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
-      $rs = mysqli_query($conn,"SELECT $id from $tabla ORDER BY $id DESC LIMIT 1");
+      echo json_encode(array('isOk'=>'true','msj'=>'Recurso agregado satisfactoriamente'));
+    /*  $rs = mysqli_query($conn,"SELECT $id from $tabla ORDER BY $id DESC LIMIT 1");
       if ($row = mysqli_fetch_row($rs)) {
           $id_ultimo = trim($row[0]);
           $sql2 = "INSERT INTO `bitacora`(`id_usuario`, `evento`,`id_registro`, `tabla`) VALUES ('$usuario','Agregar','$id_ultimo','$tabla')";
           // registrar_bitacora($conexion, $usuario,$id_ultimo,'Agregar',1);
           if ($conn->query($sql2) === TRUE) { 
-            echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente en la bitácora. usuario: '.$usuario.' Tabla: '.$tabla.' con el id: '.$id_ultimo));
+            echo json_encode(array('isOk'=>'true','msj'=>'Recurso agregado satisfactoriamente en la bitácora. usuario: '.$usuario.' Tabla: '.$tabla.' con el id: '.$id_ultimo));
       }
-    }
+    }*/
     }
       else {
-    echo json_encode(array('error'=>'true','msj'=>$conn->error)); 
+    echo json_encode(array('isOk'=>'false','msj'=>$conn->error)); 
     }
 }
    
