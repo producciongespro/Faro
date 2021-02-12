@@ -73,7 +73,7 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "planCiencias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/pri/ppd_frances_ciencias_primero.docx",  
         "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/pri/ppd_frances_matematicas_primero.docx", 
-        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/pri/ppd_frances_primero.docx"        
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/pri/ppd.frances_bilingues_I_periodo_primero.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -83,7 +83,7 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "planCiencias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/seg/ppd_frances_ciencias_segundo.docx",  
         "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/seg/ppd_frances_matem_segundo.docx", 
-        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/seg/ppd_frances_segundo.docx"        
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/seg/ppd.frances_bilingues_I_periodo_segundo.docx"        
     },
     {
         "nivel" : "Primaria",
@@ -93,7 +93,7 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "planCiencias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/sex/ppd_frances_cienc_sexto.docx",  
         "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/sex/ppd_frances_matemt_sexto.docx", 
-        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/sex/ppd_frances_sexto.docx"         
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/sex/ppd.frances_bilingues_I_periodo_tercero.docx"         
     },
     {
         "nivel" : "Primaria",
@@ -103,7 +103,7 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "planCiencias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/cua/ppd_frances_cienc_cuarto.docx",  
         "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/cua/ppd_frances_matem_cuarto.docx", 
-        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/cua/ppd_frances_cuarto.docx"         
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/cua/ppd.frances_bilingues_I_periodo_cuarto.docx"         
     },
     {
         "nivel" : "Primaria",
@@ -112,7 +112,7 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "planCiencias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/qui/ppd_frances_cienc_quinto.docx",  
         "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/qui/ppd_frances_matem_quinto.docx", 
-        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/qui/ppd_frances_quinto.docx"           
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/qui/ppd.frances_bilingues_I_periodo_quinto.docx"           
     },
     {
         "nivel" : "Primaria",
@@ -122,7 +122,7 @@
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "planCiencias" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/qui/ppd_frances_cienc_quinto.docx",  
         "planMate" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/qui/ppd_frances_matem_quinto.docx", 
-        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/qui/ppd_frances_quinto.docx"        
+        "planFrances" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/fran/bilin/qui/ppd.frances_bilingues_I_periodo_sexto.docxx"        
     },
     
 
@@ -346,21 +346,21 @@
         "materia" : "Italiano",
         "distribucion": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ital/4.ppd_italiano_lengua_extranjer_I_periodo_cuarto.docx"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ital/4.ppd_italiano_lengua_extranjera_I_periodo_cuarto.docx"        
     },
     {
         "nivel" : "Primaria",
         "anno" : "Quinto",
         "materia" : "Italiano",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ital/5.ppd_italiano_lengua_extranjera_I_periodo_quinto.docx"        
     },
     {
         "nivel" : "Primaria",
         "anno" : "Sexto",
         "materia" : "Italiano",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo"        
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/prim/planea/ital/6.ppd_italiano_lengua_extranjera_I_periodo_sexto.docx"        
     },
 
 
@@ -623,7 +623,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/leng/1.ppd_italiano_lengua_extranjera_I_periodo_septimo.docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -631,7 +631,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/leng/2.ppd_italiano_lengua_extranjera_I_periodo_octavo.docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -639,7 +639,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/leng/3.ppd_italiano_lengua_extranjera_I_periodo_noveno.docx" 
     },  
     {
         "nivel" : "Secundaria",
@@ -647,7 +647,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/leng/4.ppd_italiano_lengua_extranjera_I_periodo_decimo.docx" 
     }, 
     {
         "nivel" : "Secundaria",
@@ -655,7 +655,7 @@
         "materia" : "Italiano",
         "tipoPlan" : "Lengua Italiana",  
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/leng/5.ppd_italiano_lengua_extranjera_I_periodo_undecimo.docx" 
     }, 
 
 
@@ -668,7 +668,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/cult/1.ppd_italiano_cultural_septimo.docx" 
     }, 
     {
         "nivel" : "Secundaria",
@@ -676,7 +676,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/cult/2.ppd_italiano_cultural_octavo.docx" 
     },
     {
         "nivel" : "Secundaria",
@@ -684,7 +684,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/cult/3.ppd_italiano_cultural_noveno.docx" 
     },  
     {
         "nivel" : "Secundaria",
@@ -692,7 +692,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/cult/4.ppd_italiano_cultural_decimo.docx" 
     },  
     {
         "nivel" : "Secundaria",
@@ -700,7 +700,7 @@
         "materia" : "Italiano",
         "tipoPlan" :  "Aspectos Culturales",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "nulo" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ital/cult/5.ppd_italiano_cultural_undecimo.docx" 
     }
 
 

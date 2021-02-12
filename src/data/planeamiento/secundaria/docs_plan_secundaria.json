@@ -680,7 +680,7 @@
         "anno" : "Décimo",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/10_decimo_academico.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/10_decimo_orientacion.docx"
     },
     {
         "nivel" : "Secundaria",
@@ -688,7 +688,7 @@
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "tecnicoNocturno":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/col_tec_seccion_nocturna.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/11_undecimo_academico.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/11_undecimo_orientacion.docx"
         },
 
 
