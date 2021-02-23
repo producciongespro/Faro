@@ -1,0 +1,530 @@
+[      
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",  
+        "mes": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/set/1.ppd_septimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",  
+        "mes": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/set/1.ppd_septimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática", 
+        "mes": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/set/1.ppd_septimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",
+        "mes": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",
+        "mes": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",
+        "mes": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",
+        "mes": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",
+        "mes": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/set/1.ppd_septimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",
+        "mes": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/set/1.ppd_septimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",
+        "mes": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/set/1.ppd_septimo_matematica_CAN.docx"        
+    },
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",  
+        "mes": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/oct/2.ppd_octavo_matematica_CAN.docxx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",  
+        "mes": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/oct/2.ppd_octavo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática", 
+        "mes": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/oct/2.ppd_octavo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",
+        "mes": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",
+        "mes": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",
+        "mes": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",
+        "mes": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",
+        "mes": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/oct/2.ppd_octavo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",
+        "mes": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/oct/2.ppd_octavo_matematica_CAN.docxx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",
+        "mes": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/oct/2.ppd_octavo_matematica_CAN.docx"        
+    },
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Noveno",    
+        "modulo" : "Matemática",  
+        "mes": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/nov/3.ppd_noveno_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática",  
+        "mes": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/nov/3.ppd_noveno_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática", 
+        "mes": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/nov/3.ppd_noveno_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática",
+        "mes": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática",
+        "mes": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática",
+        "mes": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática",
+        "mes": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática",
+        "mes": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/nov/3.ppd_noveno_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática",
+        "mes": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/nov/3.ppd_noveno_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática",
+        "mes": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/nov/3.ppd_noveno_matematica_CAN.docx"        
+    },
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",  
+        "mes": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/dec/4.ppd_decimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",  
+        "mes": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/dec/4.ppd_decimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática", 
+        "mes": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/dec/4.ppd_decimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",
+        "mes": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",
+        "mes": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",
+        "mes": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",
+        "mes": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",
+        "mes": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/dec/4.ppd_decimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",
+        "mes": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/dec/4.ppd_decimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",
+        "mes": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/dec/4.ppd_decimo_matematica_CAN.docx"        
+    },
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)", 
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",  
+        "mes": "Febrero",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/und/5.ppd_undecimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",  
+        "mes": "Marzo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/und/5.ppd_undecimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática", 
+        "mes": "Abril",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/und/5.ppd_undecimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",
+        "mes": "Mayo",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",
+        "mes": "Junio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",
+        "mes": "Julio",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",
+        "mes": "Agosto",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "nulo"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",
+        "mes": "Septiembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/und/5.ppd_undecimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",
+        "mes": "Octubre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/und/5.ppd_undecimo_matematica_CAN.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegios Académicos Nocturnos (CAN)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",
+        "mes": "Noviembre",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/can/mate/und/5.ppd_undecimo_matematica_CAN.docx"        
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)", 
+        "anno" : "Séptimo",    
+        "modulo" : "Matemática",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/mate/1.ppd_septimo_matematica_coned.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Octavo",    
+        "modulo" : "Matemática",  
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/mate/2.ppd_octavo_matematica_coned.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Noveno",    
+        "modulo" : "Matemática", 
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/mate/3.ppd_noveno_matematica_coned.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Décimo",    
+        "modulo" : "Matemática",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/mate/4.ppd_decimo_matematica_coned.docx"        
+    },
+    {
+        "nivel": "Jóvenes y Adultos",
+        "modalidad" : "Colegio Nacional de Educación a Distancia (CONED)",
+        "anno" : "Undécimo",    
+        "modulo" : "Matemática",
+        "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/jov_adul/planea/coned/mate/5.ppd_undecimo_matematica_coned.docx"        
+    }
+
+
+
+]
