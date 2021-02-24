@@ -3,18 +3,24 @@
         "nivel": "Aula Edad",
         "anno": "Primero",
         "materia": "Ciencias",
-        "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/seg/potenciacion_ciencias_2.zip"
+        "urlZip": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/seg/potenciacion_ciencias_2.zip"
     },
     {
         "nivel": "Aula Edad",
         "anno": "Primero",
         "materia": "Español",
-        "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/seg/potenciacion_ciencias_2.zip"
+        "urlZip": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/seg/potenciacion_ciencias_2.zip"
     },
     {
         "nivel": "Aula Edad",
         "anno": "Segundo",
         "materia": "Español",
-        "plantilla": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/seg/potenciacion_ciencias_2.zip"
+        "urlZip": "faro_referencias/8_ref_apoyos_planea/plantillas/peda_hosp/cien/seg/potenciacion_ciencias_2.zip"
+    },
+    {
+        "nivel": "Aula Edad",
+        "anno": "Primero",
+        "materia": "Matemática",
+        "urlZip": "nulo"
     }
 ]

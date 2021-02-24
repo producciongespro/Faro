@@ -2334,17 +2334,17 @@ class BuscadorPlaneamiento extends Component {
                   Asignatura: {array[index].materia}
                 </span>
               </div>
-              {array[index].plantilla !== "nulo" ? (
+              {array[index].urlZip !== "nulo" ? (
                 <div className="card-body mr-2">
                   <a
                     tabIndex="7"
                     title="Descargar potenciación"
                     className="font-2 etiquetas badge badge-info mr-2 px-2 py-2"
-                    href={serv + array[index].plantilla}
+                    href={serv + array[index].urlZip}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fas fa-file-pdf"></i> Plantilla
+                    <i className="fas fa-file-archive"></i>  Archivos zip
                   </a>
                 </div>
               ) : (
@@ -2354,7 +2354,7 @@ class BuscadorPlaneamiento extends Component {
                     title="Potenciación no disponible"
                     className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2"
                   >
-                    <i className="fas fa-ban"></i> Plantilla no disponible
+                    <i className="fas fa-ban"></i> Archivo no disponible no disponible
                   </span>
                 </div>
               )}
@@ -2412,10 +2412,7 @@ class BuscadorPlaneamiento extends Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {
-                      //<i className="fas fa-file-zip"></i> Zip
-                    }
-                    🗜️ Zip
+                  <i className="fas fa-file-archive"></i>  Archivos zip
                   </a>
                 </div>
               ) : (
