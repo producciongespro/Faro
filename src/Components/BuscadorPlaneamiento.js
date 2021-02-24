@@ -46,6 +46,9 @@ import dataPedagogiaHospitalaria from "../data/planeamiento/hospitalaria/docs_pl
 //Aula edad
 import dataAulaEdad from "../data/planeamiento/edad/docs_aula_edad.json";
 
+//Liceos rurales
+import dataRurales from "../data/planeamiento/rurales/docs_liceos_rurales.json";
+
 // Select General
 import listasPlan from "../data/planeamiento/select_general.json";
 
@@ -253,6 +256,11 @@ class BuscadorPlaneamiento extends Component {
       case "Pedagogía Hospitalaria":
         this.setState({ materia: valor }, () => {
           console.log("materia seleccionada", this.state.materia);
+        });
+        break;
+      case "Liceos rurales":
+        this.setState({ anno: valor }, () => {
+          console.log("año para liceos rurales:", this.state.anno);
         });
         break;
       case "Jóvenes y Adultos":
@@ -669,6 +677,19 @@ class BuscadorPlaneamiento extends Component {
     return tmpArray;
   };
 
+  filtrarRurales = (anno, modalidad) => {
+    //console.log("modalidad", modalidad);
+    let array = dataRurales;
+    //console.log("array de rurales", array);
+    let tmpArray = [];
+    for (let index = 0; index < array.length; index++) {
+      if (array[index].anno === anno && array[index].area === modalidad) {
+        tmpArray.push(array[index]);
+      }
+    }
+    return tmpArray;
+  };
+
   filtrarJovenesAdultos = (nivel, modalidad, modulo, mes) => {
     //console.log("modalidad", modalidad);
     let array;
@@ -865,6 +886,16 @@ class BuscadorPlaneamiento extends Component {
           this.state.materia
         );
         this.tarjetasPedagogiaHosp(this.arrayResultado);
+        break;
+      case "Liceos rurales":
+        // caso de filtrado liceos rurales ----
+        //dataRurales
+        this.arrayResultado = this.filtrarRurales(
+          this.state.anno,
+          this.state.modalidad
+        );
+        console.log("🏹", this.arrayResultado);
+        this.tarjetasLiceosRurales(this.arrayResultado);
         break;
       case "Aula Edad":
         // caso de filtrado ped hosp ----
@@ -2351,6 +2382,77 @@ class BuscadorPlaneamiento extends Component {
     }
   };
 
+  //tarjetasLiceosRurales
+  tarjetasLiceosRurales = (array) => {
+    //Pedagogía hospitalaría:
+    console.log("array recibido en tarjetas Liceos rurales:", array);
+    var arrayHtml;
+    var arrayTmp = [];
+    for (let index = 0; index < array.length; index++) {
+      arrayHtml = (
+        <div className="card">
+          {
+            //Renderizado de los encabezados de las tarjetas en los demás casos: primaria y secundaria
+            <React.Fragment>
+              <div className="card-header">
+                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                  Año: {array[index].anno}
+                </span>
+                <span className="mx-2 etiquetas badge badge-secondary  px-3 py-2 ">
+                  Area: {array[index].area}
+                </span>
+              </div>
+              {array[index].plantilla !== "nulo" ? (
+                <div className="card-body mr-2">
+                  <a
+                    tabIndex="7"
+                    title="Descargar potenciación"
+                    className="font-2 etiquetas badge badge-info mr-2 px-2 py-2"
+                    href={serv + array[index].urlZip}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {
+                      //<i className="fas fa-file-zip"></i> Zip
+                    }
+                    🗜️ Zip
+                  </a>
+                </div>
+              ) : (
+                <div className="card-body mr-2">
+                  <span
+                    tabIndex="7"
+                    title="Potenciación no disponible"
+                    className="font-2 etiquetas badge badge-danger  mr-2 px-2 py-2"
+                  >
+                    <i className="fas fa-ban"></i> Documento no disponible
+                  </span>
+                </div>
+              )}
+            </React.Fragment>
+          }
+        </div>
+      );
+      arrayTmp.push(arrayHtml);
+    }
+    this.setState({ tarjetas: arrayTmp });
+    if (array.length <= 0) {
+      this.mensaje = "No se han encontrado resultados.";
+    } else {
+      this.mensaje = (
+        <React.Fragment>
+          <span
+            tabIndex="6"
+            title={"Cantidad de resultados encontrados " + array.length}
+          >
+            Cantidad de resultados encontrados:{" "}
+          </span>{" "}
+          <span className="badge-success px-2 py-1 mx-2"> {array.length} </span>{" "}
+        </React.Fragment>
+      );
+    }
+  };
+
   tarjetasReligion = (array) => {
     // Primaria, secudnaria e intercultural
     //console.log("array recibido:", array);
@@ -3124,7 +3226,12 @@ class BuscadorPlaneamiento extends Component {
               {
                 //CASO 1:Para las materias con distribución mensual
                 this.state.distribucionPlan === "Mensual" &&
-                  this.state.nivel !== "Preescolar" && (
+                  //Para los niveles que no tienen distribución mensaual no se toman en cuenta para
+                  //el render de la cuarta columna
+                  (this.state.nivel !== "Preescolar" ||
+                    this.state.nivel !== "Pedagogía Hospitalaria" ||
+                    this.state.nivel !== "Aula Edad" ||
+                    this.state.nivel !== "Liceos rurales") && (
                     <div className="input-group mb-3">
                       <div className="input-group-prepend">
                         <label
@@ -3265,8 +3372,7 @@ class BuscadorPlaneamiento extends Component {
                                 value={item}
                                 data-etiqueta={item}
                               >
-                                {" "}
-                                {item}{" "}
+                                {item}
                               </option>
                             )
                           )
