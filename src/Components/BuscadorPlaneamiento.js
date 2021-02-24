@@ -3187,25 +3187,15 @@ class BuscadorPlaneamiento extends Component {
 
                     {
                       // 🏥 años para liceos rurales Socioproductiva -----
-                      this.state.nivel === "Liceos rurales" &&
-                        this.state.modalidad === "Socioproductiva" &&
-                        listasPlan["annos-rural socioprod"].map((item, i) => (
-                          <option key={"anno-socio" + i} value={item}>
+                      this.state.nivel === "Liceos rurales" &&                        
+                        listasPlan["Años Secundaria"].map((item, i) => (
+                          <option key={"anno-rural" + i} value={item}>
                             {item}
                           </option>
                         ))
                     }
 
-                    {
-                      // 🏥 años para liceos rurales Personal-social -----
-                      this.state.nivel === "Liceos rurales" &&
-                        this.state.modalidad === "Personal-social" &&
-                        listasPlan["annos-rural personal"].map((item, i) => (
-                          <option key={"anno-personal" + i} value={item}>
-                            {item}
-                          </option>
-                        ))
-                    }
+               
 
                     {
                       // 👨‍👩‍👧 asignaturas Aula edad -----
