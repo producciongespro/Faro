@@ -1,62 +1,57 @@
 {
-"Niveles Generales": [    
+  "Niveles Generales": [
     "Preescolar",
     "Primaria",
-    "Secundaria", 
+    "Secundaria",
     "Unidocentes",
     "Jóvenes y Adultos",
     "Pedagogía Hospitalaria",
     "Lenguas y Culturas Indígenas Primaria",
+    "Liceos rurales",
     "Aula Edad"
-    ],
+  ],
 
-
-"Materias Básicas" : [    
+  "Materias Básicas": [
     "Ciencias",
     "Español",
     "Estudios Sociales",
     "Matemática"
-    ],
+  ],
 
-"Periodos" : [
-    "I",
-    "II",
-    "III"
-],
+  "Periodos": ["I", "II", "III"],
 
+  "Ciclo Primaria": ["I Ciclo", "II Ciclo"],
 
-"Ciclo Primaria" : [
-    "I Ciclo",
-    "II Ciclo"
-    ],
-
-
-"Pedagogía Hospitalaria" : [
+  "Pedagogía Hospitalaria": [
     "Ciencias",
-    "Español",  
+    "Español",
     "Educación Física",
     "Educación Musical",
     "Estudios Sociales",
     "Matemática"
-    ],
+  ],
 
-    "Aula Edad" : [
-        "Ciencias",
-        "Español",  
-        "Educación Física",
-        "Educación para el Hogar",
-        "Estudios Sociales",
-        "Matemática"
-        ],
+  "Aula Edad": [
+    "Ciencias",
+    "Español",
+    "Educación Física",
+    "Educación para el Hogar",
+    "Estudios Sociales",
+    "Matemática"
+  ],
 
+  "rurales areas": [
+      "Socioproductiva",
+      "Personal-social"
+  ],
 
-"Primaria" : [            
+  "Primaria": [
     "Artes Industriales",
     "Artes Plásticas",
-    "Ciencias",                            
+    "Ciencias",
     "Educación Física",
     "Educación Musical",
-    "Educación para el Hogar",                
+    "Educación para el Hogar",
     "Educación Religiosa",
     "Español",
     "Estudios Sociales",
@@ -65,108 +60,93 @@
     "Informática Educativa",
     "Italiano",
     "Matemática",
-    "Orientación" 
-    ],
+    "Orientación"
+  ],
 
-
-"Secundaria III Ciclo" : [    
-    "Artes Industriales",            
-    "Artes Plásticas",            
+  "Secundaria III Ciclo": [
+    "Artes Industriales",
+    "Artes Plásticas",
     "Ciencias",
-    "Educación Cívica",            
-    "Educación Física",        
+    "Educación Cívica",
+    "Educación Física",
     "Educación Musical",
     "Educación para el Hogar",
-    "Educación Religiosa",        
-    "Español",        
-    "Estudios Sociales",        
-    "Francés",        
-    "Inglés",
-    "Informática Educativa",
-    "Italiano",        
-    "Matemática",
-    "Orientación"    
-    ],
-
-"Secundaria Décimo" : [              
-        "Artes Plásticas",        
-        "Biología",                
-        "Educación Cívica",            
-        "Educación Física",        
-        "Educación Musical",        
-        "Educación para la Afectividad y la Sexualidad Integral",
-        "Educación Religiosa",        
-        "Español",        
-        "Estudios Sociales",        
-        "Física",
-        "Francés",        
-        "Inglés",
-        "Informática Educativa",
-        "Italiano",        
-        "Matemática",
-        "Orientación",
-        "Psicología",
-        "Química"        
-],
-
-"Secundaria Undécimo" : [          
-    "Artes Plásticas",        
-    "Biología",                
-    "Educación Cívica",            
-    "Educación Física",        
-    "Educación Musical",    
-    "Educación Religiosa",        
-    "Español",        
+    "Educación Religiosa",
+    "Español",
     "Estudios Sociales",
-    "Filosofía",        
-    "Física",
-    "Francés",        
+    "Francés",
     "Inglés",
     "Informática Educativa",
-    "Italiano",        
+    "Italiano",
     "Matemática",
-    "Orientación",    
-    "Química"        
-],
+    "Orientación"
+  ],
 
-"Secundaria Duodécimo" : [
+  "Secundaria Décimo": [
+    "Artes Plásticas",
+    "Biología",
+    "Educación Cívica",
+    "Educación Física",
+    "Educación Musical",
+    "Educación para la Afectividad y la Sexualidad Integral",
+    "Educación Religiosa",
+    "Español",
+    "Estudios Sociales",
+    "Física",
+    "Francés",
+    "Inglés",
+    "Informática Educativa",
+    "Italiano",
     "Matemática",
-    "Español"
-],
+    "Orientación",
+    "Psicología",
+    "Química"
+  ],
 
+  "Secundaria Undécimo": [
+    "Artes Plásticas",
+    "Biología",
+    "Educación Cívica",
+    "Educación Física",
+    "Educación Musical",
+    "Educación Religiosa",
+    "Español",
+    "Estudios Sociales",
+    "Filosofía",
+    "Física",
+    "Francés",
+    "Inglés",
+    "Informática Educativa",
+    "Italiano",
+    "Matemática",
+    "Orientación",
+    "Química"
+  ],
 
+  "Secundaria Duodécimo": ["Matemática", "Español"],
 
-"Años Primaria" : [        
+  "Años Primaria": [
     "Primero",
     "Segundo",
     "Tercero",
     "Cuarto",
     "Quinto",
     "Sexto"
-    ],
+  ],
 
+  "Años Secundaria": ["Séptimo", "Octavo", "Noveno", "Décimo", "Undécimo"],
 
-"Años Secundaria" : [
-    "Séptimo",
-    "Octavo",
-    "Noveno",
-    "Décimo",
-    "Undécimo"    
-    ],
-
-
-"Jóvenes y Adultos" : [       
-    "Colegios Académicos Nocturnos (CAN)",       
+  "Jóvenes y Adultos": [
+    "Colegios Académicos Nocturnos (CAN)",
     "Colegio Nacional de Educación a Distancia (CONED)",
     "IPEC CINDEA Nivel I",
     "IPEC CINDEA Nivel II",
     "IPEC CINDEA Nivel III"
-    ],
+  ],
 
-
-"Colegios Académicos Nocturnos (CAN)" : [
+  "Colegios Académicos Nocturnos (CAN)": [
     "Biología",
-    "Ciencias",           
+    "Ciencias",
     "Educación Cívica",
     "Educación Religiosa",
     "Español",
@@ -177,10 +157,9 @@
     "Matemática",
     "Orientación",
     "Química"
-    ],
+  ],
 
-
-"Colegio Nacional de Educación a Distancia (CONED)" : [
+  "Colegio Nacional de Educación a Distancia (CONED)": [
     "Biología",
     "Ciencias",
     "Educación Cívica",
@@ -188,10 +167,9 @@
     "Estudios Sociales",
     "Inglés",
     "Matemática"
-    ],
+  ],
 
-
-"IPEC CINDEA Nivel I" : [
+  "IPEC CINDEA Nivel I": [
     "Módulo 1",
     "Módulo 2",
     "Módulo 3",
@@ -217,10 +195,9 @@
     "Módulo 23",
     "Módulo 24",
     "Módulo 25"
-    ],
+  ],
 
-
-"IPEC CINDEA Nivel II" : [
+  "IPEC CINDEA Nivel II": [
     "Módulo 30",
     "Módulo 31",
     "Módulo 32",
@@ -246,10 +223,9 @@
     "Módulo 52",
     "Módulo 53",
     "Orientación"
-    ],
+  ],
 
-
-"IPEC CINDEA Nivel III" : [
+  "IPEC CINDEA Nivel III": [
     "Módulo 60",
     "Módulo 61",
     "Módulo 62",
@@ -268,10 +244,9 @@
     "Módulo 75",
     "Módulo 76",
     "Orientación"
-    ],
+  ],
 
-
-"Interculturalidad" : [
+  "Interculturalidad": [
     "Cultura Boruca",
     "Cultura Bribri de Buenos Aires",
     "Cultura Bribri de Sulá",
@@ -284,7 +259,7 @@
     "Cultura Ngäbe",
     "Cultura Térraba",
     "Idioma Ngäbere",
-    "Lengua Boruca", 
+    "Lengua Boruca",
     "Lengua Bribri de Buenos Aires",
     "Lengua Bribri de Sulá",
     "Lengua Cabécar de Buenos Aires",
@@ -292,10 +267,9 @@
     "Lengua Cabécar de Sulá",
     "Lengua Maleku",
     "Lengua Térraba"
-    ],
+  ],
 
-
-"Meses" : [    
+  "Meses": [
     "Febrero",
     "Marzo",
     "Abril",
@@ -306,90 +280,56 @@
     "Septiembre",
     "Octubre",
     "Noviembre"
-    ],
+  ],
 
+  "Plan Estudios Francés Primaria": [
+    "Francés como Lengua Extranjera",
+    "Secciones Bilingües Español Francés"
+  ],
 
-"Plan Estudios Francés Primaria" : [
-        "Francés como Lengua Extranjera", 
-        "Secciones Bilingües Español Francés" 
-        ],
+  "Plan Estudios Francés Secundaria": ["Francés como Lengua Extranjera"],
+  "__Plan Estudios Francés Secundaria": [
+    "Francés como Lengua Extranjera",
+    "Secciones de Francés avanzado"
+  ],
 
+  "Plan Estudios Inglés Primaria": ["Inglés como Lengua Extranjera"],
 
-"Plan Estudios Francés Secundaria" : [
-    "Francés como Lengua Extranjera"     
-    ],
-"__Plan Estudios Francés Secundaria" : [
-        "Francés como Lengua Extranjera",
-         "Secciones de Francés avanzado"
-        ],
+  "__Plan Estudios Inglés Primaria": [
+    "Inglés como Lengua Extranjera",
+    "Secciones Bilingües Español-Inglés"
+  ],
 
-"Plan Estudios Inglés Primaria" : [    
-    "Inglés como Lengua Extranjera"    
-    ],
-
-"__Plan Estudios Inglés Primaria" : [    
-        "Inglés como Lengua Extranjera",
-        "Secciones Bilingües Español-Inglés"
-        ],
-
-
-"Plan Estudios Inglés Secundaria" : [
-    "Inglés como Lengua Extranjera",        
+  "Plan Estudios Inglés Secundaria": [
+    "Inglés como Lengua Extranjera",
     "Liceos Experimentales Bilingües/Secciones Bilingües Español-Inglés"
-    ],
+  ],
 
-
-"Plan Estudios Italiano Secundaria" : [
-    "Lengua Italiana",        
+  "Plan Estudios Italiano Secundaria": [
+    "Lengua Italiana",
     "Aspectos Culturales"
-    ],
+  ],
 
-"Materias Básicas Unidocentes" : [    
+  "Materias Básicas Unidocentes": [
     "Artes Industriales",
-    "Artes Plásticas",    
+    "Artes Plásticas",
     "Ciencias",
     "Educación Física",
     "Educación para el Hogar",
     "Español",
     "Estudios Sociales",
-    "Inglés",   
+    "Inglés",
     "Matemática"
-    ],
-    
-"Correlacionado Unidocentes" : [
-    "I Ciclo",
-    "II Ciclo"
-    ]
+  ],
 
+  "Correlacionado Unidocentes": ["I Ciclo", "II Ciclo"],
 
+"annos-rural socioprod": [
+    "Séptimo", "Octavo"
+],
 
-}  
+"annos-rural personal": [
+    "Noveno", "Décimo", "Undécimo"
+]
 
-
-
-
-
-
-
-
-
-
-
-
- 
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
+}

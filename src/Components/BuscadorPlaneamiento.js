@@ -44,7 +44,7 @@ import dataUnidocente from "../data/planeamiento/unidocente/docs_plan_unidocente
 import dataPedagogiaHospitalaria from "../data/planeamiento/hospitalaria/docs_plan_pedagogia_hosp.json";
 
 //Aula edad
-import dataAulaEdad from '../data/planeamiento/edad/docs_aula_edad.json';
+import dataAulaEdad from "../data/planeamiento/edad/docs_aula_edad.json";
 
 // Select General
 import listasPlan from "../data/planeamiento/select_general.json";
@@ -168,6 +168,11 @@ class BuscadorPlaneamiento extends Component {
           console.log("modalidad:", this.state.modalidad);
         });
         break;
+      case "Liceos rurales":
+        this.setState({ modalidad: e.target.value }, () => {
+          console.log("modalidad: (area) ", this.state.modalidad);
+        });
+        break;
       default:
         console.log("Opcion fuera de rango en select nivel");
         break;
@@ -240,11 +245,11 @@ class BuscadorPlaneamiento extends Component {
           console.log("Asignatura seleccionada", this.state.asignatura);
         });
         break;
-        case "Aula Edad":
-            this.setState({ materia: valor }, () => {
-              console.log("👶 Asignatura para aula edad:", this.state.materia);
-            });
-            break;
+      case "Aula Edad":
+        this.setState({ materia: valor }, () => {
+          console.log("👶 Asignatura para aula edad:", this.state.materia);
+        });
+        break;
       case "Pedagogía Hospitalaria":
         this.setState({ materia: valor }, () => {
           console.log("materia seleccionada", this.state.materia);
@@ -648,7 +653,6 @@ class BuscadorPlaneamiento extends Component {
     return tmpArray;
   };
 
-
   filtrarAulaEdad = (nivel, anno, materia) => {
     //console.log("modalidad", modalidad);
     let array = dataAulaEdad;
@@ -664,8 +668,6 @@ class BuscadorPlaneamiento extends Component {
     }
     return tmpArray;
   };
-
-
 
   filtrarJovenesAdultos = (nivel, modalidad, modulo, mes) => {
     //console.log("modalidad", modalidad);
@@ -856,7 +858,7 @@ class BuscadorPlaneamiento extends Component {
         this.tarjetasPreescolar(this.arrayResultado);
         break;
       case "Pedagogía Hospitalaria":
-          // caso de filtrado ped hosp ----
+        // caso de filtrado ped hosp ----
         this.arrayResultado = this.filtrarPedagogiaHospitalaria(
           this.state.nivel,
           this.state.anno,
@@ -864,17 +866,16 @@ class BuscadorPlaneamiento extends Component {
         );
         this.tarjetasPedagogiaHosp(this.arrayResultado);
         break;
-        case "Aula Edad":
-            // caso de filtrado ped hosp ----
-          this.arrayResultado = this.filtrarAulaEdad(
-            this.state.nivel,
-            this.state.anno,
-            this.state.materia
-          );
-          console.log("🏹", this.arrayResultado);
-         this.tarjetasAulaEdad(this.arrayResultado);
-          break;
-
+      case "Aula Edad":
+        // caso de filtrado ped hosp ----
+        this.arrayResultado = this.filtrarAulaEdad(
+          this.state.nivel,
+          this.state.anno,
+          this.state.materia
+        );
+        console.log("🏹", this.arrayResultado);
+        this.tarjetasAulaEdad(this.arrayResultado);
+        break;
 
       default:
         console.log("Nvel fuera de rango");
@@ -2729,8 +2730,7 @@ class BuscadorPlaneamiento extends Component {
                   </option>
                   {listasPlan["Niveles Generales"].map((item, i) => (
                     <option key={"niveles" + i} value={item}>
-                      {" "}
-                      {item}{" "}
+                      {item}
                     </option>
                   ))}
                 </select>
@@ -2755,6 +2755,12 @@ class BuscadorPlaneamiento extends Component {
                         // Si es preescolar cambia año por contenido
                         this.state.nivel === "Preescolar" && (
                           <span> Contenido </span>
+                        )
+                      }
+                      {
+                        // Caso de liceos rurales cambia a "Area"
+                        this.state.nivel === "Liceos rurales" && (
+                          <span> Area </span>
                         )
                       }
                       {
@@ -2856,18 +2862,28 @@ class BuscadorPlaneamiento extends Component {
 
                     {
                       // MOD Aula edad ------------------------------- requ correo Tatiana 15-2-21
+                      this.state.nivel === "Aula Edad" &&
+                        listasPlan["Años Primaria"].map((item, i) => (
+                          <option key={"anno" + i} value={item}>
+                            {item}
+                          </option>
+                        ))
                     }
-                    {this.state.nivel === "Aula Edad" &&
-                      listasPlan["Años Primaria"].map((item, i) => (
-                        <option key={"anno" + i} value={item}>
-                          {item}
-                        </option>
-                      ))}
+
+                    {
+                      // MOD Liceos rurales ------------------------------- requ correo Tatiana 15-2-21
+                      this.state.nivel === "Liceos rurales" &&
+                        listasPlan["rurales areas"].map((item, i) => (
+                          <option key={"area" + i} value={item}>
+                            {item}
+                          </option>
+                        ))
+                    }
                   </select>
                 </div>
               </div>
             )}
-            {/*******Columna 3  ASIGNATURA (MATERIA) *********/}
+            {/*******Columna 3  ASIGNATURA (MATERIA - MODALIDAD) *********/}
             <div className="col-sm-3">
               {this.state.nivel !== "Preescolar" && (
                 <div className={this.claseCSSMaterias}>
@@ -2902,6 +2918,12 @@ class BuscadorPlaneamiento extends Component {
                         ) : (
                           <span>Asignatura</span>
                         ))}
+                      {
+                        //etiqueta para Liceos rurales
+                        this.state.nivel === "Liceos rurales" && (
+                          <span>Año</span>
+                        )
+                      }
                     </label>
                   </div>
                   <select
@@ -2912,8 +2934,7 @@ class BuscadorPlaneamiento extends Component {
                   >
                     {this.state.nivel !== "Preescolar" && (
                       <option defaultValue value="">
-                        {" "}
-                        Seleccione:{" "}
+                        Seleccione:
                       </option>
                     )}
 
@@ -3057,6 +3078,28 @@ class BuscadorPlaneamiento extends Component {
                       this.state.nivel === "Pedagogía Hospitalaria" &&
                         listasPlan["Pedagogía Hospitalaria"].map((item, i) => (
                           <option key={"materia" + i} value={item}>
+                            {item}
+                          </option>
+                        ))
+                    }
+
+                    {
+                      // 🏥 años para liceos rurales Socioproductiva -----
+                      this.state.nivel === "Liceos rurales" &&
+                        this.state.modalidad === "Socioproductiva" &&
+                        listasPlan["annos-rural socioprod"].map((item, i) => (
+                          <option key={"anno-socio" + i} value={item}>
+                            {item}
+                          </option>
+                        ))
+                    }
+
+                    {
+                      // 🏥 años para liceos rurales Personal-social -----
+                      this.state.nivel === "Liceos rurales" &&
+                        this.state.modalidad === "Personal-social" &&
+                        listasPlan["annos-rural personal"].map((item, i) => (
+                          <option key={"anno-personal" + i} value={item}>
                             {item}
                           </option>
                         ))
