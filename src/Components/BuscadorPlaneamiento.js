@@ -2402,7 +2402,7 @@ class BuscadorPlaneamiento extends Component {
                   Area: {array[index].area}
                 </span>
               </div>
-              {array[index].plantilla !== "nulo" ? (
+              {array[index].urlZip !== "nulo" ? (
                 <div className="card-body mr-2">
                   <a
                     tabIndex="7"
