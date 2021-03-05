@@ -405,7 +405,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_septimo.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_septimo.zip"
     },  
     {
         "nivel" : "Secundaria",
@@ -413,7 +413,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_octavo.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_octavo.zip"
     },  
     {
         "nivel" : "Secundaria",
@@ -421,7 +421,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_noveno.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_noveno.zip"
     },  
     {
         "nivel" : "Secundaria",
@@ -429,7 +429,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_decimo.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_decimo.zip"
     }, 
     {
         "nivel" : "Secundaria",
@@ -437,7 +437,7 @@
         "materia" : "Francés",
         "tipoPlan" : "Francés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_undecimo.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/fran/lengu/ppd_frances_undecimo.zip"
     }, 
 
 
@@ -514,7 +514,7 @@
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "ejemplo": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/example_unit_1_level_7th.docx",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_7th_grade.doc"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_7th_grade.zip"
        
     },  
     {
@@ -524,7 +524,7 @@
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "ejemplo": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/example_unit_1_level_8th.docx",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_8th_grade.doc"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_8th_grade.zip"
     },  
     {
         "nivel" : "Secundaria",
@@ -533,7 +533,7 @@
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "ejemplo": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/example_unit_1_level_9th.docx",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_9th_grade.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd_guide_9th_grade.zip"
     },  
     {
         "nivel" : "Secundaria",
@@ -550,7 +550,7 @@
         "materia" : "Inglés",
         "tipoPlan" : "Inglés como Lengua Extranjera",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "ejemplo": "",
+        "ejemplo": "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/example_unit_1_level_11th.docx",
         "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/ingl/lengu/ppd.guide_11th_and_tefl_mep_11th_12th.zip"
     }, 
 

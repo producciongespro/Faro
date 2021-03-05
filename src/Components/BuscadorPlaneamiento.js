@@ -1533,8 +1533,8 @@ class BuscadorPlaneamiento extends Component {
                 )
               }
 
-              {this.state.anno === "Undécimo" && (
-                <React.Fragment>
+                {/* {this.state.anno === "Undécimo" && ( */}
+                {/* <React.Fragment>
                   <a
                     tabIndex="7"
                     title="Descargar programa académico Undécimo 2009"
@@ -1546,10 +1546,10 @@ class BuscadorPlaneamiento extends Component {
                     <i className="fas fa-file-pdf"></i> Undécimo académico
                     programa 2009
                   </a>
-                </React.Fragment>
-              )}
+                </React.Fragment> */}
+              {/* )} */}
             </div>
-          }
+          }  
         </div>
       );
       arrayTmp.push(arrayHtml);
