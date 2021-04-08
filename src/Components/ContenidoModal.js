@@ -17,6 +17,30 @@ function ContenidoModal(props) {
                 <iframe className="borde-video" title="video ministra" width="100%" height="400" src={video.ministra} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             )
             break;
+            case "politicasMEP":
+                html = (
+                    <div tabIndex="4" className="row text-center">
+                        <div className="col-sm-4">
+                            <a tabIndex="5" title="Política Educativa" href="https://www.mep.go.cr/sites/default/files/page/adjuntos/politicaeducativa.pdf" target="_blank" rel="noopener noreferrer">
+                                <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicaeducativa.png" alt="Política Educativa"></img>
+                            </a>
+                        </div>
+    
+                        <div className="col-sm-4">
+                            <a tabIndex="6" title="Política Curricular" href="https://www.mep.go.cr/sites/default/files/documentos/transf-curricular-v-academico-vf.pdf" target="_blank" rel="noopener noreferrer">
+                                <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicacurricular.png" alt="Política Curricular"></img>
+                            </a>
+                        </div>
+    
+                        <div className="col-sm-4">
+                            <a tabIndex="7" title="Política Educación para el Desarrollo Sosteniblee" href="http://cse.go.cr/politica-y-plan-de-accion-de-educacion-para-el-desarrollo-sostenible" target="_blank" rel="noopener noreferrer">
+                                <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicadesarrollosost.png" alt="Política Educación para el Desarrollo Sostenible"></img>
+                            </a>
+                        </div>
+
+                    </div>
+                )
+                break;
         case "aprendoEnCasa":
             html = (
                 <div tabIndex="4" className="row">
@@ -33,7 +57,7 @@ function ContenidoModal(props) {
                     </div>
 
                     <div className="col-sm-3">
-                        <a tabIndex="7" title="Plantillas de aprendizaje" href="http://www.ddc.mep.go.cr/estrategia-covid19/plantillas-aprendizajes-base-2020" target="_blank" rel="noopener noreferrer">
+                        <a tabIndex="7" title="Plantillas de aprendizaje" href="http://ddc.mep.go.cr/estrategia-covid19/curso-lectivo-2021" target="_blank" rel="noopener noreferrer">
                             <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ web_ventana2b.jpg" alt="Plantillas guía de aprendizaje base"></img>
                         </a>
                     </div>
