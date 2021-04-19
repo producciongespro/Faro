@@ -145,14 +145,14 @@
         "anno" : "Décimo",
         "materia" : "Biología",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/biol/ppd_biologia_decim_undec.docx "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/biol/ppd_biologia_decimo_academica_undecimo_tecnica.zip"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Biología",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/biol/ppd_biologia_decim_undec.docx "
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/biol/ppd_biologia_undecimo_academica_duodecimo.zip"
     },
 
 
@@ -233,7 +233,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/1.ppd_educ_civica_I_unidad_1_periodo_septimo.docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/1.ppd_educ_civica_I_unidad_1_periodo_septimo.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -241,7 +241,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/2.ppd_educ_civica_II_unidad_2_periodo_septimo.docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/2.ppd_educ_civica_II_unidad_2_periodo_septimo.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -249,7 +249,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/3.ppd_educ_civica_III_unidad_3_periodo_septimo.docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/set/3.ppd_educ_civica_III_unidad_3_periodo_septimo.zip" 
     },
 
 
@@ -260,7 +260,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/1.ppd_educ_civica_I_unidad_1_periodo_octavo..docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/1.ppd_educ_civica_I_unidad_1_periodo_octavo.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -268,7 +268,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/2.ppd_educ_civica_I_unidad_2_periodo_octavo..docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/2.ppd_educ_civica_II_unidad_2_periodo_octavo.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -276,7 +276,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/3.ppd_educ_civica_III_unidad_3_periodo_octavo..docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/oct/3.ppd_educ_civica_III_unidad_3_periodo_octavo.zip" 
     },
 
 
@@ -288,7 +288,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/1.ppd_educ_civica_I_unidad_1_periodo_noveno.docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/1.ppd_educ_civica_I_unidad_1_periodo_noveno.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -296,7 +296,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/2.ppd_educ_civica_II_unidad_2_periodo_noveno..docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/2.ppd_educ_civica_II_unidad_2_periodo_noveno.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -304,7 +304,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/3.ppd_educ_civica_III_unidad_3_periodo_noveno..docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/nov/3.ppd_educ_civica_III_unidad_3_periodo_noveno.zip" 
     },
 
 
@@ -316,7 +316,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/1.ppd_educ_civica_I_unidad_1_periodo_decimo.docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/1.ppd_educ_civica_I_unidad_1_periodo_decimo.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -324,7 +324,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/2.ppd_educ_civica_II_unidad_2_periodo_decimo..docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/2.ppd_educ_civica_II_unidad_2_periodo_decimo.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -332,7 +332,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/3.ppd_educ_civica_III_uniidad_3_periodo-decimo..docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/dec/3.ppd_educ_civica_III_unidad_3_periodo_decimo.zip" 
     },
 
 
@@ -344,7 +344,7 @@
         "materia" : "Educación Cívica",
         "periodo": "I",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/1.ppd_educ_civica_I_unidad_1_periodo_undecimo..docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/1.ppd_educ_civica_I_unidad_1_periodo_undecimo.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -352,7 +352,7 @@
         "materia" : "Educación Cívica",
         "periodo": "II",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/2.ppd_educ_civica_II_unidad_2_periodo_undecimo.docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/2.ppd_educ_civica_II_unidad_2_periodo_undecimo.zip" 
     },
     {
         "nivel" : "Secundaria",
@@ -360,7 +360,7 @@
         "materia" : "Educación Cívica",
         "periodo": "III",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/3.ppd_educ_civica_III_unidad_3_periodo_undecimo.docx" 
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_civi/und/3.ppd_educ_civica_III_unidad_3_periodo_undecimo.zip" 
     },
 
 
@@ -427,14 +427,14 @@
         "anno" : "Séptimo",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_septimo.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_septimo.zip"
     },
      {
         "nivel" : "Secundaria",
         "anno" : "Octavo",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_octavo.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_octavo.zip"
     },
     {
         "nivel" : "Secundaria",
@@ -448,14 +448,14 @@
         "anno" : "Décimo",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_decimo.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_decimo.zip"
     },
     {
         "nivel" : "Secundaria",
         "anno" : "Undécimo",
         "materia" : "Educación Musical",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_undecimo.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/educ_musi/ppd_educacion_musical_undecimo.zip"
     },
     
 
@@ -680,7 +680,7 @@
         "anno" : "Décimo",
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/10_decimo_academico.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/10_decimo_orientacion.docx"
     },
     {
         "nivel" : "Secundaria",
@@ -688,7 +688,7 @@
         "materia" : "Orientación",
         "lineamiento" : "faro_referencias/8_ref_apoyos_planea/plantillas/lineamiento/lin_planeamiento_didactico.pdf",
         "tecnicoNocturno":"faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/col_tec_seccion_nocturna.zip",
-        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/11_undecimo_academico.docx"
+        "plantilla" : "faro_referencias/8_ref_apoyos_planea/plantillas/sec/planea/orient/11_undecimo_orientacion.docx"
         },
 
 

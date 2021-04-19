@@ -118,10 +118,22 @@ const DocsOficiales = (props) => {
              * Botones de referencias a documentos educativos oficiales
              */
           }
-          <div className="row">
+          <div className="row text-center">
             <div className="col-3">
               <figure role="button">
-                <img
+              <img 
+                  tabIndex="3"
+                  role= "button"
+                  id="politica" 
+                  alt="Políticas"
+                  src={img + "ch_btn_politicas.png"}
+                  className="botones-portada hvr-pop img-fluid politica ladoDer3"                            
+                  onClick={handleAbriModal}
+                  onKeyPress={handleAbriModal}
+                  data-typecontent ="politicasMEP" 
+                  
+                  />
+                {/* <img
                   tabIndex="2"
                   alt="Documento Políticas Educativas"
                   className="botones-portada hvr-pop img-fluid politica ladoDer3"
@@ -135,10 +147,10 @@ const DocsOficiales = (props) => {
                   onClick={handleAbriModal}
                   onKeyPress={handleAbriModal}
 
-                />
+                /> */}
               </figure>
             </div>
-            <div className="col-3">
+            {/* <div className="col-3">
               <figure role="button">
                 <img
                   tabIndex="3"
@@ -156,13 +168,13 @@ const DocsOficiales = (props) => {
 
                 />
               </figure>
-            </div>
+            </div> */}
             <div className="col-3">
               <figure role="button">
                 <img
                   tabIndex="3"
                   alt="Programas de estudio"
-                  className="botones-portada hvr-pop img-fluid politica ladoIzq2"
+                  className="botones-portada hvr-pop img-fluid politica ladoDer2"
                   id="programas"
                   data-infosource={5}
                   onMouseOver={props.onMouseOver}
@@ -181,7 +193,7 @@ const DocsOficiales = (props) => {
                 <img
                   tabIndex="3"
                   alt="Reglamento evaluación"
-                  className="botones-portada hvr-pop img-fluid politica ladoIzq3"
+                  className="botones-portada hvr-pop img-fluid politica ladoIzq2"
                   id="reglamento"
                   data-infosource={5}
                   onMouseOver={props.onMouseOver}
@@ -194,6 +206,8 @@ const DocsOficiales = (props) => {
 
                 />
               </figure>
+            </div>
+            <div className="col-3">
             </div>
           </div>
 
