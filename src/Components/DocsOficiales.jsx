@@ -126,6 +126,9 @@ const DocsOficiales = (props) => {
                   role= "button"
                   id="politica" 
                   alt="Políticas"
+                  data-infosource={5}
+                  onMouseOver={props.onMouseOver}
+                  onMouseOut={props.onMouseOut}
                   src={img + "ch_btn_politicas.png"}
                   className="botones-portada hvr-pop img-fluid politica ladoDer3"                            
                   onClick={handleAbriModal}
