@@ -36,8 +36,8 @@ class Modal extends Component {
     this.state = {
       htmlContent: "",
       // ancho_modal : modalScreen
-      tipoIncidencia: null,           
-      estadoForm:"espera"      
+      tipoIncidencia: null,
+      estadoForm: "espera"
     };
     this.selectTypeContent = this.selectTypeContent.bind(this);
     setTimeout(this.selectTypeContent, 10);
@@ -61,7 +61,7 @@ class Modal extends Component {
   }
 
   handleEnviarIncidencia = (e) => {
-    this.setState({ estadoForm: "iniciando" }); 
+    this.setState({ estadoForm: "iniciando" });
     const data = {
       "nombre": document.getElementById("nombre").value,
       "correo": document.getElementById("correo").value,
@@ -71,17 +71,17 @@ class Modal extends Component {
 
     if (data.nombre !== "" && data.correo !== "" && data.detalle !== "") {
       const me = this;
-      enviar("http://cajadeherramientas.mep.go.cr/webservices/enviar_reporte.php", data, 
-          function () {
-            me.setState({ estadoForm:"enviado"  });
-          }, 
-          function () { 
-            me.setState({ estadoForm:"errorEnvio" });
-          }
-          );        
-    
+      enviar("http://cajadeherramientas.mep.go.cr/webservices/enviar_reporte.php", data,
+        function () {
+          me.setState({ estadoForm: "enviado" });
+        },
+        function () {
+          me.setState({ estadoForm: "errorEnvio" });
+        }
+      );
+
     } else {
-      this.setState({ estadoForm: "error" });      
+      this.setState({ estadoForm: "error" });
     }
 
   }
@@ -202,39 +202,60 @@ class Modal extends Component {
           </div>
         )
         break;
-        case "politicasMEP":
-          tmpContent = (
-            <div tabIndex="4" className="row text-center">
-              <div  className="row">
-                 <div className="col-3"></div>
-                  <div className="col-6">
-                      <a tabIndex="5" title="Política Educativa" href="https://www.mep.go.cr/sites/default/files/page/adjuntos/politicaeducativa.pdf" target="_blank" rel="noopener noreferrer">
-                          <img className="botones-portada hvr-pop img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicaeducativa.png" alt="Política Educativa"></img>
-                      </a>
+      case "politicasMEP":
+        tmpContent = (
+          <div tabIndex="4" className="">
+            <div className="row text-center">
+              <div className="col-6">
+                <div className="row">
+                  <div className="col-1"></div>
+                  <div className="col-10">
+                    <a tabIndex="5" title="Política Educativa" href="https://www.mep.go.cr/sites/default/files/page/adjuntos/politicaeducativa.pdf" target="_blank" rel="noopener noreferrer">
+                      <img className="botones-portada hvr-pop img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicaeducativa.png" alt="Política Educativa"></img>
+                    </a>
                   </div>
-                  <div className="col-3"></div>
+                  <div className="col-1"></div>
+                </div> <br/>
+                <div className="row">
+                  <div className="col-1"></div>
+                  <div className="col-10">
+                    <a tabIndex="6" title="Política Curricular" href="https://www.mep.go.cr/sites/default/files/documentos/transf-curricular-v-academico-vf.pdf" target="_blank" rel="noopener noreferrer">
+                      <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicacurricular.png" alt="Política Curricular"></img>
+                    </a>
+                  </div>
+                  <div className="col-1"></div>
+                </div><br/>
+                <div className="row">
+                  <div className="col-1"></div>
+                  <div className="col-10">
+                    <a tabIndex="7" title="Política Educación para el Desarrollo Sostenible" href="http://cse.go.cr/politica-y-plan-de-accion-de-educacion-para-el-desarrollo-sostenible" target="_blank" rel="noopener noreferrer">
+                      <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicadesarrollosost.png" alt="Política Educación para el Desarrollo Sostenible"></img>
+                    </a>
+                  </div>
+                  <div className="col-1"></div>
                 </div>
-                <div  className="row">
-                   <div className="col-3"></div>
-                     <div className="col-6">
-                      <a tabIndex="6" title="Política Curricular" href="https://www.mep.go.cr/sites/default/files/documentos/transf-curricular-v-academico-vf.pdf" target="_blank" rel="noopener noreferrer">
-                          <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicacurricular.png" alt="Política Curricular"></img>
-                      </a>
+              </div>
+
+              <div className="col-6">
+                {/* <div tabIndex="4" className="row text-center">*/}
+                <div className="row">
+                  <div className="col-1"></div>
+                  <div className="col-10">
+                    <a tabIndex="7" title="Política Educativa de Promoción de Idiomas" href="http://cse.go.cr/politica-educativa-para-la-promocion-de-idiomas#overlay-context=politica-educativa-para-la-promocion-de-idiomas" target="_blank" rel="noopener noreferrer">
+                      <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/btn_pe_promocionidiomas-58.png" alt="Política Educación para el Desarrollo Sostenible"></img>
+                    </a>
                   </div>
-                  <div className="col-3"></div>
+                  <div className="col-1"></div>
                 </div>
-                 <div className="row">
-                    <div className="col-3"></div>
-                  <div className="col-6">
-                      <a tabIndex="7" title="Política Educación para el Desarrollo Sosteniblee" href="http://cse.go.cr/politica-y-plan-de-accion-de-educacion-para-el-desarrollo-sostenible" target="_blank" rel="noopener noreferrer">
-                          <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicadesarrollosost.png" alt="Política Educación para el Desarrollo Sostenible"></img>
-                      </a>
-                  </div>
-                  <div className="col-3"></div>
+                {/*  </div> */}
+
               </div>
             </div>
-          )
-          break; 
+
+
+          </div>
+        )
+        break;
 
       case "linksVideosPlan":
         this.modalAncho = this.modalAncho + " modal-lg";
@@ -467,8 +488,8 @@ class Modal extends Component {
               <div className="col-sm-3 text-center">
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
                   <img src={imgGeneral + this.imgPdf} alt="pdf documento general" />
-                </a><br/>
-                  <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
+                </a><br />
+                <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
                   Orientaciones para la mediación generales
                 </a>
               </div>
@@ -476,7 +497,7 @@ class Modal extends Component {
               <div className="col-sm-3 text-center">
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf"} target="_blank" rel="noopener noreferrer">
                   <img src={imgGeneral + this.imgPdf} alt="pdf jóvenes y adultos" />
-                </a><br/>
+                </a><br />
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_adultos.pdf"} target="_blank" rel="noopener noreferrer">
                   Orientaciones para la mediación jóvenes y adultos
               </a>
@@ -485,7 +506,7 @@ class Modal extends Component {
               <div className="col-sm-3 text-center">
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf"} target="_blank" rel="noopener noreferrer">
                   <img src={imgGeneral + this.imgPdf} alt="pdf educación preescolar" />
-                </a><br/>
+                </a><br />
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/orientaciones_Preescolar.pdf"} target="_blank" rel="noopener noreferrer">
                   Orientaciones para la mediación pedagógica por habilidades para la Educación Preescolar
               </a>
@@ -494,14 +515,14 @@ class Modal extends Component {
               <div className="col-sm-3 text-center">
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/momentos_reflexivos_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
                   <img src={imgGeneral + this.imgPdf} alt="pdf momentos reflexivos para transformación" />
-                </a><br/>
+                </a><br />
                 <a href={serv + "faro_referencias/8_ref_apoyos_planea/orientacion/momentos_reflexivos_mediacion_pedagogica.pdf"} target="_blank" rel="noopener noreferrer">
                   Orientaciones: Momentos reflexivos para la mediación pedagógica transformadora
               </a>
               </div>
 
             </div>
-    
+
 
           </div>
         </React.Fragment>
@@ -519,11 +540,11 @@ class Modal extends Component {
 
       case "opcIncidencias":
         this.modalAncho = this.modalAncho + " modal-lg";
-        this.classModalBody = this.classModalBody + " borde-modal borde-bottom-naranja";   
+        this.classModalBody = this.classModalBody + " borde-modal borde-bottom-naranja";
         tmpContent = (<React.Fragment>
-           <div>
+          <div>
             <img className="img-fluid  modal-img-titulo" src={imgHome + "btn_incidentes.png"} alt="fondo indicaciones" />
-           </div>
+          </div>
           <div className="row ">
             <div className="col-6 text-center">
               <img className="botones-portada" src={imgGeneral + "cons_pedagogica.png"} onClick={this.handleTipoIncidencia} alt="consulta pedagógica" title="pedagógica" role="button" />
@@ -565,9 +586,9 @@ class Modal extends Component {
         this.classModalBody = this.classModalBody + " borde-modal borde-bottom-celeste";
         tmpContent = (<React.Fragment>
           <div>
-            <img  id="banner_referencias" role="banner" className="img-fluid modal-img-titulo" src={img + "btn_referencias.png"} alt="Banner del modal con referencias útiles para la docencia" />
+            <img id="banner_referencias" role="banner" className="img-fluid modal-img-titulo" src={img + "btn_referencias.png"} alt="Banner del modal con referencias útiles para la docencia" />
           </div>
-         
+
           <h2 tabIndex="2" className="text-center">Útiles para la docencia</h2>
           <p>
             <a tabIndex="2" href="https://recursos.mep.go.cr/ws_faro/pdf/desarrollo_prof/ref_utilies/lectura2017.pdf" target="_blank" rel="noopener noreferrer"> <strong> Lectura 2017</strong> </a>  y
@@ -583,7 +604,7 @@ class Modal extends Component {
           <p>
             <a href="https://multimedia.uned.ac.cr/pem/aprendizaje_moviles/pag/conceptos.html" target="_blank" rel="noopener noreferrer"><strong>Aprendizajes Móviles:</strong> </a> Este recurso publicado por la UNED de Costa Rica presenta las principales características de los dispositivos móviles, por un lado, la ubicuidad, en la que se aprende desde cualquier momento y lugar, por otro lado, la adaptabilidad o flexibilidad de estos dispositivos gracias a la conexión e ideas de cómo aprovecharlas en el área educativa.
                       </p>
-        
+
         </React.Fragment>
         )
         break;
@@ -621,7 +642,7 @@ class Modal extends Component {
             {/* <div className="col-12 text-right"> */}
             <div className="modal-content">
               <div className="modal-header">
-              { $("#banner_referencias").focus()}
+                {$("#banner_referencias").focus()}
 
                 <button onClick={this.props.closeModal} type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
@@ -634,17 +655,17 @@ class Modal extends Component {
                 {
                   this.state.tipoIncidencia === "pedagógica" &&
                   (
-                    <div className="row">                     
+                    <div className="row">
                       <div className="container">
-                        <h4>Correo para enviar consultas relacionadas con el área pedagógica.</h4> <br/> 
-                          <p>                          
-                          <strong>Por ejemplo:</strong> Consultas del contenido de las plantillas o sus ejemplos. <br/>
-                          <br/> 
-                          Es importante que en el correo indique la <strong>asignatura</strong> y el <strong>nivel</strong>, por ejemplo secundaria, primaria, entre otros. <br/>
+                        <h4>Correo para enviar consultas relacionadas con el área pedagógica.</h4> <br />
+                        <p>
+                          <strong>Por ejemplo:</strong> Consultas del contenido de las plantillas o sus ejemplos. <br />
+                          <br />
+                          Es importante que en el correo indique la <strong>asignatura</strong> y el <strong>nivel</strong>, por ejemplo secundaria, primaria, entre otros. <br />
 
                           <p>Su consulta será remitido al área correspondiente</p>
-                          </p>
-                          <a href="mailto:cajadeherramientas@mep.go.cr">  cajadeherramientas@mep.go.cr </a>
+                        </p>
+                        <a href="mailto:cajadeherramientas@mep.go.cr">  cajadeherramientas@mep.go.cr </a>
                       </div>
                     </div>
                   )
@@ -703,39 +724,39 @@ class Modal extends Component {
                           <div className="row">
                             <div className="col-12">
                               {
-                                this.state.estadoForm === "error" &&                                 
-                                  <span className="text-danger" >
-                                    Debe llenear todos los campos
-                                  </span>                                
-                               }
+                                this.state.estadoForm === "error" &&
+                                <span className="text-danger" >
+                                  Debe llenear todos los campos
+                                  </span>
+                              }
                             </div>
                           </div>
                           <br />
-                               {
-                                 this.state.estadoForm === "iniciando" ?
-                                 (
-                                  <span className="text-primary">Enviando datos, por favor espere...</span>
-                                 ) :
-                                 (
-                                          this.state.estadoForm === "enviado" ? 
-                                          (
-                                            <span className="text-success">
-                                              Gracias por enviar su consulta. En cuanto podamos le estaremos respondiendo.
-                                              Pulse la "X" para cerrar esta pantalla.
+                          {
+                            this.state.estadoForm === "iniciando" ?
+                              (
+                                <span className="text-primary">Enviando datos, por favor espere...</span>
+                              ) :
+                              (
+                                this.state.estadoForm === "enviado" ?
+                                  (
+                                    <span className="text-success">
+                                      Gracias por enviar su consulta. En cuanto podamos le estaremos respondiendo.
+                                      Pulse la "X" para cerrar esta pantalla.
                                               </span>
-                                          ) :
-                                          (
-                                            <input 
-                                          id="btnEnviar"
-                                          className="btn btn-outline-info" 
-                                          type="button" 
-                                          onClick={this.handleEnviarIncidencia}
-                                          value="Enviar"
-                                          />
-                                          )
-                                 )
-                               }
-                          
+                                  ) :
+                                  (
+                                    <input
+                                      id="btnEnviar"
+                                      className="btn btn-outline-info"
+                                      type="button"
+                                      onClick={this.handleEnviarIncidencia}
+                                      value="Enviar"
+                                    />
+                                  )
+                              )
+                          }
+
                         </div>
                       </div>
 

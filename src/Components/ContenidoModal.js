@@ -17,30 +17,48 @@ function ContenidoModal(props) {
                 <iframe className="borde-video" title="video ministra" width="100%" height="400" src={video.ministra} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             )
             break;
-            case "politicasMEP":
-                html = (
-                    <div tabIndex="4" className="row text-center">
-                        <div className="col-sm-4">
-                            <a tabIndex="5" title="Política Educativa" href="https://www.mep.go.cr/sites/default/files/page/adjuntos/politicaeducativa.pdf" target="_blank" rel="noopener noreferrer">
-                                <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicaeducativa.png" alt="Política Educativa"></img>
-                            </a>
-                        </div>
-    
-                        <div className="col-sm-4">
-                            <a tabIndex="6" title="Política Curricular" href="https://www.mep.go.cr/sites/default/files/documentos/transf-curricular-v-academico-vf.pdf" target="_blank" rel="noopener noreferrer">
-                                <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicacurricular.png" alt="Política Curricular"></img>
-                            </a>
-                        </div>
-    
-                        <div className="col-sm-4">
-                            <a tabIndex="7" title="Política Educación para el Desarrollo Sosteniblee" href="http://cse.go.cr/politica-y-plan-de-accion-de-educacion-para-el-desarrollo-sostenible" target="_blank" rel="noopener noreferrer">
-                                <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicadesarrollosost.png" alt="Política Educación para el Desarrollo Sostenible"></img>
-                            </a>
-                        </div>
+        case "politicasMEP":
+            html = (
+                <div>
+                <div tabIndex="4" className="row text-center">
+                    <div className="col-sm-4">
+                        <a tabIndex="5" title="Política Educativa" href="https://www.mep.go.cr/sites/default/files/page/adjuntos/politicaeducativa.pdf" target="_blank" rel="noopener noreferrer">
+                            <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicaeducativa.png" alt="Política Educativa"></img>
+                        </a>
+                    </div>
+
+                    <div className="col-sm-4">
+                        <a tabIndex="6" title="Política Curricular" href="https://www.mep.go.cr/sites/default/files/documentos/transf-curricular-v-academico-vf.pdf" target="_blank" rel="noopener noreferrer">
+                            <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicacurricular.png" alt="Política Curricular"></img>
+                        </a>
+                    </div>
+
+                    <div className="col-sm-4">
+                        <a tabIndex="7" title="Política Educación para el Desarrollo Sostenible" href="http://cse.go.cr/politica-y-plan-de-accion-de-educacion-para-el-desarrollo-sostenible" target="_blank" rel="noopener noreferrer">
+                            <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/ch_btn_politicadesarrollosost.png" alt="Política Educación para el Desarrollo Sostenible"></img>
+                        </a>
+                    </div>
+
+                </div><br/>
+                <div tabIndex="4" className="row text-center">
+                    <div className="col-sm-4">
+                        <a tabIndex="5" title="Política Educativa de Promoción de Idiomas" href="http://cse.go.cr/politica-educativa-para-la-promocion-de-idiomas#overlay-context=politica-educativa-para-la-promocion-de-idiomas" target="_blank" rel="noopener noreferrer">
+                            <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/6__documen_educ/btn_pe_promocionidiomas-58.png" alt="Política Educativa"></img>
+                        </a>
+                    </div>
+
+                    <div className="col-sm-4">
 
                     </div>
+
+                    <div className="col-sm-4">
+
+                    </div>
+
+                </div>
+                </div>
                 )
-                break;
+            break;
         case "aprendoEnCasa":
             html = (
                 <div tabIndex="4" className="row">
@@ -115,9 +133,9 @@ function ContenidoModal(props) {
                             </ul>
                             <p>
                                 Para disponer de los distintos recursos, dé un clic a los diferentes accesorios que acompañan a la imagen de la educadora.  Cada uno de estos objetos representa una de las categorías.  <br />
-              Dentro de cada categoría encontrará una descripción de la sección, así como una serie de accesos a documentos, enlaces, plantillas, y otros materiales de utilidad para su quehacer docente.
+                                Dentro de cada categoría encontrará una descripción de la sección, así como una serie de accesos a documentos, enlaces, plantillas, y otros materiales de utilidad para su quehacer docente.
                           Al colocar el puntero del mouse sobre cada acceso, podrá leer la descripción del recurso específico que se le está proveyendo. <br />
-              En las diferentes pantallas que acceda, dispondrá de botones que le permitirá retornar a la pantalla anterior o volver al menú principal.
+                                En las diferentes pantallas que acceda, dispondrá de botones que le permitirá retornar a la pantalla anterior o volver al menú principal.
               </p>
                         </div>
                     </div>
