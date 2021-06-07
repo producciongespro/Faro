@@ -92,111 +92,28 @@ const RecursosDidacticos = (props) => {
             alt="Regresar a la portada" />
       </div>
 
+
+
+
         <div id="bnt-recursos" className="row">
-            <div className="col-3 hover12 ladoDer">
-              <figure role="button">
-                 <img 
-                 tabIndex="3" 
-                 className="btn img-fluid preescolar" 
-                 id="preescolar" 
-                 data-origen="Preescolar"  
-                 src= {img+"preescolar.png"}   
-                 data-infosource={4} 
-                 onMouseOver={props.onMouseOver}   
-                 onMouseOut={ props.onMouseOut }  
-                 onClick={props.handlerOpenBuscador} 
-                 onKeyPress={props.handlerOpenBuscador}  
-                 alt="Recursos para Preescolar" />
-              </figure>
-              </div>
-
-
-            <div className="col-3 hover12 centro">
-                <figure role="button">
-              <img 
-              tabIndex="3" 
-              className="btn img-fluid primaria" 
-              id="primaria" 
-              data-origen="Primaria" 
-              src= {img+"primaria.png"} 
-              data-infosource={4} 
-              onMouseOver={props.onMouseOver}   
-              onMouseOut={ props.onMouseOut }  
-              onClick={props.handlerOpenBuscador} 
-              onKeyPress={props.handlerOpenBuscador}   
-              alt="Recursos para Primaria" />
-              </figure>
-            </div>
-
-
-            <div className="col-3 hover12 centro">
-                <figure role="button">
-              <img 
-              tabIndex="3" 
-              className="btn img-fluid secundaria" 
-              id="secundaria" data-origen="Secundaria"  
-              src= {img+"secundaria.png"} 
-              data-infosource={4} 
-              onMouseOver={props.onMouseOver}   
-              onMouseOut={ props.onMouseOut }  
-              onClick={props.handlerOpenBuscador} 
-              onKeyPress={props.handlerOpenBuscador} 
-              alt="Recursos para Educación media" />
-              </figure>
-
-            </div>
-            <div className="col-3 hover12 ladoIzq">
-                <figure role="button">
-              <img 
-              tabIndex="3" 
-              className="btn img-fluid intercultural" 
-              id="intercultural" 
-              src= {img+"intercultural.png"} 
-              data-tar="Construccion"  
-              onClick={props.changePage} 
-              onKeyPress={props.changePage} 
-              data-infosource={4} 
-              onMouseOver={props.onMouseOver}   
-              onMouseOut={ props.onMouseOut }      
-              alt="Recursos para Edcuación Intercultural" />
-              </figure>
-            </div>          
-        </div>
-
-
-        <div  className="row">
-          <div className="col-3 hover12 ladoDer">
+        <div className="col-2 hover12 ladoDer">
+        </div> 
+           <div className="col-3 hover12 centro">
           <figure role="button">
-          <img 
-          tabIndex="3" 
-          className="btn img-fluid jovenesAdultos" 
-          id="jovenesAdultos"  
-          data-origen="jovenesAdultos"  
-          src= {img+"jovenes_adultos.png"}  
-          onClick={props.handlerOpenBuscador} 
-          onKeyPress={props.handlerOpenBuscador} 
-          data-infosource={4} 
-          onMouseOver={props.onMouseOver}   
-          onMouseOut={ props.onMouseOut }    
-          alt="Recursos para Educación Jovenes y Adultos" />
-          </figure>
-          </div>
-
-
-          <div className="col-3 hover12 centro">
-          <figure role="button">
-          <img 
-          tabIndex="3" 
-          className="btn img-fluid feriaCientifica" 
-          id="feriaCientifica" 
-          src= {img+"ch_btn_pedagogiahospitalaria.png"} 
-          data-tar="pedagoHosp" 
-          onClick={props.changePage} 
-          onKeyPress={props.changePage} 
-          data-infosource={4} 
-          onMouseOver={props.onMouseOver}   
-          onMouseOut={ props.onMouseOut }    
-          alt="Recursos para Pedagogía Hospitalaria" />
+          <a 
+            href={links.Coleccion} 
+            target="_blank" 
+            rel="noopener noreferrer"  >
+            <img 
+            tabIndex="3" 
+            className="btn img-fluid feriaCientifica" 
+            id="coleccionGespro" 
+            src= {img+"bnt_gespro.png"} 
+            data-infosource={4} 
+            onMouseOver={props.onMouseOver}   
+            onMouseOut={ props.onMouseOut } 
+            alt="Recursos de la colección GESPRO" />
+          </a>
           </figure>
           </div>
 
@@ -236,9 +153,11 @@ const RecursosDidacticos = (props) => {
           </figure>
           </div>
     
-           
+          <div className="col-1 hover12 ladoDer">
+        </div> 
 
         </div>
+
         </div>
         <audio 
         src={ audio +  "recursos_didacticos.mp3"} 
