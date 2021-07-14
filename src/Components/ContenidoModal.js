@@ -61,6 +61,7 @@ function ContenidoModal(props) {
             break;
         case "aprendoEnCasa":
             html = (
+                <div>
                 <div tabIndex="4" className="row">
                     <div className="col-sm-3">
                         <a tabIndex="5" title="Guía televisiva" href="https://recursos.mep.go.cr/2020/aprendoencasa/" target="_blank" rel="noopener noreferrer">
@@ -75,7 +76,7 @@ function ContenidoModal(props) {
                     </div>
 
                     <div className="col-sm-3">
-                        <a tabIndex="7" title="Plantillas de aprendizaje" href="http://ddc.mep.go.cr/estrategia-covid19/curso-lectivo-2021" target="_blank" rel="noopener noreferrer">
+                        <a tabIndex="7" title="Plantillas de aprendizaje" href="https://ddc.mep.go.cr/estrategias-atencion-covid-19-pautas-anexosgta-y-pab" target="_blank" rel="noopener noreferrer">
                             <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/ch_ web_ventana2b.jpg" alt="Plantillas guía de aprendizaje base"></img>
                         </a>
                     </div>
@@ -85,6 +86,17 @@ function ContenidoModal(props) {
                         </a>
                     </div>
                 </div>
+                <div tabIndex="4" className="row">
+                <div className="col-sm-3">
+                        <a tabIndex="8" title="Fiestas patrias" href="https://ddc.mep.go.cr/estrategia-covid19/ii-semestre-curso-lectivo-2021" target="_blank" rel="noopener noreferrer">
+                            <img className="img-fluid" src="https://cajadeherramientas.mep.go.cr/Faro/asset/img/1_portada/logo_regresar2.png" alt="Estrategia regresar"></img>
+                        </a>
+                    </div>
+                    <div className="col-sm-9">
+
+                    </div>
+               </div>
+               </div>
             )
             break;
         case "pdf":
